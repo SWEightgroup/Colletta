@@ -1,0 +1,22 @@
+%generare il pdf con il comando: pdflatex main.tex
+\documentclass[a4paper, oneside, openany, dvipsnames, table]{article}
+\usepackage{../template/SWEightStyle}
+\input{comandi.tex}
+
+\begin{document}
+\copertina{} %Richiamo funzione
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%SOMMARIO
+\input{sez/RegistroModifiche.tex}
+\newpage
+\tableofcontents
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%PARAGRAFI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{sez/introduzione.tex}
+%primo imput sarà capitolato scelto!
+%poi in ordine
+\input{sez/C1.tex}
+
+\end{document}
