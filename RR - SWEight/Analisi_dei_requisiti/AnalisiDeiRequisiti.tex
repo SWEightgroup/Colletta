@@ -1,0 +1,12 @@
+%generare il pdf con il comando: pdflatex main.tex
+\documentclass[a4paper, oneside, openany, dvipsnames, table]{article}
+\usepackage{../template/SWEightStyle}
+\input{comandi.tex}
+
+\begin{document}
+\copertina{} 
+\input{sez/RegistroModifiche.tex}
+\newpage
+\tableofcontents
+\newpage
+\end{document}
