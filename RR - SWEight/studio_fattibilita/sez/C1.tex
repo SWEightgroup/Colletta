@@ -1,16 +1,31 @@
 \section{Capitolato C1}
 \subsection{Informazioni sul Capitolato}
 \begin{itemize}
-	\item \textbf{Nome:} x;
-	\item \textbf{Proponente}: x;
+	\item \textbf{Nome:} Butterly;
+	\item \textbf{Proponente}: Imola Informatica;
 	\item \textbf{Committenti}: Prof. Tullio Vardanega, Prof. Riccardo Cardin.
 \end{itemize}
 
 \subsection{Descrizione}
-
+Il progetto Butterfly prevede la realizzazione di un insieme di \texttt{plugin}\ped{G} che permettano di realizzare un'infrastruttura unificata e flessibile per la gestione automatizzata delle segnalazioni provenienti dagli applicativi (i.e. SonarQube, GitLab, RedMine) utilizzati durante lo sviluppo di software al fine di fornire una migliore accessibilità e una standardizzazione dei messaggi. In particolare, tali messaggi dovranno essere inseriti all'interno di topic da un \texttt{broker}\ped{G}, che si occuperà anche della loro gestione. Il proponente del capitolato fa riferimento ad un pattern \texttt{Publisher/Subscriber}\ped{G} per l'implementazione di tali componenti, che vengono classificati in tre categorie:
+\begin{itemize}
+\item[•]I componenti producer che avranno il compito di recuperare le segnalazioni e pubblicarle;
+\item[•]Il broker impiegato per la creazione e la gestione dei topic;
+\item[•]I componenti consumer che avranno il compito di abbonarsi ai topic adeguati, recuperarne i messaggi e procedere al loro inoltro verso i destinatari finali mediante applicazioni atte alla comunicazione, quali Telegram, Slack e email;
+\item[•]Il componente custom specifico per la gestione del personale che si occuperà di inoltrare i messaggi alla persona più idonea in quel determinato momento;
+\end{itemize}
 \subsection{Dominio Applicativo}
-
+Il dominio applicativo a cui fa riferimento il capitolato proposto è quello della comunicazione automatizzata (automated communication), infatti i messaggi provenienti dai vari applicativi devono essere inoltrati automaticamente al team di sviluppo.
 \subsection{Dominio Tecnologico}
+\begin{itemize}
+\item[•]Apache Kafka, per la realizzazione del broker;
+\item[•]NodeJS, Python, Java come linguaggi di riferimento per la realizzazione dei componenti;
+\item[•]The twelve-factor app, una metodologia per la realizzazione di \texttt{software-as-serivice}\ped{G}
+\item[•]Docker per per l’istanziazione di
+tutti i componenti;
+\item[•]Strumenti per il testing (ad esempio JUnit);
+\item[•]
+\end{itemize}
 
 
 \subsection{Aspetti Positivi}
