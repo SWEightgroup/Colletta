@@ -6,17 +6,23 @@
 	\item \textbf{Committenti}: Prof. Tullio Vardanega, Prof. Riccardo Cardin.
 \end{itemize}
 \subsection{Descrizione}
-L'obbiettivo del capitolato è lo sviluppo di un'applicazione mobile Android\textsuperscript{TM} che offra un servizio di car-sharing tramite una piattaforma che, sfruttando la geolocalizzazione, permetta agli utenti di condividere un'auto con l'intento di massimizzare il tempo di utilizzo del mezzo quando quest'ultimo è inutilizzato tramite calendarizzazione, con l'intento di ridurre i costi. Il proprietario dell'auto è sempre a conoscenza della posizione di quest'ultima tramite il suddetto servizio. L'applicativo pertanto è composto dalle seguenti parti:
-\begin{itemize}
-\item[•] Interfacce utente per la calendarizzazione, localizzazione del mezzo e prenotazione;
-\item[•] \texttt{Servizi Google}\ped{G} per l'immagazzinamento delle prenotazioni;
-\end{itemize}
+L'obbiettivo del capitolato è lo sviluppo di un'applicazione mobile Android\textsuperscript{TM} che offra un servizio di 
+car-sharing tramite una piattaforma che, sfruttando la geolocalizzazione, permetta agli utenti di condividere un'auto con 
+l'intento di massimizzare il tempo di utilizzo del mezzo quando quest'ultimo è inutilizzato tramite calendarizzazione, 
+con l'intento di ridurre i costi. Il proprietario dell'auto è sempre a conoscenza della posizione di quest'ultima tramite 
+il suddetto servizio. Il proponente del capitolato mette a disposizione delle \texttt{librerie}\ped{G} che riducono la 
+complessità del progetto, pertanto la parte richiesta si concentra sullo principalmente sullo sviluppo del servizio precendentemente
+descritto.
 \subsection{Dominio Applicativo}
 Il dominio applicativo a cui P2PCS fa riferimento è quello del commercio elettronico Consumer to Consumer, dove gli utenti interagiscono tra di loro mettendo a disposizione un oggetto che vogliono vendere o prestare.
 \subsection{Dominio Tecnologico}
 \begin{itemize}
-\item[•] \texttt{Henshin} per il servizio cloud di immagazzinamento dei dati;
-\item[•] \texttt{Android SDK} per la realizzazione dell'applicazione nativa o \texttt{Apache Cordova} per la realizzazione di un'applicazione web-based multi-piattaforma facendo uso di \texttt{NodeJS};
+\item[•] \texttt{Hensin Moven} che fornisce il servizio per lo sviluppo e l'utilizzo dell'applicativo;
+\item[•] \texttt{Android SDK} per la realizzazione dell'applicazione nativa o \texttt{Apache Cordova} per
+ la realizzazione di un'applicazione web-based multi-piattaforma facendo uso di \texttt{Node.js};
+\item[•] \texttt{Node.js} come piattaforma per la realizzazione dell'applicazione lato server;
+\item[•] \texttt{JavaScript} come linguaggio di scripting utilizzato all'interno della piattaforma Node.js;
+\item[•] \texttt{Google Cloud Platform} per fornire il una soluzione cloud dove memorizzare i dati;
 \item[•] \texttt{Git} come tool di versionamento;
 \item[•] \texttt{Google Location Services} per la tracciatura del mezzo durante gli spostamenti;
 \end{itemize}
