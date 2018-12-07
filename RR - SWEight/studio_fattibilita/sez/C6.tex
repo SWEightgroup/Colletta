@@ -1,18 +1,20 @@
 \section{Capitolato C6}
 \subsection{Informazioni sul Capitolato}
 \begin{itemize}
-	\item \textbf{Nome:} Soldino ;
+	\item \textbf{Nome:} Soldino;
 	\item \textbf{Proponente}: Red Babel;
 	\item \textbf{Committenti}: Prof. Tullio Vardenega, Prof. Riccardo Cardin.
 \end{itemize}
 
 \subsection{Descrizione}
-Il capitolato ha per oggetto lo sviluppo di un servizio che permette di mettere in vendita o di comprare oggetti mediante l'uso della tecnologia Ethereum attraverso la valuta Cubit. L'applicativo pertanto è composto dalle seguenti parti: 
+Il capitolato ha per oggetto lo sviluppo di una piattaforma, Soldino, gestita dal governo. La piattaforma permette ai gestori di imprese di vendere e comprare merci, o servizi e inoltre permette di ricevere e registrare le tasse relative ai beni acquistati. \newline
+I cittadini possono comprare oggetti o servizi utilizzando del denaro prodotto dal governo, la moneta utilizzata in questa piattaforma sarà ECR20 chiamata Cubit. Possono inoltre diventare gestori di imprese iscrivendosi alla lista di gestori di imprese gestita dal governo.  
+Il capitolato è pertanto composto da due parti: 
 
 \begin{itemize}
 
-\item[•] Interfaccia Web che agisca da interfaccia per comunicare con la rete Ethereum;
-\item[•] Un database contenente tutti gli smart contract che registrano e verificano le transazioni avvenute;
+\item[•] Pagina Web che agisca da interfaccia per comunicare con la EVM, Ethereum Virtual Machine;
+\item[•] Smart contracts, contenente tutte le transazioni che vengono gestite dalla rete Ethereum;
 
 \end{itemize}
 
@@ -22,13 +24,14 @@ Il dominio applicativo a cui Soldino fa riferimento è quello del commercio onli
 \subsection{Dominio Tecnologico}
 \begin{itemize}
 
-\item[•] \texttt{Unit} per i test di integrazione in ambiente locale ;
-\item[•] \texttt{Git} come tool di versionamento;
-\item[•] \texttt{EVM} permette l’esecuzione di codici complessi, smart contracts, al di sopra della piattaforma Ethereum.;
+\item[•] \texttt{Unit} test di integrazione in ambiente locale ;
+\item[•] \texttt{Git} tool di versionamento;
+\item[•] \texttt{EVM} permette l’esecuzione di codici complessi, smart contracts, al di sopra della piattaforma Ethereum;
 \item[•] \texttt{Truffle} come framework che permette la gestione dei contratti di Ethereum;
 \item[•] \texttt{MetaMask} 
-che permette l'accesso alla rete di Ethereum usando un nodo pubblico; 
-\item[•] \texttt{Ropsten} che permette di testare le funzionalità di Ethereum su una rete. 
+permette l'accesso alla rete di Ethereum usando un nodo pubblico; 
+\item[•] \texttt{Ropsten} permette di testare le funzionalità di Ethereum su una rete. 
+\item[•] \texttt{Raiden} permette di trasferire token ERC20 quasi istantaneamente alla rete Ethereum;  
 
 \end{itemize}
 
@@ -39,6 +42,7 @@ Gli aspetti ritenuti positivi sono:
 
 \item[•] Lo studio di un framework come Truffle per la gestione degli smart contracts di Ethereum;
 \item[•] L'utilizzo di Ropsten che fornisce un ambiente per testare le transazione che successivamente avverrano nella rete principale di Ethereum;
+\item[•] Lo studio della gestione, e della validazione, delle transazioni in ambiente Ethereum; 
 
 \end{itemize}
 
@@ -46,12 +50,12 @@ Gli aspetti ritenuti positivi sono:
 Le principali criticità sono costituite da: 
 \begin{itemize}
 
-\item[•]La gestione dei pagamenti in tempo reale tramite piattaforma Ethereum;
+\item[•] Il progetto deve usare almeno gli ambienti: Local, Test, Staging e Production. Questo comporta un dispendio di tempo molto alto. 
 
-\item[•] Lo studio di tre framework: Truffle, Ropsten e l'estensione web MetaMask comporta un tempo molto alto ;
+\item[•] Lo studio di tre framework: Truffle, Ropsten e l'estensione web MetaMask comporta un tempo considerevole;
 
 \end{itemize}
 
 
 \subsection{Valutazione Finale}
-Il capitolato ha suscitato del discreto interesse che è però sciamato a causa della mancata conoscenza e quindi dell'eccessivo carico di studio riguardante l'utilizzo di framework per pagamenti nella rete Ethereum. 
+Il capitolato ha suscitato dell'interesse per i suoi temi innovativi, ovvero la gestione dei pagamenti tramite criptovalute. A causa della mancata conoscenza e quindi dell'eccessivo carico di studio riguardante l'utilizzo di framework per la gestione dei pagamenti e la in sicurezza di essi nell' infrastruttura Ethereum è stato scartato. 
