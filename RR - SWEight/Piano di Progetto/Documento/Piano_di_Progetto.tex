@@ -2,6 +2,8 @@
 \usepackage{../../template/SWEightStyle}
 \usepackage{ltablex}
 \usepackage{tabularx}
+\usepackage{pdfpages}
+
 \input{comandi.tex}
 
 \begin{document}
@@ -26,15 +28,31 @@
 			\input{Introduzione/Riferimenti/riferimenti_informativi.tex}
 	\subsection{Scadenze}
 		\input{Introduzione/scadenze.tex}
+\newpage
 \section{Analisi dei rischi}
 	\input{Analisi_dei_Rischi/introduzione.tex}
 	\input{Analisi_dei_Rischi/tabella_rischi.tex}
+\newpage
 \section{Modelli di sviluppo}
 	\input{Modelli_di_Sviluppo/introduzione.tex}
 	\subsection{Motivazioni}
 		\input{Modelli_di_Sviluppo/modello_incrementale.tex}
-\section{Pianificiazione}
+\newpage
+\section{Pianificazione}
+	\input{Pianificazione/introduzione.tex}
+	\subsection{Analisi}
+		\input{Pianificazione/Analisi.tex}	
+	\subsection{Consolidamento}
+		\input{Pianificazione/Consolidamento.tex}
+	\subsection{Progettazione}
+		\input{Pianificazione/Progettazione.tex}
+	\subsection{Codifica}
+		\input{Pianificazione/Codifica.tex}
+	\subsection{Verifica e Validazione}
+		\input{Pianificazione/Verifica_e_Validazione.tex}
+\newpage
 \section{Preventivo}
+\newpage
 \section{Consuntivo e preventivo a finire}
 
 \end{document}
