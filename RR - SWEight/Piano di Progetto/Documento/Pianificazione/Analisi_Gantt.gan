@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Colletta" company="SWEight" webLink="" view-date="2018-11-25" view-index="0" gantt-divider-location="357" resource-divider-location="300" version="2.8.9" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Colletta" company="SWEight" webLink="" view-date="2018-11-28" view-index="0" gantt-divider-location="390" resource-divider-location="300" version="2.8.9" locale="it">
     <description/>
-    <view zooming-state="default:4" id="gantt-chart">
-        <field id="tpd3" name="Nome" width="198" order="0"/>
-        <field id="tpd4" name="Data d'inizio" width="78" order="1"/>
-        <field id="tpd5" name="Data di fine" width="77" order="2"/>
+    <view zooming-state="default:3" id="gantt-chart">
+        <field id="tpd3" name="Nome" width="187" order="0"/>
+        <field id="tpd4" name="Data d'inizio" width="100" order="1"/>
+        <field id="tpd5" name="Data di fine" width="99" order="2"/>
         <option id="color.recent">
             <![CDATA[#ff0000 #6666ff #999999 #ffff66 #3333ff #ff6699 #ff33cc #ff9900 #ff6600 #99ff33]]>
         </option>

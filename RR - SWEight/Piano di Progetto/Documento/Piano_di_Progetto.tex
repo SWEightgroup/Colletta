@@ -5,6 +5,7 @@
 \usepackage{pdfpages}
 \usepackage{svg}
 \usepackage{eurosym}
+\usepackage{cleveref}
 
 
 \setcounter{secnumdepth}{3}
@@ -38,6 +39,7 @@
 \newpage
 \section{Analisi dei rischi}
 	\input{Analisi_dei_Rischi/introduzione.tex}
+	\newpage
 	\input{Analisi_dei_Rischi/tabella_rischi.tex}
 \newpage
 \section{Modelli di sviluppo}
@@ -46,15 +48,21 @@
 		\input{Modelli_di_Sviluppo/modello_incrementale.tex}
 \newpage
 \section{Pianificazione}
+	\label{sec:Pian}
 	\input{Pianificazione/introduzione.tex}
+	\newpage	
 	\subsection{Analisi}
-		\input{Pianificazione/Analisi.tex}	
+		\input{Pianificazione/Analisi.tex}
+	\newpage	
 	\subsection{Consolidamento}
 		\input{Pianificazione/Consolidamento.tex}
+	\newpage
 	\subsection{Progettazione Architetturale}
 		\input{Pianificazione/Progettazione.tex}
+	\newpage
 	\subsection{Pianificazione di Dettaglio e Codifica}
 		\input{Pianificazione/Codifica.tex}
+	\newpage
 	\subsection{Verifica e Validazione}
 		\input{Pianificazione/Verifica_e_Validazione.tex}
 \newpage
@@ -70,7 +78,7 @@
 	\subsection{Progettazione Architetturale}
 	    \input{Preventivo/Progettazione.tex}
 	\newpage
-	\subsection{Pianificazione di Dettaglio e Codifica}
+	\subsection{Progettazione di Dettaglio e Codifica}
 	    \input{Preventivo/Codifica.tex}
 	\newpage
 	\subsection{Verifica e Validazione}
