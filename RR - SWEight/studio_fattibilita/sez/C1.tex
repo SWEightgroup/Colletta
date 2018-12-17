@@ -7,12 +7,12 @@
 \end{itemize}
 
 \subsection{Descrizione}
-Il progetto Butterfly prevede la realizzazione di un insieme di \texttt{plugin}\ped{G} che permettano di realizzare un'infrastruttura per la gestione automatizzata delle segnalazioni provenienti dagli applicativi (i.e. SonarQube, GitLab, RedMine). Questi sono utilizzati durante lo sviluppo di software al fine di fornire una migliore accessibilità e standardizzazione dei messaggi. Tali messaggi dovranno essere inseriti all'interno di topic da un \texttt{broker}\ped{G}, che si occuperà della loro gestione. Il proponente del capitolato fa riferimento ad un pattern \texttt{Publisher/Subscriber}\ped{G} per l'implementazione dei componenti richiesti, classificati in categorie:
+Il progetto Butterfly prevede la realizzazione di un insieme di plugin\ped{G} che permettano di realizzare un'infrastruttura per la gestione automatizzata delle segnalazioni provenienti dagli applicativi (i.e. SonarQube, GitLab, RedMine). Questi sono utilizzati durante lo sviluppo di software al fine di fornire una migliore accessibilità e standardizzazione dei messaggi. Tali messaggi dovranno essere inseriti all'interno di topic da un broker\ped{G}, che si occuperà della loro gestione. Il proponente del capitolato fa riferimento ad un pattern Publisher/Subscriber\ped{G} per l'implementazione dei componenti richiesti, classificati in categorie:
 \begin{itemize}
-\item[•]I \texttt{producer}\ped{G} che avranno il compito di recuperare le segnalazioni e pubblicarle;
+\item[•]I producer\ped{G} che avranno il compito di recuperare le segnalazioni e pubblicarle;
 %\item[•]Il broker impiegato per la creazione e la gestione dei topic;
-\item[•] I \texttt{consumer}\ped{G} che avranno il compito di abbonarsi ai topic adeguati, recuperarne i messaggi e procedere al loro inoltro verso i destinatari finali mediante applicazioni atte alla comunicazione, quali Telegram, Slack e email;
-\item[•]Il componente \textit{custom}\ped{G} specifico per la gestione del personale che si occuperà di inoltrare i messaggi alla persona più idonea in quel determinato momento;
+\item[•] I consumer\ped{G} che avranno il compito di abbonarsi ai topic adeguati, recuperarne i messaggi e procedere al loro inoltro verso i destinatari finali mediante applicazioni atte alla comunicazione, quali Telegram, Slack e email;
+\item[•]Il componente custom\ped{G} specifico per la gestione del personale cheù idonea in quel determinato momento; si occuperà di inoltrare i messaggi alla persona pi
 \end{itemize}
 \subsection{Dominio Applicativo}
 Il dominio applicativo a cui fa riferimento il capitolato proposto è quello della comunicazione automatizzata, infatti i messaggi provenienti dai vari applicativi devono essere inoltrati automaticamente al team di sviluppo.
@@ -26,7 +26,7 @@ tutti i componenti;
 \item[•] Strumenti per il testing;
 \item[•] Utilizzo di un'architettura \texttt{REST}
 \item[•] \texttt{Git} come tool di versionamento; 
-\end{itemize}
+\textsl{•}\end{itemize}
 \subsection{Considerazioni del gruppo}
 
 Il progetto presenta alcuni aspetti positivi che non sono richiesti esplicitamente negli altri capitolati, quali l'utilizzo di strumenti di testing e per l'istaziazione delle componenti. 
