@@ -1,11 +1,12 @@
 \ProvidesPackage{SWEightStyle}	%il nostro pacchetto per swe
 \usepackage{graphbox}	% permette di modificare i margini
 \usepackage[top=3.1cm, bottom=3.1cm, left=2.2cm, right=2.2cm]{geometry}
-
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{longtable}
 \usepackage{array}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 
 \newcommand{\copertina}{
 	\begin{titlepage}
@@ -38,7 +39,9 @@
 			\begin{tabular}{r|L{5cm}}
 				\multicolumn{2}{c}{\textbf{Informazioni sul documento} } \\ \hline
 				\textbf{Versione} &  1.0.0\\
-				\textbf{Operatori} & \ACapoOperatori{} \\
+				\textbf{Owner} & \Owner{} \\
+				\textbf{Redattori} & \Redattori{} \\
+				\textbf{Verificatori} & \Verificatori{} \\
 				\textbf{Uso} & \Uso \\
 				\textbf{Distribuzione} & \Distribuzione{}
 			\end{tabular}
@@ -66,7 +69,6 @@
   }
 
   \rhead{
-  	da fare
   }
 
 
