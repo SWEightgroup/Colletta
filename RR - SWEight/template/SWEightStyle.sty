@@ -1,11 +1,12 @@
 \ProvidesPackage{SWEightStyle}	%il nostro pacchetto per swe
 \usepackage{graphbox}	% permette di modificare i margini
 \usepackage[top=3.1cm, bottom=3.1cm, left=2.2cm, right=2.2cm]{geometry}
-
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{longtable}
 \usepackage{array}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 
 \newcommand{\copertina}{
 	\begin{titlepage}
@@ -38,9 +39,9 @@
 			\begin{tabular}{r|L{5cm}}
 				\multicolumn{2}{c}{\textbf{Informazioni sul documento} } \\ \hline
 				\textbf{Versione} &  1.0.0\\
-				\textbf{Redazione} & \ACapoRedazione{} \\
-				\textbf{Verifica} & \Verifica{} \\ 
-				\textbf{Approvazione} & \Approvazione{} \\
+				\textbf{Owner} & \Owner{} \\
+				\textbf{Redattori} & \Redattori{} \\
+				\textbf{Verificatori} & \Verificatori{} \\
 				\textbf{Uso} & \Uso \\
 				\textbf{Distribuzione} & \Distribuzione{}
 			\end{tabular}
@@ -68,12 +69,11 @@
   }
 
   \rhead{
-  	\Mail{}
   }
 
 
   \lfoot{ %piè di pagina a sx
-    \Titolo{} \ - \textit{\Gruppo{}}
+    \Titolo{} \ - \textit{\Versionedoc{}}
   }
   \rfoot{Pagina \thepage{} di \pageref{LastPage}} %es: pag: 4 di 10
 
