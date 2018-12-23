@@ -1,0 +1,95 @@
+\documentclass[a4paper, oneside, openany, dvipsnames, table]{article}
+\usepackage{../../template/SWEightStyle}
+\usepackage{ltablex}
+\usepackage{tabularx}
+\usepackage{pdfpages}
+\usepackage{svg}
+\usepackage{eurosym}
+\usepackage{cleveref}
+
+
+\setcounter{secnumdepth}{3}
+
+
+\input{comandi.tex}
+
+\begin{document}
+\copertina{}
+
+\input{RegistroModifiche.tex}
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introduzione}
+	\subsection{Scopo del documento}
+		\input{Introduzione/scopo_documento.tex}
+	\subsection{Scopo del prodotto}
+		\input{Introduzione/scopo_prodotto.tex}
+	\subsection{Glossario}
+		\input{Introduzione/glossario.tex}
+	\subsection{Riferimenti}
+		\subsubsection{Riferimenti normativi}
+			\input{Introduzione/Riferimenti/riferimenti_normativi.tex}
+		\subsubsection{Riferimenti informativi}
+		\label{sec:RifInf}
+			\input{Introduzione/Riferimenti/riferimenti_informativi.tex}
+	\subsection{Scadenze}
+		\input{Introduzione/scadenze.tex}
+\newpage
+\section{Analisi dei rischi}
+	\input{Analisi_dei_Rischi/introduzione.tex}
+	\newpage
+	\input{Analisi_dei_Rischi/tabella_rischi.tex}
+\newpage
+\section{Modelli di sviluppo}
+	\input{Modelli_di_Sviluppo/introduzione.tex}
+	\subsection{Motivazioni}
+		\input{Modelli_di_Sviluppo/modello_incrementale.tex}
+\newpage
+\section{Pianificazione}
+	\label{sec:Pian}
+	\input{Pianificazione/introduzione.tex}
+	\newpage	
+	\subsection{Analisi}
+		\input{Pianificazione/Analisi.tex}
+	\newpage	
+	\subsection{Consolidamento}
+		\input{Pianificazione/Consolidamento.tex}
+	\newpage
+	\subsection{Progettazione Architetturale}
+		\input{Pianificazione/Progettazione.tex}
+	\newpage
+	\subsection{Pianificazione di Dettaglio e Codifica}
+		\input{Pianificazione/Codifica.tex}
+	\newpage
+	\subsection{Verifica e Validazione}
+		\input{Pianificazione/Verifica_e_Validazione.tex}
+\newpage
+\section{Preventivo}
+	\input{Preventivo/introduzione.tex}
+	\newpage
+	\subsection{Analisi}
+	    \input{Preventivo/Analisi.tex}
+	\newpage	
+	\subsection{Consolidamento}
+	    \input{Preventivo/Consolidamento.tex}
+	\newpage
+	\subsection{Progettazione Architetturale}
+	    \input{Preventivo/Progettazione.tex}
+	\newpage
+	\subsection{Progettazione di Dettaglio e Codifica}
+	    \input{Preventivo/Codifica.tex}
+	\newpage
+	\subsection{Verifica e Validazione}
+	    \input{Preventivo/Verifica_e_Validazione.tex}
+	\newpage
+	\subsection{Totale con Investimento}
+	    \input{Preventivo/Tot_Investimento.tex}
+	\newpage
+	\subsection{Totale Rendicontato}
+	    \input{Preventivo/Tot_Rendicontato.tex}	
+\newpage
+\section{Consuntivo e preventivo a finire}
+
+\end{document}
