@@ -1,6 +1,8 @@
 %generare il pdf con il comando: pdflatex main.tex
 \documentclass[a4paper, oneside, openany, dvipsnames, table]{article}
 \usepackage{../template/SWEightStyle}
+\usepackage{cleveref}
+
 \input{comandi.tex}
 
 \begin{document}
@@ -9,8 +11,6 @@
 \newpage
 \tableofcontents
 \newpage
-
-
 \section{Introduzione}
 	\subsection{Scopo del documento}
 		\input{sez/Introduzione/scopo_documento.tex}
@@ -25,11 +25,14 @@
 			\input{sez/Introduzione/riferimenti_informativi.tex}
 	\newpage
 \section{Strategie di verifica}
+	\input{sez/Strategie/introduzione.tex}
 	\subsection{Obiettivi di qualità}
 		\subsubsection{Qualità di processo}
+			\input{sez/Strategie/obiettivi/processi.tex}
 		\subsubsection{Qualità di prodotto}
-		\subsubsection{Organizzazione????}
-		\subsubsection{Pianficazione strategica temporale?????}
+			\input{sez/Strategie/obiettivi/prodotto.tex}
+	\subsection{Organizzazione????}
+		\subsection{Pianficazione strategica temporale?????}
 	\subsection{Risorse}
 	\subsection{Responsabilità}
 	\subsection{Misure e metriche}
@@ -38,6 +41,14 @@
 		\subsubsection{Metriche software}
 \section{Gestione amministrativa della revisione}
 
+
+\appendix
+\addcontentsline{toc}{part}{Appendici}
+\section{Qualità}
+	\subsection{SPICE}
+		\label{app:SPICE}
+	\subsection{ISO/IEC 9126}
+		\label{app:ISO/IEC 9126}
 \section{Appendice - Esito Verifica}
 
 \end{document}
