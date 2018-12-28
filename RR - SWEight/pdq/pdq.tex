@@ -2,6 +2,7 @@
 \documentclass[a4paper, oneside, openany, dvipsnames, table]{article}
 \usepackage{../template/SWEightStyle}
 \usepackage{cleveref}
+\usepackage{enumitem}
 
 \input{comandi.tex}
 
@@ -39,16 +40,22 @@
 		\subsubsection{Metriche processi}
 		\subsubsection{Metriche documenti}
 		\subsubsection{Metriche software}
+			\label{sec:metriche}
 \section{Gestione amministrativa della revisione}
 
 
 \appendix
 \addcontentsline{toc}{part}{Appendici}
+\newpage
 \section{Qualità}
 	\subsection{SPICE}
 		\label{app:SPICE}
+		\input{sez/App_Qualita/SPICE.tex}
 	\subsection{ISO/IEC 9126}
 		\label{app:ISO/IEC 9126}
+		\input{sez/App_Qualita/9126.tex}
+\newpage
 \section{Appendice - Esito Verifica}
+	\label{app:misure}
 
 \end{document}
