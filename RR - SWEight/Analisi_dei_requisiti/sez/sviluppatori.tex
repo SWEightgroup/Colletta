@@ -3,8 +3,8 @@
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: Lo sviluppatore visualizza un elenco di frasi accompagnate dalla data di creazione e dall’autore ordinate cronologicamente;
-\item[•]\textbf{Precondizione}:  L'amministratore ha approvato l’utenza dello sviluppatore e lo sviluppatore si è autenticato nel sistema.
-\item[•]\textbf{Postcondizione}: 
+\item[•]\textbf{Precondizione}:  L'amministratore ha approvato l'utenza dello sviluppatore e lo sviluppatore si è autenticato nel sistema.
+\item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza l'elenco delle preposizioni ordinate cronologicamente;
 \item[•]\textbf{Flusso degli eventi principale}: Lo sviluppatore ha selezionato la voce relativa alla pagina contenente l’elenco delle frasi e ne visualizza il contenuto; 
 \end{itemize}
 \subsection{UC 4.2 - Filtraggio dei dati}
@@ -13,6 +13,11 @@
 \includegraphics[width=17cm]{img/UC420.png} 
 \caption{Caso d'uso 4.2}\label{fig:420}
 \end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm]{img/UC426.png} 
+\caption{Caso d'uso 4.2.6 relativo alla rimozione dei filtri}\label{fig:426}
+\end{figure}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: Lo sviluppatore applica dei filtri ai dati, ottenendo solo quelli d'interesse;
@@ -20,15 +25,18 @@
 \item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza i dati che rispettano i filtri scelti;
 \item[•]\textbf{Flusso degli eventi principale}:
 \begin{enumerate}
-\item UC 4.2.1 Inserimento filtro periodo temporale;
-\item UC 4.2.2 Inserimento filtro fonte\ped{G};
-\item UC 4.2.3 Visualizzazione storico frase;
-\item UC 4.2.4 Selezione filtro lingue;
-\item UC 4.2.5 Ricerca parole chiave.
+\item UC 4.2.1 - Inserimento filtro periodo temporale;
+\item UC 4.2.2 - Inserimento filtro fonte\ped{G};
+\item UC 4.2.3 - Selezione filtro lingue;
+\item UC 4.2.4 - Ricerca parole chiave.
+\end{enumerate}
+\item[•]\textbf{Estensioni}:
+\begin{enumerate}
+	\item UC 4.2.6 - Rimozione filtro;
 \end{enumerate}
 \item[•]\textbf{Inclusioni}:
 \begin{enumerate}
-\item UC 4.2.6 - Visualizzazione dati filtrati
+\item UC 4.2.5 - Visualizzazione dati filtrati
 \end{enumerate}
 \end{itemize}
 \subsubsection{UC 4.2.1 - Inserimento filtro periodo temporale}
@@ -39,16 +47,17 @@
 \item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza le frasi in base al filtraggio inserito;
 \item[•]\textbf{Flusso degli eventi principale}: 
 \begin{enumerate}
-\item Scelta data inizio periodo
-\item Scelta data fine periodo
+\item Scelta data inizio periodo;
+\item Scelta data fine periodo;
 \end{enumerate}
 \item[•]\textbf{Estensioni}: 
 \begin{enumerate}
 	\item Visualizzazione messaggio di errore nel caso si scegliesse una data non idonea;
+	\item UC 4.2.6 - Rimozione filtro;
 \end{enumerate}
 \item[•]\textbf{Inclusioni}:
 \begin{enumerate}
-\item UC 4.2.6 - Visualizzazione dati filtrati
+\item UC 4.2.5 - Visualizzazione dati filtrati.
 \end{enumerate}
 \end{itemize}
 
@@ -59,9 +68,13 @@
 \item[•]\textbf{Precondizione}: Lo sviluppatore visualizza le proposizioni in base ai filtri stabiliti;
 \item[•]\textbf{Postcondizione}: Lo sviluppatore ha impostato i valori del filtro fonte;
 \item[•]\textbf{Flusso degli eventi principale}: Lo sviluppatore seleziona da un elenco le fonti di cui è interessato visualizzare i dati;
+\item[•]\textbf{Estensioni}: 
+\begin{enumerate}
+	\item UC 4.2.6 - Rimozione filtro;
+\end{enumerate}
 \item[•]\textbf{Inclusioni}:
 \begin{enumerate}
-\item UC 4.2.6 - Visualizzazione dati filtrati
+\item UC 4.2.5 - Visualizzazione dati filtrati.
 \end{enumerate}
 \end{itemize}
 
@@ -72,9 +85,13 @@
 \item[•]\textbf{Precondizione}: Lo sviluppatore visualizza le proposizioni in base ai filtri stabiliti;
 \item[•]\textbf{Postcondizione}: Lo sviluppatore ha stabilito i valori di filtraggio relativi alle lingue;
 \item[•]\textbf{Flusso degli eventi principale}: Lo sviluppatore seleziona da un elenco le lingue di cui è interessato vedere le proposizioni memorizzate;
+\item[•]\textbf{Estensioni}: 
+\begin{enumerate}
+	\item UC 4.2.6 - Rimozione filtro;
+\end{enumerate}
 \item[•]\textbf{Inclusioni}:
 \begin{enumerate}
-\item UC 4.2.6 - Visualizzazione dati filtrati
+\item UC 4.2.5 - Visualizzazione dati filtrati.
 \end{enumerate}
 \end{itemize}
 
@@ -88,17 +105,107 @@
 \item[•]\textbf{Estensioni}: 
 \begin{enumerate}
 	\item Visualizzazione messaggio di errore nel caso venga inserito un input non consentito;
+	\item UC 4.2.6 - Rimozione filtro;
 \end{enumerate}
 \item[•]\textbf{Inclusioni}:
 \begin{enumerate}
-\item UC 4.2.6 - Visualizzazione dati filtrati
+\item UC 4.2.5 - Visualizzazione dati filtrati
 \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC 4.2.6 - Visualizzazione dati filtrati}
+\subsubsection{UC 4.2.5 - Visualizzazione dati filtrati}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: Selezionato uno o più filtri, i dati vengono mostrati secondo i vincoli inseriti;
 \item[•]\textbf{Precondizione}: I valori di uno o più filtri sono stati inseriti;
 \item[•]\textbf{Postcondizione}: I dati mostrati rispettano tali vincoli;
+\end{itemize}
+
+\subsubsection{UC 4.2.6 - Rimozione filtro}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore cancella il valore del filtro selezionato.
+\item[•]\textbf{Precondizione}: Il filtro contiene un valore ed è applicato un filtraggio ai dati rispettando le condizioni di tale filtro;
+\item[•]\textbf{Postcondizione}: Il filtro è stato rimosso pertanto i dati visualizzati non rispetteranno più tale vincolo.
+\item[•]\textbf{Flusso degli eventi}: Lo sviluppatore seleziona il filtro e lo rimuove.
+ \end{itemize}
+  
+\subsection{UC 4.3 - Visualizzazione storico frase}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore seleziona una frase dall'elenco e ne visualizza lo storico contenente la correzione fornita dal sistema automatico, ed eventualmente quelle redatte anche da insegnanti diversi;
+\item[•]\textbf{Precondizione}:  Lo sviluppatore visualizza le frasi in base ai filtri stabiliti;
+\item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza tutte le correzioni della frase;
+\item[•]\textbf{Flusso degli eventi principale}: Lo sviluppatore seleziona la frase e appare lo storico della frase.
+\end{itemize}
+
+\subsection{UC 4.4 - Scaricamento dati}
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm]{img/UC440.png} 
+\caption{Caso d'uso 4.4}\label{fig:440}
+\end{figure}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore esegue il download dei dati d'interesse;
+\item[•]\textbf{Precondizione}: Lo sviluppatore visualizza i dati in ordine cronologico, e nel caso siano applicati filtri, vede solo i dati che rispettano tali filtri;
+\item[•]\textbf{Postcondizione}:  Lo sviluppatore scarica un file contenente i dati visualizzati nel formato scelto;
+\item[•]\textbf{Flusso degli eventi principale}:
+\begin{enumerate}
+\item UC 4.4.1 - Scelta contenuti download;
+\item UC 4.4.2 - Scelta formato file;
+\item UC 4.4.3 - Scelta formato compressione;
+\item UC 4.4.4 - Ottenimento file.
+\end{enumerate}
+\end{itemize}
+
+\subsubsection{UC 4.4.1 - Scelta contenuti download}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore sceglie gli elementi di interesse che vuole siano scaricati una volta completata la procedura di download;
+\item[•]\textbf{Precondizione}: Lo sviluppatore visualizza le frasi in base ai filtri stabiliti;
+\item[•]\textbf{Postcondizione}:  Lo sviluppatore visualizza i contenuti che intende scaricare;
+\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona dall'elenco, eventualmente filtrato, delle frasi i dati d'interesse, come ad esempio i soli docenti di italiano di cui vuole scaricare i dati.
+\end{itemize}
+
+\subsubsection{UC 4.4.2 - Scelta formato file}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}:  Lo sviluppatore seleziona da un elenco prestabilito il formato dei file che intende scaricare;
+\item[•]\textbf{Precondizione}: Lo sviluppatore non ha stabilito il formato dei file che intende scaricare;
+\item[•]\textbf{Postcondizione}:  Lo sviluppatore ha stabilito il formato dei file che intende scaricare;
+\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona dall'elenco prestabilito un'opzione che determina il formato dei file che contengono i dati precedentemente scelti.
+\end{itemize}
+
+\subsubsection{UC 4.4.2 - Scelta formato archivio}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore seleziona da un elenco prestabilito il formato dell'archivio compresso con cui vuole che i dati d'interesse siano compressi;
+\item[•]\textbf{Precondizione}: Il formato dell'archivio contenente i dati d'interesse non è definito;
+\item[•]\textbf{Postcondizione}: Il formato dell'archivio contenente i dati d'interesse è stato definito;
+\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona dall'elenco prestabilito un'opzione che determina il formato dell'archivio che contiene i file relativi ai dati precedentemente scelti.
+\end{itemize}
+
+\subsubsection{UC 4.4.2 - Ottenimento file}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore riceve un archivio dati contenente i dati, salvati in file aventi estensione scelta dal programmatore;
+\item[•]\textbf{Precondizione}: I contenuti di interesse, il formato del file e il formato dell'archivio sono stati scelti;
+\item[•]\textbf{Postcondizione}: Lo sviluppatore ottiene il file richiesto e si procede al download di questo;
+\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona dall'elenco prestabilito un'opzione che determina il formato dell'archivio che contiene i file relativi ai dati precedentemente scelti.
+\end{itemize}
+
+\subsection{UC 4.6 - Accesso ai modelli}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore accede al modello realizzato automaticamente per lo svolgimento degli esercizi;
+\item[•]\textbf{Precondizione}: Lo sviluppatore visualizza i modelli a disposizione;
+\item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza il modello scelto;
+\item[•]\textbf{Flusso degli eventi principale}:  
+\begin{enumerate}
+	\item Visualizzazione elenco modelli
+	\item Selezione del modello
+	\item Visualizzazione contenuto del modello
+
+\end{enumerate}
 \end{itemize}
