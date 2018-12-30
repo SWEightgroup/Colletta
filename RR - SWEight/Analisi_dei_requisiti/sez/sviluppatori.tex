@@ -1,0 +1,51 @@
+\section{Sviluppatori}
+\subsection{UC 4.1 - Visualizzazione elenco frasi}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore visualizza un elenco di frasi accompagnate dalla data di creazione e dall’autore ordinate cronologicamente;
+\item[•]\textbf{Precondizione}:  L'amministratore ha approvato l’utenza dello sviluppatore e lo sviluppatore si è autenticato nel sistema.
+\item[•]\textbf{Postcondizione}: 
+\item[•]\textbf{Flusso degli eventi principale}: Lo sviluppatore ha selezionato la voce relativa alla pagina contenente l’elenco delle frasi e ne visualizza il contenuto; 
+\end{itemize}
+\subsection{UC 4.2 - Filtraggio dei dati}
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm]{img/UC420.png} 
+\caption{Caso d'uso 4.2}\label{fig:420}
+\end{figure}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore applica dei filtri ai dati, ottenendo solo quelli d’interesse;
+\item[•]\textbf{Precondizione}: Lo sviluppatore visualizza le proposizioni in ordine cronologico;
+\item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza i dati che rispettano i filtri scelti;
+\item[•]\textbf{Flusso degli eventi principale}:
+\begin{enumerate}
+\item UC 4.2.1 Inserimento filtro periodo temporale;
+\item UC 4.2.2 Inserimento filtro fonte\ped{G};
+\item UC 4.2.3 Visualizzazione storico frase;
+\item UC 4.2.4 Selezione filtro lingue;
+\item UC 4.2.5 Ricerca parole chiave.
+\end{enumerate}
+\item[•]\textbf{Inclusioni}:
+\begin{enumerate}
+\item UC 4.2.6 - Visualizzazione dati filtrati
+\end{enumerate}
+\end{itemize}
+\subsubsection{UC 4.2.1 - Inserimento filtro periodo temporale}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}:Lo sviluppatore seleziona un periodo temporale, ottenendo i dati salvati in un determinato arco di tempo;
+\item[•]\textbf{Precondizione}: Lo sviluppatore visualizza le proposizioni in base ai filtri stabiliti;
+\item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza le frasi in base al filtraggio inserito;
+\item[•]\textbf{Flusso degli eventi principale}: Lo sviluppatore inserisce un arco temporale di cui è interessato conoscerne i dati aggiunti.
+\item[•]\textbf{Estensioni}: 
+\begin{enumerate}
+	\item Visualizzazione messaggio di errore nel caso si scegliesse una data non idonea.
+\end{enumerate}
+\item[•]\textbf{Inclusioni}:
+\begin{enumerate}
+\item UC 4.2.6 - Visualizzazione dati filtrati
+\end{enumerate}
+\end{itemize}
+
+\subsubsection{UC 4.2.1 - Inserimento filtro periodo temporale}
