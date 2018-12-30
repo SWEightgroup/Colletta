@@ -3,8 +3,12 @@
 \usepackage{../template/SWEightStyle}
 \usepackage{cleveref}
 \usepackage{enumitem}
+\usepackage{amsmath}
 
 \input{comandi.tex}
+
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
 
 \begin{document}
 \copertina{}
@@ -13,6 +17,11 @@
 \tableofcontents
 \newpage
 \section{Introduzione}
+========================================================\\
+- CITARE IN QUALCHE MODO L'INCREMENTALITA' DEL DOCUMENTO\\
+- RIEMPIRE SEZIONI VUOTE\\
+- PREDISPORRE ALMENO SEZIONE TEST\\
+=========================================================\\
 	\subsection{Scopo del documento}
 		\input{sez/Introduzione/scopo_documento.tex}
 	\subsection{Scopo del prodotto}
@@ -37,14 +46,16 @@
 	\subsection{Risorse}
 	\subsection{Responsabilità}
 	\subsection{Misure e metriche}
+	\label{sec:metriche}
 		\input{sez/Strategie/misure_metriche/introduzione.tex}
 		\subsubsection{Metriche processi}
-				\input{sez/Strategie/misure_metriche/processi.tex}
+			\input{sez/Strategie/misure_metriche/processi.tex}
 		\subsubsection{Metriche documenti}
-				\input{sez/Strategie/misure_metriche/documenti.tex}
+			\input{sez/Strategie/misure_metriche/documenti.tex}
 		\subsubsection{Metriche software}
-				\input{sez/Strategie/misure_metriche/software.tex}
-			\label{sec:metriche}
+			\input{sez/Strategie/misure_metriche/software.tex}
+		\subsubsection{Riassunto metriche}
+			\input{sez/Strategie/misure_metriche/tabella_metriche.tex}
 \newpage
 \section{Gestione amministrativa della revisione}
 
