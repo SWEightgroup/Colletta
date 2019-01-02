@@ -1,0 +1,118 @@
+\section{Processi primari}
+\subsection{Fornitura}
+In questa sezione vengono descritte le norme che il team deve rispettare al fine di diventare fornitori nei confronti della proponente nell’ambito della progettazione, sviluppo e validazione del prodotto.
+\subsubsection{Studio di fattibilità}
+In seguito alla pubblicazione dei capitolati è compito del Responsabile di Progetto convocare l’intero team al fine di discutere degli aspetti positivi e negativi dei vari capitolati.
+
+Successivamente, gli Analisti devono effettuare lo Studio di Fattibilità per ogni capitolato, attenendosi anche a quello emerso dalla riunione precedente; per ogni capitolato deve essere scritto un documento contenente:
+\begin{itemize}
+\item \textbf{Informazioni sul capitolato};
+\item \textbf{Descrizione}: Una sintesi del prodotto da realizzare secondo le richieste del capitolato;
+\item \textbf{Dominio applicativo}: contesto in cui l’applicazione opera;
+\item \textbf{Dominio tecnologico}: rappresenta il dominio tecnologico richiesto dal capitolato;
+\item \textbf{Considerazioni del gruppo}: racchiude tutte le valutazioni dei membri del gruppo che hanno portato ad una accettazione o ad un rifiuto;
+\item \textbf{Valutazione finale}: descrive le motivazioni decisive che hanno portato il gruppo a scegliere o a rigettare il capitolato;
+\end{itemize}
+
+%I documenti devono essere scritti sfruttando il linguaggio di %markup\ped{G} \LaTeX utilizzando il modello che lo stile del %documento fonrnitoli dall'Amministratore.
+
+Infine, questi documenti devono essere racchiusi in un unico documento: Studio di Fattibilità v 1.0.0, che verrà sottoposto a verifica dai componenti preposti a tale compito.
+
+\subsection{Sviluppo}
+\subsubsection{Analisi dei requisiti}
+Gli Analisti devono redigere l'Analisi dei Requisiti al fine di:
+\begin{itemize}
+    \item[•] Fornire ai progettisti riferimenti affidabili e precisi;
+    \item[•] Facilitare le revisioni del codice;
+    \item[•] Descrivere lo scopo del progetto;
+    \item[•] Fissare le funzionalità ed i requisiti concordati con il proponente;
+    \item[•] Fornire ai Verificatori riferimenti per l’attività di test circa i casi d’uso principali e alternativi.
+\end{itemize}
+
+Deve essere redatto, sempre dagli stessi, un documento che elenchi i requisiti, classificandoli come di seguito riportato.
+
+I vari requisiti\ped{G} potranno provenire dalle seguenti fonti:
+\begin{itemize}
+    \item[•] \textbf{Capitolato}\ped{G}: il requisito è stato scritto esplicitamente nel documento fornito dalla proponente;
+    \item[•] \textbf{Verbali interni e studio di fattibilità}: Il requisito è emerso durante la discussione del capitolato tra gli analisti;
+    \item[•] \textbf{Casi d’uso}\ped{G}: il requisito è il risultato dell’analisi di uno o più casi d’uso.
+\end{itemize}
+
+I vari requisiti devono essere classificati secondo la seguente convenzione\ped{G}:
+\begin{center}
+R-[Importanza][Tipo][Identificativo]
+\end{center}
+Dove:
+\begin{itemize}
+\item[•] Importanza, indica se il requisito è:
+\begin{itemize}
+\item[1]: {Requisito obbligatorio}\ped;
+\item[2]: {Requisito desiderabile}\ped;
+\item[3]: {Requisito opzionale}\ped;
+\end{itemize}
+\item[•] Tipo, indica se il requisito è:
+\begin{itemize}
+\item[F]: {Requisito funzionale}\ped;
+\item[Q]: {Requisito di qualità}\ped;
+\item[P]: {Requisito prestazionale}\ped;
+\item[V]: {Requisito di vincolo}\ped;
+\end{itemize}
+\item[•] Indentificativo: ovvero un codice univoco che contraddistingue il requisito.
+\end{itemize}
+Ogni identificativo di requisito \textbf{non} deve essere più modificato nel tempo, per evitare incongruenze tra i documenti.
+Deve essere realizzata una tabella che classifichi tutti i requisiti, incorporando una descrizione e la provenienza del requisito, indicata con il termine fonte.
+Segue un esempio:
+\begin{table}[H]
+\centering
+\begin{tabularx}{\linewidth}{| c | c | c | c | Z |}
+\hline
+\textbf{Identificativo} & \textbf{Importanza} & \textbf{Tipo} & \textbf{Fonte} & \textbf{Descrizione} \\
+\hline
+\textbf{3V001} & Requisito obbligatorio & Di vincolo & Capitolato & Gli sviluppatori devono poter accedere ai dati raccolti gratuitamente \\
+\hline
+\end{tabularx}
+\end{table}
+\subsubsection{Casi d'uso}
+Dopo la stesura dei requisiti, gli Analisti devono analizzare tutti i casi d’uso (d'ora in poi UC); ognuno di essi deve essere composto da un codice identificativo univoco, eventuali diagrammi UML e infine dalla sua descrizione testuale. In particolare, per quanto riguarda l'identificazione si procedrà come descritto di seguito:
+\begin{center}
+UC[\texttt{Codice identificativo}]
+\end{center}
+Dove \texttt{Codice identificativo} consiste in codice numerico gerarchico\ped{G} e univoco.
+Nel caso si trattasse di un {sottocaso d'uso}\ped{G}, pertanto generato da un caso d'uso generico, si utilizzerà il seguente costrutto:
+\begin{center}
+$\text{UC}\underbrace{[\texttt{Codice identificativo UC generico}].[\texttt{Codice indentificativo UC specifico}]}_{\text{Codice   identificativo}}$
+\end{center}
+\newline
+L'utilizzo del "." (punto) viene utilizzata per determinare la profondità della gerarchia dei casi d'uso creatasi.
+Per quanto riguarda la descrizione testuale dei casi d'uso i membri del gruppo interessati seguiranno il seguente modello:
+\begin{framed}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{example-image-b}
+\caption{Caso d'uso Codice univoco}
+\end{figure}
+UC \texttt{Codice univoco} - Titolo del caso d'uso, la cui lunghezza deve essere ristretta e utiizzare verbi all'infinito
+\begin{itemize}
+\item[•] Attore: gli attori coinvolto nell'interazione con il sistema;
+\item[•] Precondizione: Definisce lo stato del sistema, pertanto anche le condizioni che devono essere vere, prima dell'esecuzione del caso d'uso;
+\item[•] Flusso degli eventi: Il sussegguirsi di eventi che conducono alla postcondizione. Deve essere realizzato con un elenco numerato, facendo riferimento eventualmente ad ulteriori casi d'uso, oppure con una breve descrizione testuale;
+\item[•] Postcondizione: Definisce lo stato del sistema dopo il verificarsi del caso d'uso; 
+\item[•] Estensioni: Eventuali estensioni coinvolte;
+\item[•] Inclusioni: Eventuali inclusioni coinvolte;
+\end{itemize}
+\end{framed}
+\paragraph{Diagrammi UML}
+Per la realizzazione dei diagrammi UML si fa uso del software Astah, selezionando la voce "Use case diagram". 
+I casi d'uso verranno esportati come immagini secondo le specifiche sotto riportate. Per esportare i diagrammi in Astah, dopo aver completato il caso d'uso, selezionare: $Tools \rightarrow Export\ image \rightarrow Current\ Diagram \rightarrow PNG$.
+L'immagine rappresentante l'UML deve avere le seguenti caratteristiche:
+\begin{itemize}
+\item Nome file: UC\texttt{Codice Identificativo}, privo di "."\\
+Ad esempio: UC4.2.png $\rightarrow$ UC42.png;
+\item Formato file immagine \texttt{png};
+\item Massima larghezza 17cm;
+\item Didascalia figura con codice caso d'uso;
+\item Il file deve essere salvato all'interno del folder img, destinato alle immagini.
+\end{itemize}
+
+
+
