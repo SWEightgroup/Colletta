@@ -17,11 +17,6 @@
 \tableofcontents
 \newpage
 \section{Introduzione}
-========================================================\\
-- CITARE IN QUALCHE MODO L'INCREMENTALITA' DEL DOCUMENTO\\
-- RIEMPIRE SEZIONI VUOTE\\
-- PREDISPORRE ALMENO SEZIONE TEST\\
-=========================================================\\
 	\subsection{Scopo del documento}
 		\input{sez/Introduzione/scopo_documento.tex}
 	\subsection{Scopo del prodotto}
@@ -33,6 +28,8 @@
 			\input{sez/Introduzione/riferimenti_normativi.tex}
 		\subsubsection{Riferimenti informativi}
 			\input{sez/Introduzione/riferimenti_informativi.tex}
+	\subsection{Note}
+			\input{sez/Introduzione/note.tex}
 	\newpage
 \section{Strategie di verifica}
 	\input{sez/Strategie/introduzione.tex}
@@ -41,10 +38,13 @@
 			\input{sez/Strategie/obiettivi/processi.tex}
 		\subsubsection{Qualità di prodotto}
 			\input{sez/Strategie/obiettivi/prodotto.tex}
-	\subsection{Organizzazione????}
-		\subsection{Pianficazione strategica temporale?????}
-	\subsection{Risorse}
 	\subsection{Responsabilità}
+		\input{sez/Strategie/responsabilita.tex}
+	\subsection{Pianficazione strategica temporale}
+		\subsubsection{Strategia}
+			\input{sez/Strategie/pianificazione/strategia.tex}
+		\subsubsection{Tempistiche}
+			\input{sez/Strategie/pianificazione/tempistiche.tex}
 	\subsection{Misure e metriche}
 	\label{sec:metriche}
 		\input{sez/Strategie/misure_metriche/introduzione.tex}
@@ -56,12 +56,20 @@
 			\input{sez/Strategie/misure_metriche/software.tex}
 		\subsubsection{Riassunto metriche}
 			\input{sez/Strategie/misure_metriche/tabella_metriche.tex}
-\newpage
-\section{Gestione amministrativa della revisione}
 
 
 \appendix
 \addcontentsline{toc}{part}{Appendici}
+
+\newpage
+\section{Esito Verifica}
+	\label{app:misure}
+	
+\newpage
+\section{Pianificazione Test}
+	\label{app:misure}
+	\input{sez/test/introduzione.tex}
+	
 \newpage
 \section{Qualità}
 	\subsection{SPICE}
@@ -70,8 +78,5 @@
 	\subsection{ISO/IEC 9126}
 		\label{app:ISO/IEC 9126}
 		\input{sez/App_Qualita/9126.tex}
-\newpage
-\section{Appendice - Esito Verifica}
-	\label{app:misure}
 
 \end{document}
