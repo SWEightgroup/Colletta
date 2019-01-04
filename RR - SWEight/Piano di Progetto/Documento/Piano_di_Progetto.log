@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.27)  4 JAN 2019 17:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.27)  4 JAN 2019 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1475,7 +1475,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-<../../template/img/logoSWEight.png, id=175, 138.7584pt x 96.36pt>
+<../../template/img/logoSWEight.png, id=183, 138.7584pt x 96.36pt>
 File: ../../template/img/logoSWEight.png Graphic file (type png)
 <use ../../template/img/logoSWEight.png>
 Package pdftex.def Info: ../../template/img/logoSWEight.png  used on input line
@@ -1666,7 +1666,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9] (./Pianificazione/Analisi.tex
-<Pianificazione/Analisi_Gantt.png, id=296, 1907.125pt x 608.2725pt>
+<Pianificazione/Analisi_Gantt.png, id=307, 1907.125pt x 608.2725pt>
 File: Pianificazione/Analisi_Gantt.png Graphic file (type png)
 <use Pianificazione/Analisi_Gantt.png>
 Package pdftex.def Info: Pianificazione/Analisi_Gantt.png  used on input line 2
@@ -1686,7 +1686,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10 <./Pianificazione/Analisi_Gantt.png>] (./Pianificazione/Consolidamento.tex
-<Pianificazione/Consolidamento_Gantt.png, id=304, 986.68625pt x 366.36874pt>
+<Pianificazione/Consolidamento_Gantt.png, id=314, 986.68625pt x 366.36874pt>
 File: Pianificazione/Consolidamento_Gantt.png Graphic file (type png)
 <use Pianificazione/Consolidamento_Gantt.png>
 Package pdftex.def Info: Pianificazione/Consolidamento_Gantt.png  used on input
@@ -1706,7 +1706,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [11 <./Pianificazione/Consolidamento_Gantt.png>]
 (./Pianificazione/Progettazione.tex
-<Pianificazione/Progettazione_Architetturale_Gantt.png, id=311, 1906.12125pt x 
+<Pianificazione/Progettazione_Architetturale_Gantt.png, id=321, 1906.12125pt x 
 204.765pt>
 File: Pianificazione/Progettazione_Architetturale_Gantt.png Graphic file (type 
 png)
@@ -1729,7 +1729,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [12 <./Pianificazione/Progettazione_Architetturale_Gantt.png>]
 (./Pianificazione/Codifica.tex
-<Pianificazione/Progettazione_Dettaglio_Codififca.png, id=319, 1895.08pt x 324.
+<Pianificazione/Progettazione_Dettaglio_Codififca.png, id=329, 1895.08pt x 324.
 21124pt>
 File: Pianificazione/Progettazione_Dettaglio_Codififca.png Graphic file (type p
 ng)
@@ -1752,7 +1752,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [13 <./Pianificazione/Progettazione_Dettaglio_Codififca.png>]
 (./Pianificazione/Verifica_e_Validazione.tex
-<Pianificazione/Verifica_Validazione.png, id=326, 1677.26625pt x 164.615pt>
+<Pianificazione/Verifica_Validazione.png, id=336, 1677.26625pt x 164.615pt>
 File: Pianificazione/Verifica_Validazione.png Graphic file (type png)
 <use Pianificazione/Verifica_Validazione.png>
 Package pdftex.def Info: Pianificazione/Verifica_Validazione.png  used on input
@@ -1789,7 +1789,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [15] (./Preventivo/Analisi.tex
-<Preventivo/grafici/AN1.pdf, id=340, 602.25pt x 429.605pt>
+<Preventivo/grafici/AN1.pdf, id=350, 602.25pt x 429.605pt>
 File: Preventivo/grafici/AN1.pdf Graphic file (type pdf)
 <use Preventivo/grafici/AN1.pdf>
 Package pdftex.def Info: Preventivo/grafici/AN1.pdf  used on input line 28.
@@ -1807,7 +1807,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [16 <./Preventivo/grafici/AN1.pdf>]
-<Preventivo/grafici/AN2.pdf, id=357, 602.25pt x 372.39125pt>
+<Preventivo/grafici/AN2.pdf, id=367, 602.25pt x 372.39125pt>
 File: Preventivo/grafici/AN2.pdf Graphic file (type pdf)
 <use Preventivo/grafici/AN2.pdf>
 Package pdftex.def Info: Preventivo/grafici/AN2.pdf  used on input line 58.
@@ -1826,7 +1826,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [17 <./Preventivo/grafici/AN2.pdf>] (./Preventivo/Consolidamento.tex
-<Preventivo/grafici/CO1.pdf, id=374, 602.25pt x 439.6425pt>
+<Preventivo/grafici/CO1.pdf, id=384, 602.25pt x 439.6425pt>
 File: Preventivo/grafici/CO1.pdf Graphic file (type pdf)
 <use Preventivo/grafici/CO1.pdf>
 Package pdftex.def Info: Preventivo/grafici/CO1.pdf  used on input line 30.
@@ -1844,7 +1844,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [18 <./Preventivo/grafici/CO1.pdf>]
-<Preventivo/grafici/CO2.pdf, id=392, 602.25pt x 372.39125pt>
+<Preventivo/grafici/CO2.pdf, id=402, 602.25pt x 372.39125pt>
 File: Preventivo/grafici/CO2.pdf Graphic file (type pdf)
 <use Preventivo/grafici/CO2.pdf>
 Package pdftex.def Info: Preventivo/grafici/CO2.pdf  used on input line 60.
@@ -1863,7 +1863,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [19 <./Preventivo/grafici/CO2.pdf>] (./Preventivo/Progettazione.tex
-<Preventivo/grafici/PA1.pdf, id=407, 602.25pt x 439.6425pt>
+<Preventivo/grafici/PA1.pdf, id=417, 602.25pt x 439.6425pt>
 File: Preventivo/grafici/PA1.pdf Graphic file (type pdf)
 <use Preventivo/grafici/PA1.pdf>
 Package pdftex.def Info: Preventivo/grafici/PA1.pdf  used on input line 28.
@@ -1881,7 +1881,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [20 <./Preventivo/grafici/PA1.pdf>]
-<Preventivo/grafici/PA2.pdf, id=425, 602.25pt x 372.39125pt>
+<Preventivo/grafici/PA2.pdf, id=435, 602.25pt x 372.39125pt>
 File: Preventivo/grafici/PA2.pdf Graphic file (type pdf)
 <use Preventivo/grafici/PA2.pdf>
 Package pdftex.def Info: Preventivo/grafici/PA2.pdf  used on input line 58.
@@ -1900,7 +1900,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [21 <./Preventivo/grafici/PA2.pdf>] (./Preventivo/Codifica.tex
-<Preventivo/grafici/PC1.pdf, id=440, 602.25pt x 396.48125pt>
+<Preventivo/grafici/PC1.pdf, id=450, 602.25pt x 396.48125pt>
 File: Preventivo/grafici/PC1.pdf Graphic file (type pdf)
 <use Preventivo/grafici/PC1.pdf>
 Package pdftex.def Info: Preventivo/grafici/PC1.pdf  used on input line 28.
@@ -1918,7 +1918,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22 <./Preventivo/grafici/PC1.pdf>]
-<Preventivo/grafici/PC2.pdf, id=457, 602.25pt x 372.39125pt>
+<Preventivo/grafici/PC2.pdf, id=467, 602.25pt x 372.39125pt>
 File: Preventivo/grafici/PC2.pdf Graphic file (type pdf)
 <use Preventivo/grafici/PC2.pdf>
 Package pdftex.def Info: Preventivo/grafici/PC2.pdf  used on input line 58.
@@ -1937,7 +1937,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [23 <./Preventivo/grafici/PC2.pdf>] (./Preventivo/Verifica_e_Validazione.tex
-<Preventivo/grafici/VV1.pdf, id=472, 602.25pt x 442.65375pt>
+<Preventivo/grafici/VV1.pdf, id=482, 602.25pt x 442.65375pt>
 File: Preventivo/grafici/VV1.pdf Graphic file (type pdf)
 <use Preventivo/grafici/VV1.pdf>
 Package pdftex.def Info: Preventivo/grafici/VV1.pdf  used on input line 28.
@@ -1955,7 +1955,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [24 <./Preventivo/grafici/VV1.pdf>]
-<Preventivo/grafici/VV2.pdf, id=490, 602.25pt x 372.39125pt>
+<Preventivo/grafici/VV2.pdf, id=500, 602.25pt x 372.39125pt>
 File: Preventivo/grafici/VV2.pdf Graphic file (type pdf)
 <use Preventivo/grafici/VV2.pdf>
 Package pdftex.def Info: Preventivo/grafici/VV2.pdf  used on input line 58.
@@ -1974,7 +1974,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [25 <./Preventivo/grafici/VV2.pdf>] (./Preventivo/Tot_Investimento.tex
-<Preventivo/grafici/TI1.pdf, id=505, 602.25pt x 406.51875pt>
+<Preventivo/grafici/TI1.pdf, id=515, 602.25pt x 406.51875pt>
 File: Preventivo/grafici/TI1.pdf Graphic file (type pdf)
 <use Preventivo/grafici/TI1.pdf>
 Package pdftex.def Info: Preventivo/grafici/TI1.pdf  used on input line 29.
@@ -1992,7 +1992,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [26]
-<Preventivo/grafici/TI2.pdf, id=512, 602.25pt x 372.39125pt>
+<Preventivo/grafici/TI2.pdf, id=522, 602.25pt x 372.39125pt>
 File: Preventivo/grafici/TI2.pdf Graphic file (type pdf)
 <use Preventivo/grafici/TI2.pdf>
 Package pdftex.def Info: Preventivo/grafici/TI2.pdf  used on input line 60.
@@ -2023,7 +2023,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [28 <./Preventivo/grafici/TI2.pdf>] (./Preventivo/Tot_Rendicontato.tex
-<Preventivo/grafici/TR1.pdf, id=543, 602.25pt x 402.50375pt>
+<Preventivo/grafici/TR1.pdf, id=553, 602.25pt x 402.50375pt>
 File: Preventivo/grafici/TR1.pdf Graphic file (type pdf)
 <use Preventivo/grafici/TR1.pdf>
 Package pdftex.def Info: Preventivo/grafici/TR1.pdf  used on input line 26.
@@ -2041,7 +2041,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [29 <./Preventivo/grafici/TR1.pdf>]
-<Preventivo/grafici/TR2.pdf, id=560, 602.25pt x 372.39125pt>
+<Preventivo/grafici/TR2.pdf, id=570, 602.25pt x 372.39125pt>
 File: Preventivo/grafici/TR2.pdf Graphic file (type pdf)
 <use Preventivo/grafici/TR2.pdf>
 Package pdftex.def Info: Preventivo/grafici/TR2.pdf  used on input line 56.
@@ -2059,13 +2059,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30 <./Preventivo/grafici/TR2.pdf>] (./Consuntivo/Analisi.tex)
-(./Consuntivo/preventivo_finire.tex) 
+[30 <./Preventivo/grafici/TR2.pdf>] (./Consuntivo/Introduzione.tex)
+(./Consuntivo/Analisi_intro.tex) (./Consuntivo/Analisi.tex)
+(./Consuntivo/Analisi_oss.tex) (./Consuntivo/preventivo_finire.tex
+File: ../../template/img/logoSWEight.png Graphic file (type png)
+<use ../../template/img/logoSWEight.png>
+Package pdftex.def Info: ../../template/img/logoSWEight.png  used on input line
+ 22.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31]) 
 AED: lastpage setting LastPage
 File: ../../template/img/logoSWEight.png Graphic file (type png)
 <use ../../template/img/logoSWEight.png>
 Package pdftex.def Info: ../../template/img/logoSWEight.png  used on input line
- 99.
+ 104.
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2073,20 +2087,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
+[32]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
  (./Piano_di_Progetto.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 99.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 99.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 104.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
 Package rerunfilecheck Info: File `Piano_di_Progetto.out' has not changed.
-(rerunfilecheck)             Checksum: 33E8904A9A9CD3AE8B73279C09D91EE3;2922.
+(rerunfilecheck)             Checksum: E4BE182DB74249BA3F66EE1E5E0E8FBE;3065.
  ) 
 Here is how much of TeX's memory you used:
- 27738 strings out of 492982
- 518534 string characters out of 6134895
+ 27761 strings out of 492982
+ 519124 string characters out of 6134895
  703664 words of memory out of 5000000
- 30545 multiletter control sequences out of 15000+600000
+ 30556 multiletter control sequences out of 15000+600000
  48458 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,17n,124p,803b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2099,10 +2113,10 @@ sr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmtt10.pfb>
-Output written on Piano_di_Progetto.pdf (32 pages, 613888 bytes).
+Output written on Piano_di_Progetto.pdf (33 pages, 616138 bytes).
 PDF statistics:
- 645 PDF objects out of 1000 (max. 8388607)
- 560 compressed objects within 6 object streams
- 119 named destinations out of 1000 (max. 500000)
- 449 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 661 PDF objects out of 1000 (max. 8388607)
+ 575 compressed objects within 6 object streams
+ 122 named destinations out of 1000 (max. 500000)
+ 465 words of extra memory for PDF output out of 10000 (max. 10000000)
 

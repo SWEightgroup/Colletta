@@ -40,5 +40,7 @@
 \contentsline {subsubsection}{\numberline {5.7.1}Prospetto Orario}{29}{subsubsection.5.7.1}
 \contentsline {subsubsection}{\numberline {5.7.2}Prospetto Economico}{30}{subsubsection.5.7.2}
 \contentsline {section}{\numberline {6}Consuntivo e preventivo a finire}{31}{section.6}
-\contentsline {subsection}{\numberline {6.1}Analisi}{31}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Preventivo a finire}{31}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.1}Periodo di Analisi}{31}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Consuntivo}{31}{subsubsection.6.1.1}
+\contentsline {subsection}{\numberline {6.2}Osservazioni}{31}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Preventivo a finire}{32}{subsection.6.3}
