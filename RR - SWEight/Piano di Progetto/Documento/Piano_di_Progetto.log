@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.27)  4 JAN 2019 01:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.27)  4 JAN 2019 15:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1343,7 +1343,9 @@ LaTeX Info: Redefining \labelcref on input line 2301.
 LaTeX Info: Redefining \labelcpageref on input line 2301.
 Package cleveref Info: `amsthm' support loaded on input line 2957.
 Package cleveref Info: `listings' support loaded on input line 3062.
-) (./comandi.tex)
+)
+   defining Unicode char U+20AC (decimal 8364)
+ (./comandi.tex)
 
 LaTeX Warning: Unused global option(s):
     [openany].
@@ -2081,10 +2083,10 @@ Package rerunfilecheck Info: File `Piano_di_Progetto.out' has not changed.
 (rerunfilecheck)             Checksum: D24ECE7C2EF2FA249B86CCE1F1F3BF59;2853.
  ) 
 Here is how much of TeX's memory you used:
- 27728 strings out of 492982
- 518281 string characters out of 6134895
- 703663 words of memory out of 5000000
- 30540 multiletter control sequences out of 15000+600000
+ 27729 strings out of 492982
+ 518287 string characters out of 6134895
+ 703664 words of memory out of 5000000
+ 30541 multiletter control sequences out of 15000+600000
  48458 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,17n,124p,803b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2097,7 +2099,7 @@ sr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmtt10.pfb>
-Output written on Piano_di_Progetto.pdf (32 pages, 613150 bytes).
+Output written on Piano_di_Progetto.pdf (32 pages, 612994 bytes).
 PDF statistics:
  639 PDF objects out of 1000 (max. 8388607)
  554 compressed objects within 6 object streams
