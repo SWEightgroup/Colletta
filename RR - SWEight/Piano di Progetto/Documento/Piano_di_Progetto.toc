@@ -41,3 +41,4 @@
 \contentsline {subsubsection}{\numberline {5.7.2}Prospetto Economico}{30}{subsubsection.5.7.2}
 \contentsline {section}{\numberline {6}Consuntivo e preventivo a finire}{31}{section.6}
 \contentsline {subsection}{\numberline {6.1}Analisi}{31}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Preventivo a finire}{31}{subsection.6.2}
