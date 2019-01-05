@@ -1,85 +1,13 @@
 \subsection{Allievi}
 \subsubsection{Panoramica allievi}
+DA FARE
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=17cm]{img/Panoramica Allievi.png} 
 \caption{Panoramica allievi}\label{fig:31}
 \end{figure}
 
-\subsubsection{UC 3.1 - Registrazione allievo}
-\begin{figure}[H]
-\centering
-\includegraphics[width=17cm]{img/UC31.png} 
-\caption{Caso d'uso 3.1}\label{fig:31}
-\end{figure}
-\begin{itemize}
-\item[•]\textbf{Attori}: Utente non registrato;
-\item[•]\textbf{Descrizione}: L’utente non registrato compila il form di registrazione relativo all’allievo completando la registrazione;
-\item[•]\textbf{Precondizione}: L’utente non è registrato;
-\item[•]\textbf{Postcondizione}: L’utente si è registrato come allievo;
-\item[•]\textbf{Flusso degli eventi principale}:
-\begin{enumerate}
-\item UC 3.1.1 - Inserimento nome utente;
-\item UC 3.1.2 - Inserimento email istituzionale;
-\item UC 3.1.3 - Inserimento password;
-\item UC 3.1.4 - Inserimento conferma password;
-\item UC 3.1.5 - Inserimento data di nascita;
-\item UC 3.1.6 - Inserimento scuola di appartenenza.
-\end{enumerate}
-\item[•]\textbf{Estensioni}:
-\begin{enumerate}
-\item UC 6.1 - Visualizzazione errore di registrazione;
-\item UC 6.2 - Interruzione della registrazione.
-\end{enumerate}
-\end{itemize}
-
-\subsubsection{UC 3.1.1 - Inserimento nome utente}
-\begin{itemize}
-\item[•]\textbf{Attori}: Utente non registrato;
-\item[•]\textbf{Descrizione}: L’utente inserisce un nome utente durante la registrazione;
-\item[•]\textbf{Precondizione}: L’utente non è registrato;
-\item[•]\textbf{Postcondizione}: L’utente ha inserito un nome utente;
-\end{itemize}
-
-\subsubsection{UC 3.1.2 - Inserimento email istituzionale}
-\begin{itemize}
-\item[•]\textbf{Attori}: Utente non registrato;
-\item[•]\textbf{Descrizione}: L’utente inserisce la sua email istituzionale durante la registrazione;
-\item[•]\textbf{Precondizione}: L’utente non è registrato;
-\item[•]\textbf{Postcondizione}: L’utente ha inserito una email istituzionale;
-\end{itemize}
-
-\subsubsection{UC 3.1.3 - Inserimento password}
-\begin{itemize}
-\item[•]\textbf{Attori}: Utente non registrato;
-\item[•]\textbf{Descrizione}: L’utente inserisce una password durante la registrazione;
-\item[•]\textbf{Precondizione}: L’utente non è registrato;
-\item[•]\textbf{Postcondizione}: L’utente ha inserito una password;
-\end{itemize}
-
-\subsubsection{UC 3.1.4 - Inserimento conferma password}
-\begin{itemize}
-\item[•]\textbf{Attori}: Utente non registrato;
-\item[•]\textbf{Descrizione}: L’utente inserisce la conferma della password durante la registrazione;
-\item[•]\textbf{Precondizione}: L’utente non è registrato;
-\item[•]\textbf{Postcondizione}: L’utente ha inserito la conferma della password;
-\end{itemize}
-
-\subsubsection{UC 3.1.5 - Inserimento data di nascita}
-\begin{itemize}
-\item[•]\textbf{Attori}: Utente non registrato;
-\item[•]\textbf{Descrizione}: L’utente inserisce la sua data di nascita durante la registrazione;
-\item[•]\textbf{Precondizione}: L’utente non è registrato;
-\item[•]\textbf{Postcondizione}: L’utente ha inserito la sua data di nascita;
-\end{itemize}
-
-\subsubsection{UC 3.1.6 - Inserimento scuola di appartenenza}
-\begin{itemize}
-\item[•]\textbf{Attori}: Utente non registrato;
-\item[•]\textbf{Descrizione}: L’utente inserisce la sua scuola di appartenenza durante la registrazione;
-\item[•]\textbf{Precondizione}: L’utente non è registrato;
-\item[•]\textbf{Postcondizione}: L’utente ha inserito la sua scuola di appartenenza;
-\end{itemize}
 
 \subsubsection{UC 3.2 - Visualizzazione della dashboard\ped{G}}
 \begin{figure}[H]
@@ -263,22 +191,4 @@
 \item[•]\textbf{Postcondizione}: L’allievo ha visualizzato una soluzione alternativa dell’esercizio svolto;
 \end{itemize}
 
-\section{Estensioni registrazione}
-\subsubsection{UC 6.1 - Visualizzazione errore di registrazione}
-\begin{itemize}
-\item[•]\textbf{Attori}: Utente non registrato;
-\item[•]\textbf{Descrizione}: L’utente visualizza un errore relativo ai dati inseriti durante la registrazione.
-Dati non validi sono:
- - Nome utente già presente nel sistema
- - Conferma password non è identica alla password inserita in precedenza;
-\item[•]\textbf{Precondizione}: L’utente ha cominciato la registrazione;
-\item[•]\textbf{Postcondizione}: La registrazione non viene effettuata, viene visualizzato un messaggio relativo ai dati compilati in modo errato;
-\end{itemize}
 
-\subsubsection{UC 6.2 - Interruzione della registrazione}
-\begin{itemize}
-\item[•]\textbf{Attori}: Utente non registrato;
-\item[•]\textbf{Descrizione}: L’utente interrompe volontariamente la registrazione;
-\item[•]\textbf{Precondizione}: L’utente ha cominciato la registrazione;
-\item[•]\textbf{Postcondizione}: La registrazione non viene effettuata;
-\end{itemize}
