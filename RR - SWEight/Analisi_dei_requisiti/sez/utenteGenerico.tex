@@ -83,7 +83,7 @@ DA FARE
 	\caption{Caso d'uso 1.3}\label{fig:13}
 \end{figure}
 \begin{itemize}
-	\item[•]\textbf{Attori}: Utente non autenticato;
+	\item[•]\textbf{Attori}: Utente non registrato;
 	\item[•]\textbf{Descrizione}: L'utente non registrato compila il modulo di registrazione al fine di poter accedere al sistema;
 	\item[•]\textbf{Precondizione}: L'utente non è registrato;
 	\item[•]\textbf{Postcondizione}: L'utente si è registrato e può quindi accedere al sistema;
@@ -98,47 +98,75 @@ DA FARE
 	\end{enumerate}
 	\item[•]\textbf{Estensioni}:
 	\begin{enumerate}
-		\item Visualizzazione messaggio errore;
-		%\item UC 3.1.1 Richiesta registrazione sviluppatore;
+		\item UC 1.3.1 - Visualizzazione messaggio errore dato presente;
+		\item UC 1.3.2 - Visualizzazione messaggio errore password diverse
 	\end{enumerate}
 \end{itemize}
 
-%\subsubsection{UC 3.1.1 - Inserimento nome utente}
-%\begin{itemize}
-%	\item[•]\textbf{Attori}: Utente non registrato;
-%	\item[•]\textbf{Descrizione}: L’utente inserisce un nome utente durante la registrazione;
-%	\item[•]\textbf{Precondizione}: L’utente non è registrato;
-%	\item[•]\textbf{Postcondizione}: L’utente ha inserito un nome utente;
-%\end{itemize}
-%
-%\subsubsection{UC 3.1.2 - Inserimento email istituzionale}
-%\begin{itemize}
-%	\item[•]\textbf{Attori}: Utente non registrato;
-%	\item[•]\textbf{Descrizione}: L’utente inserisce la sua email istituzionale durante la registrazione;
-%	\item[•]\textbf{Precondizione}: L’utente non è registrato;
-%	\item[•]\textbf{Postcondizione}: L’utente ha inserito una email istituzionale;
-%\end{itemize}
-%
-%\subsubsection{UC 3.1.3 - Inserimento password}
-%\begin{itemize}
-%	\item[•]\textbf{Attori}: Utente non registrato;
-%	\item[•]\textbf{Descrizione}: L’utente inserisce una password durante la registrazione;
-%	\item[•]\textbf{Precondizione}: L’utente non è registrato;
-%	\item[•]\textbf{Postcondizione}: L’utente ha inserito una password;
-%\end{itemize}
-%
-%\subsubsection{UC 3.1.4 - Inserimento conferma password}
-%\begin{itemize}
-%	\item[•]\textbf{Attori}: Utente non registrato;
-%	\item[•]\textbf{Descrizione}: L’utente inserisce la conferma della password durante la registrazione;
-%	\item[•]\textbf{Precondizione}: L’utente non è registrato;
-%	\item[•]\textbf{Postcondizione}: L’utente ha inserito la conferma della password;
-%\end{itemize}
-%
-%\subsubsection{UC 3.1.5 - Inserimento data di nascita}
-%\begin{itemize}
-%	\item[•]\textbf{Attori}: Utente non registrato;
-%	\item[•]\textbf{Descrizione}: L’utente inserisce la sua data di nascita durante la registrazione;
-%	\item[•]\textbf{Precondizione}: L’utente non è registrato;
-%	\item[•]\textbf{Postcondizione}: L’utente ha inserito la sua data di nascita;
-%\end{itemize}
+\subsubsection{UC 1.3.1 - Visualizzazione messaggio errore dato presente}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Utente non registrato;
+	\item[•]\textbf{Descrizione}: L'utente non registrato visualizza un messaggio di errore relativo all'inserimento
+di un dato già presente nel sistema;
+	\item[•]\textbf{Precondizione}: L'utente non registrato sta completando la procedura di registrazione;
+	\item[•]\textbf{Postcondizione}: L'utente visualizza un messaggio di errore relativo all'inserimento di un valore già presente nel sistema;
+	\item[•]\textbf{Flusso degli eventi principale}: L'utente inserisce una email o un nome utente già presente nel sistema, pertanto riceve un messaggio di errore.
+\end{itemize}
+
+\subsubsection{UC 1.3.2 - Visualizzazione messaggio errore password diverse}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Utente non registrato;
+	\item[•]\textbf{Descrizione}: L'utente non registrato visualizza un messaggio che comunica che i valori della password e di conferma password sono tra loro diversi;
+	\item[•]\textbf{Precondizione}: L'utente non registrato ha inserito la password e la conferma password con valori differenti;
+	\item[•]\textbf{Postcondizione}: L'utente visualizza un messaggio di errore relativo all'inserimento di password e conferma password con valori diversi;
+	\item[•]\textbf{Flusso degli eventi principale}: L'utente inserisce password e conferma password con valori diversi, pertanto riceve un messaggio di errore.
+\end{itemize}
+
+\subsubsection{UC 1.4 - Richiesta registrazione Sviluppatore}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Utente non autenticato;
+	\item[•]\textbf{Descrizione}: L'utente non identificato, che intende registrarsi come sviluppatore per poter accedere ai dati nella piattaforma, richiede di potersi registrare nel sistema;
+	\item[•]\textbf{Precondizione}: L'utente non è registrato;
+	\item[•]\textbf{Postcondizione}: L'utente ha effettuato la richiesta per registrarsi nell'applicativo;
+	\item[•]\textbf{Flusso degli eventi principale}: L'utente seleziona l'opzione per effettuare la richiesta di registrazione di sviluppatore e la conferma.
+\end{itemize}
+
+\subsubsection{UC 1.3.3 - Inserimento nome utente}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Utente non registrato;
+	\item[•]\textbf{Descrizione}: L’utente inserisce un nome utente durante la registrazione;
+	\item[•]\textbf{Precondizione}: L’utente non è registrato;
+	\item[•]\textbf{Postcondizione}: L’utente ha inserito un nome utente;
+\end{itemize}
+
+\subsubsection{UC 1.3.4 - Inserimento email istituzionale}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Utente non registrato;
+	\item[•]\textbf{Descrizione}: L’utente inserisce la sua email istituzionale durante la registrazione;
+	\item[•]\textbf{Precondizione}: L’utente non è registrato;
+	\item[•]\textbf{Postcondizione}: L’utente ha inserito una email istituzionale;
+\end{itemize}
+
+\subsubsection{UC 1.3.5 - Inserimento password}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Utente non registrato;
+	\item[•]\textbf{Descrizione}: L’utente inserisce una password durante la registrazione;
+	\item[•]\textbf{Precondizione}: L’utente non è registrato;
+	\item[•]\textbf{Postcondizione}: L’utente ha inserito una password;
+\end{itemize}
+
+\subsubsection{UC 1.3.6 - Inserimento conferma password}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Utente non registrato;
+	\item[•]\textbf{Descrizione}: L’utente inserisce la conferma della password durante la registrazione;
+	\item[•]\textbf{Precondizione}: L’utente non è registrato;
+	\item[•]\textbf{Postcondizione}: L’utente ha inserito la conferma della password;
+\end{itemize}
+
+\subsubsection{UC 1.3.7 - Inserimento data di nascita}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Utente non registrato;
+	\item[•]\textbf{Descrizione}: L’utente inserisce la sua data di nascita durante la registrazione;
+	\item[•]\textbf{Precondizione}: L’utente non è registrato;
+	\item[•]\textbf{Postcondizione}: L’utente ha inserito la sua data di nascita;
+\end{itemize}
