@@ -4,7 +4,7 @@ Lo scopo del documento è circoscrivere i requisiti e i dei casi d’uso emersi 
 Il prodotto da realizzare consta in un’applicazione web che fornisca uno strumento per creare e svolgere esercizi di analisi grammaticale, e al contento né raccolga i risultati. I dati raccolti verranno impiegati dagli sviluppatori dell’azienda proponente come strumento per il miglioramento di algoritmi di apprendimento automatico. Nello specifico il prodotto verrà utilizzato da tre tipologie di utenti:
 le insegnanti che si occuperanno della creazione degli esercizi;
 gli studenti che potranno svolgere gli esercizi e ottenere delle valutazioni; 
-gli sviluppatori che filtreranno i dati secondo alcuni criteri, e infine li scaricheranno;\\Il prodotto si interfaccerà con un’applicazione di pos-tagging come FreeLing a cui verrà delegata l’esecuzione dell’analisi grammaticale delle frasi.
+gli sviluppatori che filtreranno i dati secondo alcuni criteri, e infine li scaricheranno;\\Il prodotto si interfaccerà con un’applicazione di pos-tagging\ped{G} come FreeLing\ped{G} a cui verrà delegata l’esecuzione dell’analisi grammaticale delle frasi.
 \subsection{Glossario}
 Al fine di rendere il documento il più comprensibile possibile e permetterne una rapida fruizione, viene allegato un glossario i cui termini sono contraddistinti dal pedice G. Tali termini inglobano abbreviazioni, acronimi, termini di natura tecnica, oppure sono fonte di ambiguità e pertanto necessitano di una definizione che renda il loro significato inequivocabile. 
 Ogni termine, anche se ripetuto, verrà contrassegnato con la dicitura sopra indicata e ovviamente rimanderà alla medesima definizione nel glossario.
@@ -12,26 +12,28 @@ Ogni termine, anche se ripetuto, verrà contrassegnato con la dicitura sopra ind
 \subsubsection{Riferimenti normativi}
 Norme di progetto v1.0.0
 \subsubsection{Riferimenti informativi}
-Capitolato d’appalto C2: Colletta: piattaforma raccolta dati di analisi di testo. Consultabile all’indirizzo:
-https://www.math.unipd.it/~tullio/IS-1/2018/Progetto/C2.pdf
-Studio di fattibilità v1.0.0;
-The Guide to the Software Engineering Body of Knowledge (SWEBOK Guide) v3 in particolare il capitolo 2 dedicato a all’analisi dei requisiti;
-Software Engineering (11th edition) Ian Sommerville Pearson Education Addison-Wesley; 
-Dispense del corso di Ingegneria del Software - Diagrammi dei casi d’uso, come riferimento per la realizzazione dei modelli in UML;
-https://www.math.unipd.it/~tullio/IS-1/2018/Dispense/E05b.pdf
+\begin{itemize}
+\item Capitolato d’appalto C2: Colletta: piattaforma raccolta dati di analisi di testo. \\ Consultabile all’indirizzo:
+\url{https://www.math.unipd.it/~tullio/IS-1/2018/Progetto/C2.pdf}
+\item Studio di fattibilità v1.0.0;
+\item The Guide to the Software Engineering Body of Knowledge (SWEBOK Guide) v3 in particolare il capitolo 2 dedicato a all’analisi dei requisiti;
+\item Software Engineering (11th edition) Ian Sommerville Pearson Education Addison-Wesley; 
+\item Dispense del corso di Ingegneria del Software - Diagrammi dei casi d’uso, come riferimento per la realizzazione dei modelli in UML;
+\url{https://www.math.unipd.it/~tullio/IS-1/2018/Dispense/E05b.pdf}
+\end{itemize}
 \newpage
 \section{Descrizione generale}
 \subsubsection{Contesto d’uso del prodotto}
 Il prodotto è inteso per i seguenti utenti: Insegnanti, Allievi e Sviluppatori.
-Per gli utenti Insegnanti e Allievi il sistema è stato pensato per un utilizzo all’interno di un contesto scolastico. Per la categoria di utenti Sviluppatori il sistema è utilizzato all’interno di un contesto di ricerca e sviluppo di algoritmi di apprendimento automatico capaci di svolgere automaticamente l’analisi grammaticale. 
+Per gli utenti Insegnanti e Allievi il sistema è stato pensato per un utilizzo all’interno di un contesto scolastico. Per la categoria di utenti Sviluppatori il sistema è utilizzato come strumento di raccolta dati, all'interno di un contesto di ricerca e sviluppo di algoritmi di apprendimento automatico capaci di svolgere automaticamente l'analisi grammaticale. 
 \subsubsection{Funzioni del prodotto}
-Lo scopo del prodotto consiste nella creazione di un’interfaccia web in cui gli attori del sistema, prevalentemente insegnanti e allievi, possano predisporre, assegnare e svolgere esercizi di analisi grammaticale.
+Lo scopo del prodotto consiste nella creazione di un'applicazione web in cui gli attori del sistema, prevalentemente insegnanti e allievi, possano predisporre, assegnare e svolgere esercizi di analisi grammaticale, e dove gli sviluppatori possano personalizzare e scaricare i dati raccolti dalle varie analisi.
 Al fine di agevolare il lavoro di preparazione è opportuno utilizzare un software in grado di svolgere gli esercizi in maniera automatica.
 Verranno di seguito elencate le funzioni offerte dal prodotto;
 \begin{itemize}
 \item[•]\textbf{Insegnanti}:
 Gli insegnanti hanno interesse a preparare in modo semplice e rapido degli esercizi per i propri allievi.
-L’insegnante dovrà aver la possibilità di:
+L'insegnante dovrà aver la possibilità di:
 Poter inserire nuove frasi nel sistema;
 Poter correggere i risultati prodotti dal software;
 Possibilità di fornire più soluzioni anche per una stessa frase;
@@ -39,20 +41,31 @@ Monitorare chi può accedere o meno ad una determinata frase o un determinato es
 Predisporre esercizi in varie lingue;
 
 \item[•]\textbf{Allievi}:
-L’allievo che accede al sistema dovrà poter svolgere gli esercizi predisposti dall’insegnante e ricevere una valutazione immediata dal software automatico .
-L’allievo dovrà aver la possibilità di:
-Poter scegliere tra esercizi proposti dai vari insegnanti;
-Poter effettuare esercizi sia partendo da un elenco di frasi proposte, sia inserendo autonomamente una frase nel sistema;
-Ricercare l’esercizio (o attraverso frasi suggerite o attraverso l’inserimento di una frase libera), selezionando lo specifico esercizio su cui si verrà valutati; 
-Visualizzare un cruscotto per tener traccia dei propri progressi nel tempo,
-Essere ricompensato periodicamente al raggiungimento di traguardi
-
+L'allievo che accede al sistema dovrà poter svolgere gli esercizi predisposti dall'insegnante e ricevere una valutazione immediata dal software automatico .
+L'allievo dovrà aver la possibilità di:
+\begin{itemize}
+\item Poter scegliere tra esercizi proposti dai vari insegnanti;
+\item Poter effettuare esercizi sia partendo da un elenco di frasi proposte, sia inserendo autonomamente una frase nel sistema;
+\item Ricercare l'esercizio (o attraverso frasi suggerite o attraverso l'inserimento di una frase libera), selezionando lo specifico esercizio su cui si verrà valutati; 
+\item Visualizzare un cruscotto per tener traccia dei propri progressi nel tempo;
+\item Essere ricompensato periodicamente al raggiungimento di traguardi
+\end{itemize}
 \item[•]\textbf{Sviluppatori}:
-Lo sviluppatore che accede al sistema dovrà essere in grado di compiere azioni di filtraggio dei dati, relativi alle correzioni grammaticali, e scaricarli in un formato consono all’utilizzo come input per algoritmi di AIG. 
-Infine, lo sviluppatore dovrà avere accesso a modelli.
+Lo sviluppatore che accede al sistema dovrà essere in grado di compiere azioni di filtraggio dei dati, relativi alle correzioni grammaticali, e scaricarli in un formato consono all'utilizzo come input per algoritmi di {AIG}\ped{G}. 
+In particolare lo sviluppatore dovrà essere in grado di:
+\begin{itemize}
+\item Accedere ai dati raccolti dagli utenti;
+\item Ottenere più di una versione dell'annotazione di ogni frase;
+\item Poter conoscere anche lo storico dei dati;
+\item Accedere ai modelli realizzati a partire dai dati;
+\item Scaricare i dati collezionati per poter addestrare;
+\item Possibilità di filtrare i dati prima di scaricarli;
+\item Salvare e di scaricare l'intera cronologia delle modifiche ai dati;
+\item Creare e scaricare modelli;
+\end{itemize}
 \end{itemize}
 \subsubsection{Caratteristiche degli utenti}
-Il prodotto si rivolge a studenti e insegnanti fornendo un servizio di assegnazione e correzione di esercizi relativi all’analisi grammaticale.  
+Il prodotto si rivolge a studenti e insegnanti fornendo un servizio di assegnazione e correzione di esercizi relativi all'analisi grammaticale.  
 Vincoli generali
-E’ necessario un web browser(g?) e una connessione ad internet per poter accedere, visualizzare, svolgere ed inserire esercizi.
+\uppercase{è} necessario un web browser e una connessione ad internet per poter accedere, visualizzare, svolgere ed inserire esercizi.
 
