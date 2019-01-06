@@ -202,7 +202,7 @@ DA FARE
 \item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona dall'elenco prestabilito un'opzione che determina il formato dell'archivio che contiene i file relativi ai dati precedentemente scelti.
 \end{itemize}
 
-\subsubsection{UC 4.5 - Accesso ai modelli}
+\subsubsection{UC 4.5 - Creazione modello}
 \begin{figure}[H]
 \centering
 \includegraphics[width=17cm]{img/UC450.png} 
@@ -210,14 +210,85 @@ DA FARE
 \end{figure}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
-\item[•]\textbf{Descrizione}: Lo sviluppatore accede al modello realizzato automaticamente per lo svolgimento degli esercizi;
-\item[•]\textbf{Precondizione}: Lo sviluppatore visualizza i modelli a disposizione;
-\item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza il modello scelto;
+\item[•]\textbf{Descrizione}: Lo sviluppatore crea un nuovo modello;
+\item[•]\textbf{Precondizione}: Lo sviluppatore non ha creato il modello;
+\item[•]\textbf{Postcondizione}: Lo sviluppatore ha creato un nuovo modello;
 \item[•]\textbf{Flusso degli eventi principale}:  
 \begin{enumerate}
-	\item Visualizzazione elenco modelli;
-	\item Selezione del modello
-	\item Visualizzazione contenuto del modello
-
+	\item UC 4.5.1 - Scelta parametri funzione;
+	\item UC 4.5.2 - Inserimento nome modello;
+	\item UC 4.5.3 - Salvataggio modello.
 \end{enumerate}
+\end{itemize}
+
+\subsubsection{UC 4.5.1 - Scelta parametri funzione}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore sceglie i parametri della funzione per la creazione di un nuovo modello con i relativi valori associati;
+\item[•]\textbf{Precondizione}: Lo sviluppatore non ha scelto i parametri da inserire;
+\item[•]\textbf{Postcondizione}: Lo sviluppatore ha inserito i parametri per la creazione di un nuovo modello;
+\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore inserisce tutti i parametri necessari che verranno impiegati nella realizzazione del modello.
+\item[•] \textbf{Estensioni}: 
+\begin{enumerate}
+	\item UC 4.5.4 - Valore parametro non valido.
+\end{enumerate}
+\end{itemize}
+
+\subsubsection{UC 4.5.2 - Inserimento nome modello}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore inserisce il nome per il modello che intende salvare;
+\item[•]\textbf{Precondizione}: Lo sviluppatore non ha inserito il nome del modello;
+\item[•]\textbf{Postcondizione}: Lo sviluppatore ha inserito il nome del modello;
+\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore inserisce una stringa che definisce il nome del modello che verrà memorizzato.
+\item[•] \textbf{Estensioni}: 
+\begin{enumerate}
+	\item UC 4.5.5 - Visualizzazione messaggio errore nome duplicato.
+\end{enumerate}
+\end{itemize}
+
+\subsubsection{UC 4.5.3 - Salvataggio modello}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore salva il modello di cui ha definito il nome;
+\item[•]\textbf{Precondizione}: Lo sviluppatore ha inserito il nome del modello;
+\item[•]\textbf{Postcondizione}: Lo sviluppatore ha salvato il modello;
+\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona l'opzione relativa al salvataggio che comporta il salvataggio del modello.
+\end{itemize}
+
+\subsubsection{UC 4.5.5 - Visualizzazione messaggio errore nome duplicato}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore visualizza un messaggio di errore relativo all'inserimento di un modello avente lo stesso nome di uno già inserito;
+\item[•]\textbf{Precondizione}: Lo sviluppatore ha inserito il nome del modello;
+\item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza il messaggio di errore e inserisce un nuovo nome;
+\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore visualizza il messaggio di errore e può inserire una stringa che definisce il nome del modello che verrà memorizzato.
+\end{itemize}
+
+\subsubsection{UC 4.6 - Visualizzazione elenco modelli}
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm, height=10cm]{img/UC460.png} 
+\caption{Caso d'uso 4.6}\label{fig:460}
+\end{figure}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore visualizza l'elenco dei modelli realizzati per lo svolgimento degli esercizi;
+\item[•]\textbf{Precondizione}: Lo sviluppatore si è autenticato nel sistema;
+\item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza l'elenco dei modelli;
+\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona la voce del menù relativa ai modelli e ne visualizza l'elenco.
+\end{itemize}
+
+\subsubsection{UC 4.7 - Scaricamento modello}
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm, height=10cm]{img/UC470.png} 
+\caption{Caso d'uso 4.7}\label{fig:470}
+\end{figure}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore ottiene un file contenente il modello precedentemente creato;
+\item[•]\textbf{Precondizione}: Lo sviluppatore visualizza l'elenco dei modelli (UC 4.6);
+\item[•]\textbf{Postcondizione}: Lo sviluppatore ottiene un file contenente il modello selezionato;
+\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona l'opzione di scaricamento sul nome del modello desiderato e ottiene un file contenete il modello.
 \end{itemize}
