@@ -1,0 +1,58 @@
+\BOOKMARK [1][-]{section.1}{Progettazione}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Architettura logica}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Diagrammi UML}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Design Pattern}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Codifica}{}% 5
+\BOOKMARK [1][-]{section.3}{Processi di supporto}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Documentazione}{section.3}% 7
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Scopo}{subsection.3.1}% 8
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Template}{subsection.3.1}% 9
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Versioni}{subsection.3.1}% 10
+\BOOKMARK [3][-]{subsubsection.3.1.4}{Struttura}{subsection.3.1}% 11
+\BOOKMARK [3][-]{subsubsection.3.1.5}{Formattazione delle pagine}{subsection.3.1}% 12
+\BOOKMARK [3][-]{subsubsection.3.1.6}{Norme Tipografiche}{subsection.3.1}% 13
+\BOOKMARK [3][-]{subsubsection.3.1.7}{Formati}{subsection.3.1}% 14
+\BOOKMARK [3][-]{subsubsection.3.1.8}{Tabelle}{subsection.3.1}% 15
+\BOOKMARK [3][-]{subsubsection.3.1.9}{Immagini}{subsection.3.1}% 16
+\BOOKMARK [3][-]{subsubsection.3.1.10}{Diagrammi UML}{subsection.3.1}% 17
+\BOOKMARK [3][-]{subsubsection.3.1.11}{Stesura dei documenti}{subsection.3.1}% 18
+\BOOKMARK [3][-]{subsubsection.3.1.12}{Controllo ortografico}{subsection.3.1}% 19
+\BOOKMARK [2][-]{subsection.3.2}{Ciclo di vita}{section.3}% 20
+\BOOKMARK [1][-]{section.4}{Verifica}{}% 21
+\BOOKMARK [2][-]{subsection.4.1}{Scopo}{section.4}% 22
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Analisi}{subsection.4.1}% 23
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Analisi statica}{subsection.4.1}% 24
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Analisi dinamica}{subsection.4.1}% 25
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Test}{subsection.4.1}% 26
+\BOOKMARK [3][-]{subsubsection.4.1.5}{Test di unit\340}{subsection.4.1}% 27
+\BOOKMARK [3][-]{subsubsection.4.1.6}{Test di Integrazione}{subsection.4.1}% 28
+\BOOKMARK [3][-]{subsubsection.4.1.7}{Test di sistema}{subsection.4.1}% 29
+\BOOKMARK [3][-]{subsubsection.4.1.8}{Test di regressione}{subsection.4.1}% 30
+\BOOKMARK [3][-]{subsubsection.4.1.9}{Test di accettazione\(collaudo\)}{subsection.4.1}% 31
+\BOOKMARK [3][-]{subsubsection.4.1.10}{Verifica dei documenti}{subsection.4.1}% 32
+\BOOKMARK [3][-]{subsubsection.4.1.11}{Verifica dei diagrammi}{subsection.4.1}% 33
+\BOOKMARK [1][-]{section.5}{Progressi organizzativi}{}% 34
+\BOOKMARK [2][-]{subsection.5.1}{Obiettivo}{section.5}% 35
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Incontri}{subsection.5.1}% 36
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Interni}{subsection.5.1}% 37
+\BOOKMARK [3][-]{subsubsection.5.1.3}{Esterni}{subsection.5.1}% 38
+\BOOKMARK [3][-]{subsubsection.5.1.4}{Comunicazione}{subsection.5.1}% 39
+\BOOKMARK [3][-]{subsubsection.5.1.5}{Interna}{subsection.5.1}% 40
+\BOOKMARK [3][-]{subsubsection.5.1.6}{Esterna}{subsection.5.1}% 41
+\BOOKMARK [2][-]{subsection.5.2}{Gestione delle responsabilit\340 e ruoli}{section.5}% 42
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Introduzione}{subsection.5.2}% 43
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Responsabile di progetto}{subsection.5.2}% 44
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Amministratore di progetto}{subsection.5.2}% 45
+\BOOKMARK [3][-]{subsubsection.5.2.4}{Analista}{subsection.5.2}% 46
+\BOOKMARK [3][-]{subsubsection.5.2.5}{Progettista}{subsection.5.2}% 47
+\BOOKMARK [3][-]{subsubsection.5.2.6}{Programmatore}{subsection.5.2}% 48
+\BOOKMARK [3][-]{subsubsection.5.2.7}{Verificatore}{subsection.5.2}% 49
+\BOOKMARK [2][-]{subsection.5.3}{Pianificazione}{section.5}% 50
+\BOOKMARK [2][-]{subsection.5.4}{Monitoraggio del piano}{section.5}% 51
+\BOOKMARK [2][-]{subsection.5.5}{Gestione dell\220infrastruttura}{section.5}% 52
+\BOOKMARK [3][-]{subsubsection.5.5.1}{Introduzione}{subsection.5.5}% 53
+\BOOKMARK [3][-]{subsubsection.5.5.2}{Versionamento}{subsection.5.5}% 54
+\BOOKMARK [3][-]{subsubsection.5.5.3}{Introduzione}{subsection.5.5}% 55
+\BOOKMARK [3][-]{subsubsection.5.5.4}{Strumenti di condivisione}{subsection.5.5}% 56
+\BOOKMARK [2][-]{subsection.5.6}{Miglioramento continuo dei processi}{section.5}% 57
+\BOOKMARK [2][-]{subsection.5.7}{Training process}{section.5}% 58
