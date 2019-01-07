@@ -1,6 +1,5 @@
 \subsection{Allievi}
 \subsubsection{Panoramica allievi}
-DA FARE
 
 \begin{figure}[H]
 \centering
@@ -9,7 +8,7 @@ DA FARE
 \end{figure}
 
 
-\subsubsection{UC 3.2 - Visualizzazione della dashboard\ped{G}}
+\subsubsection{UC 3.2 - Visualizzazione della {dashboard}\ped{G}}
 \begin{figure}[H]
 \centering
 \includegraphics[width=17cm]{img/UC32.png} 
@@ -17,9 +16,9 @@ DA FARE
 \end{figure}
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo;
-\item[•]\textbf{Descrizione}: L’allievo apre la propria dashboard\ped{G};
-\item[•]\textbf{Precondizione}: Il sistema offre la possibilità di visualizzare la propria dashboard\ped{G};
-\item[•]\textbf{Postcondizione}: L’allievo ha aperto la dashboard\ped{G} e può vederne tutte le componenti;
+\item[•]\textbf{Descrizione}: L'allievo apre la propria {dashboard}\ped{G};
+\item[•]\textbf{Precondizione}: L'allievo si è autenticato;
+\item[•]\textbf{Postcondizione}: L'allievo ha visualizzato la {dashboard}\ped{G} e può vederne tutte le componenti;
 \item[•]\textbf{Flusso degli eventi principale}:
 \begin{enumerate}
 \item UC 3.2.1 - Visualizzazione progressi;
@@ -32,33 +31,33 @@ DA FARE
 \subsubsection{UC 3.2.1 - Visualizzazione progressi}
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo;
-\item[•]\textbf{Descrizione}: L’allievo visualizza i suoi progressi: numero di esercizi svolti, corretti ed errati;
-\item[•]\textbf{Precondizione}: Il sistema offre la possibilità di visualizzare i progressi raggiunti;
-\item[•]\textbf{Postcondizione}: L’allievo può visualizzare i propri progressi;
+\item[•]\textbf{Descrizione}: L'allievo visualizza i suoi progressi: numero di esercizi svolti, corretti ed errati;
+\item[•]\textbf{Precondizione}: L'allievo ha visualizzato la propria {dashboard}\ped{G};
+\item[•]\textbf{Postcondizione}: L'allievo ha visualizzato i propri progressi;
 \end{itemize}
 
 \subsubsection{UC 3.2.2 - Visualizzazione traguardi}
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo;
-\item[•]\textbf{Descrizione}: L’allievo visualizza i traguardi raggiunti;
-\item[•]\textbf{Precondizione}: Il sistema offre la possibilità di visualizzare i traguardi;
-\item[•]\textbf{Postcondizione}: L’allievo può visualizzare tutti i traguardi raggiunti;
+\item[•]\textbf{Descrizione}: L'allievo visualizza i traguardi raggiunti;
+\item[•]\textbf{Precondizione}: L'allievo ha visualizzato la propria {dashboard}\ped{G};
+\item[•]\textbf{Postcondizione}: L'allievo ha visualizzato tutti i traguardi raggiunti;
 \end{itemize}
 
 \subsubsection{UC 3.2.3 - Visualizzazione valutazioni}
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo;
-\item[•]\textbf{Descrizione}: L’allievo visualizza le valutazioni di tutti gli esercizi svolti, sia esercizi assegnati che svolti indipendentemente;
-\item[•]\textbf{Precondizione}: Il sistema offre la possibilità di visualizzare le valutazioni;
-\item[•]\textbf{Postcondizione}: L’allievo può visualizzare tutte le valutazioni ricevute;
+\item[•]\textbf{Descrizione}: L'allievo visualizza le valutazioni di tutti gli esercizi svolti, sia esercizi assegnati che svolti indipendentemente;
+\item[•]\textbf{Precondizione}: L'allievo ha visualizzato la propria {dashboard}\ped{G};
+\item[•]\textbf{Postcondizione}: L'allievo ha visualizzato tutte le valutazioni ricevute;
 \end{itemize}
 
 \subsubsection{UC 3.2.4 - Inserimento insegnante preferito}
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo;
-\item[•]\textbf{Descrizione}: L’allievo inserisce il nome utente dell’insegnante da prediligere quando riceve la correzione di un esercizio. L’inserimento di un nuovo insegnante sovrascrive il precedente;
-\item[•]\textbf{Precondizione}: Il sistema offre la possibilità di inserire un insegnante preferito;
-\item[•]\textbf{Postcondizione}: L’allievo ha inserito un insegnante preferito;
+\item[•]\textbf{Descrizione}: L'allievo inserisce il nome utente di un insegnante da prediligere quando riceve la correzione di un esercizio;
+\item[•]\textbf{Precondizione}: L'allievo ha visualizzato la propria {dashboard}\ped{G};
+\item[•]\textbf{Postcondizione}: L'allievo ha inserito un insegnante preferito;
 \end{itemize}
 
 \subsubsection{UC 3.3 - Ricerca esercizio}
@@ -69,9 +68,9 @@ DA FARE
 \end{figure}
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo;
-\item[•]\textbf{Descrizione}: L’allievo ricerca un esercizio attraverso frasi suggerite dal sistema o attraverso l’inserimento di una frase libera;
-\item[•]\textbf{Precondizione}: Il sistema offre la possibilità di ricercare un esercizio;
-\item[•]\textbf{Postcondizione}: L’allievo può navigare una lista di esercizi consigliati o inserire una frase;
+\item[•]\textbf{Descrizione}: L'allievo ricerca un esercizio attraverso frasi suggerite dal sistema o attraverso l'inserimento di una frase libera;
+\item[•]\textbf{Precondizione}: L'allievo si è autenticato;
+\item[•]\textbf{Postcondizione}: L'allievo può navigare una lista di esercizi consigliati o inserire una frase;
 \item[•]\textbf{Flusso degli eventi principale}:
 \begin{enumerate}
 \item UC 3.3.1 - Selezione esercizio;
@@ -82,34 +81,33 @@ DA FARE
 \subsubsection{UC 3.3.1 - Selezione esercizio}
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo;
-\item[•]\textbf{Descrizione}: L’allievo seleziona un esercizio nella lista delle frasi consigliate;
-\item[•]\textbf{Precondizione}: Il sistema offre la possibilità di visualizzare una lista di esercizi;
-\item[•]\textbf{Postcondizione}: Un esercizio è stato correttamente selezionato;
+\item[•]\textbf{Descrizione}: L'allievo seleziona un esercizio nella lista delle frasi consigliate;
+\item[•]\textbf{Precondizione}: L'allievo visualizza una lista di esercizi;
+\item[•]\textbf{Postcondizione}: L'allievo ha selezionato un esercizio;
 \item[•]\textbf{Flusso degli eventi principale}:
 \begin{enumerate}
-\item UC 3.3.1.1 - Selezione insegnante;
-\item UC 3.4 - Svolgimento esercizio.
+\item UC 3.3.1.1 - Selezione filtro insegnante.
 \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC 3.3.1.1 - Selezione insegnante}\begin{figure}[H]
+\subsubsection{UC 3.3.1.1 - Selezione filtro insegnante}\begin{figure}[H]
 \centering
 \includegraphics[width=17cm]{img/UC331.png} 
 \caption{Caso d'uso 3.3.1}\label{fig:331}
 \end{figure}
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo;
-\item[•]\textbf{Descrizione}: L’allievo seleziona l’insegnante da cui vuole ricevere la correzione dell’esercizio, se nessun insegnante ha predisposto quella frase verrà utilizzato il sistema di correzione automatico. Quando è possibile l’insegnante preferito viene selezionato automaticamente;
-\item[•]\textbf{Precondizione}: L’allievo ha selezionato un esercizio;
-\item[•]\textbf{Postcondizione}: L’allievo ha selezionato da chi vuole ricevere la correzione;
+\item[•]\textbf{Descrizione}: L'allievo seleziona l'insegnante da cui vuole ricevere la correzione dell'esercizio, se nessun insegnante ha predisposto quella frase verrà utilizzato il sistema di correzione automatico. Quando è possibile l'insegnante preferito viene selezionato automaticamente;
+\item[•]\textbf{Precondizione}: L'allievo ha selezionato un esercizio;
+\item[•]\textbf{Postcondizione}: L'allievo ha selezionato da chi vuole ricevere la correzione;
 \end{itemize}
 
 \subsubsection{UC 3.3.2 - Inserimento frase libera}
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo;
-\item[•]\textbf{Descrizione}: L’allievo inserisce la propria frase in modo da ricevere l’analisi grammaticale di essa;
-\item[•]\textbf{Precondizione}: Il sistema offre la possibilità di inserire una frase;
-\item[•]\textbf{Postcondizione}: Una frase è stata correttamente inserita;
+\item[•]\textbf{Descrizione}: L'allievo inserisce la propria frase in modo da ricevere l'analisi grammaticale di essa;
+\item[•]\textbf{Precondizione}: L'allievo vuole inserire una frase;
+\item[•]\textbf{Postcondizione}: L'allievo ha correttamente inserito una frase;
 \item[•]\textbf{Flusso degli eventi principale}:
 \begin{enumerate}
 \item UC 3.4.3 - Visualizzazione soluzione.
@@ -124,8 +122,8 @@ DA FARE
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo, Libreria di pos-tagging;
 \item[•]\textbf{Descrizione}: La frase inserita non è accettata dalla libreria di pos-tagging. L'allievo visualizza un errore e può inserire una nuova frase;
-\item[•]\textbf{Precondizione}: L’allievo ha provato ad inserire una frase;
-\item[•]\textbf{Postcondizione}: L’allievo ha visualizzato il messaggio di errore e può inserire una nuova frase;
+\item[•]\textbf{Precondizione}: L'allievo ha provato ad inserire una frase;
+\item[•]\textbf{Postcondizione}: L'allievo ha visualizzato il messaggio di errore e può inserire una nuova frase;
 \end{itemize}
 
 \subsubsection{UC 3.4 - Svolgimento esercizio}
@@ -136,9 +134,9 @@ DA FARE
 \end{figure}
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo;
-\item[•]\textbf{Descrizione}: L’allievo può svolgere l’esercizio scegliendo le classi grammaticali per ciascuna parola da una apposita lista;
-\item[•]\textbf{Precondizione}: L’allievo ha selezionato un esercizio;
-\item[•]\textbf{Postcondizione}: L’allievo ha svolto un esercizio;
+\item[•]\textbf{Descrizione}: L'allievo può svolgere l'esercizio scegliendo le classi grammaticali per ciascuna parola da una apposita lista;
+\item[•]\textbf{Precondizione}: L'allievo ha selezionato un esercizio;
+\item[•]\textbf{Postcondizione}: L'allievo ha svolto un esercizio;
 \item[•]\textbf{Flusso degli eventi principale}:
 \begin{enumerate}
 \item UC 3.4.1 - Classificazione parola;
@@ -153,32 +151,32 @@ DA FARE
 \subsubsection{UC 3.4.1 - Classificazione parola}
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo;
-\item[•]\textbf{Descrizione}: L’allievo seleziona la classe grammaticale di una parola da una lista predefinita;
-\item[•]\textbf{Precondizione}: Il sistema dà la possibilità di selezionare la classe grammaticale di una parola;
-\item[•]\textbf{Postcondizione}: L’allievo ha selezionato la classe grammaticale di una parola;
+\item[•]\textbf{Descrizione}: L'allievo seleziona la classe grammaticale di una parola da una lista predefinita;
+\item[•]\textbf{Precondizione}: L'allievo ha iniziato a svolgere un esercizio;
+\item[•]\textbf{Postcondizione}: L'allievo ha selezionato la classe grammaticale di una parola;
 \end{itemize}
 
 \subsubsection{UC 3.4.2 - Interruzione svolgimento esercizio}
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo;
-\item[•]\textbf{Descrizione}: L’allievo interrompe l’esercizio, scartando i dati inseriti fino a quel momento, e ritorna nella sezione di ricerca di un esercizio;
-\item[•]\textbf{Precondizione}: L’allievo ha iniziato a svolgere un esercizio;
-\item[•]\textbf{Postcondizione}: L’allievo ha interrotto l’esercizio, torna nella sezione di ricerca di un esercizio;
+\item[•]\textbf{Descrizione}: L'allievo interrompe l'esercizio, scartando i dati inseriti fino a quel momento, e ritorna nella sezione di ricerca di un esercizio;
+\item[•]\textbf{Precondizione}: L'allievo ha iniziato a svolgere un esercizio;
+\item[•]\textbf{Postcondizione}: L'allievo ha interrotto l'esercizio, torna nella sezione di ricerca di un esercizio;
 \end{itemize}
 
 \subsubsection{UC 3.4.3 - Visualizzazione soluzione}
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo, Libreria di pos-tagging;
-\item[•]\textbf{Descrizione}: L’allievo visualizza la correzione secondo l’insegnante selezionato in precedenza. Se era stata inserita una frase libera la correzione viene eseguita dal sistema di correzione automatico;
-\item[•]\textbf{Precondizione}: L’allievo ha svolto un esercizio oppure ha inserito una frase libera;
-\item[•]\textbf{Postcondizione}: L’allievo ha visualizzato la soluzione dell’esercizio;
+\item[•]\textbf{Descrizione}: L'allievo visualizza la correzione secondo l'insegnante selezionato in precedenza. Se era stata inserita una frase libera la correzione viene eseguita dal sistema di correzione automatico;
+\item[•]\textbf{Precondizione}: L'allievo ha svolto un esercizio oppure ha inserito una frase libera;
+\item[•]\textbf{Postcondizione}: L'allievo ha visualizzato la soluzione dell'esercizio;
 \item[•]\textbf{Flusso degli eventi principale}:
 \begin{enumerate}
-\item UC 3.4.3.1 - Selezione soluzione alternativa.
+\item UC 3.4.3.1 - Visualizzazione valutazione.
 \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC 3.4.3.1 - Selezione soluzione alternativa}
+\subsubsection{UC 3.4.3.1 - Visualizzazione valutazione esercizio}
 \begin{figure}[H]
 \centering
 \includegraphics[width=17cm]{img/UC343.png} 
@@ -186,9 +184,9 @@ DA FARE
 \end{figure}
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo;
-\item[•]\textbf{Descrizione}: L’allievo può selezionare da una lista una soluzione alternativa proposta dallo stesso insegnante;
-\item[•]\textbf{Precondizione}: L’allievo ha visualizzato la correzione dell’esercizio svolto;
-\item[•]\textbf{Postcondizione}: L’allievo ha visualizzato una soluzione alternativa dell’esercizio svolto;
+\item[•]\textbf{Descrizione}: L'allievo riceve una valutazione in base al numero di parole classificate correttamente. Se sono presenti più soluzioni proposte dallo stesso insegnante viene presa la soluzione che porta alla valutazione più alta.
+\item[•]\textbf{Precondizione}: L'allievo ha visualizzato la soluzione dell'esercizio svolto;
+\item[•]\textbf{Postcondizione}: L'allievo ha visualizzato una valutazione sull'esercizio svolto;
 \end{itemize}
 
 
