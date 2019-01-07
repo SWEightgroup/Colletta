@@ -1,0 +1,71 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.27)  27 DEC 2018 00:25
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**riferimenti_normativi.tex
+(./riferimenti_normativi.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{itemize}
+                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--1
+[] 
+ []
+
+! Undefined control sequence.
+l.2 	\item \textbf{Norme di Progetto:} \NdP
+                                            ;
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (34.34012pt too wide) in paragraph at lines 2--3
+\OT1/cmr/bx/n/10 Norme
+ []
+
+
+Overfull \hbox (9.58328pt too wide) in paragraph at lines 2--3
+\OT1/cmr/bx/n/10 di
+ []
+
+
+Overfull \hbox (22.18045pt too wide) in paragraph at lines 2--3
+\OT1/cmr/bx/n/10 Pro-
+ []
+
+
+Overfull \hbox (28.90958pt too wide) in paragraph at lines 2--3
+\OT1/cmr/bx/n/10 getto: 
+ []
+
+)
+! Emergency stop.
+<*> riferimenti_normativi.tex
+                             
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 10 strings out of 492982
+ 231 string characters out of 6134895
+ 53919 words of memory out of 5000000
+ 3675 multiletter control sequences out of 15000+600000
+ 3948 words of font info for 15 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 13i,1n,10p,85b,111s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

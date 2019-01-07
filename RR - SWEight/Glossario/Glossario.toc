@@ -1,0 +1,13 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{\numberline {1}A}{2}{section.1}
+\contentsline {section}{\numberline {2}B}{3}{section.2}
+\contentsline {section}{\numberline {3}C}{4}{section.3}
+\contentsline {section}{\numberline {4}D}{5}{section.4}
+\contentsline {section}{\numberline {5}L}{6}{section.5}
+\contentsline {section}{\numberline {6}M}{7}{section.6}
+\contentsline {section}{\numberline {7}N}{8}{section.7}
+\contentsline {section}{\numberline {8}P}{9}{section.8}
+\contentsline {section}{\numberline {9}Q}{10}{section.9}
+\contentsline {section}{\numberline {10}S}{11}{section.10}
+\contentsline {section}{\numberline {11}T}{12}{section.11}
