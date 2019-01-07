@@ -1,7 +1,7 @@
 %generare il pdf con il comando: pdflatex main.tex
 \documentclass[a4paper, oneside, openany, dvipsnames, table]{article}
 \usepackage{../template/SWEightStyle}
-
+\usepackage{tabularx}
 \input{comandi.tex}
 
 \begin{document}
@@ -24,7 +24,7 @@
 \newpage
 \input{sez/amministratore.tex}
 \section{Requisiti}
-DA FARE
+\input{sez/tabellarequisiti.tex}
 \section{Tracciamento dei requisiti}
 DA FARE
 \end{document}
