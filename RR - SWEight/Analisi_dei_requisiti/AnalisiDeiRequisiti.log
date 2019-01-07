@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.6)  7 JAN 2019 10:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.6)  6 JAN 2019 21:05
 entering extended mode
-**./norme-di-progetto.tex
-(norme-di-progetto.tex
+**./AnalisiDeiRequisiti.tex
+(AnalisiDeiRequisiti.tex
 LaTeX2e <2018-12-01>
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -125,9 +125,6 @@ Package: array 2018/11/13 v2.4j Tabular extension package (FMi)
 \backup@length=\skip54
 \ar@cellbox=\box35
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/lastpage\lastpage.sty"
-Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
-)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr.sty"
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
@@ -140,6 +137,9 @@ s
 \f@nch@O@erf=\skip61
 \f@nch@O@olf=\skip62
 \f@nch@O@orf=\skip63
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/lastpage\lastpage.sty"
+Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
@@ -992,25 +992,26 @@ File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 LaTeX Warning: Unused global option(s):
     [openany].
 
-(norme-di-progetto.aux)
-\openout1 = `norme-di-progetto.aux'.
+(AnalisiDeiRequisiti.aux (sez/allievi.aux) (sez/sviluppatori.aux))
+\openout1 = `AnalisiDeiRequisiti.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 9.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 7.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 ("C:\Program Files\MiKTeX 2.9\tex/context/base\supp-pdf.mkii"
@@ -1075,9 +1076,9 @@ G,.JBIG2,.JB2,.eps]
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 9.
-LaTeX Info: Redefining \it@ocap on input line 9.
-LaTeX Info: Redefining \it@ccap on input line 9.
+(lastpage)             ! on input line 7.
+LaTeX Info: Redefining \it@ocap on input line 7.
+LaTeX Info: Redefining \it@ccap on input line 7.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -1086,7 +1087,7 @@ Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count266
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box53
-Package hyperref Info: Link coloring ON on input line 9.
+Package hyperref Info: Link coloring ON on input line 7.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1096,96 +1097,94 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count267
 )
-LaTeX Info: Redefining \ref on input line 9.
-LaTeX Info: Redefining \pageref on input line 9.
-LaTeX Info: Redefining \nameref on input line 9.
+LaTeX Info: Redefining \ref on input line 7.
+LaTeX Info: Redefining \pageref on input line 7.
+LaTeX Info: Redefining \nameref on input line 7.
 
-(norme-di-progetto.out) (norme-di-progetto.out)
+(AnalisiDeiRequisiti.out) (AnalisiDeiRequisiti.out)
 \@outlinefile=\write4
-\openout4 = `norme-di-progetto.out'.
+\openout4 = `AnalisiDeiRequisiti.out'.
 
-<../template/img/logoSWEight.png, id=266, 138.7584pt x 96.36pt>
+<../template/img/logoSWEight.png, id=394, 138.7584pt x 96.36pt>
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 10
-.
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 8.
+
 (pdftex.def)             Requested size: 138.75806pt x 96.35974pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 10.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 8.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 10.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 8.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 10.
-
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 8.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 10.
-
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 8.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 10.
+(Font)              <10> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 10.
+(Font)              <7> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 10.
-LaTeX Font Info:    Try loading font information for U+msa on input line 10.
+(Font)              <5> on input line 8.
+LaTeX Font Info:    Try loading font information for U+msa on input line 8.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 10.
+LaTeX Font Info:    Try loading font information for U+msb on input line 8.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-! Undefined control sequence.
-\copertina ...extbf {Redazione} & \ACapoRedazione 
-                                                  {} \\ \textbf {Verifica} &...
-l.10 \copertina
-               {}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\copertina ...} \\ \textbf {Verifica} & \Verifica 
-                                                  {} \\ \textbf {Approvazion...
-l.10 \copertina
-               {}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\copertina ...xtbf {Approvazione} & \Approvazione 
-                                                  {} \\ \textbf {Uso} & \Uso...
-l.10 \copertina
-               {}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[1
+) [1
 
 {C:/Users/Francesco Magarotto/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
-} <../template/img/logoSWEight.png>] (sez/RegistroModifiche.tex
-Underfull \vbox (badness 10000) detected at line 18
+} <../template/img/logoSWEight.png>] (AnalisiDeiRequisiti.toc
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 56
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.56 ...difica esercizio}{23}{subsubsection.3.3.8}
+                                                  % [1])
+\tf@toc=\write5
+\openout5 = `AnalisiDeiRequisiti.toc'.
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 10
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2] (sez/RegistroModifiche.tex
+Underfull \vbox (badness 10000) detected at line 17
  []
 
 )
@@ -1201,51 +1200,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.12 \newpage
-              [1] (norme-di-progetto.toc
-File: ../template/img/logoSWEight.png Graphic file (type png)
-<use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 53
-.
-(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 22.87169pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[2])
-\tf@toc=\write5
-\openout5 = `norme-di-progetto.toc'.
-
-File: ../template/img/logoSWEight.png Graphic file (type png)
-<use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 14
-.
-(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 22.87169pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[3] (sez/ProcessiPrimari.tex
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 9.
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omslmr.fd"
+[3] (sez/introduzione.tex
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 16.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 9.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 16.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 17.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 50
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 24
 .
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -1256,53 +1224,70 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 78.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-<example-image-b.pdf, id=368, 321.2pt x 240.9pt>
-File: example-image-b.pdf Graphic file (type pdf)
-<use example-image-b.pdf>
-Package pdftex.def Info: example-image-b.pdf  used on input line 89.
-(pdftex.def)             Requested size: 224.83847pt x 168.62883pt.
-File: ../template/img/logoSWEight.png Graphic file (type png)
-<use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 96
-.
-(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 22.87169pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[5 <C:/Program Files/MiKTeX 2.9/tex/latex/mwe/example-image-b.pdf>])
-(sez/Progettazione.tex
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 33.
+(hyperref)                than one, level fixed on input line 26.
 
+)
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 39
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 15
 .
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 22.87169pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6]) (sez/Processi_di_supporto.tex
-Overfull \hbox (406.38895pt too wide) in paragraph at lines 26--29
-\T1/lmr/m/n/10 Per ogni do-cu-men-to de-ve es-se-re spe-ci-fi-ca-ta ob-bli-ga-t
-o-ria-men-te la ver-sio-ne nel-la se-guen-te for-ma: []
+[5] (sez/utenteGenerico.tex
+<img/PanoramicaUtenteGenerico.png, id=537, 1022.31938pt x 442.65375pt>
+File: img/PanoramicaUtenteGenerico.png Graphic file (type png)
+<use img/PanoramicaUtenteGenerico.png>
+Package pdftex.def Info: img/PanoramicaUtenteGenerico.png  used on input line 6
+.
+(pdftex.def)             Requested size: 483.69684pt x 209.43192pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 6--7
+ [][] 
+ []
+
+<img/UC11.png, id=538, 714.41907pt x 426.09187pt>
+File: img/UC11.png Graphic file (type png)
+<use img/UC11.png>
+Package pdftex.def Info: img/UC11.png  used on input line 14.
+(pdftex.def)             Requested size: 483.69684pt x 288.48381pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 14--15
+ [][] 
  []
 
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 29
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 19
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6 <./img/PanoramicaUtenteGenerico.png> <./img/UC11.png>]
+<img/UC12.png, id=549, 682.04813pt x 385.44pt>
+File: img/UC12.png Graphic file (type png)
+<use img/UC12.png>
+Package pdftex.def Info: img/UC12.png  used on input line 53.
+(pdftex.def)             Requested size: 483.69684pt x 273.3526pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 53--54
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 57
 .
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -1312,41 +1297,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7]
-File: ../template/img/logoSWEight.png Graphic file (type png)
-<use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 62
-.
-(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+<img/UC13.png, id=559, 1065.9825pt x 551.81157pt>
+File: img/UC13.png Graphic file (type png)
+<use img/UC13.png>
+Package pdftex.def Info: img/UC13.png  used on input line 82.
+(pdftex.def)             Requested size: 483.69684pt x 250.38422pt.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 22.87169pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[8]
-File: ../template/img/logoSWEight.png Graphic file (type png)
-<use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 11
-2.
-(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 22.87169pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[9]
-Overfull \hbox (373.19402pt too wide) in paragraph at lines 117--120
-\T1/lmr/m/n/10 Date: ogni da-ta de-ve se-gui-re lo stan-dard in-ter-na-zio-na-l
-e per da-te e ora-ri ISO 8601:2004: []
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 82--83
+ [][] 
  []
 
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 16
-6.
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 86
+.
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1354,38 +1318,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]
+[8 <./img/UC12.png>]
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 23
-1.
-(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 22.87169pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[11]
-LaTeX Font Info:    Font shape `OMS/lmr/bx/n' in size <10> not available
-(Font)              Font shape `OMS/lmsy/b/n' tried instead on input line 234.
-File: ../template/img/logoSWEight.png Graphic file (type png)
-<use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 27
-5.
-(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 22.87169pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[12]
-File: ../template/img/logoSWEight.png Graphic file (type png)
-<use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 31
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 11
 3.
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -1395,11 +1331,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[9 <./img/UC13.png>]
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 36
-4.
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 16
+1.
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
 
@@ -1408,10 +1344,523 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]
+[10])
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 41
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 18
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
+\openout2 = `sez/allievi.aux'.
+
+ (sez/allievi.tex
+
+LaTeX Warning: File `img/Panoramica Allievi.png' not found on input line 7.
+
+<img/Panoramica Allievi.png, id=594, 1028.34187pt x 676.02562pt>
+File: img/Panoramica Allievi.png Graphic file (type png)
+<use img/Panoramica Allievi.png>
+Package pdftex.def Info: img/Panoramica Allievi.png  used on input line 7.
+(pdftex.def)             Requested size: 483.69684pt x 317.97964pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 7--8
+ [] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 12.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 12.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 12.
+
+<img/UC32.png, id=595, 654.19406pt x 507.39563pt>
+File: img/UC32.png Graphic file (type png)
+<use img/UC32.png>
+Package pdftex.def Info: img/UC32.png  used on input line 15.
+(pdftex.def)             Requested size: 483.69684pt x 375.1572pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 15--16
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 19
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12
+
+ <./img/Panoramica Allievi.png>]
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 37
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13 <./img/UC32.png>]
+<img/UC33.png, id=616, 937.25156pt x 433.62pt>
+File: img/UC33.png Graphic file (type png)
+<use img/UC33.png>
+Package pdftex.def Info: img/UC33.png  used on input line 67.
+(pdftex.def)             Requested size: 483.69684pt x 223.78987pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 67--68
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 73
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14 <./img/UC33.png>]
+<img/UC331.png, id=624, 657.95813pt x 295.85532pt>
+File: img/UC331.png Graphic file (type png)
+<use img/UC331.png>
+Package pdftex.def Info: img/UC331.png  used on input line 97.
+(pdftex.def)             Requested size: 483.69684pt x 217.50294pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 97--98
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 11
+0.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15 <./img/UC331.png>]
+<img/UC34.png, id=636, 681.29532pt x 400.49625pt>
+File: img/UC34.png Graphic file (type png)
+<use img/UC34.png>
+Package pdftex.def Info: img/UC34.png  used on input line 134.
+(pdftex.def)             Requested size: 483.69684pt x 284.3421pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 134--135
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 14
+1.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16 <./img/UC34.png>]
+<img/UC343.png, id=646, 639.13782pt x 322.95656pt>
+File: img/UC343.png Graphic file (type png)
+<use img/UC343.png>
+Package pdftex.def Info: img/UC343.png  used on input line 184.
+(pdftex.def)             Requested size: 483.69684pt x 244.41467pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 184--185
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 18
+8.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17])
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 19
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18 <./img/UC343.png>] (sez/Insegnante.tex
+<img/UC22.png, id=664, 662.475pt x 599.23875pt>
+File: img/UC22.png Graphic file (type png)
+<use img/UC22.png>
+Package pdftex.def Info: img/UC22.png  used on input line 10.
+(pdftex.def)             Requested size: 483.69684pt x 437.52295pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 10--11
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 25
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[19
+
+ <./img/UC22.png>]
+<img/UC221.png, id=673, 665.48625pt x 560.8453pt>
+File: img/UC221.png Graphic file (type png)
+<use img/UC221.png>
+Package pdftex.def Info: img/UC221.png  used on input line 35.
+(pdftex.def)             Requested size: 483.69684pt x 407.6422pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 35--36
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 52
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20 <./img/UC221.png>]
+<img/UC222.png, id=686, 662.475pt x 529.98pt>
+File: img/UC222.png Graphic file (type png)
+<use img/UC222.png>
+Package pdftex.def Info: img/UC222.png  used on input line 60.
+(pdftex.def)             Requested size: 483.69684pt x 386.95496pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 60--61
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 75
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21 <./img/UC222.png>]
+<img/UC223.png, id=694, 662.475pt x 501.37312pt>
+File: img/UC223.png Graphic file (type png)
+<use img/UC223.png>
+Package pdftex.def Info: img/UC223.png  used on input line 82.
+(pdftex.def)             Requested size: 483.69684pt x 366.06818pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 82--83
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 10
+3.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22 <./img/UC223.png>]
+<img/UC224.png, id=704, 662.475pt x 525.46312pt>
+File: img/UC224.png Graphic file (type png)
+<use img/UC224.png>
+Package pdftex.def Info: img/UC224.png  used on input line 110.
+(pdftex.def)             Requested size: 483.69684pt x 383.65704pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 110--111
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 13
+4.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23 <./img/UC224.png>]
+<img/UC23.png, id=716, 1367.8603pt x 965.10562pt>
+File: img/UC23.png Graphic file (type png)
+<use img/UC23.png>
+Package pdftex.def Info: img/UC23.png  used on input line 144.
+(pdftex.def)             Requested size: 483.69684pt x 341.26744pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 144--145
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 16
+0.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24 <./img/UC23.png>]
+<img/UC232.png, id=729, 651.93562pt x 454.69875pt>
+File: img/UC232.png Graphic file (type png)
+<use img/UC232.png>
+Package pdftex.def Info: img/UC232.png  used on input line 186.
+(pdftex.def)             Requested size: 483.69684pt x 337.36682pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 186--187
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 19
+5.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25 <./img/UC232.png>]
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 25
+0.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26])
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 22
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27]
+\openout2 = `sez/sviluppatori.aux'.
+
+ (sez/sviluppatori.tex
+<img/UC4x.png, id=754, 612.03656pt x 734.745pt>
+File: img/UC4x.png Graphic file (type png)
+<use img/UC4x.png>
+Package pdftex.def Info: img/UC4x.png  used on input line 5.
+(pdftex.def)             Requested size: 483.69684pt x 580.67763pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 5--6
+ [][] 
+ []
+
+<img/UC410.png, id=755, 539.76656pt x 274.77657pt>
+File: img/UC410.png Graphic file (type png)
+<use img/UC410.png>
+Package pdftex.def Info: img/UC410.png  used on input line 11.
+(pdftex.def)             Requested size: 483.69684pt x 246.24004pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 11--12
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 15
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28
+
+ <./img/UC4x.png>]
+<img/UC420.png, id=763, 874.01532pt x 691.08188pt>
+File: img/UC420.png Graphic file (type png)
+<use img/UC420.png>
+Package pdftex.def Info: img/UC420.png  used on input line 24.
+(pdftex.def)             Requested size: 483.69727pt x 284.52644pt.
+
+Overfull \hbox (11.38132pt too wide) in paragraph at lines 24--25
+ [][] 
+ []
+
+<img/UC426.png, id=764, 826.58812pt x 573.64313pt>
+File: img/UC426.png Graphic file (type png)
+<use img/UC426.png>
+Package pdftex.def Info: img/UC426.png  used on input line 29.
+(pdftex.def)             Requested size: 483.70976pt x 284.52754pt.
+
+Overfull \hbox (11.39381pt too wide) in paragraph at lines 29--30
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 31
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29 <./img/UC410.png>]
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 34
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30 <./img/UC420.png> <./img/UC426.png>]
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 88
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31]
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 14
+1.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32]
+<img/UC440.png, id=810, 602.25pt x 494.59781pt>
+File: img/UC440.png Graphic file (type png)
+<use img/UC440.png>
+Package pdftex.def Info: img/UC440.png  used on input line 156.
+(pdftex.def)             Requested size: 483.71208pt x 298.75336pt.
+
+Overfull \hbox (11.39613pt too wide) in paragraph at lines 156--157
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 16
+9.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33 <./img/UC440.png>]
+<img/UC450.png, id=820, 865.73438pt x 526.96875pt>
+File: img/UC450.png Graphic file (type png)
+<use img/UC450.png>
+Package pdftex.def Info: img/UC450.png  used on input line 212.
+(pdftex.def)             Requested size: 483.69684pt x 294.42505pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 212--213
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 21
+6.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34]
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 23
 9.
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -1421,11 +1870,55 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15]
+[35 <./img/UC450.png>]
+<img/UC460.png, id=838, 517.935pt x 290.58563pt>
+File: img/UC460.png Graphic file (type png)
+<use img/UC460.png>
+Package pdftex.def Info: img/UC460.png  used on input line 275.
+(pdftex.def)             Requested size: 483.72144pt x 199.16966pt.
+
+Overfull \hbox (11.40549pt too wide) in paragraph at lines 275--276
+ [][] 
+ []
+
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 46
-7.
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 27
+9.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36]
+<img/UC470.png, id=847, 542.77782pt x 332.74312pt>
+File: img/UC470.png Graphic file (type png)
+<use img/UC470.png>
+Package pdftex.def Info: img/UC470.png  used on input line 289.
+(pdftex.def)             Requested size: 483.71674pt x 227.62302pt.
+
+Overfull \hbox (11.40079pt too wide) in paragraph at lines 289--290
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 29
+4.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37 <./img/UC460.png> <./img/UC470.png>])
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 23
+.
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
 
@@ -1434,11 +1927,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]) 
-AED: lastpage setting LastPage
+[38] (sez/amministratore.tex
+<img/UC51.png, id=862, 509.65407pt x 377.15906pt>
+File: img/UC51.png Graphic file (type png)
+<use img/UC51.png>
+Package pdftex.def Info: img/UC51.png  used on input line 10.
+(pdftex.def)             Requested size: 483.69684pt x 357.96529pt.
+
+Overfull \hbox (11.38089pt too wide) in paragraph at lines 10--11
+ [][] 
+ []
+
+<img/UC52.png, id=863, 630.85687pt x 365.11406pt>
+File: img/UC52.png Graphic file (type png)
+<use img/UC52.png>
+Package pdftex.def Info: img/UC52.png  used on input line 31.
+(pdftex.def)             Requested size: 483.70131pt x 256.08507pt.
+
+Overfull \hbox (11.38536pt too wide) in paragraph at lines 31--32
+ [][] 
+ []
+
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 18
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 34
 .
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -1447,40 +1959,117 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 18.
- (norme-di-progetto.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18.
-Package rerunfilecheck Info: File `norme-di-progetto.out' has not changed.
-(rerunfilecheck)             Checksum: CE44700C6ADCE74BB99D79C6B096245C;4628.
+[39
+
+ <./img/UC51.png>]
+<img/UC53.png, id=871, 626.34pt x 361.35pt>
+File: img/UC53.png Graphic file (type png)
+<use img/UC53.png>
+Package pdftex.def Info: img/UC53.png  used on input line 51.
+(pdftex.def)             Requested size: 483.71686pt x 256.07509pt.
+
+Overfull \hbox (11.40091pt too wide) in paragraph at lines 51--52
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 54
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40 <./img/UC52.png>]
+<img/UC54.png, id=879, 584.93532pt x 310.91156pt>
+File: img/UC54.png Graphic file (type png)
+<use img/UC54.png>
+Package pdftex.def Info: img/UC54.png  used on input line 83.
+(pdftex.def)             Requested size: 483.7111pt x 256.07822pt.
+
+Overfull \hbox (11.39516pt too wide) in paragraph at lines 83--84
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 86
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41 <./img/UC53.png>]
+<img/UC55.png, id=890, 509.65407pt x 364.36125pt>
+File: img/UC55.png Graphic file (type png)
+<use img/UC55.png>
+Package pdftex.def Info: img/UC55.png  used on input line 112.
+(pdftex.def)             Requested size: 483.71756pt x 284.53976pt.
+
+Overfull \hbox (11.40161pt too wide) in paragraph at lines 112--113
+ [][] 
+ []
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 11
+6.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42 <./img/UC54.png>]) 
+AED: lastpage setting LastPage
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 30
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[43 <./img/UC55.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
+ (AnalisiDeiRequisiti.aux (sez/allievi.aux)
+(sez/sviluppatori.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
+Package rerunfilecheck Info: File `AnalisiDeiRequisiti.out' has not changed.
+(rerunfilecheck)             Checksum: 5D5792E9D925ACAAD05647B2C5A5B435;8852.
  ) 
 Here is how much of TeX's memory you used:
- 24532 strings out of 492946
- 451530 string characters out of 3135484
- 774971 words of memory out of 3000000
- 27805 multiletter control sequences out of 15000+200000
- 52148 words of font info for 46 fonts, out of 3000000 for 9000
+ 24897 strings out of 492946
+ 457550 string characters out of 3135484
+ 776966 words of memory out of 3000000
+ 27964 multiletter control sequences out of 15000+200000
+ 51218 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,18n,124p,806b,663s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fil
-es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fon
-ts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/l
-m-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/lm/lmbsy10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
-r7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmtt10.pfb>
-Output written on norme-di-progetto.pdf (18 pages, 336357 bytes).
+ 66i,18n,124p,787b,663s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
+bx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx7.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
+Output written on AnalisiDeiRequisiti.pdf (44 pages, 1521131 bytes).
 PDF statistics:
- 533 PDF objects out of 1000 (max. 8388607)
- 99 named destinations out of 1000 (max. 500000)
- 543 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1001 PDF objects out of 1200 (max. 8388607)
+ 260 named destinations out of 1000 (max. 500000)
+ 944 words of extra memory for PDF output out of 10000 (max. 10000000)
 

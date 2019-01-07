@@ -1,15 +1,18 @@
 %generare il pdf con il comando: pdflatex main.tex
 \documentclass[a4paper, oneside, openany, dvipsnames, table]{article}
 \usepackage{../template/SWEightStyle}
+\usepackage{tabularx}
+\newcommand{\mc}{\multicolumn} % handy shortcut macro
+\newcolumntype{Z}{>{\centering\arraybackslash}X}
 \input{comandi.tex}
 
 \begin{document}
-%\copertina{}
-%\input{sez/RegistroModifiche.tex}
+\copertina{}
+\input{sez/RegistroModifiche.tex}
 \newpage
 \tableofcontents
 \newpage
-%\input{sez/ProcessiPrimari.tex}
+\input{sez/ProcessiPrimari.tex}
 \input{sez/Progettazione.tex}
 \input{sez/Processi_di_supporto.tex}
 \end{document}
