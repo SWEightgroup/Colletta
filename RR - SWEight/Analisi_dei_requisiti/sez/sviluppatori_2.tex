@@ -5,7 +5,7 @@
 \includegraphics[width=17cm]{img/UC4x.png} 
 \caption{Panoramica casi d'uso che interessano lo Sviluppatore, per le versioni più specifiche dei vari casi si vedano sotto}\label{fig:4x}
 \end{figure}
-\subsubsection{UC 4.1 - Visualizzazione elenco frasi}
+\subsection{UC 4.1 - Visualizzazione dashboard}
 \begin{figure}[H]
 \centering
 \includegraphics[width=17cm]{img/UC410.png} 
@@ -13,16 +13,77 @@
 \end{figure}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
-\item[•]\textbf{Descrizione}: Lo sviluppatore visualizza un elenco di frasi accompagnate dalla data di creazione e dall’autore ordinate cronologicamente;
-\item[•]\textbf{Precondizione}:  Lo sviluppatore si è autenticato nel sistema.% e visualizza la propria dashboard\ped{G}.
-\item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza l'elenco delle preposizioni ordinate cronologicamente;
-\item[•]\textbf{Flusso degli eventi principale}: Lo sviluppatore ha selezionato la voce relativa alla pagina contenente l’elenco delle frasi e ne visualizza il contenuto; 
+\item[•]\textbf{Descrizione}: Lo sviluppatore  la propria {dashboard}\ped{G};
+\item[•]\textbf{Precondizione}: Lo sviluppatore si è autenticato;
+\item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza la dashboard e può vederne tutte le componenti;
+\item[•]\textbf{Flusso degli eventi principale}:
+\begin{enumerate}
+\item UC 4.1.1 - Visualizzazione elenco frasi;
+\item UC 4.1.2 - Visualizzazione elenco modelli.
+\end{enumerate}
 \end{itemize}
-\subsubsection{UC 4.2 - Filtraggio dei dati}
+
+
+
+\subsubsection{UC 4.1.1 - Visualizzazione elenco frasi}
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm]{img/UC410.png} 
+\caption{Caso d'uso 4.1.1}\label{fig:411}
+\end{figure}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore visualizza un elenco di frasi accompagnate dalla data di creazione e dall’autore ordinate cronologicamente;
+\item[•]\textbf{Precondizione}:  Lo sviluppatore si è autenticato nel sistema e visualizza la propria dashboard\ped{G}.
+\item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza l'elenco delle preposizioni ordinate cronologicamente;
+\item[•]\textbf{Flusso degli eventi principale}: 
+\begin{enumerate}
+\item UC 4.1.3 - Visualizzazione storico frase;
+\item UC 4.1.4 - Scaricamento dati.
+\end{enumerate}
+\item[•]\textbf{Flusso degli eventi alternativo}:
+\begin{enumerate}
+\item UC 4.1.2 - Inserimento filtri dati;
+\end{enumerate}
+\end{itemize}
+
+\subsubsection{UC 4.1.2 - Inserimento filtri dati}
 \begin{figure}[H]
 \centering
 \includegraphics[width=17cm, height=10cm]{img/UC420.png} 
 \caption{Caso d'uso 4.2}\label{fig:420}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm, height=10cm]{img/UC426.png} 
+\caption{Caso d'uso 4.2.6 relativo alla rimozione dei filtri}\label{fig:426}
+\end{figure}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore applica dei filtri ai dati, ottenendo solo quelli d'interesse;
+\item[•]\textbf{Precondizione}: Lo sviluppatore visualizza le proposizioni in ordine cronologico;
+\item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza i dati che rispettano i filtri scelti;
+\item[•]\textbf{Flusso degli eventi principale}:
+\begin{enumerate}
+\item UC 4.1.2.1 - Inserimento filtro periodo temporale;
+\item UC 4.1.2.2 - Inserimento filtro fonte\ped{G};
+\item UC 4.1.2.3 - Selezione filtro lingue;
+\item UC 4.1.2.4 - Ricerca parole chiave.
+\end{enumerate}
+\item[•]\textbf{Estensioni}:
+\begin{enumerate}
+	\item UC 4.1.2.5 - Rimozione filtro;
+\end{enumerate}
+\item[•]\textbf{Inclusioni}:
+\begin{enumerate}
+\item UC 4.1.2.6 - Visualizzazione dati filtrati
+\end{enumerate}
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm, height=10cm]{img/UC410.png} 
+\caption{Caso d'uso 4.1.2}\label{fig:420}
 \end{figure}
 \begin{figure}[H]
 \centering
@@ -43,14 +104,15 @@
 \end{enumerate}
 \item[•]\textbf{Estensioni}:
 \begin{enumerate}
-	\item UC 4.2.6 - Rimozione filtro;
+	\item UC 4.1.2.6 - Rimozione filtro;
 \end{enumerate}
 \item[•]\textbf{Inclusioni}:
 \begin{enumerate}
-\item UC 4.2.5 - Visualizzazione dati filtrati
+\item UC 4.1.2.6 - Visualizzazione dati filtrati
 \end{enumerate}
 \end{itemize}
-\subsubsection{UC 4.2.1 - Inserimento filtro periodo temporale}
+
+\subsubsection{UC 4.1.2.1 - Inserimento filtro periodo temporale}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: Lo sviluppatore seleziona un periodo temporale, ottenendo i dati salvati in un determinato arco di tempo;
@@ -64,32 +126,32 @@
 \item[•]\textbf{Estensioni}: 
 \begin{enumerate}
 	\item Visualizzazione messaggio di errore nel caso si scegliesse una data non idonea;
-	\item UC 4.2.6 - Rimozione filtro;
+	\item UC 4.1.2.5 - Rimozione filtro;
 \end{enumerate}
 \item[•]\textbf{Inclusioni}:
 \begin{enumerate}
-\item UC 4.2.5 - Visualizzazione dati filtrati.
+\item UC 4.1.2.6 - Visualizzazione dati filtrati.
 \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC 4.2.2 - Inserimento filtro fonte}
+\subsubsection{UC 4.1.2.2 - Inserimento filtro fonte}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: Lo sviluppatore seleziona una o più fonti degli esercizi, come ad esempio le correzione provenienti da determinati docenti o dal sistema di correzione automatico;
-\item[•]\textbf{Precondizione}: Lo sviluppatore visualizza le proposizioni in base ai filtri stabiliti;
+\item[•]\textbf{Precondizione}: Lo sviluppatore visualizza le proposizioni in base ai filtri stabiliti, se ne;
 \item[•]\textbf{Postcondizione}: Lo sviluppatore ha impostato i valori del filtro fonte;
 \item[•]\textbf{Flusso degli eventi principale}: Lo sviluppatore seleziona da un elenco le fonti di cui è interessato visualizzare i dati;
 \item[•]\textbf{Estensioni}: 
 \begin{enumerate}
-	\item UC 4.2.6 - Rimozione filtro;
+	\item UC 4.1.2.5 - Rimozione filtro;
 \end{enumerate}
 \item[•]\textbf{Inclusioni}:
 \begin{enumerate}
-\item UC 4.2.5 - Visualizzazione dati filtrati.
+\item UC 4.1.2.6 - Visualizzazione dati filtrati.
 \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC 4.2.3 -  Selezione filtro lingue}
+\subsubsection{UC 4.1.2.3 -  Selezione filtro lingue}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: Lo sviluppatore seleziona una o più lingue da un elenco di lingue predefinito al fine di ottenere solamente le proposizioni scritte in tali lingue;
@@ -98,15 +160,15 @@
 \item[•]\textbf{Flusso degli eventi principale}: Lo sviluppatore seleziona da un elenco le lingue di cui è interessato vedere le proposizioni memorizzate;
 \item[•]\textbf{Estensioni}: 
 \begin{enumerate}
-	\item UC 4.2.6 - Rimozione filtro;
+	\item UC 4.1.2.5 - Rimozione filtro;
 \end{enumerate}
 \item[•]\textbf{Inclusioni}:
 \begin{enumerate}
-\item UC 4.2.5 - Visualizzazione dati filtrati.
+\item UC 4.1.2.6 - Visualizzazione dati filtrati.
 \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC 4.2.4 - Ricerca frase}
+\subsubsection{UC 4.1.2.4 - Ricerca frase}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: Lo sviluppatore scrive una o più parole chiave al fine di cernere le frasi contenenti tali parole;
@@ -116,15 +178,24 @@
 \item[•]\textbf{Estensioni}: 
 \begin{enumerate}
 	\item Visualizzazione messaggio di errore nel caso venga inserito un input non consentito;
-	\item UC 4.2.6 - Rimozione filtro;
+	\item UC 4.1.2.5 - Rimozione filtro;
 \end{enumerate}
 \item[•]\textbf{Inclusioni}:
 \begin{enumerate}
-\item UC 4.2.5 - Visualizzazione dati filtrati
+\item UC 4.1.2.6 - Visualizzazione dati filtrati
 \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC 4.2.5 - Visualizzazione dati filtrati}
+\subsubsection{UC 4.1.2.5 - Rimozione filtro}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore cancella il valore del filtro selezionato.
+\item[•]\textbf{Precondizione}: Il filtro contiene un valore ed è applicato un filtraggio ai dati rispettando le condizioni di tale filtro;
+\item[•]\textbf{Postcondizione}: Il filtro è stato rimosso pertanto i dati visualizzati non rispetteranno più tale vincolo.
+\item[•]\textbf{Flusso degli eventi}: Lo sviluppatore seleziona il filtro e ne cancella il valore, annullando il suo effetto.
+\end{itemize}
+
+\subsubsection{UC 4.1.2.6 - Visualizzazione dati filtrati}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: Selezionato uno o più filtri, i dati vengono mostrati secondo i vincoli inseriti;
@@ -132,25 +203,7 @@
 \item[•]\textbf{Postcondizione}: I dati mostrati rispettano tali vincoli;
 \end{itemize}
 
-\subsubsection{UC 4.2.6 - Rimozione filtro}
-\begin{itemize}
-\item[•]\textbf{Attori}: Sviluppatore;
-\item[•]\textbf{Descrizione}: Lo sviluppatore cancella il valore del filtro selezionato.
-\item[•]\textbf{Precondizione}: Il filtro contiene un valore ed è applicato un filtraggio ai dati rispettando le condizioni di tale filtro;
-\item[•]\textbf{Postcondizione}: Il filtro è stato rimosso pertanto i dati visualizzati non rispetteranno più tale vincolo.
-\item[•]\textbf{Flusso degli eventi}: Lo sviluppatore seleziona il filtro e lo rimuove.
- \end{itemize}
-  
-\subsubsection{UC 4.3 - Visualizzazione storico frase}
-\begin{itemize}
-\item[•]\textbf{Attori}: Sviluppatore;
-\item[•]\textbf{Descrizione}: Lo sviluppatore seleziona una frase dall'elenco e ne visualizza lo storico contenente la correzione fornita dal sistema automatico, ed eventualmente quelle redatte anche da insegnanti diversi;
-\item[•]\textbf{Precondizione}:  Lo sviluppatore visualizza le frasi in base ai filtri stabiliti;
-\item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza tutte le correzioni della frase;
-\item[•]\textbf{Flusso degli eventi principale}: Lo sviluppatore seleziona la frase e appare lo storico della frase.
-\end{itemize}
-
-\subsubsection{UC 4.4 - Scaricamento dati}
+\subsubsection{UC 4.1.3 - Scaricamento dati}
 \begin{figure}[H]
 \centering
 \includegraphics[width=17cm, height=10.5cm]{img/UC440.png} 
@@ -170,7 +223,7 @@
 \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC 4.4.1 - Scelta contenuti download}
+\subsubsection{UC 4.1.3.1 - Scelta contenuti download}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: Lo sviluppatore sceglie gli elementi di interesse che vuole siano scaricati una volta completata la procedura di download;
@@ -179,7 +232,7 @@
 \item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona dall'elenco, eventualmente filtrato, le proposizioni d'interesse, come ad esempio quelle provenienti da i soli docenti selezionati.
 \end{itemize}
 
-\subsubsection{UC 4.4.2 - Scelta formato file}
+\subsubsection{UC 4.1.3.2 - Scelta formato file}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}:  Lo sviluppatore seleziona da un elenco prestabilito il formato dei file che intende scaricare;
@@ -188,7 +241,7 @@
 \item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona dall'elenco prestabilito un'opzione che determina il formato dei file che contengono i dati precedentemente scelti.
 \end{itemize}
 
-\subsubsection{UC 4.4.2 - Scelta formato archivio}
+\subsubsection{UC 4.1.3.3 - Scelta formato archivio}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: Lo sviluppatore seleziona da un elenco prestabilito il formato dell'archivio compresso con cui vuole che i dati d'interesse siano compressi;
@@ -197,7 +250,7 @@
 \item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona dall'elenco prestabilito un'opzione che determina il formato dell'archivio che contiene i file relativi ai dati precedentemente scelti.
 \end{itemize}
 
-\subsubsection{UC 4.4.2 - Ottenimento file}
+\subsubsection{UC 4.1.3.4 - Ottenimento file}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: Lo sviluppatore riceve un archivio dati contenente i dati, salvati in file aventi estensione scelta dal programmatore;
@@ -206,70 +259,17 @@
 \item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona dall'elenco prestabilito un'opzione che determina il formato dell'archivio che contiene i file relativi ai dati precedentemente scelti.
 \end{itemize}
 
-\subsubsection{UC 4.5 - Creazione modello}
-\begin{figure}[H]
-\centering
-\includegraphics[width=17cm]{img/UC450.png} 
-\caption{Caso d'uso 4.5}\label{fig:450}
-\end{figure}
+
+\subsubsection{UC 4.1.3 - Visualizzazione storico frase}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
-\item[•]\textbf{Descrizione}: Lo sviluppatore crea un nuovo modello;
-\item[•]\textbf{Precondizione}: Lo sviluppatore non ha creato il modello;
-\item[•]\textbf{Postcondizione}: Lo sviluppatore ha creato un nuovo modello;
-\item[•]\textbf{Flusso degli eventi principale}:  
-\begin{enumerate}
-	\item UC 4.5.1 - Scelta parametri funzione;
-	\item UC 4.5.2 - Inserimento nome modello;
-	\item UC 4.5.3 - Salvataggio modello.
-\end{enumerate}
+\item[•]\textbf{Descrizione}: Lo sviluppatore seleziona una frase dall'elenco e ne visualizza lo storico contenente la correzione fornita dal sistema automatico, ed eventualmente quelle redatte anche da insegnanti diversi;
+\item[•]\textbf{Precondizione}:  Lo sviluppatore visualizza le frasi in base ai filtri stabiliti, se questi sono stati stabiliti;
+\item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza tutte le versioni della frase;
+\item[•]\textbf{Flusso degli eventi principale}: Lo sviluppatore seleziona la frase e ne appare lo storico.
 \end{itemize}
 
-\subsubsection{UC 4.5.1 - Scelta parametri funzione}
-\begin{itemize}
-\item[•]\textbf{Attori}: Sviluppatore;
-\item[•]\textbf{Descrizione}: Lo sviluppatore sceglie i parametri della funzione per la creazione di un nuovo modello con i relativi valori associati;
-\item[•]\textbf{Precondizione}: Lo sviluppatore non ha scelto i parametri da inserire;
-\item[•]\textbf{Postcondizione}: Lo sviluppatore ha inserito i parametri per la creazione di un nuovo modello;
-\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore inserisce tutti i parametri necessari che verranno impiegati nella realizzazione del modello.
-\item[•] \textbf{Estensioni}: 
-\begin{enumerate}
-	\item UC 4.5.4 - Valore parametro non valido.
-\end{enumerate}
-\end{itemize}
-
-\subsubsection{UC 4.5.2 - Inserimento nome modello}
-\begin{itemize}
-\item[•]\textbf{Attori}: Sviluppatore;
-\item[•]\textbf{Descrizione}: Lo sviluppatore inserisce il nome per il modello che intende salvare;
-\item[•]\textbf{Precondizione}: Lo sviluppatore non ha inserito il nome del modello;
-\item[•]\textbf{Postcondizione}: Lo sviluppatore ha inserito il nome del modello;
-\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore inserisce una stringa che definisce il nome del modello che verrà memorizzato.
-\item[•] \textbf{Estensioni}: 
-\begin{enumerate}
-	\item UC 4.5.5 - Visualizzazione messaggio errore nome duplicato.
-\end{enumerate}
-\end{itemize}
-
-\subsubsection{UC 4.5.3 - Salvataggio modello}
-\begin{itemize}
-\item[•]\textbf{Attori}: Sviluppatore;
-\item[•]\textbf{Descrizione}: Lo sviluppatore salva il modello di cui ha definito il nome;
-\item[•]\textbf{Precondizione}: Lo sviluppatore ha inserito il nome del modello;
-\item[•]\textbf{Postcondizione}: Lo sviluppatore ha salvato il modello;
-\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona l'opzione relativa al salvataggio che comporta il salvataggio del modello.
-\end{itemize}
-
-\subsubsection{UC 4.5.5 - Visualizzazione messaggio errore nome duplicato}
-\begin{itemize}
-\item[•]\textbf{Attori}: Sviluppatore;
-\item[•]\textbf{Descrizione}: Lo sviluppatore visualizza un messaggio di errore relativo all'inserimento di un modello avente lo stesso nome di uno già inserito;
-\item[•]\textbf{Precondizione}: Lo sviluppatore ha inserito il nome del modello;
-\item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza il messaggio di errore e inserisce un nuovo nome;
-\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore visualizza il messaggio di errore e può inserire una stringa che definisce il nome del modello che verrà memorizzato.
-\end{itemize}
-
-\subsubsection{UC 4.6 - Visualizzazione elenco modelli}
+\subsubsection{UC 4.1.2 - Visualizzazione elenco modelli}
 \begin{figure}[H]
 \centering
 \includegraphics[width=17cm, height=7cm]{img/UC460.png} 
@@ -278,12 +278,15 @@
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: Lo sviluppatore visualizza l'elenco dei modelli realizzati per lo svolgimento degli esercizi;
-\item[•]\textbf{Precondizione}: Lo sviluppatore si è autenticato nel sistema;
+\item[•]\textbf{Precondizione}: Lo sviluppatore si è autenticato nel sistema e visualizza la propria dashboard;
 \item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza l'elenco dei modelli;
-\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona la voce del menù relativa ai modelli e ne visualizza l'elenco.
+\item[•]\textbf{Estensioni}:
+\begin{enumerate}
+\item UC 4.1.2.1 - Scaricamento modello;
+\end{enumerate}
 \end{itemize}
 
-\subsubsection{UC 4.7 - Scaricamento modello}
+\subsubsection{UC 4.1.2.1 - Scaricamento modello}
 \begin{figure}[H]
 \centering
 \includegraphics[width=17cm, height=8cm]{img/UC470.png} 
@@ -297,22 +300,23 @@
 \item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona l'opzione di scaricamento sul nome del modello desiderato e ottiene un file contenete il modello.
 \end{itemize}
 
-%\subsubsection{UC 4.8 - Visualizzazione della dashboard}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width=17cm]{img/UC480.png} 
-%\caption{Caso d'uso 4.8}\label{fig:480}
-%\end{figure}
-%\begin{itemize}
-%\item[•]\textbf{Attori}: Sviluppatore;
-%\item[•]\textbf{Descrizione}: Lo sviluppatore  la propria {dashboard}\ped{G};
-%\item[•]\textbf{Precondizione}: L'allievo si è autenticato;
-%\item[•]\textbf{Postcondizione}: L'allievo ha visualizzato la {dashboard}\ped{G} e può vederne tutte le componenti;
-%\item[•]\textbf{Flusso degli eventi principale}:
-%\begin{enumerate}
-%\item UC 3.2.1 - Visualizzazione progressi;
-%\item UC 3.2.2 - Visualizzazione traguardi;
-%\item UC 3.2.3 - Visualizzazione valutazioni;
-%\item UC 3.2.4 - Inserimento insegnante preferito.
-%\end{enumerate}
-%\end{itemize}
+\subsubsection{UC 4.1.3 - Creazione modello}
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm]{img/UC450.png} 
+\caption{Caso d'uso 4.5}\label{fig:450}
+\end{figure}
+\begin{itemize}
+\item[•]\textbf{Attori}: Sviluppatore;
+\item[•]\textbf{Descrizione}: Lo sviluppatore crea un nuovo modello;
+\item[•]\textbf{Precondizione}: Lo sviluppatore non ha creato il modello;
+\item[•]\textbf{Postcondizione}: Lo sviluppatore ha creato un nuovo modello;
+\item[•]\textbf{Flusso degli eventi principale}:  
+\begin{enumerate}
+	\item UC 4.1.3.1 - Scelta parametri funzione;
+	\item UC 4.1.3.2 - Inserimento nome modello;
+	\item UC 4.1.3.3 - Salvataggio modello.
+\end{enumerate}
+\end{itemize}
+
+%end
