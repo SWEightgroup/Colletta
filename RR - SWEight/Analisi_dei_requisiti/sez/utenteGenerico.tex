@@ -43,44 +43,44 @@ DA FARE
 \begin{itemize}
 \item[•]\textbf{Attori}: Utente non autenticato;
 \item[•]\textbf{Descrizione}: L’utente inserisce una password durante la registrazione;
-\item[•]\textbf{Precondizione}: L’utente non è autenticato;
-\item[•]\textbf{Postcondizione}: L’utente ha inserito una password;
+\item[•]\textbf{Precondizione}: L'utente non è autenticato;
+\item[•]\textbf{Postcondizione}: L'utente ha inserito una password;
 \end{itemize}
 
-\subsubsection{UC 1.2 - Inserimento frase libera}
-\begin{figure}[H]
-\centering
-\includegraphics[width=17cm]{img/UC12.png} 
-\caption{Caso d'uso 1.2}\label{fig:12}
-\end{figure}
-\begin{itemize}
-\item[•]\textbf{Attori}: Utente non autenticato;
-\item[•]\textbf{Descrizione}: L’allievo inserisce la propria frase in modo da ricevere l’analisi grammaticale di essa;
-\item[•]\textbf{Precondizione}: Il sistema offre la possibilità di inserire una frase;
-\item[•]\textbf{Postcondizione}: Una frase è stata correttamente inserita;
-\item[•]\textbf{Flusso degli eventi principale}:
-\begin{enumerate}
-\item UC 3.4.3 - Visualizzazione soluzione.
-\end{enumerate}
-\item[•]\textbf{Estensioni}:
-\begin{enumerate}
-\item UC 1.2.1 - Visualizzazione errore inserimento frase.
-\end{enumerate}
-\end{itemize}
+%\subsubsection{UC 1.2 - Inserimento frase libera}
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=17cm]{img/UC12.png} 
+%\caption{Caso d'uso 1.2}\label{fig:12}
+%\end{figure}
+%\begin{itemize}
+%\item[•]\textbf{Attori}: Utente non autenticato;
+%\item[•]\textbf{Descrizione}: L'allievo inserisce la propria frase in modo da ricevere l'analisi grammaticale di essa;
+%\item[•]\textbf{Precondizione}: Il sistema offre la possibilità di inserire una frase;
+%\item[•]\textbf{Postcondizione}: Una frase è stata correttamente inserita;
+%\item[•]\textbf{Flusso degli eventi principale}:
+%\begin{enumerate}
+%\item UC 3.4.3 - Visualizzazione soluzione.
+%\end{enumerate}
+%\item[•]\textbf{Estensioni}:
+%\begin{enumerate}
+%\item UC 1.2.1 - Visualizzazione errore inserimento frase.
+%\end{enumerate}
+%\end{itemize}
 
-\subsubsection{UC 1.2.1 - Visualizzazione errore inserimento frase}
-\begin{itemize}
-\item[•]\textbf{Attori}: Utente non autenticato, Libreria di pos-tagging;
-\item[•]\textbf{Descrizione}: La frase inserita non è accettata dalla libreria di pos-tagging. L'allievo visualizza un errore e può inserire una nuova frase;
-\item[•]\textbf{Precondizione}: L’allievo ha provato ad inserire una frase;
-\item[•]\textbf{Postcondizione}: L’allievo ha visualizzato il messaggio di errore e può inserire una nuova frase;
-\end{itemize}
+%\subsubsection{UC 1.2.1 - Visualizzazione errore inserimento frase}
+%\begin{itemize}
+%\item[•]\textbf{Attori}: Utente non autenticato, Libreria di pos-tagging;
+%\item[•]\textbf{Descrizione}: La frase inserita non è accettata dalla libreria di pos-tagging. L'allievo visualizza un errore e può inserire una nuova frase;
+%\item[•]\textbf{Precondizione}: L'allievo ha provato ad inserire una frase;
+%\item[•]\textbf{Postcondizione}: L'allievo ha visualizzato il messaggio di errore e può inserire una nuova frase;
+%\end{itemize}
 
-\subsubsection{UC 1.3 - Registrazione utente}
+\subsubsection{UC 1.2 - Registrazione utente}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=17cm]{img/UC13.png} 
-	\caption{Caso d'uso 1.3}\label{fig:13}
+	\includegraphics[width=17cm]{img/UC12.png} 
+	\caption{Caso d'uso 1.2}\label{fig:12}
 \end{figure}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Utente non registrato;
@@ -89,21 +89,21 @@ DA FARE
 	\item[•]\textbf{Postcondizione}: L'utente si è registrato e può quindi accedere al sistema;
 	\item[•]\textbf{Flusso degli eventi principale}:
 	\begin{enumerate}
-		\item Inserimento nome utente;
-		\item Inserimento email;
-		\item Inserimento password;
-		\item Inserimento conferma password;
-		\item Inserimento data di nascita;
-		\item Inserimento ruolo;
+		\item UC 1.2.3 - Inserimento nome utente;
+		\item UC 1.2.4 - Inserimento email;
+		\item UC 1.2.5 - Inserimento password;
+		\item UC 1.2.6 - Inserimento conferma password;
+		\item UC 1.2.7 - Inserimento data di nascita;
+		\item UC 1.2.8 - Selezione ruolo;
 	\end{enumerate}
 	\item[•]\textbf{Estensioni}:
 	\begin{enumerate}
-		\item UC 1.3.1 - Visualizzazione messaggio errore dato presente;
-		\item UC 1.3.2 - Visualizzazione messaggio errore password diverse
+		\item UC 1.2.1 - Visualizzazione messaggio errore dato presente;
+		\item UC 1.2.2 - Visualizzazione messaggio errore password diverse
 	\end{enumerate}
 \end{itemize}
 
-\subsubsection{UC 1.3.1 - Visualizzazione messaggio errore dato presente}
+\subsubsection{UC 1.2.1 - Visualizzazione messaggio errore dato presente}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Utente non registrato;
 	\item[•]\textbf{Descrizione}: L'utente non registrato visualizza un messaggio di errore relativo all'inserimento
@@ -113,7 +113,7 @@ di un dato già presente nel sistema;
 	\item[•]\textbf{Flusso degli eventi principale}: L'utente inserisce una email o un nome utente già presente nel sistema, pertanto riceve un messaggio di errore.
 \end{itemize}
 
-\subsubsection{UC 1.3.2 - Visualizzazione messaggio errore password diverse}
+\subsubsection{UC 1.2.2 - Visualizzazione messaggio errore password diverse}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Utente non registrato;
 	\item[•]\textbf{Descrizione}: L'utente non registrato visualizza un messaggio che comunica che i valori della password e di conferma password sono tra loro diversi;
@@ -122,51 +122,59 @@ di un dato già presente nel sistema;
 	\item[•]\textbf{Flusso degli eventi principale}: L'utente inserisce password e conferma password con valori diversi, pertanto riceve un messaggio di errore.
 \end{itemize}
 
-\subsubsection{UC 1.4 - Richiesta registrazione Sviluppatore}
+%\subsubsection{UC 1.4 - Richiesta registrazione Sviluppatore}
+%\begin{itemize}
+%	\item[•]\textbf{Attori}: Utente non autenticato;
+%	\item[•]\textbf{Descrizione}: L'utente non identificato, che intende registrarsi come sviluppatore per poter accedere ai dati nella piattaforma, richiede di potersi registrare nel sistema;
+%	\item[•]\textbf{Precondizione}: L'utente non è registrato;
+%	\item[•]\textbf{Postcondizione}: L'utente ha effettuato la richiesta per registrarsi nell'applicativo;
+%	\item[•]\textbf{Flusso degli eventi principale}: L'utente seleziona l'opzione per effettuare la richiesta di registrazione di sviluppatore e la conferma.
+%\end{itemize}
+
+\subsubsection{UC 1.2.3 - Inserimento nome utente}
 \begin{itemize}
-	\item[•]\textbf{Attori}: Utente non autenticato;
-	\item[•]\textbf{Descrizione}: L'utente non identificato, che intende registrarsi come sviluppatore per poter accedere ai dati nella piattaforma, richiede di potersi registrare nel sistema;
+	\item[•]\textbf{Attori}: Utente non registrato;
+	\item[•]\textbf{Descrizione}: L'utente inserisce un nome utente durante la registrazione;
 	\item[•]\textbf{Precondizione}: L'utente non è registrato;
-	\item[•]\textbf{Postcondizione}: L'utente ha effettuato la richiesta per registrarsi nell'applicativo;
-	\item[•]\textbf{Flusso degli eventi principale}: L'utente seleziona l'opzione per effettuare la richiesta di registrazione di sviluppatore e la conferma.
+	\item[•]\textbf{Postcondizione}: L'utente ha inserito un nome utente;
 \end{itemize}
 
-\subsubsection{UC 1.3.3 - Inserimento nome utente}
+\subsubsection{UC 1.2.4 - Inserimento email istituzionale}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Utente non registrato;
-	\item[•]\textbf{Descrizione}: L’utente inserisce un nome utente durante la registrazione;
-	\item[•]\textbf{Precondizione}: L’utente non è registrato;
-	\item[•]\textbf{Postcondizione}: L’utente ha inserito un nome utente;
+	\item[•]\textbf{Descrizione}: L'utente inserisce la sua email istituzionale durante la registrazione;
+	\item[•]\textbf{Precondizione}: L'utente non è registrato;
+	\item[•]\textbf{Postcondizione}: L'utente ha inserito una email istituzionale;
 \end{itemize}
 
-\subsubsection{UC 1.3.4 - Inserimento email istituzionale}
+\subsubsection{UC 1.2.5 - Inserimento password}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Utente non registrato;
-	\item[•]\textbf{Descrizione}: L’utente inserisce la sua email istituzionale durante la registrazione;
-	\item[•]\textbf{Precondizione}: L’utente non è registrato;
-	\item[•]\textbf{Postcondizione}: L’utente ha inserito una email istituzionale;
+	\item[•]\textbf{Descrizione}: L'utente inserisce una password durante la registrazione;
+	\item[•]\textbf{Precondizione}: L'utente non è registrato;
+	\item[•]\textbf{Postcondizione}: L'utente ha inserito una password;
 \end{itemize}
 
-\subsubsection{UC 1.3.5 - Inserimento password}
+\subsubsection{UC 1.2.6 - Inserimento conferma password}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Utente non registrato;
-	\item[•]\textbf{Descrizione}: L’utente inserisce una password durante la registrazione;
-	\item[•]\textbf{Precondizione}: L’utente non è registrato;
-	\item[•]\textbf{Postcondizione}: L’utente ha inserito una password;
+	\item[•]\textbf{Descrizione}: L'utente inserisce la conferma della password durante la registrazione;
+	\item[•]\textbf{Precondizione}: L'utente non è registrato;
+	\item[•]\textbf{Postcondizione}: L'utente ha inserito la conferma della password;
 \end{itemize}
 
-\subsubsection{UC 1.3.6 - Inserimento conferma password}
+\subsubsection{UC 1.2.7 - Inserimento data di nascita}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Utente non registrato;
-	\item[•]\textbf{Descrizione}: L’utente inserisce la conferma della password durante la registrazione;
-	\item[•]\textbf{Precondizione}: L’utente non è registrato;
-	\item[•]\textbf{Postcondizione}: L’utente ha inserito la conferma della password;
+	\item[•]\textbf{Descrizione}: L'utente inserisce la sua data di nascita durante la registrazione;
+	\item[•]\textbf{Precondizione}: L'utente non è registrato;
+	\item[•]\textbf{Postcondizione}: L'utente ha inserito la sua data di nascita;
 \end{itemize}
 
-\subsubsection{UC 1.3.7 - Inserimento data di nascita}
+\subsubsection{UC 1.2.8 - Selezione ruolo}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Utente non registrato;
-	\item[•]\textbf{Descrizione}: L’utente inserisce la sua data di nascita durante la registrazione;
-	\item[•]\textbf{Precondizione}: L’utente non è registrato;
-	\item[•]\textbf{Postcondizione}: L’utente ha inserito la sua data di nascita;
+	\item[•]\textbf{Descrizione}: L'utente seleziona il ruolo desiderato all'interno del sistema;
+	\item[•]\textbf{Precondizione}: L'utente non è registrato e il suo ruolo non è selezionato;
+	\item[•]\textbf{Postcondizione}: L'utente ha selezionato il ruolo desiderato;
 \end{itemize}
