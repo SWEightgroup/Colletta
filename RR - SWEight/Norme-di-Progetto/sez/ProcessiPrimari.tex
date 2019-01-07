@@ -8,7 +8,7 @@ Successivamente, gli Analisti devono effettuare lo Studio di Fattibilità per og
 \begin{itemize}
 \item \textbf{Informazioni sul capitolato};
 \item \textbf{Descrizione}: Una sintesi del prodotto da realizzare secondo le richieste del capitolato;
-\item \textbf{Dominio applicativo}: contesto in cui l’applicazione opera;
+\item \textbf{Dominio applicativo}: contesto in cui l'applicazione opera;
 \item \textbf{Dominio tecnologico}: rappresenta il dominio tecnologico richiesto dal capitolato;
 \item \textbf{Considerazioni del gruppo}: racchiude tutte le valutazioni dei membri del gruppo che hanno portato ad una accettazione o ad un rifiuto;
 \item \textbf{Valutazione finale}: descrive le motivazioni decisive che hanno portato il gruppo a scegliere o a rigettare il capitolato;
@@ -35,7 +35,7 @@ I vari requisiti\ped{G} potranno provenire dalle seguenti fonti:
 \begin{itemize}
     \item[•] \textbf{Capitolato}\ped{G}: il requisito è stato scritto esplicitamente nel documento fornito dalla proponente;
     \item[•] \textbf{Verbali interni e studio di fattibilità}: Il requisito è emerso durante la discussione del capitolato tra gli analisti;
-    \item[•] \textbf{Casi d’uso}\ped{G}: il requisito è il risultato dell’analisi di uno o più casi d’uso.
+    \item[•] \textbf{Casi d'uso}\ped{G}: il requisito è il risultato dell'analisi di uno o più casi d'uso.
 \end{itemize}
 
 I vari requisiti devono essere classificati secondo la seguente convenzione\ped{G}:
@@ -62,18 +62,18 @@ Dove:
 Ogni identificativo di requisito \textbf{non} deve essere più modificato nel tempo, per evitare incongruenze tra i documenti.
 Deve essere realizzata una tabella che classifichi tutti i requisiti, incorporando una descrizione e la provenienza del requisito, indicata con il termine fonte.
 Segue un esempio:
-%\begin{table}[H]
-%\centering
-%\begin{tabular}{| c | c | c | c | c |}
-%\hline
-%\textbf{Identificativo} & \textbf{Importanza} & \textbf{Tipo} & \textbf{Fonte} & \textbf{Descrizione} \\
-%\hline
-%\textbf{3V001} & Requisito obbligatorio & Di vincolo & Capitolato & Gli sviluppatori devono poter accedere ai dati raccolti gratuitamente \\
-%\hline
-%\end{tabular}
-%\end{table}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\linewidth}{| c | c | c | c | Z |}
+\hline
+\textbf{Identificativo} & \textbf{Importanza} & \textbf{Tipo} & \textbf{Fonte} & \textbf{Descrizione} \\
+\hline
+\textbf{3V001} & Requisito obbligatorio & Di vincolo & Capitolato & Gli sviluppatori devono poter accedere ai dati raccolti gratuitamente \\
+\hline
+\end{tabularx}
+\end{table}
 \subsubsection{Casi d'uso}
-Dopo la stesura dei requisiti, gli Analisti devono analizzare tutti i casi d’uso (d'ora in poi UC); ognuno di essi deve essere composto da un codice identificativo univoco, eventuali diagrammi UML e infine dalla sua descrizione testuale. In particolare, per quanto riguarda l'identificazione si procederà come descritto di seguito:
+Dopo la stesura dei requisiti, gli Analisti devono analizzare tutti i casi d'uso (d'ora in poi UC); ognuno di essi deve essere composto da un codice identificativo univoco, eventuali diagrammi UML e infine dalla sua descrizione testuale. In particolare, per quanto riguarda l'identificazione si procederà come descritto di seguito:
 \begin{center}
 UC[\texttt{Codice identificativo}]
 \end{center}
@@ -89,11 +89,11 @@ Per quanto riguarda la descrizione testuale dei casi d'uso i membri del gruppo i
 \includegraphics[scale=0.7]{example-image-b}
 \caption{Caso d'uso Codice univoco}
 \end{figure}
-UC \texttt{Codice univoco} - Titolo del caso d'uso, la cui lunghezza deve essere ristretta e utiizzare verbi all'infinito
+UC \texttt{Codice univoco} - Titolo del caso d'uso, la cui lunghezza deve essere ristretta e utilizzare verbi all'infinito
 \begin{itemize}
 \item[•] Attore: gli attori coinvolto nell'interazione con il sistema;
 \item[•] Precondizione: Definisce lo stato del sistema, pertanto anche le condizioni che devono essere vere, prima dell'esecuzione del caso d'uso;
-\item[•] Flusso degli eventi: Il sussegguirsi di eventi che conducono alla postcondizione. Deve essere realizzato con un elenco numerato, facendo riferimento eventualmente ad ulteriori casi d'uso, oppure con una breve descrizione testuale;
+\item[•] Flusso degli eventi: Il susseguirsi di eventi che conducono alla postcondizione. Deve essere realizzato con un elenco numerato, facendo riferimento eventualmente ad ulteriori casi d'uso, oppure con una breve descrizione testuale;
 \item[•] Postcondizione: Definisce lo stato del sistema dopo il verificarsi del caso d'uso; 
 \item[•] Estensioni: Eventuali estensioni coinvolte;
 \item[•] Inclusioni: Eventuali inclusioni coinvolte;
