@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.27)  7 JAN 2019 18:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.27)  7 JAN 2019 18:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2244,8 +2244,8 @@ Package rerunfilecheck Info: File `Piano_di_Progetto.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  27898 strings out of 492982
- 521796 string characters out of 6134895
- 703664 words of memory out of 5000000
+ 521802 string characters out of 6134895
+ 703670 words of memory out of 5000000
  30641 multiletter control sequences out of 15000+600000
  60377 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2258,7 +2258,7 @@ f/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr1
 /type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmtt10.pfb>
-Output written on Piano_di_Progetto.pdf (37 pages, 685667 bytes).
+Output written on Piano_di_Progetto.pdf (37 pages, 685682 bytes).
 PDF statistics:
  746 PDF objects out of 1000 (max. 8388607)
  638 compressed objects within 7 object streams
