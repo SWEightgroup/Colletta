@@ -34,7 +34,7 @@
 \end{figure}
 
 \begin{itemize}
-	\item[•] \textbf{Attori}:  Insegnante	\item[•] \textbf{Descrizione}: L’insegnante visualizza nel suo profilo personale lo storico delle frasi inserite; 
+	\item[•] \textbf{Attori}:  Insegnante	   \item[•] \textbf{Descrizione}: L’insegnante visualizza nel suo profilo personale lo storico delle frasi inserite; 
 	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di visualizzare lo storico delle frasi inserite dall’insegnante;
 	\item[•] \textbf{Postcondizione}:  L’insegnante può navigare all’interno della lista di frasi che ha inserito.
 	\item[•] \textbf{Flusso degli eventi}:
@@ -83,7 +83,7 @@
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: L’insegnante visualizza la lista dei suoi allievi;
-	\item[•] \textbf{Precondizione}: Il sistema offre all’insegnante di visualizzare la lista dei propri allievi;
+	\item[•] \textbf{Precondizione}: Il sistema offre all’insegnante la possibilità di visualizzare la lista dei propri allievi;
 	\item[•] \textbf{Postcondizione}: L’insegnante visualizza la lista dei propri allievi;
 	\item[•] \textbf{Flusso degli eventi}:
 		\begin{enumerate}
@@ -119,7 +119,7 @@
 		\begin{enumerate}
 			\item UC 2.2.2 Scrittura testo esercizio;
 			\item UC 2.2.5 Modifica tag automatici;
-			\item UC 2.2.8 Modificare visibilità esercizio.
+			\item UC 2.2.8 Modifica visibilità esercizio.
 			\item UC 2.2.9 Salva modifiche
 		\end{enumerate}
 		    
@@ -151,7 +151,7 @@
 
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
-	\item[•] \textbf{Descrizione}: L'insegnante attraverso una form aggiunge il testo di un nuovo esercizio;
+	\item[•] \textbf{Descrizione}: L'insegnante aggiunge attraverso una form il testo di un nuovo esercizio;
 	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di aggiungere un esercizio nel sistema;
 	\item[•] \textbf{Postcondizione}: Un nuovo esercizio è stato aggiunto;
 	\item[•] \textbf{Flusso degli eventi}:
@@ -159,15 +159,15 @@
 		\item UC 2.2.1 Predisporre lingua esercizio;
 		\item UC 2.2.2 Scrittura testo esercizio;
 		\item UC 2.2.3 Correzione automatica esercizio;
-		\item UC 2.2.4 Modifica tag automatici;
+		\item UC 2.2.4 Modifica {tag}\ped{G} automatici;
 		\item UC 2.2.5 Inserire più soluzioni;
-		\item UC 2.2.6 Modificare visibilità esercizio;
+		\item UC 2.2.6 Modifica visibilità esercizio;
 		\item UC 2.2.7 Salva modifiche;
 		\item UC 2.2.9 Conferma aggiunta esercizio;
 	\end{enumerate}
 	\item[•] \textbf{Estensioni}:	
 	\begin{enumerate}
-		\item UC 2.2.8 Visualizzazione errori.
+		\item UC 2.2.8 Visualizza errori.
 	\end{enumerate}
 \end{itemize}
 
@@ -178,7 +178,6 @@
 	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di scegliere tra più lingue il testo dell’esercizio;
 	\item[•] \textbf{Postcondizione}: La lingua è stata scelta;
 \end{itemize}
-
 
 \subsubsection{UC 2.2.2 Scrittura testo esercizio}
 
@@ -193,11 +192,11 @@
 	\item[•] \textbf{Descrizione}: L'insegnante scrive il testo dell’esercizio;
 	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di scrivere un testo;
 	\item[•] \textbf{Postcondizione}: Il testo è stato scritto;
-	\item[•] \textbf{Flusso degli eventi}:
-	\begin{enumerate}
-		\item UC 2.2.2.1 Cancellazione ultimo carattere;
-		\item UC 2.2.2.2 Testo esercizio completato;
-	\end{enumerate}
+	%\item[•] \textbf{Flusso degli eventi}:
+	%\begin{enumerate}
+		%\item UC 2.2.2.1 Cancellazione ultimo carattere;
+		%\item UC 2.2.2.2 Testo esercizio completato;
+	%\end{enumerate}
 \end{itemize}
 
 
@@ -207,24 +206,23 @@
 	\item[•] \textbf{Descrizione}: L’insegnante genera automaticamente i tag dal testo dell’esercizio attraverso la libreria di PoS-tagging;
 \end{itemize}
 
-\subsubsection{UC2.3.4	Modifica tag automatici}
+\subsubsection{UC 2.2.4	Modifica tag automatici}
 \begin{itemize}
-	\item[•] \textbf{Attori}: Insegnante e libreria di pos-tagging;
-	\item[•] \textbf{Descrizione}: L’insegnante modifica/corregge i tag generati automaticamente;
+	\item[•] \textbf{Attori}: Insegnante e libreria di PoS-tagging;
+	\item[•] \textbf{Descrizione}: L’insegnante modifica o corregge i tag generati automaticamente;
 	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di modificare i tag generati con la correzione automatica;
 	\item[•] \textbf{Postcondizione}: I tag relativi al testo scritto sono stati modificati o corretti;
 \end{itemize}
 
-\subsubsection{UC2.3.5	Inserire più soluzioni}
+\subsubsection{UC 2.2.5	Inserire più soluzioni}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante e libreria di pos-tagging;
 	\item[•] \textbf{Descrizione}: L'insegnante inserisce tag alternativi all’esercizio consultando la libreria di PoS-tagging;
-	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di inserire più tag per parola ad 
-			esercizio;
+	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di inserire più tag per parola ad esercizio;
 	\item[•] \textbf{Postcondizione}: Una soluzione alternativa è stata aggiunta.
 \end{itemize}
 
-\subsubsection{UC2.3.6	Modificare visibilità esercizio}
+\subsubsection{UC 2.2.6	Modifica visibilità esercizio}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: L'insegnante decide chi può visualizzare e svolgere esercizio;
@@ -232,7 +230,7 @@
 	\item[•] \textbf{Postcondizione}: L’esercizio è stato reso visibile o meno ad un gruppo di utenti.
 \end{itemize}
 
-\subsubsection{UC2.3.7	Salva modifiche}
+\subsubsection{UC 2.2.7	Salva modifiche}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: L'insegnante salva esercizio e possibili modifiche;
@@ -240,7 +238,7 @@
 	\item[•] \textbf{Postcondizione}: Un esercizio è stato salvato.
 \end{itemize}
 
-\subsubsection{UC2.3.8 Visualizzazione errori}
+\subsubsection{UC 2.2.8 Visualizza errori}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: L'insegnante visualizza gli errori relativi alla sintassi e la forma dell’esercizio che sta creando;
@@ -248,7 +246,7 @@
 	\item[•] \textbf{Postcondizione}: L’esercizio è stato visionato dal sistema, e gli errori sono stati visualizzati.
 \end{itemize}
 
-\subsubsection{UC2.3.1.1 Conferma aggiunta esercizio}
+\subsubsection{UC 2.3.1.1 Conferma aggiunta esercizio}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: L'insegnante aggiunge un esercizio al sistema;
