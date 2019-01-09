@@ -142,19 +142,27 @@ Ogni diagramma di caso d’uso è identificato in alto a sinistra dal suo codice
 
 %va messo un altro sub 
 \subsubsection{Stesura dei documenti}
-L’intera documentazione deve essere prodotta utilizzando il linguaggio di markup LATEX, scelto dal team per i seguenti motivi:
+L'intera documentazione deve essere prodotta utilizzando il {linguaggio di markup}\ped{G} \LaTeX{}, scelto dal team per i seguenti motivi:
 \begin{itemize}
 \item[•] Gestisce elegantemente e con facilità gli indici, i pedici, i riferimenti ed il glossario;
-\item[•] È un linguaggio che supporta il Versionamento;
-\item[•] Permette la stesura del documento suddividendolo in tanti sotto progetti che rappresentano le varie sezioni, aiutandoti a gestire meglio il documento.
+\item[•] È un linguaggio che supporta il {versionamento}\ped{G};
+\item[•] Permette la stesura del documento suddividendolo in parti che rappresentano le varie sezioni, facilitando così la stesura del documento.
 \end{itemize}
-Per la stesura del documento è consigliato l’utilizzo di Textmaker, un editor che implementa anche un ottimo correttore ortografico e si sillabazione.
+Per installare \LaTeX{} è necessario installare il compilatore pdflatex, integrato in un software come TexLive reperibile all'indirizzo \url{https://www.tug.org/texlive/}. Quest'ultimo è {cross platform}\ped{G}, {open source}\ped{G} e gratuito. Si consiglia l'installazione del pacchetto completo per evitare di installare pacchetti successivamente.
+Per la stesura del documento è consigliato l'utilizzo di Textmaker, le principali caratteristiche sono:
+\begin{itemize}
+	\item[•] Compilatore e visualizzatore {PDF}\ped{G} per il documento prodotto;
+	\item[•] Evidenziazione della sintassi;
+	\item[•] Completamento automatico.
+\end{itemize}  
+Il software è reperibile all'indirizzo \url{http://www.xm1math.net/texmaker/}, è {cross platform}\ped{G} ed è gratuito.
+
 
 %va messo un altro sub 
 \subsubsection{Controllo ortografico}
 Al termine della stesura dei documenti, prima di alla fase di verifica del documento, l’owner deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice Gulpeas.
 
-\subsection{Ciclo di vita}
+\subsubsection{Ciclo di vita}
 Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di issues offerto da GitHub.
 \begin{enumerate}
 \item Per iniziare la stesura di un documento l’owner deve assegnarsi una issues (To do);
@@ -459,20 +467,26 @@ Inizializzare, implementare e gestire processi software, richiede l’istanziazi
 \subsubsection{Versionamento}
 
 %va messo un altro sub 
-\subsubsection{Introduzione}
-Git, il più usato e conosciuto software di controllo di versione open source, è stato scelto per il controllo di versione, GitHub invece è la piattaforma di web hosting. 
+\paragraph{Introduzione}
+Git, il più usato e conosciuto {software di controllo di versione}\ped{G} {open source}\ped{G}, è stato scelto per il controllo di versione, GitHub invece è la piattaforma di web hosting. 
 \newline
-Il repository dedicato ai documenti si trova all’indirizzo: \url{https://github.com/SWEightgroup/Colletta} ed è formata dalle seguenti subdirectory:
+Il repository dedicato ai documenti è formata dalle seguenti subdirectory:
 \begin{itemize}
-\item[•] RR contiene tutti i documenti da consegnare per la Revisione dei Requisiti;
-\item[•] RP contiene tutti i documenti da consegnare per la Revisione di Progettazione;
-\item[•] RQ contiene tutti i documenti da consegnare per la Revisione di Qualifica;
-\item[•] RA contiene tutti i documenti da consegnare per la Revisione di Accettazione.
+\item[•] \textbf{RR} contiene tutti i documenti da consegnare per la Revisione dei Requisiti;
+\item[•] \textbf{RP} contiene tutti i documenti da consegnare per la Revisione di Progettazione;
+\item[•] \textbf{RQ} contiene tutti i documenti da consegnare per la Revisione di Qualifica;
+\item[•] \textbf{RA} contiene tutti i documenti da consegnare per la Revisione di Accettazione.
 \end{itemize}
 
+\paragraph{Github Desktop}
+Il {client}\ped{G} che viene utilizzato per il controllo di versione è Github Desktop, esso permette di gestire attraverso un'interfaccia grafica la {repository}\ped{G} al fine di consentire anche a coloro che non hanno familiarità con tale tool di apprenderlo con una {learning curve}\ped{G} meno ripida. Per utilizzare il programma è necessario recarsi al sito: \url{https://desktop.github.com/} disponibile sia per {Microsoft Windows}\ped{G} e {Apple MacOS}\ped{G}. Per quanto riguarda le varie {distribuzioni Linux}\ped{G} non è disponibile un client ufficiale pertanto è disponibile un {porting}\ped{G} non ufficiale all'indirizzo: \url{https://github.com/shiftkey/desktop}
+\paragraph{Messaggi di commit}
+Ogni volta che si effettuano modifiche sui file del {repository}\ped{G} locale per poi esser caricate in
+quello remoto, bisogna specificarne le motivazioni. \uppercase{è} importante che i messaggi siano esplicativi e che non creino ambiguità, pertanto si scrivano le varie modifiche facendo uso di un elenco puntato.
+Per la chiusura delle {issues} si può utilizzare la sintassi con le {keyword}\ped{G} direttamente all'interno dei {commit}\ped{G}, per fare ciò le keyword devono essere collocate alla fine del messaggio di commit. Per il loro utilizzo si rimanda alla documentazione di {git}\ped{G}: \url{https://help.github.com/articles/closing-issues-using-keywords/}. 
 
 \subsubsection{Strumenti di condivisione}
-Un altro servizio utilizzato dal team è Google Drive, servizio web in ambiente cloud, di memorizzazione e sincronizzazione online. Questo servizio ha anche un tool aggiuntivo per l’integrazione Slack, che permette al gruppo un rapido scambio di documenti.
+Un altro servizio utilizzato dal team è Google Drive, servizio web in {ambiente cloud}\ped{G}, di memorizzazione e sincronizzazione online. Questo servizio ha anche un tool aggiuntivo per l'integrazione {Slack}\ped{G}, che permette al gruppo un rapido scambio di documenti.
 
 \subsection{Miglioramento continuo dei processi}
 Processi, attività o compiti istanziati possono non essere definitivi. Se al termine di una delle fasi di progetto, un membro del gruppo dovesse trovare difficoltà, oppure se trovasse procedure più efficienti ed efficaci di quelle in uso, può decidere di proporre al responsabile di progetto di istanziarne di nuovi o modificare quelli già esistenti.  

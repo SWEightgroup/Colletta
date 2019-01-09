@@ -24,7 +24,7 @@
 \BOOKMARK [3][-]{subsubsection.4.1.10}{Diagrammi UML}{subsection.4.1}% 24
 \BOOKMARK [3][-]{subsubsection.4.1.11}{Stesura dei documenti}{subsection.4.1}% 25
 \BOOKMARK [3][-]{subsubsection.4.1.12}{Controllo ortografico}{subsection.4.1}% 26
-\BOOKMARK [2][-]{subsection.4.2}{Ciclo di vita}{section.4}% 27
+\BOOKMARK [3][-]{subsubsection.4.1.13}{Ciclo di vita}{subsection.4.1}% 27
 \BOOKMARK [1][-]{section.5}{Verifica}{}% 28
 \BOOKMARK [2][-]{subsection.5.1}{Scopo}{section.5}% 29
 \BOOKMARK [3][-]{subsubsection.5.1.1}{Analisi}{subsection.5.1}% 30
@@ -59,7 +59,9 @@
 \BOOKMARK [2][-]{subsection.6.5}{Gestione dell'infrastruttura}{section.6}% 59
 \BOOKMARK [3][-]{subsubsection.6.5.1}{Introduzione}{subsection.6.5}% 60
 \BOOKMARK [3][-]{subsubsection.6.5.2}{Versionamento}{subsection.6.5}% 61
-\BOOKMARK [3][-]{subsubsection.6.5.3}{Introduzione}{subsection.6.5}% 62
-\BOOKMARK [3][-]{subsubsection.6.5.4}{Strumenti di condivisione}{subsection.6.5}% 63
-\BOOKMARK [2][-]{subsection.6.6}{Miglioramento continuo dei processi}{section.6}% 64
-\BOOKMARK [2][-]{subsection.6.7}{Training process}{section.6}% 65
+\BOOKMARK [4][-]{paragraph.6.5.2.1}{Introduzione}{subsubsection.6.5.2}% 62
+\BOOKMARK [4][-]{paragraph.6.5.2.2}{Github Desktop}{subsubsection.6.5.2}% 63
+\BOOKMARK [4][-]{paragraph.6.5.2.3}{Messaggi di commit}{subsubsection.6.5.2}% 64
+\BOOKMARK [3][-]{subsubsection.6.5.3}{Strumenti di condivisione}{subsection.6.5}% 65
+\BOOKMARK [2][-]{subsection.6.6}{Miglioramento continuo dei processi}{section.6}% 66
+\BOOKMARK [2][-]{subsection.6.7}{Training process}{section.6}% 67

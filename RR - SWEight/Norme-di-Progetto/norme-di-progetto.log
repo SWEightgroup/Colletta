@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.1.7)  9 JAN 2019 20:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.1.7)  9 JAN 2019 22:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1102,7 +1102,7 @@ LaTeX Info: Redefining \nameref on input line 9.
 \@outlinefile=\write4
 \openout4 = `norme-di-progetto.out'.
 
-<./template/img/logoSWEight.png, id=268, 138.7584pt x 96.36pt>
+<./template/img/logoSWEight.png, id=276, 138.7584pt x 96.36pt>
 File: ./template/img/logoSWEight.png Graphic file (type png)
 <use ./template/img/logoSWEight.png>
 Package pdftex.def Info: ./template/img/logoSWEight.png  used on input line 10.
@@ -1225,7 +1225,7 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 78.
  (c:/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<example-image-b.pdf, id=371, 321.2pt x 240.9pt>
+<example-image-b.pdf, id=381, 321.2pt x 240.9pt>
 File: example-image-b.pdf Graphic file (type pdf)
 <use example-image-b.pdf>
 Package pdftex.def Info: example-image-b.pdf  used on input line 89.
@@ -1302,7 +1302,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [9]
 File: ./template/img/logoSWEight.png Graphic file (type png)
 <use ./template/img/logoSWEight.png>
-Package pdftex.def Info: ./template/img/logoSWEight.png  used on input line 170
+Package pdftex.def Info: ./template/img/logoSWEight.png  used on input line 171
 .
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -1315,7 +1315,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [10]
 File: ./template/img/logoSWEight.png Graphic file (type png)
 <use ./template/img/logoSWEight.png>
-Package pdftex.def Info: ./template/img/logoSWEight.png  used on input line 234
+Package pdftex.def Info: ./template/img/logoSWEight.png  used on input line 228
 .
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -1327,10 +1327,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [11]
 LaTeX Font Info:    Font shape `OMS/lmr/bx/n' in size <10> not available
-(Font)              Font shape `OMS/lmsy/b/n' tried instead on input line 237.
+(Font)              Font shape `OMS/lmsy/b/n' tried instead on input line 245.
 File: ./template/img/logoSWEight.png Graphic file (type png)
 <use ./template/img/logoSWEight.png>
-Package pdftex.def Info: ./template/img/logoSWEight.png  used on input line 278
+Package pdftex.def Info: ./template/img/logoSWEight.png  used on input line 277
 .
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -1343,7 +1343,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [12]
 File: ./template/img/logoSWEight.png Graphic file (type png)
 <use ./template/img/logoSWEight.png>
-Package pdftex.def Info: ./template/img/logoSWEight.png  used on input line 316
+Package pdftex.def Info: ./template/img/logoSWEight.png  used on input line 318
 .
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -1369,7 +1369,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [14]
 File: ./template/img/logoSWEight.png Graphic file (type png)
 <use ./template/img/logoSWEight.png>
-Package pdftex.def Info: ./template/img/logoSWEight.png  used on input line 421
+Package pdftex.def Info: ./template/img/logoSWEight.png  used on input line 410
 .
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -1382,7 +1382,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [15]
 File: ./template/img/logoSWEight.png Graphic file (type png)
 <use ./template/img/logoSWEight.png>
-Package pdftex.def Info: ./template/img/logoSWEight.png  used on input line 469
+Package pdftex.def Info: ./template/img/logoSWEight.png  used on input line 466
 .
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -1392,7 +1392,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]) 
+[16]
+File: ./template/img/logoSWEight.png Graphic file (type png)
+<use ./template/img/logoSWEight.png>
+Package pdftex.def Info: ./template/img/logoSWEight.png  used on input line 501
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17]) 
 AED: lastpage setting LastPage
 File: ./template/img/logoSWEight.png Graphic file (type png)
 <use ./template/img/logoSWEight.png>
@@ -1405,20 +1418,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]
+[18]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 18.
  (./norme-di-progetto.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18.
 Package rerunfilecheck Info: File `norme-di-progetto.out' has not changed.
-(rerunfilecheck)             Checksum: F1314B0CB2B8A13DF9EF7CF7D6B2363E;4565.
+(rerunfilecheck)             Checksum: 132A35D855D8B06548084920D633DF36;4737.
  ) 
 Here is how much of TeX's memory you used:
- 24750 strings out of 492616
- 454511 string characters out of 6132769
+ 24755 strings out of 492616
+ 454598 string characters out of 6132769
  779470 words of memory out of 5000000
- 28036 multiletter control sequences out of 15000+600000
+ 28038 multiletter control sequences out of 15000+600000
  52148 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,18n,124p,804b,663s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1436,10 +1449,10 @@ xlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2018/texmf-d
 ist/fonts/type1/public/lm/lmss17.pfb><c:/texlive/2018/texmf-dist/fonts/type1/pu
 blic/lm/lmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
 >
-Output written on norme-di-progetto.pdf (18 pages, 283339 bytes).
+Output written on norme-di-progetto.pdf (19 pages, 286604 bytes).
 PDF statistics:
- 540 PDF objects out of 1000 (max. 8388607)
- 500 compressed objects within 5 object streams
- 100 named destinations out of 1000 (max. 500000)
- 543 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 562 PDF objects out of 1000 (max. 8388607)
+ 520 compressed objects within 6 object streams
+ 103 named destinations out of 1000 (max. 500000)
+ 559 words of extra memory for PDF output out of 10000 (max. 10000000)
 
