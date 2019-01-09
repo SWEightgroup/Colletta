@@ -11,11 +11,7 @@
 \BOOKMARK [3][-]{subsubsection.2.1.1}{Qualit\340 di processo}{subsection.2.1}% 11
 \BOOKMARK [3][-]{subsubsection.2.1.2}{Qualit\340 di prodotto}{subsection.2.1}% 12
 \BOOKMARK [2][-]{subsection.2.2}{Responsabilit\340}{section.2}% 13
-<<<<<<< HEAD
-\BOOKMARK [2][-]{subsection.2.3}{Pianficazione strategica temporale}{section.2}% 14
-=======
 \BOOKMARK [2][-]{subsection.2.3}{Pianificazione strategica temporale}{section.2}% 14
->>>>>>> pdq
 \BOOKMARK [3][-]{subsubsection.2.3.1}{Strategia}{subsection.2.3}% 15
 \BOOKMARK [3][-]{subsubsection.2.3.2}{Tempistiche}{subsection.2.3}% 16
 \BOOKMARK [2][-]{subsection.2.4}{Misure e metriche}{section.2}% 17
@@ -33,16 +29,6 @@
 \BOOKMARK [4][-]{paragraph.2.4.3.6}{Commenti per linee di codice}{subsubsection.2.4.3}% 29
 \BOOKMARK [4][-]{paragraph.2.4.3.7}{Code Coverage}{subsubsection.2.4.3}% 30
 \BOOKMARK [4][-]{paragraph.2.4.3.8}{Superamento test}{subsubsection.2.4.3}% 31
-<<<<<<< HEAD
-\BOOKMARK [4][-]{paragraph.2.4.3.9}{Superamento test}{subsubsection.2.4.3}% 32
-\BOOKMARK [3][-]{subsubsection.2.4.4}{Riassunto metriche}{subsection.2.4}% 33
-\BOOKMARK [0][-]{table.2}{Appendici}{}% 34
-\BOOKMARK [1][-]{appendix.Alph1}{Esito Verifica}{table.2}% 35
-\BOOKMARK [1][-]{appendix.Alph2}{Pianificazione Test}{table.2}% 36
-\BOOKMARK [1][-]{appendix.Alph3}{Qualit\340}{table.2}% 37
-\BOOKMARK [2][-]{subsection.Alph3.1}{SPICE}{appendix.Alph3}% 38
-\BOOKMARK [2][-]{subsection.Alph3.2}{ISO/IEC 9126}{appendix.Alph3}% 39
-=======
 \BOOKMARK [4][-]{paragraph.2.4.3.9}{Requisiti obbligatori soddisfatti}{subsubsection.2.4.3}% 32
 \BOOKMARK [3][-]{subsubsection.2.4.4}{Riassunto metriche}{subsection.2.4}% 33
 \BOOKMARK [0][-]{table.2}{Appendici}{}% 34
@@ -58,4 +44,3 @@
 \BOOKMARK [1][-]{appendix.Alph3}{Qualit\340}{table.2}% 44
 \BOOKMARK [2][-]{subsection.Alph3.1}{SPICE}{appendix.Alph3}% 45
 \BOOKMARK [2][-]{subsection.Alph3.2}{ISO/IEC 9126}{appendix.Alph3}% 46
->>>>>>> pdq
