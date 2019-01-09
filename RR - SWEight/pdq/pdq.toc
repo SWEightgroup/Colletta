@@ -1,0 +1,48 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{\numberline {1}Introduzione}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del prodotto}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{3}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{3}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Riferimenti normativi}{3}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Riferimenti informativi}{3}{subsubsection.1.4.2}
+\contentsline {subsection}{\numberline {1.5}Note}{4}{subsection.1.5}
+\contentsline {section}{\numberline {2}Strategie di verifica}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Obiettivi di qualit\IeC {\`a}}{5}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Qualit\IeC {\`a} di processo}{5}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Qualit\IeC {\`a} di prodotto}{5}{subsubsection.2.1.2}
+\contentsline {subsection}{\numberline {2.2}Responsabilit\IeC {\`a}}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Pianificazione strategica temporale}{6}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Strategia}{6}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Tempistiche}{6}{subsubsection.2.3.2}
+\contentsline {subsection}{\numberline {2.4}Misure e metriche}{6}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Metriche processi}{6}{subsubsection.2.4.1}
+\contentsline {paragraph}{\numberline {2.4.1.1}Schedule Variance}{7}{paragraph.2.4.1.1}
+\contentsline {paragraph}{\numberline {2.4.1.2}Budget Variance}{7}{paragraph.2.4.1.2}
+\contentsline {subsubsection}{\numberline {2.4.2}Metriche documenti}{7}{subsubsection.2.4.2}
+\contentsline {paragraph}{\numberline {2.4.2.1}Indice Gulpease}{7}{paragraph.2.4.2.1}
+\contentsline {subsubsection}{\numberline {2.4.3}Metriche software}{7}{subsubsection.2.4.3}
+\contentsline {paragraph}{\numberline {2.4.3.1}Numero di Metodi}{8}{paragraph.2.4.3.1}
+\contentsline {paragraph}{\numberline {2.4.3.2}Numero di Parametri}{8}{paragraph.2.4.3.2}
+\contentsline {paragraph}{\numberline {2.4.3.3}Funzioni di interfaccia per package}{8}{paragraph.2.4.3.3}
+\contentsline {paragraph}{\numberline {2.4.3.4}Complessit\IeC {\`a} Ciclomatica}{8}{paragraph.2.4.3.4}
+\contentsline {paragraph}{\numberline {2.4.3.5}Campi dati per classe}{9}{paragraph.2.4.3.5}
+\contentsline {paragraph}{\numberline {2.4.3.6}Commenti per linee di codice}{9}{paragraph.2.4.3.6}
+\contentsline {paragraph}{\numberline {2.4.3.7}Code Coverage}{9}{paragraph.2.4.3.7}
+\contentsline {paragraph}{\numberline {2.4.3.8}Superamento test}{9}{paragraph.2.4.3.8}
+\contentsline {paragraph}{\numberline {2.4.3.9}Superamento test}{9}{paragraph.2.4.3.9}
+\contentsline {subsubsection}{\numberline {2.4.4}Riassunto metriche}{9}{subsubsection.2.4.4}
+\contentsline {part}{Appendici}{10}{table.2}
+\contentsline {section}{\numberline {A}Esito Verifica}{11}{appendix.Alph1}
+\contentsline {subsection}{\numberline {A.1}Periodo di Analisi}{11}{subsection.Alph1.1}
+\contentsline {subsubsection}{\numberline {A.1.1}Misurazioni Documenti}{11}{subsubsection.Alph1.1.1}
+\contentsline {paragraph}{\numberline {A.1.1.1}Indice di Gulpease}{11}{paragraph.Alph1.1.1.1}
+\contentsline {subsubsection}{\numberline {A.1.2}Misurazione Processi}{11}{subsubsection.Alph1.1.2}
+\contentsline {paragraph}{\numberline {A.1.2.1}Schedule Variance}{11}{paragraph.Alph1.1.2.1}
+\contentsline {paragraph}{\numberline {A.1.2.2}Budget Variance}{12}{paragraph.Alph1.1.2.2}
+\contentsline {subsubsection}{\numberline {A.1.3}Retrospettiva}{12}{subsubsection.Alph1.1.3}
+\contentsline {section}{\numberline {B}Pianificazione Test}{13}{appendix.Alph2}
+\contentsline {section}{\numberline {C}Qualit\IeC {\`a}}{14}{appendix.Alph3}
+\contentsline {subsection}{\numberline {C.1}SPICE}{14}{subsection.Alph3.1}
+\contentsline {subsection}{\numberline {C.2}ISO/IEC 9126}{15}{subsection.Alph3.2}
