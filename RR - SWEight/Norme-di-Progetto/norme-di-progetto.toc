@@ -1,26 +1,26 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {section}{\numberline {1}Processi primari}{3}{section.1}
-\contentsline {subsection}{\numberline {1.1}Fornitura}{3}{subsection.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1}Studio di fattibilit\IeC {\`a}}{3}{subsubsection.1.1.1}
-\contentsline {subsection}{\numberline {1.2}Sviluppo}{3}{subsection.1.2}
-\contentsline {subsubsection}{\numberline {1.2.1}Analisi dei requisiti}{3}{subsubsection.1.2.1}
-\contentsline {subsubsection}{\numberline {1.2.2}Casi d'uso}{4}{subsubsection.1.2.2}
-\contentsline {section}{\numberline {2}Progettazione}{5}{section.2}
-\contentsline {subsection}{\numberline {2.1}Architettura logica}{5}{subsection.2.1}
+\contentsline {section}{\numberline {1}Processi primari}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}Fornitura}{4}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Studio di fattibilit\IeC {\`a}}{4}{subsubsection.1.1.1}
+\contentsline {subsection}{\numberline {1.2}Sviluppo}{4}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Analisi dei requisiti}{4}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Casi d'uso}{5}{subsubsection.1.2.2}
+\contentsline {section}{\numberline {2}Progettazione}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Architettura logica}{6}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Diagrammi UML}{6}{subsection.2.2}
-\contentsline {paragraph}{\numberline {2.2.0.1}Astah}{6}{paragraph.2.2.0.1}
-\contentsline {subsection}{\numberline {2.3}Design Pattern}{6}{subsection.2.3}
-\contentsline {section}{\numberline {3}Codifica}{6}{section.3}
+\contentsline {paragraph}{\numberline {2.2.0.1}Astah}{7}{paragraph.2.2.0.1}
+\contentsline {subsection}{\numberline {2.3}Design Pattern}{7}{subsection.2.3}
+\contentsline {section}{\numberline {3}Codifica}{7}{section.3}
 \contentsline {section}{\numberline {4}Processi di supporto}{7}{section.4}
 \contentsline {subsection}{\numberline {4.1}Documentazione}{7}{subsection.4.1}
 \contentsline {subsubsection}{\numberline {4.1.1}Scopo}{7}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Template}{7}{subsubsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.3}Versioni}{7}{subsubsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.2}Template}{8}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}Versioni}{8}{subsubsection.4.1.3}
 \contentsline {subsubsection}{\numberline {4.1.4}Struttura}{8}{subsubsection.4.1.4}
-\contentsline {subsubsection}{\numberline {4.1.5}Formattazione delle pagine}{8}{subsubsection.4.1.5}
+\contentsline {subsubsection}{\numberline {4.1.5}Formattazione delle pagine}{9}{subsubsection.4.1.5}
 \contentsline {subsubsection}{\numberline {4.1.6}Norme Tipografiche}{9}{subsubsection.4.1.6}
-\contentsline {subsubsection}{\numberline {4.1.7}Formati}{9}{subsubsection.4.1.7}
+\contentsline {subsubsection}{\numberline {4.1.7}Formati}{10}{subsubsection.4.1.7}
 \contentsline {subsubsection}{\numberline {4.1.8}Tabelle}{10}{subsubsection.4.1.8}
 \contentsline {subsubsection}{\numberline {4.1.9}Immagini}{10}{subsubsection.4.1.9}
 \contentsline {subsubsection}{\numberline {4.1.10}Diagrammi UML}{10}{subsubsection.4.1.10}
@@ -44,24 +44,24 @@
 \contentsline {subsection}{\numberline {6.1}Obiettivo}{13}{subsection.6.1}
 \contentsline {subsubsection}{\numberline {6.1.1}Incontri}{13}{subsubsection.6.1.1}
 \contentsline {subsubsection}{\numberline {6.1.2}Interni}{13}{subsubsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.3}Esterni}{14}{subsubsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.3}Esterni}{13}{subsubsection.6.1.3}
 \contentsline {subsubsection}{\numberline {6.1.4}Comunicazione}{14}{subsubsection.6.1.4}
 \contentsline {subsubsection}{\numberline {6.1.5}Interna}{14}{subsubsection.6.1.5}
 \contentsline {subsubsection}{\numberline {6.1.6}Esterna}{14}{subsubsection.6.1.6}
-\contentsline {subsection}{\numberline {6.2}Gestione delle responsabilit\IeC {\`a} e ruoli}{15}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Introduzione}{15}{subsubsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2}Gestione delle responsabilit\IeC {\`a} e ruoli}{14}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Introduzione}{14}{subsubsection.6.2.1}
 \contentsline {subsubsection}{\numberline {6.2.2}Responsabile di progetto}{15}{subsubsection.6.2.2}
 \contentsline {subsubsection}{\numberline {6.2.3}Amministratore di progetto}{15}{subsubsection.6.2.3}
 \contentsline {subsubsection}{\numberline {6.2.4}Analista}{15}{subsubsection.6.2.4}
-\contentsline {subsubsection}{\numberline {6.2.5}Progettista}{16}{subsubsection.6.2.5}
-\contentsline {subsubsection}{\numberline {6.2.6}Programmatore}{16}{subsubsection.6.2.6}
+\contentsline {subsubsection}{\numberline {6.2.5}Progettista}{15}{subsubsection.6.2.5}
+\contentsline {subsubsection}{\numberline {6.2.6}Programmatore}{15}{subsubsection.6.2.6}
 \contentsline {subsubsection}{\numberline {6.2.7}Verificatore}{16}{subsubsection.6.2.7}
 \contentsline {subsection}{\numberline {6.3}Pianificazione}{16}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Monitoraggio del piano}{17}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Gestione dell'infrastruttura}{17}{subsection.6.5}
-\contentsline {subsubsection}{\numberline {6.5.1}Introduzione}{17}{subsubsection.6.5.1}
+\contentsline {subsection}{\numberline {6.4}Monitoraggio del piano}{16}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Gestione dell'infrastruttura}{16}{subsection.6.5}
+\contentsline {subsubsection}{\numberline {6.5.1}Introduzione}{16}{subsubsection.6.5.1}
 \contentsline {subsubsection}{\numberline {6.5.2}Versionamento}{17}{subsubsection.6.5.2}
 \contentsline {subsubsection}{\numberline {6.5.3}Introduzione}{17}{subsubsection.6.5.3}
 \contentsline {subsubsection}{\numberline {6.5.4}Strumenti di condivisione}{17}{subsubsection.6.5.4}
 \contentsline {subsection}{\numberline {6.6}Miglioramento continuo dei processi}{17}{subsection.6.6}
-\contentsline {subsection}{\numberline {6.7}Training process}{18}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.7}Training process}{17}{subsection.6.7}

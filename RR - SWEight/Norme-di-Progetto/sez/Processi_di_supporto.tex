@@ -7,17 +7,18 @@ Lo scopo di questo processo è quello di redigere e mantenere la documentazione 
 I documenti formali che verranno presentati saranno suddivisi in due categorie:
 
 \begin{itemize}
-\item[•] \textbf{Interni}
-	\begin{itemize}
-		\item[•] \textbf{Norme di progetto}: lo scopo del documento è di stabilire convenzioni e norme che il team SWEight dovrà seguire durante tutto il progetto
-	\end{itemize} \textbf{Studio di fattibilità}: il documento presenterà il processo che ha portato il team alla scelta del capitolato, riportando le motivazioni di preferenza o rifiuto di ogni capitolato.
-\item[•] \textbf{Esterni}
-	\begin{itemize}
-		\item[•] \textbf{Piano di progetto}: documento per l’analisi e la pianificazione della gestione delle risorse di tempo e umane;
-		\item[•] \textbf{Piano di qualifica}: documento che descrive standard e obiettivi che il gruppo deve raggiungere per garantire la qualità di processo e prodotto;
-		\item[•] \textbf{Glossario}: documento che raccoglie tutte le definizioni dei termini poco frequenti utilizzati in tutti i documenti del progetto.
-		\item[•] \textbf{Analisi dei requisiti}: documento che contiene l’analisi dei casi d’uso del prodotto e i diagrammi di interazioni previste con l’utente
-	\end{itemize}
+\item[•] \textbf{Interni}:
+	\begin{list}{$\circ$}{}
+		\item \textbf{Norme di progetto}: lo scopo del documento è di stabilire convenzioni e norme che il team SWEight dovrà seguire durante tutto il progetto;	
+	    \item \textbf{Studio di fattibilità}: il documento presenterà il processo che ha portato il team alla scelta del capitolato, riportando le motivazioni di preferenza o rifiuto di ogni capitolato.
+    \end{list} 
+\item[•] \textbf{Esterni}:
+	\begin{list}{$\circ$}{}
+		\item \textbf{Piano di progetto}: documento per l’analisi e la pianificazione della gestione delle risorse di tempo e umane;
+		\item \textbf{Piano di qualifica}: documento che descrive standard e obiettivi che il gruppo deve raggiungere per garantire la qualità di processo e prodotto;
+		\item \textbf{Glossario}: documento che raccoglie tutte le definizioni dei termini poco frequenti utilizzati in tutti i documenti del progetto;
+		\item \textbf{Analisi dei requisiti}: documento che contiene l’analisi dei casi d’uso del prodotto e i diagrammi di interazioni previste con l’utente.
+	\end{list}
 \end{itemize}
 
 \subsubsection{Template}
@@ -28,36 +29,36 @@ Per ogni documento deve essere specificata obbligatoriamente la versione nella s
 Dove X, Y, e Z sono interi non negativi, e NON DEVONO contenere zeri iniziali. X è la versione major, Y è la versione minor, e Z è la versione patch. Ogni elemento DEVE incrementare come numero a sé. Per esempio: 1.9.0 -> 1.10.0 -> 1.11.0….
 
 \begin{itemize}
-\item[•]La versione Major zero (0.y.z) è per lo sviluppo iniziale
-\item[•]X: la versione Major (X.y.z | X > 0) identifica la versione di rilascio. Deve essere incrementata se è stata introdotta qualsiasi modifica non retrocompatibile. Le versioni Patch e Minor devono essere reimpostate a 0 quando la versione Major è incrementata.
-\item[•]Y: la versione Minor (x.Y.z | x > 0) deve essere incrementata se è stata introdotta una nuova funzionalità. La versione Patch deve essere reimpostata a 0 quando la versione Minor è incrementata.
-\item[•] Z: la versione Patch (x.y.Z | x > 0) deve essere incrementata solo se sono state introdotte correzioni retrocompatibili di bug. Una correzione di un bug è definita come una modifica interna che corregge un comportamento errato
+\item[•]La versione Major zero (0.y.z) è per lo sviluppo iniziale;
+\item[•]X: la versione Major (X.y.z | X > 0) identifica la versione di rilascio. Deve essere incrementata se è stata introdotta qualsiasi modifica non retrocompatibile. Le versioni Patch e Minor devono essere reimpostate a 0 quando la versione Major è incrementata;
+\item[•]Y: la versione Minor (x.Y.z | x > 0) deve essere incrementata se è stata introdotta una nuova funzionalità. La versione Patch deve essere reimpostata a 0 quando la versione Minor è incrementata;
+\item[•] Z: la versione Patch (x.y.Z | x > 0) deve essere incrementata solo se sono state introdotte correzioni retrocompatibili di bug. Una correzione di un bug è definita come una modifica interna che corregge un comportamento errato.
 \end{itemize}
 Una volta che un pacchetto versionato è stato rilasciato, i contenuti di quella versione non devono essere modificati. Qualsiasi modifica deve essere rilasciata come una nuova versione.
 
 \subsubsection{Struttura}
 Ogni documento deve essere realizzato a partire dal template descritto precedentemente, la cui struttura non deve essere modificata, ad eccezione dei verbali e della lettera di presentazione, dovrà essere composta da:
 \begin{itemize}
-\item[•] \textbf{Frontespizio}: questa sezione si trova nella prima pagina di ogni documento e deve contener
-     \begin{list}{*}{}
-		\item \textbf{Logo}:logo del gruppo
-		\item \textbf{Titolo}:titolo del documento
+\item[•] \textbf{Frontespizio}: questa sezione si trova nella prima pagina di ogni documento e deve contenere:
+     \begin{list}{$\circ$}{}
+		\item \textbf{Logo}: logo del gruppo;
+		\item \textbf{Titolo}: titolo del documento;
 		\item \textbf{Nome del gruppo};
 		\item \textbf{Nome del progetto};
-		\item \textbf{E-mail}:indirizzo di posta elettronica in comune per le comunicazini interne ed esterne;
+		\item \textbf{E-mail}: indirizzo di posta elettronica in comune per le comunicazioni interne ed esterne;
 		\item \textbf{Versione}: versione del documento;
-		\item \textbf{Owner}:responsabile del documento;
+		\item \textbf{Owner}: responsabile del documento;
 		\item \textbf{Redattori}: redattori del documento;
 		\item \textbf{Verificatori}: verificatori del documento;
-		\item \textbf{Uso}:nterno o esterno;
-		\item \textbf{Distribuzione}:destinatari del documento;
-		\item \textbf{Descrizione}: breve descrizione del documento;		
+		\item \textbf{Uso}: interno o esterno;
+		\item \textbf{Distribuzione}: destinatari del documento;
+		\item \textbf{Descrizione}: breve descrizione del documento.		
 	\end{list}
 \item[•] \textbf{Registro delle modifiche}: questo deve essere riportato nella seconda pagina sotto forma di tabella, contenente: versione del documento, data si salvataggio, descrizione della nuova versione, nominativo e ruolo;
-\item[•] \textbf{Indice}: contiene il nome di tutti i capitoli, sezioni e sottosezioni seguiti dal numero della pagina iniziale. Nel caso in cui il documento contenga immagini e/o tabelle devono essere presenti anche i relativi indici
-\item[•] \textbf{Indice delle immagin};
+\item[•] \textbf{Indice}: contiene il nome di tutti i capitoli, sezioni e sottosezioni seguiti dal numero della pagina iniziale. Nel caso in cui il documento contenga immagini e/o tabelle devono essere presenti anche i relativi indici;
+\item[•] \textbf{Indice delle immagini};
 \item[•] \textbf{Indice delle tabelle};
-\item[•] \textbf{Introduzione}contiene lo scopo del documento, una breve descrizione ed i vari riferimenti normativi e informativi utili al lettore;
+\item[•] \textbf{Introduzione}: contiene lo scopo del documento, una breve descrizione ed i vari riferimenti normativi e informativi utili al lettore;
 \item[•] \textbf{Contenuto del documento}.
 \end{itemize}
 
@@ -68,45 +69,45 @@ Ogni documento deve essere realizzato a partire dal template descritto precedent
 Ogni pagina, escluso il frontespizio ed indice, devono contenere:
 \begin{itemize}
 	\item[•] \textbf{Intestazione}:
-	\begin{list}{*}{}
+	\begin{list}{$\circ$}{}
 		\item Logo del gruppo (a 	sinistra);
-		\item Numero del capitolo corrente seguito dal nome (a destra);
+		\item Numero del capitolo corrente seguito dal nome (a destra).
 	\end{list}
 	\item[•] \textbf{Piè di pagina}:
-	\begin{list}{*}{}
-	\item Nome e versione del documento (sinistra)
-	\item 
-	\end{list} Numero pagina, in formato “N di M” dove N è la pagina corrente ed M è il numero di pagine totali.
+	\begin{list}{$\circ$}{}
+	\item Nome e versione del documento (sinistra);
+	\item Numero pagina, in formato “N di M” dove N è la pagina corrente ed M è il numero di pagine totali.
+	\end{list} 
 \end{itemize}
 
 \subsubsection{Norme Tipografiche}
 \begin{itemize}
 \item[•] \textbf{Maiuscolo}: l’uso del maiuscolo è obbligatorio nei seguenti casi:
-	\begin{list}{*}{}
+	\begin{list}{$\circ$}{}
 	\item All’inizio di ogni elemento di un elenco puntato;
 	\item All’inizio di ogni elemento di un elenco puntato;
 	\item Nella scrittura degli acronimi;
 	\item Dopo il punto, punto di domanda, punto esclamativo;
-	\item Per i ruoli di progetto, i nomi dei documenti, le fasi di progetto, revisioni di progetto oltre a dove previsto dalla lingua italiana.
+	\item Per i ruoli di progetto, i nomi dei documenti, le fasi di progetto, revisioni di progetto oltre a dove previsto dalla lingua italiana;
 	\item Per i ruoli di progetto, i nomi dei documenti, le fasi di progetto, revisioni di progetto oltre a dove previsto dalla lingua italiana. 
 	\end{list}
 \item[•] \textbf{Grassetto}: il grassetto può essere utilizzato solo per evidenziale l’oggetto trattato di un elenco puntato e per le parole chiave;
 \item[•] \textbf{Collegamenti}: tutti i collegamenti devono essere di colore rosso;
-\item[•] \textbf{Riferimenti a sezioni}: i riferimenti interni al documento devono riportare il numero della sezione, preceduto dal simbolo di paragrafo (esempio §2.1.3)
-\item[•] \textbf{Corsivo}:il corsivo deve essere utilizzato nei seguenti casi:
-\begin{list}{*}{}
+\item[•] \textbf{Riferimenti a sezioni}: i riferimenti interni al documento devono riportare il numero della sezione, preceduto dal simbolo di paragrafo (esempio §2.1.3);
+\item[•] \textbf{Corsivo}: il corsivo deve essere utilizzato nei seguenti casi:
+\begin{list}{$\circ$}{}
 	\item \textbf{Ruoli}: in ogni nome di ruolo;
 	\item \textbf{Documenti}: in ogni nome di documento;
-	\item \textbf{Citazion}: in ogni citazione;
+	\item \textbf{Citazioni}: in ogni citazione.
 \end{list}
 
-\item[•] \textbf{Codice}: i frammenti di codice devono essere racchiusi in un riquadro di colore nero.
-\item[•] \textbf{Glossario}: per contrassegnare che una parola che è presente nel glossario è necessario aggiungere una G maiuscola al pedice della parola (ad esempio: termine\ped{G}
+\item[•] \textbf{Codice}: i frammenti di codice devono essere racchiusi in un riquadro di colore nero;
+\item[•] \textbf{Glossario}: per contrassegnare che una parola che è presente nel glossario è necessario aggiungere una G maiuscola al pedice della parola (ad esempio: {termine}\ped{G});
 \item[•] \textbf{Elenchi puntati}:
-\begin{list}{*}{}
+\begin{list}{$\circ$}{}
 	\item Ogni elemento dell’elenco deve terminare con il punto e virgola, ad eccezione dell’ultimo elemento che deve terminare con il punto;
-	\item Gli elementi di primo livello devono avere come stile un pallino pieno nero, quelli di secondo livello un pallino nero vuoto, ad eccezione degli elenchi numerati che devono essere usati solo se è necessario descrivere una sequenza
-	\item Gli elementi di livello successivo al secondo devono alternare lo stile del primo e del secondo livello;
+	\item Gli elementi di primo livello devono avere come stile un pallino pieno nero, quelli di secondo livello un pallino nero vuoto, ad eccezione degli elenchi numerati che devono essere usati solo se è necessario descrivere una sequenza;
+	\item Gli elementi di livello successivo al secondo devono alternare lo stile del primo e del secondo livello.
 \end{list}
 \item[•] \textbf{Citazioni}: ogni citazione deve essere accompagnata dal riferimento bibliografico.
 \end{itemize}
@@ -143,36 +144,36 @@ L’intera documentazione deve essere prodotta utilizzando il linguaggio di mark
 \begin{itemize}
 \item[•] Gestisce elegantemente e con facilità gli indici, i pedici, i riferimenti ed il glossario;
 \item[•] È un linguaggio che supporta il Versionamento;
-\item[•] Permette la stesura del documento suddividendolo in tanti sotto progetti che rappresentano le varie sezioni, aiutandoti a gestire meglio il documento;
+\item[•] Permette la stesura del documento suddividendolo in tanti sotto progetti che rappresentano le varie sezioni, aiutandoti a gestire meglio il documento.
 \end{itemize}
 Per la stesura del documento è consigliato l’utilizzo di Textmaker, un editor che implementa anche un ottimo correttore ortografico e si sillabazione.
 
 %va messo un altro sub 
 \subsubsection{Controllo ortografico}
-Al termine della stesura dei documenti, prima di alla fase di verifica del documento, l’owner deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice Gulpeas
+Al termine della stesura dei documenti, prima di alla fase di verifica del documento, l’owner deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice Gulpeas.
 
 \subsection{Ciclo di vita}
 Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di issues offerto da GitHub.
 \begin{enumerate}
 \item Per iniziare la stesura di un documento l’owner deve assegnarsi una issues (To do);
-\item Quando inizia la stesura del documento (In progress)
+\item Quando inizia la stesura del documento (In progress):
 	\begin{enumerate}
 		\item Sposta la issue nella sezione “in progress”;
 		\item Crea un branch per lavorare sulla issue.
 	\end{enumerate}
-\item Finita l’attività di scrittura crea un pull request con (Needs review)
+\item Finita l’attività di scrittura crea un pull request con (Needs review):
 	\begin{enumerate}
 		\item Sé stesso come assigneer;
 		\item I verificatori come reviewers;
-		\item I campi project e milestone vuoti;
+		\item I campi project e milestone vuoti.
 	\end{enumerate} 
 \item I verificatori controllano il documento e possono:
 	\begin{enumerate}
 	 	\item Accettarlo (Reviewer approved);
-	 	\item Non accettarlo (In progress);
+	 	\item Non accettarlo (In progress).
 	\end{enumerate}
-\item Se non accettato, l’owner deve apportare le modifiche descritte dal verificatore
-\item Se accettato, sarà compito del responsabile di progetto di effettuare il merge e chiudere la issues (Done)
+\item Se non accettato, l’owner deve apportare le modifiche descritte dal verificatore;
+\item Se accettato, sarà compito del responsabile di progetto di effettuare il merge e chiudere la issues (Done).
 \end{enumerate}
 
 
@@ -219,7 +220,7 @@ Per ogni test deve quindi essere definito:
 \item[•] Ambiente: sistema hardware e software in cui viene eseguito il test; 
 \item[•]Stato iniziale: stato iniziale da cui si parte ad eseguire il test; 
 \item[•] Input: input inserito;
-\item[•] Input: input inserito;
+\item[•] Input: input inserito.
 \end{itemize}
 
 \subsubsection{Test}
@@ -240,15 +241,15 @@ Si applica alle componenti specificate nella progettazione architetturale, rappr
 Strategie di integrazione:
 \begin{itemize}
 \item[•] \textbf{Assemblare parti in modo incrementale}:
-	\begin{list}{*}{}
+	\begin{list}{$\circ$}{}
 		\item Si sviluppano e si integrano prima le parti con minore dipendenza funzionale e maggiore utilità;
 		\item Poi si risale l’albero delle dipendenze;
-		\item Questa strategia riduce il numero di stub necessari al test ma ritarda la disponibilità di funzionalità di alto livello;
+		\item Questa strategia riduce il numero di stub necessari al test ma ritarda la disponibilità di funzionalità di alto livello.
 	\end{list}
 \item[•] \textbf{Top-down}:
-	\begin{list}{*}{}
+	\begin{list}{$\circ$}{}
 	\item Si sviluppano prima le parti più esterne, quelle poste sulle foglie dell’albero delle dipendenze e poi si scende;
-	\item Questa strategia comporta l’uso di molti stub ma integra a partire dalle funzionalità di più alto livello;
+	\item Questa strategia comporta l’uso di molti stub ma integra a partire dalle funzionalità di più alto livello.
 	\end{list}
 \item[•] \textbf{Assemblare produttori prima dei consumatori};
 \item[•] \textbf{Assemblare in modo che ogni passo di integrazione sia reversibile}.
@@ -305,12 +306,12 @@ Il Responsabile di progetto deve essere sempre presente agli incontri con gli es
 \newline
 Ogni riunione comprende la stesura di un verbale ufficiale contenente le seguenti informazioni:
 \begin{itemize}
-\item[•] Data e ora
-\item[•] Luogo
-\item[•] Partecipanti esterni
-\item[•] Partecipanti interni
-\item[•] Ordine del giorno
-\item[•] Domande e risposte
+\item[•] Data e ora;
+\item[•] Luogo;
+\item[•] Partecipanti esterni;
+\item[•] Partecipanti interni;
+\item[•] Ordine del giorno;
+\item[•] Domande e risposte.
 \end{itemize}
 
 \subsubsection{Comunicazione}
@@ -318,13 +319,11 @@ Ogni riunione comprende la stesura di un verbale ufficiale contenente le seguent
 %va aggiunto un sub 
 \subsubsection{Interna}
 
-Per le comunicazioni interne al gruppo è stato adottato Slack, un'applicazione di messaggistica multipiattaforma con funzionalità specifiche per gruppi di lavoro.  
+Per le comunicazioni interne al gruppo è stato adottato {Slack}\ped{G}, un'applicazione di messaggistica multipiattaforma con funzionalità specifiche per gruppi di lavoro.  
 \newline
-Su Slack si possono integrare Bot, creare canali tematici per rendere più efficiente lo scambio e il reperimento delle informazioni, fare ricerche di messaggi vecchi e condividere file di grosse dimensioni. 
+Su Slack si possono integrare {Bot}\ped{G}, creare canali tematici per rendere più efficiente lo scambio e il reperimento delle informazioni, fare ricerche di messaggi vecchi e condividere file di grosse dimensioni.   
 \newline
-Si è deciso di affiancare Discord\ped{G} quando risulti necessaria una comunicazione immediata, ma sia impossibile riunirsi di persona.  
-\newline
-In Slack\ped{G}, sono stati creati dei canali per dividere le comunicazioni con temi comuni:
+In Slack, sono stati creati dei canali per dividere le comunicazioni con temi comuni:
 \begin{itemize}
 \item[•] Analisti;
 \item[•] Colletta;
@@ -434,7 +433,7 @@ Il piano deve:
 \item[•] Analizzare i rischi;
 \item[•] Definire delle metriche per il controllo della qualità;
 \item[•] Associare dei costi al processo di esecuzione;
-\item[•] Fornire un’infrastruttura;
+\item[•] Fornire un’infrastruttura.
 \end{itemize}
 
 \subsection{Monitoraggio del piano}
@@ -442,9 +441,9 @@ Il Responsabile di Progetto supervisiona l'esecuzione del progetto fornendo repo
 \newline
 Egli deve investigare, analizzare e risolvere i problemi scoperti durante l'esecuzione ed eventualmente può rivedere la pianificazione temporale per far fronte a tali problemi e a cambi di strategia.
 \begin{itemize}
-\item[•] I report redatti, in conclusione di ogni periodo, confluiranno nel Piano di Qualifica.
-\item[•] Al termine del periodo di riferimento, il Responsabile di Progetto deve confrontare i risultati ottenuti con gli obiettivi prefissati e valutare strumenti, attività e processi impiegati per il completamento dei processi.
-\item[•] La valutazione finale e il tracciamento di strumenti e tecnologie dovranno confluire nel Piano di Qualifica, eventuali rischi e piani di contingenza utilizzati dovranno essere riportati nel Piano di Progetto. 
+\item[•] I report redatti, in conclusione di ogni periodo, confluiranno nel Piano di Qualifica;
+\item[•] Al termine del periodo di riferimento, il Responsabile di Progetto deve confrontare i risultati ottenuti con gli obiettivi prefissati e valutare strumenti, attività e processi impiegati per il completamento dei processi;
+\item[•] La valutazione finale e il tracciamento di strumenti e tecnologie dovranno confluire nel Piano di Qualifica, eventuali rischi e piani di contingenza utilizzati dovranno essere riportati nel Piano di Progetto.
 \end{itemize}
 
 \subsection{Gestione dell'infrastruttura}
