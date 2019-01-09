@@ -16,7 +16,7 @@
 \item[•]\textbf{Descrizione}: Lo sviluppatore visualizza un elenco di frasi accompagnate dalla data di creazione e dall’autore ordinate cronologicamente;
 \item[•]\textbf{Precondizione}:  Lo sviluppatore si è autenticato nel sistema.% e visualizza la propria dashboard\ped{G}.
 \item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza l'elenco delle preposizioni ordinate cronologicamente;
-\item[•]\textbf{Flusso degli eventi principale}: Lo sviluppatore ha selezionato la voce relativa alla pagina contenente l’elenco delle frasi e ne visualizza il contenuto; 
+\item[•]\textbf{Flusso degli eventi}: Lo sviluppatore ha selezionato la voce relativa alla pagina contenente l’elenco delle frasi e ne visualizza il contenuto; 
 \end{itemize}
 \subsubsection{UC 4.2 - Filtraggio dei dati}
 \begin{figure}[H]
@@ -34,7 +34,7 @@
 \item[•]\textbf{Descrizione}: Lo sviluppatore applica dei filtri ai dati, ottenendo solo quelli d'interesse;
 \item[•]\textbf{Precondizione}: Lo sviluppatore visualizza le proposizioni in ordine cronologico;
 \item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza i dati che rispettano i filtri scelti;
-\item[•]\textbf{Flusso degli eventi principale}:
+\item[•]\textbf{Flusso degli eventi}:
 \begin{enumerate}
 \item UC 4.2.1 - Inserimento filtro periodo temporale;
 \item UC 4.2.2 - Inserimento filtro {fonte}\ped{G};
@@ -56,7 +56,7 @@
 \item[•]\textbf{Descrizione}: Lo sviluppatore seleziona un periodo temporale, ottenendo i dati salvati in un determinato arco di tempo;
 \item[•]\textbf{Precondizione}: Lo sviluppatore visualizza le proposizioni in base ai filtri stabiliti;
 \item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza le frasi in base al filtraggio inserito;
-\item[•]\textbf{Flusso degli eventi principale}: 
+\item[•]\textbf{Flusso degli eventi}: 
 \begin{enumerate}
 \item Scelta data inizio periodo;
 \item Scelta data fine periodo;
@@ -78,7 +78,7 @@
 \item[•]\textbf{Descrizione}: Lo sviluppatore seleziona una o più fonti degli esercizi, come ad esempio le correzione provenienti da determinati docenti o dal sistema di correzione automatico;
 \item[•]\textbf{Precondizione}: Lo sviluppatore visualizza le proposizioni in base ai filtri stabiliti;
 \item[•]\textbf{Postcondizione}: Lo sviluppatore ha impostato i valori del filtro fonte;
-\item[•]\textbf{Flusso degli eventi principale}: Lo sviluppatore seleziona da un elenco le fonti di cui è interessato visualizzare i dati;
+\item[•]\textbf{Flusso degli eventi}: Lo sviluppatore seleziona da un elenco le fonti di cui è interessato visualizzare i dati;
 \item[•]\textbf{Estensioni}: 
 \begin{enumerate}
 	\item UC 4.2.6 - Rimozione filtro;
@@ -95,7 +95,7 @@
 \item[•]\textbf{Descrizione}: Lo sviluppatore seleziona una o più lingue da un elenco di lingue predefinito al fine di ottenere solamente le proposizioni scritte in tali lingue;
 \item[•]\textbf{Precondizione}: Lo sviluppatore visualizza le proposizioni in base ai filtri stabiliti;
 \item[•]\textbf{Postcondizione}: Lo sviluppatore ha stabilito i valori di filtraggio relativi alle lingue;
-\item[•]\textbf{Flusso degli eventi principale}: Lo sviluppatore seleziona da un elenco le lingue di cui è interessato vedere le proposizioni memorizzate;
+\item[•]\textbf{Flusso degli eventi}: Lo sviluppatore seleziona da un elenco le lingue di cui è interessato vedere le proposizioni memorizzate;
 \item[•]\textbf{Estensioni}: 
 \begin{enumerate}
 	\item UC 4.2.6 - Rimozione filtro;
@@ -112,7 +112,7 @@
 \item[•]\textbf{Descrizione}: Lo sviluppatore scrive una o più parole chiave al fine di cernere le frasi contenenti tali parole;
 \item[•]\textbf{Precondizione}: Lo sviluppatore visualizza le frasi in base al filtraggio scelto;
 \item[•]\textbf{Postcondizione}: Lo sviluppatore ha impostato le parole chiave;
-\item[•]\textbf{Flusso degli eventi principale}: Lo sviluppatore seleziona da un elenco le lingue di cui è interessato vedere le proposizioni memorizzate;
+\item[•]\textbf{Flusso degli eventi}: Lo sviluppatore seleziona da un elenco le lingue di cui è interessato vedere le proposizioni memorizzate;
 \item[•]\textbf{Estensioni}: 
 \begin{enumerate}
 	\item Visualizzazione messaggio di errore nel caso venga inserito un input non consentito;
@@ -147,7 +147,7 @@
 \item[•]\textbf{Descrizione}: Lo sviluppatore seleziona una frase dall'elenco e ne visualizza lo storico contenente la correzione fornita dal sistema automatico, ed eventualmente quelle redatte anche da insegnanti diversi;
 \item[•]\textbf{Precondizione}:  Lo sviluppatore visualizza le frasi in base ai filtri stabiliti;
 \item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza tutte le correzioni della frase;
-\item[•]\textbf{Flusso degli eventi principale}: Lo sviluppatore seleziona la frase e appare lo storico della frase.
+\item[•]\textbf{Flusso degli eventi}: Lo sviluppatore seleziona la frase e appare lo storico della frase.
 \end{itemize}
 
 \subsubsection{UC 4.4 - Scaricamento dati}
@@ -161,7 +161,7 @@
 \item[•]\textbf{Descrizione}: Lo sviluppatore esegue il download dei dati d'interesse;
 \item[•]\textbf{Precondizione}: Lo sviluppatore visualizza i dati in ordine cronologico, e nel caso siano applicati filtri, vede solo i dati che rispettano tali filtri;
 \item[•]\textbf{Postcondizione}:  Lo sviluppatore scarica un file contenente le analisi grammaticali in formato anonimo;
-\item[•]\textbf{Flusso degli eventi principale}:
+\item[•]\textbf{Flusso degli eventi}:
 \begin{enumerate}
 \item UC 4.4.1 - Scelta contenuti download;
 \item UC 4.4.2 - Scelta formato file;
@@ -176,7 +176,7 @@
 \item[•]\textbf{Descrizione}: Lo sviluppatore sceglie gli elementi di interesse che vuole siano scaricati una volta completata la procedura di download;
 \item[•]\textbf{Precondizione}: Lo sviluppatore visualizza le preposizioni in base ai filtri stabiliti;
 \item[•]\textbf{Postcondizione}:  Lo sviluppatore visualizza i contenuti che intende scaricare, come ad esempio lo storico di una frase;
-\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona dall'elenco, eventualmente filtrato, le proposizioni d'interesse, come ad esempio quelle provenienti da i soli docenti selezionati.
+\item[•]\textbf{Flusso degli eventi}:  Lo sviluppatore seleziona dall'elenco, eventualmente filtrato, le proposizioni d'interesse, come ad esempio quelle provenienti da i soli docenti selezionati.
 \end{itemize}
 
 \subsubsection{UC 4.4.2 - Scelta formato file}
@@ -194,7 +194,7 @@
 \item[•]\textbf{Descrizione}: Lo sviluppatore seleziona da un elenco prestabilito il formato dell'archivio compresso con cui vuole che i dati d'interesse siano compressi;
 \item[•]\textbf{Precondizione}: Il formato dell'archivio contenente i dati d'interesse non è definito;
 \item[•]\textbf{Postcondizione}: Il formato dell'archivio contenente i dati d'interesse è stato definito;
-\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona dall'elenco prestabilito un'opzione che determina il formato dell'archivio che contiene i file relativi ai dati precedentemente scelti.
+\item[•]\textbf{Flusso degli eventi}:  Lo sviluppatore seleziona dall'elenco prestabilito un'opzione che determina il formato dell'archivio che contiene i file relativi ai dati precedentemente scelti.
 \end{itemize}
 
 \subsubsection{UC 4.4.2 - Ottenimento file}
@@ -203,7 +203,7 @@
 \item[•]\textbf{Descrizione}: Lo sviluppatore riceve un archivio dati contenente i dati, salvati in file aventi estensione scelta dal programmatore;
 \item[•]\textbf{Precondizione}: I contenuti di interesse, il formato del file e il formato dell'archivio sono stati scelti;
 \item[•]\textbf{Postcondizione}: Lo sviluppatore ottiene il file richiesto e si procede al download di questo;
-\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona dall'elenco prestabilito un'opzione che determina il formato dell'archivio che contiene i file relativi ai dati precedentemente scelti.
+\item[•]\textbf{Flusso degli eventi}:  Lo sviluppatore seleziona dall'elenco prestabilito un'opzione che determina il formato dell'archivio che contiene i file relativi ai dati precedentemente scelti.
 \end{itemize}
 
 \subsubsection{UC 4.5 - Creazione modello}
@@ -217,7 +217,7 @@
 \item[•]\textbf{Descrizione}: Lo sviluppatore crea un nuovo modello;
 \item[•]\textbf{Precondizione}: Lo sviluppatore non ha creato il modello;
 \item[•]\textbf{Postcondizione}: Lo sviluppatore ha creato un nuovo modello;
-\item[•]\textbf{Flusso degli eventi principale}:  
+\item[•]\textbf{Flusso degli eventi}:  
 \begin{enumerate}
 	\item UC 4.5.1 - Scelta parametri funzione;
 	\item UC 4.5.2 - Inserimento nome modello;
@@ -235,7 +235,7 @@
 \item[•]\textbf{Descrizione}: Lo sviluppatore sceglie i parametri della funzione per la creazione di un nuovo modello con i relativi valori associati;
 \item[•]\textbf{Precondizione}: Lo sviluppatore non ha scelto i parametri da inserire;
 \item[•]\textbf{Postcondizione}: Lo sviluppatore ha inserito i parametri per la creazione di un nuovo modello;
-\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore inserisce tutti i parametri necessari che verranno impiegati nella realizzazione del modello.
+\item[•]\textbf{Flusso degli eventi}:  Lo sviluppatore inserisce tutti i parametri necessari che verranno impiegati nella realizzazione del modello.
 \item[•] \textbf{Estensioni}: 
 \begin{enumerate}
 	\item UC 4.5.4 - Valore parametro non valido.
@@ -248,7 +248,7 @@
 \item[•]\textbf{Descrizione}: Lo sviluppatore inserisce il nome per il modello che intende salvare;
 \item[•]\textbf{Precondizione}: Lo sviluppatore non ha inserito il nome del modello;
 \item[•]\textbf{Postcondizione}: Lo sviluppatore ha inserito il nome del modello;
-\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore inserisce una stringa che definisce il nome del modello che verrà memorizzato.
+\item[•]\textbf{Flusso degli eventi}:  Lo sviluppatore inserisce una stringa che definisce il nome del modello che verrà memorizzato.
 \item[•] \textbf{Estensioni}: 
 \begin{enumerate}
 	\item UC 4.5.5 - Visualizzazione messaggio errore nome duplicato.
@@ -261,7 +261,7 @@
 \item[•]\textbf{Descrizione}: Lo sviluppatore salva il modello di cui ha definito il nome;
 \item[•]\textbf{Precondizione}: Lo sviluppatore ha inserito il nome del modello;
 \item[•]\textbf{Postcondizione}: Lo sviluppatore ha salvato il modello;
-\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona l'opzione relativa al salvataggio che comporta il salvataggio del modello.
+\item[•]\textbf{Flusso degli eventi}:  Lo sviluppatore seleziona l'opzione relativa al salvataggio che comporta il salvataggio del modello.
 \end{itemize}
 
 \subsubsection{UC 4.5.4 - Valore parametro non valido}
@@ -301,7 +301,7 @@ n modello avente lo stesso nome di uno già inserito;
 \item[•]\textbf{Descrizione}: Lo sviluppatore visualizza l'elenco dei propri modelli realizzati;
 \item[•]\textbf{Precondizione}: Lo sviluppatore si è autenticato nel sistema;
 \item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza l'elenco dei propri modelli;
-\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona la voce del menù relativa ai modelli e ne visualizza l'elenco.
+\item[•]\textbf{Flusso degli eventi}:  Lo sviluppatore seleziona la voce del menù relativa ai modelli e ne visualizza l'elenco.
 \end{itemize}
 
 
@@ -329,7 +329,7 @@ n modello avente lo stesso nome di uno già inserito;
 \item[•]\textbf{Descrizione}: Lo sviluppatore ottiene un file contenente il modello precedentemente creato;
 \item[•]\textbf{Precondizione}: Lo sviluppatore visualizza il contenuto del modello che intende scaricare.
 \item[•]\textbf{Postcondizione}: Lo sviluppatore ottiene un file contenente il modello selezionato;
-\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona l'opzione di scaricamento e ottiene un file contenete il modello.
+\item[•]\textbf{Flusso degli eventi}:  Lo sviluppatore seleziona l'opzione di scaricamento e ottiene un file contenete il modello.
 \end{itemize}
 
 \subsubsection{UC 4.9 - Eliminazione modello}
