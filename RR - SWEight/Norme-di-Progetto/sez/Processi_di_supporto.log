@@ -1,8 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.12.17)  9 JAN 2019 12:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.1.7)  9 JAN 2019 19:59
 entering extended mode
-**./Processi_di_supporto.tex
-(Processi_di_supporto.tex
-LaTeX2e <2018-04-01> patch level 5
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Processi_di_supporto.tex
+(./Processi_di_supporto.tex
+LaTeX2e <2018-12-01>
 ! Undefined control sequence.
 l.1 \section
             {Processi di supporto}
@@ -310,7 +312,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 5--8
 
 
 Overfull \hbox (9.44446pt too wide) in paragraph at lines 5--8
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
@@ -331,16 +333,21 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 9--9
  []
 
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
-("C:\Users\mcyard\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+(c:/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
+Missing character: There is no : in font nullfont!
 
-Overfull \hbox (37.68732pt too wide) in paragraph at lines 10--11
-\OT1/cmr/bx/n/10 Interni: 
+Overfull \hbox (34.49289pt too wide) in paragraph at lines 10--11
+\OT1/cmr/bx/n/10 Interni 
  []
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 12.
 Missing character: There is no : in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -440,6 +447,11 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 12--13
+[]
+ []
+
+
 Overfull \hbox (34.34012pt too wide) in paragraph at lines 12--13
 \OT1/cmr/bx/n/10 Norme
  []
@@ -461,12 +473,12 @@ Overfull \hbox (25.71515pt too wide) in paragraph at lines 12--13
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 12--13
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 12--13
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 Missing character: There is no : in font nullfont!
@@ -603,6 +615,11 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 13--14
+[]
+ []
+
+
 Overfull \hbox (32.58316pt too wide) in paragraph at lines 13--14
 \OT1/cmr/bx/n/10 Studio
  []
@@ -619,17 +636,18 @@ Overfull \hbox (17.4096pt too wide) in paragraph at lines 13--14
 
 
 Overfull \hbox (33.70119pt too wide) in paragraph at lines 13--14
-\OT1/cmr/bx/n/10 tibilita
+\OT1/cmr/bx/n/10 tibilit^^Ra
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 13--14
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
+Missing character: There is no : in font nullfont!
 
-Overfull \hbox (39.3484pt too wide) in paragraph at lines 15--16
-\OT1/cmr/bx/n/10 Esterni: 
+Overfull \hbox (36.15398pt too wide) in paragraph at lines 15--16
+\OT1/cmr/bx/n/10 Esterni 
  []
 
 Missing character: There is no : in font nullfont!
@@ -709,6 +727,11 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 17--18
+[]
+ []
+
 
 Overfull \hbox (28.78455pt too wide) in paragraph at lines 17--18
 \OT1/cmr/bx/n/10 Piano
@@ -840,6 +863,11 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--19
+[]
+ []
+
+
 Overfull \hbox (28.78455pt too wide) in paragraph at lines 18--19
 \OT1/cmr/bx/n/10 Piano
  []
@@ -866,7 +894,7 @@ Overfull \hbox (17.09016pt too wide) in paragraph at lines 18--19
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--19
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 Missing character: There is no : in font nullfont!
@@ -972,6 +1000,11 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 19--20
+[]
+ []
+
+
 Overfull \hbox (46.32887pt too wide) in paragraph at lines 19--20
 \OT1/cmr/bx/n/10 Glossario
  []
@@ -1070,6 +1103,11 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 20--21
+[]
+ []
+
 
 Overfull \hbox (34.79283pt too wide) in paragraph at lines 20--21
 \OT1/cmr/bx/n/10 Analisi
@@ -1207,11 +1245,15 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no L in font nullfont!
-Missing character: There is no A in font nullfont!
-Missing character: There is no T in font nullfont!
-Missing character: There is no E in font nullfont!
-Missing character: There is no X in font nullfont!
+! Undefined control sequence.
+l.25 ...revisti è stato creato un template \LaTex
+                                                   contenente tutte le impos...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -1649,27 +1691,27 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 24--30
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 24--30
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 24--30
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 24--30
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 24--30
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 24--30
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Se
  []
 
 
@@ -1727,7 +1769,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no ; in font nullfont!
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 32--33
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 Missing character: There is no X in font nullfont!
@@ -1947,12 +1989,12 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no ; in font nullfont!
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 33--34
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 33--34
-\/cmr/m/n/10 e 
+\/cmr/m/n/10 ^^Re 
  []
 
 Missing character: There is no Y in font nullfont!
@@ -2116,17 +2158,17 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no ; in font nullfont!
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 34--35
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 34--35
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 34--35
-\/cmr/m/n/10 e 
+\/cmr/m/n/10 ^^Re 
  []
 
 Missing character: There is no Z in font nullfont!
@@ -2321,7 +2363,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 35--36
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 Missing character: There is no U in font nullfont!
@@ -2484,7 +2526,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 37--38
-      \/cmr/m/n/10 e
+      \/cmr/m/n/10 ^^Re
  []
 
 ! Undefined control sequence.
@@ -2698,7 +2740,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 39--41
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 39--41
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 Missing character: There is no : in font nullfont!
@@ -2769,7 +2811,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (60.75107pt too wide) in paragraph at lines 42--44
+Overfull \hbox (60.75107pt too wide) in paragraph at lines 42--43
 \OT1/cmr/bx/n/10 Frontespizio
  []
 
@@ -2789,40 +2831,14 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45 		\item \textbf
-                    {Titolo}: titolo del documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 44--45
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45 		\item \textbf
-                    {Titolo}: titolo del documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45 		\item \textbf
-                    {Titolo}: titolo del documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (24.16653pt too wide) in paragraph at lines 44--45
+\OT1/cmr/bx/n/10 Logo
+ []
 
 Missing character: There is no : in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -2845,117 +2861,61 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.46 		\item \textbf
-                    {Nome del gruppo};
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 45--46
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.46 		\item \textbf
-                    {Nome del gruppo};
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.46 		\item \textbf
-                    {Nome del gruppo};
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (30.36095pt too wide) in paragraph at lines 45--46
+\OT1/cmr/bx/n/10 Titolo
+ []
 
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.47 		\item \textbf
-                    {Nome del progetto};
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 46--47
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.47 		\item \textbf
-                    {Nome del progetto};
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (29.60402pt too wide) in paragraph at lines 46--47
+\OT1/cmr/bx/n/10 Nome
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+Overfull \hbox (14.8541pt too wide) in paragraph at lines 46--47
+\OT1/cmr/bx/n/10 del
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.47 		\item \textbf
-                    {Nome del progetto};
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+
+Overfull \hbox (35.72205pt too wide) in paragraph at lines 46--47
+\OT1/cmr/bx/n/10 gruppo 
+ []
 
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.48 		\item \textbf
-                    {E-mail}: indirizzo di posta elettronica in comune per l...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 47--48
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.48 		\item \textbf
-                    {E-mail}: indirizzo di posta elettronica in comune per l...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (29.60402pt too wide) in paragraph at lines 47--48
+\OT1/cmr/bx/n/10 Nome
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+Overfull \hbox (14.8541pt too wide) in paragraph at lines 47--48
+\OT1/cmr/bx/n/10 del
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.48 		\item \textbf
-                    {E-mail}: indirizzo di posta elettronica in comune per l...
 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (20.70824pt too wide) in paragraph at lines 47--48
+\OT1/cmr/bx/n/10 pro-
+ []
+
+
+Overfull \hbox (25.71515pt too wide) in paragraph at lines 47--48
+\OT1/cmr/bx/n/10 getto 
+ []
 
 Missing character: There is no : in font nullfont!
 Missing character: There is no i in font nullfont!
@@ -3029,40 +2989,19 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.49 		\item \textbf
-                    {Versione}: versione del documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 48--49
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.49 		\item \textbf
-                    {Versione}: versione del documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (11.38882pt too wide) in paragraph at lines 48--49
+\OT1/cmr/bx/n/10 E-
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.49 		\item \textbf
-                    {Versione}: versione del documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (21.56236pt too wide) in paragraph at lines 48--49
+\OT1/cmr/bx/n/10 mail
+ []
 
 Missing character: There is no : in font nullfont!
 Missing character: There is no v in font nullfont!
@@ -3087,40 +3026,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 		\item \textbf
-                    {Owner}: responsabile del documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 49--50
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 		\item \textbf
-                    {Owner}: responsabile del documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 		\item \textbf
-                    {Owner}: responsabile del documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (42.88312pt too wide) in paragraph at lines 49--50
+\OT1/cmr/bx/n/10 Versione
+ []
 
 Missing character: There is no : in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -3149,40 +3062,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 		\item \textbf
-                    {Redattori}: redattori del documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 50--51
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 		\item \textbf
-                    {Redattori}: redattori del documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 		\item \textbf
-                    {Redattori}: redattori del documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (33.34012pt too wide) in paragraph at lines 50--51
+\OT1/cmr/bx/n/10 Owner
+ []
 
 Missing character: There is no : in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -3208,40 +3095,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.52 		\item \textbf
-                    {Verificatori}: verificatori del documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 51--52
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.52 		\item \textbf
-                    {Verificatori}: verificatori del documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.52 		\item \textbf
-                    {Verificatori}: verificatori del documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (48.49974pt too wide) in paragraph at lines 51--52
+\OT1/cmr/bx/n/10 Redattori
+ []
 
 Missing character: There is no : in font nullfont!
 Missing character: There is no v in font nullfont!
@@ -3270,40 +3131,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.53 		\item \textbf
-                    {Uso}: interno o esterno;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 52--53
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.53 		\item \textbf
-                    {Uso}: interno o esterno;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.53 		\item \textbf
-                    {Uso}: interno o esterno;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (56.18027pt too wide) in paragraph at lines 52--53
+\OT1/cmr/bx/n/10 Verificatori
+ []
 
 Missing character: There is no : in font nullfont!
 Missing character: There is no i in font nullfont!
@@ -3323,40 +3158,14 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.54 		\item \textbf
-                    {Distribuzione}: destinatari del documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 53--54
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.54 		\item \textbf
-                    {Distribuzione}: destinatari del documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.54 		\item \textbf
-                    {Distribuzione}: destinatari del documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (19.13321pt too wide) in paragraph at lines 53--54
+\OT1/cmr/bx/n/10 Uso
+ []
 
 Missing character: There is no : in font nullfont!
 Missing character: There is no d in font nullfont!
@@ -3384,40 +3193,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.55 		\item \textbf
-                    {Descrizione}: breve descrizione del documento.		
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 54--55
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.55 		\item \textbf
-                    {Descrizione}: breve descrizione del documento.		
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.55 		\item \textbf
-                    {Descrizione}: breve descrizione del documento.		
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (67.44548pt too wide) in paragraph at lines 54--55
+\OT1/cmr/bx/n/10 Distribuzione
+ []
 
 Missing character: There is no : in font nullfont!
 Missing character: There is no b in font nullfont!
@@ -3450,105 +3233,13 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.56 	\end{list}
-                
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (24.16653pt too wide) in paragraph at lines 44--56
-[]\OT1/cmr/bx/n/10 Logo
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 55--56
+[]
  []
 
 
-Overfull \hbox (30.36095pt too wide) in paragraph at lines 44--56
-\OT1/cmr/bx/n/10 Titolo
- []
-
-
-Overfull \hbox (29.60402pt too wide) in paragraph at lines 44--56
-[]\OT1/cmr/bx/n/10 Nome
- []
-
-
-Overfull \hbox (14.8541pt too wide) in paragraph at lines 44--56
-\OT1/cmr/bx/n/10 del
- []
-
-
-Overfull \hbox (35.72205pt too wide) in paragraph at lines 44--56
-\OT1/cmr/bx/n/10 gruppo
- []
-
-
-Overfull \hbox (29.60402pt too wide) in paragraph at lines 44--56
-[]\OT1/cmr/bx/n/10 Nome
- []
-
-
-Overfull \hbox (14.8541pt too wide) in paragraph at lines 44--56
-\OT1/cmr/bx/n/10 del
- []
-
-
-Overfull \hbox (20.70824pt too wide) in paragraph at lines 44--56
-\OT1/cmr/bx/n/10 pro-
- []
-
-
-Overfull \hbox (25.71515pt too wide) in paragraph at lines 44--56
-\OT1/cmr/bx/n/10 getto
- []
-
-
-Overfull \hbox (11.38882pt too wide) in paragraph at lines 44--56
-[]\OT1/cmr/bx/n/10 E-
- []
-
-
-Overfull \hbox (21.56236pt too wide) in paragraph at lines 44--56
-\OT1/cmr/bx/n/10 mail
- []
-
-
-Overfull \hbox (42.88312pt too wide) in paragraph at lines 44--56
-[]\OT1/cmr/bx/n/10 Versione
- []
-
-
-Overfull \hbox (33.34012pt too wide) in paragraph at lines 44--56
-[]\OT1/cmr/bx/n/10 Owner
- []
-
-
-Overfull \hbox (48.49974pt too wide) in paragraph at lines 44--56
-[]\OT1/cmr/bx/n/10 Redattori
- []
-
-
-Overfull \hbox (56.18027pt too wide) in paragraph at lines 44--56
-[]\OT1/cmr/bx/n/10 Verificatori
- []
-
-
-Overfull \hbox (19.13321pt too wide) in paragraph at lines 44--56
-[]\OT1/cmr/bx/n/10 Uso
- []
-
-
-Overfull \hbox (67.44548pt too wide) in paragraph at lines 44--56
-[]\OT1/cmr/bx/n/10 Distribuzione
- []
-
-
-Overfull \hbox (57.38304pt too wide) in paragraph at lines 44--56
-[]\OT1/cmr/bx/n/10 Descrizione
+Overfull \hbox (57.38304pt too wide) in paragraph at lines 55--56
+\OT1/cmr/bx/n/10 Descrizione
  []
 
 Missing character: There is no : in font nullfont!
@@ -3962,6 +3653,7 @@ Overfull \hbox (33.7012pt too wide) in paragraph at lines 60--61
 \OT1/cmr/bx/n/10 tabelle 
  []
 
+Missing character: There is no : in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -4191,7 +3883,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 68--70
 
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (60.48715pt too wide) in paragraph at lines 71--73
+Overfull \hbox (60.48715pt too wide) in paragraph at lines 71--72
 \OT1/cmr/bx/n/10 Intestazione 
  []
 
@@ -4221,40 +3913,9 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.74 		\item N
-              umero del capitolo corrente seguito dal nome (a destra).
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.74 		\item N
-              umero del capitolo corrente seguito dal nome (a destra).
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.74 		\item N
-              umero del capitolo corrente seguito dal nome (a destra).
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 73--74
+[]
+ []
 
 Missing character: There is no N in font nullfont!
 Missing character: There is no u in font nullfont!
@@ -4306,35 +3967,28 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no . in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.75 	\end{list}
-                
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 74--75
+[]
+ []
 
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (16.32631pt too wide) in paragraph at lines 76--78
-\OT1/cmr/bx/n/10 Pie
+Overfull \hbox (16.32631pt too wide) in paragraph at lines 76--77
+\OT1/cmr/bx/n/10 Pi^^Re
  []
 
 
-Overfull \hbox (9.58328pt too wide) in paragraph at lines 76--78
+Overfull \hbox (9.58328pt too wide) in paragraph at lines 76--77
 \OT1/cmr/bx/n/10 di
  []
 
 
-Overfull \hbox (21.56236pt too wide) in paragraph at lines 76--78
+Overfull \hbox (21.56236pt too wide) in paragraph at lines 76--77
 \OT1/cmr/bx/n/10 pag-
  []
 
 
-Overfull \hbox (15.17351pt too wide) in paragraph at lines 76--78
+Overfull \hbox (15.17351pt too wide) in paragraph at lines 76--77
 \OT1/cmr/bx/n/10 ina 
  []
 
@@ -4375,43 +4029,9 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.79 	\item N
-             umero pagina, in formato “N di M” dove N è la pagina corre...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.79 	\item N
-             umero pagina, in formato “N di M” dove N è la pagina corre...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.79 	\item N
-             umero pagina, in formato “N di M” dove N è la pagina corre...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 78--79
+[]
+ []
 
 Missing character: There is no N in font nullfont!
 Missing character: There is no u in font nullfont!
@@ -4487,35 +4107,28 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no . in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.80 	\end{list}
-                
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 79--80
+[]
+ []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 78--80
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 79--80
 \/cmr/m/n/10 \
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 78--80
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 79--80
 \/cmr/m/n/10 "
  []
 
 
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 78--80
-\/cmr/m/n/10 e
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 79--80
+\/cmr/m/n/10 ^^Re
  []
 
 
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 78--80
-\/cmr/m/n/10 e
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 79--80
+\/cmr/m/n/10 ^^Re
  []
 
 ! Undefined control sequence.
@@ -4595,18 +4208,18 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (50.43164pt too wide) in paragraph at lines 85--87
+Overfull \hbox (50.43164pt too wide) in paragraph at lines 85--86
 \OT1/cmr/bx/n/10 Maiuscolo
  []
 
 
-Overfull \hbox (2.77779pt too wide) in paragraph at lines 85--87
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 85--86
 \/cmr/m/n/10 '
  []
 
 
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 85--87
-\/cmr/m/n/10 e
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 85--86
+\/cmr/m/n/10 ^^Re
  []
 
 Missing character: There is no A in font nullfont!
@@ -4651,40 +4264,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88 	\item A
-             ll’inizio di ogni elemento di un elenco puntato;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 87--88
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88 	\item A
-             ll’inizio di ogni elemento di un elenco puntato;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88 	\item A
-             ll’inizio di ogni elemento di un elenco puntato;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 87--88
+\/cmr/m/n/10 '
+ []
 
 Missing character: There is no A in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -4728,40 +4315,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.89 	\item N
-             ella scrittura degli acronimi;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 88--89
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.89 	\item N
-             ella scrittura degli acronimi;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.89 	\item N
-             ella scrittura degli acronimi;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 88--89
+\/cmr/m/n/10 '
+ []
 
 Missing character: There is no N in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -4792,40 +4353,9 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.90 	\item D
-             opo il punto, punto di domanda, punto esclamativo;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.90 	\item D
-             opo il punto, punto di domanda, punto esclamativo;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.90 	\item D
-             opo il punto, punto di domanda, punto esclamativo;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 89--90
+[]
+ []
 
 Missing character: There is no D in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -4872,43 +4402,9 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.91 	\item P
-             er i ruoli di progetto, i nomi dei documenti, le fasi di proget...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.91 	\item P
-             er i ruoli di progetto, i nomi dei documenti, le fasi di proget...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.91 	\item P
-             er i ruoli di progetto, i nomi dei documenti, le fasi di proget...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 90--91
+[]
+ []
 
 Missing character: There is no P in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -5023,43 +4519,9 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.92 	\item P
-             er i ruoli di progetto, i nomi dei documenti, le fasi di proget...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.92 	\item P
-             er i ruoli di progetto, i nomi dei documenti, le fasi di proget...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.92 	\item P
-             er i ruoli di progetto, i nomi dei documenti, le fasi di proget...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 91--92
+[]
+ []
 
 Missing character: There is no P in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -5174,25 +4636,8 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.93 	\end{list}
-                
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (2.77779pt too wide) in paragraph at lines 87--93
-[]\/cmr/m/n/10 '
- []
-
-
-Overfull \hbox (2.77779pt too wide) in paragraph at lines 87--93
-\/cmr/m/n/10 '
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 92--93
+[]
  []
 
 Missing character: There is no : in font nullfont!
@@ -5302,7 +4747,7 @@ Overfull \hbox (48.40526pt too wide) in paragraph at lines 94--95
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 94--95
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^Ro
  []
 
 
@@ -5539,7 +4984,7 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (38.02202pt too wide) in paragraph at lines 97--99
+Overfull \hbox (38.02202pt too wide) in paragraph at lines 97--98
 \OT1/cmr/bx/n/10 Corsivo
  []
 
@@ -5563,7 +5008,18 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 99--100
+[]
+ []
+
+
+Overfull \hbox (27.15263pt too wide) in paragraph at lines 99--100
+\OT1/cmr/bx/n/10 Ruoli
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -5571,33 +5027,11 @@ Type  H <return>  for immediate help.
                                                   
 l.100 	\item \textbf
                     {Documenti}: in ogni nome di documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.100 	\item \textbf
-                    {Documenti}: in ogni nome di documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.100 	\item \textbf
-                    {Documenti}: in ogni nome di documento;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+[1{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Missing character: There is no : in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -5622,40 +5056,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.101 	\item \textbf
-                    {Citazioni}: in ogni citazione.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 100--101
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.101 	\item \textbf
-                    {Citazioni}: in ogni citazione.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.101 	\item \textbf
-                    {Citazioni}: in ogni citazione.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (54.97888pt too wide) in paragraph at lines 100--101
+\OT1/cmr/bx/n/10 Documenti
+ []
 
 Missing character: There is no : in font nullfont!
 Missing character: There is no i in font nullfont!
@@ -5675,40 +5083,13 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.102 \end{list}
-                
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (27.15263pt too wide) in paragraph at lines 99--102
-[]\OT1/cmr/bx/n/10 Ruoli
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 101--102
+[]
  []
 
 
-Overfull \hbox (23.8332pt too wide) in paragraph at lines 99--102
-\OT1/cmr/bx/n/10 Doc-
- []
-
-
-Overfull \hbox (10.22217pt too wide) in paragraph at lines 99--102
-\OT1/cmr/bx/n/10 u-
- []
-
-
-Overfull \hbox (28.59013pt too wide) in paragraph at lines 99--102
-\OT1/cmr/bx/n/10 menti
- []
-
-
-Overfull \hbox (45.20113pt too wide) in paragraph at lines 99--102
-[]\OT1/cmr/bx/n/10 Citazioni
+Overfull \hbox (45.20113pt too wide) in paragraph at lines 101--102
+\OT1/cmr/bx/n/10 Citazioni
  []
 
 Missing character: There is no : in font nullfont!
@@ -5923,27 +5304,27 @@ Overfull \hbox (46.32887pt too wide) in paragraph at lines 105--106
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 105--106
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 105--106
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (36.78453pt too wide) in paragraph at lines 106--108
+Overfull \hbox (36.78453pt too wide) in paragraph at lines 106--107
 \OT1/cmr/bx/n/10 Elenchi
  []
 
 
-Overfull \hbox (22.99988pt too wide) in paragraph at lines 106--108
+Overfull \hbox (22.99988pt too wide) in paragraph at lines 106--107
 \OT1/cmr/bx/n/10 pun-
  []
 
 
-Overfull \hbox (17.72905pt too wide) in paragraph at lines 106--108
+Overfull \hbox (17.72905pt too wide) in paragraph at lines 106--107
 \OT1/cmr/bx/n/10 tati 
  []
 
@@ -6058,43 +5439,19 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.109 	\item G
-              li elementi di primo livello devono avere come stile un pallin...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 108--109
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.109 	\item G
-              li elementi di primo livello devono avere come stile un pallin...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 108--109
+\/cmr/m/n/10 '
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.109 	\item G
-              li elementi di primo livello devono avere come stile un pallin...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 108--109
+\/cmr/m/n/10 '
+ []
 
 Missing character: There is no G in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -6291,43 +5648,14 @@ Missing character: There is no z in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.110 	\item G
-              li elementi di livello successivo al secondo devono alternare ...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 109--110
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.110 	\item G
-              li elementi di livello successivo al secondo devono alternare ...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.110 	\item G
-              li elementi di livello successivo al secondo devono alternare ...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 109--110
+\/cmr/m/n/10 ^^Re
+ []
 
 Missing character: There is no G in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -6418,47 +5746,10 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.111 \end{list}
-                
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (2.77779pt too wide) in paragraph at lines 108--111
-\/cmr/m/n/10 '
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 110--111
+[]
  []
 
-
-Overfull \hbox (2.77779pt too wide) in paragraph at lines 108--111
-\/cmr/m/n/10 '
- []
-
-
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 108--111
-\/cmr/m/n/10 e
- []
-
-
-! LaTeX Error: The font size command \normalsize is not defined:
-               there is probably something wrong with the class file.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.111 \end{list}
-                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[1{C:/Users/mcyard/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Missing character: There is no : in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no g in font nullfont!
@@ -7243,7 +6534,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 133--135
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 133--135
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
@@ -7528,7 +6819,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 137--140
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 137--140
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
@@ -7538,7 +6829,7 @@ Overfull \hbox (2.77779pt too wide) in paragraph at lines 137--140
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 137--140
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 ! Undefined control sequence.
@@ -7765,7 +7056,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 145--146
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 Missing character: There is no u in font nullfont!
@@ -8071,7 +7362,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 149--150
-     \/cmr/m/n/10 e
+     \/cmr/m/n/10 ^^Re
  []
 
 
@@ -8369,7 +7660,7 @@ Overfull \hbox (2.77779pt too wide) in paragraph at lines 152--154
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 152--154
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
@@ -8758,7 +8049,7 @@ Missing character: There is no ) in font nullfont!
 Missing character: There is no : in font nullfont!
 
 Overfull \hbox (7.7778pt too wide) in paragraph at lines 164--165
-\/cmr/m/n/10 'a
+\/cmr/m/n/10 '^^Ra
  []
 
 Missing character: There is no S in font nullfont!
@@ -8784,7 +8075,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no ; in font nullfont!
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 166--167
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Se
  []
 
 Missing character: There is no I in font nullfont!
@@ -9109,7 +8400,7 @@ Missing character: There is no ) in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 176--177
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 ! Undefined control sequence.
@@ -9414,22 +8705,22 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 194--195
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 194--195
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (7.7778pt too wide) in paragraph at lines 194--195
-\/cmr/m/n/10 'a
+\/cmr/m/n/10 '^^Ra
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 194--195
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 194--195
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 Missing character: There is no L in font nullfont!
@@ -9606,7 +8897,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 200--201
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Se
  []
 
 ! Undefined control sequence.
@@ -9971,7 +9262,7 @@ Overfull \hbox (65.65936pt too wide) in paragraph at lines 208--209
 
 
 Overfull \hbox (5.55557pt too wide) in paragraph at lines 208--209
-\/cmr/m/n/10 u 
+\/cmr/m/n/10 ^^Ru 
  []
 
 Missing character: There is no : in font nullfont!
@@ -10329,7 +9620,7 @@ Overfull \hbox (2.77779pt too wide) in paragraph at lines 209--210
 
 
 Overfull \hbox (5.55557pt too wide) in paragraph at lines 209--210
-\/cmr/m/n/10 u
+\/cmr/m/n/10 ^^Ru
  []
 
 ! Undefined control sequence.
@@ -10563,7 +9854,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 213--215
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 213--215
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 Missing character: There is no S in font nullfont!
@@ -10997,22 +10288,22 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 229--231
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 229--231
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 229--231
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 229--231
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 229--231
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 Missing character: There is no I in font nullfont!
@@ -11100,7 +10391,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 232--233
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 232--233
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 Missing character: There is no : in font nullfont!
@@ -11344,7 +10635,7 @@ Overfull \hbox (22.68044pt too wide) in paragraph at lines 234--235
 
 
 Overfull \hbox (7.7778pt too wide) in paragraph at lines 234--235
-\/cmr/m/n/10 'a
+\/cmr/m/n/10 '^^Ra
  []
 
 
@@ -11354,7 +10645,7 @@ Overfull \hbox (2.77779pt too wide) in paragraph at lines 234--235
 
 
 Overfull \hbox (7.7778pt too wide) in paragraph at lines 234--235
-\/cmr/m/n/10 'a
+\/cmr/m/n/10 '^^Ra
  []
 
 
@@ -11558,12 +10849,12 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (5.74997pt too wide) in paragraph at lines 235--236
-\OMS/cmsy/b/n/10 
+\OMS/cmsy/b/n/10 ^^O
  []
 
 
 Overfull \hbox (7.7778pt too wide) in paragraph at lines 235--236
-\/cmr/m/n/10 'a
+\/cmr/m/n/10 '^^Ra
  []
 
 
@@ -12033,17 +11324,17 @@ Overfull \hbox (2.77779pt too wide) in paragraph at lines 239--242
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 239--242
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 239--242
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 239--242
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
@@ -12053,12 +11344,12 @@ Overfull \hbox (2.77779pt too wide) in paragraph at lines 239--242
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 239--242
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 239--242
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
@@ -12068,42 +11359,42 @@ Overfull \hbox (2.77779pt too wide) in paragraph at lines 239--242
 
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (57.48161pt too wide) in paragraph at lines 243--245
+Overfull \hbox (57.48161pt too wide) in paragraph at lines 243--244
 \OT1/cmr/bx/n/10 Assemblare
  []
 
 
-Overfull \hbox (24.3818pt too wide) in paragraph at lines 243--245
+Overfull \hbox (24.3818pt too wide) in paragraph at lines 243--244
 \OT1/cmr/bx/n/10 parti
  []
 
 
-Overfull \hbox (9.58328pt too wide) in paragraph at lines 243--245
+Overfull \hbox (9.58328pt too wide) in paragraph at lines 243--244
 \OT1/cmr/bx/n/10 in
  []
 
 
-Overfull \hbox (27.79152pt too wide) in paragraph at lines 243--245
+Overfull \hbox (27.79152pt too wide) in paragraph at lines 243--244
 \OT1/cmr/bx/n/10 modo
  []
 
 
-Overfull \hbox (13.4166pt too wide) in paragraph at lines 243--245
+Overfull \hbox (13.4166pt too wide) in paragraph at lines 243--244
 \OT1/cmr/bx/n/10 in-
  []
 
 
-Overfull \hbox (18.95131pt too wide) in paragraph at lines 243--245
+Overfull \hbox (18.95131pt too wide) in paragraph at lines 243--244
 \OT1/cmr/bx/n/10 cre-
  []
 
 
-Overfull \hbox (25.07626pt too wide) in paragraph at lines 243--245
+Overfull \hbox (25.07626pt too wide) in paragraph at lines 243--244
 \OT1/cmr/bx/n/10 men-
  []
 
 
-Overfull \hbox (18.52766pt too wide) in paragraph at lines 243--245
+Overfull \hbox (18.52766pt too wide) in paragraph at lines 243--244
 \OT1/cmr/bx/n/10 tale 
  []
 
@@ -12189,40 +11480,14 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.246 		\item P
-               oi si risale l’albero delle dipendenze;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 245--246
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.246 		\item P
-               oi si risale l’albero delle dipendenze;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.246 		\item P
-               oi si risale l’albero delle dipendenze;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 245--246
+\/cmr/m/n/10 ^^Ra 
+ []
 
 Missing character: There is no P in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -12259,43 +11524,14 @@ Missing character: There is no z in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.247 		\item Q
-               uesta strategia riduce il numero di stub necessari al test ma...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 246--247
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.247 		\item Q
-               uesta strategia riduce il numero di stub necessari al test ma...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.247 		\item Q
-               uesta strategia riduce il numero di stub necessari al test ma...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 246--247
+\/cmr/m/n/10 ' 
+ []
 
 Missing character: There is no Q in font nullfont!
 Missing character: There is no u in font nullfont!
@@ -12398,45 +11634,28 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.248 	\end{list}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 245--248
-\/cmr/m/n/10 a
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 247--248
+[]
  []
 
 
-Overfull \hbox (2.77779pt too wide) in paragraph at lines 245--248
-\/cmr/m/n/10 '
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 247--248
+\/cmr/m/n/10 ^^Ra
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 245--248
-\/cmr/m/n/10 a
- []
-
-
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 245--248
-\/cmr/m/n/10 a
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 247--248
+\/cmr/m/n/10 ^^Ra
  []
 
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (23.01376pt too wide) in paragraph at lines 249--251
+Overfull \hbox (23.01376pt too wide) in paragraph at lines 249--250
 \OT1/cmr/bx/n/10 Top-
  []
 
 
-Overfull \hbox (26.51375pt too wide) in paragraph at lines 249--251
+Overfull \hbox (26.51375pt too wide) in paragraph at lines 249--250
 \OT1/cmr/bx/n/10 down 
  []
 
@@ -12535,43 +11754,19 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.252 	\item Q
-              uesta strategia comporta l’uso di molti stub ma integra a pa...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 251--252
+[]
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.252 	\item Q
-              uesta strategia comporta l’uso di molti stub ma integra a pa...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 251--252
+\/cmr/m/n/10 ^^Ru
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.252 	\item Q
-              uesta strategia comporta l’uso di molti stub ma integra a pa...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 251--252
+\/cmr/m/n/10 '
+ []
 
 Missing character: There is no Q in font nullfont!
 Missing character: There is no u in font nullfont!
@@ -12661,40 +11856,23 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.253 	\end{list}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (5.55557pt too wide) in paragraph at lines 251--253
-\/cmr/m/n/10 u
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 252--253
+[]
  []
 
 
-Overfull \hbox (2.77779pt too wide) in paragraph at lines 251--253
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 252--253
 \/cmr/m/n/10 '
  []
 
 
-Overfull \hbox (2.77779pt too wide) in paragraph at lines 251--253
-\/cmr/m/n/10 '
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 252--253
+\/cmr/m/n/10 ^^Ra
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 251--253
-\/cmr/m/n/10 a
- []
-
-
-Overfull \hbox (5.55557pt too wide) in paragraph at lines 251--253
-\/cmr/m/n/10 u
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 252--253
+\/cmr/m/n/10 ^^Ru
  []
 
 Missing character: There is no ; in font nullfont!
@@ -13037,7 +12215,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 259--261
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 259--261
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 ! Undefined control sequence.
@@ -13504,12 +12682,12 @@ Overfull \hbox (6.80557pt too wide) in paragraph at lines 263--267
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 263--267
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 263--267
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 ! Undefined control sequence.
@@ -13693,12 +12871,12 @@ Overfull \hbox (2.77779pt too wide) in paragraph at lines 269--271
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 269--271
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 269--271
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^Ro
  []
 
 ! Undefined control sequence.
@@ -15063,7 +14241,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 292--293
-\/cmr/m/n/10 a 
+\/cmr/m/n/10 ^^Ra 
  []
 
 ! Undefined control sequence.
@@ -15410,17 +14588,17 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 298--300
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 298--300
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 298--300
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 298--300
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 ! Undefined control sequence.
@@ -15946,12 +15124,12 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 302--308
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 302--308
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 302--308
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
@@ -15961,12 +15139,12 @@ Overfull \hbox (2.77779pt too wide) in paragraph at lines 302--308
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 302--308
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 302--308
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
@@ -16524,17 +15702,17 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 322--327
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 322--327
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 322--327
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (5.55557pt too wide) in paragraph at lines 322--327
-\/cmr/m/n/10 u
+\/cmr/m/n/10 ^^Ru
  []
 
 Missing character: There is no A in font nullfont!
@@ -16832,7 +16010,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 337--343
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 337--343
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 Missing character: There is no L in font nullfont!
@@ -17014,7 +16192,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no ; in font nullfont!
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 344--345
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^Ro
  []
 
 Missing character: There is no L in font nullfont!
@@ -17154,7 +16332,7 @@ Overfull \hbox (5.00002pt too wide) in paragraph at lines 345--346
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 345--346
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 Missing character: There is no O in font nullfont!
@@ -17383,7 +16561,7 @@ Missing character: There is no 5 in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 347--348
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 ! Undefined control sequence.
@@ -17434,7 +16612,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 350--351
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 350--351
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 ! Undefined control sequence.
@@ -17935,37 +17113,37 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 352--356
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 352--356
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 352--356
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 352--356
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 352--356
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 352--356
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 352--356
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 352--356
-\/cmr/m/n/10 a 
+\/cmr/m/n/10 ^^Ra 
  []
 
 ! Undefined control sequence.
@@ -18329,7 +17507,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 357--361
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 357--361
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
@@ -18339,12 +17517,12 @@ Overfull \hbox (2.77779pt too wide) in paragraph at lines 357--361
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 357--361
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Se
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 357--361
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
@@ -18426,7 +17604,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 363--364
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 Missing character: There is no I in font nullfont!
@@ -18707,7 +17885,7 @@ Overfull \hbox (2.77779pt too wide) in paragraph at lines 368--372
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 368--372
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
@@ -18722,7 +17900,7 @@ Overfull \hbox (2.77779pt too wide) in paragraph at lines 368--372
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 368--372
-\/cmr/m/n/10 a 
+\/cmr/m/n/10 ^^Ra 
  []
 
 Missing character: There is no R in font nullfont!
@@ -19025,12 +18203,12 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 379--383
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 379--383
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 379--383
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
@@ -19140,7 +18318,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no ; in font nullfont!
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 386--387
-\/cmr/m/n/10 a 
+\/cmr/m/n/10 ^^Ra 
  []
 
 Missing character: There is no R in font nullfont!
@@ -19466,12 +18644,12 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 390--396
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 390--396
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 390--396
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
@@ -19826,12 +19004,12 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 403--407
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 403--407
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 403--407
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
@@ -20124,12 +19302,12 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 412--416
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 412--416
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 412--416
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
@@ -20214,7 +19392,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no ; in font nullfont!
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 417--418
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 Missing character: There is no C in font nullfont!
@@ -20630,12 +19808,12 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 421--427
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 421--427
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 421--427
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
@@ -20814,7 +19992,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no ; in font nullfont!
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 432--433
-\/cmr/m/n/10 a 
+\/cmr/m/n/10 ^^Ra 
  []
 
 Missing character: There is no A in font nullfont!
@@ -20884,7 +20062,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no ; in font nullfont!
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 434--435
-\/cmr/m/n/10 a 
+\/cmr/m/n/10 ^^Ra 
  []
 
 Missing character: There is no A in font nullfont!
@@ -21271,7 +20449,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 439--443
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 439--443
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^Ro
  []
 
 Missing character: There is no I in font nullfont!
@@ -21539,7 +20717,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no ; in font nullfont!
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 445--446
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 Missing character: There is no L in font nullfont!
@@ -22010,7 +21188,7 @@ Overfull \hbox (2.77779pt too wide) in paragraph at lines 454--456
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 454--456
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
@@ -22346,17 +21524,17 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 460--464
 
 
 Overfull \hbox (5.55557pt too wide) in paragraph at lines 460--464
-\/cmr/m/n/10 u
+\/cmr/m/n/10 ^^Ru
  []
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 460--464
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 460--464
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
@@ -22366,7 +21544,7 @@ Overfull \hbox (2.77779pt too wide) in paragraph at lines 460--464
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 460--464
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 Missing character: There is no R in font nullfont!
@@ -22884,7 +22062,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 472--474
 
 
 Overfull \hbox (4.44444pt too wide) in paragraph at lines 472--474
-\/cmr/m/n/10 e
+\/cmr/m/n/10 ^^Re
  []
 
 
@@ -23589,52 +22767,52 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 475--481
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 475--481
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 475--481
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (5.55557pt too wide) in paragraph at lines 475--481
-\/cmr/m/n/10 u
+\/cmr/m/n/10 ^^Ru
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 475--481
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^Ro
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 475--481
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 475--481
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 475--481
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 475--481
-\/cmr/m/n/10 o
+\/cmr/m/n/10 ^^Ro
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 475--481
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 475--481
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 ! Undefined control sequence.
@@ -24108,7 +23286,7 @@ Overfull \hbox (6.80557pt too wide) in paragraph at lines 482--485
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 482--485
-\/cmr/m/n/10 a
+\/cmr/m/n/10 ^^Ra
  []
 
 Missing character: There is no L in font nullfont!
@@ -24286,17 +23464,17 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no . in font nullfont!
 )
 ! Emergency stop.
-<*> ./Processi_di_supporto.tex
-                              
+<*> Processi_di_supporto.tex
+                            
 *** (job aborted, no legal \end found)
 
  
 Here is how much of TeX's memory you used:
- 56 strings out of 492969
- 979 string characters out of 3126141
- 79692 words of memory out of 3000000
- 4022 multiletter control sequences out of 15000+200000
- 4203 words of font info for 16 fonts, out of 3000000 for 9000
+ 55 strings out of 492616
+ 828 string characters out of 6132769
+ 82476 words of memory out of 5000000
+ 4059 multiletter control sequences out of 15000+600000
+ 4203 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 20i,4n,19p,543b,203s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 22i,4n,19p,541b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

@@ -22,19 +22,21 @@ I documenti formali che verranno presentati saranno suddivisi in due categorie:
 \end{itemize}
 
 \subsubsection{Template}
-Per semplificare e standardizzare la stesura dei documenti previsti è stato creato un template LATEX contenente tutte le impostazioni per la struttura grafica e lo stile di formattazione. Ogni membro del team deve obbligatoriamente utilizzare questo template.
+Per semplificare e standardizzare la stesura dei documenti previsti è stato creato un template \LaTeX{} contenente tutte le impostazioni per la struttura grafica e lo stile di formattazione. Ogni membro del team deve obbligatoriamente utilizzare questo template.
 \subsubsection{Versioni}
 Per ogni documento deve essere specificata obbligatoriamente la versione nella seguente forma: 
-\centerline{\textbf{X.Y.Z}}
-Dove X, Y, e Z sono interi non negativi, e NON DEVONO contenere zeri iniziali. X è la versione major, Y è la versione minor, e Z è la versione patch. Ogni elemento DEVE incrementare come numero a sé. Per esempio: 1.9.0 -> 1.10.0 -> 1.11.0….
+\begin{center}
+\textbf{X.Y.Z}
+\end{center}
+Dove X, Y, e Z sono interi non negativi. X viene incrementata ad ogni revisione, Y viene incrementata ogni qualvolta venga inserito un nuovo capitolo, infine Z determina le modifiche al documento. Ogni elemento deve incrementare indipendentemente. Per esempio: 1.9.0 $\rightarrow$ 1.10.0 $\rightarrow$ 1.11.0 .
 
-\begin{itemize}
-\item[•]La versione Major zero (0.y.z) è per lo sviluppo iniziale;
-\item[•]X: la versione Major (X.y.z | X > 0) identifica la versione di rilascio. Deve essere incrementata se è stata introdotta qualsiasi modifica non retrocompatibile. Le versioni Patch e Minor devono essere reimpostate a 0 quando la versione Major è incrementata;
-\item[•]Y: la versione Minor (x.Y.z | x > 0) deve essere incrementata se è stata introdotta una nuova funzionalità. La versione Patch deve essere reimpostata a 0 quando la versione Minor è incrementata;
-\item[•] Z: la versione Patch (x.y.Z | x > 0) deve essere incrementata solo se sono state introdotte correzioni retrocompatibili di bug. Una correzione di un bug è definita come una modifica interna che corregge un comportamento errato.
-\end{itemize}
-Una volta che un pacchetto versionato è stato rilasciato, i contenuti di quella versione non devono essere modificati. Qualsiasi modifica deve essere rilasciata come una nuova versione.
+%\begin{itemize}
+%\item[•]La versione Major zero (0.y.z) è per lo sviluppo iniziale;
+%\item[•]X: la versione Major (X.y.z | X > 0) identifica la versione di rilascio. Deve essere incrementata se è stata introdotta qualsiasi modifica non retrocompatibile. Le versioni Patch e Minor devono essere reimpostate a 0 quando la versione Major è incrementata;
+%\item[•]Y: la versione Minor (x.Y.z | x > 0) deve essere incrementata se è stata introdotta una nuova funzionalità. La versione Patch deve essere reimpostata a 0 quando la versione Minor è incrementata;
+%\item[•] Z: la versione Patch (x.y.Z | x > 0) deve essere incrementata solo se sono state introdotte correzioni retrocompatibili di bug. Una correzione di un bug è definita come una modifica interna che corregge un comportamento errato.
+%\end{itemize}
+%Una volta che un pacchetto versionato è stato rilasciato, i contenuti di quella versione non devono essere modificati. Qualsiasi modifica deve essere rilasciata come una nuova versione.
 
 \subsubsection{Struttura}
 Ogni documento deve essere realizzato a partire dal template descritto precedentemente, la cui struttura non deve essere modificata, ad eccezione dei verbali e della lettera di presentazione, dovrà essere composta da:
@@ -70,7 +72,7 @@ Ogni pagina, escluso il frontespizio ed indice, devono contenere:
 \begin{itemize}
 	\item[•] \textbf{Intestazione}:
 	\begin{list}{$\circ$}{}
-		\item Logo del gruppo (a 	sinistra);
+		\item Logo del gruppo (a sinistra);
 		\item Numero del capitolo corrente seguito dal nome (a destra).
 	\end{list}
 	\item[•] \textbf{Piè di pagina}:
@@ -82,10 +84,10 @@ Ogni pagina, escluso il frontespizio ed indice, devono contenere:
 
 \subsubsection{Norme Tipografiche}
 \begin{itemize}
-\item[•] \textbf{Maiuscolo}: l’uso del maiuscolo è obbligatorio nei seguenti casi:
+\item[•] \textbf{Maiuscolo}: l'uso del maiuscolo è obbligatorio nei seguenti casi:
 	\begin{list}{$\circ$}{}
-	\item All’inizio di ogni elemento di un elenco puntato;
-	\item All’inizio di ogni elemento di un elenco puntato;
+	\item All'inizio di ogni elemento di un elenco puntato;
+	\item All'inizio di ogni elemento di un elenco puntato;
 	\item Nella scrittura degli acronimi;
 	\item Dopo il punto, punto di domanda, punto esclamativo;
 	\item Per i ruoli di progetto, i nomi dei documenti, le fasi di progetto, revisioni di progetto oltre a dove previsto dalla lingua italiana;
@@ -105,7 +107,7 @@ Ogni pagina, escluso il frontespizio ed indice, devono contenere:
 \item[•] \textbf{Glossario}: per contrassegnare che una parola che è presente nel glossario è necessario aggiungere una G maiuscola al pedice della parola (ad esempio: {termine}\ped{G});
 \item[•] \textbf{Elenchi puntati}:
 \begin{list}{$\circ$}{}
-	\item Ogni elemento dell’elenco deve terminare con il punto e virgola, ad eccezione dell’ultimo elemento che deve terminare con il punto;
+	\item Ogni elemento dell'elenco deve terminare con il punto e virgola, ad eccezione dell'ultimo elemento che deve terminare con il punto;
 	\item Gli elementi di primo livello devono avere come stile un pallino pieno nero, quelli di secondo livello un pallino nero vuoto, ad eccezione degli elenchi numerati che devono essere usati solo se è necessario descrivere una sequenza;
 	\item Gli elementi di livello successivo al secondo devono alternare lo stile del primo e del secondo livello.
 \end{list}
