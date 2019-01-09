@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.27)  9 JAN 2019 14:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.27)  9 JAN 2019 15:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1485,11 +1485,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../template/img/logoSWEigh
 t.png>]
-(./sez/RegistroModifiche.tex
-Underfull \vbox (badness 10000) detected at line 18
- []
-
-)
+(./sez/RegistroModifiche.tex)
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
 Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 17
@@ -1798,20 +1794,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
  (./pdq.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
-
-
-Package rerunfilecheck Warning: File `pdq.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `pdq.out':
-(rerunfilecheck)             Before: C87B38D735E6511E184895417E576404;3432
-(rerunfilecheck)             After:  A46B90A8D9085B7D98D6BC5A873FF394;3433.
+Package rerunfilecheck Info: File `pdq.out' has not changed.
+(rerunfilecheck)             Checksum: DDAB4370212E5AFD268DAFC3C7B75F28;3450.
  ) 
 Here is how much of TeX's memory you used:
  26908 strings out of 492982
  501030 string characters out of 6134895
- 644025 words of memory out of 5000000
+ 647025 words of memory out of 5000000
  29788 multiletter control sequences out of 15000+600000
  77874 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1827,7 +1816,7 @@ blic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
 i10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmtt10.pfb>
-Output written on pdq.pdf (17 pages, 358915 bytes).
+Output written on pdq.pdf (17 pages, 360113 bytes).
 PDF statistics:
  497 PDF objects out of 1000 (max. 8388607)
  444 compressed objects within 5 object streams

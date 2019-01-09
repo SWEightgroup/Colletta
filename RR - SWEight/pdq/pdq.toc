@@ -31,7 +31,7 @@
 \contentsline {paragraph}{\numberline {2.4.3.6}Commenti per linee di codice}{9}{paragraph.2.4.3.6}
 \contentsline {paragraph}{\numberline {2.4.3.7}Code Coverage}{9}{paragraph.2.4.3.7}
 \contentsline {paragraph}{\numberline {2.4.3.8}Superamento test}{9}{paragraph.2.4.3.8}
-\contentsline {paragraph}{\numberline {2.4.3.9}Superamento test}{9}{paragraph.2.4.3.9}
+\contentsline {paragraph}{\numberline {2.4.3.9}Requisiti obbligatori soddisfatti}{9}{paragraph.2.4.3.9}
 \contentsline {subsubsection}{\numberline {2.4.4}Riassunto metriche}{9}{subsubsection.2.4.4}
 \contentsline {part}{Appendici}{10}{table.2}
 \contentsline {section}{\numberline {A}Esito Verifica}{11}{appendix.Alph1}
