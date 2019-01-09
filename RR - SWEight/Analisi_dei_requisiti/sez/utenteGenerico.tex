@@ -3,7 +3,7 @@
 \begin{figure}[H]
 \centering
 \includegraphics[width=17cm]{img/UC1.png} 
-\caption{Panoramica utente generico}\label{fig:1}
+\caption{Panoramica utente non autenticato}\label{fig:1}
 \end{figure}
 
 
@@ -25,8 +25,8 @@
 \end{enumerate}
 \item[•]\textbf{Estensioni}:
 \begin{enumerate}
-\item Errore inserimento nome utente con relativo messaggio d’errore;
-\item Errore inserimento password con relativo messaggio d’errore.
+\item UC 1.1.3 - Reset password;
+
 \end{enumerate}
 \end{itemize}
 
@@ -46,34 +46,13 @@
 \item[•]\textbf{Postcondizione}: L'utente ha inserito una password;
 \end{itemize}
 
-%\subsubsection{UC 1.2 - Inserimento frase libera}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width=17cm]{img/UC12.png} 
-%\caption{Caso d'uso 1.2}\label{fig:12}
-%\end{figure}
-%\begin{itemize}
-%\item[•]\textbf{Attori}: Utente non autenticato;
-%\item[•]\textbf{Descrizione}: L'allievo inserisce la propria frase in modo da ricevere l'analisi grammaticale di essa;
-%\item[•]\textbf{Precondizione}: Il sistema offre la possibilità di inserire una frase;
-%\item[•]\textbf{Postcondizione}: Una frase è stata correttamente inserita;
-%\item[•]\textbf{Flusso degli eventi principale}:
-%\begin{enumerate}
-%\item UC 3.4.3 - Visualizzazione soluzione.
-%\end{enumerate}
-%\item[•]\textbf{Estensioni}:
-%\begin{enumerate}
-%\item UC 1.2.1 - Visualizzazione errore inserimento frase.
-%\end{enumerate}
-%\end{itemize}
-
-%\subsubsection{UC 1.2.1 - Visualizzazione errore inserimento frase}
-%\begin{itemize}
-%\item[•]\textbf{Attori}: Utente non autenticato, Libreria di pos-tagging;
-%\item[•]\textbf{Descrizione}: La frase inserita non è accettata dalla libreria di pos-tagging. L'allievo visualizza un errore e può inserire una nuova frase;
-%\item[•]\textbf{Precondizione}: L'allievo ha provato ad inserire una frase;
-%\item[•]\textbf{Postcondizione}: L'allievo ha visualizzato il messaggio di errore e può inserire una nuova frase;
-%\end{itemize}
+\subsubsection{UC 1.1.3 - Reset password}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Utente non autenticato;
+	\item[•]\textbf{Descrizione}: L’utente inserisce i propri dati in maniera errata e avvia iter per il reset password;
+	\item[•]\textbf{Precondizione}: L’utente non è autenticato;
+	\item[•]\textbf{Postcondizione}: L’utente ha inviato la richiesta di reset password;
+\end{itemize}
 
 \subsubsection{UC 1.2 - Registrazione utente}
 \begin{figure}[H]
