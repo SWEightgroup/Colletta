@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.27)  9 JAN 2019 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.27)  9 JAN 2019 21:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1230,7 +1230,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip110
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 162.
+Package hyperref Info: Option `colorlinks' set `true' on input line 163.
 
 (/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
@@ -2275,10 +2275,10 @@ Package rerunfilecheck Info: File `Piano_di_Progetto.out' has not changed.
 (rerunfilecheck)             Checksum: FB013858B7109A95604F9033722888E1;3630.
  ) 
 Here is how much of TeX's memory you used:
- 27906 strings out of 492982
- 521912 string characters out of 6134895
- 704670 words of memory out of 5000000
- 30641 multiletter control sequences out of 15000+600000
+ 27907 strings out of 492982
+ 521926 string characters out of 6134895
+ 704834 words of memory out of 5000000
+ 30642 multiletter control sequences out of 15000+600000
  60377 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,18n,124p,803b,665s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2290,7 +2290,7 @@ f/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr1
 /type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmtt10.pfb>
-Output written on Piano_di_Progetto.pdf (39 pages, 689626 bytes).
+Output written on Piano_di_Progetto.pdf (39 pages, 690767 bytes).
 PDF statistics:
  804 PDF objects out of 1000 (max. 8388607)
  694 compressed objects within 7 object streams
