@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.27)  9 JAN 2019 15:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.27)  9 JAN 2019 21:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1526,7 +1526,39 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] (./sez/Introduzione/scopo_documento.tex)
+[2] (./pdq.lof)
+\tf@lof=\write6
+\openout6 = `pdq.lof'.
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 21
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3] (./pdq.lot)
+\tf@lot=\write7
+\openout7 = `pdq.lot'.
+
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 23
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4] (./sez/Introduzione/scopo_documento.tex)
 (./sez/Introduzione/scopo_prodotto.tex) (./sez/Introduzione/glossario.tex)
 (./sez/Introduzione/riferimenti_normativi.tex
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 2.
@@ -1558,7 +1590,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3]
+[5]
 Overfull \hbox (19.93272pt too wide) in paragraph at lines 22--24
 [][]$\T1/lmtt/m/n/10 http : / / support . objecteering . com / objecteering6 . 
 1 / help / us / metrics / metrics _ in _ detail / number _
@@ -1573,7 +1605,7 @@ Overfull \hbox (13.71051pt too wide) in paragraph at lines 24--26
 ) (./sez/Introduzione/note.tex)
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 34
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 38
 .
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -1583,7 +1615,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4] (./sez/Strategie/introduzione.tex) (./sez/Strategie/obiettivi/processi.tex)
+[6] (./sez/Strategie/introduzione.tex) (./sez/Strategie/obiettivi/processi.tex)
 (./sez/Strategie/obiettivi/prodotto.tex) (./sez/Strategie/responsabilita.tex)
 (./sez/Strategie/pianificazione/strategia.tex
 Overfull \hbox (8.83743pt too wide) in paragraph at lines 1--3
@@ -1603,7 +1635,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5]) (./sez/Strategie/pianificazione/tempistiche.tex)
+[7]) (./sez/Strategie/pianificazione/tempistiche.tex)
 (./sez/Strategie/misure_metriche/introduzione.tex)
 (./sez/Strategie/misure_metriche/processi.tex
 File: ../template/img/logoSWEight.png Graphic file (type png)
@@ -1618,7 +1650,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6]) (./sez/Strategie/misure_metriche/documenti.tex)
+[8]) (./sez/Strategie/misure_metriche/documenti.tex)
 (./sez/Strategie/misure_metriche/software.tex
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
@@ -1632,7 +1664,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7]
+[9]
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
 Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 45
@@ -1645,7 +1677,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8]) (./sez/Strategie/misure_metriche/tabella_metriche.tex
+[10]) (./sez/Strategie/misure_metriche/tabella_metriche.tex
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
 Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 89
@@ -1658,10 +1690,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9])
+[11])
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 65
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 69
 .
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -1671,12 +1703,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10] (./sez/App_Esito/introduzione.tex) (./sez/App_Esito/documenti.tex
+[12] (./sez/App_Esito/introduzione.tex) (./sez/App_Esito/documenti.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--43
 
  []
 
-<sez/App_Esito/graph/AN_Gulp.pdf, id=332, 1027.84pt x 217.81375pt>
+<sez/App_Esito/graph/AN_Gulp.pdf, id=358, 1027.84pt x 217.81375pt>
 File: sez/App_Esito/graph/AN_Gulp.pdf Graphic file (type pdf)
 <use sez/App_Esito/graph/AN_Gulp.pdf>
 Package pdftex.def Info: sez/App_Esito/graph/AN_Gulp.pdf  used on input line 45
@@ -1687,7 +1719,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--18
 
  []
 
-<sez/App_Esito/graph/AN_SV.pdf, id=333, 1035.87pt x 209.78375pt>
+<sez/App_Esito/graph/AN_SV.pdf, id=359, 1035.87pt x 209.78375pt>
 File: sez/App_Esito/graph/AN_SV.pdf Graphic file (type pdf)
 <use sez/App_Esito/graph/AN_SV.pdf>
 Package pdftex.def Info: sez/App_Esito/graph/AN_SV.pdf  used on input line 21.
@@ -1703,34 +1735,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11 <./sez/App_Esito/graph/AN_Gulp.pdf>]
+[13 <./sez/App_Esito/graph/AN_Gulp.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 25--37
 
  []
 
-<sez/App_Esito/graph/AN_BV.pdf, id=356, 263.98625pt x 257.96375pt>
+<sez/App_Esito/graph/AN_BV.pdf, id=380, 263.98625pt x 257.96375pt>
 File: sez/App_Esito/graph/AN_BV.pdf Graphic file (type pdf)
 <use sez/App_Esito/graph/AN_BV.pdf>
 Package pdftex.def Info: sez/App_Esito/graph/AN_BV.pdf  used on input line 40.
 (pdftex.def)             Requested size: 116.46849pt x 113.81102pt.
 ) (./sez/App_Esito/retrospettiva.tex)
-File: ../template/img/logoSWEight.png Graphic file (type png)
-<use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 76
-.
-(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 22.87169pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[12 <./sez/App_Esito/graph/AN_SV.pdf> <./sez/App_Esito/graph/AN_BV.pdf
-
-pdfTeX warning: pdflatex (file ./sez/App_Esito/graph/AN_BV.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
->] (./sez/test/introduzione.tex)
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
 Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 80
@@ -1743,8 +1758,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13] (./sez/App_Qualita/SPICE.tex) (./sez/App_Qualita/9126.tex
-<sez/App_Qualita/grafico_9126.png, id=404, 1145.27875pt x 645.41125pt>
+[14 <./sez/App_Esito/graph/AN_SV.pdf> <./sez/App_Esito/graph/AN_BV.pdf
+
+pdfTeX warning: pdflatex (file ./sez/App_Esito/graph/AN_BV.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>] (./sez/test/introduzione.tex)
+File: ../template/img/logoSWEight.png Graphic file (type png)
+<use ../template/img/logoSWEight.png>
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 84
+.
+(pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.87169pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15] (./sez/App_Qualita/SPICE.tex) (./sez/App_Qualita/9126.tex
+<sez/App_Qualita/grafico_9126.png, id=423, 1145.27875pt x 645.41125pt>
 File: sez/App_Qualita/grafico_9126.png Graphic file (type png)
 <use sez/App_Qualita/grafico_9126.png>
 Package pdftex.def Info: sez/App_Qualita/grafico_9126.png  used on input line 4
@@ -1762,7 +1794,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]
+[16]
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
 Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 28
@@ -1775,11 +1807,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15 <./sez/App_Qualita/grafico_9126.png>]) 
+[17 <./sez/App_Qualita/grafico_9126.png>]) 
 AED: lastpage setting LastPage
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 89
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 93
 .
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -1788,19 +1820,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
+[18]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
  (./pdq.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
 Package rerunfilecheck Info: File `pdq.out' has not changed.
 (rerunfilecheck)             Checksum: DDAB4370212E5AFD268DAFC3C7B75F28;3450.
  ) 
 Here is how much of TeX's memory you used:
- 26908 strings out of 492982
- 501030 string characters out of 6134895
- 647025 words of memory out of 5000000
+ 26916 strings out of 492982
+ 501084 string characters out of 6134895
+ 645025 words of memory out of 5000000
  29788 multiletter control sequences out of 15000+600000
  77874 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1816,10 +1848,10 @@ blic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
 i10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmtt10.pfb>
-Output written on pdq.pdf (17 pages, 360113 bytes).
+Output written on pdq.pdf (19 pages, 361440 bytes).
 PDF statistics:
- 497 PDF objects out of 1000 (max. 8388607)
- 444 compressed objects within 5 object streams
- 80 named destinations out of 1000 (max. 500000)
+ 516 PDF objects out of 1000 (max. 8388607)
+ 461 compressed objects within 5 object streams
+ 82 named destinations out of 1000 (max. 500000)
  406 words of extra memory for PDF output out of 10000 (max. 10000000)
 
