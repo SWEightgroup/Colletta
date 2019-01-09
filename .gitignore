@@ -23,3 +23,5 @@
 *.synctex.gz
 RR - SWEight/studio_fattibilita/StudioDiFattibilità.log
 *.log
+*.synctex(busy)
+sviluppatore_2.tex

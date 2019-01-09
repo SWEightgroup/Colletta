@@ -1,0 +1,35 @@
+%generare il pdf con il comando: pdflatex main.tex
+\documentclass[a4paper, oneside, openany, dvipsnames, table]{article}
+\usepackage{../template/SWEightStyle}
+\usepackage{tabularx}
+\usepackage{ltablex}
+\input{comandi.tex}
+
+\begin{document}
+\copertina{} 
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\input{sez/RegistroModifiche.tex}
+\newpage
+\section{Introduzione}
+\input{sez/introduzione.tex}
+\newpage
+\section{Casi d'uso}
+\input{sez/utenteGenerico.tex}
+\newpage
+\input{sez/Insegnante.tex}
+\newpage
+\input{sez/allievi.tex}
+\newpage
+\input{sez/sviluppatori.tex}
+\newpage
+\input{sez/amministratore.tex}
+
+\section{Requisiti}
+
+\input{sez/tabellarequisiti.tex}
+\end{document}
+
+
