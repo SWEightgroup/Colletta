@@ -1,5 +1,5 @@
-\babel@toc {italian}{}
-\babel@toc {italian}{}
+\select@language {italian}
+\select@language {italian}
 \contentsline {section}{\numberline {1}Introduzione}{6}{section.1}
 \contentsline {subsection}{\numberline {1.1}Scopo del documento}{6}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Scopo del prodotto}{6}{subsection.1.2}
