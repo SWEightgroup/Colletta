@@ -1,5 +1,5 @@
-\babel@toc {italian}{}
-\babel@toc {italian}{}
+\select@language {italian}
+\select@language {italian}
 \contentsline {section}{\numberline {1}Introduzione}{6}{section.1}
 \contentsline {subsection}{\numberline {1.1}Scopo del documento}{6}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Scopo del prodotto}{6}{subsection.1.2}
@@ -80,8 +80,8 @@
 \contentsline {subsubsection}{\numberline {3.4.11}UC 4.4 - Scaricamento dati}{37}{subsubsection.3.4.11}
 \contentsline {subsubsection}{\numberline {3.4.12}UC 4.4.1 - Scelta contenuti download}{38}{subsubsection.3.4.12}
 \contentsline {subsubsection}{\numberline {3.4.13}UC 4.4.2 - Scelta formato file}{38}{subsubsection.3.4.13}
-\contentsline {subsubsection}{\numberline {3.4.14}UC 4.4.2 - Scelta formato archivio}{38}{subsubsection.3.4.14}
-\contentsline {subsubsection}{\numberline {3.4.15}UC 4.4.2 - Ottenimento file}{39}{subsubsection.3.4.15}
+\contentsline {subsubsection}{\numberline {3.4.14}UC 4.4.3 - Scelta formato compressione}{38}{subsubsection.3.4.14}
+\contentsline {subsubsection}{\numberline {3.4.15}UC 4.4.4 - Ottenimento file}{39}{subsubsection.3.4.15}
 \contentsline {subsubsection}{\numberline {3.4.16}UC 4.5 - Creazione modello}{39}{subsubsection.3.4.16}
 \contentsline {subsubsection}{\numberline {3.4.17}UC 4.5.1 - Scelta parametri funzione}{40}{subsubsection.3.4.17}
 \contentsline {subsubsection}{\numberline {3.4.18}UC 4.5.2 - Inserimento nome modello}{40}{subsubsection.3.4.18}
@@ -98,8 +98,10 @@
 \contentsline {subsubsection}{\numberline {3.5.2}UC 5.1 - Visualizzazione elenco utenti}{45}{subsubsection.3.5.2}
 \contentsline {subsubsection}{\numberline {3.5.3}UC 5.2 - Eliminazione utenza}{46}{subsubsection.3.5.3}
 \contentsline {section}{\numberline {4}Requisiti}{46}{section.4}
-\contentsline {subsection}{\numberline {4.1}Requisiti funzionali}{46}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Requisiti di vincolo}{48}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Requisiti di qualit\IeC {\`a}}{49}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.1}Classificazione dei requisiti}{46}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Requisiti funzionali}{47}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Requisiti di vincolo}{49}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Requisiti di qualit\IeC {\`a}}{49}{subsection.4.4}
 \contentsline {section}{\numberline {5}Tracciamento dei requisiti}{49}{section.5}
 \contentsline {subsection}{\numberline {5.1}Tracciamento fonti-requisiti}{49}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Tracciamento casi d'uso-requisiti}{51}{subsection.5.2}
