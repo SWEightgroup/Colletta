@@ -1,107 +1,110 @@
-\select@language {italian}
-\select@language {italian}
-\contentsline {section}{\numberline {1}Introduzione}{6}{section.1}
-\contentsline {subsection}{\numberline {1.1}Scopo del documento}{6}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Scopo del prodotto}{6}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Glossario}{6}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Riferimenti}{6}{subsection.1.4}
-\contentsline {subsubsection}{\numberline {1.4.1}Riferimenti normativi}{6}{subsubsection.1.4.1}
-\contentsline {subsubsection}{\numberline {1.4.2}Riferimenti informativi}{6}{subsubsection.1.4.2}
-\contentsline {section}{\numberline {2}Descrizione generale}{7}{section.2}
-\contentsline {subsubsection}{\numberline {2.0.1}Contesto d\IeC {\textquoteright }uso del prodotto}{7}{subsubsection.2.0.1}
-\contentsline {subsubsection}{\numberline {2.0.2}Funzioni del prodotto}{7}{subsubsection.2.0.2}
-\contentsline {subsubsection}{\numberline {2.0.3}Caratteristiche degli utenti}{8}{subsubsection.2.0.3}
-\contentsline {section}{\numberline {3}Casi d'uso}{9}{section.3}
-\contentsline {subsection}{\numberline {3.1}Utente non autenticato}{9}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Panoramica utente non autenticato}{9}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}UC 1.1 - Autenticazione}{10}{subsubsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.3}UC 1.1.1 - Inserimento nome utente}{10}{subsubsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.4}UC 1.1.2 - Inserimento password}{10}{subsubsection.3.1.4}
-\contentsline {subsubsection}{\numberline {3.1.5}UC 1.1.3 - Reset password}{11}{subsubsection.3.1.5}
-\contentsline {subsubsection}{\numberline {3.1.6}UC 1.2 - Registrazione utente}{11}{subsubsection.3.1.6}
-\contentsline {subsubsection}{\numberline {3.1.7}UC 1.2.1 - Visualizzazione messaggio errore dato presente}{12}{subsubsection.3.1.7}
-\contentsline {subsubsection}{\numberline {3.1.8}UC 1.2.2 - Visualizzazione messaggio errore password diverse}{12}{subsubsection.3.1.8}
-\contentsline {subsubsection}{\numberline {3.1.9}UC 1.2.3 - Inserimento nome utente}{12}{subsubsection.3.1.9}
-\contentsline {subsubsection}{\numberline {3.1.10}UC 1.2.4 - Inserimento email istituzionale}{12}{subsubsection.3.1.10}
-\contentsline {subsubsection}{\numberline {3.1.11}UC 1.2.5 - Inserimento password}{13}{subsubsection.3.1.11}
-\contentsline {subsubsection}{\numberline {3.1.12}UC 1.2.6 - Inserimento conferma password}{13}{subsubsection.3.1.12}
-\contentsline {subsubsection}{\numberline {3.1.13}UC 1.2.7 - Inserimento data di nascita}{13}{subsubsection.3.1.13}
-\contentsline {subsubsection}{\numberline {3.1.14}UC 1.2.8 - Selezione ruolo}{13}{subsubsection.3.1.14}
-\contentsline {subsection}{\numberline {3.2}Insegnante}{14}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Panoramica Insegnante}{14}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}UC 2.1 Visualizza profilo personale}{15}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}UC 2.1.1 Visualizza storico frasi inserite}{16}{subsubsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.4}UC 2.1.1.1 Seleziona esercizio per avere pi\IeC {\`u} dettagli}{16}{subsubsection.3.2.4}
-\contentsline {subsubsection}{\numberline {3.2.5}UC 2.1.2 Visualizza esercizi svolti dagli allievi}{17}{subsubsection.3.2.5}
-\contentsline {subsubsection}{\numberline {3.2.6}UC 2.1.3 Visualizza i propri allievi}{18}{subsubsection.3.2.6}
-\contentsline {subsubsection}{\numberline {3.2.7}UC 2.1.3.1 Visualizza preferenze allievi}{18}{subsubsection.3.2.7}
-\contentsline {subsubsection}{\numberline {3.2.8}UC 2.1.4 Modifica esercizio}{19}{subsubsection.3.2.8}
-\contentsline {subsubsection}{\numberline {3.2.9}UC 2.1.5 Elimina esercizio}{19}{subsubsection.3.2.9}
-\contentsline {subsubsection}{\numberline {3.2.10}UC 2.2 Inserimento di un nuovo esercizio}{20}{subsubsection.3.2.10}
-\contentsline {subsubsection}{\numberline {3.2.11}UC 2.2.1 Predisporre lingua esercizio}{21}{subsubsection.3.2.11}
-\contentsline {subsubsection}{\numberline {3.2.12}UC 2.2.2 Inserimento testo esercizio}{21}{subsubsection.3.2.12}
-\contentsline {subsubsection}{\numberline {3.2.13}UC 2.2.2.1 Correzione automatica esercizio}{21}{subsubsection.3.2.13}
-\contentsline {subsubsection}{\numberline {3.2.14}2.2.3 Modifica tag automatici}{21}{subsubsection.3.2.14}
-\contentsline {subsubsection}{\numberline {3.2.15}2.2.4 Inserimento soluzione alternativa}{21}{subsubsection.3.2.15}
-\contentsline {subsubsection}{\numberline {3.2.16}UC 2.2.5 Modifica visibilit\IeC {\`a} esercizio}{22}{subsubsection.3.2.16}
-\contentsline {subsubsection}{\numberline {3.2.17}UC 2.2.6 Salvataggio modifiche}{22}{subsubsection.3.2.17}
-\contentsline {subsubsection}{\numberline {3.2.18}UC 2.2.6.1 Visualizzazione errori}{22}{subsubsection.3.2.18}
-\contentsline {subsubsection}{\numberline {3.2.19}UC 2.2.7 Conferma aggiunta esercizio}{22}{subsubsection.3.2.19}
-\contentsline {subsection}{\numberline {3.3}Allievi}{23}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Panoramica allievi}{23}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}UC 3.2 - Visualizzazione della {dashboard}\bbl@it@ped {G}}{24}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}UC 3.2.1 - Visualizzazione progressi}{24}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}UC 3.2.2 - Visualizzazione traguardi}{25}{subsubsection.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.5}UC 3.2.3 - Visualizzazione valutazioni}{25}{subsubsection.3.3.5}
-\contentsline {subsubsection}{\numberline {3.3.6}UC 3.2.4 - Inserimento insegnante preferito}{25}{subsubsection.3.3.6}
-\contentsline {subsubsection}{\numberline {3.3.7}UC 3.2.5 - Visualizzazione insegnanti preferiti}{26}{subsubsection.3.3.7}
-\contentsline {subsubsection}{\numberline {3.3.8}UC 3.2.5.1 - Rimozione insegnante preferito}{26}{subsubsection.3.3.8}
-\contentsline {subsubsection}{\numberline {3.3.9}UC 3.3 - Ricerca esercizio}{27}{subsubsection.3.3.9}
-\contentsline {subsubsection}{\numberline {3.3.10}UC 3.3.1 - Selezione esercizio}{27}{subsubsection.3.3.10}
-\contentsline {subsubsection}{\numberline {3.3.11}UC 3.3.1.1 - Selezione filtro insegnante}{27}{subsubsection.3.3.11}
-\contentsline {subsubsection}{\numberline {3.3.12}UC 3.3.2 - Inserimento frase libera}{28}{subsubsection.3.3.12}
-\contentsline {subsubsection}{\numberline {3.3.13}UC 3.3.2.1 - Visualizzazione errore inserimento frase}{28}{subsubsection.3.3.13}
-\contentsline {subsubsection}{\numberline {3.3.14}UC 3.4 - Svolgimento esercizio}{29}{subsubsection.3.3.14}
-\contentsline {subsubsection}{\numberline {3.3.15}UC 3.4.1 - Classificazione parola}{29}{subsubsection.3.3.15}
-\contentsline {subsubsection}{\numberline {3.3.16}UC 3.4.2 - Interruzione svolgimento esercizio}{30}{subsubsection.3.3.16}
-\contentsline {subsubsection}{\numberline {3.3.17}UC 3.4.3 - Visualizzazione soluzione}{30}{subsubsection.3.3.17}
-\contentsline {subsubsection}{\numberline {3.3.18}UC 3.4.3.1 - Visualizzazione valutazione esercizio}{30}{subsubsection.3.3.18}
-\contentsline {subsection}{\numberline {3.4}Sviluppatori}{32}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}Panoramica Sviluppatori}{32}{subsubsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.2}UC 4.1 - Visualizzazione elenco frasi}{33}{subsubsection.3.4.2}
-\contentsline {subsubsection}{\numberline {3.4.3}UC 4.2 - Filtraggio dei dati}{34}{subsubsection.3.4.3}
-\contentsline {subsubsection}{\numberline {3.4.4}UC 4.2.1 - Inserimento filtro periodo temporale}{35}{subsubsection.3.4.4}
-\contentsline {subsubsection}{\numberline {3.4.5}UC 4.2.2 - Inserimento filtro fonte}{35}{subsubsection.3.4.5}
-\contentsline {subsubsection}{\numberline {3.4.6}UC 4.2.3 - Selezione filtro lingue}{36}{subsubsection.3.4.6}
-\contentsline {subsubsection}{\numberline {3.4.7}UC 4.2.4 - Ricerca frase}{36}{subsubsection.3.4.7}
-\contentsline {subsubsection}{\numberline {3.4.8}UC 4.2.5 - Visualizzazione dati filtrati}{36}{subsubsection.3.4.8}
-\contentsline {subsubsection}{\numberline {3.4.9}UC 4.2.6 - Rimozione filtro}{37}{subsubsection.3.4.9}
-\contentsline {subsubsection}{\numberline {3.4.10}UC 4.3 - Visualizzazione storico frase}{37}{subsubsection.3.4.10}
-\contentsline {subsubsection}{\numberline {3.4.11}UC 4.4 - Scaricamento dati}{37}{subsubsection.3.4.11}
-\contentsline {subsubsection}{\numberline {3.4.12}UC 4.4.1 - Scelta contenuti download}{38}{subsubsection.3.4.12}
-\contentsline {subsubsection}{\numberline {3.4.13}UC 4.4.2 - Scelta formato file}{38}{subsubsection.3.4.13}
-\contentsline {subsubsection}{\numberline {3.4.14}UC 4.4.3 - Scelta formato compressione}{38}{subsubsection.3.4.14}
-\contentsline {subsubsection}{\numberline {3.4.15}UC 4.4.4 - Ottenimento file}{39}{subsubsection.3.4.15}
-\contentsline {subsubsection}{\numberline {3.4.16}UC 4.5 - Creazione modello}{39}{subsubsection.3.4.16}
-\contentsline {subsubsection}{\numberline {3.4.17}UC 4.5.1 - Scelta parametri funzione}{40}{subsubsection.3.4.17}
-\contentsline {subsubsection}{\numberline {3.4.18}UC 4.5.2 - Inserimento nome modello}{40}{subsubsection.3.4.18}
-\contentsline {subsubsection}{\numberline {3.4.19}UC 4.5.3 - Salvataggio modello}{40}{subsubsection.3.4.19}
-\contentsline {subsubsection}{\numberline {3.4.20}UC 4.5.4 - Valore parametro non valido}{40}{subsubsection.3.4.20}
-\contentsline {subsubsection}{\numberline {3.4.21}UC 4.5.5 - Visualizzazione messaggio errore nome duplicato}{41}{subsubsection.3.4.21}
-\contentsline {subsubsection}{\numberline {3.4.22}UC 4.5.6 - Interruzione inserimento modello}{41}{subsubsection.3.4.22}
-\contentsline {subsubsection}{\numberline {3.4.23}UC 4.6 - Visualizzazione elenco modelli}{41}{subsubsection.3.4.23}
-\contentsline {subsubsection}{\numberline {3.4.24}UC 4.7 - Visualizzazione contenuto modello}{42}{subsubsection.3.4.24}
-\contentsline {subsubsection}{\numberline {3.4.25}UC 4.8 - Scaricamento modello}{42}{subsubsection.3.4.25}
-\contentsline {subsubsection}{\numberline {3.4.26}UC 4.9 - Eliminazione modello}{43}{subsubsection.3.4.26}
-\contentsline {subsection}{\numberline {3.5}Amministratore}{44}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}Panoramica Amministratore}{44}{subsubsection.3.5.1}
-\contentsline {subsubsection}{\numberline {3.5.2}UC 5.1 - Visualizzazione elenco utenti}{45}{subsubsection.3.5.2}
-\contentsline {subsubsection}{\numberline {3.5.3}UC 5.2 - Eliminazione utenza}{46}{subsubsection.3.5.3}
-\contentsline {section}{\numberline {4}Requisiti}{46}{section.4}
-\contentsline {subsection}{\numberline {4.1}Classificazione dei requisiti}{46}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Requisiti funzionali}{47}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Requisiti di vincolo}{49}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Requisiti di qualit\IeC {\`a}}{49}{subsection.4.4}
-\contentsline {section}{\numberline {5}Tracciamento dei requisiti}{49}{section.5}
-\contentsline {subsection}{\numberline {5.1}Tracciamento fonti-requisiti}{49}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Tracciamento casi d'uso-requisiti}{51}{subsection.5.2}
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{\numberline {1}Introduzione}{7}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{7}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del prodotto}{7}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{7}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{7}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Riferimenti normativi}{7}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Riferimenti informativi}{7}{subsubsection.1.4.2}
+\contentsline {section}{\numberline {2}Descrizione generale}{8}{section.2}
+\contentsline {subsubsection}{\numberline {2.0.1}Contesto d\IeC {\textquoteright }uso del prodotto}{8}{subsubsection.2.0.1}
+\contentsline {subsubsection}{\numberline {2.0.2}Funzioni del prodotto}{8}{subsubsection.2.0.2}
+\contentsline {subsubsection}{\numberline {2.0.3}Caratteristiche degli utenti}{9}{subsubsection.2.0.3}
+\contentsline {section}{\numberline {3}Casi d'uso}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1}Utente non autenticato}{10}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Panoramica utente non autenticato}{10}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}UC 1.1 - Autenticazione}{11}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}UC 1.1.1 - Inserimento nome utente}{11}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}UC 1.1.2 - Inserimento password}{11}{subsubsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.5}UC 1.1.3 - Reset password}{12}{subsubsection.3.1.5}
+\contentsline {subsubsection}{\numberline {3.1.6}UC 1.2 - Registrazione utente}{12}{subsubsection.3.1.6}
+\contentsline {subsubsection}{\numberline {3.1.7}UC 1.2.1 - Visualizzazione messaggio errore dato presente}{13}{subsubsection.3.1.7}
+\contentsline {subsubsection}{\numberline {3.1.8}UC 1.2.2 - Visualizzazione messaggio errore password diverse}{13}{subsubsection.3.1.8}
+\contentsline {subsubsection}{\numberline {3.1.9}UC 1.2.3 - Inserimento nome utente}{13}{subsubsection.3.1.9}
+\contentsline {subsubsection}{\numberline {3.1.10}UC 1.2.4 - Inserimento email istituzionale}{13}{subsubsection.3.1.10}
+\contentsline {subsubsection}{\numberline {3.1.11}UC 1.2.5 - Inserimento password}{14}{subsubsection.3.1.11}
+\contentsline {subsubsection}{\numberline {3.1.12}UC 1.2.6 - Inserimento conferma password}{14}{subsubsection.3.1.12}
+\contentsline {subsubsection}{\numberline {3.1.13}UC 1.2.7 - Inserimento data di nascita}{14}{subsubsection.3.1.13}
+\contentsline {subsubsection}{\numberline {3.1.14}UC 1.2.8 - Selezione ruolo}{14}{subsubsection.3.1.14}
+\contentsline {subsection}{\numberline {3.2}Insegnante}{15}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Panoramica Insegnante}{15}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}UC 2.1 Visualizza profilo personale}{16}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}UC 2.1.1 Visualizza storico frasi inserite}{17}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}UC 2.1.1.1 Seleziona esercizio per avere pi\IeC {\`u} dettagli}{17}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}UC 2.1.2 Visualizza esercizi svolti dagli allievi}{18}{subsubsection.3.2.5}
+\contentsline {subsubsection}{\numberline {3.2.6}UC 2.1.3 Visualizza i propri allievi}{19}{subsubsection.3.2.6}
+\contentsline {subsubsection}{\numberline {3.2.7}UC 2.1.3.1 Visualizza preferenze allievi}{19}{subsubsection.3.2.7}
+\contentsline {subsubsection}{\numberline {3.2.8}UC 2.1.4 Modifica esercizio}{20}{subsubsection.3.2.8}
+\contentsline {subsubsection}{\numberline {3.2.9}UC 2.1.5 Elimina esercizio}{20}{subsubsection.3.2.9}
+\contentsline {subsubsection}{\numberline {3.2.10}UC 2.2 Inserimento di un nuovo esercizio}{21}{subsubsection.3.2.10}
+\contentsline {subsubsection}{\numberline {3.2.11}UC 2.2.1 Predisporre lingua esercizio}{22}{subsubsection.3.2.11}
+\contentsline {subsubsection}{\numberline {3.2.12}UC 2.2.2 Inserimento testo esercizio}{22}{subsubsection.3.2.12}
+\contentsline {subsubsection}{\numberline {3.2.13}UC 2.2.2.1 Correzione automatica esercizio}{22}{subsubsection.3.2.13}
+\contentsline {subsubsection}{\numberline {3.2.14}2.2.3 Modifica tag automatici}{22}{subsubsection.3.2.14}
+\contentsline {subsubsection}{\numberline {3.2.15}2.2.4 Inserimento soluzione alternativa}{22}{subsubsection.3.2.15}
+\contentsline {subsubsection}{\numberline {3.2.16}UC 2.2.5 Modifica visibilit\IeC {\`a} esercizio}{23}{subsubsection.3.2.16}
+\contentsline {subsubsection}{\numberline {3.2.17}UC 2.2.6 Salvataggio modifiche}{23}{subsubsection.3.2.17}
+\contentsline {subsubsection}{\numberline {3.2.18}UC 2.2.6.1 Visualizzazione errori}{23}{subsubsection.3.2.18}
+\contentsline {subsubsection}{\numberline {3.2.19}UC 2.2.7 Conferma aggiunta esercizio}{23}{subsubsection.3.2.19}
+\contentsline {subsection}{\numberline {3.3}Allievi}{24}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Panoramica allievi}{24}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}UC 3.2 - Visualizzazione della {dashboard}\bbl@it@ped {G}}{25}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}UC 3.2.1 - Visualizzazione progressi}{25}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}UC 3.2.2 - Visualizzazione traguardi}{26}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.5}UC 3.2.3 - Visualizzazione valutazioni}{26}{subsubsection.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.6}UC 3.2.4 - Inserimento insegnante preferito}{26}{subsubsection.3.3.6}
+\contentsline {subsubsection}{\numberline {3.3.7}UC 3.2.5 - Visualizzazione insegnanti preferiti}{27}{subsubsection.3.3.7}
+\contentsline {subsubsection}{\numberline {3.3.8}UC 3.2.5.1 - Rimozione insegnante preferito}{27}{subsubsection.3.3.8}
+\contentsline {subsubsection}{\numberline {3.3.9}UC 3.3 - Ricerca esercizio}{28}{subsubsection.3.3.9}
+\contentsline {subsubsection}{\numberline {3.3.10}UC 3.3.1 - Selezione esercizio}{28}{subsubsection.3.3.10}
+\contentsline {subsubsection}{\numberline {3.3.11}UC 3.3.1.1 - Selezione filtro insegnante}{28}{subsubsection.3.3.11}
+\contentsline {subsubsection}{\numberline {3.3.12}UC 3.3.2 - Inserimento frase libera}{29}{subsubsection.3.3.12}
+\contentsline {subsubsection}{\numberline {3.3.13}UC 3.3.2.1 - Visualizzazione errore inserimento frase}{29}{subsubsection.3.3.13}
+\contentsline {subsubsection}{\numberline {3.3.14}UC 3.4 - Svolgimento esercizio}{30}{subsubsection.3.3.14}
+\contentsline {subsubsection}{\numberline {3.3.15}UC 3.4.1 - Classificazione parola}{30}{subsubsection.3.3.15}
+\contentsline {subsubsection}{\numberline {3.3.16}UC 3.4.2 - Interruzione svolgimento esercizio}{31}{subsubsection.3.3.16}
+\contentsline {subsubsection}{\numberline {3.3.17}UC 3.4.3 - Visualizzazione soluzione}{31}{subsubsection.3.3.17}
+\contentsline {subsubsection}{\numberline {3.3.18}UC 3.4.3.1 - Visualizzazione valutazione esercizio}{31}{subsubsection.3.3.18}
+\contentsline {subsection}{\numberline {3.4}Sviluppatori}{33}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Panoramica Sviluppatori}{33}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}UC 4.1 - Visualizzazione elenco frasi}{34}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.3}UC 4.2 - Filtraggio dei dati}{35}{subsubsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.4}UC 4.2.1 - Inserimento filtro periodo temporale}{36}{subsubsection.3.4.4}
+\contentsline {subsubsection}{\numberline {3.4.5}UC 4.2.2 - Inserimento filtro fonte}{36}{subsubsection.3.4.5}
+\contentsline {subsubsection}{\numberline {3.4.6}UC 4.2.3 - Selezione filtro lingue}{37}{subsubsection.3.4.6}
+\contentsline {subsubsection}{\numberline {3.4.7}UC 4.2.4 - Ricerca frase}{37}{subsubsection.3.4.7}
+\contentsline {subsubsection}{\numberline {3.4.8}UC 4.2.5 - Visualizzazione dati filtrati}{37}{subsubsection.3.4.8}
+\contentsline {subsubsection}{\numberline {3.4.9}UC 4.2.6 - Rimozione filtro}{38}{subsubsection.3.4.9}
+\contentsline {subsubsection}{\numberline {3.4.10}UC 4.3 - Visualizzazione storico frase}{38}{subsubsection.3.4.10}
+\contentsline {subsubsection}{\numberline {3.4.11}UC 4.4 - Scaricamento dati}{38}{subsubsection.3.4.11}
+\contentsline {subsubsection}{\numberline {3.4.12}UC 4.4.1 - Scelta contenuti download}{39}{subsubsection.3.4.12}
+\contentsline {subsubsection}{\numberline {3.4.13}UC 4.4.2 - Scelta formato file}{39}{subsubsection.3.4.13}
+\contentsline {subsubsection}{\numberline {3.4.14}UC 4.4.3 - Scelta formato compressione}{39}{subsubsection.3.4.14}
+\contentsline {subsubsection}{\numberline {3.4.15}UC 4.4.4 - Ottenimento file}{40}{subsubsection.3.4.15}
+\contentsline {subsubsection}{\numberline {3.4.16}UC 4.5 - Creazione modello}{40}{subsubsection.3.4.16}
+\contentsline {subsubsection}{\numberline {3.4.17}UC 4.5.1 - Scelta parametri funzione}{41}{subsubsection.3.4.17}
+\contentsline {subsubsection}{\numberline {3.4.18}UC 4.5.2 - Inserimento nome modello}{41}{subsubsection.3.4.18}
+\contentsline {subsubsection}{\numberline {3.4.19}UC 4.5.3 - Salvataggio modello}{41}{subsubsection.3.4.19}
+\contentsline {subsubsection}{\numberline {3.4.20}UC 4.5.4 - Valore parametro non valido}{41}{subsubsection.3.4.20}
+\contentsline {subsubsection}{\numberline {3.4.21}UC 4.5.5 - Visualizzazione messaggio errore nome duplicato}{42}{subsubsection.3.4.21}
+\contentsline {subsubsection}{\numberline {3.4.22}UC 4.5.6 - Interruzione inserimento modello}{42}{subsubsection.3.4.22}
+\contentsline {subsubsection}{\numberline {3.4.23}UC 4.6 - Visualizzazione elenco modelli}{42}{subsubsection.3.4.23}
+\contentsline {subsubsection}{\numberline {3.4.24}UC 4.7 - Visualizzazione contenuto modello}{43}{subsubsection.3.4.24}
+\contentsline {subsubsection}{\numberline {3.4.25}UC 4.8 - Scaricamento modello}{43}{subsubsection.3.4.25}
+\contentsline {subsubsection}{\numberline {3.4.26}UC 4.9 - Eliminazione modello}{44}{subsubsection.3.4.26}
+\contentsline {subsection}{\numberline {3.5}Amministratore}{45}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Panoramica Amministratore}{45}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}UC 5.1 - Visualizzazione della propria dashboard}{46}{subsubsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.3}UC 5.1.1 - Visualizzazione utenti registrati}{47}{subsubsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.4}UC 5.1.1.1 - Filtra o ricerca utenti}{47}{subsubsection.3.5.4}
+\contentsline {subsubsection}{\numberline {3.5.5}UC 5.1.1.2 - Eliminazione utenza}{47}{subsubsection.3.5.5}
+\contentsline {subsubsection}{\numberline {3.5.6}UC 5.1.2 - Visualizza lista richieste in sospeso sviluppatori}{48}{subsubsection.3.5.6}
+\contentsline {section}{\numberline {4}Requisiti}{48}{section.4}
+\contentsline {subsection}{\numberline {4.1}Classificazione dei requisiti}{48}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Requisiti funzionali}{49}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Requisiti di vincolo}{50}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Requisiti di qualit\IeC {\`a}}{51}{subsection.4.4}
+\contentsline {section}{\numberline {5}Tracciamento dei requisiti}{51}{section.5}
+\contentsline {subsection}{\numberline {5.1}Tracciamento fonti-requisiti}{51}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Tracciamento casi d'uso-requisiti}{53}{subsection.5.2}

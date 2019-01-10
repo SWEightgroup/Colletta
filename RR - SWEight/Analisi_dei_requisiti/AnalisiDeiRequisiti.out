@@ -93,13 +93,16 @@
 \BOOKMARK [3][-]{subsubsection.3.4.26}{UC 4.9 - Eliminazione modello}{subsection.3.4}% 93
 \BOOKMARK [2][-]{subsection.3.5}{Amministratore}{section.3}% 94
 \BOOKMARK [3][-]{subsubsection.3.5.1}{Panoramica Amministratore}{subsection.3.5}% 95
-\BOOKMARK [3][-]{subsubsection.3.5.2}{UC 5.1 - Visualizzazione elenco utenti}{subsection.3.5}% 96
-\BOOKMARK [3][-]{subsubsection.3.5.3}{UC 5.2 - Eliminazione utenza}{subsection.3.5}% 97
-\BOOKMARK [1][-]{section.4}{Requisiti}{}% 98
-\BOOKMARK [2][-]{subsection.4.1}{Classificazione dei requisiti}{section.4}% 99
-\BOOKMARK [2][-]{subsection.4.2}{Requisiti funzionali}{section.4}% 100
-\BOOKMARK [2][-]{subsection.4.3}{Requisiti di vincolo}{section.4}% 101
-\BOOKMARK [2][-]{subsection.4.4}{Requisiti di qualit\340}{section.4}% 102
-\BOOKMARK [1][-]{section.5}{Tracciamento dei requisiti}{}% 103
-\BOOKMARK [2][-]{subsection.5.1}{Tracciamento fonti-requisiti}{section.5}% 104
-\BOOKMARK [2][-]{subsection.5.2}{Tracciamento casi d'uso-requisiti}{section.5}% 105
+\BOOKMARK [3][-]{subsubsection.3.5.2}{UC 5.1 - Visualizzazione della propria dashboard}{subsection.3.5}% 96
+\BOOKMARK [3][-]{subsubsection.3.5.3}{UC 5.1.1 - Visualizzazione utenti registrati}{subsection.3.5}% 97
+\BOOKMARK [3][-]{subsubsection.3.5.4}{UC 5.1.1.1 - Filtra o ricerca utenti}{subsection.3.5}% 98
+\BOOKMARK [3][-]{subsubsection.3.5.5}{UC 5.1.1.2 - Eliminazione utenza}{subsection.3.5}% 99
+\BOOKMARK [3][-]{subsubsection.3.5.6}{UC 5.1.2 - Visualizza lista richieste in sospeso sviluppatori}{subsection.3.5}% 100
+\BOOKMARK [1][-]{section.4}{Requisiti}{}% 101
+\BOOKMARK [2][-]{subsection.4.1}{Classificazione dei requisiti}{section.4}% 102
+\BOOKMARK [2][-]{subsection.4.2}{Requisiti funzionali}{section.4}% 103
+\BOOKMARK [2][-]{subsection.4.3}{Requisiti di vincolo}{section.4}% 104
+\BOOKMARK [2][-]{subsection.4.4}{Requisiti di qualit\340}{section.4}% 105
+\BOOKMARK [1][-]{section.5}{Tracciamento dei requisiti}{}% 106
+\BOOKMARK [2][-]{subsection.5.1}{Tracciamento fonti-requisiti}{section.5}% 107
+\BOOKMARK [2][-]{subsection.5.2}{Tracciamento casi d'uso-requisiti}{section.5}% 108
