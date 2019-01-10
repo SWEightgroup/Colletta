@@ -115,15 +115,26 @@ Ogni pagina, escluso il frontespizio ed indice, devono contenere:
 %va messo un altro sub 
 
 \paragraph{Formati}\mbox{}\\
-Date: ogni data deve seguire lo standard internazionale per date e orari ISO 8601:2004:
+\begin{itemize}
+\item \textbf{Date}: Ogni data deve rispettare lo standard internazionale ISO 8601:2004, che prevede la seguente convenzione:
 \begin{center}
 AAAA-MM-GG
 \end{center}
 dove: 
 \begin{itemize}
-\item[•] AAAA: rappresenta il formato dell’anno scritto con quattro cifre;
-\item[•] MM: rappresenta il formato del mese scritto con due cifre;
-\item[•] GG: rappresenta il formato del giorno scritto con due cifre.
+\item[$\circ$] AAAA: rappresenta il formato dell'anno scritto con quattro cifre;
+\item[$\circ$] MM: rappresenta il formato del mese scritto con due cifre;
+\item[$\circ$] GG: rappresenta il formato del giorno scritto con due cifre.
+\end{itemize}
+\item \textbf{Orari}: Se presenti, gli orari fanno riferimento anch'essi allo standard internazionale ISO 8601:2004:
+\begin{center}
+HH:MM
+\end{center}
+dove:
+\begin{itemize}
+\item[$\circ$] HH: rappresenta l'ora espressa con due cifre il cui valore è compreso tra 00 e 23;
+\item[$\circ$] MM: rappresenta i minuti espressi con due cifre il cui valore è compresi tra 00 e 59.
+\end{itemize}
 \end{itemize}
 
 \subsubsection{Componenti grafiche}
@@ -134,7 +145,14 @@ Tutte le tabelle devono avere un indice univoco che la identifichi all’interno
 
 %va messo un altro sub 
 \paragraph{Immagini}\mbox{}\\
-Tutte le immagini inserite nei vari documenti devono avere un eguale e sufficiente margine orizzontale e verticale in modo da non ridurre la leggibilità del testo. Ogni immagine deve anch’essa avere un indice univoco che la contraddistingua nell’intero documento.
+Tutte le immagini inserite nei vari documenti devono avere un eguale e sufficiente margine orizzontale e verticale in modo da non ridurre la leggibilità del testo. Ogni immagine deve anch'essa avere un indice univoco che la contraddistingua nell'intero documento.
+In particolare le immagini dovranno rispettare le seguenti proprietà, salvo indicato diversamente:
+\begin{itemize}
+\item[•] \textbf{Nome}: deve rispettare la {notazione a cammello}\ped{G};
+\item[•] \textbf{Formato}: è preferibile utilizzare il formato png, ma è accettato anche il PDF in quanto scalabile;
+\item[•] \textbf{Importazione in \LaTeX}: quando importata nel documento, l'immagine dev'essere collocata all'interno del tag figure, accompagnata da una descrizione e con lunghezza massima uguale a 17cm;
+\item[•] \textbf{Posizionamento}: preferibilmente deve essere centrata orizzontalmente.
+\end{itemize}
 
 %va messo un altro sub 
 \paragraph{Diagrammi UML}\mbox{}\\
@@ -147,8 +165,8 @@ L'immagine rappresentante l'UML deve avere le seguenti caratteristiche:
 \begin{itemize}
 \item Nome file: UC\texttt{Codice Identificativo}, privo di "."\\
 Ad esempio: UC4.2.png $\rightarrow$ UC42.png;
-\item Formato file immagine \texttt{.png};
-\item Massima larghezza 17cm;
+\item Formato file immagine: \texttt{.png};
+\item Massima larghezza: 17cm;
 \item Didascalia figura con codice caso d'uso;
 \item Il file deve essere salvato all'interno del folder img, destinato alle immagini.
 \end{itemize}
@@ -184,22 +202,27 @@ Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio d
 \item Per iniziare la stesura di un documento l'owner deve assegnarsi una issues (To do);
 \item Quando inizia la stesura del documento (In progress):
 	\begin{enumerate}
-		\item Sposta la issue nella sezione “in progress”;
-		\item Crea un branch per lavorare sulla issue.
+		\item[2.1] Sposta la issue nella sezione “in progress”;
+		\item[2.2] Crea un branch per lavorare sulla issue.
 	\end{enumerate}
 \item Finita l'attività di scrittura crea un pull request con (Needs review):
 	\begin{enumerate}
-		\item Sé stesso come assigneer;
-		\item I verificatori come reviewers;
-		\item I campi project e milestone vuoti.
+		\item[3.1] Sé stesso come assigneer;
+		\item[3.2] I verificatori come reviewers;
+		\item[3.3] I campi project e milestone vuoti.
 	\end{enumerate} 
 \item I verificatori controllano il documento e possono:
 	\begin{enumerate}
-	 	\item Accettarlo (Reviewer approved);
-	 	\item Non accettarlo (In progress).
+	 	\item[4.1] Accettarlo (Reviewer approved);
+	 	\item[4.2] Non accettarlo (In progress).
 	\end{enumerate}
 \item Se non accettato, l’owner deve apportare le modifiche descritte dal verificatore;
-\item Se accettato, sarà compito del responsabile di progetto effettuare il merge e chiudere la issues (Done).
+\item Se accettato, il documento giunge al responsabile di progetto che può:
+\begin{enumerate}
+	\item[6.1] Approvarlo, rendendo il documento formale e chiudendo la issue. (Done)
+	\item[6.2] Non approvarlo, fornendo le opportune motivazioni (In progress);
+\end{enumerate}
+\item Se approvato, sarà compito dell'amministratore effettuare il merge.
 \end{enumerate}
 \begin{figure}[H]
 \centering
