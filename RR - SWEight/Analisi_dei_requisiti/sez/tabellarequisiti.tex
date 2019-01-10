@@ -25,7 +25,8 @@ Dove:
 		\item[P]: Requisito prestazionale;
 		\item[V]: Requisito di vincolo.
 	\end{itemize}
-	\item[•] Identificativo: ovvero un codice univoco che contraddistingue il requisito.
+	\item[•] Identificativo: ovvero un codice univoco che contraddistingue il requisito.\\
+	Nota: requisiti di vincolo e qualità non sono tracciati perchè non corrispondono a nessun caso d'uso.
 \end{itemize}
 
 \subsection{Requisiti funzionali} 
@@ -470,7 +471,7 @@ Capitolato \\
 %%##################### FINE ENTRY ###############################
 %%################## INIZIO ENTRY ################################    
 %Identificativo
-R-1F019 &
+R-1F025 &
 
 %Descrizione
 Uno sviluppatore può filtrare i dati per fonte &
@@ -483,22 +484,6 @@ Funzionale &
 
 %Fonte
 Capitolato \\
-%%##################### FINE ENTRY ###############################
-%%################## INIZIO ENTRY ################################    
-%Identificativo
-R-2F002 &
-
-%Descrizione
-Uno sviluppatore può filtrare i dati per fonte &
-
-%Importanza
-Desiderabile &
-
-%Tipo
-Funzionale &
-
-%Fonte
-Interno \\
 %%##################### FINE ENTRY ###############################
 %%################## INIZIO ENTRY ################################    
 %Identificativo
@@ -919,69 +904,106 @@ Interno \\
 \section{Tracciamento dei requisiti}
 \subsection{Tracciamento fonti-requisiti} 
 
-\begin{tabularx}{\textwidth}{c|r}
+\begin{tabularx}{\textwidth}{c|c}
 	
 	\rowcolor{greySWEight}
 	\textcolor{white}{\textbf{Fonte}} &
 	\textcolor{white}{\textbf{Requisito}}\endhead
 	
 	Capitolato & R-1F001\\
-	& R-1F002\\
-	& R-1F003\\
-	& R-3F001\\
-	& R-1F004\\
-	& R-1F005\\
-	& R-1F006\\
-	& R-1F007\\
-	& R-1F008\\
-	& R-1F009\\
-	& R-1F011\\
-	& R-1F012\\
-	& R-1F013\\
-	& R-1F014\\
-	& R-1F015\\
-	& R-1F019\\
-	& R-2F001\\
-	& R-1F019\\
-	& R-2F004\\
-	& R-1F024\\
-	& R-1V001\\
-	& R-1V002\\
-	& R-1V003\\
-	& R-1V004\\
+	Capitolato & R-1F002\\
+	Capitolato & R-1F003\\
+	Capitolato & R-3F001\\
+	Capitolato & R-1F004\\
+	Capitolato & R-1F005\\
+	Capitolato & R-1F006\\
+	Capitolato & R-1F007\\
+	Capitolato & R-1F008\\
+	Capitolato & R-1F009\\
+	Capitolato & R-1F011\\
+	Capitolato & R-1F012\\
+	Capitolato & R-1F013\\
+	Capitolato & R-1F014\\
+	Capitolato & R-1F015\\
+	Capitolato & R-1F019\\
+	Capitolato & R-2F001\\
+	Capitolato & R-1F025\\
+	Capitolato & R-2F004\\
+	Capitolato & R-1F024\\
+	Capitolato & R-1V001\\
+	Capitolato & R-1V002\\
+	Capitolato & R-1V003\\
+	Capitolato & R-1V004\\
+	Interno & R-3F002\\
+	Interno & R-1F010\\
+	Interno & R-3F003\\
+	Interno & R-3F004\\
+	Interno & R-3F005\\
+	Interno & R-3F006\\
+	Interno & R-2F003\\
+	Interno & R-1F023\\
+	Interno & R-3F007\\
+	Interno & R-3F008\\
+	Interno & R-2F005\\
+	Interno & R-2F006\\
+	Interno & R-2F007\\
+	Interno & R-2F008\\
+	Interno & R-2F009\\
+	Interno & R-1Q001\\
+	Interno & R-1Q002\\
+	Interno & R-1Q003\\
+	Interno & R-1Q005\\
 	 
 	
 	\rowcolor{white}
-	\caption{Tabella tracciamento capitolato-requisiti} \label{tab:tabellafonterequisiti}
+	\caption{Tabella tracciamento fonti-requisiti} \label{tab:tabellafonterequisiti}
 \end{tabularx}
 
-\begin{tabularx}{\textwidth}{c|r}
+
+\subsection{Tracciamento casi d'uso-requisiti} 
+
+\begin{tabularx}{\textwidth}{c|c}
 	
 	\rowcolor{greySWEight}
-	\textcolor{white}{\textbf{Fonte}} &
+	\textcolor{white}{\textbf{Caso d'uso}} &
 	\textcolor{white}{\textbf{Requisito}}\endhead
-	
-	Interno & R-3F002\\
-	& R-1F010\\
-	& R-3F003\\
-	& R-3F004\\
-	& R-3F005\\
-	& R-3F006\\
-	& R-2F002\\
-	& R-2F003\\
-	& R-1F023\\
-	& R-3F007\\
-	& R-3F008\\
-	& R-2F005\\
-	& R-2F006\\
-	& R-2F007\\
-	& R-2F008\\
-	& R-2F009\\
-	& R-1Q001\\
-	& R-1Q002\\
-	& R-1Q003\\
-	& R-1Q005\\
+
+ 	UC 1.2 & R-1F001\\
+	UC 1.1 & R-1F002\\
+	UC 3.2 & R-1F003\\
+	UC 3.2.1 & R-3F001\\
+	UC 3.2.2 & R-1F004\\
+	UC 3.4.3.1 & R-1F005\\
+	UC 3.3 & R-1F006\\
+	UC DA FARE & R-1F007\\
+	UC 3.4 & R-1F008\\
+	UC 3.3.2 & R-1F009\\
+	UC 2.1.2 & R-1F011\\
+	UC 2.2 & R-1F012\\
+	UC 2.2.1 & R-1F013\\
+	UC 2.2.3 & R-1F014\\
+	UC 2.2.2.1 & R-1F015\\
+	UC 4.1 & R-1F019\\
+	UC 4.2 & R-2F001\\
+	UC 4.2.2 & R-1F025\\
+	UC 4.2.5 & R-2F004\\
+	UC 4.4.1 & R-1F024\\
+	UC 2.1 & R-3F002\\
+	UC 2.1.1 & R-1F010\\
+	UC 2.1.3 & R-3F003\\
+	UC 2.1.4 & R-3F004\\
+	DA FARE & R-3F005\\
+	UC 2.2.4 & R-3F006\\
+	UC 4.2.3 & R-2F003\\
+	UC 4.2.6 & R-1F023\\
+	UC 4.4.2 & R-3F007\\
+	UC 4.4.3 & R-3F008\\
+	DA FARE & R-2F005\\
+	DA FARE & R-2F006\\
+	UC 5.2 & R-2F007\\
+	UC 5.1 & R-2F008\\
+	DA FARE & R-2F009\\
 	
 	\rowcolor{white}
-	\caption{Tabella tracciamento Interno-requisiti} \label{tab:tabellafonterequisiti}
+	\caption{Tabella tracciamento casi d'uso-requisiti} \label{tab:tabellafonterequisiti}
 \end{tabularx}
