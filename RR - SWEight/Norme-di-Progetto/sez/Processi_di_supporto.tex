@@ -20,7 +20,8 @@ I documenti formali che verranno presentati saranno suddivisi in due categorie:
 \end{itemize}
 
 \subsubsection{Template}
-Per semplificare e standardizzare la stesura dei documenti previsti è stato creato un template \LaTeX{} contenente tutte le impostazioni per la struttura grafica e lo stile di formattazione. Ogni membro del team deve obbligatoriamente utilizzare questo template.
+Per semplificare e standardizzare la stesura dei documenti previsti è stato creato un template \LaTeX{} contenente tutte le impostazioni per la struttura grafica e lo stile di formattazione. Ogni membro del team deve obbligatoriamente utilizzare questo template\ped{G}.
+Il template è disponibile all'interno dell'omonima cartella ed è denominato "SWEightStyle.sty", dev'essere importato all'interno del documento \LaTeX{} tramite la direttiva di inclusione di un pacchetto.
 \subsubsection{Versioni}
 Per ogni documento deve essere specificata obbligatoriamente la versione nella seguente forma: 
 \begin{center}
@@ -198,11 +199,11 @@ Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio d
 	 	\item Non accettarlo (In progress).
 	\end{enumerate}
 \item Se non accettato, l’owner deve apportare le modifiche descritte dal verificatore;
-\item Se accettato, sarà compito del responsabile di progetto di effettuare il merge e chiudere la issues (Done).
+\item Se accettato, sarà compito del responsabile di progetto effettuare il merge e chiudere la issues (Done).
 \end{enumerate}
 \begin{figure}[H]
 \centering
-\includegraphics[width=17cm]{img/document_lc.PNG}
+\includegraphics[width=17cm]{img/document_lc.pdf}
 \caption{Ciclo di vita di un documento}
 \label{fig:document_lifecycle}
 \end{figure}
@@ -268,7 +269,7 @@ Strategie di integrazione:
 	\end{list}
 \item[•] \textbf{Top-down}:
 	\begin{list}{$\circ$}{}
-	\item Si sviluppano prima le parti più esterne, quelle poste sulle foglie dell’albero delle dipendenze e poi si scende;
+	\item Si sviluppano prima le parti più esterne, quelle poste sulle foglie dell'albero delle dipendenze e poi si scende;
 	\item Questa strategia comporta l’uso di molti stub ma integra a partire dalle funzionalità di più alto livello.
 	\end{list}
 \item[•] \textbf{Assemblare produttori prima dei consumatori};
@@ -301,5 +302,9 @@ Per essere certi che il documento sia conforme alle norme di progetto e agli alt
 \end{itemize}
 \paragraph{Regole a garanzia dell'assenza di conflitto di interessi}\mbox{}\\
 I redattori dei documenti non possono anche esserne i verificatori. Pertanto è necessario che nessuno dei componenti del gruppo sia messo in condizione di verificare la parte da lui redatta, e quindi affinché ciò non avvenga il gruppo si adopererà attuando una rotazione periodica dei ruoli, o in caso questa non sia possibile, semplicemente assicurarsi che nessun membro verifichi le sezioni dei documenti assegnatoli.
+\subparagraph{Verifica dell'Analisi dei Requisiti}\mbox{}\\
+L'attività di verifica per l'Analisi dei Requisiti sarà realizzata dai redattori della stessa in modo tale che nessuno dei componenti verifichi la parte da lui curata.
+Ad esempio, se un componente ha realizzato la sezione "A" del documento, egli verificherà la sezione "C" stilata da un altro componente, che a sua volta verificherà la sezione di un altro componente. La scelta di questa soluzione è stata protratta poiché i componenti del gruppo, che hanno realizzato il documento, hanno sviluppato una discreta conoscenza nella modellazione UML, e pertanto possono fornire una verifica più accurata. Inoltre è stato tenuto conto delle disponibilità fornite dai singoli componenti. 
+
 \subsubsection{Verifica dei diagrammi}
 I diagrammi devono essere verificati manualmente dal Verificatore che deve controllare che aderiscano correttamente allo standard 2.0 (vedi Riferimenti Normativi). In particolare deve controllare che i diagrammi di flusso siano rappresentati in maniera corretta e che i diagrammi utilizzino correttamente le inclusioni e le estensioni, come ad esempio controllando che queste ultime siano accompagnate dalla condizione.
