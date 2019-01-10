@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.31)  10 JAN 2019 15:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.31)  10 JAN 2019 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2365,48 +2365,43 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [46 <./img/UC55.png>]
-Underfull \hbox (badness 5345) in paragraph at lines 714--714
+Underfull \hbox (badness 5345) in paragraph at lines 698--698
 []|\T1/lmr/m/n/10 Un al-lie-vo può vi-sua-liz-za-re la pro-pria
  []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 714--714
+Underfull \hbox (badness 1688) in paragraph at lines 698--698
 []|\T1/lmr/m/n/10 Un al-lie-vo può vi-sua-liz-za-re le cor-re-zio-ni
  []
 
 
-Underfull \hbox (badness 3482) in paragraph at lines 714--714
+Underfull \hbox (badness 3482) in paragraph at lines 698--698
 []|\T1/lmr/m/n/10 Un in-se-gnan-te può mo-di-fi-ca-re una sua
  []
 
 
-Underfull \hbox (badness 5924) in paragraph at lines 714--714
+Underfull \hbox (badness 5924) in paragraph at lines 698--698
 []|\T1/lmr/m/n/10 Un in-se-gnan-te può eli-mi-na-re una sua
  []
 
 
-Underfull \hbox (badness 5924) in paragraph at lines 714--714
+Underfull \hbox (badness 5924) in paragraph at lines 698--698
 []|\T1/lmr/m/n/10 Un in-se-gnan-te può sce-glie-re la lin-gua
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 714--714
-[]|\T1/lmr/m/n/10 Un in-se-gnan-te può va-lu-ta-re la so-lu-zio-ne
- []
-
-
-Underfull \hbox (badness 1377) in paragraph at lines 714--714
+Underfull \hbox (badness 1377) in paragraph at lines 698--698
 []|\T1/lmr/m/n/10 Uno svi-lup-pa-to-re può vi-sua-liz-za-re i da-ti
  []
 
 
-Underfull \hbox (badness 6380) in paragraph at lines 714--714
+Underfull \hbox (badness 6380) in paragraph at lines 698--698
 []|\T1/lmr/m/n/10 Un am-mi-ni-stra-to-re può ap-pro-va-re una
  []
 
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png used on input line 714
+Package pdftex.def Info: ../template/img/logoSWEight.png used on input line 698
 .
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -2419,7 +2414,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [47]
 File: ../template/img/logoSWEight.png Graphic file (type png)
  <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png used on input line 714
+Package pdftex.def Info: ../template/img/logoSWEight.png used on input line 698
 .
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -2430,18 +2425,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [48]
-Underfull \hbox (badness 1448) in paragraph at lines 800--800
+Underfull \hbox (badness 1448) in paragraph at lines 784--784
 []|\T1/lmr/m/n/10 L'applicazione uti-liz-za una li-bre-ria di post-
  []
 
 
-Underfull \hbox (badness 1616) in paragraph at lines 800--800
+Underfull \hbox (badness 1616) in paragraph at lines 784--784
 []|\T1/lmr/m/n/10 Il fun-zio-na-men-to del pro-dot-to ri-chie-de una
  []
 
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png used on input line 960
+Package pdftex.def Info: ../template/img/logoSWEight.png used on input line 949
 .
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -2454,7 +2449,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [49]
 File: ../template/img/logoSWEight.png Graphic file (type png)
  <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png used on input line 960
+Package pdftex.def Info: ../template/img/logoSWEight.png used on input line 949
 .
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -2468,7 +2463,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: ../template/img/logoSWEight.png Graphic file (type png)
  <use ../template/img/logoSWEight.png>
 Package pdftex.def Info: ../template/img/logoSWEight.png used on input line 100
-9.
+3.
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
 
@@ -2507,7 +2502,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  25017 strings out of 493029
  455523 string characters out of 6136234
- 657953 words of memory out of 5000000
+ 655953 words of memory out of 5000000
  27712 multiletter control sequences out of 15000+600000
  51218 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2520,7 +2515,7 @@ xmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
 7.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/font
 s/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb
 >
-Output written on AnalisiDeiRequisiti.pdf (53 pages, 1721248 bytes).
+Output written on AnalisiDeiRequisiti.pdf (53 pages, 1721552 bytes).
 PDF statistics:
  1132 PDF objects out of 1200 (max. 8388607)
  996 compressed objects within 10 object streams
