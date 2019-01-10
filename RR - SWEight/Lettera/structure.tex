@@ -71,7 +71,6 @@
 	\hspace{\fill} % Move the author details to the far right
 	\parbox[t]{0.48\textwidth}{ % Box holding the author details; width value specifies where it starts and ends, increase to move details left
 		\footnotesize % Use a smaller font size for the details
-		\Who\\ % Author name
 		\textit{\authordetails} % The author details text, all italicised
 	}
 }
@@ -90,8 +89,8 @@
 	~\\[-0.01\textheight] % Reduce the whitespace above the horizontal rule
 	\hspace{0.2\textwidth}\vhrulefill{1pt} \\ % Horizontal rule, adjust hspace if your logo is wide and \vhrulefill for the thickness of the rule
 	\authordetailsblock % Include the letter author's details on the right side of the page under the horizontal rule
-	\hspace{-0.25\textwidth} % Horizontal position of the author details block, increase to move left, decrease to move right
-	\vspace{-0.1\textheight} % Move the date and letter content up for a more compact look
+	\hspace{-0.0\textwidth} % Horizontal position of the author details block, increase to move left, decrease to move right
+	\vspace{-0.08\textheight} % Move the date and letter content up for a more compact look
 }
 
 %----------------------------------------------------------------------------------------
@@ -99,7 +98,7 @@
 %----------------------------------------------------------------------------------------
 
 \renewcommand{\opening}[1]{
-	{\centering\fromaddress\vspace{0.05\textheight} \\ % Print the header and from address here, add whitespace to move date down
+	{\centering\fromaddress\vspace{0.10\textheight} \\ % Print the header and from address here, add whitespace to move date down
 	\hspace*{\longindentation}\today\hspace*{\fill}\par} % Print today's date, remove \today to not display it
 	{\raggedright \toname \\ \toaddress \par} % Print the to name and address
 	\vspace{1cm} % White space after the to address
