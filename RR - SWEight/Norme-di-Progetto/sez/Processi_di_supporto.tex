@@ -67,7 +67,7 @@ Ogni documento deve essere realizzato a partire dal template descritto precedent
 % Andrebbe messo un altro sub 
 % https://tex.stackexchange.com/questions/60209/how-to-add-an-extra-level-of-sections-with-headings-below-subsubsection
 
-\subsubsection{Formattazione delle pagine}
+\paragraph{Formattazione delle pagine}\mbox{}\\
 Ogni pagina, escluso il frontespizio ed indice, devono contenere:
 \begin{itemize}
 	\item[•] \textbf{Intestazione}:
@@ -115,9 +115,11 @@ Ogni pagina, escluso il frontespizio ed indice, devono contenere:
 
 %va messo un altro sub 
 
-\subsubsection{Formati}
+\paragraph{Formati}\mbox{}\\
 Date: ogni data deve seguire lo standard internazionale per date e orari ISO 8601:2004:
-\centerline{AAAA-MM-GG}
+\begin{center}
+AAAA-MM-GG
+\end{center}
 dove: 
 \begin{itemize}
 \item[•] AAAA: rappresenta il formato dell’anno scritto con quattro cifre;
@@ -125,22 +127,38 @@ dove:
 \item[•] GG: rappresenta il formato del giorno scritto con due cifre.
 \end{itemize}
 
+\subsubsection{Componenti grafiche}
 %va messo un altro sub 
 
-\subsubsection{Tabelle}
+\paragraph{Tabelle}\mbox{}\\
 Tutte le tabelle devono avere un indice univoco che la identifichi all’interno del documento ed una breve descrizione posizionata sotto di essa. Le intestazioni delle tabelle devono essere in grassetto.
 
 %va messo un altro sub 
-\subsubsection{Immagini}
+\paragraph{Immagini}\mbox{}\\
 Tutte le immagini inserite nei vari documenti devono avere un eguale e sufficiente margine orizzontale e verticale in modo da non ridurre la leggibilità del testo. Ogni immagine deve anch’essa avere un indice univoco che la contraddistingua nell’intero documento.
 
 %va messo un altro sub 
-\subsubsection{Diagrammi UML}
+\paragraph{Diagrammi UML}\mbox{}\\
 Il software che deve essere utilizzato per la creazione dei diagrammi UML è Astah versione 8.0.0, gli analisti devono utilizzare la documentazione del software per il suo studio e utilizzo.
 Ogni diagramma di caso d’uso è identificato in alto a sinistra dal suo codice identificativo e dal nome.
 
+\subparagraph{Esportare immagini in Astah}
+I diagrammi dovranno essere esportati come immagini secondo le specifiche sotto riportate. Per esportare i diagrammi in Astah, dopo aver completato il diagramma, selezionare: $Tools \rightarrow Export\ image \rightarrow Current\ Diagram \rightarrow PNG$.
+L'immagine rappresentante l'UML deve avere le seguenti caratteristiche:
+\begin{itemize}
+\item Nome file: UC\texttt{Codice Identificativo}, privo di "."\\
+Ad esempio: UC4.2.png $\rightarrow$ UC42.png;
+\item Formato file immagine \texttt{.png};
+\item Massima larghezza 17cm;
+\item Didascalia figura con codice caso d'uso;
+\item Il file deve essere salvato all'interno del folder img, destinato alle immagini.
+\end{itemize}
+Inoltre, anche il file con estensione asta deve essere salvato nella cartella predisposta al fine di permetterne modifiche successivamente. 
+Per la realizzazione dell'analisi dei requisiti la cartella destinata al salvataggio dei digrammi modificabili è: "Casi d'uso", reperibile all'interno del {branch}\ped{G} Analisi dei Requisiti. Il nome del diagramma deve essere il medesimo dell'immagine esportata.
+
+\subsubsection{Strumenti di supporto}
 %va messo un altro sub 
-\subsubsection{Stesura dei documenti}
+\paragraph{Stesura dei documenti}\mbox{}\\
 L'intera documentazione deve essere prodotta utilizzando il {linguaggio di markup}\ped{G} \LaTeX{}, scelto dal team per i seguenti motivi:
 \begin{itemize}
 \item[•] Gestisce elegantemente e con facilità gli indici, i pedici, i riferimenti ed il glossario;
@@ -158,19 +176,19 @@ Il software è reperibile all'indirizzo \url{http://www.xm1math.net/texmaker/}, 
 
 
 %va messo un altro sub 
-\subsubsection{Controllo ortografico}
+\paragraph{Controllo ortografico}\mbox{}\\
 Al termine della stesura dei documenti, prima di alla fase di verifica del documento, l’owner deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice Gulpeas.
 
 \subsubsection{Ciclo di vita}
 Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di issues offerto da GitHub.
 \begin{enumerate}
-\item Per iniziare la stesura di un documento l’owner deve assegnarsi una issues (To do);
+\item Per iniziare la stesura di un documento l'owner deve assegnarsi una issues (To do);
 \item Quando inizia la stesura del documento (In progress):
 	\begin{enumerate}
 		\item Sposta la issue nella sezione “in progress”;
 		\item Crea un branch per lavorare sulla issue.
 	\end{enumerate}
-\item Finita l’attività di scrittura crea un pull request con (Needs review):
+\item Finita l'attività di scrittura crea un pull request con (Needs review):
 	\begin{enumerate}
 		\item Sé stesso come assigneer;
 		\item I verificatori come reviewers;
@@ -184,23 +202,18 @@ Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio d
 \item Se non accettato, l’owner deve apportare le modifiche descritte dal verificatore;
 \item Se accettato, sarà compito del responsabile di progetto di effettuare il merge e chiudere la issues (Done).
 \end{enumerate}
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm]{img/document_lc.PNG}
+\caption{Ciclo di vita di un documento}
+\label{fig:document_lifecycle}
+\end{figure}
 
+\subsection{Verifica}
 
+\subsubsection{Scopo}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%% Aggiungere le due immagini %%%%
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Verifica}
-
-\subsection{Scopo}
-
-La verifica dei processi, documenti e prodotti è un’attività da eseguire continuamente durante lo sviluppo del progetto. Di conseguenza, servono modalità operative chiare e dettagliate per i Verificatori, in modo da uniformare le attività di verifica svolte ed ottenere il miglior risultato possibile. 
+La verifica dei processi, documenti e prodotti è un'attività da eseguire continuamente durante lo sviluppo del progetto. Di conseguenza, servono modalità operative chiare e dettagliate per i Verificatori, in modo da uniformare le attività di verifica svolte ed ottenere il miglior risultato possibile. 
 
 La corretta implementazione del processo deve:
 \begin{itemize}
@@ -209,17 +222,17 @@ La corretta implementazione del processo deve:
 \item[•] Individuare eventuali difetti perché possano essere corretti.
 \end{itemize}
 
-\subsection{Analisi}
+\subsubsection{Analisi}
 
 %va aggiunto un sub 
-\subsubsection{Analisi statica}
+\paragraph{Analisi statica}\mbox{}\\
 \begin{itemize}
 \item[•] \textbf{Walkthrough}: lettura completa del codice sorgente da analizzare. Va utilizzata unicamente durante le prime fasi del progetto in quanto risulta onerosa e non efficiente, questa tecnica di analisi prevede una lettura critica del codice o del documento prodotto. Gli Analisti che la utilizzano devono stilare una lista di controllo con gli errori rilevati più frequentemente;
 \item[•] \textbf{Inspection}: lettura mirata del codice sorgente da analizzare. Questa tecnica di analisi presuppone l’esperienza da parte del verificatore nell’individuare gli errori e le anomalie più frequenti in modo tale da creare una lista di controllo per poter localizzare eventuali punti critici in cui cercare errori. Dopo ogni analisi la lista di controllo deve essere incrementata con eventuali nuovi errori rilevati.
 \end{itemize}
 
 %va aggiunto un sub 
-\subsubsection{Analisi dinamica}
+\paragraph{Analisi dinamica}\mbox{}\\
 Si applica solo alle componenti software e consiste nella verifica e validazione attraverso i test. Per garantire la correttezza è necessario che i test siano ripetibili, dato lo stesso input il test deve produrre sempre lo stesso output.  
 
 Solo i test con queste caratteristiche riescono a verificare la correttezza del prodotto 
@@ -235,7 +248,7 @@ Per ogni test deve quindi essere definito:
 \subsubsection{Test}
 
 %va aggiunto un sub 
-\subsubsection{Test di unità}
+\paragraph{Test di unità}\mbox{}\\
 Il test di unità verifica che ogni singola unità funzioni correttamente, le unità sono specificate nella progettazione di dettaglio.  
 
 In particolare, si verifica che i requisiti per quella determinata unità siano soddisfatti.
@@ -245,7 +258,7 @@ In particolare, si verifica che i requisiti per quella determinata unità siano 
 \end{itemize}
 
 %va aggiunto un sub 
-\subsubsection{Test di Integrazione}
+\paragraph{Test di Integrazione}\mbox{}\\
 Si applica alle componenti specificate nella progettazione architetturale, rappresenta l’estensione logica del test di unità. Consiste nella combinazione di due unità già sottoposte a test in un solo componente e nel test dell’interfaccia presente tra le due. Il test di integrazione consente di individuare i problemi che si verificano quando due unità si combinano. Per effettuare tali test si farà uso di classi appositamente create per simulare e verificare l’interazione.
 Strategie di integrazione:
 \begin{itemize}
@@ -265,18 +278,18 @@ Strategie di integrazione:
 \end{itemize}
 
 %va aggiunto un sub 
-\subsubsection{Test di sistema}
+\paragraph{Test di sistema}\mbox{}\\
 Il test di sistema consiste nella validazione del sistema ed è un test di tipo funzionale. Viene eseguito quando si ritiene che il prodotto sia giunto ad una versione definitiva, verificando la completa copertura dei requisiti software. 
 
 %va aggiunto un sub 
-\subsubsection{Test di regressione}
-Il test di regressione va eseguito ogni volta che viene modificata un’implementazione in un programma. È possibile eseguire nuovamente i test esistenti sul codice modificato, integrando solo le parti che abbiano precedentemente superato il test di unità, per stabilire se le modifiche apportate hanno alterato elementi precedentemente funzionanti. Se necessario è anche possibile scrivere nuovi test. 
+\paragraph{Test di regressione}\mbox{}\\
+Il test di regressione va eseguito ogni volta che viene modificata un'implementazione in un programma. È possibile eseguire nuovamente i test esistenti sul codice modificato, integrando solo le parti che abbiano precedentemente superato il test di unità, per stabilire se le modifiche apportate hanno alterato elementi precedentemente funzionanti. Se necessario è anche possibile scrivere nuovi test. 
 \newline
 I contenuti del test di regressione vanno decisi nel momento in cui si approvano modifiche al SW
 
 %va aggiunto un sub 
-\subsubsection{Test di accettazione(collaudo)}
-Il test di accettazione consiste nel collaudo del sistema eseguito dal committente. Se l’esito è positivo si può procedere al rilascio ufficiale del prodotto.
+\paragraph{Test di accettazione (collaudo)}\mbox{}\\
+Il test di accettazione consiste nel collaudo del sistema eseguito dal committente. Se l'esito è positivo si può procedere al rilascio ufficiale del prodotto.
 
 \subsubsection{Verifica dei documenti}
 Ogni volte che un documento viene modificato, per essere approvato dal Responsabile di progetto, deve essere verificato da un Verificatore. 
@@ -288,7 +301,8 @@ Per essere certi che il documento sia conforme alle norme di progetto e agli alt
 \item[•] Verifica tipografica: controllare con il controllo ortografico dell’editor utilizzato eventuali errori e correggerli;
 \item[•] Segnalare gli errori: una volta completata la verifica, deve segnalare tutti gli errori trovati e comunicarli al redattore.
 \end{itemize}
-\paragraph{Regole a garanzia dell'assenza di conflitto di interessi} I redattori dei documenti non possono anche esserne i verificatori. Pertanto è necessario che nessuno dei componenti del gruppo sia messo in condizione di verificare la parte da lui redatta, e quindi affinché ciò non avvenga il gruppo si adopererà attuando una rotazione periodica dei ruoli, o in caso questa non sia possibile, semplicemente assicurarsi che nessun membro verifichi le sezioni dei documenti assegnatoli.
+\paragraph{Regole a garanzia dell'assenza di conflitto di interessi}\mbox{}\\
+I redattori dei documenti non possono anche esserne i verificatori. Pertanto è necessario che nessuno dei componenti del gruppo sia messo in condizione di verificare la parte da lui redatta, e quindi affinché ciò non avvenga il gruppo si adopererà attuando una rotazione periodica dei ruoli, o in caso questa non sia possibile, semplicemente assicurarsi che nessun membro verifichi le sezioni dei documenti assegnatoli.
 \subsubsection{Verifica dei diagrammi}
 I diagrammi devono essere verificati manualmente dal Verificatore che deve controllare che aderiscano correttamente allo standard 2.0. In particolare deve controllare che i diagrammi di flusso siano rappresentati in maniera corretta e che i diagrammi utilizzino correttamente le inclusioni e le estensioni.
 
@@ -304,11 +318,11 @@ Gli obiettivi del processo di gestione sono:
 \subsubsection{Incontri}
 
 %va aggiunto un sub 
-\subsubsection{Interni}
+\paragraph{Interni}\mbox{}\\
 Una riunione dell'intero team è richiesta in caso di necessità del Responsabile di progetto. Nel momento in cui un membro del gruppo abbia la necessità di incontrarsi con il team, deve inviare una richiesta al Responsabile di progetto che la valuta e organizza un eventuale incontro. Questi sono fissati solo per discutere di argomenti attinenti al progetto.
 
 %va aggiunto un sub 
-\subsubsection{Esterni}
+\paragraph{Esterni}\mbox{}\\
 Il Responsabile di progetto è l'unico a poter fissare gli incontri con il proponente o i committenti e successivamente informare i componenti del team. Non è necessaria la presenza dell’intero gruppo di lavoro durante gli incontri con gli esterni. Il numero di partecipanti sarà quindi limitato a 2 rappresentanti del team di sviluppo.  
 \newline
 Il Responsabile di progetto deve essere sempre presente agli incontri con gli esterni mentre il secondo partecipante del team è scelto in base all’ordine del giorno. 
@@ -326,7 +340,7 @@ Ogni riunione comprende la stesura di un verbale ufficiale contenente le seguent
 \subsubsection{Comunicazione}
 
 %va aggiunto un sub 
-\subsubsection{Interna}
+\paragraph{Interna}\mbox{}\\
 
 Per le comunicazioni interne al gruppo è stato adottato {Slack}\ped{G}, un'applicazione di messaggistica multipiattaforma con funzionalità specifiche per gruppi di lavoro.  
 \newline
@@ -343,7 +357,7 @@ In Slack, sono stati creati dei canali per dividere le comunicazioni con temi co
 \end{itemize}
 
 %va aggiunto un sub 
-\subsubsection{Esterna}
+\paragraph{Esterna}\mbox{}\\
 Per le comunicazioni esterne è stata creata una casella di posta elettronica \href{SWEight@gmail.com}.
 \newline 
 Tale indirizzo deve essere l'unico canale di comunicazione esistente tra il gruppo di lavoro e l'esterno. 
@@ -466,7 +480,7 @@ Inizializzare, implementare e gestire processi software, richiede l’istanziazi
 \subsubsection{Versionamento}
 
 %va messo un altro sub 
-\paragraph{Introduzione}
+\paragraph{Introduzione}\mbox{}\\
 Git, il più usato e conosciuto {software di controllo di versione}\ped{G} {open source}\ped{G}, è stato scelto per il controllo di versione, GitHub invece è la piattaforma di web hosting. 
 \newline
 Il repository dedicato ai documenti è formata dalle seguenti subdirectory:
@@ -477,9 +491,9 @@ Il repository dedicato ai documenti è formata dalle seguenti subdirectory:
 \item[•] \textbf{RA} contiene tutti i documenti da consegnare per la Revisione di Accettazione.
 \end{itemize}
 
-\paragraph{Github Desktop}
+\paragraph{Github Desktop}\mbox{}\\
 Il {client}\ped{G} che viene utilizzato per il controllo di versione è Github Desktop, esso permette di gestire attraverso un'interfaccia grafica la {repository}\ped{G} al fine di consentire anche a coloro che non hanno familiarità con tale tool di apprenderlo con una {learning curve}\ped{G} meno ripida. Per utilizzare il programma è necessario recarsi al sito: \url{https://desktop.github.com/} disponibile sia per {Microsoft Windows}\ped{G} e {Apple MacOS}\ped{G}. Per quanto riguarda le varie {distribuzioni Linux}\ped{G} non è disponibile un client ufficiale pertanto è disponibile un {porting}\ped{G} non ufficiale all'indirizzo: \url{https://github.com/shiftkey/desktop}
-\paragraph{Messaggi di commit}
+\paragraph{Messaggi di commit}\mbox{}\\
 Ogni volta che si effettuano modifiche sui file del {repository}\ped{G} locale per poi esser caricate in
 quello remoto, bisogna specificarne le motivazioni. \uppercase{è} importante che i messaggi siano esplicativi e che non creino ambiguità, pertanto si scrivano le varie modifiche facendo uso di un elenco puntato.
 Per la chiusura delle {issues} si può utilizzare la sintassi con le {keyword}\ped{G} direttamente all'interno dei {commit}\ped{G}, per fare ciò le keyword devono essere collocate alla fine del messaggio di commit. Per il loro utilizzo si rimanda alla documentazione di {git}\ped{G}: \url{https://help.github.com/articles/closing-issues-using-keywords/}. 
@@ -494,7 +508,8 @@ Il responsabile di progetto organizzerà un incontro con tutti i membri di SWEig
 \newline
 La decisione finale spetta comunque al responsabile, che dopo aver valutato l'impatto di qualsiasi modifica al piano ed aver controllato che ciò non comporti l'impossibilità nel raggiungere gli obiettivi prefissati nei tempi stabiliti, potrà decidere di attuarla.
 
-\subsection{Training process}È il processo che fornisce e mantiene la formazione del personale. Acquisizione, supporto, sviluppo esecuzione, mantenimento del prodotto software sono largamente dipendenti dalle conoscenze e dalle capacità dei membri del gruppo. 
+\subsection{Training process}
+È il processo che fornisce e mantiene la formazione del personale. Acquisizione, supporto, sviluppo esecuzione, mantenimento del prodotto software sono largamente dipendenti dalle conoscenze e dalle capacità dei membri del gruppo. 
 \newline
 Per questo ognuno deve procedere in modo autonomo con lo studio individuale delle tecnologie che verranno utilizzate nel corso del progetto, prendendo come riferimento, oltre al materiale indicato nella sottosezione Riferimenti normativi, anche la seguente documentazione:
 \begin{itemize}
