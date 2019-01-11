@@ -18,7 +18,9 @@ I documenti formali che verranno presentati saranno suddivisi in due categorie:
 		\item \textbf{Analisi dei requisiti}: documento che contiene l’analisi dei casi d’uso del prodotto e i diagrammi di interazioni previste con l’utente.
 	\end{list}
 \end{itemize}
-
+\subsubsection{Classificazione dei documenti}
+\begin{Huge} Francesco Corti @ 3.1.6
+\end{Huge}
 \subsubsection{Template}
 Per semplificare e standardizzare la stesura dei documenti previsti è stato creato un template \LaTeX{} contenente tutte le impostazioni per la struttura grafica e lo stile di formattazione. Ogni membro del team deve obbligatoriamente utilizzare questo template\ped{G}.
 Il template è disponibile all'interno dell'omonima cartella ed è denominato "SWEightStyle.sty", dev'essere importato all'interno del documento \LaTeX{} tramite la direttiva di inclusione di un pacchetto.
@@ -196,31 +198,32 @@ Il software è reperibile all'indirizzo \url{http://www.xm1math.net/texmaker/}, 
 \paragraph{Controllo ortografico}\mbox{}\\
 Al termine della stesura dei documenti, prima di alla fase di verifica del documento, l’owner deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice Gulpeas.
 
-\subsubsection{Ciclo di vita}
+\subsubsection{Ciclo di vita dei documenti}
 Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di issues offerto da GitHub.
 \begin{enumerate}
-\item Per iniziare la stesura di un documento l'owner deve assegnarsi una issues (To do);
-\item Quando inizia la stesura del documento (In progress):
+\item Il responsabile del progetto crea e assegna la issue all'owner del documento (To do).;
+\item L'owner del documento aggiunge i vari redattori del documento;
+\item Quando inizia la stesura del documento (In progress), l'owner:
 	\begin{enumerate}
-		\item[2.1] Sposta la issue nella sezione “in progress”;
+		\item[2.1] Sposta la issue nella sezione “In progress”;
 		\item[2.2] Crea un branch per lavorare sulla issue.
 	\end{enumerate}
-\item Finita l'attività di scrittura crea un pull request con (Needs review):
+\item Finita l'attività di scrittura l'owner crea un {pull request}\ped{G} con (Needs review):
 	\begin{enumerate}
-		\item[3.1] Sé stesso come assigneer;
-		\item[3.2] I verificatori come reviewers;
-		\item[3.3] I campi project e milestone vuoti.
+		\item Sé stesso come assigneer;
+		\item I verificatori come reviewers;
+		\item I campi project e milestone vuoti.
 	\end{enumerate} 
 \item I verificatori controllano il documento e possono:
 	\begin{enumerate}
-	 	\item[4.1] Accettarlo (Reviewer approved);
-	 	\item[4.2] Non accettarlo (In progress).
+	 	\item Accettarlo (Reviewer approved);
+	 	\item Non accettarlo (In progress).
 	\end{enumerate}
-\item Se non accettato, l’owner deve apportare le modifiche descritte dal verificatore;
+\item Se non accettato, i redattori devono apportare le modifiche descritte dal verificatore;
 \item Se accettato, il documento giunge al responsabile di progetto che può:
 \begin{enumerate}
-	\item[6.1] Approvarlo, rendendo il documento formale e chiudendo la issue. (Done)
-	\item[6.2] Non approvarlo, fornendo le opportune motivazioni (In progress);
+	\item Approvarlo, rendendo il documento formale e chiudendo la issue. (Done)
+	\item Non approvarlo, fornendo le opportune motivazioni (In progress);
 \end{enumerate}
 \item Se approvato, sarà compito dell'amministratore effettuare il merge.
 \end{enumerate}
@@ -257,7 +260,7 @@ La corretta implementazione del processo deve:
 \paragraph{Analisi dinamica}\mbox{}\\
 Si applica solo alle componenti software e consiste nella verifica e validazione attraverso i test. Per garantire la correttezza è necessario che i test siano ripetibili, dato lo stesso input il test deve produrre sempre lo stesso output.  
 
-Solo i test con queste caratteristiche riescono a verificare la correttezza del prodotto 
+Solo i test con queste caratteristiche riescono a verificare la correttezza del prodotto.
 
 Per ogni test deve quindi essere definito: 
 \begin{itemize}
@@ -276,7 +279,7 @@ Il test di unità verifica che ogni singola unità funzioni correttamente, le un
 In particolare, si verifica che i requisiti per quella determinata unità siano soddisfatti.
 \begin{itemize}
 \item[•] \textbf{Test strutturale (white-box)}: verifica la logica interna del codice dell’unità cercando la massima copertura. Ogni singola prova deve attivare un singolo cammino di esecuzione all’interno dell’unità. L’insieme di dati di ingresso che ottiene quell’effetto costituisce un caso di prova;
-\item[•] \textbf{•} fa riferimento alla specifica dell’unità utilizza dati di ingresso capaci di provocare l’esito atteso. Ciascun insieme di dati di ingresso che produca un dato comportamento funzionale costituisce un singolo caso di prova.
+\item[•] \textbf{Test funzionale (black-box)}: fa riferimento alla specifica dell'unità utilizza dati di ingresso capaci di provocare l'esito atteso. Ciascun insieme di dati di ingresso che produca un dato comportamento funzionale costituisce un singolo caso di prova.
 \end{itemize}
 
 %va aggiunto un sub 
