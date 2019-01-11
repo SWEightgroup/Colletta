@@ -199,9 +199,9 @@ Il software è reperibile all'indirizzo \url{http://www.xm1math.net/texmaker/}, 
 Al termine della stesura dei documenti, prima di alla fase di verifica del documento, l’owner deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice Gulpeas.
 
 \subsubsection{Ciclo di vita dei documenti}
-Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di issues offerto da GitHub.
+Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di issues offerto da GitHub e come descritto in \hyperref[sec:projectboard]{§5.5.2.3}.
 \begin{enumerate}
-\item Il responsabile del progetto crea e assegna la issue all'owner del documento (To do).;
+\item Il responsabile del progetto crea e assegna la issue all'owner del documento (To do);
 \item L'owner del documento aggiunge i vari redattori del documento;
 \item Quando inizia la stesura del documento (In progress), l'owner:
 	\begin{enumerate}
@@ -229,7 +229,7 @@ Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio d
 \end{enumerate}
 \begin{figure}[H]
 \centering
-\includegraphics[width=17cm]{img/document_lc.pdf}
+\includegraphics[width=17cm,trim=2 2 2 2, clip]{img/cicloVitaDocumento.pdf}
 \caption{Ciclo di vita di un documento}
 \label{fig:document_lifecycle}
 \end{figure}
@@ -264,10 +264,10 @@ Solo i test con queste caratteristiche riescono a verificare la correttezza del 
 
 Per ogni test deve quindi essere definito: 
 \begin{itemize}
-\item[•] Ambiente: sistema hardware e software in cui viene eseguito il test; 
-\item[•]Stato iniziale: stato iniziale da cui si parte ad eseguire il test; 
-\item[•] Input: input inserito;
-\item[•] Input: input inserito.
+\item[•] \textbf{Ambiente}: sistema hardware e software in cui viene eseguito il test; 
+\item[•]\textbf{Stato iniziale}: stato iniziale da cui si parte ad eseguire il test; 
+\item[•] \textbf{Input}: input inserito;
+\item[•] \textbf{Output}: output atteso.
 \end{itemize}
 
 \subsubsection{Test}

@@ -9,6 +9,7 @@ Gli obiettivi del processo di gestione sono:
 
 %va aggiunto un sub 
 \paragraph{Interni}\mbox{}\\
+\label{sec:interni}
 Una riunione dell'intero team è richiesta in caso di necessità del Responsabile di progetto. Nel momento in cui un membro del gruppo abbia la necessità di incontrarsi con il team, deve inviare una richiesta al Responsabile di progetto che la valuta e organizza un eventuale incontro. Questi sono fissati solo per discutere di argomenti attinenti al progetto.
 Le riunioni possono essere realizzate anche in forma {telematica}\ped{G}, adottando le stesse procedure e regole utilizzate per le riunioni fisiche.
 %Francesco Corti, scrivere che anche qui va fatto un verbale e aggiungere hyperreff a sezione verbale 
@@ -48,7 +49,7 @@ In Slack, sono stati creati dei canali per dividere le comunicazioni con temi co
 \item[•] \textbf{Verifica}: per le comunicazioni relative alle attività di verifica;
 \item[•] \textbf{Link}: contenente tutti i link utili.
 \end{itemize}
-Un altro strumento utilizzato per la comunicazione interna è Hangouts, il quale permette di realizzare videochiamate di gruppo utilizzando il browser web. Pertanto, come detto in §5.1.1.1, Hangouts è lo strumento per la realizzazione di incontri interni anche in remoto. \uppercase{è} delegato al capo progetto il compito di creare la chiamata di gruppo e aggiungere i vari componenti.
+Un altro strumento utilizzato per la comunicazione interna è Hangouts, il quale permette di realizzare videochiamate di gruppo utilizzando il browser web. Pertanto, come detto in \hyperref[sec:interni]{§5.1.1.1}, Hangouts è lo strumento per la realizzazione di incontri interni anche in remoto. \uppercase{è} delegato al capo progetto il compito di creare la chiamata di gruppo e aggiungere i vari componenti.
 %va aggiunto un sub 
 \paragraph{Esterna}\mbox{}\\
 Per le comunicazioni esterne è stata creata una casella di posta elettronica \href{SWEight@gmail.com}.
@@ -60,7 +61,7 @@ Come descritto nel capitolato d'appalto:
 \item[•] La proponente può essere contattata in qualsiasi momento, solo dal responsabile di progetto, attraverso l'indirizzo e-mail \href{tech@mivoq.it} , al quale risponde il reparto tecnologico dell'azienda;
 \item[•] Le e-mail devono contenere in oggetto la sigla “UNIPD-SWE" e dovranno essere indirizzate all'attenzione di Giulio Paci, che sarà il referente principale;
 \item[•] Ogni e-mail ricevuta su questo indirizzo viene inoltrata automaticamente alla casella personale di ciascun membro, tramite l'utilizzo di filtri di Gmail;
-\item[•] In alternativa per una comunicazione ritenute indifferibili è possibile telefonare al numero 0490998335.
+\item[•] In alternativa, per una comunicazione ritenute indifferibili è possibile telefonare al numero 0490998335.
 \end{itemize}
 
 \subsection{Gestione delle responsabilità e ruoli}
@@ -68,7 +69,7 @@ Come descritto nel capitolato d'appalto:
 \subsubsection{Introduzione}
 I ruoli di progetto rappresentano le figure professionali che lavorano al progetto. Ogni membro del gruppo, in un dato momento, dovrà ricoprire un determinato ruolo.  
 \newline
-La rotazione è opzionale e si terrà conto delle preferenze personali di ognuno. Ogni membro deve rispettare il proprio ruolo e svolgere le attività assegnategli, secondo quanto stabilito nel Piano di Progetto v 1.0.0. Si avrà l'accortezza di evitare situazioni di conflitto di interesse come, ad esempio, essere verificatori di documenti prodotti da sè stessi, compromettendone cosi la qualità.
+La rotazione è obbligatoria e si terrà conto delle preferenze personali di ognuno. Ogni membro deve rispettare il proprio ruolo e svolgere le attività assegnategli, secondo quanto stabilito nel Piano di Progetto v 1.0.0. Si avrà l'accortezza di evitare situazioni di conflitto di interesse come, ad esempio, essere verificatori di documenti prodotti da sè stessi, compromettendone cosi la qualità.
 
 \subsubsection{Responsabile di progetto}
 Il Responsabile di Progetto, o Project Manager, è una figura necessaria alla gestione dell’intero progetto. Egli raccoglie su di sé le responsabilità decisionali di scelta e approvazione e costituisce il centro di coordinamento per l'intero progetto; in particolare, rappresenta il gruppo di lavoro nei confronti dei Committenti e della Proponente. 
@@ -184,16 +185,24 @@ Il repository dedicato ai documenti è formata dalle seguenti subdirectory:
 \item[•] \textbf{RA} contiene tutti i documenti da consegnare per la Revisione di Accettazione.
 \end{itemize}
 
-\paragraph{Project Board}\mbox{}\\
-\begin{Huge}
-DA FARE
-\end{Huge}
 \paragraph{Github Desktop}\mbox{}\\
 Il {client}\ped{G} che viene utilizzato per il controllo di versione è Github Desktop, esso permette di gestire attraverso un'interfaccia grafica la {repository}\ped{G} al fine di consentire anche a coloro che non hanno familiarità con tale tool di apprenderlo con una {learning curve}\ped{G} meno ripida. Per utilizzare il programma è necessario recarsi al sito: \url{https://desktop.github.com/} disponibile sia per {Microsoft Windows}\ped{G} e {Apple MacOS}\ped{G}. Per quanto riguarda le varie {distribuzioni Linux}\ped{G} non è disponibile un client ufficiale pertanto è disponibile un {porting}\ped{G} non ufficiale all'indirizzo: \url{https://github.com/shiftkey/desktop}
+
+\paragraph{Project Board}\mbox{}\\
+\label{sec:projectboard}
+Per la gestione delle {issue}\ped{G} si fa utilizzo di {project board}\ped{G} che permettono una gestione semplice del ciclo di vita dei documenti. 
+In particolare, semplicemente trascinando la {card}\ped{G} da una colonna ad un'altra si andrà ad indicare in che stato si trova quella determinata issue.
+Le colonne, indicanti lo stato in cui si trova la issue, utilizzate all'interno del ciclo di vita dei documenti sono le seguenti:
+\begin{itemize}
+\item[•] \textbf{To do}: indica che l'attività deve essere ancora svolta;
+\item[•] \textbf{In progress}: indica che l'attività è in svolgimento;
+\item[•] \textbf{Needs review}: indica che l'attività necessita di verifica;
+\item[•] \textbf{Done}: indica che l'attività è conclusa;
+\end{itemize}
 \paragraph{Messaggi di commit}\mbox{}\\
 Ogni volta che si effettuano modifiche sui file del {repository}\ped{G} locale per poi esser caricate in
 quello remoto, bisogna specificarne le motivazioni. \uppercase{è} importante che i messaggi siano esplicativi e che non creino ambiguità, pertanto si scrivano le varie modifiche facendo uso di un elenco puntato.
-Per la chiusura delle issues si può utilizzare la sintassi con le {keyword}\ped{G} direttamente all'interno dei {commit}\ped{G}, per fare ciò le keyword devono essere collocate alla fine del messaggio di commit. Per il loro utilizzo si rimanda alla documentazione di {git}\ped{G}: \url{https://help.github.com/articles/closing-issues-using-keywords/}. 
+Per la chiusura delle issue si può utilizzare la sintassi con le {keyword}\ped{G} direttamente all'interno dei {commit}\ped{G}, per fare ciò le keyword devono essere collocate alla fine del messaggio di commit. Per il loro utilizzo si rimanda alla documentazione di {git}\ped{G}: \url{https://help.github.com/articles/closing-issues-using-keywords/}. 
 
 \paragraph{Merge}\mbox{}\\
 Nel caso in cui, nel tentativo di effettuare l'upload nella repository remota, si verifichi un {conflitto}\ped{G} è compito del componente del gruppo informare l'amministratore. Nel caso in cui non si fosse in grado di effettuare il {merge}\ped{G} sfruttando il tool automatico messo a disposizione da client di versionamento, chiedere all'amministratore di risolvere manualmente la cosa il prima possibile.
