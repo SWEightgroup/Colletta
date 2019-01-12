@@ -41,3 +41,10 @@ RR - SWEight/Norme-di-Progetto/sez/Processi_di_supporto.log
 *.out
 *.gz
 *.toc
+*.log
+*.log
+RR - SWEight/Norme-di-Progetto/norme-di-progetto.log
+*.out
+*.gz
+*.log
+*.toc
