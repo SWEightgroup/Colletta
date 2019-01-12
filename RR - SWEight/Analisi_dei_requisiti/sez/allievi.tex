@@ -11,7 +11,7 @@
 \subsubsection{UC 3.1 - Visualizzazione della dashboard}
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo;
-\item[•]\textbf{Descrizione}: L'allievo apre la propria dashboard;
+\item[•]\textbf{Descrizione}: L'allievo visualizza la propria dashboard;
 \item[•]\textbf{Precondizione}: L'allievo si è autenticato;
 \item[•]\textbf{Postcondizione}: L'allievo visualizza la dashboard.
 \end{itemize}
@@ -75,17 +75,39 @@
 \subsubsection{UC 3.9 - Visualizzazione elenco esercizi}
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo;
-\item[•]\textbf{Descrizione}: L'allievo visualizza un elenco di frasi consigliate dal sistema come esercizi;
+\item[•]\textbf{Descrizione}: L'allievo visualizza un elenco di frasi consigliate dal sistema come esercizi, oppure ricerca una frase in particolare;
 \item[•]\textbf{Precondizione}: L'allievo si è autenticato;
 \item[•]\textbf{Postcondizione}: L'allievo visualizza un elenco di esercizi.
 \end{itemize}
 
-\subsubsection{UC 3.10 - Selezione esercizio}
+\subsubsection{UC 3.10 - Esercitazione libera}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=17cm]{img/UC310.png} 
+	\caption{Caso d'uso 3.10}\label{fig:310}
+\end{figure}
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo;
-\item[•]\textbf{Descrizione}: L'allievo seleziona un esercizio dall'elenco di frasi consigliate;
-\item[•]\textbf{Precondizione}: L'allievo visualizza una lista di esercizi;
-\item[•]\textbf{Postcondizione}: L'allievo ha selezionato un esercizio.
+\item[•]\textbf{Descrizione}: L'allievo inserisce liberamente una frase in modo da riceverne l'analisi grammaticale;
+\item[•]\textbf{Precondizione}: L'allievo si è autenticato;
+\item[•]\textbf{Postcondizione}: L'allievo ha visualizzato la soluzione della frase inserita.
+\item[•]\textbf{Flusso degli eventi}:
+\begin{enumerate}
+	\item UC 3.10.1 - Inserimento frase libera;
+	\item UC 3.12 - Visualizzazione soluzione.
+\end{enumerate}
+\end{itemize}
+
+\subsubsection{UC 3.10.1 - Inserimento frase libera}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Allievo;
+	\item[•]\textbf{Descrizione}: L'allievo inserisce una frase;
+	\item[•]\textbf{Precondizione}: L'allievo si è autenticato;
+	\item[•]\textbf{Postcondizione}: L'allievo ha inserito una frase;
+	\item[•]\textbf{Estensioni}:
+	\begin{enumerate}
+		\item UC 2.2.6.1 - Visualizzazione errori testo inserito.
+	\end{enumerate}
 \end{itemize}
 
 \subsubsection{UC 3.11 - Svolgimento esercizio}
@@ -101,9 +123,10 @@
 	\item[•]\textbf{Postcondizione}: L'allievo ha svolto un esercizio;
 	\item[•]\textbf{Flusso degli eventi}:
 	\begin{enumerate}
+		\item Selezione esercizio;
 		\item UC 3.11.2 - Selezione insegnante;
 		\item UC 3.11.3 - Classificazione parola;
-		\item UC 3.13 - Visualizzazione soluzione.
+		\item UC 3.12 - Visualizzazione soluzione.
 	\end{enumerate}
 	\item[•]\textbf{Estensioni}:
 	\begin{enumerate}
@@ -131,48 +154,26 @@
 \begin{itemize}
 	\item[•]\textbf{Attori}: Allievo;
 	\item[•]\textbf{Descrizione}: L'allievo seleziona la classe grammaticale di una parola da una lista predefinita;
-	\item[•]\textbf{Precondizione}: L'allievo inizia a svolgere un esercizio;
+	\item[•]\textbf{Precondizione}: L'allievo sta svolgendo un esercizio;
 	\item[•]\textbf{Postcondizione}: L'allievo seleziona la classe grammaticale di una parola.
 \end{itemize}
 
 
+%
+%\subsubsection{UC 3.12.1 - Visualizzazione errore inserimento frase}
+%\begin{itemize}
+%\item[•]\textbf{Attori}: Allievo, Libreria di pos-tagging;
+%\item[•]\textbf{Descrizione}: La frase inserita non è accettata dalla libreria di pos-tagging. L'allievo visualizza un errore e può inserire una nuova frase;
+%\item[•]\textbf{Precondizione}: L'allievo ha inserito una frase;
+%\item[•]\textbf{Postcondizione}: L'allievo ha visualizzato il messaggio di errore e può inserire una nuova frase.
+%\end{itemize}
 
-\subsubsection{UC 3.12 - Inserimento frase libera}
+
+\subsubsection{UC 3.12 - Visualizzazione soluzione}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=17cm]{img/UC312.png} 
-	\caption{Caso d'uso 3.12}\label{fig:312}
-\end{figure}
-\begin{itemize}
-	\item[•]\textbf{Attori}: Allievo;
-	\item[•]\textbf{Descrizione}: L'allievo inserisce la propria frase in modo da ricevere l'analisi grammaticale di essa;
-	\item[•]\textbf{Precondizione}: L'allievo si è autenticato;
-	\item[•]\textbf{Postcondizione}: L'allievo ha inserito una frase;
-	\item[•]\textbf{Flusso degli eventi}:
-	\begin{enumerate}
-		\item UC 3.13 - Visualizzazione soluzione.
-	\end{enumerate}
-	\item[•]\textbf{Estensioni}:
-	\begin{enumerate}
-		\item UC 3.12.1 - Visualizzazione errore inserimento frase.
-	\end{enumerate}
-\end{itemize}
-
-
-\subsubsection{UC 3.12.1 - Visualizzazione errore inserimento frase}
-\begin{itemize}
-\item[•]\textbf{Attori}: Allievo, Libreria di pos-tagging;
-\item[•]\textbf{Descrizione}: La frase inserita non è accettata dalla libreria di pos-tagging. L'allievo visualizza un errore e può inserire una nuova frase;
-\item[•]\textbf{Precondizione}: L'allievo ha inserito una frase;
-\item[•]\textbf{Postcondizione}: L'allievo ha visualizzato il messaggio di errore e può inserire una nuova frase.
-\end{itemize}
-
-
-\subsubsection{UC 3.13 - Visualizzazione soluzione}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=17cm]{img/UC313.png} 
-	\caption{Caso d'uso UC 3.13}\label{fig:313}
+	\caption{Caso d'uso UC 3.12}\label{fig:312}
 \end{figure}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Allievo, Libreria di pos-tagging;
@@ -181,12 +182,12 @@
 	\item[•]\textbf{Postcondizione}: L'allievo visualizza la soluzione dell'esercizio;
 	\item[•]\textbf{Flusso degli eventi}:
 	\begin{enumerate}
-		\item UC 3.13.1 - Visualizzazione valutazione esercizio.  
+		\item UC 3.12.1 - Visualizzazione valutazione esercizio.  
 	\end{enumerate}
 \end{itemize}
 
 
-\subsubsection{UC 3.13.1 - Visualizzazione valutazione esercizio}   
+\subsubsection{UC 3.12.1 - Visualizzazione valutazione esercizio}   
 
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo;

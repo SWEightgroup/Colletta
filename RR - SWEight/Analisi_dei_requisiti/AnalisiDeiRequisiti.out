@@ -55,57 +55,56 @@
 \BOOKMARK [3][-]{subsubsection.3.3.8}{UC 3.7 - Rimozione insegnante preferito}{subsection.3.3}% 55
 \BOOKMARK [3][-]{subsubsection.3.3.9}{UC 3.8 - Selezione lingua esercizi}{subsection.3.3}% 56
 \BOOKMARK [3][-]{subsubsection.3.3.10}{UC 3.9 - Visualizzazione elenco esercizi}{subsection.3.3}% 57
-\BOOKMARK [3][-]{subsubsection.3.3.11}{UC 3.10 - Selezione esercizio}{subsection.3.3}% 58
-\BOOKMARK [3][-]{subsubsection.3.3.12}{UC 3.11 - Svolgimento esercizio}{subsection.3.3}% 59
-\BOOKMARK [3][-]{subsubsection.3.3.13}{UC 3.11.1 - Interruzione svolgimento esercizio}{subsection.3.3}% 60
-\BOOKMARK [3][-]{subsubsection.3.3.14}{UC 3.11.2 - Selezione insegnante}{subsection.3.3}% 61
-\BOOKMARK [3][-]{subsubsection.3.3.15}{UC 3.11.3 - Classificazione parola}{subsection.3.3}% 62
-\BOOKMARK [3][-]{subsubsection.3.3.16}{UC 3.12 - Inserimento frase libera}{subsection.3.3}% 63
-\BOOKMARK [3][-]{subsubsection.3.3.17}{UC 3.12.1 - Visualizzazione errore inserimento frase}{subsection.3.3}% 64
-\BOOKMARK [3][-]{subsubsection.3.3.18}{UC 3.13 - Visualizzazione soluzione}{subsection.3.3}% 65
-\BOOKMARK [3][-]{subsubsection.3.3.19}{UC 3.13.1 - Visualizzazione valutazione esercizio}{subsection.3.3}% 66
-\BOOKMARK [2][-]{subsection.3.4}{Sviluppatori}{section.3}% 67
-\BOOKMARK [3][-]{subsubsection.3.4.1}{Panoramica Sviluppatore}{subsection.3.4}% 68
-\BOOKMARK [3][-]{subsubsection.3.4.2}{UC 4.1 - Visualizzazione elenco frasi}{subsection.3.4}% 69
-\BOOKMARK [3][-]{subsubsection.3.4.3}{UC 4.2 - Filtraggio dei dati}{subsection.3.4}% 70
-\BOOKMARK [3][-]{subsubsection.3.4.4}{UC 4.2.1 - Inserimento filtro periodo temporale}{subsection.3.4}% 71
-\BOOKMARK [3][-]{subsubsection.3.4.5}{UC 4.2.2 - Inserimento filtro fonte}{subsection.3.4}% 72
-\BOOKMARK [3][-]{subsubsection.3.4.6}{UC 4.2.3 - Selezione filtro lingue}{subsection.3.4}% 73
-\BOOKMARK [3][-]{subsubsection.3.4.7}{UC 4.2.4 - Ricerca frase}{subsection.3.4}% 74
-\BOOKMARK [3][-]{subsubsection.3.4.8}{UC 4.2.5 - Visualizzazione dati filtrati}{subsection.3.4}% 75
-\BOOKMARK [3][-]{subsubsection.3.4.9}{UC 4.2.6 - Rimozione filtro}{subsection.3.4}% 76
-\BOOKMARK [3][-]{subsubsection.3.4.10}{UC 4.2.1.1 - Visualizzazione messaggio errore data errata}{subsection.3.4}% 77
-\BOOKMARK [3][-]{subsubsection.3.4.11}{UC 4.2.4.1 - Visualizzazione messaggio errore input errato}{subsection.3.4}% 78
-\BOOKMARK [3][-]{subsubsection.3.4.12}{UC 4.3 - Visualizzazione storico frase}{subsection.3.4}% 79
-\BOOKMARK [3][-]{subsubsection.3.4.13}{UC 4.4 - Scaricamento dati}{subsection.3.4}% 80
-\BOOKMARK [3][-]{subsubsection.3.4.14}{UC 4.4.1 - Scelta contenuti download}{subsection.3.4}% 81
-\BOOKMARK [3][-]{subsubsection.3.4.15}{UC 4.4.2 - Scelta formato file}{subsection.3.4}% 82
-\BOOKMARK [3][-]{subsubsection.3.4.16}{UC 4.4.3 - Scelta formato archivio}{subsection.3.4}% 83
-\BOOKMARK [3][-]{subsubsection.3.4.17}{UC 4.4.4 - Ottenimento file}{subsection.3.4}% 84
-\BOOKMARK [3][-]{subsubsection.3.4.18}{UC 4.5 - Creazione modello}{subsection.3.4}% 85
-\BOOKMARK [3][-]{subsubsection.3.4.19}{UC 4.5.1 - Scelta parametri funzione}{subsection.3.4}% 86
-\BOOKMARK [3][-]{subsubsection.3.4.20}{UC 4.5.2 - Inserimento nome modello}{subsection.3.4}% 87
-\BOOKMARK [3][-]{subsubsection.3.4.21}{UC 4.5.3 - Salvataggio modello}{subsection.3.4}% 88
-\BOOKMARK [3][-]{subsubsection.3.4.22}{UC 4.5.4 - Valore parametro non valido}{subsection.3.4}% 89
-\BOOKMARK [3][-]{subsubsection.3.4.23}{UC 4.5.5 - Visualizzazione messaggio errore nome duplicato}{subsection.3.4}% 90
-\BOOKMARK [3][-]{subsubsection.3.4.24}{UC 4.5.6 - Interruzione inserimento modello}{subsection.3.4}% 91
-\BOOKMARK [3][-]{subsubsection.3.4.25}{UC 4.6 - Visualizzazione elenco modelli}{subsection.3.4}% 92
-\BOOKMARK [3][-]{subsubsection.3.4.26}{UC 4.7 - Visualizzazione contenuto modello}{subsection.3.4}% 93
-\BOOKMARK [3][-]{subsubsection.3.4.27}{UC 4.8 - Scaricamento modello}{subsection.3.4}% 94
-\BOOKMARK [3][-]{subsubsection.3.4.28}{UC 4.9 - Eliminazione modello}{subsection.3.4}% 95
-\BOOKMARK [2][-]{subsection.3.5}{Amministratore}{section.3}% 96
-\BOOKMARK [3][-]{subsubsection.3.5.1}{Panoramica Amministratore}{subsection.3.5}% 97
-\BOOKMARK [3][-]{subsubsection.3.5.2}{UC 5.1 - Visualizzazione della propria dashboard}{subsection.3.5}% 98
-\BOOKMARK [3][-]{subsubsection.3.5.3}{UC 5.1.1 - Visualizzazione utenti registrati}{subsection.3.5}% 99
-\BOOKMARK [3][-]{subsubsection.3.5.4}{UC 5.1.1.1 - Filtra utenti}{subsection.3.5}% 100
-\BOOKMARK [3][-]{subsubsection.3.5.5}{UC 5.1.1.2 - Visualizza dettaglio utente}{subsection.3.5}% 101
-\BOOKMARK [3][-]{subsubsection.3.5.6}{UC 5.1.1.2.1 - Eliminazione utenza}{subsection.3.5}% 102
-\BOOKMARK [3][-]{subsubsection.3.5.7}{UC 5.1.2 - Visualizza lista richieste in sospeso sviluppatori}{subsection.3.5}% 103
-\BOOKMARK [1][-]{section.4}{Requisiti}{}% 104
-\BOOKMARK [2][-]{subsection.4.1}{Classificazione dei requisiti}{section.4}% 105
-\BOOKMARK [2][-]{subsection.4.2}{Requisiti funzionali}{section.4}% 106
-\BOOKMARK [2][-]{subsection.4.3}{Requisiti di vincolo}{section.4}% 107
-\BOOKMARK [2][-]{subsection.4.4}{Requisiti di qualit\340}{section.4}% 108
-\BOOKMARK [1][-]{section.5}{Tracciamento dei requisiti}{}% 109
-\BOOKMARK [2][-]{subsection.5.1}{Tracciamento fonti-requisiti}{section.5}% 110
-\BOOKMARK [2][-]{subsection.5.2}{Tracciamento casi d'uso-requisiti}{section.5}% 111
+\BOOKMARK [3][-]{subsubsection.3.3.11}{UC 3.10 - Esercitazione libera}{subsection.3.3}% 58
+\BOOKMARK [3][-]{subsubsection.3.3.12}{UC 3.10.1 - Inserimento frase libera}{subsection.3.3}% 59
+\BOOKMARK [3][-]{subsubsection.3.3.13}{UC 3.11 - Svolgimento esercizio}{subsection.3.3}% 60
+\BOOKMARK [3][-]{subsubsection.3.3.14}{UC 3.11.1 - Interruzione svolgimento esercizio}{subsection.3.3}% 61
+\BOOKMARK [3][-]{subsubsection.3.3.15}{UC 3.11.2 - Selezione insegnante}{subsection.3.3}% 62
+\BOOKMARK [3][-]{subsubsection.3.3.16}{UC 3.11.3 - Classificazione parola}{subsection.3.3}% 63
+\BOOKMARK [3][-]{subsubsection.3.3.17}{UC 3.12 - Visualizzazione soluzione}{subsection.3.3}% 64
+\BOOKMARK [3][-]{subsubsection.3.3.18}{UC 3.12.1 - Visualizzazione valutazione esercizio}{subsection.3.3}% 65
+\BOOKMARK [2][-]{subsection.3.4}{Sviluppatori}{section.3}% 66
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Panoramica Sviluppatore}{subsection.3.4}% 67
+\BOOKMARK [3][-]{subsubsection.3.4.2}{UC 4.1 - Visualizzazione elenco frasi}{subsection.3.4}% 68
+\BOOKMARK [3][-]{subsubsection.3.4.3}{UC 4.2 - Filtraggio dei dati}{subsection.3.4}% 69
+\BOOKMARK [3][-]{subsubsection.3.4.4}{UC 4.2.1 - Inserimento filtro periodo temporale}{subsection.3.4}% 70
+\BOOKMARK [3][-]{subsubsection.3.4.5}{UC 4.2.2 - Inserimento filtro fonte}{subsection.3.4}% 71
+\BOOKMARK [3][-]{subsubsection.3.4.6}{UC 4.2.3 - Selezione filtro lingue}{subsection.3.4}% 72
+\BOOKMARK [3][-]{subsubsection.3.4.7}{UC 4.2.4 - Ricerca frase}{subsection.3.4}% 73
+\BOOKMARK [3][-]{subsubsection.3.4.8}{UC 4.2.5 - Visualizzazione dati filtrati}{subsection.3.4}% 74
+\BOOKMARK [3][-]{subsubsection.3.4.9}{UC 4.2.6 - Rimozione filtro}{subsection.3.4}% 75
+\BOOKMARK [3][-]{subsubsection.3.4.10}{UC 4.2.1.1 - Visualizzazione messaggio errore data errata}{subsection.3.4}% 76
+\BOOKMARK [3][-]{subsubsection.3.4.11}{UC 4.2.4.1 - Visualizzazione messaggio errore input errato}{subsection.3.4}% 77
+\BOOKMARK [3][-]{subsubsection.3.4.12}{UC 4.3 - Visualizzazione storico frase}{subsection.3.4}% 78
+\BOOKMARK [3][-]{subsubsection.3.4.13}{UC 4.4 - Scaricamento dati}{subsection.3.4}% 79
+\BOOKMARK [3][-]{subsubsection.3.4.14}{UC 4.4.1 - Scelta contenuti download}{subsection.3.4}% 80
+\BOOKMARK [3][-]{subsubsection.3.4.15}{UC 4.4.2 - Scelta formato file}{subsection.3.4}% 81
+\BOOKMARK [3][-]{subsubsection.3.4.16}{UC 4.4.3 - Scelta formato archivio}{subsection.3.4}% 82
+\BOOKMARK [3][-]{subsubsection.3.4.17}{UC 4.4.4 - Ottenimento file}{subsection.3.4}% 83
+\BOOKMARK [3][-]{subsubsection.3.4.18}{UC 4.5 - Creazione modello}{subsection.3.4}% 84
+\BOOKMARK [3][-]{subsubsection.3.4.19}{UC 4.5.1 - Scelta parametri funzione}{subsection.3.4}% 85
+\BOOKMARK [3][-]{subsubsection.3.4.20}{UC 4.5.2 - Inserimento nome modello}{subsection.3.4}% 86
+\BOOKMARK [3][-]{subsubsection.3.4.21}{UC 4.5.3 - Salvataggio modello}{subsection.3.4}% 87
+\BOOKMARK [3][-]{subsubsection.3.4.22}{UC 4.5.4 - Valore parametro non valido}{subsection.3.4}% 88
+\BOOKMARK [3][-]{subsubsection.3.4.23}{UC 4.5.5 - Visualizzazione messaggio errore nome duplicato}{subsection.3.4}% 89
+\BOOKMARK [3][-]{subsubsection.3.4.24}{UC 4.5.6 - Interruzione inserimento modello}{subsection.3.4}% 90
+\BOOKMARK [3][-]{subsubsection.3.4.25}{UC 4.6 - Visualizzazione elenco modelli}{subsection.3.4}% 91
+\BOOKMARK [3][-]{subsubsection.3.4.26}{UC 4.7 - Visualizzazione contenuto modello}{subsection.3.4}% 92
+\BOOKMARK [3][-]{subsubsection.3.4.27}{UC 4.8 - Scaricamento modello}{subsection.3.4}% 93
+\BOOKMARK [3][-]{subsubsection.3.4.28}{UC 4.9 - Eliminazione modello}{subsection.3.4}% 94
+\BOOKMARK [2][-]{subsection.3.5}{Amministratore}{section.3}% 95
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Panoramica Amministratore}{subsection.3.5}% 96
+\BOOKMARK [3][-]{subsubsection.3.5.2}{UC 5.1 - Visualizzazione della propria dashboard}{subsection.3.5}% 97
+\BOOKMARK [3][-]{subsubsection.3.5.3}{UC 5.1.1 - Visualizzazione utenti registrati}{subsection.3.5}% 98
+\BOOKMARK [3][-]{subsubsection.3.5.4}{UC 5.1.1.1 - Filtra utenti}{subsection.3.5}% 99
+\BOOKMARK [3][-]{subsubsection.3.5.5}{UC 5.1.1.2 - Visualizza dettaglio utente}{subsection.3.5}% 100
+\BOOKMARK [3][-]{subsubsection.3.5.6}{UC 5.1.1.2.1 - Eliminazione utenza}{subsection.3.5}% 101
+\BOOKMARK [3][-]{subsubsection.3.5.7}{UC 5.1.2 - Visualizza lista richieste in sospeso sviluppatori}{subsection.3.5}% 102
+\BOOKMARK [1][-]{section.4}{Requisiti}{}% 103
+\BOOKMARK [2][-]{subsection.4.1}{Classificazione dei requisiti}{section.4}% 104
+\BOOKMARK [2][-]{subsection.4.2}{Requisiti funzionali}{section.4}% 105
+\BOOKMARK [2][-]{subsection.4.3}{Requisiti di vincolo}{section.4}% 106
+\BOOKMARK [2][-]{subsection.4.4}{Requisiti di qualit\340}{section.4}% 107
+\BOOKMARK [1][-]{section.5}{Tracciamento dei requisiti}{}% 108
+\BOOKMARK [2][-]{subsection.5.1}{Tracciamento fonti-requisiti}{section.5}% 109
+\BOOKMARK [2][-]{subsection.5.2}{Tracciamento casi d'uso-requisiti}{section.5}% 110
