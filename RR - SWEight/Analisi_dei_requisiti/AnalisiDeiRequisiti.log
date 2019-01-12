@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.2)  12 JAN 2019 10:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.2)  12 JAN 2019 13:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2239,7 +2239,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [43 <./img/PanoramicaAmministratore.png>]) (./sez/tabellarequisiti.tex
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 5.
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 4.
 
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -2320,8 +2320,8 @@ Underfull \hbox (badness 1616) in paragraph at lines 778--778
 
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 88
-4.
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 87
+8.
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2396,7 +2396,7 @@ c/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/te
 xmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmri
 10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fon
 ts/type1/public/lm/lmtt10.pfb>
-Output written on AnalisiDeiRequisiti.pdf (51 pages, 1366527 bytes).
+Output written on AnalisiDeiRequisiti.pdf (51 pages, 1366704 bytes).
 PDF statistics:
  1136 PDF objects out of 1200 (max. 8388607)
  1016 compressed objects within 11 object streams

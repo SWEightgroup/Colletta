@@ -23,14 +23,14 @@
 \item \textbf{Attore}: Amministratore;
 \item \textbf{Descrizione}: L'amministratore visualizza l'elenco degli utenti registrati nel sistema;
 \item \textbf{Precondizione}: L'amministratore si trova nella dashboard;
-\item \textbf{Postcondizione}: L'amministratore visualizza la lista di utenti registrati al sistema.
+\item \textbf{Postcondizione}: L'amministratore visualizza tutti gli utenti registrati nel sistema.
 \end{itemize}
 
 \subsubsection{UC 5.3 - Filtraggio utenti}
 \begin{itemize}
 \item \textbf{Attore}: Amministratore;
 \item \textbf{Descrizione}: L'amministratore ha la possibilità di ricercare gli utenti a partire dal loro nome o dalla loro tipologia di utenza;
-\item \textbf{Precondizione}: L'amministratore ha visualizzato la lista di utenti registrati
+\item \textbf{Precondizione}: L'amministratore visualizza la lista di utenti registrati;
 \item \textbf{Postcondizione}: L'amministratore visualizza la lista degli utenti in base ai filtri applicati.
 \end{itemize}
 
@@ -38,8 +38,8 @@
 \begin{itemize}
 \item \textbf{Attore}: Amministratore;
 \item \textbf{Descrizione}: L'amministratore visualizza in dettaglio un utente specifico;
-\item \textbf{Precondizione}: L'amministratore ha visualizzato la lista degli utenti;
-\item \textbf{Postcondizione}: L'amministratore ha visualizzato informazioni personali dell'utente.
+\item \textbf{Precondizione}: L'amministratore visualizza la lista degli utenti;
+\item \textbf{Postcondizione}: L'amministratore visualizza le informazioni personali dell'utente.
 \end{itemize}
 
 
@@ -47,15 +47,16 @@
 \begin{itemize}
 \item \textbf{Attore}: Amministratore;
 \item \textbf{Descrizione}: L'amministratore elimina un'utenza dal sistema;
-\item \textbf{Precondizione}: L'amministratore visualizza l'elenco degli utenti registrati nel sistema ed ha selezionato un utente da eliminare;
-\item \textbf{Postcondizione}: L'amministratore ha eliminato l'utenza dal sistema.
+\item \textbf{Precondizione}: L'amministratore visualizza l'elenco degli utenti registrati nel sistema;
+\item \textbf{Postcondizione}: L'amministratore ha eliminato l'utenza dal sistema;
+\item \textbf{Flusso degli eventi}: L'amministratore seleziona l'utenza e procede all'eliminazione.
 \end{itemize}
 
 
 \subsubsection{UC 5.6 - Visualizzazione richieste sviluppatori}
 \begin{itemize}
 \item \textbf{Attore}: Amministratore;
-\item \textbf{Descrizione}: L'amministratore visualizza tutti gli utenti che si vogliono registrare come sviluppatori nel sistema;
+\item \textbf{Descrizione}: L'amministratore visualizza tutte le richieste degli utenti che vogliono ottenere il ruolo di sviluppatore nel sistema;
 \item \textbf{Precondizione}: L'amministratore si trova nella dashboard;
 \item \textbf{Postcondizione}: L'amministratore visualizza l'elenco delle richieste in sospeso.
 \end{itemize}
@@ -64,9 +65,9 @@
 \begin{itemize}
 \item \textbf{Attore}: Amministratore;
 \item \textbf{Descrizione}: L'amministratore attiva un utente che ha fatto richiesta come sviluppatore;
-\item \textbf{Precondizione}: Lo sviluppatore visualizza la lista delle richieste in sospeso degli sviluppatori;
-\item \textbf{Postcondizione}: L'utenza dello sviluppatore è stata attivata lo sviluppatore può quindi accedere al sistema.
-\item \textbf{Flusso degli eventi:} l'amminsitratore selezione l'utenza dello sviluppatore e procede con la procedura di attivazione.
+\item \textbf{Precondizione}: L'amministratore visualizza la lista delle richieste in sospeso degli sviluppatori;
+\item \textbf{Postcondizione}: L'utenza dello sviluppatore è stata attivata e lo sviluppatore può quindi accedere al sistema;
+\item \textbf{Flusso degli eventi}: l'amminsitratore seleziona l'utenza dello sviluppatore e procede con la procedura di attivazione.
 \end{itemize}
 
 
