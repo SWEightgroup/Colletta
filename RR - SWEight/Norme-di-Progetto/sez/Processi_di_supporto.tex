@@ -64,6 +64,7 @@ dove:
 Per semplificare e standardizzare la stesura dei documenti previsti è stato creato un template \LaTeX{} contenente tutte le impostazioni per la struttura grafica e lo stile di formattazione. Ogni membro del team deve obbligatoriamente utilizzare questo {template}\ped{G}.
 Il template è disponibile all'interno dell'omonima cartella ed è denominato "SWEightStyle.sty", dev'essere importato all'interno del documento \LaTeX{} tramite la direttiva di inclusione di un pacchetto.
 \subsubsection{Versioni}
+\label{sec:documentversion}
 Per ogni documento deve essere specificata obbligatoriamente la versione nella seguente forma: 
 \begin{center}
 \textbf{X.Y.Z}
@@ -208,7 +209,7 @@ Ad esempio: UC4.2.png $\rightarrow$ UC42.png;
 Inoltre, anche il file con estensione asta deve essere salvato nella cartella predisposta al fine di permetterne modifiche successivamente. 
 Per la realizzazione dell'analisi dei requisiti la cartella destinata al salvataggio dei digrammi modificabili è: "Casi d'uso", reperibile all'interno del {branch}\ped{G} Analisi dei Requisiti. Il nome del diagramma deve essere il medesimo dell'immagine esportata.
 
-\subsubsection{Strumenti di supporto}
+\subsubsection{Strumenti di supporto} 
 
 \paragraph{Stesura dei documenti}\mbox{}\\
 L'intera documentazione deve essere prodotta utilizzando il {linguaggio di markup}\ped{G} \LaTeX{}, scelto dal team per i seguenti motivi:
@@ -224,11 +225,23 @@ Per la stesura del documento è consigliato l'utilizzo di Textmaker, le principa
 	\item[•] Evidenziazione della sintassi;
 	\item[•] Completamento automatico.
 \end{itemize}  
-Il software è reperibile all'indirizzo \url{http://www.xm1math.net/texmaker/}, è cross platform ed è gratuito.
+Il software è reperibile all'indirizzo \url{http://www.xm1math.net/texmaker/}, è cross-platform ed è gratuito.
 
+\paragraph{Nome dei documenti}
+I nomi dei documenti devono:
+\begin{itemize}
+\item Iniziare con la lettera maiuscola;
+\item Se composti da più parole anche esse devono avere la lettera maiuscola.
+\item Dopo il nome testuale, segue un carattere di underscore;
+\item Infine si indica la versione come descritto in \hyperref[sec:documentversion]{§4.1.4};
+\end{itemize}
+Esempio:
+\begin{center}
+NomeDocumento_v1.0.0.pdf
+\end{center}
+Ovviamente, i documenti devono essere esportati in formato PDF.
 \paragraph{Controllo ortografico}\mbox{}\\
 Al termine della stesura dei documenti, prima di alla fase di verifica del documento, l’owner deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice Gulpeas.
-
 \subsubsection{Ciclo di vita dei documenti}
 Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di issues offerto da GitHub e come descritto in \hyperref[sec:projectboard]{§5.5.2.3}.
 \begin{enumerate}
