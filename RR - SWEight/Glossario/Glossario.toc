@@ -1,13 +1,21 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {section}{\numberline {1}A}{2}{section.1}
-\contentsline {section}{\numberline {2}B}{3}{section.2}
-\contentsline {section}{\numberline {3}C}{4}{section.3}
-\contentsline {section}{\numberline {4}D}{5}{section.4}
-\contentsline {section}{\numberline {5}L}{6}{section.5}
-\contentsline {section}{\numberline {6}M}{7}{section.6}
-\contentsline {section}{\numberline {7}N}{8}{section.7}
-\contentsline {section}{\numberline {8}P}{9}{section.8}
-\contentsline {section}{\numberline {9}Q}{10}{section.9}
-\contentsline {section}{\numberline {10}S}{11}{section.10}
-\contentsline {section}{\numberline {11}T}{12}{section.11}
+\contentsline {section}{\numberline {}A}{3}{section.1}
+\contentsline {section}{\numberline {}B}{4}{section.2}
+\contentsline {section}{\numberline {}C}{5}{section.3}
+\contentsline {section}{\numberline {}D}{6}{section.4}
+\contentsline {section}{\numberline {}E}{7}{section.5}
+\contentsline {section}{\numberline {}F}{8}{section.6}
+\contentsline {section}{\numberline {}G}{9}{section.7}
+\contentsline {section}{\numberline {}I}{10}{section.8}
+\contentsline {section}{\numberline {}K}{11}{section.9}
+\contentsline {section}{\numberline {}L}{12}{section.10}
+\contentsline {section}{\numberline {}M}{13}{section.11}
+\contentsline {section}{\numberline {}N}{14}{section.12}
+\contentsline {section}{\numberline {}O}{15}{section.13}
+\contentsline {section}{\numberline {}P}{16}{section.14}
+\contentsline {section}{\numberline {}Q}{17}{section.15}
+\contentsline {section}{\numberline {}R}{18}{section.16}
+\contentsline {section}{\numberline {}S}{19}{section.17}
+\contentsline {section}{\numberline {}T}{20}{section.18}
+\contentsline {section}{\numberline {}V}{21}{section.19}
