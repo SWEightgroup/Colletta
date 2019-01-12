@@ -8,11 +8,13 @@
 
 
 \subsubsection{UC 1.1 - Autenticazione}
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=17cm]{img/UC11.png} 
-\caption{Caso d'uso UC 1.1}\label{fig:11}
+\caption{Caso d'uso UC 1.1}
 \end{figure}
+
 \begin{itemize}
 \item[•]\textbf{Attori}: Utente non autenticato;
 \item[•]\textbf{Descrizione}:  L’utente non identificato inserisce username e password e si autentica accedendo alla dashboard;
@@ -35,15 +37,15 @@
 \item[•]\textbf{Attori}: Utente non autenticato;
 \item[•]\textbf{Descrizione}: L’utente inserisce un nome utente durante la registrazione;
 \item[•]\textbf{Precondizione}: L’utente non è autenticato;
-\item[•]\textbf{Postcondizione}: L’utente ha inserito un nome utente;
+\item[•]\textbf{Postcondizione}: L’utente ha inserito il proprio nome utente;
 \end{itemize}
 
 \subsubsection{UC 1.1.2 - Inserimento password}
 \begin{itemize}
 \item[•]\textbf{Attori}: Utente non autenticato;
-\item[•]\textbf{Descrizione}: L’utente inserisce una password durante la registrazione;
+\item[•]\textbf{Descrizione}: L’utente inserisce una password;
 \item[•]\textbf{Precondizione}: L'utente non è autenticato;
-\item[•]\textbf{Postcondizione}: L'utente ha inserito una password;
+\item[•]\textbf{Postcondizione}: L'utente ha inserito la propria password;
 \end{itemize}
 
 \subsubsection{UC 1.1.2.1 - Reset password}
@@ -86,6 +88,9 @@
 	\item[•]\textbf{Descrizione}: L'utente inserisce un nome utente durante la registrazione;
 	\item[•]\textbf{Precondizione}: L'utente non è registrato;
 	\item[•]\textbf{Postcondizione}: L'utente ha inserito un nome utente;
+	\begin{enumerate}
+		\item UC 1.3 - Visualizzazione messaggio errore dato presente.
+	\end{enumerate}
 \end{itemize}
 
 \subsubsection{UC 1.2.2 - Inserimento email}
@@ -94,14 +99,20 @@
 	\item[•]\textbf{Descrizione}: L'utente inserisce la sua email istituzionale durante la registrazione;
 	\item[•]\textbf{Precondizione}: L'utente non è registrato;
 	\item[•]\textbf{Postcondizione}: L'utente ha inserito una email istituzionale;
+		\begin{enumerate}
+		\item UC 1.3 - Visualizzazione messaggio errore dato presente.
+	\end{enumerate}
 \end{itemize}
 
 \subsubsection{UC 1.2.3 - Inserimento password}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Utente non registrato;
-	\item[•]\textbf{Descrizione}: L'utente inserisce una password durante la registrazione;
+	\item[•]\textbf{Descrizione}: L'utente inserisce una password durante procedura di registrazione;
 	\item[•]\textbf{Precondizione}: L'utente non è registrato;
 	\item[•]\textbf{Postcondizione}: L'utente ha inserito una password;
+	\begin{enumerate}
+		\item UC 1.4 - Visualizzazione messaggio errore password diverse;
+	\end{enumerate}
 \end{itemize}
 
 \subsubsection{UC 1.2.4 - Inserimento conferma password}
@@ -110,6 +121,9 @@
 	\item[•]\textbf{Descrizione}: L'utente inserisce la conferma della password durante la registrazione;
 	\item[•]\textbf{Precondizione}: L'utente non è registrato;
 	\item[•]\textbf{Postcondizione}: L'utente ha inserito la conferma della password;
+		\begin{enumerate}
+		\item UC 1.4 - Visualizzazione messaggio errore password diverse;
+	\end{enumerate}
 \end{itemize}
 
 \subsubsection{UC 1.2.5 - Inserimento data di nascita}

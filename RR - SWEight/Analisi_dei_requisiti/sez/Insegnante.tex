@@ -10,7 +10,7 @@
 \end{figure}
 
 %MODIFICATO da cambiare uml 
-%\subsubsection{UC 2.1 Visualizzazione profilo personale}
+\subsubsection{UC 2.1 Visualizzazione profilo personale}
 
 %\begin{figure}[H]
 %\centering
@@ -18,69 +18,56 @@
 %\caption{Caso d'uso UC 2.1}
 %\end{figure}
 
-%\begin{itemize}
-%	\item[•] \textbf{Attori}: Insegnante;
-%	\item[•] \textbf{Descrizione}: L’insegnante ha accesso al suo profilo personale dove può vedere i suoi dati ed effettuare modifiche agli esercizi;
-
-%	\item[•] \textbf{Precondizione}: Il sistema offre l’accesso a una dashboard con tutti i dati;
-
-%	\item[•] \textbf{Postcondizione}:  Il profilo personale dell’insegnante è aperto;
-
-%\end{itemize}
-
-%DEVE diventare UC 2.1 da cambiare tutto quanto era 2.1.1
-\subsubsection{UC 2.1 Visualizzazione storico frasi inserite}
-
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width=10cm]{img/UC211.png} 
-%\caption{Caso d'uso UC 2.1.1}
-%\end{figure}
-
-\begin{itemize}
-	\item[•] \textbf{Attori}:  Insegnante	   \item[•] \textbf{Descrizione}: L’insegnante visualizza nel suo profilo personale lo storico delle frasi inserite; 
-	\item[•] \textbf{Precondizione}: L'insegnante sta visualizzando il proprio profilo personale ;
-	\item[•] \textbf{Postcondizione}:  L’insegnante può navigare all’interno della lista di frasi che ha inserito.
-\end{itemize}
-
-%mettere altro sub 
-\subsubsection{UC 2.1.1 Seleziona esercizio per avere più dettagli}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
-	\item[•] \textbf{Descrizione}:  L’insegnante seleziona dalla lista degli esercizi assegnati un esercizio e ne visualizza i dettagli;
-	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di visualizzare i dettagli relativi ad un esercizio assegnato;
-	\item[•] \textbf{Postcondizione}: L’insegnante legge le specifiche dell’esercizio selezionato.
+	\item[•] \textbf{Descrizione}: L’insegnante ha accesso al suo profilo personale dove può vedere i suoi dati ed effettuare modifiche agli esercizi;
+
+	\item[•] \textbf{Precondizione}: Il sistema offre l’accesso a una dashboard con tutti i dati;
+
+	\item[•] \textbf{Postcondizione}:  Il profilo personale dell’insegnante è aperto;
+
 \end{itemize}
+
 
 \subsubsection{UC 2.2 Inserimento di un nuovo esercizio}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=18cm]{img/UC22.png} 
-	\caption{Caso d'uso UC 2.2}
+	\includegraphics[width=18cm]{img/UC22LIBRERIA.png} 
+	\caption{Caso d'uso UC 2.2 interazione con la libreria;}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=18cm]{img/UC22SISTEMA.png} 
+	\caption{Caso d'uso UC 2.2 interazione con il sistema;}
 \end{figure}
 
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
-	\item[•] \textbf{Descrizione}: L'insegnante aggiunge attraverso una form il testo di un nuovo esercizio;
-	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di aggiungere un esercizio nel sistema;
+	\item[•] \textbf{Descrizione}: L'insegnante aggiunge attraverso il testo di un nuovo esercizio;
+	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di aggiungere un esercizio nel sistema e l'insegnante non ha aggiunto l'esercizio;
 	\item[•] \textbf{Postcondizione}: Un nuovo esercizio è stato aggiunto;
 	\item[•] \textbf{Flusso degli eventi}:
 	\begin{enumerate}
 		\item UC 2.2.1 Predisporre lingua esercizio;
 		\item UC 2.2.2 Inserimento testo esercizio;
 		\item UC 2.2.3 Modifica tag automatici;
-		\item UC 2.2.4 Inserimento soluzione alternativa;
+
 		\item UC 2.2.5 Modifica visibilità esercizio;
 		\item UC 2.2.6 Salvataggio modifiche;
 		\item UC 2.2.7 Conferma aggiunta esercizio;
-		\item UC 2.2.8 Elimina soluzione alternativa.
 	\end{enumerate}
 	\item[•] \textbf{Estensioni}:	
 	\begin{enumerate}
 		\item UC 2.2.6.1 Visualizzazione errori.
 		\item UC 2.2.2.1 Correzione automatica esercizio;
 		\item UC 2.2.7.1 Interruzione inserimento esercizio.
+	\end{enumerate}
+	\item[•] \textbf{Flusso degli eventi alternativo}:
+	\begin{enumerate}
+		\item UC 2.2.4 Inserimento soluzione alternativa;
 	\end{enumerate}
 \end{itemize}
 %mettere altro sub 
@@ -104,34 +91,37 @@
 %mettere altro sub 
 \subsubsection{UC 2.2.2.1 Correzione automatica esercizio}
 \begin{itemize}
-	\item[•] \textbf{Attori}: Insegnante e libreria di {PoS-tagging}\ped{G};
-	\item[•] \textbf{Descrizione}: L’insegnante genera automaticamente i tag dal testo dell’esercizio attraverso la libreria di PoS-tagging;
-	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di correggere automaticamente un esercizio;
+	\item[•] \textbf{Attori}: Insegnante, libreria di {PoS-tagging}\ped{G};
+	\item[•] \textbf{Descrizione}: L’insegnante ottiene automaticamente i tag dal testo dell’esercizio attraverso la libreria di PoS-tagging;
+	\item[•] \textbf{Precondizione}: L'insegnante ha inserito il testo dell'esercizio;
 	\item[•] \textbf{Postcondizione}: Viene visualizzata la soluzione dell'esercizio.
 \end{itemize}
 
 %mettere altro sub 
 \subsubsection{UC 2.2.3 Modifica tag automatici}
 \begin{itemize}
-	\item[•] \textbf{Attori}: Insegnante e libreria di PoS-tagging;
-	\item[•] \textbf{Descrizione}: L’insegnante modifica o corregge i tag generati automaticamente;
+	\item[•] \textbf{Attori}: Insegnante, libreria di PoS-tagging;
+	\item[•] \textbf{Descrizione}: L’insegnante modifica i tag generati automaticamente;
 	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di modificare i tag generati con la correzione automatica;
-	\item[•] \textbf{Postcondizione}: I tag relativi al testo scritto sono stati modificati o corretti.
+	\item[•] \textbf{Postcondizione}: I tag relativi al testo scritto sono stati modificati.
 \end{itemize}
 %mettere altro sub 
+
+
 \subsubsection{UC 2.2.4 Inserimento soluzione alternativa}
 \begin{itemize}
-	\item[•] \textbf{Attori}: Insegnante e libreria di PoS-tagging;
-	\item[•] \textbf{Descrizione}: L'insegnante inserisce tag alternativi all’esercizio consultando la libreria di PoS-tagging;
+	\item[•] \textbf{Attori}: Insegnante;
+	\item[•] \textbf{Descrizione}: L'insegnante inserisce tag alternativi all’esercizio;
 	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di inserire più tag per parola ad esercizio;
 	\item[•] \textbf{Postcondizione}: Una soluzione alternativa è stata aggiunta.
 \end{itemize}
+
 %mettere altro sub 
 \subsubsection{UC 2.2.5 Modifica visibilità esercizio}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
-	\item[•] \textbf{Descrizione}: L'insegnante decide chi può visualizzare e svolgere esercizio;
-	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di monitorare la visibilità un esercizio;
+	\item[•] \textbf{Descrizione}: L’insegnante imposta la visibilità dell' esercizio, ovvero quali allievi possono visualizzarlo e sceglierlo;
+	\item[•] \textbf{Precondizione}: L'insegnante non ha impostato la visibilità dell'esercizio;
 	\item[•] \textbf{Postcondizione}: L’esercizio è stato reso visibile o meno ad un gruppo di utenti.
 \end{itemize}
 %mettere altro sub 
@@ -140,15 +130,15 @@
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: L'insegnante salva l'esercizio e le possibili modifiche;
 	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di salvare gli esercizi creati;
-	\item[•] \textbf{Postcondizione}: Un esercizio è stato salvato.
+	\item[•] \textbf{Postcondizione}: L'esercizio è stato salvato.
 \end{itemize}
 %mettere altro sub 
-\subsubsection{UC 2.2.6.1 Visualizzazione errori}
+\subsubsection{UC 2.2.6.1 Visualizzazione errori testo inserito}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
-	\item[•] \textbf{Descrizione}: L'insegnante visualizza gli errori relativi alla sintassi e la forma dell’esercizio che sta creando;
+	\item[•] \textbf{Descrizione}: L'Insegnante visualizza gli errori relativi alla sintassi e la forma del testo che ha inserito;
 	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di visualizzare gli errori effettuati nella scrittura del testo;
-	\item[•] \textbf{Postcondizione}: L’esercizio è stato visionato dal sistema, e gli errori sono stati visualizzati.
+	\item[•] \textbf{Postcondizione}: L’Insegnante visualizza gli errori relativi al testo inserito.
 \end{itemize}
 %mettere altro sub 
 
@@ -156,20 +146,46 @@
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: L'insegnante aggiunge un esercizio al sistema;
-	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di aggiungere un esercizio;
+	\item[•] \textbf{Precondizione}: L’insegnante ha completato la stesura dell'esercizio;
 	\item[•] \textbf{Postcondizione}: L’esercizio è stato aggiunto correttamente al sistema.
 \end{itemize}
 
-\subsubsection{UC 2.2.8 Elimina soluzione alternativa}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%%%%% CODICE DA CAMBIARE TUTTI , SI PARTE DA QUI CON UC 2.3 %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{UC 2.3 Visualizzazione storico frasi inserite}
+
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=10cm]{img/UC211.png} 
+%\caption{Caso d'uso UC 2.1.1}
+%\end{figure}
+
 \begin{itemize}
-	\item[•] \textbf{Attori}: Insegnante;
-	\item[•] \textbf{Descrizione}: L'insegnante elimina una delle soluzioni alternative inserite in precedenza;
-	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di eliminare una soluzione alternativa di un esercizio;
-	\item[•] \textbf{Postcondizione}: L'Insegnante ha eliminato una soluzione alternativa di un esercizio.
+	\item[•] \textbf{Attori}:  Insegnante	   
+	\item[•] \textbf{Descrizione}: L’insegnante visualizza nel suo profilo personale lo storico delle frasi inserite; 
+	\item[•] \textbf{Precondizione}: L'insegnante sta visualizzando il proprio profilo personale;
+	\item[•] \textbf{Postcondizione}:  L’insegnante può navigare all’interno della lista di frasi che ha inserito.
 \end{itemize}
 
-%DEVE diventare UC 2.3 DA CAMBIARE TUTTO QUANTO 
-\subsubsection{UC 2.3 Visualizzazione esercizi svolti dagli allievi}
+%mettere altro sub 
+\subsubsection{UC 2.3.1 Seleziona esercizio per avere più dettagli}
+\begin{itemize}
+	\item[•] \textbf{Attori}: Insegnante;
+	\item[•] \textbf{Descrizione}:  L’insegnante seleziona dalla lista degli esercizi assegnati un esercizio e ne visualizza i dettagli;
+	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di visualizzare i dettagli relativi ad un esercizio assegnato;
+	\item[•] \textbf{Postcondizione}: L’insegnante legge le specifiche dell’esercizio selezionato.
+\end{itemize}
+
+
+
+%DEVE diventare UC 2.4 DA CAMBIARE TUTTO QUANTO 
+\subsubsection{UC 2.4 Visualizzazione esercizi svolti dagli allievi}
 %\begin{figure}[H]
 %\centering
 %\includegraphics[width=10cm]{img/UC212.png} 
@@ -177,14 +193,13 @@
 %\end{figure}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
-	\item[•] \textbf{Descrizione}:  L’insegnante è nella sezione profilo personale ed entra
-		nel registro che conserva gli esercizi svolti dagli allievi;
-	\item[•] \textbf{Precondizione}:  L’insegnante ha degli allievi e ha assegnato a loro degli esercizi che sono stati svolti e consegnati;
+	\item[•] \textbf{Descrizione}:  L’insegnante è nella sezione profilo personale e e visualizza l’elenco degli esercizi svolti dagli allievi;
+	\item[•] \textbf{Precondizione}:  L’insegnante ha assegnato degli esercizi agli allievi che sono stati svolti;
 
-	\item[•] \textbf{Postcondizione}: L’insegnante può navigare all’interno degli esercizi svolti svolti dagli allievi; 	
+	\item[•] \textbf{Postcondizione}: L’insegnante visualizza l'elenco degli esercizi svolti svolti dagli allievi; 	
 \end{itemize}
 
-\subsubsection{UC 2.4 Visualizzazione dei propri allievi}
+\subsubsection{UC 2.5 Visualizzazione dei propri allievi}
 
 %\begin{figure}[H]
 %\centering
@@ -197,15 +212,16 @@
 	\item[•] \textbf{Descrizione}: L’insegnante visualizza la lista dei suoi allievi;
 	\item[•] \textbf{Precondizione}: L'insegnante sta visualizzando il proprio profilo personale;
 	\item[•] \textbf{Postcondizione}: L’insegnante visualizza la lista dei propri allievi;
-	\item[•] \textbf{Flusso degli eventi}:
 \end{itemize}
 
+%%% da cambiare NUMERO UC va in MODIFICA ESERCIZIO %%%%%%%%%%%%%%
 
-\subsubsection{UC 2.5 Modifica esercizio}
+
+\subsubsection{UC 2.6 Modifica esercizio}
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{img/UC25.png} 
-\caption{Caso d'uso UC 2.5}
+\includegraphics[width=10cm]{img/UC26.png} 
+\caption{Caso d'uso UC 2.6}
 \end{figure}
 
 \begin{itemize}
@@ -219,31 +235,37 @@
 		\begin{enumerate}
 			\item UC 2.2.3 Modifica {tag}\ped{G} automatici;
 			\item UC 2.2.5 Modifica visibilità esercizio;
-			\item UC 2.2.8 Elimina soluzione alternativa;
+			\item UC 2.6.1 Elimina soluzione alternativa;
 			\item UC 2.2.6 Salvataggio modifiche.
 		\end{enumerate}
 	\item[•] \textbf{Estensioni}
 	\begin{enumerate}
-		\item UC 2.5.1 Annulla modifiche 
+		\item UC 2.6.2 Annulla modifiche 
 	\end{enumerate}
 \end{itemize}   
 
-\subsubsection{UC 2.5.1 Annulla modifiche}
+\subsubsection{UC 2.6.1 Eliminazione soluzione alternativa}
+\begin{itemize}
+	\item[•] \textbf{Attori}: Insegnante;
+	\item[•] \textbf{Descrizione}: L'insegnante elimina una delle soluzioni alternative inserite in precedenza;
+	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di eliminare una soluzione alternativa di un esercizio;
+	\item[•] \textbf{Postcondizione}: L'Insegnante ha eliminato una soluzione alternativa di un esercizio.
+\end{itemize}
+
+\subsubsection{UC 2.6.2 Annulla modifiche}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: L'insegnante annulla le modifiche inserite all'interno di un esercizio; 
-	\item[•] \textbf{Precondizione}: L'insegnante visualizza la lista di esercizi da lei inseriti e ne seleziona uno;
-	\item[•] \textbf{Postcondizione}: L'esercizio non è modificato;
+	\item[•] \textbf{Precondizione}: L'insegnante sta procedendo alla modifica dell'esercizio;
+	\item[•] \textbf{Postcondizione}: L'esercizio non è modificato.
 \end{itemize}
 
-%IL CODICE NON È CORRETTO, VA CAMBIATO DOPO 
-\subsubsection{UC 2.6 Elimina esercizio}
+
+ 
+\subsubsection{UC 2.7 Eliminazione esercizio}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: L'insegnante ha la possibilità di eliminare un esercizio da lei precedentemente inserito;
-	\item[•] \textbf{Precondizione}: L'insegnante visualizza tutti gli esercizi inseriti;
-	\item[•] \textbf{Flusso degli eventi}: L'esercizio è stato eliminato;
-		\begin{enumerate}
-			\item L'insegnante avvia la procedura di cancellazione;			
-		\end{enumerate}
+	\item[•] \textbf{Precondizione}: L'insegnante visualizza nel suo profilo personale lo storico delle frasi inserite;
+	\item[•] \textbf{Postcondizione}: L'insegnante ha eliminato l'esercizio precedentemente inserito.
 \end{itemize}
