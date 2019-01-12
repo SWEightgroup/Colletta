@@ -55,13 +55,19 @@
 
 \begin{enumerate}
 
-\item UC 5.1.1.1 - Filtra o ricerca utenti;
-\item UC 5.1.1.2 - Eliminazione utenza.
+\item UC 5.1.1.1 - Filtra utenti;
+\item UC 5.1.1.2 - Visualizza dettaglio utente.
 
 \end{enumerate}
+
+	\item[•] \textbf{Estensioni}:	
+\begin{enumerate}
+	\item UC 5.1.1.2.1 - Eliminazione utenza.
+\end{enumerate}
+
 \end{itemize}
 
-\subsubsection{UC 5.1.1.1 - Filtra o ricerca utenti}
+\subsubsection{UC 5.1.1.1 - Filtra utenti}
 \begin{itemize}
 
 \item[•] \textbf{Attore}: Amministratore;
@@ -70,18 +76,19 @@
 \item[•] \textbf{Postcondizione}: Il sistema visualizza gli utenti selezionati.
 
 \end{itemize}
-%%%%%%%% Dubbio su estensione, io metterei che l'amministratore può cancellare l'utente che ha trovato con la ricerca %%%%%%%%%%%%%%%%
 
-\subsubsection{UC 5.1.1.2 - Eliminazione utenza}
+\subsubsection{UC 5.1.1.2 - Visualizza dettaglio utente}
+\begin{itemize}
+	
+	\item[•] \textbf{Attore}: Amministratore;
+	\item[•] \textbf{Descrizione}: L'amministratore ha la possibilità di visualizzare in dettaglio un utente specifico
+	\item[•] \textbf{Precondizione}: Il sistema offre la possibilità di visualizzare i dati privati degli utenti;
+	\item[•] \textbf{Postcondizione}: Amministratore ha visualizzato informazioni personali utente.
+	
+\end{itemize}
 
-% Immagine tolta percè il caso d'uso ha solo operazioni atomiche 
 
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width=17cm, height=10cm]{img/UC55.png} 
-%\caption{Caso d'uso UC5.2}
-%\end{figure}
-
+\subsubsection{UC 5.1.1.2.1 - Eliminazione utenza}
 \begin{itemize}
 \item[•] \textbf{Attore}: Amministratore;
 \item[•] \textbf{Descrizione}: L'amministratore elimina un'utenza dal sistema;
@@ -111,91 +118,4 @@
 \end{enumerate}
 
 \end{itemize}
-%\subsubsection{UC5.2 - Visualizzazione elenco richieste}
-%
-%\begin{figure}[H]
-%\centering
-%\includegraphics[height=9cm, width=17cm]{img/UC52.png} 
-%\caption{Caso d'uso UC5.2}
-%\end{figure}
-%
-%
-%\begin{itemize}
-
-%\end{itemize}
-%\item[•] \textbf{Attore}: Amministratore;
-%
-%\item[•] \textbf{Descrizione}: L'amministratore visualizza l'elenco delle richieste provenienti da utenti che intendono registrarsi nel sistema come sviluppatori;
-%
-%\item[•] \textbf{Precondizione}: L'amministratore si è autenticato nel sistema e visualizza la propria dashboard;
-%
-%\item[•] \textbf{Postcondizione}: L'amministratore visualizza l'elenco delle richieste effettuate che devono ancora essere gestite;
-%
-%\item[•] \textbf{Flusso degli eventi}: L'amministratore accede alla pagina contenete l'elenco delle richieste che necessitano di un intervento da parte dell'amministratore.
-%\end{itemize}
-%
-%\subsubsection{UC5.3 - Approvazione registrazione}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width=17cm, height=9cm]{img/UC53.png} 
-%\caption{Caso d'uso UC5.3}
-%\end{figure}
-%
-%\begin{itemize}
-%\item[•] \textbf{Attore}: Amministratore;
-%
-%\item[•] \textbf{Descrizione}: L'amministratore approva la richiesta di registrazione da parte dello sviluppatore;
-%
-%\item[•] \textbf{Precondizione}: Lo sviluppatore ha effettuato richiesta di registrazione, l'amministratore visualizza le richieste di registrazione da parte degli sviluppatori che desiderano accedere ai dati della piattaforma;
-%
-%\item[•] \textbf{Postcondizione}: L'amministratore approva la richiesta di registrazione sviluppatore che quindi può registrarsi;
-%
-%\item[•] \textbf{Flusso degli eventi}:
-%
-%\begin{enumerate}
-%
-%\item UC 5.2 - Visualizzazione elenco richieste;
-%
-%\item Selezione richiesta sviluppatore;
-%
-%\item Approvazione richiesta sviluppatore.
-%
-%\end{enumerate}
-%
-%\end{itemize}
-%
-%
-%\subsubsection{UC5.4 - Rifiuto registrazione}
-%
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width=17cm, height=9cm]{img/UC54.png} 
-%\caption{Caso d'uso UC5.4}
-%\end{figure}
-%
-%
-%\begin{itemize}
-%\item[•] \textbf{Attore}: Amministratore;
-%
-%\item[•] \textbf{Descrizione}: L’amministratore rifiuta la richiesta di registrazione da parte dello sviluppatore;
-%
-%\item[•] \textbf{Precondizione}: Lo sviluppatore ha richiesto l'approvazione, l'amministratore visualizza la richiesta di registrazione da parte dello sviluppatore che desidera accedere ai dati della piattaforma;
-%
-%\item[•] \textbf{Postcondizione}: L'amministratore rifiuta la richiesta di registrazione dello sviluppatore;
-%
-%\item[•] \textbf{Flusso degli eventi}:
-%
-%\begin{enumerate}
-%
-%\item UC 5.2 - Visualizzazione elenco richieste;
-%
-%\item Selezione richiesta sviluppatore;
-%
-%\item Rifiuto utenza sviluppatore.
-%
-%\end{enumerate}
-%\end{itemize}
-
-
-% in seguito a discussione con Damien è stato tolto 10/01/2019
 

@@ -1,16 +1,11 @@
 \subsection{Sviluppatori}
-\subsubsection{Panoramica Sviluppatori}
+\subsubsection{Panoramica Sviluppatore}
 \begin{figure}[H]
 \centering
 \includegraphics[width=17cm, height = 14cm]{img/UC4x.png} 
 \caption{Panoramica casi d'uso che interessano lo Sviluppatore, per le versioni più specifiche dei vari casi si vedano sotto}\label{fig:4x}
 \end{figure}
 \subsubsection{UC 4.1 - Visualizzazione elenco frasi}
-\begin{figure}[H]
-\centering
-\includegraphics[width=17cm]{img/UC410.png} 
-\caption{Caso d'uso UC 4.1}\label{fig:410}
-\end{figure}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: Lo sviluppatore visualizza un elenco di frasi accompagnate dalla data di creazione e dall’autore ordinate cronologicamente;
@@ -44,6 +39,8 @@
 \item[•]\textbf{Estensioni}:
 \begin{enumerate}
 	\item UC 4.2.6 - Rimozione filtro;
+	\item UC 4.2.1.1 - Visualizzazione messaggio errore data errata;
+	\item UC 4.2.4.1 - Visualizzazione messaggio errore input errato;
 \end{enumerate}
 \item[•]\textbf{Inclusioni}:
 \begin{enumerate}
@@ -140,6 +137,22 @@
 \item[•]\textbf{Postcondizione}: Il filtro è stato rimosso pertanto i dati visualizzati non rispetteranno più tale vincolo.
 \item[•]\textbf{Flusso degli eventi}: Lo sviluppatore seleziona il filtro e lo rimuove.
  \end{itemize}
+
+\subsubsection{UC 4.2.1.1 - Visualizzazione messaggio errore data errata}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Sviluppatore;
+	\item[•]\textbf{Descrizione}: Lo sviluppatore visualizza un messaggio di errore sul periodo selezionato.
+	\item[•]\textbf{Precondizione}: Il sistema offre la possibilità di filtrare i dati scegliendo un dato periodo temporale.
+	\item[•]\textbf{Postcondizione}: Il filtro è stato erroneamente inserito pertanto viene visualizzato un messaggio di errore.
+\end{itemize}
+\subsubsection{UC 4.2.4.1 - Visualizzazione messaggio errore input errato}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Sviluppatore;
+	\item[•]\textbf{Descrizione}: Lo sviluppatore visualizza un messaggio di errore sulla ricerca.
+	\item[•]\textbf{Precondizione}: Il sistema offre la possibilità di cercare una specifica frase.
+	\item[•]\textbf{Postcondizione}: l'input della frase è stato erroneamente inserito pertanto viene visualizzato un messaggio di errore.
+\end{itemize}
+
   
 \subsubsection{UC 4.3 - Visualizzazione storico frase}
 \begin{itemize}
@@ -165,7 +178,7 @@
 \begin{enumerate}
 \item UC 4.4.1 - Scelta contenuti download;
 \item UC 4.4.2 - Scelta formato file;
-\item UC 4.4.3 - Scelta formato compressione;
+\item UC 4.4.3 - Scelta formato archivio;
 \item UC 4.4.4 - Ottenimento file.
 \end{enumerate}
 \end{itemize}
@@ -188,7 +201,7 @@
 \item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona dall'elenco prestabilito un'opzione che determina il formato dei file che contengono i dati precedentemente scelti.
 \end{itemize}
 
-\subsubsection{UC 4.4.3 - Scelta formato compressione}
+\subsubsection{UC 4.4.3 - Scelta formato archivio}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: Lo sviluppatore seleziona da un elenco prestabilito il formato dell'archivio compresso con cui vuole che i dati d'interesse siano compressi;
@@ -223,9 +236,10 @@
 	\item UC 4.5.2 - Inserimento nome modello;
 	\item UC 4.5.3 - Salvataggio modello.
 \end{enumerate}
-\item[•]\textbf{Flusso degli eventi alternativo}:  
+\item[•]\textbf{Estensioni}:  
 \begin{enumerate}
-	\item UC 4.5.6 - Interruzione inserimento modello.
+	\item UC 4.5.4 - Valore parametro non valido.
+	\item UC 4.5.5 - Visualizzazione messaggio errore nome duplicato.
 \end{enumerate}
 \end{itemize}
 
@@ -291,11 +305,6 @@ n modello avente lo stesso nome di uno già inserito;
 \end{itemize}
 
 \subsubsection{UC 4.6 - Visualizzazione elenco modelli}
-\begin{figure}[H]
-\centering
-\includegraphics[width=17cm, height=7cm]{img/UC460.png} 
-\caption{Caso d'uso UC 4.6}\label{fig:460}
-\end{figure}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: Lo sviluppatore visualizza l'elenco dei propri modelli realizzati;
@@ -306,11 +315,6 @@ n modello avente lo stesso nome di uno già inserito;
 
 
 \subsubsection{UC 4.7 - Visualizzazione contenuto modello} 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=17cm, height=7cm]{img/UC470.png} 
-	\caption{Caso d'uso UC 4.7}\label{fig:470}
-	\end{figure}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: Lo sviluppatore visualizza il contenuto del modello selezionato.
@@ -319,11 +323,6 @@ n modello avente lo stesso nome di uno già inserito;
 \end{itemize}
 
 \subsubsection{UC 4.8 - Scaricamento modello}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=17cm, height=7cm]{img/UC480.png} 
-	\caption{Caso d'uso UC 4.8}\label{fig:480}
-\end{figure}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: Lo sviluppatore ottiene un file contenente il modello precedentemente creato;
@@ -333,11 +332,6 @@ n modello avente lo stesso nome di uno già inserito;
 \end{itemize}
 
 \subsubsection{UC 4.9 - Eliminazione modello}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=17cm, height=7cm]{img/UC490.png} 
-	\caption{Caso d'uso UC 4.9}\label{fig:490}
-\end{figure}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Sviluppatore;
 	\item[•]\textbf{Descrizione}: Lo sviluppatore elimina il modello;
