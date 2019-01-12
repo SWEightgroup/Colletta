@@ -46,24 +46,24 @@
 \BOOKMARK [3][-]{subsubsection.3.2.19}{UC 2.6 Elimina esercizio}{subsection.3.2}% 46
 \BOOKMARK [2][-]{subsection.3.3}{Allievi}{section.3}% 47
 \BOOKMARK [3][-]{subsubsection.3.3.1}{Panoramica allievo}{subsection.3.3}% 48
-\BOOKMARK [3][-]{subsubsection.3.3.2}{UC 3.2 - Visualizzazione della dashboard}{subsection.3.3}% 49
-\BOOKMARK [3][-]{subsubsection.3.3.3}{UC 3.2.1 - Visualizzazione progressi}{subsection.3.3}% 50
-\BOOKMARK [3][-]{subsubsection.3.3.4}{UC 3.2.2 - Visualizzazione traguardi}{subsection.3.3}% 51
-\BOOKMARK [3][-]{subsubsection.3.3.5}{UC 3.2.3 - Visualizzazione valutazioni}{subsection.3.3}% 52
-\BOOKMARK [3][-]{subsubsection.3.3.6}{UC 3.2.4 - Inserimento insegnante preferito}{subsection.3.3}% 53
-\BOOKMARK [3][-]{subsubsection.3.3.7}{UC 3.2.5 - Visualizzazione insegnanti preferiti}{subsection.3.3}% 54
-\BOOKMARK [3][-]{subsubsection.3.3.8}{UC 3.2.5.1 - Rimozione insegnante preferito}{subsection.3.3}% 55
-\BOOKMARK [3][-]{subsubsection.3.3.9}{UC 3.2.6 - Selezione lingua esercizi}{subsection.3.3}% 56
-\BOOKMARK [3][-]{subsubsection.3.3.10}{UC 3.3 - Ricerca esercizio}{subsection.3.3}% 57
-\BOOKMARK [3][-]{subsubsection.3.3.11}{UC 3.3.1 - Selezione esercizio}{subsection.3.3}% 58
-\BOOKMARK [3][-]{subsubsection.3.3.12}{UC 3.3.2 - Inserimento frase libera}{subsection.3.3}% 59
-\BOOKMARK [3][-]{subsubsection.3.3.13}{UC 3.3.1.1 - Selezione filtro insegnante}{subsection.3.3}% 60
-\BOOKMARK [3][-]{subsubsection.3.3.14}{UC 3.3.2.1 - Visualizzazione errore inserimento frase}{subsection.3.3}% 61
-\BOOKMARK [3][-]{subsubsection.3.3.15}{UC 3.4 - Svolgimento esercizio}{subsection.3.3}% 62
-\BOOKMARK [3][-]{subsubsection.3.3.16}{UC 3.4.1 - Classificazione parola}{subsection.3.3}% 63
-\BOOKMARK [3][-]{subsubsection.3.3.17}{UC 3.4.2 - Interruzione svolgimento esercizio}{subsection.3.3}% 64
-\BOOKMARK [3][-]{subsubsection.3.3.18}{UC 3.4.3 - Visualizzazione soluzione}{subsection.3.3}% 65
-\BOOKMARK [3][-]{subsubsection.3.3.19}{UC 3.4.3.1 - Visualizzazione valutazione esercizio}{subsection.3.3}% 66
+\BOOKMARK [3][-]{subsubsection.3.3.2}{UC 3.1 - Visualizzazione della dashboard}{subsection.3.3}% 49
+\BOOKMARK [3][-]{subsubsection.3.3.3}{UC 3.2 - Visualizzazione progressi}{subsection.3.3}% 50
+\BOOKMARK [3][-]{subsubsection.3.3.4}{UC 3.3 - Visualizzazione traguardi}{subsection.3.3}% 51
+\BOOKMARK [3][-]{subsubsection.3.3.5}{UC 3.4 - Visualizzazione valutazioni}{subsection.3.3}% 52
+\BOOKMARK [3][-]{subsubsection.3.3.6}{UC 3.5 - Inserimento insegnante preferito}{subsection.3.3}% 53
+\BOOKMARK [3][-]{subsubsection.3.3.7}{UC 3.6 - Visualizzazione insegnanti preferiti}{subsection.3.3}% 54
+\BOOKMARK [3][-]{subsubsection.3.3.8}{UC 3.7 - Rimozione insegnante preferito}{subsection.3.3}% 55
+\BOOKMARK [3][-]{subsubsection.3.3.9}{UC 3.8 - Selezione lingua esercizi}{subsection.3.3}% 56
+\BOOKMARK [3][-]{subsubsection.3.3.10}{UC 3.9 - Visualizzazione elenco esercizi}{subsection.3.3}% 57
+\BOOKMARK [3][-]{subsubsection.3.3.11}{UC 3.10 - Selezione esercizio}{subsection.3.3}% 58
+\BOOKMARK [3][-]{subsubsection.3.3.12}{UC 3.11 - Svolgimento esercizio}{subsection.3.3}% 59
+\BOOKMARK [3][-]{subsubsection.3.3.13}{UC 3.11.1 - Interruzione svolgimento esercizio}{subsection.3.3}% 60
+\BOOKMARK [3][-]{subsubsection.3.3.14}{UC 3.11.2 - Selezione insegnante}{subsection.3.3}% 61
+\BOOKMARK [3][-]{subsubsection.3.3.15}{UC 3.11.3 - Classificazione parola}{subsection.3.3}% 62
+\BOOKMARK [3][-]{subsubsection.3.3.16}{UC 3.12 - Inserimento frase libera}{subsection.3.3}% 63
+\BOOKMARK [3][-]{subsubsection.3.3.17}{UC 3.12.1 - Visualizzazione errore inserimento frase}{subsection.3.3}% 64
+\BOOKMARK [3][-]{subsubsection.3.3.18}{UC 3.13 - Visualizzazione soluzione}{subsection.3.3}% 65
+\BOOKMARK [3][-]{subsubsection.3.3.19}{UC 3.13.1 - Visualizzazione valutazione esercizio}{subsection.3.3}% 66
 \BOOKMARK [2][-]{subsection.3.4}{Sviluppatori}{section.3}% 67
 \BOOKMARK [3][-]{subsubsection.3.4.1}{Panoramica Sviluppatore}{subsection.3.4}% 68
 \BOOKMARK [3][-]{subsubsection.3.4.2}{UC 4.1 - Visualizzazione elenco frasi}{subsection.3.4}% 69
