@@ -25,3 +25,54 @@ RR - SWEight/studio_fattibilita/StudioDiFattibilità.log
 *.log
 *.synctex(busy)
 sviluppatore_2.tex
+
+
+RR - SWEight/studio_fattibilita/StudioDiFattibilità.pdf
+*.dvi
+RR - SWEight/Glossario.toc
+RR - SWEight/Glossario.synctex.gz
+RR - SWEight/Glossario.out
+RR - SWEight/Glossario.log
+RR - SWEight/Glossario.aux
+
+RR - SWEight/Analisi_dei_requisiti/AnalisiDeiRequisiti\.aux
+
+RR - SWEight/Analisi_dei_requisiti/AnalisiDeiRequisiti\.log
+
+RR - SWEight/Analisi_dei_requisiti/AnalisiDeiRequisiti\.out
+
+RR - SWEight/Analisi_dei_requisiti/AnalisiDeiRequisiti\.synctex\.gz
+
+RR - SWEight/Analisi_dei_requisiti/AnalisiDeiRequisiti\.toc
+
+RR - SWEight/Analisi_dei_requisiti/sez/allievi\.aux
+
+RR - SWEight/Analisi_dei_requisiti/sez/sviluppatori\.aux
+
+RR - SWEight/Analisi_dei_requisiti/sez/sviluppatori\.log
+
+RR - SWEight/Analisi_dei_requisiti/sez/sviluppatori_2\.aux
+
+RR - SWEight/Analisi_dei_requisiti/texput\.log
+
+RR - SWEight/Norme-di-Progetto/norme-di-progetto\.aux
+
+RR - SWEight/Norme-di-Progetto/norme-di-progetto\.synctex\.gz
+RR - SWEight/Analisi_dei_requisiti/AnalisiDeiRequisiti.lof
+RR - SWEight/Norme-di-Progetto/norme-di-progetto.log
+RR - SWEight/Norme-di-Progetto/norme-di-progetto.out
+RR - SWEight/Norme-di-Progetto/norme-di-progetto.synctex.gz
+RR - SWEight/Norme-di-Progetto/norme-di-progetto.toc
+RR - SWEight/Norme-di-Progetto/sez/Processi_di_supporto.log
+*.log
+*.log
+*.out
+*.gz
+*.toc
+*.log
+*.log
+RR - SWEight/Norme-di-Progetto/norme-di-progetto.log
+*.out
+*.gz
+*.log
+*.toc
