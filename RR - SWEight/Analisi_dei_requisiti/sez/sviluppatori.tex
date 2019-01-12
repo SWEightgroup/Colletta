@@ -2,7 +2,7 @@
 \subsubsection{Panoramica Sviluppatore}
 \begin{figure}[H]
 \centering
-\includegraphics[width=17cm, height = 14cm]{img/UC4x.png} 
+\includegraphics[width=17cm, height = 19cm]{img/UC4x.png} 
 \caption{Panoramica casi d'uso che interessano lo Sviluppatore, per le versioni più specifiche dei vari casi si vedano sotto}\label{fig:4x}
 \end{figure}
 \subsubsection{UC 4.1 - Visualizzazione elenco frasi}
@@ -60,7 +60,7 @@
 \end{enumerate}
 \item[•]\textbf{Estensioni}: 
 \begin{enumerate}
-	\item Visualizzazione messaggio di errore nel caso si scegliesse una data non idonea;
+	\item UC 4.2.1.1 - Visualizzazione messaggio errore data errata;
 	\item UC 4.2.6 - Rimozione filtro;
 \end{enumerate}
 \item[•]\textbf{Inclusioni}:
@@ -112,7 +112,7 @@
 \item[•]\textbf{Flusso degli eventi}: Lo sviluppatore seleziona da un elenco le lingue di cui è interessato vedere le proposizioni memorizzate;
 \item[•]\textbf{Estensioni}: 
 \begin{enumerate}
-	\item Visualizzazione messaggio di errore nel caso venga inserito un input non consentito;
+	\item UC 4.2.4.1 - Visualizzazione messaggio di errore input errato;
 	\item UC 4.2.6 - Rimozione filtro;
 \end{enumerate}
 \item[•]\textbf{Inclusioni}:
@@ -142,15 +142,15 @@
 \begin{itemize}
 	\item[•]\textbf{Attori}: Sviluppatore;
 	\item[•]\textbf{Descrizione}: Lo sviluppatore visualizza un messaggio di errore sul periodo selezionato.
-	\item[•]\textbf{Precondizione}: Il sistema offre la possibilità di filtrare i dati scegliendo un dato periodo temporale.
+	\item[•]\textbf{Precondizione}: Lo sviluppatore ha inserito una data non conforme all'interno del filtro relativo al periodo temporale.
 	\item[•]\textbf{Postcondizione}: Il filtro è stato erroneamente inserito pertanto viene visualizzato un messaggio di errore.
 \end{itemize}
 \subsubsection{UC 4.2.4.1 - Visualizzazione messaggio errore input errato}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Sviluppatore;
 	\item[•]\textbf{Descrizione}: Lo sviluppatore visualizza un messaggio di errore sulla ricerca.
-	\item[•]\textbf{Precondizione}: Il sistema offre la possibilità di cercare una specifica frase.
-	\item[•]\textbf{Postcondizione}: l'input della frase è stato erroneamente inserito pertanto viene visualizzato un messaggio di errore.
+	\item[•]\textbf{Precondizione}: Lo sviluppatore ha inserito una frase non conforme.
+	\item[•]\textbf{Postcondizione}: Lo sviluppatore visualizza un messaggio di errore relativo all'inserimento di un input errato, cioè non conforme a ciò che il sistema si attendeva.
 \end{itemize}
 
   
