@@ -18,9 +18,44 @@ I documenti formali che verranno presentati saranno suddivisi in due categorie:
 		\item \textbf{Analisi dei requisiti}: documento che contiene l’analisi dei casi d’uso del prodotto e i diagrammi di interazioni previste con l’utente.
 	\end{list}
 \end{itemize}
-\subsubsection{Classificazione dei documenti}
-\begin{Huge} Francesco Corti @ 3.1.6
-\end{Huge}
+\subsubsection{Classificazione dei documenti} \label{documenti}
+
+
+\paragraph{Documenti informali}\mbox{}\\
+Tutti i documenti non ancora approvati dal responsabile di progetto sono da ritenersi informali quindi ad uso esclusivamente interno.
+
+\paragraph{Documenti formali}\mbox{}\\
+Un documento diventa formale in seguito all'approvazione da parte del Responsabile di progetto. Solo i documenti formali posso essere divulgati all'esterno del gruppo. Prima di poter essere approvato un documento deve essere verificato. 
+
+\paragraph{Verbali}\mbox{}\\ 
+\label{sec:verbali}
+
+Per ogni incontro deve essere nominato un segretario che si occuperà della stesura di un verbale. Il verbale deve contenere i seguenti punti: 
+\begin{itemize}
+\item \textbf{Estremi della riunione}: 
+	\begin{list}{$\circ$}{}
+		\item Motivazione;
+		\item Luogo;		
+		\item Data;
+		\item Partecipanti del gruppo;
+		\item Ora; 
+		\item Segretario.
+	\end{list}
+\item \textbf{Ordine del giorno}: lista degli argomenti che saranno oggetto di discussione; 
+\item \textbf{Resoconto}: verbale effettivo degli argomenti discussi; 	
+\end{itemize}
+Una volta approvato dal Responsabile di progetto il verbale deve essere distribuito a tutti i componenti del gruppo. In caso di verbale esterno il verbale dovrà essere inviato anche al proponente. 
+I nomi dei file dei verbali devono rispettare il seguente formato:
+\begin{center}
+Verbale-[numeroVerbale]-[T]-[Data].pdf
+\end{center}
+dove: 
+\begin{itemize}
+\item \textbf{numeroVerbale}: è l'identificativo numerico del verbale;
+\item \textbf{T}: è la tipologia del verbale che si divide in interna ed esterna;
+\item \textbf{Data}: è la data in cui è stato svolto il verbale nel formato descritto nel paragrafo \hyperref[sec:Formati]{§4.1.6.1}.
+\end{itemize}
+
 \subsubsection{Template}
 Per semplificare e standardizzare la stesura dei documenti previsti è stato creato un template \LaTeX{} contenente tutte le impostazioni per la struttura grafica e lo stile di formattazione. Ogni membro del team deve obbligatoriamente utilizzare questo {template}\ped{G}.
 Il template è disponibile all'interno dell'omonima cartella ed è denominato "SWEightStyle.sty", dev'essere importato all'interno del documento \LaTeX{} tramite la direttiva di inclusione di un pacchetto.
@@ -65,8 +100,7 @@ Ogni documento deve essere realizzato a partire dal template descritto precedent
 \item[•] \textbf{Contenuto del documento}.
 \end{itemize}
 
-% Andrebbe messo un altro sub 
-% https://tex.stackexchange.com/questions/60209/how-to-add-an-extra-level-of-sections-with-headings-below-subsubsection
+
 
 \paragraph{Formattazione delle pagine}\mbox{}\\
 Ogni pagina, escluso il frontespizio ed indice, devono contenere:
@@ -114,9 +148,7 @@ Ogni pagina, escluso il frontespizio ed indice, devono contenere:
 \item[•] \textbf{Citazioni}: ogni citazione deve essere accompagnata dal riferimento bibliografico.
 \end{itemize}
 
-%va messo un altro sub 
-
-\paragraph{Formati}\mbox{}\\
+\paragraph{Formati}\mbox{}\\ \label{sec:Formati}
 \begin{itemize}
 \item \textbf{Date}: Ogni data deve rispettare lo standard internazionale ISO 8601:2004, che prevede la seguente convenzione:
 \begin{center}
@@ -140,12 +172,10 @@ dove:
 \end{itemize}
 
 \subsubsection{Componenti grafiche}
-%va messo un altro sub 
 
 \paragraph{Tabelle}\mbox{}\\
 Tutte le tabelle devono avere un indice univoco che la identifichi all’interno del documento ed una breve descrizione posizionata sotto di essa. Le intestazioni delle tabelle devono essere in grassetto.
 
-%va messo un altro sub 
 \paragraph{Immagini}\mbox{}\\
 Tutte le immagini inserite nei vari documenti devono avere un eguale e sufficiente margine orizzontale e verticale in modo da non ridurre la leggibilità del testo. Ogni immagine deve anch'essa avere un indice univoco che la contraddistingua nell'intero documento.
 In particolare le immagini dovranno rispettare le seguenti proprietà, salvo indicato diversamente:
@@ -156,7 +186,6 @@ In particolare le immagini dovranno rispettare le seguenti proprietà, salvo ind
 \item[•] \textbf{Posizionamento}: preferibilmente deve essere centrata orizzontalmente.
 \end{itemize}
 
-%va messo un altro sub 
 \paragraph{Diagrammi UML}\mbox{}\\
 Il software che deve essere utilizzato per la creazione dei diagrammi UML è Astah versione 8.0.0, gli analisti devono utilizzare la documentazione del software per il suo studio e utilizzo.
 Ogni diagramma di caso d’uso è identificato in alto a sinistra dal suo codice identificativo e dal nome.
@@ -176,7 +205,7 @@ Inoltre, anche il file con estensione asta deve essere salvato nella cartella pr
 Per la realizzazione dell'analisi dei requisiti la cartella destinata al salvataggio dei digrammi modificabili è: "Casi d'uso", reperibile all'interno del {branch}\ped{G} Analisi dei Requisiti. Il nome del diagramma deve essere il medesimo dell'immagine esportata.
 
 \subsubsection{Strumenti di supporto}
-%va messo un altro sub 
+
 \paragraph{Stesura dei documenti}\mbox{}\\
 L'intera documentazione deve essere prodotta utilizzando il {linguaggio di markup}\ped{G} \LaTeX{}, scelto dal team per i seguenti motivi:
 \begin{itemize}
@@ -193,8 +222,6 @@ Per la stesura del documento è consigliato l'utilizzo di Textmaker, le principa
 \end{itemize}  
 Il software è reperibile all'indirizzo \url{http://www.xm1math.net/texmaker/}, è cross platform ed è gratuito.
 
-
-%va messo un altro sub 
 \paragraph{Controllo ortografico}\mbox{}\\
 Al termine della stesura dei documenti, prima di alla fase di verifica del documento, l’owner deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice Gulpeas.
 
@@ -249,14 +276,13 @@ La corretta implementazione del processo deve:
 
 \subsubsection{Analisi}
 
-%va aggiunto un sub 
+
 \paragraph{Analisi statica}\mbox{}\\
 \begin{itemize}
 \item[•] \textbf{Walkthrough}: lettura completa del codice sorgente da analizzare. Va utilizzata unicamente durante le prime fasi del progetto in quanto risulta onerosa e non efficiente, questa tecnica di analisi prevede una lettura critica del codice o del documento prodotto. Gli Analisti che la utilizzano devono stilare una lista di controllo con gli errori rilevati più frequentemente;
 \item[•] \textbf{Inspection}: lettura mirata del codice sorgente da analizzare. Questa tecnica di analisi presuppone l’esperienza da parte del verificatore nell’individuare gli errori e le anomalie più frequenti in modo tale da creare una lista di controllo per poter localizzare eventuali punti critici in cui cercare errori. Dopo ogni analisi la lista di controllo deve essere incrementata con eventuali nuovi errori rilevati.
 \end{itemize}
 
-%va aggiunto un sub 
 \paragraph{Analisi dinamica}\mbox{}\\
 Si applica solo alle componenti software e consiste nella verifica e validazione attraverso i test. Per garantire la correttezza è necessario che i test siano ripetibili, dato lo stesso input il test deve produrre sempre lo stesso output.  
 
@@ -272,7 +298,6 @@ Per ogni test deve quindi essere definito:
 
 \subsubsection{Test}
 
-%va aggiunto un sub 
 \paragraph{Test di unità}\mbox{}\\
 Il test di unità verifica che ogni singola unità funzioni correttamente, le unità sono specificate nella progettazione di dettaglio.  
 
@@ -282,7 +307,6 @@ In particolare, si verifica che i requisiti per quella determinata unità siano 
 \item[•] \textbf{Test funzionale (black-box)}: fa riferimento alla specifica dell'unità utilizza dati di ingresso capaci di provocare l'esito atteso. Ciascun insieme di dati di ingresso che produca un dato comportamento funzionale costituisce un singolo caso di prova.
 \end{itemize}
 
-%va aggiunto un sub 
 \paragraph{Test di Integrazione}\mbox{}\\
 Si applica alle componenti specificate nella progettazione architetturale, rappresenta l’estensione logica del test di unità. Consiste nella combinazione di due unità già sottoposte a test in un solo componente e nel test dell’interfaccia presente tra le due. Il test di integrazione consente di individuare i problemi che si verificano quando due unità si combinano. Per effettuare tali test si farà uso di classi appositamente create per simulare e verificare l’interazione.
 Strategie di integrazione:
@@ -302,17 +326,15 @@ Strategie di integrazione:
 \item[•] \textbf{Assemblare in modo che ogni passo di integrazione sia reversibile}.
 \end{itemize}
 
-%va aggiunto un sub 
 \paragraph{Test di sistema}\mbox{}\\
 Il test di sistema consiste nella validazione del sistema ed è un test di tipo funzionale. Viene eseguito quando si ritiene che il prodotto sia giunto ad una versione definitiva, verificando la completa copertura dei requisiti software. 
 
-%va aggiunto un sub 
 \paragraph{Test di regressione}\mbox{}\\
 Il test di regressione va eseguito ogni volta che viene modificata un'implementazione in un programma. È possibile eseguire nuovamente i test esistenti sul codice modificato, integrando solo le parti che abbiano precedentemente superato il test di unità, per stabilire se le modifiche apportate hanno alterato elementi precedentemente funzionanti. Se necessario è anche possibile scrivere nuovi test. 
 \newline
 I contenuti del test di regressione vanno decisi nel momento in cui si approvano modifiche al SW
 
-%va aggiunto un sub 
+
 \paragraph{Test di accettazione (collaudo)}\mbox{}\\
 Il test di accettazione consiste nel collaudo del sistema eseguito dal committente. Se l'esito è positivo si può procedere al rilascio ufficiale del prodotto.
 
