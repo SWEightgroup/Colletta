@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.27)  12 JAN 2019 19:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.27)  12 JAN 2019 21:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1627,7 +1627,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
 Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 14
-4.
+5.
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
 
@@ -1640,7 +1640,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
 Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 15
-4.
+2.
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
 
@@ -1653,7 +1653,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
 Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 15
-8.
+6.
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
 
@@ -1666,7 +1666,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
 Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 18
-9.
+2.
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
 
@@ -1679,7 +1679,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
 Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 19
-4.
+2.
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
 
@@ -1691,8 +1691,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [17]
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 20
-8.
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 21
+1.
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
 
@@ -1705,7 +1705,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
 Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 23
-0.
+7.
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
 
@@ -1717,8 +1717,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [19]
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 24
-3.
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 25
+0.
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
 
@@ -1731,8 +1731,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 AED: lastpage setting LastPage
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 25
-4.
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 26
+1.
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1741,17 +1741,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [21]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 254.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 254.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
  (./Glossario.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 254.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 254.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 261.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 261.
 Package rerunfilecheck Info: File `Glossario.out' has not changed.
 (rerunfilecheck)             Checksum: BC5C457E8DA5D871F5996B17D328743E;704.
  ) 
 Here is how much of TeX's memory you used:
- 24597 strings out of 492982
- 448773 string characters out of 6134895
+ 24599 strings out of 492982
+ 448785 string characters out of 6134895
  601223 words of memory out of 5000000
  27623 multiletter control sequences out of 15000+600000
  44913 words of font info for 40 fonts, out of 8000000 for 9000
@@ -1763,10 +1763,10 @@ hare/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/te
 xmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
 sy10.pfb>
-Output written on Glossario.pdf (22 pages, 181689 bytes).
+Output written on Glossario.pdf (22 pages, 182418 bytes).
 PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
- 228 compressed objects within 3 object streams
- 43 named destinations out of 1000 (max. 500000)
+ 265 PDF objects out of 1000 (max. 8388607)
+ 230 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 500000)
  170 words of extra memory for PDF output out of 10000 (max. 10000000)
 
