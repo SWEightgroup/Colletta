@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.28)  13 JAN 2019 19:51
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.1.7)  13 JAN 2019 19:33
->>>>>>> 5e98b6279ba6e146b9a4f77d7a6d52923f9688c9
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.28)  13 JAN 2019 19:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1482,13 +1478,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-<<<<<<< HEAD
-l.56 ...gnante preferito}{23}{subsubsection.3.3.6}
+l.56 ...ione valutazioni}{21}{subsubsection.3.3.5}
                                                    [1]
-=======
-l.56 ...ione valutazioni}{23}{subsubsection.3.3.5}
-                                                  % [1]
->>>>>>> 5e98b6279ba6e146b9a4f77d7a6d52923f9688c9
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
 Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 11
@@ -1673,7 +1664,7 @@ Overfull \hbox (11.38089pt too wide) in paragraph at lines 62--63
 
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 77
+Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 74
 .
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
@@ -1685,13 +1676,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [12 <./img/UC12.png>]
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
-<<<<<<< HEAD
 Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 13
-5.
-=======
-Package pdftex.def Info: ../template/img/logoSWEight.png  used on input line 14
-1.
->>>>>>> 5e98b6279ba6e146b9a4f77d7a6d52923f9688c9
+3.
 (pdftex.def)             Requested size: 27.75117pt x 19.27165pt.
 
 
@@ -1833,11 +1819,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [21] (./sez/allievi.tex
-<<<<<<< HEAD
-<img/PanoramicaAllievi.png, id=798, 1097.60063pt x 1133.73563pt>
-=======
-<img/PanoramicaAllievi.png, id=804, 1097.60063pt x 1127.71312pt>
->>>>>>> 5e98b6279ba6e146b9a4f77d7a6d52923f9688c9
+<img/PanoramicaAllievi.png, id=804, 1097.60063pt x 1133.73563pt>
 File: img/PanoramicaAllievi.png Graphic file (type png)
 <use img/PanoramicaAllievi.png>
 Package pdftex.def Info: img/PanoramicaAllievi.png  used on input line 6.
@@ -1894,11 +1876,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [24 <./img/UC310.png>]
-<<<<<<< HEAD
-<img/UC311.png, id=818, 775.39688pt x 434.37282pt>
-=======
-<img/UC311.png, id=826, 775.39688pt x 434.37282pt>
->>>>>>> 5e98b6279ba6e146b9a4f77d7a6d52923f9688c9
+<img/UC311.png, id=824, 775.39688pt x 434.37282pt>
 File: img/UC311.png Graphic file (type png)
 <use img/UC311.png>
 Package pdftex.def Info: img/UC311.png  used on input line 124.
@@ -1919,7 +1897,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-<<<<<<< HEAD
 [25]
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
@@ -1934,11 +1911,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [26 <./img/UC311.png>]
-<img/UC312.png, id=838, 609.02531pt x 356.0803pt>
-=======
-[25 <./img/UC311.png>]
-<img/UC312.png, id=834, 609.02531pt x 356.0803pt>
->>>>>>> 5e98b6279ba6e146b9a4f77d7a6d52923f9688c9
+<img/UC312.png, id=844, 609.02531pt x 356.0803pt>
 File: img/UC312.png Graphic file (type png)
 <use img/UC312.png>
 Package pdftex.def Info: img/UC312.png  used on input line 173.
@@ -1972,13 +1945,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-<<<<<<< HEAD
 [28] (./sez/sviluppatori.tex
-<img/UC4x.png, id=852, 651.18282pt x 982.42032pt>
-=======
-[27 <./img/UC312.png>] (./sez/sviluppatori.tex
-<img/UC4x.png, id=853, 651.18282pt x 982.42032pt>
->>>>>>> 5e98b6279ba6e146b9a4f77d7a6d52923f9688c9
+<img/UC4x.png, id=858, 651.18282pt x 982.42032pt>
 File: img/UC4x.png Graphic file (type png)
 <use img/UC4x.png>
 Package pdftex.def Info: img/UC4x.png  used on input line 5.
@@ -1999,13 +1967,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-<<<<<<< HEAD
 [29 <./img/UC4x.png>]
-<img/UC420.png, id=859, 874.01532pt x 691.08188pt>
-=======
-[28 <./img/UC4x.png>]
-<img/UC420.png, id=860, 874.01532pt x 691.08188pt>
->>>>>>> 5e98b6279ba6e146b9a4f77d7a6d52923f9688c9
+<img/UC420.png, id=865, 874.01532pt x 691.08188pt>
 File: img/UC420.png Graphic file (type png)
 <use img/UC420.png>
 Package pdftex.def Info: img/UC420.png  used on input line 19.
@@ -2015,11 +1978,7 @@ Overfull \hbox (11.38132pt too wide) in paragraph at lines 19--20
  [][] 
  []
 
-<<<<<<< HEAD
-<img/UC426.png, id=860, 826.58812pt x 573.64313pt>
-=======
-<img/UC426.png, id=861, 826.58812pt x 573.64313pt>
->>>>>>> 5e98b6279ba6e146b9a4f77d7a6d52923f9688c9
+<img/UC426.png, id=866, 826.58812pt x 573.64313pt>
 File: img/UC426.png Graphic file (type png)
 <use img/UC426.png>
 Package pdftex.def Info: img/UC426.png  used on input line 24.
@@ -2079,13 +2038,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-<<<<<<< HEAD
 [33]
-<img/UC440.png, id=904, 602.25pt x 494.59781pt>
-=======
-[32]
-<img/UC440.png, id=905, 602.25pt x 494.59781pt>
->>>>>>> 5e98b6279ba6e146b9a4f77d7a6d52923f9688c9
+<img/UC440.png, id=910, 602.25pt x 494.59781pt>
 File: img/UC440.png Graphic file (type png)
 <use img/UC440.png>
 Package pdftex.def Info: img/UC440.png  used on input line 169.
@@ -2106,7 +2060,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-<<<<<<< HEAD
 [34 <./img/UC440.png>]
 File: ../template/img/logoSWEight.png Graphic file (type png)
 <use ../template/img/logoSWEight.png>
@@ -2121,11 +2074,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [35]
-<img/UC450.png, id=920, 765.6103pt x 472.76625pt>
-=======
-[33 <./img/UC440.png>]
-<img/UC450.png, id=914, 765.6103pt x 472.76625pt>
->>>>>>> 5e98b6279ba6e146b9a4f77d7a6d52923f9688c9
+<img/UC450.png, id=926, 765.6103pt x 472.76625pt>
 File: img/UC450.png Graphic file (type png)
 <use img/UC450.png>
 Package pdftex.def Info: img/UC450.png  used on input line 225.
@@ -2185,13 +2134,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-<<<<<<< HEAD
 [39] (./sez/amministratore.tex
-<img/PanoramicaAmministratore.png, id=953, 560.8453pt x 816.04875pt>
-=======
-[37] (./sez/amministratore.tex
-<img/PanoramicaAmministratore.png, id=949, 560.8453pt x 816.04875pt>
->>>>>>> 5e98b6279ba6e146b9a4f77d7a6d52923f9688c9
+<img/PanoramicaAmministratore.png, id=959, 560.8453pt x 816.04875pt>
 File: img/PanoramicaAmministratore.png Graphic file (type png)
 <use img/PanoramicaAmministratore.png>
 Package pdftex.def Info: img/PanoramicaAmministratore.png  used on input line 6
@@ -2372,11 +2316,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 25143 strings out of 492982
- 458267 string characters out of 6134895
+ 25146 strings out of 492982
+ 458316 string characters out of 6134895
  662222 words of memory out of 5000000
- 27899 multiletter control sequences out of 15000+600000
+ 27900 multiletter control sequences out of 15000+600000
  48224 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,18n,124p,806b,663s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2387,33 +2330,10 @@ c/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/te
 xmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmri
 10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fon
 ts/type1/public/lm/lmtt10.pfb>
-Output written on AnalisiDeiRequisiti.pdf (49 pages, 1422906 bytes).
+Output written on AnalisiDeiRequisiti.pdf (49 pages, 1421564 bytes).
 PDF statistics:
- 1090 PDF objects out of 1200 (max. 8388607)
- 985 compressed objects within 10 object streams
- 258 named destinations out of 1000 (max. 500000)
- 1015 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
- 25097 strings out of 492616
- 460057 string characters out of 6132769
- 844527 words of memory out of 5000000
- 28189 multiletter control sequences out of 15000+600000
- 48224 words of font info for 42 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 66i,18n,124p,806b,663s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2018/tex
-mf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}<c:/texlive/2018/texmf-dist/fonts/type
-1/public/lm/lmbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12
-.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/20
-18/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2018/texmf-dist/fonts
-/type1/public/lm/lmr7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr
-i10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texliv
-e/2018/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on AnalisiDeiRequisiti.pdf (47 pages, 1424722 bytes).
-PDF statistics:
- 1085 PDF objects out of 1200 (max. 8388607)
- 982 compressed objects within 10 object streams
- 258 named destinations out of 1000 (max. 500000)
+ 1097 PDF objects out of 1200 (max. 8388607)
+ 992 compressed objects within 10 object streams
+ 260 named destinations out of 1000 (max. 500000)
  1023 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> 5e98b6279ba6e146b9a4f77d7a6d52923f9688c9
 
