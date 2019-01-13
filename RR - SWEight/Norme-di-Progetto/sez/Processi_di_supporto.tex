@@ -145,11 +145,16 @@ Ogni pagina, escluso il frontespizio ed indice, devono contenere:
 \item[•] \textbf{Codice}: i frammenti di codice devono essere racchiusi in un riquadro di colore nero;
 \item[•] \textbf{Glossario}: per contrassegnare che una parola che è presente nel glossario è necessario aggiungere una G maiuscola al pedice della parola (ad esempio: {termine}\ped{G});
 \item[•] \textbf{Elenchi puntati}:
-\begin{list}{$\circ$}{}
+\begin{itemize}
 	\item Ogni elemento dell'elenco deve terminare con il punto e virgola, ad eccezione dell'ultimo elemento che deve terminare con il punto;
 	\item Gli elementi di primo livello devono avere come stile un pallino pieno nero, quelli di secondo livello un pallino nero vuoto, ad eccezione degli elenchi numerati che devono essere usati solo se è necessario descrivere una sequenza;
-	\item Gli elementi di livello successivo al secondo devono alternare lo stile del primo e del secondo livello.
-\end{list}
+	\begin{itemize}
+	\item[•] \textbf{Elenco puntato non ordinato}:
+	Gli elementi di primo livello devono avere come stile un pallino pieno nero, quelli di secondo livello un pallino nero vuoto. Elementi di livello successivo al secondo devono alternare lo stile del primo e del secondo livello.
+	\item[•] \textbf{Elenco puntato ordinato}:
+	Gli elementi di primo livello devono avere come stile un numero progressivo, mentre quelli di secondo livello una lettera racchiusa all'interno di parentesi graffe. 
+	\end{itemize}
+\end{itemize}
 \item[•] \textbf{Citazioni}: ogni citazione deve essere accompagnata dal riferimento bibliografico.
 \end{itemize}
 
@@ -161,9 +166,9 @@ AAAA-MM-GG
 \end{center}
 dove: 
 \begin{itemize}
-\item[$\circ$] AAAA: rappresenta il formato dell'anno scritto con quattro cifre;
-\item[$\circ$] MM: rappresenta il formato del mese scritto con due cifre;
-\item[$\circ$] GG: rappresenta il formato del giorno scritto con due cifre.
+\item[$\circ$] \textbf{AAAA}: rappresenta il formato dell'anno scritto con quattro cifre;
+\item[$\circ$] \textbf{MM}: rappresenta il formato del mese scritto con due cifre;
+\item[$\circ$] \textbf{GG}: rappresenta il formato del giorno scritto con due cifre.
 \end{itemize}
 \item \textbf{Orari}: Se presenti, gli orari fanno riferimento anch'essi allo standard internazionale ISO 8601:2004:
 \begin{center}
@@ -171,8 +176,8 @@ HH:MM
 \end{center}
 dove:
 \begin{itemize}
-\item[$\circ$] HH: rappresenta l'ora espressa con due cifre il cui valore è compreso tra 00 e 23;
-\item[$\circ$] MM: rappresenta i minuti espressi con due cifre il cui valore è compresi tra 00 e 59.
+\item[$\circ$] \textbf{HH}: rappresenta l'ora espressa con due cifre il cui valore è compreso tra 00 e 23;
+\item[$\circ$] \textbf{MM}: rappresenta i minuti espressi con due cifre il cui valore è compresi tra 00 e 59.
 \end{itemize}
 \end{itemize}
 
@@ -237,7 +242,7 @@ I nomi dei documenti devono:
 \end{itemize}
 Esempio:
 \begin{center}
-\text{$NomeDocumento_v1.0.0.pdf$}
+\text{NomeDocumento\_ v1.0.0}
 \end{center}
 Ovviamente, i documenti devono essere esportati in formato PDF.
 \paragraph{Controllo ortografico}\mbox{}\\
@@ -368,7 +373,7 @@ Per essere certi che il documento sia conforme alle norme di progetto e agli alt
 I redattori dei documenti non possono anche esserne i verificatori. Pertanto è necessario che nessuno dei componenti del gruppo sia messo in condizione di verificare la parte da lui redatta, e quindi affinché ciò non avvenga il gruppo si adopererà attuando una rotazione periodica dei ruoli, o in caso questa non sia possibile, semplicemente assicurarsi che nessun membro verifichi le sezioni dei documenti assegnatoli.
 \subparagraph{Verifica dell'Analisi dei Requisiti}\mbox{}\\
 L'attività di verifica per l'Analisi dei Requisiti sarà realizzata dai redattori della stessa in modo tale che nessuno dei componenti verifichi la parte da lui curata.
-Ad esempio, se un componente ha realizzato la sezione "A" del documento, egli verificherà la sezione "C" stilata da un altro componente, che a sua volta verificherà la sezione di un altro componente. La scelta di questa soluzione è stata protratta poiché i componenti del gruppo, che hanno realizzato il documento, hanno sviluppato una discreta conoscenza nella modellazione UML, e pertanto possono fornire una verifica più accurata. Inoltre è stato tenuto conto delle disponibilità fornite dai singoli componenti. 
+Ad esempio, se un componente ha realizzato la sezione "A" del documento, egli verificherà la sezione "C" stilata da un altro componente, che a sua volta verificherà la sezione di un altro componente. La scelta di questa soluzione è stata protratta poiché i componenti del gruppo, che hanno realizzato il documento, hanno sviluppato una discreta conoscenza nella modellazione UML, e pertanto possono fornire una verifica più accurata.
 
 \subsubsection{Verifica dei diagrammi}
 I diagrammi devono essere verificati manualmente dal Verificatore che deve controllare che aderiscano correttamente allo standard 2.0 (vedi Riferimenti Normativi). In particolare deve controllare che i diagrammi di flusso siano rappresentati in maniera corretta e che i diagrammi utilizzino correttamente le inclusioni e le estensioni, come ad esempio controllando che queste ultime siano accompagnate dalla condizione.
