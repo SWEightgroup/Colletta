@@ -362,8 +362,12 @@ INPUT c:/texlive/2018/texmf-dist/tex/latex/lm/omslmr.fd
 INPUT c:/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
 INPUT c:/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
+INPUT ../template/img/logoSWEight.png
+INPUT ../template/img/logoSWEight.png
 INPUT sez/C1.tex
 INPUT sez/C1.tex
+INPUT ../template/img/logoSWEight.png
+INPUT ../template/img/logoSWEight.png
 INPUT ../template/img/logoSWEight.png
 INPUT ../template/img/logoSWEight.png
 INPUT sez/C2.tex
