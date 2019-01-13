@@ -90,8 +90,8 @@ Ogni documento deve essere realizzato a partire dal template descritto precedent
 		\item \textbf{E-mail}: indirizzo di posta elettronica in comune per le comunicazioni interne ed esterne;
 		\item \textbf{Versione}: versione del documento;
 		\item \textbf{Approvatore}: Responsabile di progetto;
-		\item \textbf{Redattori}: redattori del documento;
-		\item \textbf{Verificatori}: verificatori del documento;
+		\item \textbf{Redattori}: Redattori del documento;
+		\item \textbf{Verificatori}: Verificatori del documento;
 		\item \textbf{Uso}: interno o esterno;
 		\item \textbf{Distribuzione}: destinatari del documento;
 		\item \textbf{Descrizione}: breve descrizione del documento.		
@@ -195,10 +195,10 @@ In particolare le immagini dovranno rispettare le seguenti proprietà, salvo ind
 \end{itemize}
 
 \paragraph{Diagrammi UML}\mbox{}\\
-Il software che deve essere utilizzato per la creazione dei diagrammi UML è Astah versione 8.0.0, gli analisti devono utilizzare la documentazione del software per il suo studio e utilizzo.
+Il software che deve essere utilizzato per la creazione dei diagrammi UML è Astah versione 8.0.0, gli Analisti devono utilizzare la documentazione del software per il suo studio e utilizzo.
 Ogni diagramma di caso d’uso è identificato in alto a sinistra dal suo codice identificativo e dal nome.
 
-\subparagraph{Esportare immagini in Astah}
+\subparagraph{Esportare immagini in Astah}\mbox{}\\
 I diagrammi dovranno essere esportati come immagini secondo le specifiche sotto riportate. Per esportare i diagrammi in Astah, dopo aver completato il diagramma, selezionare: $Tools \rightarrow Export\ image \rightarrow Current\ Diagram \rightarrow PNG$.
 L'immagine rappresentante l'UML deve avere le seguenti caratteristiche:
 \begin{itemize}
@@ -230,7 +230,7 @@ Per la stesura del documento è consigliato l'utilizzo di Textmaker, le principa
 \end{itemize}  
 Il software è reperibile all'indirizzo \url{http://www.xm1math.net/texmaker/}, è cross-platform ed è gratuito.
 
-\paragraph{Nome dei documenti}
+\paragraph{Nome dei documenti}\mbox{}\\
 I nomi dei documenti devono:
 \begin{itemize}
 \item Iniziare con la lettera maiuscola;
@@ -244,34 +244,34 @@ Esempio:
 \end{center}
 Ovviamente, i documenti devono essere esportati in formato PDF.
 \paragraph{Controllo ortografico}\mbox{}\\
-Al termine della stesura dei documenti, prima di alla fase di verifica del documento, l’owner deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice Gulpeas.
+Al termine della stesura dei documenti, prima di alla fase di verifica del documento, l’owner deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice {Gulpeas}\ped{G}.
 \subsubsection{Ciclo di vita dei documenti}
 Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di issues offerto da GitHub e come descritto in \hyperref[sec:projectboard]{§5.5.2.3}.
 \begin{enumerate}
-\item Il responsabile del progetto crea e assegna la issue ai redattori del documento (To do);
+\item Il Responsabile del progetto crea e assegna la issue ai Redattori del documento (To do);
 \item Quando inizia la stesura del documento (In progress):
 	\begin{enumerate}
 		\item La issue viene spostata nella sezione “In progress”;
 		\item Viene creato un branch per lavorare sulla issue.
 	\end{enumerate}
-\item Finita l'attività di scrittura un redattore crea un {pull request}\ped{G} con (Needs review):
+\item Finita l'attività di scrittura un Redattore crea un {pull request}\ped{G} con (Needs review):
 	\begin{enumerate}
 		\item Sé stesso come assigneer;
-		\item I verificatori come reviewers;
-		\item I campi project e milestone vuoti.
+		\item I Verificatori come reviewers;
+		\item I campi project e milestone appropriati.
 	\end{enumerate} 
-\item I verificatori controllano il documento e possono:
+\item I Verificatori controllano il documento e possono:
 	\begin{enumerate}
 	 	\item Accettarlo (Reviewer approved);
 	 	\item Non accettarlo (In progress).
 	\end{enumerate}
-\item Se non accettato, i redattori devono apportare le modifiche descritte dal verificatore;
-\item Se accettato, il documento giunge al responsabile di progetto che può:
+\item Se non accettato, i Redattori devono apportare le modifiche descritte dal Verificatore;
+\item Se accettato, il documento giunge al Responsabile di progetto che può:
 \begin{enumerate}
 	\item Approvarlo, rendendo il documento formale e chiudendo la issue. (Done)
 	\item Non approvarlo, fornendo le opportune motivazioni (In progress);
 \end{enumerate}
-\item Se approvato, sarà compito dell'amministratore effettuare il merge.
+\item Se approvato, sarà compito dell'Amministratore effettuare il merge.
 \end{enumerate}
 \begin{figure}[H]
 \centering
@@ -298,8 +298,8 @@ La corretta implementazione del processo deve:
 
 \paragraph{Analisi statica}\mbox{}\\
 \begin{itemize}
-\item[•] \textbf{Walkthrough}: lettura completa del codice sorgente da analizzare. Va utilizzata unicamente durante le prime fasi del progetto in quanto risulta onerosa e non efficiente, questa tecnica di analisi prevede una lettura critica del codice o del documento prodotto. Gli Analisti che la utilizzano devono stilare una lista di controllo con gli errori rilevati più frequentemente;
-\item[•] \textbf{Inspection}: lettura mirata del codice sorgente da analizzare. Questa tecnica di analisi presuppone l’esperienza da parte del verificatore nell’individuare gli errori e le anomalie più frequenti in modo tale da creare una lista di controllo per poter localizzare eventuali punti critici in cui cercare errori. Dopo ogni analisi la lista di controllo deve essere incrementata con eventuali nuovi errori rilevati.
+\item[•] \textbf{Walkthrough}: lettura completa del codice sorgente da analizzare. Va utilizzata unicamente durante le prime fasi del progetto in quanto risulta onerosa e non efficiente. Questa tecnica di analisi prevede una lettura critica del codice o del documento prodotto. Gli Analisti che la utilizzano devono stilare una lista di controllo con gli errori rilevati più frequentemente;
+\item[•] \textbf{Inspection}: lettura mirata del codice sorgente da analizzare. Questa tecnica di analisi presuppone l’esperienza da parte del Verificatore nell’individuare gli errori e le anomalie più frequenti in modo tale da creare una lista di controllo per poter localizzare eventuali punti critici in cui cercare errori. Dopo ogni analisi la lista di controllo deve essere incrementata con eventuali nuovi errori rilevati.
 \end{itemize}
 
 \paragraph{Analisi dinamica}\mbox{}\\
@@ -351,14 +351,12 @@ Il test di sistema consiste nella validazione del sistema ed è un test di tipo 
 \paragraph{Test di regressione}\mbox{}\\
 Il test di regressione va eseguito ogni volta che viene modificata un'implementazione in un programma. È possibile eseguire nuovamente i test esistenti sul codice modificato, integrando solo le parti che abbiano precedentemente superato il test di unità, per stabilire se le modifiche apportate hanno alterato elementi precedentemente funzionanti. Se necessario è anche possibile scrivere nuovi test. 
 \newline
-I contenuti del test di regressione vanno decisi nel momento in cui si approvano modifiche al SW
-
-
+I contenuti del test di regressione vanno decisi nel momento in cui si approvano modifiche al software.
 \paragraph{Test di accettazione (collaudo)}\mbox{}\\
-Il test di accettazione consiste nel collaudo del sistema eseguito dal committente. Se l'esito è positivo si può procedere al rilascio ufficiale del prodotto.
+Il test di accettazione consiste nel collaudo del sistema eseguito dal Committente. Se l'esito è positivo si può procedere al rilascio ufficiale del prodotto.
 
 \subsubsection{Verifica dei documenti}
-Ogni volte che un documento viene modificato, per essere approvato dal Responsabile di progetto, deve essere verificato da un Verificatore. 
+Ogni volte che un documento viene modificato, per essere approvato dal Responsabile di Progetto, deve essere verificato da un Verificatore. 
 \newline
 Per essere certi che il documento sia conforme alle norme di progetto e agli altri documenti presentate, il Verificatore deve:
 \begin{itemize}
@@ -368,9 +366,9 @@ Per essere certi che il documento sia conforme alle norme di progetto e agli alt
 \item[•] \textbf{Segnalare gli errori}: una volta completata la verifica, deve segnalare tutti gli errori trovati e comunicarli al redattore.
 \end{itemize}
 \paragraph{Regole a garanzia dell'assenza di conflitto di interessi}\mbox{}\\
-I redattori dei documenti non possono anche esserne i verificatori. Pertanto è necessario che nessuno dei componenti del gruppo sia messo in condizione di verificare la parte da lui redatta, e quindi affinché ciò non avvenga il gruppo si adopererà attuando una rotazione periodica dei ruoli, o in caso questa non sia possibile, semplicemente assicurarsi che nessun membro verifichi le sezioni dei documenti assegnatoli.
+I Redattori dei documenti non possono anche esserne i Verificatori. Pertanto è necessario che nessuno dei componenti del gruppo sia messo in condizione di verificare la parte da lui redatta, e quindi affinché ciò non avvenga il gruppo si adopererà attuando una rotazione periodica dei ruoli, o in caso questa non sia possibile, semplicemente assicurarsi che nessun membro verifichi le sezioni dei documenti assegnatoli.
 \subparagraph{Verifica dell'Analisi dei Requisiti}\mbox{}\\
-L'attività di verifica per l'Analisi dei Requisiti sarà realizzata dai redattori della stessa in modo tale che nessuno dei componenti verifichi la parte da lui curata.
+L'attività di verifica per l'Analisi dei Requisiti sarà realizzata dai Redattori della stessa in modo tale che nessuno dei componenti verifichi la parte da lui curata.
 Ad esempio, se un componente ha realizzato la sezione "A" del documento, egli verificherà la sezione "C" stilata da un altro componente, che a sua volta verificherà la sezione di un altro componente. La scelta di questa soluzione è stata protratta poiché i componenti del gruppo, che hanno realizzato il documento, hanno sviluppato una discreta conoscenza nella modellazione UML, e pertanto possono fornire una verifica più accurata.
 
 \subsubsection{Verifica dei diagrammi}
