@@ -22,10 +22,10 @@ I documenti formali che verranno presentati saranno suddivisi in due categorie:
 
 
 \paragraph{Documenti informali}\mbox{}\\
-Tutti i documenti non ancora approvati dal Responsabile di progetto sono da ritenersi informali quindi ad uso esclusivamente interno.
+Tutti i documenti non ancora approvati dal \textit{Responsabile di progetto} sono da ritenersi informali quindi ad uso esclusivamente interno.
 
 \paragraph{Documenti formali}\mbox{}\\
-Un documento diventa formale in seguito all'approvazione da parte del Responsabile di progetto. Solo i documenti formali posso essere divulgati all'esterno del gruppo. Prima di poter essere approvato un documento deve essere verificato. 
+Un documento diventa formale in seguito all'approvazione da parte del \textit{Responsabile di progetto}. Solo i documenti formali posso essere divulgati all'esterno del gruppo. Prima di poter essere approvato un documento deve essere verificato. 
 
 \paragraph{Verbali}\mbox{}\\ 
 \label{sec:verbali}
@@ -43,7 +43,7 @@ Per ogni incontro deve essere nominato un segretario che si occuperà della stes
 \item \textbf{Ordine del giorno}: lista degli argomenti che saranno oggetto di discussione; 
 \item \textbf{Resoconto}: verbale effettivo degli argomenti discussi; 	
 \end{itemize}
-Una volta approvato dal Responsabile di progetto, il verbale deve essere distribuito a tutti i componenti del gruppo. In caso di verbale esterno il verbale dovrà essere inviato anche al proponente. 
+Una volta approvato dal \textit{Responsabile di progetto}, il verbale deve essere distribuito a tutti i componenti del gruppo. In caso di verbale esterno il verbale dovrà essere inviato anche al proponente. 
 I nomi dei file dei verbali devono rispettare il seguente formato:
 \begin{center}
 Verbale-[numeroVerbale]-[T]-[Data].pdf
@@ -89,9 +89,9 @@ Ogni documento deve essere realizzato a partire dal template descritto precedent
 		\item \textbf{Nome del progetto};
 		\item \textbf{E-mail}: indirizzo di posta elettronica in comune per le comunicazioni interne ed esterne;
 		\item \textbf{Versione}: versione del documento;
-		\item \textbf{Approvatore}: Responsabile di progetto;
-		\item \textbf{Redattori}: Redattori del documento;
-		\item \textbf{Verificatori}: Verificatori del documento;
+		\item \textbf{Approvatore}: \textit{Responsabile di progetto};
+		\item \textbf{Redattori}: \textit{Redattori} del documento;
+		\item \textbf{Verificatori}: \textit{Verificatori} del documento;
 		\item \textbf{Uso}: interno o esterno;
 		\item \textbf{Distribuzione}: destinatari del documento;
 		\item \textbf{Descrizione}: breve descrizione del documento.		
@@ -195,7 +195,7 @@ In particolare le immagini dovranno rispettare le seguenti proprietà, salvo ind
 \end{itemize}
 
 \paragraph{Diagrammi UML}\mbox{}\\
-Il software che deve essere utilizzato per la creazione dei diagrammi UML è Astah versione 8.0.0, gli Analisti devono utilizzare la documentazione del software per il suo studio e utilizzo.
+Il software che deve essere utilizzato per la creazione dei diagrammi UML è Astah versione 8.0.0, gli \textit{Analisti} devono utilizzare la documentazione del software per il suo studio e utilizzo.
 Ogni diagramma di caso d’uso è identificato in alto a sinistra dal suo codice identificativo e dal nome.
 
 \subparagraph{Esportare immagini in Astah}\mbox{}\\
@@ -244,34 +244,34 @@ Esempio:
 \end{center}
 Ovviamente, i documenti devono essere esportati in formato PDF.
 \paragraph{Controllo ortografico}\mbox{}\\
-Al termine della stesura dei documenti, prima di alla fase di verifica del documento, l’owner deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice {Gulpeas}\ped{G}.
+Al termine della stesura dei documenti, prima di alla fase di verifica del documento, un \textit{Redattore} deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice {Gulpeas}\ped{G}.
 \subsubsection{Ciclo di vita dei documenti}
 Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di issues offerto da GitHub e come descritto in \hyperref[sec:projectboard]{§5.5.2.3}.
 \begin{enumerate}
-\item Il Responsabile del progetto crea e assegna la issue ai Redattori del documento (To do);
+\item Il \textit{Responsabile di progetto} crea e assegna la issue ai \textit{Redattori} del documento (To do);
 \item Quando inizia la stesura del documento (In progress):
 	\begin{enumerate}
 		\item La issue viene spostata nella sezione “In progress”;
 		\item Viene creato un branch per lavorare sulla issue.
 	\end{enumerate}
-\item Finita l'attività di scrittura un Redattore crea un {pull request}\ped{G} con (Needs review):
+\item Finita l'attività di scrittura un \textit{Redattore} crea un {pull request}\ped{G} con (Needs review):
 	\begin{enumerate}
 		\item Sé stesso come assigneer;
-		\item I Verificatori come reviewers;
+		\item I \textit{Verificatori} come reviewers;
 		\item I campi project e milestone appropriati.
 	\end{enumerate} 
-\item I Verificatori controllano il documento e possono:
+\item I \textit{Verificatori} controllano il documento e possono:
 	\begin{enumerate}
 	 	\item Accettarlo (Reviewer approved);
 	 	\item Non accettarlo (In progress).
 	\end{enumerate}
-\item Se non accettato, i Redattori devono apportare le modifiche descritte dal Verificatore;
-\item Se accettato, il documento giunge al Responsabile di progetto che può:
+\item Se non accettato, i \textit{Redattori} devono apportare le modifiche descritte dai \textit{Verificatori};
+\item Se accettato, il documento giunge al \textit{Responsabile di progetto} che può:
 \begin{enumerate}
 	\item Approvarlo, rendendo il documento formale e chiudendo la issue. (Done)
 	\item Non approvarlo, fornendo le opportune motivazioni (In progress);
 \end{enumerate}
-\item Se approvato, sarà compito dell'Amministratore effettuare il merge.
+\item Se approvato, sarà compito dell'\textit{Amministratore di Progetto} effettuare il merge.
 \end{enumerate}
 \begin{figure}[H]
 \centering
@@ -284,7 +284,7 @@ Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio d
 
 \subsubsection{Scopo}
 
-La verifica dei processi, documenti e prodotti è un'attività da eseguire continuamente durante lo sviluppo del progetto. Di conseguenza, servono modalità operative chiare e dettagliate per i Verificatori, in modo da uniformare le attività di verifica svolte ed ottenere il miglior risultato possibile. 
+La verifica dei processi, documenti e prodotti è un'attività da eseguire continuamente durante lo sviluppo del progetto. Di conseguenza, servono modalità operative chiare e dettagliate per i \textit{Verificatori}, in modo da uniformare le attività di verifica svolte ed ottenere il miglior risultato possibile. 
 
 La corretta implementazione del processo deve:
 \begin{itemize}
@@ -298,8 +298,8 @@ La corretta implementazione del processo deve:
 
 \paragraph{Analisi statica}\mbox{}\\
 \begin{itemize}
-\item[•] \textbf{Walkthrough}: lettura completa del codice sorgente da analizzare. Va utilizzata unicamente durante le prime fasi del progetto in quanto risulta onerosa e non efficiente. Questa tecnica di analisi prevede una lettura critica del codice o del documento prodotto. Gli Analisti che la utilizzano devono stilare una lista di controllo con gli errori rilevati più frequentemente;
-\item[•] \textbf{Inspection}: lettura mirata del codice sorgente da analizzare. Questa tecnica di analisi presuppone l’esperienza da parte del Verificatore nell’individuare gli errori e le anomalie più frequenti in modo tale da creare una lista di controllo per poter localizzare eventuali punti critici in cui cercare errori. Dopo ogni analisi la lista di controllo deve essere incrementata con eventuali nuovi errori rilevati.
+\item[•] \textbf{Walkthrough}: lettura completa del codice sorgente da analizzare. Va utilizzata unicamente durante le prime fasi del progetto in quanto risulta onerosa e non efficiente. Questa tecnica di analisi prevede una lettura critica del codice o del documento prodotto. Gli \textit{Analisti} che la utilizzano devono stilare una lista di controllo con gli errori rilevati più frequentemente;
+\item[•] \textbf{Inspection}: lettura mirata del codice sorgente da analizzare. Questa tecnica di analisi presuppone l’esperienza da parte del \textit{Verificatore} nell’individuare gli errori e le anomalie più frequenti in modo tale da creare una lista di controllo per poter localizzare eventuali punti critici in cui cercare errori. Dopo ogni analisi la lista di controllo deve essere incrementata con eventuali nuovi errori rilevati.
 \end{itemize}
 
 \paragraph{Analisi dinamica}\mbox{}\\
@@ -356,20 +356,20 @@ I contenuti del test di regressione vanno decisi nel momento in cui si approvano
 Il test di accettazione consiste nel collaudo del sistema eseguito dal Committente. Se l'esito è positivo si può procedere al rilascio ufficiale del prodotto.
 
 \subsubsection{Verifica dei documenti}
-Ogni volta che un documento viene modificato, per essere approvato dal Responsabile di Progetto, deve essere verificato da un Verificatore. 
+Ogni volta che un documento viene modificato, per essere approvato dal \textit{Responsabile di progetto}, deve essere verificato da un \textit{Verificatore}. 
 \newline
-Per essere certi che il documento sia conforme alle norme di progetto e agli altri documenti presentate, il Verificatore deve:
+Per essere certi che il documento sia conforme alle norme di progetto e agli altri documenti presentate, il \textit{Verificatore} deve:
 \begin{itemize}
-\item[•]\textbf{ Verificare il contenuto}: controllare che tutto il contenuto del documento sia inserito nella giusta sezione ed adeguatamente impaginato;
+\item[•]\textbf{Verificare il contenuto}: controllare che tutto il contenuto del documento sia inserito nella giusta sezione ed adeguatamente impaginato;
 \item[•] \textbf{Verificare il glossario}: controllare che tutte le parole da inserire nel glossario siano state inserite e che tutte le parole inserite nel glossario, siano state targate con il pedice “G”;
 \item[•] \textbf{Verifica tipografica}: controllare con il controllo ortografico dell’editor utilizzato eventuali errori e correggerli;
-\item[•] \textbf{Segnalare gli errori}: una volta completata la verifica, deve segnalare tutti gli errori trovati e comunicarli al redattore.
+\item[•] \textbf{Segnalare gli errori}: una volta completata la verifica, deve segnalare tutti gli errori trovati e comunicarli al \textit{Redattore}.
 \end{itemize}
 \paragraph{Regole a garanzia dell'assenza di conflitto di interessi}\mbox{}\\
-I Redattori dei documenti non possono anche esserne i Verificatori. Pertanto è necessario che nessuno dei componenti del gruppo sia messo in condizione di verificare la parte da lui redatta, e quindi affinché ciò non avvenga il gruppo si adopererà attuando una rotazione periodica dei ruoli, o in caso questa non sia possibile, semplicemente assicurarsi che nessun membro verifichi le sezioni dei documenti assegnatogli.
+I \textit{Redattori} dei documenti non possono anche esserne i \textit{Verificatori}. Pertanto è necessario che nessuno dei componenti del gruppo sia messo in condizione di verificare la parte da lui redatta, e quindi affinché ciò non avvenga il gruppo si adopererà attuando una rotazione periodica dei ruoli, o in caso questa non sia possibile, semplicemente assicurarsi che nessun membro verifichi le sezioni dei documenti assegnatogli.
 \subparagraph{Verifica dell'Analisi dei Requisiti}\mbox{}\\
-L'attività di verifica per l'Analisi dei Requisiti sarà realizzata dai Redattori della stessa in modo tale che nessuno dei componenti verifichi la parte da lui curata.
+L'attività di verifica per l'Analisi dei Requisiti sarà realizzata dai \textit{Redattori} della stessa in modo tale che nessuno dei componenti verifichi la parte da lui curata.
 Ad esempio, se un componente ha realizzato la sezione "A" del documento, egli verificherà la sezione "C" stilata da un altro componente, che a sua volta verificherà la sezione di un altro componente. La scelta di questa soluzione è stata protratta poiché i componenti del gruppo, che hanno realizzato il documento, hanno sviluppato una discreta conoscenza nella modellazione UML, e pertanto possono fornire una verifica più accurata.
 
 \subsubsection{Verifica dei diagrammi}
-I diagrammi devono essere verificati manualmente dal Verificatore che deve controllare che aderiscano correttamente allo standard 2.0 (vedi Riferimenti Normativi). In particolare deve controllare che i diagrammi di flusso siano rappresentati in maniera corretta e che i diagrammi utilizzino correttamente le inclusioni e le estensioni, come ad esempio controllando che queste ultime siano accompagnate dalla condizione.
+I diagrammi devono essere verificati manualmente dal \textit{Verificatore} che deve controllare che aderiscano correttamente allo standard 2.0 (vedi Riferimenti Normativi). In particolare deve controllare che i diagrammi di flusso siano rappresentati in maniera corretta e che i diagrammi utilizzino correttamente le inclusioni e le estensioni, come ad esempio controllando che queste ultime siano accompagnate dalla condizione.
