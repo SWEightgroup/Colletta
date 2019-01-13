@@ -1,0 +1,81 @@
+Attività
+Bot
+Branch
+Broker
+Bug
+Capitolato
+Card
+Caso d'uso
+Client
+Codice numerico gerarchico
+Commit
+Committente
+Conflitto
+Connettori
+Consumer
+Convenzione
+Cross-platform
+Cruscotto
+Custom
+Dashboard
+Diagramma di Gantt
+Diagramma UML
+Distribuzione Linux
+Efficacia
+Efficienza
+Fonte
+FreeLing
+Gerarchia
+Git
+Issue
+Keyword
+Learning curve
+Librerie
+Linguaggio di markup
+Manutenibilità
+Maturità
+Merge
+Microsoft Windows
+Milestone
+ML
+Modello incrementale
+Nodi
+Notazione a cammello
+Open Source
+Pattern publisher/subscriber
+PDF
+Periodo
+Periodo di investimento
+Plugin
+Porting
+PoS-tagging
+Producer
+Project board
+Proponente
+Pull request
+Qualità
+Repository
+Requisito
+Requisito di fidatezza:
+Requisito funzionale:
+Requisito non funzionale:
+Risorsa
+Skill
+Slack
+Software-as-service
+Software di controllo di versione
+Sotto-caso d'uso
+Specifiche UML
+Standard ISO
+Standard ISO$\backslash$IEC
+Strategia
+Tag
+Telematica
+Template
+Tool
+Troubleshooting
+Validazione
+Verifica
+Versionamento
+Versione
+Walkthrough
