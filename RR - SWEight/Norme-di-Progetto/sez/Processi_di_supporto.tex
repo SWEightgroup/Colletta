@@ -61,7 +61,7 @@ dove:
 
 \subsubsection{Template}
 Per semplificare e standardizzare la stesura dei documenti previsti è stato creato un template \LaTeX{} contenente tutte le impostazioni per la struttura grafica e lo stile di formattazione. Ogni membro del team deve obbligatoriamente utilizzare questo {template}\ped{G}.
-Quest'ultimo è disponibile all'interno dell'omonima cartella ed è denominato "SWEightStyle.sty", dev'essere importato all'interno del documento \LaTeX{} tramite la direttiva di inclusione di un pacchetto.
+Quest'ultimo è disponibile all'interno dell'omonima cartella ed è denominato "SWEightStyle.sty", e dev'essere importato all'interno del documento \LaTeX{} tramite la direttiva di inclusione di un pacchetto.
 \subsubsection{Versioni}
 \label{sec:documentversion}
 Per ogni documento deve essere specificata obbligatoriamente la versione nella seguente forma: 
@@ -145,14 +145,11 @@ Ogni pagina, escluso il frontespizio ed indice, devono contenere:
 \item[•] \textbf{Elenchi puntati}:
 \begin{itemize}
 	\item Ogni elemento dell'elenco deve terminare con il punto e virgola, ad eccezione dell'ultimo elemento che deve terminare con il punto;
-	\item Gli elementi di primo livello devono avere come stile un pallino pieno nero, quelli di secondo livello un pallino nero vuoto, ad eccezione degli elenchi numerati che devono essere usati solo se è necessario descrivere una sequenza:
-	\begin{itemize}
-	\item[•] \textbf{Elenco puntato non ordinato}:
+	\item \textbf{Elenco puntato non ordinato}:
 	Gli elementi di primo livello devono avere come stile un pallino pieno nero, quelli di secondo livello un pallino nero vuoto. Elementi di livello successivo al secondo devono alternare lo stile del primo e del secondo livello.
-	\item[•] \textbf{Elenco puntato ordinato}:
+	\item \textbf{Elenco puntato ordinato}:
 	Gli elementi di primo livello devono avere come stile un numero progressivo, mentre quelli di secondo livello una lettera racchiusa all'interno di parentesi graffe. 
 	\end{itemize}
-\end{itemize}
 \item[•] \textbf{Citazioni}: ogni citazione deve essere accompagnata dal riferimento bibliografico.
 \end{itemize}
 
@@ -210,7 +207,7 @@ Ad esempio: UC4.2.png $\rightarrow$ UC42.png;
 \item Il file deve essere salvato all'interno del folder img, destinato alle immagini.
 \end{itemize}
 Inoltre, anche il file con estensione asta deve essere salvato nella cartella predisposta al fine di permetterne modifiche successivamente. 
-Per la realizzazione dell'analisi dei requisiti la cartella destinata al salvataggio dei diagrammi modificabili è: "Casi d'uso", reperibile all'interno del {branch}\ped{G} Analisi dei Requisiti. Il nome del diagramma deve essere il medesimo dell'immagine esportata.
+Per la realizzazione dell'Analisi dei Requisiti la cartella destinata al salvataggio dei diagrammi modificabili è: "Casi d'uso", reperibile all'interno del {branch}\ped{G} Analisi dei Requisiti. Il nome del diagramma deve essere il medesimo dell'immagine esportata.
 
 \subsubsection{Strumenti di supporto} 
 
@@ -323,23 +320,23 @@ Il test di unità verifica che ogni singola unità funzioni correttamente, le un
 In particolare, si verifica che i requisiti per quella determinata unità siano soddisfatti.
 \begin{itemize}
 \item[•] \textbf{Test strutturale (white-box)}: verifica la logica interna del codice dell’unità cercando la massima copertura. Ogni singola prova deve attivare un singolo cammino di esecuzione all’interno dell’unità. L’insieme di dati di ingresso che ottiene quell’effetto costituisce un caso di prova;
-\item[•] \textbf{Test funzionale (black-box)}: fa riferimento alla specifica dell'unità utilizza dati di ingresso capaci di provocare l'esito atteso. Ciascun insieme di dati di ingresso che produca un dato comportamento funzionale costituisce un singolo caso di prova.
+\item[•] \textbf{Test funzionale (black-box)}: fa riferimento alla specifica dell'unità utilizzando dati di ingresso capaci di provocare l'esito atteso. Ciascun insieme di dati di ingresso che produca un dato comportamento funzionale costituisce un singolo caso di prova.
 \end{itemize}
 
 \paragraph{Test di Integrazione}\mbox{}\\
-Si applica alle componenti specificate nella progettazione architetturale, rappresenta l’estensione logica del test di unità. Consiste nella combinazione di due unità già sottoposte a test in un solo componente e nel test dell’interfaccia presente tra le due. Il test di integrazione consente di individuare i problemi che si verificano quando due unità si combinano. Per effettuare tali test si farà uso di classi appositamente create per simulare e verificare l’interazione.
+Si applica alle componenti specificate nella progettazione architetturale e rappresenta l’estensione logica del test di unità. Consiste nella combinazione di due unità già sottoposte a test in un solo componente e nel test dell’interfaccia presente tra le due. Il test di integrazione consente di individuare i problemi che si verificano quando due unità si combinano. Per effettuare tali test si farà uso di classi appositamente create per simulare e verificare l’interazione.
 Strategie di integrazione:
 \begin{itemize}
 \item[•] \textbf{Assemblare parti in modo incrementale}:
 	\begin{list}{$\circ$}{}
 		\item Si sviluppano e si integrano prima le parti con minore dipendenza funzionale e maggiore utilità;
 		\item Poi si risale l’albero delle dipendenze;
-		\item Questa strategia riduce il numero di stub necessari al test ma ritarda la disponibilità di funzionalità di alto livello.
+		\item Questa strategia riduce il numero di stub necessari al test, ma ritarda la disponibilità di funzionalità di alto livello.
 	\end{list}
 \item[•] \textbf{Top-down}:
 	\begin{list}{$\circ$}{}
 	\item Si sviluppano prima le parti più esterne, quelle poste sulle foglie dell'albero delle dipendenze e poi si scende;
-	\item Questa strategia comporta l’uso di molti stub ma integra a partire dalle funzionalità di più alto livello.
+	\item Questa strategia comporta l’uso di molti stub ma l'integrazione avviene a partire dalle funzionalità di più alto livello.
 	\end{list}
 \item[•] \textbf{Assemblare produttori prima dei consumatori};
 \item[•] \textbf{Assemblare in modo che ogni passo di integrazione sia reversibile}.
@@ -358,7 +355,7 @@ Il test di accettazione consiste nel collaudo del sistema eseguito dal Committen
 \subsubsection{Verifica dei documenti}
 Ogni volta che un documento viene modificato, per essere approvato dal \textit{Responsabile di progetto}, deve essere verificato da un \textit{Verificatore}. 
 \newline
-Per essere certi che il documento sia conforme alle norme di progetto e agli altri documenti presentate, il \textit{Verificatore} deve:
+Per essere certi che il documento sia conforme alle Norme di Progetto e agli altri documenti presentate, il \textit{Verificatore} deve:
 \begin{itemize}
 \item[•]\textbf{Verificare il contenuto}: controllare che tutto il contenuto del documento sia inserito nella giusta sezione ed adeguatamente impaginato;
 \item[•] \textbf{Verificare il glossario}: controllare che tutte le parole da inserire nel glossario siano state inserite e che tutte le parole inserite nel glossario, siano state targate con il pedice “G”;
@@ -369,7 +366,7 @@ Per essere certi che il documento sia conforme alle norme di progetto e agli alt
 I \textit{Redattori} dei documenti non possono anche esserne i \textit{Verificatori}. Pertanto è necessario che nessuno dei componenti del gruppo sia messo in condizione di verificare la parte da lui redatta, e quindi affinché ciò non avvenga il gruppo si adopererà attuando una rotazione periodica dei ruoli, o in caso questa non sia possibile, semplicemente assicurarsi che nessun membro verifichi le sezioni dei documenti assegnatogli.
 \subparagraph{Verifica dell'Analisi dei Requisiti}\mbox{}\\
 L'attività di verifica per l'Analisi dei Requisiti sarà realizzata dai \textit{Redattori} della stessa in modo tale che nessuno dei componenti verifichi la parte da lui curata.
-Ad esempio, se un componente ha realizzato la sezione "A" del documento, egli verificherà la sezione "C" stilata da un altro componente, che a sua volta verificherà la sezione di un altro componente. La scelta di questa soluzione è stata protratta poiché i componenti del gruppo, che hanno realizzato il documento, hanno sviluppato una discreta conoscenza nella modellazione UML, e pertanto possono fornire una verifica più accurata.
+Ad esempio, se un componente ha realizzato la sezione "A" del documento, egli verificherà la sezione "C" stilata da un altro componente, che a sua volta verificherà la sezione di un altro componente. La scelta di questa soluzione è stata protratta poiché i componenti del gruppo, che hanno realizzato il documento hanno sviluppato una discreta conoscenza nella modellazione UML, e pertanto possono fornire una verifica più accurata.
 
 \subsubsection{Verifica dei diagrammi}
 I diagrammi devono essere verificati manualmente dal \textit{Verificatore} che deve controllare che aderiscano correttamente allo standard 2.0 (vedi Riferimenti Normativi). In particolare deve controllare che i diagrammi di flusso siano rappresentati in maniera corretta e che i diagrammi utilizzino correttamente le inclusioni e le estensioni, come ad esempio controllando che queste ultime siano accompagnate dalla condizione.
