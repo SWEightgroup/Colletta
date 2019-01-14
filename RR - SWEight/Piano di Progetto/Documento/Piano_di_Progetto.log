@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.1.13)  14 JAN 2019 09:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.1.13)  14 JAN 2019 12:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1426,14 +1426,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [14 <./Pianificazione/Consolidamento_Gantt.png>]
 (./Pianificazione/Progettazione.tex
-<Pianificazione/Progettazione_Architetturale_Gantt.png, id=461, 1906.12125pt x 
-204.765pt>
+<Pianificazione/Progettazione_Architetturale_Gantt.png, id=461, 1901.1025pt x 4
+74.77374pt>
 File: Pianificazione/Progettazione_Architetturale_Gantt.png Graphic file (type 
 png)
 <use Pianificazione/Progettazione_Architetturale_Gantt.png>
 Package pdftex.def Info: Pianificazione/Progettazione_Architetturale_Gantt.png 
  used on input line 16.
-(pdftex.def)             Requested size: 472.31595pt x 50.73807pt.
+(pdftex.def)             Requested size: 472.31595pt x 117.95421pt.
 )
 File: ../../template/img/logoSWEight.png Graphic file (type png)
 <use ../../template/img/logoSWEight.png>
@@ -1447,16 +1447,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15 <./Pianificazione/Progettazione_Architetturale_Gantt.png>]
+[15 <./Pianificazione/Progettazione_Architetturale_Gantt.png (PNG copy)>]
 (./Pianificazione/Codifica.tex
-<Pianificazione/Progettazione_Dettaglio_Codififca.png, id=468, 1895.08pt x 324.
-21124pt>
+<Pianificazione/Progettazione_Dettaglio_Codififca.png, id=468, 1915.155pt x 374
+.39874pt>
 File: Pianificazione/Progettazione_Dettaglio_Codififca.png Graphic file (type p
 ng)
 <use Pianificazione/Progettazione_Dettaglio_Codififca.png>
 Package pdftex.def Info: Pianificazione/Progettazione_Dettaglio_Codififca.png  
 used on input line 20.
-(pdftex.def)             Requested size: 472.31595pt x 80.80031pt.
+(pdftex.def)             Requested size: 472.31595pt x 92.33119pt.
 )
 File: ../../template/img/logoSWEight.png Graphic file (type png)
 <use ../../template/img/logoSWEight.png>
@@ -1470,7 +1470,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16 <./Pianificazione/Progettazione_Dettaglio_Codififca.png>]
+[16 <./Pianificazione/Progettazione_Dettaglio_Codififca.png (PNG copy)>]
 (./Pianificazione/Verifica_e_Validazione.tex
 <Pianificazione/Verifica_Validazione.png, id=474, 1677.26625pt x 164.615pt>
 File: Pianificazione/Verifica_Validazione.png Graphic file (type png)
@@ -1959,7 +1959,7 @@ f/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr1
 /type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmtt10.pfb>
-Output written on Piano_di_Progetto.pdf (39 pages, 690737 bytes).
+Output written on Piano_di_Progetto.pdf (39 pages, 715707 bytes).
 PDF statistics:
  804 PDF objects out of 1000 (max. 8388607)
  694 compressed objects within 7 object streams
