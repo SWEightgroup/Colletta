@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.1.7)  14 JAN 2019 00:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.1.7)  14 JAN 2019 03:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1118,13 +1118,13 @@ Package rerunfilecheck Info: File `StudioDiFattibilità.out' has not changed.
 Here is how much of TeX's memory you used:
  24690 strings out of 492616
  453371 string characters out of 6132769
- 779525 words of memory out of 5000000
+ 779526 words of memory out of 5000000
  28005 multiletter control sequences out of 15000+600000
  48224 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,17n,124p,881b,506s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}<c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on StudioDiFattibilità.pdf (12 pages, 229101 bytes).
+Output written on StudioDiFattibilità.pdf (12 pages, 229091 bytes).
 PDF statistics:
  374 PDF objects out of 1000 (max. 8388607)
  346 compressed objects within 4 object streams

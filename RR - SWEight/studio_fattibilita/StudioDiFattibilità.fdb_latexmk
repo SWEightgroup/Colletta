@@ -1,11 +1,11 @@
 # Fdb version 3
-["pdflatex"] 1547422918 "c:/Users/Alberto/Documents/GitHub/Colletta/RR - SWEight/studio_fattibilita/StudioDiFattibilità.tex" "StudioDiFattibilità.pdf" "StudioDiFattibilità" 1547422920
+["pdflatex"] 1547434418 "c:/Users/Alberto/Documents/GitHub/Colletta/RR - SWEight/studio_fattibilita/StudioDiFattibilità.tex" "StudioDiFattibilità.pdf" "StudioDiFattibilità" 1547434422
   "../template/SWEightStyle.sty" 1547390869 9154 5d54baec93b968ab25d4e278b55ac515 ""
   "../template/img/logoSWEight.png" 1547133838 35855 2a404efc739fb8071ea3d944dcf16205 ""
-  "StudioDiFattibilità.aux" 1547422920 6964 b49e6afe97c3bfb05f03f3264b8f8d80 ""
-  "StudioDiFattibilità.out" 1547422920 3176 ed7ed8ef163bb7105c435902dd837fb2 ""
+  "StudioDiFattibilità.aux" 1547434421 6964 b49e6afe97c3bfb05f03f3264b8f8d80 ""
+  "StudioDiFattibilità.out" 1547434421 3176 ed7ed8ef163bb7105c435902dd837fb2 ""
   "StudioDiFattibilità.tex" 1547419260 516 a663d7f5b6e62244d9649cf9e449ae57 ""
-  "StudioDiFattibilità.toc" 1547422920 4082 b75bd11f7dee4ab5330d910798db2c88 ""
+  "StudioDiFattibilità.toc" 1547434421 4082 b75bd11f7dee4ab5330d910798db2c88 ""
   "c:/Users/Alberto/Documents/GitHub/Colletta/RR - SWEight/studio_fattibilita/StudioDiFattibilità.tex" 1547419260 516 a663d7f5b6e62244d9649cf9e449ae57 ""
   "c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1546881157 2375 baa924870cfb487815765f9094cf3728 ""
   "c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1546881157 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -220,11 +220,11 @@
   "sez/C4.tex" 1547419260 2223 fe376489d07db67c205f2521b900a818 ""
   "sez/C5.tex" 1547419260 2800 8967991e27a441cf9cb4568c7f04e457 ""
   "sez/C6.tex" 1547419260 2918 a715633d73b82e9172b70173091ff3b1 ""
-  "sez/RegistroModifiche.tex" 1547419260 1155 779440f2b4a13bd93f5f55090be122f6 ""
+  "sez/RegistroModifiche.tex" 1547434415 1155 2ef6fe45335dee23e068ad3485ab78ca ""
   "sez/introduzione.tex" 1547422916 1735 106d560eea53f42b2ad6f0cfc1c105e6 ""
   (generated)
+  "StudioDiFattibilità.toc"
   "StudioDiFattibilità.out"
   "StudioDiFattibilità.pdf"
   "StudioDiFattibilità.log"
   "StudioDiFattibilità.aux"
-  "StudioDiFattibilità.toc"
