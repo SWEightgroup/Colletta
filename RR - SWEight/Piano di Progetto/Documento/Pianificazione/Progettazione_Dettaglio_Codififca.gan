@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Colletta" company="SWEight" webLink="" view-date="2019-03-08" view-index="0" gantt-divider-location="372" resource-divider-location="300" version="2.8.9" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Colletta" company="SWEight" webLink="" view-date="2019-03-08" view-index="0" gantt-divider-location="372" resource-divider-location="300" version="2.8.9" locale="it_IT">
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
         <field id="tpd3" name="Nome" width="191" order="0"/>
         <field id="tpd4" name="Data d'inizio" width="89" order="1"/>
         <field id="tpd5" name="Data di fine" width="88" order="2"/>
-        <option id="color.recent">
-            <![CDATA[#9933ff #ff3333 #999999 #ff6699 #ff33cc #ff9900 #99ff33 #ff0000 #6666ff #ffff66]]>
-        </option>
+        <option id="color.recent"><![CDATA[#9933ff #ff3333 #999999 #ff6699 #ff33cc #ff9900 #99ff33 #ff0000 #6666ff #ffff66]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Nome" width="210" order="0"/>
@@ -41,8 +39,8 @@
             <task id="173" name="Consuntivo PdP" color="#99ff33" meeting="false" start="2019-04-07" duration="2" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true"/>
             <task id="157" name="Verifica" color="#99ff33" meeting="false" start="2019-03-28" duration="14" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="0" name="Definizione di Prodotto" color="#8cb6ce" meeting="false" start="2019-03-09" duration="10" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
-            <task id="168" name="Stesura" color="#8cb6ce" meeting="false" start="2019-03-09" duration="7" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+        <task id="0" name="Product Baseline" color="#8cb6ce" meeting="false" start="2019-03-09" duration="10" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+            <task id="168" name="Definizione" color="#8cb6ce" meeting="false" start="2019-03-09" duration="7" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
                 <depend id="175" type="2" difference="0" hardness="Strong"/>
                 <depend id="187" type="2" difference="0" hardness="Strong"/>
             </task>
