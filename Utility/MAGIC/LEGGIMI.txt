@@ -1,0 +1,23 @@
+##############################################################################
+				M A G I C
+		Magical Automatic Gulpease Index Calculator
+##############################################################################
+
+##### Uso
+Lanciare da shell linux il seguente comando in questa cartella
+$ bash MAGIC.sh
+
+#### Prerequisiti
+- Python 2.7
+- Perl
+- Seguenti moduli installati:
+	*ServiceAccountCredentials
+	*gspread
+  Comandi per installarli:
+  $ python2.7 -m pip install gspread
+  $ python2.7 -m pip install ServiceAccountCredentials
+- Connessione a internet
+- Responsabilita'
+
+#### Crediti
+- Sebastiano Caccaro, gruppo SWEigth
