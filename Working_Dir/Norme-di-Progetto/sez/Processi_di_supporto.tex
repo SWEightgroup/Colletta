@@ -277,6 +277,67 @@ Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio d
 \label{fig:document_lifecycle}
 \end{figure}
 
+\subsection{Qualità}
+\subsubsection{Scopo}
+\subsubsection{Metriche da pdp (da fare)}
+
+\subsection{Configurazione}
+\subsubsection{Versionamento}
+
+%va messo un altro sub 
+\paragraph{Introduzione}\mbox{}\\
+Git, il più usato e conosciuto {software di controllo di {versione}\ped{G} open source, è stato scelto per il controllo di versione, GitHub invece è la piattaforma di web hosting. 
+\newline
+Il repository dedicato ai documenti è formata dalle seguenti subdirectory:
+\begin{itemize}
+\item[•] \textbf{RR}: contiene tutti i documenti da consegnare per la Revisione dei Requisiti;
+\item[•] \textbf{RP}: contiene tutti i documenti da consegnare per la Revisione di Progettazione;
+\item[•] \textbf{RQ}: contiene tutti i documenti da consegnare per la Revisione di Qualifica;
+\item[•] \textbf{RA}: contiene tutti i documenti da consegnare per la Revisione di Accettazione.
+\end{itemize}
+
+\paragraph{GitHub Desktop}\mbox{}\\
+Il {client}\ped{G} che viene utilizzato per il controllo di versione è GitHub Desktop, esso permette di gestire attraverso un'interfaccia grafica la {repository}\ped{G} al fine di consentire anche a coloro che non hanno familiarità con tale tool di apprenderlo con una {learning curve}\ped{G} meno ripida. Per utilizzare il programma è necessario recarsi al sito: \url{https://desktop.github.com/} disponibile sia per {Microsoft Windows}\ped{G} e {Apple MacOS}\ped{G}. Per quanto riguarda le varie {distribuzioni Linux}\ped{G} non è disponibile un client ufficiale, è disponibile però un {porting}\ped{G} non ufficiale all'indirizzo: \url{https://github.com/shiftkey/desktop}
+
+\paragraph{Project Board}\mbox{}\\
+\label{sec:projectboard}
+Per la gestione delle {issue}\ped{G} si fa utilizzo di {project board}\ped{G} che permettono una gestione semplice del ciclo di vita dei documenti. 
+In particolare, semplicemente trascinando la {card}\ped{G} da una colonna ad un'altra si andrà ad indicare in che stato si trova quella determinata issue.
+Le colonne, indicanti lo stato in cui si trova la issue, utilizzate all'interno del ciclo di vita dei documenti sono le seguenti:
+\begin{itemize}
+\item[•] \textbf{To do}: indica che l'attività deve essere ancora svolta;
+\item[•] \textbf{In progress}: indica che l'attività è in svolgimento;
+\item[•] \textbf{Needs review}: indica che l'attività necessita di verifica;
+\item[•] \textbf{Done}: indica che l'attività è conclusa;
+\end{itemize}
+\paragraph{Messaggi di commit}\mbox{}\\
+Ogni volta che si effettuano modifiche sui file del repository locale per poi esser caricate in
+quello remoto, bisogna specificarne le motivazioni. \uppercase{è} importante che i messaggi siano esplicativi e che non creino ambiguità, pertanto si scrivano le varie modifiche facendo uso di un elenco puntato.
+Per la chiusura delle issue si può utilizzare la sintassi con le {keyword}\ped{G} direttamente all'interno dei {commit}\ped{G}, per fare ciò le keyword devono essere collocate alla fine del messaggio di commit. Per il loro utilizzo si rimanda alla documentazione di {Git}\ped{G}: \url{https://help.github.com/articles/closing-issues-using-keywords/}. 
+
+\paragraph{Merge}\mbox{}\\
+Nel caso in cui, nel tentativo di effettuare l'upload nella repository remota, si verifichi un {conflitto}\ped{G} è compito del componente del gruppo informare l'\textit{Amministratore di Progetto}. Nel caso in cui non si fosse in grado di effettuare il {merge}\ped{G} sfruttando il tool automatico messo a disposizione da client di versionamento, chiedere all'\textit{Amministratore di Progetto} di risolvere manualmente la cosa il prima possibile.
+\paragraph{Gestione delle milestone}
+Per la gestione delle {milestone}\ped{G} è utilizzato il sistema di gestione offerto da GitHub, che permette di associare le milestone alle issue e alle pull request.
+\paragraph{Creazione di una milestone}\mbox{}\\
+Per la creazione di una milestone all'interno della repository da GitHub.com, si deve:
+\begin{enumerate}
+\item Selezionare la voce "Issues" oppure "Pull requests";
+\item Selezionare la voce "Milestone" posto vicino alla barra di ricerca;
+\item Selezionare la voce "New Milestone";
+\item Inserire il nome della milestone, la descrizione associata ed eventuali tag;
+\item Selezionare l'opzione "Salva cambiamenti".
+\end{enumerate}
+\paragraph{Modifica di una milestone}\mbox{}\\
+Per modificare una milestone sempre su GitHub si deve:
+\begin{enumerate}
+\item Selezionare la voce "Issues" oppure "Pull requests";
+\item Selezionare la voce "Milestone" posto vicino alla barra di ricerca;
+\item Selezionare la voce "Edit";
+\item Modificare il nome della milestone, la descrizione associata o eventuali tag;
+\item Selezionare l'opzione "Save changes".
+\end{enumerate}
+
 \subsection{Verifica}
 
 \subsubsection{Scopo}
@@ -370,3 +431,6 @@ Ad esempio, se un componente ha realizzato la sezione "A" del documento, egli ve
 
 \subsubsection{Verifica dei diagrammi}
 I diagrammi devono essere verificati manualmente dal \textit{Verificatore} che deve controllare che aderiscano correttamente allo standard 2.0 (vedi Riferimenti Normativi). In particolare deve controllare che i diagrammi di flusso siano rappresentati in maniera corretta e che i diagrammi utilizzino correttamente le inclusioni e le estensioni, come ad esempio controllando che queste ultime siano accompagnate dalla condizione.
+
+\subsection{Validazione}
+Il gruppo \gruppo \space si riserva di aggiungere questa sezione in un successivo periodo.
