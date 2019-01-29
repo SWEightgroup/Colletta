@@ -12,6 +12,7 @@ before_install:
 
 # SETUP DI LATEX
  - sudo apt-get install texlive-latex-base
+ - sudo apt-get install xzdec
  - tlmgr init-usertree
  - tlmgr install graphbox
 
