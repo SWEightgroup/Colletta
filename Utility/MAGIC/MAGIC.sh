@@ -8,7 +8,7 @@ echo "Sto compilando i tex 3 volte (non si e' mai troppo sicuri)"
             printf 'Complazione #'
             printf $i
             cd ../../Working_Dir/Norme-di-Progetto/
-            sudo docker run -ti   -v miktex:/miktex/.miktex   -v `pwd`:/miktex/work   miktex/miktex pdflatex norme-di-progetto.tex --enable-installer
+            sudo docker run -ti   -v miktex:/miktex/.miktex   -v `pwd`:/miktex/work   miktex/miktex sudo pdflatex norme-di-progetto.tex --enable-installer
             printf "."
             cd ../../Utility/MAGIC/
             cd ../../Working_Dir/Analisi_dei_requisiti/
