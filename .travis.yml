@@ -7,7 +7,7 @@ before_install:
  - python2.7 -m pip install oauth2client --user
  - sudo apt-get install texlive-latex-base
 
-before_script: cd cd Utility/MAGIC/
+before_script: cd Utility/MAGIC/
 
 jobs:
   include:
