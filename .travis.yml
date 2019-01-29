@@ -15,7 +15,8 @@ before_install:
  - sudo apt-get install xzdec
  - tlmgr init-usertree
  - tlmgr option repository ftp://tug.org/historic/systems/texlive/2015/tlnet-final
- - tlmgr install graphbox
+ - bash Utility/MAGIC/usepckg_install.sh
+
 
 before_script: cd Utility/MAGIC/
 
