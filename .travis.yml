@@ -1,11 +1,19 @@
+language: generic;
+
 before_install:
 #  - sudo apt-get update
 #  - sudo apt-get install hunspell
 #  - sudo apt-get install myspell-en-us
 #  - sudo apt-get install myspell-it
+
+# SETUP Python
  - python2.7 -m pip install gspread --user
  - python2.7 -m pip install oauth2client --user
- - sudo apt-get install texlive-full
+
+# SETUP DI LATEX
+ - sudo apt-get install texlive-base
+ - tlmgr init-usertree
+ - tlmgr install graphbox
 
 before_script: cd Utility/MAGIC/
 
