@@ -5,8 +5,7 @@ before_install:
 #  - sudo apt-get install myspell-it
  - python2.7 -m pip install gspread --user
  - python2.7 -m pip install oauth2client --user
- - sudo apt-get install texlive-latex-base
- - sudo apt-get install texlive-latex-extra
+ - sudo apt-get install texlive-full
 
 before_script: cd Utility/MAGIC/
 
