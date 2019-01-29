@@ -15,7 +15,7 @@ $ bash MAGIC.sh
 	*gspread
   Comandi per installarli:
   $ python2.7 -m pip install gspread
-  $ python2.7 -m pip install ServiceAccountCredentials
+  $ python2.7 -m pip install oauth2client
 - Connessione a internet
 - Responsabilita'
 

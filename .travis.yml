@@ -6,6 +6,10 @@ before_install:
  - sudo apt-get install python2.7
  - python2.7 -m pip install gspread --user
  - python2.7 -m pip install oauth2client --user
+ - sudo apt-get install texlive-latex-base
+ - sudo apt-get install texlive-fonts-recommended
+ - sudo apt-get install texlive-fonts-extra
+ - sudo apt-get install texlive-latex-extra
 
 jobs:
   include:
