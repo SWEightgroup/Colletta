@@ -1,3 +1,35 @@
+\subsubsection{Specifica tecnica}
+\paragraph{Diagrammi UML}\mbox{}\\
+Con l'obiettivo di rendere chiare le soluzioni progettuali utilizzate, è necessario l'utilizzo di {diagrammi UML}\ped{G}. Quest'ultimi devono essere realizzati utilizzando lo {standard}\ped{G} 2.0.
+
+È richiesta la realizzazione di:
+\begin{itemize}
+	\item[•] \textbf{Diagrammi delle attività}: descrivono un processo o un algoritmo;
+	\item[•] \textbf{Diagrammi dei package}: per raggruppare elementi e fornire un {namespace}\ped{G} per gli elementi raggruppati;
+	\item[•] \textbf{Diagrammi di sequenza}: rappresentano una sequenza di processi o funzioni;
+	\item[•] \textbf{Diagrammi di classi}: rappresentano le classi utilizzate e le loro relazioni.
+\end{itemize}
+In caso vengano utilizzati dei {Design Pattern}\ped{G} sarà necessario accompagnarli con una descrizione ed un diagramma UML.
+
+
+\paragraph{Design Pattern}\mbox{}\\
+I \textit{Progettisti} devono utilizzare il design pattern che ritengono più adatto al contesto per rendere l'applicazione più sicura ed efficiente possibile.
+Ogni utilizzo di design pattern deve essere brevemente descritto ed accompagnato da un diagramma UML che ne esemplifica il funzionamento.
+
+\paragraph{Tracciamento delle componenti}
+Tutti i requisiti devono essere riferiti al componente che li soddisfa per poter verificare che ogni requisito sia soddisfatto. Si veda le sezione 3.2.6.1 in cui viene descritto lo strumento utilizzato per il tracciamento.
+
+\paragraph{Tracciamento delle classi}
+Tutti i requisiti devono essere tracciati alle classi associate per poter verificare che ogni classesoddisfi almeno un requisito. Si veda le sezione 3.2.6.1 in cui viene descritto lo strumento
+utilizzato per il tracciamento.
+
+\paragraph{Test di integrazione}
+Devono essere definite le classi di verifica necessarie a garantire che tutte le componenti del sistema funzionino correttamente.
+
+\paragraph{Test di unità}
+Devono essere definiti dei testi di unità necessari a garantire che tutte le componenti del sistema funzionino correttamente.
+
+
 \subsubsection{Progettazione}
 Dopo aver terminato la fase di Analisi si passerà a quella di Progettazione che vede come protagonisti i \textit{Progettisti}, durante la quale questi devono trovare una soluzione soddisfacente al problema, definire un'architettura logica e i vari diagrammi che la rappresentano.
 La Progettazione permette di: 
@@ -16,26 +48,35 @@ Bisogna definire un'{architettura}\ped{G} logica del prodotto che dovrà:
 \item[•] Essere affidabile;
 \item[•] Essere comprensibile per future manutenzioni.
 \end{itemize}
-\paragraph{Diagrammi UML}\mbox{}\\
-Con l'obiettivo di rendere chiare le soluzioni progettuali utilizzate, è necessario l'utilizzo di {diagrammi UML}\ped{G}. Quest'ultimi devono essere realizzati utilizzando lo {standard}\ped{G} 2.0.
-
-È richiesta la realizzazione di:
-\begin{itemize}
-\item[•] \textbf{Diagrammi delle attività}: descrivono un processo o un algoritmo;
-\item[•] \textbf{Diagrammi dei package}: per raggruppare elementi e fornire un {namespace}\ped{G} per gli elementi raggruppati;
-\item[•] \textbf{Diagrammi di sequenza}: rappresentano una sequenza di processi o funzioni;
-\item[•] \textbf{Diagrammi di classi}: rappresentano le classi utilizzate e le loro relazioni.
-\end{itemize}
-In caso vengano utilizzati dei {Design Pattern}\ped{G} sarà necessario accompagnarli con una descrizione ed un diagramma UML.
-
-
-\paragraph{Design Pattern}\mbox{}\\
-I \textit{Progettisti} devono utilizzare il design pattern che ritengono più adatto al contesto per rendere l'applicazione più sicura ed efficiente possibile.
-
-Ogni utilizzo di design pattern deve essere brevemente descritto ed accompagnato da un diagramma UML che ne esemplifica il funzionamento.
 
 \subsubsection{Codifica}
 In questa sezione vengono descritte le norme che i \textit{Programmatori} devono seguire con l'obiettivo di scrivere codice leggibile, affidabile e mantenibile.
 
-Questa sezione verrà aggiornata durante la fase di Progettazione.
+\paragraph{Stile di codifica}
+Al fine di produrre codice uniforme, leggibile e manutenibile è richiesto che vengano rispettate
+le seguenti convenzioni:
+\begin{itemize}
+\item[•] I nomi utilizzati devono essere chiari, descrittivi rispetto alla loro funzione e in inglese;
+\item[•] Evitare nomi troppo simili tra loro che possano creare difficoltà nella comprensione del codice;
+\item[•] Deve essere presente almeno un breve commento descrittivo per ogni classe e metodo inglese;
+\item[•] I commenti devono essere scritti in lingua inglese senza utilizzare abbreviazioni o altre ambiguità;
+\item[•] Le modifiche al codice devono sempre riflettersi sui relativi commenti;
+\item[•] Evitare commenti superflui, inappropriati o scurrili;
+\item[•] Oogni file deve presentare un’intestazione con le seguenti informazioni:
+\begin{list}{$\circ$}{}
+\item Percorso e nome del file;
+\item Nome e cognome dell’autore;
+\item Data di creazione;
+\item Breve descrizione del contenuto del file.
+\end{list}
+\end{itemize}
+
+\paragraph{Ricorsione}
+La ricorsione va sempre evitata se possibile. Per ogni funzione ricorsiva è necessario fornire
+una prova di terminazione nei commenti.
+\paragraph{Variabili globali}
+L’uso di variabili globali va sempre evitato se possibile.
+
+\subsubsection{Strumenti}
+\paragraph{nostro strumento}
 
