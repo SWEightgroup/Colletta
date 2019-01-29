@@ -14,7 +14,7 @@ before_install:
  - sudo apt-get install texlive-latex-base
  - sudo apt-get install xzdec
  - tlmgr init-usertree
- - tlmgr option repository ftp://tug.org/historic/systems/texlive/2015/tlnet-final
+ - sudo tlmgr option repository ftp://tug.org/historic/systems/texlive/2017/tlnet-final
  - bash Utility/MAGIC/usepckg_install.sh
 
 
