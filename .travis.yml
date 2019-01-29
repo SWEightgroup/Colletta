@@ -14,6 +14,7 @@ before_install:
  - sudo apt-get install texlive-latex-base
  - sudo apt-get install xzdec
  - tlmgr init-usertree
+ - tlmgr option repository ftp://tug.org/historic/systems/texlive/2015/tlnet-final
  - tlmgr install graphbox
 
 before_script: cd Utility/MAGIC/
