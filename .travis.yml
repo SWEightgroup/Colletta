@@ -11,11 +11,11 @@ before_install:
  - python2.7 -m pip install oauth2client --user
 
 # SETUP DI LATEX
- - sudo apt-get install texlive-latex-base
- - sudo apt-get install xzdec
- - tlmgr init-usertree
- - bash Utility/MAGIC/usepckg_install.sh
-
+- sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D6BC243565B2087BC3F897C9277A7293F59E4889
+- echo "deb http://miktex.org/download/debian stretch universe" | sudo tee /etc/apt/sources.list.d/miktex.list
+- sudo apt-get update
+- sudo apt-get install miktex
+- sudo miktexsetup --shared=yes finish
 
 before_script: cd Utility/MAGIC/
 
