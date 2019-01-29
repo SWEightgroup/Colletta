@@ -13,10 +13,11 @@ before_install:
 # SETUP DI LATEX
  - docker pull miktex/miktex
  - docker volume create --name miktex
- - alias pdflatex="sudo docker run -ti   -v miktex:/miktex/.miktex   -v `pwd`:/miktex/work   miktex/miktex pdflatex"
 
 
-before_script: cd Utility/MAGIC/
+before_script: 
+  - cd Utility/MAGIC/
+  - alias pdflatex="sudo docker run -ti   -v miktex:/miktex/.miktex   -v `pwd`:/miktex/work   miktex/miktex pdflatex"
 
 jobs:
   include:
