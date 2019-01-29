@@ -1,0 +1,20 @@
+before_install:
+#  - sudo apt-get update
+#  - sudo apt-get install hunspell
+#  - sudo apt-get install myspell-en-us
+#  - sudo apt-get install myspell-it
+sudo apt-get install python2.7
+python2.7 -m pip install gspread
+python2.7 -m pip install ServiceAccountCredentials
+
+jobs:
+  include:
+#    - stage: test
+#      name: "orthography"
+#      script: bash scripts/grammar.sh
+     - stage: test
+       name: MAGIC
+       script: bash Utility/MAGIC/MAGIC.sh
+
+#notifications:
+#  slack: zerosevengroup:awH2p9uSzEPY9plMSyKBtAHF
