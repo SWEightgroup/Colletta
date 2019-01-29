@@ -8,7 +8,7 @@ echo "Sto compilando i tex 3 volte (non si e' mai troppo sicuri)"
             printf 'Complazione #'
             printf $i
             cd ../../Working_Dir/Norme-di-Progetto/
-            pdflatex norme-di-progetto.tex >/dev/null
+            pdflatex norme-di-progetto.tex
             printf "."
             cd ../../Utility/MAGIC/
             cd ../../Working_Dir/Analisi_dei_requisiti/
