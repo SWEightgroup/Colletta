@@ -8,23 +8,23 @@ echo "Sto compilando i tex 3 volte (non si e' mai troppo sicuri)"
             printf 'Complazione #'
             printf $i
             cd ../../Working_Dir/Norme-di-Progetto/
-            pdflatex norme-di-progetto.tex --enable-installer >/dev/null
+            sudo docker run -ti   -v miktex:/miktex/.miktex   -v `pwd`:/miktex/work   miktex/miktex pdflatex norme-di-progetto.tex --enable-installer >/dev/null
             printf "."
             cd ../../Utility/MAGIC/
             cd ../../Working_Dir/Analisi_dei_requisiti/
-            pdflatex AnalisiDeiRequisiti.tex --enable-installer >/dev/null
+            sudo docker run -ti   -v miktex:/miktex/.miktex   -v `pwd`:/miktex/work   miktex/miktex pdflatex AnalisiDeiRequisiti.tex --enable-installer >/dev/null
             printf "."
             cd ../../Utility/MAGIC/
             cd ../../Working_Dir/Glossario/
-            pdflatex Glossario.tex --enable-installer >/dev/null
+            sudo docker run -ti   -v miktex:/miktex/.miktex   -v `pwd`:/miktex/work   miktex/miktex pdflatex Glossario.tex --enable-installer >/dev/null
             printf "."
             cd ../../Utility/MAGIC/
             cd ../../Working_Dir/pdq/
-            pdflatex pdq.tex --enable-installer >/dev/null
+            sudo docker run -ti   -v miktex:/miktex/.miktex   -v `pwd`:/miktex/work   miktex/miktex pdflatex pdq.tex --enable-installer >/dev/null
             printf "."
             cd ../../Utility/MAGIC/
             cd ../../Working_Dir/Piano_di_Progetto/Documento/
-            pdflatex Piano_di_Progetto.tex --enable-installer >/dev/null
+            sudo docker run -ti   -v miktex:/miktex/.miktex   -v `pwd`:/miktex/work   miktex/miktex pdflatex Piano_di_Progetto.tex --enable-installer >/dev/null
             printf "."
             cd ../../../Utility/MAGIC/
             printf "Fatto"

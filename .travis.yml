@@ -17,7 +17,6 @@ before_install:
 
 before_script: 
   - cd Utility/MAGIC/
-  - alias pdflatex="sudo docker run -ti   -v miktex:/miktex/.miktex   -v `pwd`:/miktex/work   miktex/miktex pdflatex"
 
 jobs:
   include:
