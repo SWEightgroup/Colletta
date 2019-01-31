@@ -16,21 +16,14 @@ In caso vengano utilizzati dei {Design Pattern}\ped{G} sarà necessario accompag
 I \textit{Progettisti} devono utilizzare il design pattern che ritengono più adatto al contesto per rendere l'applicazione più sicura ed efficiente possibile.
 Ogni utilizzo di design pattern deve essere brevemente descritto ed accompagnato da un diagramma UML che ne esemplifica il funzionamento.
 
-\paragraph{Tracciamento delle componenti}
-Tutti i requisiti devono essere riferiti al componente che li soddisfa per poter verificare che ogni requisito sia soddisfatto. Si veda le sezione 3.2.6.1 in cui viene descritto lo strumento utilizzato per il tracciamento.
+\paragraph{Tracciamento delle componenti}\mbox{}\\
+Tutti i requisiti devono essere riferiti al componente che li soddisfa per poter verificare che ogni requisito sia soddisfatto. Si veda le sezione x in cui viene descritto lo strumento utilizzato per il tracciamento.
 
-\paragraph{Tracciamento delle classi}
-Tutti i requisiti devono essere tracciati alle classi associate per poter verificare che ogni classesoddisfi almeno un requisito. Si veda le sezione 3.2.6.1 in cui viene descritto lo strumento
+\paragraph{Tracciamento delle classi}\mbox{}\\
+Tutti i requisiti devono essere tracciati alle classi associate per poter verificare che ogni classe soddisfi almeno un requisito. Si veda le sezione x in cui viene descritto lo strumento
 utilizzato per il tracciamento.
 
-\paragraph{Test di integrazione}
-Devono essere definite le classi di verifica necessarie a garantire che tutte le componenti del sistema funzionino correttamente.
-
-\paragraph{Test di unità}
-Devono essere definiti dei testi di unità necessari a garantire che tutte le componenti del sistema funzionino correttamente.
-
-
-\subsubsection{Progettazione}
+\paragraph{Progettazione}\mbox{}\\
 Dopo aver terminato la fase di Analisi si passerà a quella di Progettazione che vede come protagonisti i \textit{Progettisti}, durante la quale questi devono trovare una soluzione soddisfacente al problema, definire un'architettura logica e i vari diagrammi che la rappresentano.
 La Progettazione permette di: 
 \begin{itemize}
@@ -49,16 +42,43 @@ Bisogna definire un'{architettura}\ped{G} logica del prodotto che dovrà:
 \item[•] Essere comprensibile per future manutenzioni.
 \end{itemize}
 
+\subsubsection{Test}
+
+\paragraph{Classificazione dei test}\mbox{}\\
+I test implementati devono essere classificati secondo la seguente notazione:
+\begin{center}
+	T[Tipologia Test][Codice identificativo]
+\end{center}
+dove:
+\begin{itemize}
+	\item[•] Tipologia test: indica il tipo di test e può assumere i seguenti valori:
+	\begin{list}{$\circ$}{}
+		\item U: per i test di unità;
+		\item I: per i test di integrazione;
+		\item S: per i test di sistema;
+	\end{list}
+	\item[•] Codice identificativo: indica il codice numerico del test.
+\end{itemize}
+
+\paragraph{Test di unità}\mbox{}\\
+Devono essere definiti dei testi di unità necessari a garantire che tutte le componenti del sistema funzionino correttamente.
+
+\paragraph{Test di integrazione}\mbox{}\\
+Devono essere definite le classi di verifica necessarie a garantire che tutte le componenti del sistema funzionino correttamente.
+
+\paragraph{Test di sistema}\mbox{}\\
+Richiede che i vari componenti del sistema vengano integrati al fine di garantire che tutte le componenti del sistema funzionino correttamente.
+
 \subsubsection{Codifica}
 In questa sezione vengono descritte le norme che i \textit{Programmatori} devono seguire con l'obiettivo di scrivere codice leggibile, affidabile e mantenibile.
 
-\paragraph{Stile di codifica}
+\paragraph{Stile di codifica}\mbox{}\\
 Al fine di produrre codice uniforme, leggibile e manutenibile è richiesto che vengano rispettate
 le seguenti convenzioni:
 \begin{itemize}
 \item[•] I nomi utilizzati devono essere chiari, descrittivi rispetto alla loro funzione e in inglese;
 \item[•] Evitare nomi troppo simili tra loro che possano creare difficoltà nella comprensione del codice;
-\item[•] Deve essere presente almeno un breve commento descrittivo per ogni classe e metodo inglese;
+\item[•] Deve essere presente almeno un breve commento descrittivo per ogni classe e metodo;
 \item[•] I commenti devono essere scritti in lingua inglese senza utilizzare abbreviazioni o altre ambiguità;
 \item[•] Le modifiche al codice devono sempre riflettersi sui relativi commenti;
 \item[•] Evitare commenti superflui, inappropriati o scurrili;
@@ -70,13 +90,11 @@ le seguenti convenzioni:
 \item Breve descrizione del contenuto del file.
 \end{list}
 \end{itemize}
+Il codice deve seguire le linee guida reperibili all’indirizzo:
+\begin{center}
+\url{http://google.github.io/styleguide/};
+\end{center}
+\paragraph{Documentazione del codice}\mbox{}\\
+fare
 
-\paragraph{Ricorsione}
-La ricorsione va sempre evitata se possibile. Per ogni funzione ricorsiva è necessario fornire
-una prova di terminazione nei commenti.
-\paragraph{Variabili globali}
-L’uso di variabili globali va sempre evitato se possibile.
-
-\subsubsection{Strumenti}
-\paragraph{nostro strumento}
 
