@@ -59,6 +59,20 @@ dove:
 \item \textbf{Data}: è la data in cui è stato svolto il verbale nel formato descritto nel paragrafo \hyperref[sec:Formati]{§4.1.6.1}.
 \end{itemize}
 
+\subsubsection{Nome dei documenti}\mbox{}\\
+I nomi dei documenti devono:
+\begin{itemize}
+\item Iniziare con la lettera maiuscola;
+\item Se composti da più parole anche esse devono avere la lettera maiuscola.
+\item Dopo il nome testuale, segue un carattere di underscore;
+\item Infine si indica la versione come descritto in \hyperref[sec:documentversion]{§4.1.4}.
+\end{itemize}
+Esempio:
+\begin{center}
+\text{NomeDocumento\_v1.0.0}
+\end{center}
+I documenti devono essere esportati in formato PDF.
+
 \subsubsection{Template}
 Per semplificare e standardizzare la stesura dei documenti previsti è stato creato un template \LaTeX{} contenente tutte le impostazioni per la struttura grafica e lo stile di formattazione. Ogni membro del team deve obbligatoriamente utilizzare questo {template}\ped{G}.
 Quest'ultimo è disponibile all'interno dell'omonima cartella ed è denominato "SWEightStyle.sty", e dev'essere importato all'interno del documento \LaTeX{} tramite la direttiva di inclusione di un pacchetto.
@@ -191,10 +205,6 @@ In particolare le immagini dovranno rispettare le seguenti proprietà, salvo ind
 \item[•] \textbf{Posizionamento}: preferibilmente deve essere centrata orizzontalmente.
 \end{itemize}
 
-\paragraph{Diagrammi UML}\mbox{}\\
-Il software che deve essere utilizzato per la creazione dei diagrammi UML è Astah versione 8.0.0, gli \textit{Analisti} devono utilizzare la documentazione del software per il suo studio e utilizzo.
-Ogni diagramma di caso d’uso è identificato in alto a sinistra dal suo codice identificativo e dal nome.
-
 \subparagraph{Esportare immagini in Astah}\mbox{}\\
 I diagrammi dovranno essere esportati come immagini secondo le specifiche sotto riportate. Per esportare i diagrammi in Astah, dopo aver completato il diagramma, selezionare: $Tools \rightarrow Export\ image \rightarrow Current\ Diagram \rightarrow PNG$.
 L'immagine rappresentante l'UML deve avere le seguenti caratteristiche:
@@ -208,40 +218,6 @@ Ad esempio: UC4.2.png $\rightarrow$ UC42.png;
 \end{itemize}
 Inoltre, anche il file con estensione asta deve essere salvato nella cartella predisposta al fine di permetterne modifiche successivamente. 
 Per la realizzazione dell'Analisi dei Requisiti la cartella destinata al salvataggio dei diagrammi modificabili è: "Casi d'uso", reperibile all'interno del {branch}\ped{G} Analisi dei Requisiti. Il nome del diagramma deve essere il medesimo dell'immagine esportata.
-
-\subsubsection{Strumenti di supporto} 
-
-\paragraph{Stesura dei documenti}\mbox{}\\
-L'intera documentazione deve essere prodotta utilizzando il {linguaggio di markup}\ped{G} \LaTeX{}, scelto dal team per i seguenti motivi:
-\begin{itemize}
-\item[•] Gestisce elegantemente e con facilità gli indici, i pedici, i riferimenti ed il glossario;
-\item[•] È un linguaggio che supporta il {versionamento}\ped{G};
-\item[•] Permette la stesura del documento suddividendolo in parti che rappresentano le varie sezioni, facilitando così la stesura del documento.
-\end{itemize}
-Per installare \LaTeX{} è necessario installare il compilatore pdflatex, integrato in un software come TexLive reperibile all'indirizzo \url{https://www.tug.org/texlive/}. Quest'ultimo è {cross platform}\ped{G}, {open source}\ped{G} e gratuito. Si consiglia l'installazione del pacchetto completo per evitare di installare pacchetti successivamente.
-Per la stesura del documento è consigliato l'utilizzo di Texmaker, le principali caratteristiche sono:
-\begin{itemize}
-	\item[•] Compilatore e visualizzatore {PDF}\ped{G} per il documento prodotto;
-	\item[•] Evidenziazione della sintassi;
-	\item[•] Completamento automatico.
-\end{itemize}  
-Il software è reperibile all'indirizzo \url{http://www.xm1math.net/texmaker/}, è cross-platform ed è gratuito.
-
-\paragraph{Nome dei documenti}\mbox{}\\
-I nomi dei documenti devono:
-\begin{itemize}
-\item Iniziare con la lettera maiuscola;
-\item Se composti da più parole anche esse devono avere la lettera maiuscola.
-\item Dopo il nome testuale, segue un carattere di underscore;
-\item Infine si indica la versione come descritto in \hyperref[sec:documentversion]{§4.1.4}.
-\end{itemize}
-Esempio:
-\begin{center}
-\text{NomeDocumento\_v1.0.0}
-\end{center}
-I documenti devono essere esportati in formato PDF.
-\paragraph{Controllo ortografico}\mbox{}\\
-Al termine della stesura dei documenti, prima di alla fase di verifica del documento, un \textit{Redattore} deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice {Gulpease}\ped{G}.
 
 \subsubsection{Ciclo di vita dei documenti}
 Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di tasks offerto da Asana, come descritto nella sezione 5.? gestione dell'infrastruttura.
@@ -268,6 +244,32 @@ Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio d
 \caption{Ciclo di vita di un documento}
 \label{fig:document_lifecycle}
 \end{figure}
+
+
+\subsubsection{Strumenti di supporto} 
+
+\paragraph{Stesura dei documenti}\mbox{}\\
+L'intera documentazione deve essere prodotta utilizzando il {linguaggio di markup}\ped{G} \LaTeX{}, scelto dal team per i seguenti motivi:
+\begin{itemize}
+\item[•] Gestisce elegantemente e con facilità gli indici, i pedici, i riferimenti ed il glossario;
+\item[•] È un linguaggio che supporta il {versionamento}\ped{G};
+\item[•] Permette la stesura del documento suddividendolo in parti che rappresentano le varie sezioni, facilitando così la stesura del documento.
+\end{itemize}
+Per installare \LaTeX{} è necessario installare il compilatore pdflatex, integrato in un software come TexLive reperibile all'indirizzo \url{https://www.tug.org/texlive/}. Quest'ultimo è {cross platform}\ped{G}, {open source}\ped{G} e gratuito. Si consiglia l'installazione del pacchetto completo per evitare di installare pacchetti successivamente.
+Per la stesura del documento è consigliato l'utilizzo di Texmaker, le principali caratteristiche sono:
+\begin{itemize}
+	\item[•] Compilatore e visualizzatore {PDF}\ped{G} per il documento prodotto;
+	\item[•] Evidenziazione della sintassi;
+	\item[•] Completamento automatico.
+\end{itemize}  
+Il software è reperibile all'indirizzo \url{http://www.xm1math.net/texmaker/}, è cross-platform ed è gratuito.
+
+\paragraph{Diagrammi UML}\mbox{}\\
+Il software che deve essere utilizzato per la creazione dei diagrammi UML è Astah versione 8.0.0, gli \textit{Analisti} devono utilizzare la documentazione del software per il suo studio e utilizzo.
+Ogni diagramma di caso d’uso è identificato in alto a sinistra dal suo codice identificativo e dal nome.
+
+\paragraph{Controllo ortografico}\mbox{}\\
+Al termine della stesura dei documenti, prima di alla fase di verifica del documento, un \textit{Redattore} deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice {Gulpease}\ped{G}.
 
 \subsection{Verifica}
 
