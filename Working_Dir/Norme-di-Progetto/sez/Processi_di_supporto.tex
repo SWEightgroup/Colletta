@@ -59,6 +59,20 @@ dove:
 \item \textbf{Data}: è la data in cui è stato svolto il verbale nel formato descritto nel paragrafo \hyperref[sec:Formati]{§4.1.6.1}.
 \end{itemize}
 
+\subsubsection{Nome dei documenti}\mbox{}\\
+I nomi dei documenti devono:
+\begin{itemize}
+\item Iniziare con la lettera maiuscola;
+\item Se composti da più parole anche esse devono avere la lettera maiuscola.
+\item Dopo il nome testuale, segue un carattere di underscore;
+\item Infine si indica la versione come descritto in \hyperref[sec:documentversion]{§4.1.4}.
+\end{itemize}
+Esempio:
+\begin{center}
+\text{NomeDocumento\_v1.0.0}
+\end{center}
+I documenti devono essere esportati in formato PDF.
+
 \subsubsection{Template}
 Per semplificare e standardizzare la stesura dei documenti previsti è stato creato un template \LaTeX{} contenente tutte le impostazioni per la struttura grafica e lo stile di formattazione. Ogni membro del team deve obbligatoriamente utilizzare questo {template}\ped{G}.
 Quest'ultimo è disponibile all'interno dell'omonima cartella ed è denominato "SWEightStyle.sty", e dev'essere importato all'interno del documento \LaTeX{} tramite la direttiva di inclusione di un pacchetto.
@@ -191,10 +205,6 @@ In particolare le immagini dovranno rispettare le seguenti proprietà, salvo ind
 \item[•] \textbf{Posizionamento}: preferibilmente deve essere centrata orizzontalmente.
 \end{itemize}
 
-\paragraph{Diagrammi UML}\mbox{}\\
-Il software che deve essere utilizzato per la creazione dei diagrammi UML è Astah versione 8.0.0, gli \textit{Analisti} devono utilizzare la documentazione del software per il suo studio e utilizzo.
-Ogni diagramma di caso d’uso è identificato in alto a sinistra dal suo codice identificativo e dal nome.
-
 \subparagraph{Esportare immagini in Astah}\mbox{}\\
 I diagrammi dovranno essere esportati come immagini secondo le specifiche sotto riportate. Per esportare i diagrammi in Astah, dopo aver completato il diagramma, selezionare: $Tools \rightarrow Export\ image \rightarrow Current\ Diagram \rightarrow PNG$.
 L'immagine rappresentante l'UML deve avere le seguenti caratteristiche:
@@ -208,6 +218,32 @@ Ad esempio: UC4.2.png $\rightarrow$ UC42.png;
 \end{itemize}
 Inoltre, anche il file con estensione asta deve essere salvato nella cartella predisposta al fine di permetterne modifiche successivamente. 
 Per la realizzazione dell'Analisi dei Requisiti la cartella destinata al salvataggio dei diagrammi modificabili è: "Casi d'uso", reperibile all'interno del {branch}\ped{G} Analisi dei Requisiti. Il nome del diagramma deve essere il medesimo dell'immagine esportata.
+
+\subsubsection{Ciclo di vita dei documenti}
+Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di tasks offerto da Asana, come descritto nella sezione 5.? gestione dell'infrastruttura.
+\begin{enumerate}
+\item Il \textit{Responsabile di progetto} crea il task, assegna i \textit{Redattori} ed i \textit{Verificatori}, e lo mette nella colonna "To Do" ;
+\item Quando i \textit{Redattori} assegnati iniziano la stesura del documento spostano il task nella colonna "In progress";
+\item Finita l'attività di scrittura il task deve essere spostato in "Need Review"
+\item I \textit{Verificatori} assegnati controllano il documento decidendo se:
+	\begin{enumerate}
+	 	\item Accettarlo, e muoverlo in "Done";
+	 	\item Non accettarlo e rimetterlo in "In Progress".
+	\end{enumerate}
+\item Se non accettato, i \textit{Redattori} devono apportare le modifiche descritte dai \textit{Verificatori};
+\item Se accettato, il documento giunge al \textit{Responsabile di progetto} che può:
+\begin{enumerate}
+	\item Approvarlo, rendendo il documento formale e marcarlo come completato.
+	\item Non approvarlo, fornendo le opportune motivazioni spostandolo in "To Do";
+\end{enumerate}
+\item Se approvato, sarà compito dell'\textit{Amministratore di Progetto} effettuare il merge.
+\end{enumerate}
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm,trim=2 2 2 2, clip]{img/cicloVitaDocumento.pdf}
+\caption{Ciclo di vita di un documento}
+\label{fig:document_lifecycle}
+\end{figure}
 
 \subsubsection{Strumenti di supporto} 
 
@@ -227,59 +263,89 @@ Per la stesura del documento è consigliato l'utilizzo di Texmaker, le principal
 \end{itemize}  
 Il software è reperibile all'indirizzo \url{http://www.xm1math.net/texmaker/}, è cross-platform ed è gratuito.
 
-\paragraph{Nome dei documenti}\mbox{}\\
-I nomi dei documenti devono:
-\begin{itemize}
-\item Iniziare con la lettera maiuscola;
-\item Se composti da più parole anche esse devono avere la lettera maiuscola.
-\item Dopo il nome testuale, segue un carattere di underscore;
-\item Infine si indica la versione come descritto in \hyperref[sec:documentversion]{§4.1.4}.
-\end{itemize}
-Esempio:
-\begin{center}
-\text{NomeDocumento\_v1.0.0}
-\end{center}
-I documenti devono essere esportati in formato PDF.
 \paragraph{Controllo ortografico}\mbox{}\\
 Al termine della stesura dei documenti, prima di alla fase di verifica del documento, un \textit{Redattore} deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice {Gulpease}\ped{G}.
-\subsubsection{Ciclo di vita dei documenti}
-Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di issues offerto da GitHub e come descritto in \hyperref[sec:projectboard]{§5.5.2.3}.
-\begin{enumerate}
-\item Il \textit{Responsabile di progetto} crea e assegna la issue ai \textit{Redattori} del documento (To do);
-\item Quando inizia la stesura del documento (In progress):
-	\begin{enumerate}
-		\item La issue viene spostata nella sezione “In progress”;
-		\item Viene creato un branch per lavorare sulla issue.
-	\end{enumerate}
-\item Finita l'attività di scrittura un \textit{Redattore} crea un {pull request}\ped{G} con (Needs review):
-	\begin{enumerate}
-		\item Sé stesso come assigneer;
-		\item I \textit{Verificatori} come reviewers;
-		\item I campi project e milestone appropriati.
-	\end{enumerate} 
-\item I \textit{Verificatori} controllano il documento e possono:
-	\begin{enumerate}
-	 	\item Accettarlo (Reviewer approved);
-	 	\item Non accettarlo (In progress).
-	\end{enumerate}
-\item Se non accettato, i \textit{Redattori} devono apportare le modifiche descritte dai \textit{Verificatori};
-\item Se accettato, il documento giunge al \textit{Responsabile di progetto} che può:
-\begin{enumerate}
-	\item Approvarlo, rendendo il documento formale e chiudendo la issue. (Done)
-	\item Non approvarlo, fornendo le opportune motivazioni (In progress);
-\end{enumerate}
-\item Se approvato, sarà compito dell'\textit{Amministratore di Progetto} effettuare il merge.
-\end{enumerate}
-\begin{figure}[H]
-\centering
-\includegraphics[width=17cm,trim=2 2 2 2, clip]{img/cicloVitaDocumento.pdf}
-\caption{Ciclo di vita di un documento}
-\label{fig:document_lifecycle}
-\end{figure}
+
+\paragraph{Diagrammi UML}\mbox{}\\
+Il software che deve essere utilizzato per la creazione dei diagrammi UML è Astah versione 8.0.0, gli \textit{Analisti} devono utilizzare la documentazione del software per il suo studio e utilizzo.
+Ogni diagramma di caso d’uso è identificato in alto a sinistra dal suo codice identificativo e dal nome.
 
 \subsection{Qualità}
 \subsubsection{Scopo}
-\subsubsection{Metriche da pdp (da fare)}
+\subsubsection{Misurazioni e metriche}
+\paragraph{Documenti}\mbox{}\\
+Le metriche presentate in questa sezione hanno come scopo fornire dei parametri per garantire un buon livello di leggibilità dei documenti.
+
+\subparagraph{Indice Gulpease}\mbox{}\\
+L'Indice Gulpease è un indice di leggibilità di un testo tarato sulla lingua italiana. Rispetto ad altri ha il vantaggio di utilizzare la lunghezza delle parole in lettere anziché in sillabe, semplificandone il calcolo automatico.
+L'indice di Gulpease considera due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero delle lettere.
+L'indice di Gulpease può assumere valori fra 0 e 100 e si calcola come segue:
+\[
+IG = 89 + \frac{300 \cdot \textit{(numero delle frasi)} - 10 \cdot \textit{(numero delle lettere)}}{\textit{numero delle parole}}
+\]
+
+\paragraph{Software}\mbox{}\\
+\subparagraph{Numero di Metodi}\mbox{}\\
+Numero medio di metodi contenuti nelle classi di un package. Un numero di metodi troppo alto può indicare la necessità di scomporre una classe. Un numero di metodi troppo basso, d'altro canto, deve far riflettere sull'effettiva utilità della classe presa in esame.
+\subparagraph{Numero di Parametri}\mbox{}\\
+Numero di parametri passati a un metodo. Un eccessivo numero di parametri passati ad un metodo può indicare un'eccessiva complessità dello stesso, che va scomposto o quanto meno ripensato.
+\subparagraph{Funzioni di interfaccia per package}\mbox{}\\
+Numero di funzione che un package espone. Un valore troppo elevato potrebbe indicare un errore di progettazione
+\subparagraph{Complessità Ciclomatica}\mbox{}\\
+La Complessità Ciclomatica (CC) è una metrica software che misura la complessità di un programma contando il numero di cammini linearmente indipendenti attraverso il grafo di controllo di flusso. In questo grafo, i nodi corrispondono a gruppi indivisibili di istruzioni, mentre gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo gruppo: sono quindi responsabili dell'aumento della CC i punti decisionali, \emph{if} e \emph{for}.
+Tenere bassa la CC può portare a vari vantaggi:
+\begin{itemize}
+	\item Minore complessità durante lo sviluppo;
+	\item Maggior facilità nell'aumentare la code coverage in fase di test;
+	\item Maggior coesione del codice;
+\end{itemize}
+La Complessità Ciclomatica è calcolata come segue:
+\[
+CC = v(G) = e - n + 2p
+\]
+dove:
+\begin{itemize}
+	\item \emph{e} = numero di archi del grafo;
+	\item \emph{n} = numero di nodi del grafo;
+	\item \emph{p} = numero di componenti connesse.
+\end{itemize}
+\subparagraph{Campi dati per classe}\mbox{}\\
+Numero di campi dati contenuti da una classe. Una classe con troppi campi dati può essere sintomo di cattiva progettazione e va ripensata.
+\subparagraph{Commenti per linee di codice}\mbox{}\\
+Rapporto fra le righe di codice (righe vuote escluse) e le righe di commento. Un codice ben commentato può essere compreso più facilmente e velocemente, facilitando le operazioni di manutenzione.
+\subparagraph{Code Coverage}\mbox{}\\
+Percentuale delle linee di codice coperte dai test.
+Il gruppo \gruppo \space si riserva di decidere in futuro i parametri da adottare.
+\subparagraph{Superamento test}\mbox{}\\
+Percentuale di test superati. Per avere un prodotto di qualità, è necessario che esso superi i test prestabiliti.
+\subparagraph{Requisiti obbligatori soddisfatti}\mbox{}\\
+Percentuale di requisiti obbligatori stabiliti dalla proponente soddisfatti. \'E fondamentale, per la buona riuscita del progetto, soddisfare i requisiti obbligatori individuati nell'\AdR .
+	
+\paragraph{Metriche processi}\mbox{}
+\subparagraph{Schedule Variance}\mbox{}\\
+La Schedule Variance indica se una certa attività o processo è in anticipo, in pari, o in ritardo rispetto alla data di scadenza prevista.
+Se $SV < 0$ significa che l'attività o il processo è in pari o in anticipo, invece, se $SV \geq 0$ significa che l'attività è in ritardo.
+La Schedule Variance è calcolata come segue:
+\[
+SV = \textit{data conclusione effettiva} - \textit{data conclusione pianificata}
+\]
+\subparagraph{Budget Variance}\mbox{}\\
+La Budget Variance misura, ad una determinata data, lo scostamento fra quanto speso e quanto preventivato. Se $BV \geq 0\%$ significa che il progetto sta spendendo le risorse più velocemente di quanto pianificato.
+La Budget Variance è calcolata come segue:
+\[
+BV = \frac{\textit{costo effettivo} - \textit{costo preventivato}}{\textit{costo preventivato}}
+\]
+
+\paragraph{Strumenti di supporto}
+\subparagraph{Calcolo indice di Gulpease}\mbox{}\\
+Per il calcolo dell'indice di Gulpease, il gruppo \gruppo \space si avvale dello script MAGIC (Magic Automatic Gulpease Index Calulator) sviluppato internamente.
+Il tool esegue automaticamente ogni giorno e svolge i seguenti step:
+\begin{enumerate}
+	\item Compilazione di tutti i documenti;
+	\item Calcolo dell'indice di Gulpease per ogni documento;
+	\item Salvataggio dei valori ottenuti in foglio di calcolo Google.
+\end{enumerate}
+I valori inseriti sono automaticamente plottati in un grafico, che permette ai verificatori di monitorare celermente il livello di leggibilità di ogni documento.
 
 \subsection{Configurazione}
 \subsubsection{Versionamento}
@@ -295,9 +361,6 @@ Il repository dedicato ai documenti è formata dalle seguenti subdirectory:
 \item[•] \textbf{RQ}: contiene tutti i documenti da consegnare per la Revisione di Qualifica;
 \item[•] \textbf{RA}: contiene tutti i documenti da consegnare per la Revisione di Accettazione.
 \end{itemize}
-
-\paragraph{GitHub Desktop}\mbox{}\\
-Il {client}\ped{G} che viene utilizzato per il controllo di versione è GitHub Desktop, esso permette di gestire attraverso un'interfaccia grafica la {repository}\ped{G} al fine di consentire anche a coloro che non hanno familiarità con tale tool di apprenderlo con una {learning curve}\ped{G} meno ripida. Per utilizzare il programma è necessario recarsi al sito: \url{https://desktop.github.com/} disponibile sia per {Microsoft Windows}\ped{G} e {Apple MacOS}\ped{G}. Per quanto riguarda le varie {distribuzioni Linux}\ped{G} non è disponibile un client ufficiale, è disponibile però un {porting}\ped{G} non ufficiale all'indirizzo: \url{https://github.com/shiftkey/desktop}
 
 \paragraph{Project Board}\mbox{}\\
 \label{sec:projectboard}
@@ -337,6 +400,10 @@ Per modificare una milestone sempre su GitHub si deve:
 \item Modificare il nome della milestone, la descrizione associata o eventuali tag;
 \item Selezionare l'opzione "Save changes".
 \end{enumerate}
+
+\subsubsection{Strumenti di supporto}
+\paragraph{GitHub Desktop}\mbox{}\\
+Il {client}\ped{G} che viene utilizzato per il controllo di versione è GitHub Desktop, esso permette di gestire attraverso un'interfaccia grafica la {repository}\ped{G} al fine di consentire anche a coloro che non hanno familiarità con tale tool di apprenderlo con una {learning curve}\ped{G} meno ripida. Per utilizzare il programma è necessario recarsi al sito: \url{https://desktop.github.com/} disponibile sia per {Microsoft Windows}\ped{G} e {Apple MacOS}\ped{G}. Per quanto riguarda le varie {distribuzioni Linux}\ped{G} non è disponibile un client ufficiale, è disponibile però un {porting}\ped{G} non ufficiale all'indirizzo: \url{https://github.com/shiftkey/desktop}
 
 \subsection{Verifica}
 
