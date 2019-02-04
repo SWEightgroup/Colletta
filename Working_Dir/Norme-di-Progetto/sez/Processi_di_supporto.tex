@@ -242,37 +242,29 @@ Esempio:
 I documenti devono essere esportati in formato PDF.
 \paragraph{Controllo ortografico}\mbox{}\\
 Al termine della stesura dei documenti, prima di alla fase di verifica del documento, un \textit{Redattore} deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice {Gulpease}\ped{G}.
+
 \subsubsection{Ciclo di vita dei documenti}
-Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di issues offerto da GitHub e come descritto in \hyperref[sec:projectboard]{§5.5.2.3}.
+Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di tasks offerto da Asana, come descritto nella sezione \hyperref[sec:documentversion]{§5.2} gestione dell'infrastruttura.
 \begin{enumerate}
-\item Il \textit{Responsabile di progetto} crea e assegna la issue ai \textit{Redattori} del documento (To do);
-\item Quando inizia la stesura del documento (In progress):
+\item Il \textit{Responsabile di progetto} crea il task, assegna i \textit{Redattori} ed i \textit{Verificatori}, e lo mette nella colonna "To Do" ;
+\item Quando i \textit{Redattori} assegnati iniziano la stesura del documento spostano il task nella colonna "In progress";
+\item Finita l'attività di scrittura il task deve essere spostato in "Need Review"
+\item I \textit{Verificatori} assegnati controllano il documento decidendo se:
 	\begin{enumerate}
-		\item La issue viene spostata nella sezione “In progress”;
-		\item Viene creato un branch per lavorare sulla issue.
-	\end{enumerate}
-\item Finita l'attività di scrittura un \textit{Redattore} crea un {pull request}\ped{G} con (Needs review):
-	\begin{enumerate}
-		\item Sé stesso come assigneer;
-		\item I \textit{Verificatori} come reviewers;
-		\item I campi project e milestone appropriati.
-	\end{enumerate} 
-\item I \textit{Verificatori} controllano il documento e possono:
-	\begin{enumerate}
-	 	\item Accettarlo (Reviewer approved);
-	 	\item Non accettarlo (In progress).
+	 	\item Accettarlo, e muoverlo in "Done";
+	 	\item Non accettarlo e rimetterlo in "In Progress", lasciando un commento al task.
 	\end{enumerate}
 \item Se non accettato, i \textit{Redattori} devono apportare le modifiche descritte dai \textit{Verificatori};
 \item Se accettato, il documento giunge al \textit{Responsabile di progetto} che può:
 \begin{enumerate}
-	\item Approvarlo, rendendo il documento formale e chiudendo la issue. (Done)
-	\item Non approvarlo, fornendo le opportune motivazioni (In progress);
+	\item Approvarlo, rendendo il documento formale e marcarlo come completato.
+	\item Non approvarlo, fornendo le opportune motivazioni come commento al task e spostandolo in "To Do";
 \end{enumerate}
 \item Se approvato, sarà compito dell'\textit{Amministratore di Progetto} effettuare il merge.
 \end{enumerate}
 \begin{figure}[H]
 \centering
-\includegraphics[width=17cm,trim=2 2 2 2, clip]{img/cicloVitaDocumento.pdf}
+\includegraphics[width=17cm,trim=2 2 2 2, clip]{img/cicloVitaDocumentoAsana.pdf}
 \caption{Ciclo di vita di un documento}
 \label{fig:document_lifecycle}
 \end{figure}
