@@ -31,7 +31,7 @@ Bisogna definire un'{architettura}\ped{G} logica del prodotto che dovrà:
 
 \paragraph{Design Pattern}\mbox{}\\
 I \textit{Progettisti} devono utilizzare il design pattern che ritengono più adatto al contesto per rendere l'applicazione più sicura ed efficiente possibile.
-Ogni utilizzo di design pattern deve essere brevemente descritto ed accompagnato da un diagramma UML che ne esemplifica il funzionamento.
+Ogni utilizzo di design pattern deve essere brevemente descritto ed accompagnato da un diagramma UML posto nella directory padre dei file sorgenti.
 
 \subsubsection{Qualità}
 
@@ -48,7 +48,7 @@ dove:
 		\item I: per i test di integrazione;
 		\item S: per i test di sistema;
 	\end{list}
-	\item[•] Codice identificativo: indica il codice numerico del test.
+	\item[•] Codice identificativo: indica il codice numerico univoco del test.
 \end{itemize}
 
 \paragraph{Test di unità}\mbox{}\\
@@ -85,11 +85,22 @@ Il codice deve seguire le linee guida reperibili all’indirizzo:
 \begin{center}
 \url{http://google.github.io/styleguide/};
 \end{center}
-\paragraph{Documentazione}\mbox{}\\
-fare
-
 \subsubsection{Strumenti di supporto}
-\paragraph{Tracciamento}\mbox{}\\ \label{sec:Trac}
+\paragraph{RQConnect}\mbox{}\\ \label{sec:Trac}
 Il tracciamento dei requisiti e dei casi d’uso avviene attraverso la piattaforma \textit{RQConnect}, installata su un server {Firebase}\ped{G} ad hoc per il gruppo \gruppo. È  un tool sviluppato da un componente del gruppo in occasione di questo progetto e liberamente disponibile su GitHub.\\ E' possibile aggiungere requisiti e casi d’uso alla piattaforma e successivamente collegarli tra di loro, la schermata principale è divisa in due colonne, in quella a sinistra c’è l’elenco dei requisiti e in quella a destra i casi d’uso, cliccando su un elemento si apre una vista dettagliata nella quale è possibile leggere i dettagli e collegare l’elemento, cliccando sul pulsante risolvi si apre una finestra dalla quale è possibile selezionare gli elementi da collegare con l’aiuto di un menu a tendina.\\Una volta completato l’inserimento ed il collegamento è possibile scaricare l’intera lista sottoforma di tabella LaTex.
 
+\paragraph{Visual studio code}\mbox{}\\
+L'{IDE}\ped{G} scelto per lo sviluppo è {Visual studio code}\ped{G}, versione: 1.31 disponibile al seguente link:\\
+\begin{center}
+	\url{https://code.visualstudio.com/Download};
+\end{center}
+Esso è stato scelto principalmente perche gratis, include supporto per debugging e un controllo Git integrato oltre al {Syntax highlighting}\ped{G}, {IntelliSense}\ped{G}, {Snippet}\ped{G} e {code refactoring}\ped{G}.\\
+Inoltre nel sondaggio sugli sviluppatori del 2018 di {Stack Overflow}\ped{G}, Visual Studio Code è arrivato primo, con il 34.9\% dei 75,398 partecipanti che hanno dichiarato di servirsene.\\
+Per la scrittura del codice sorgente si farà riferimento ai seguenti linguaggi con relative versioni:\\
+{Node Js}\ped{G} 10.15.1\\
+{Python}\ped{G} 3.6.3 \\
+{React}\ped{G} 16.8.1\\
+{Bootstrap}\ped{G} 4.3.0 \\
 
+\paragraph{Docker}\mbox{}\\
+usare Docker 18.09.1 parte di francesco magarotto!
