@@ -31,7 +31,7 @@ Bisogna definire un'{architettura}\ped{G} logica del prodotto che dovrà:
 
 \paragraph{Design Pattern}\mbox{}\\
 I \textit{Progettisti} devono utilizzare il design pattern che ritengono più adatto al contesto per rendere l'applicazione più sicura ed efficiente possibile.
-Ogni utilizzo di design pattern deve essere brevemente descritto ed accompagnato da un diagramma UML che ne esemplifica il funzionamento.
+Ogni utilizzo di design pattern deve essere brevemente descritto ed accompagnato da un diagramma UML posto nella directory padre dei file sorgenti.
 
 \subsubsection{Qualità}
 
@@ -48,7 +48,7 @@ dove:
 		\item I: per i test di integrazione;
 		\item S: per i test di sistema;
 	\end{list}
-	\item[•] Codice identificativo: indica il codice numerico del test.
+	\item[•] Codice identificativo: indica il codice numerico univoco del test.
 \end{itemize}
 
 \paragraph{Test di unità}\mbox{}\\
@@ -85,12 +85,47 @@ Il codice deve seguire le linee guida reperibili all’indirizzo:
 \begin{center}
 \url{http://google.github.io/styleguide/};
 \end{center}
-\paragraph{Documentazione del codice}\mbox{}\\
-fare
-
 \subsubsection{Strumenti di supporto}
-\paragraph{Tracciamento}\mbox{}\\ \label{sec:Trac}
-Il tracciamento dei requisiti, delle componenti e delle classi avviene attraverso la piattaforma \textit{PragmaDB}, installata su un server {AWS}\ped{G} ad hoc per il gruppo \gruppo . \textit{PragmaDB} è un tool sviluppato dal gruppo Pragma durante il progetto di ingegneria del software nell'AA 2014/2015 e liberamente disponibile su GitHub. Punto di forza di questo pacchetto software sono la specificità per il progetto e l'esportazione dei dati in LaTex.
+\paragraph{RQConnect}\mbox{}\\ \label{sec:Trac}
+Il tracciamento dei requisiti e dei casi d’uso avviene attraverso la piattaforma \textit{RQConnect}, installata su un server {Firebase}\ped{G} ad hoc per il gruppo \gruppo. È  un tool sviluppato da un componente del gruppo in occasione di questo progetto e liberamente disponibile su GitHub.\\ E' possibile aggiungere requisiti e casi d’uso alla piattaforma e successivamente collegarli tra di loro, la schermata principale è divisa in due colonne, in quella a sinistra c’è l’elenco dei requisiti e in quella a destra i casi d’uso, cliccando su un elemento si apre una vista dettagliata nella quale è possibile leggere i dettagli e collegare l’elemento, cliccando sul pulsante risolvi si apre una finestra dalla quale è possibile selezionare gli elementi da collegare con l’aiuto di un menu a tendina.\\Una volta completato l’inserimento ed il collegamento è possibile scaricare l’intera lista sottoforma di tabella LaTex.
 
+\paragraph{Visual studio code}\mbox{}\\
+L'{IDE}\ped{G} scelto per lo sviluppo è {Visual studio code}\ped{G}, versione: 1.31 disponibile al seguente link:\\
+\begin{center}
+	\url{https://code.visualstudio.com/Download};
+\end{center}
+Esso è stato scelto principalmente perche gratis, include supporto per debugging e un controllo Git integrato oltre al {Syntax highlighting}\ped{G}, {IntelliSense}\ped{G}, {Snippet}\ped{G} e {code refactoring}\ped{G}.\\
+Si farà riferimento ai seguenti linguaggi, piattaforme, librerie e framework:\\
+{Python}\ped{G} 3.6.3 \\
+{JavaScript}\ped{G} 1.8.5\\
+{HTML5}\ped{G} \\
+{Node Js}\ped{G} 10.15.1\\
+{React}\ped{G} 16.8.1\\
+{Bootstrap}\ped{G} 4.3.0 \\
 
-
+\paragraph{Docker}\mbox{}\\
+Lo strumento scelto per contenere la libreria di pos-tagging con il relativo server {TCP/IP}\ped{G} è Docker. Esso permette di inserire l'applicativo scritto in {C++}\ped{G} all'interno di contenitori software, fornendo un'astrazione aggiuntiva grazie alla virtualizzazione a livello di sistema operativo di Linux.
+Per installare Docker nella versione 18.09, è necessario installare Docker Desktop in Windows 10 Pro o Enterprise e in MacOS:
+\begin{center}
+\url{https://www.docker.com/products/docker-desktop}
+\end{center}
+Mentre in Ubuntu Linux è consigliato seguire la seguente guida: 
+\begin{flushleft}
+	\url{https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04}
+\end{flushleft}
+Il Dockerfile che contiene di la configurazione per la compilazione e l'installazione dell'applicativo. Per eseguire questo file eseguire il comando:
+\begin{center}
+	\texttt{\# docker build --tag=freeling:alpha .}
+\end{center}
+Il comando genererà un'immagine che sarà eseguibile con il comando: \\
+\texttt{\# docker run -it --rm -p 50005:50005 freelingserver:alpha analyze -f es.cfg --server -p 50005} \\
+L'istruzione crea un'istanza dell'immagine che è in attesa di richieste sulla porta 50005 che analizza frasi scritte in lingua spagnola.
+Per permettere di analizzare frasi in più lingue creare istanze diverse con il comando precedente (docker run) sostituendo \texttt{es.cfg} con la lingua d'interesse, ad esempio: \texttt{it.cfg}. Alcune delle lingue disponibili sono: 
+\begin{itemize}
+	\item \textbf{en.cfg}: predispone il sistema ad analizzare frasi in inglese;
+	\item \textbf{it.cfg}: predispone il sistema ad analizzare frasi in italiano;
+	\item \textbf{es.cfg}: predispone il sistema ad analizzare frasi in spagnolo;
+	\item \textbf{fr.cfg}: predispone il sistema ad analizzare frasi in francese;
+	\item \textbf{de.cfg}: predispone il sistema ad
+	analizzare frasi in tedesco.
+\end{itemize}

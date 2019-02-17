@@ -266,6 +266,32 @@ Il software è reperibile all'indirizzo \url{http://www.xm1math.net/texmaker/}, 
 \paragraph{Controllo ortografico}\mbox{}\\
 Al termine della stesura dei documenti, prima di alla fase di verifica del documento, un \textit{Redattore} deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice {Gulpease}\ped{G}.
 
+\subsubsection{Ciclo di vita dei documenti}
+Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di tasks offerto da Asana, come descritto nella sezione \hyperref[sec:documentversion]{§5.2} gestione dell'infrastruttura.
+\begin{enumerate}
+\item Il \textit{Responsabile di progetto} crea il task, assegna i \textit{Redattori} ed i \textit{Verificatori}, e lo mette nella colonna "To Do" ;
+\item Quando i \textit{Redattori} assegnati iniziano la stesura del documento spostano il task nella colonna "In progress";
+\item Finita l'attività di scrittura il task deve essere spostato in "Need Review"
+\item I \textit{Verificatori} assegnati controllano il documento decidendo se:
+	\begin{enumerate}
+	 	\item Accettarlo, e muoverlo in "Done";
+	 	\item Non accettarlo e rimetterlo in "In Progress", lasciando un commento al task.
+	\end{enumerate}
+\item Se non accettato, i \textit{Redattori} devono apportare le modifiche descritte dai \textit{Verificatori};
+\item Se accettato, il documento giunge al \textit{Responsabile di progetto} che può:
+\begin{enumerate}
+	\item Approvarlo, rendendo il documento formale e marcarlo come completato.
+	\item Non approvarlo, fornendo le opportune motivazioni come commento al task e spostandolo in "To Do";
+\end{enumerate}
+\item Se approvato, sarà compito dell'\textit{Amministratore di Progetto} effettuare il merge.
+\end{enumerate}
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm,trim=2 2 2 2, clip]{img/cicloVitaDocumentoAsana.pdf}
+\caption{Ciclo di vita di un documento}
+\label{fig:document_lifecycle}
+\end{figure}
+
 \paragraph{Diagrammi UML}\mbox{}\\
 Il software che deve essere utilizzato per la creazione dei diagrammi UML è Astah versione 8.0.0, gli \textit{Analisti} devono utilizzare la documentazione del software per il suo studio e utilizzo.
 Ogni diagramma di caso d’uso è identificato in alto a sinistra dal suo codice identificativo e dal nome.
