@@ -95,7 +95,6 @@ L'{IDE}\ped{G} scelto per lo sviluppo è {Visual studio code}\ped{G}, versione: 
 	\url{https://code.visualstudio.com/Download};
 \end{center}
 Esso è stato scelto principalmente perche gratis, include supporto per debugging e un controllo Git integrato oltre al {Syntax highlighting}\ped{G}, {IntelliSense}\ped{G}, {Snippet}\ped{G} e {code refactoring}\ped{G}.\\
-Inoltre nel sondaggio sugli sviluppatori del 2018 di {Stack Overflow}\ped{G}, Visual Studio Code è arrivato primo, con il 34.9\% dei 75,398 partecipanti che hanno dichiarato di servirsene.\\
 Si farà riferimento ai seguenti linguaggi, piattaforme, librerie e framework:\\
 {Python}\ped{G} 3.6.3 \\
 {JavaScript}\ped{G} 1.8.5\\
@@ -105,4 +104,28 @@ Si farà riferimento ai seguenti linguaggi, piattaforme, librerie e framework:\\
 {Bootstrap}\ped{G} 4.3.0 \\
 
 \paragraph{Docker}\mbox{}\\
-usare Docker 18.09.1 parte di francesco magarotto!
+Lo strumento scelto per contenere la libreria di pos-tagging con il relativo server {TCP/IP}\ped{G} è Docker. Esso permette di inserire l'applicativo scritto in {C++}\ped{G} all'interno di contenitori software, fornendo un'astrazione aggiuntiva grazie alla virtualizzazione a livello di sistema operativo di Linux.
+Per installare Docker nella versione 18.09, è necessario installare Docker Desktop in Windows 10 Pro o Enterprise e in MacOS:
+\begin{center}
+\url{https://www.docker.com/products/docker-desktop}
+\end{center}
+Mentre in Ubuntu Linux è consigliato seguire la seguente guida: 
+\begin{flushleft}
+	\url{https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04}
+\end{flushleft}
+Il Dockerfile che contiene di la configurazione per la compilazione e l'installazione dell'applicativo. Per eseguire questo file eseguire il comando:
+\begin{center}
+	\texttt{\# docker build --tag=freeling:alpha .}
+\end{center}
+Il comando genererà un'immagine che sarà eseguibile con il comando: \\
+\texttt{\# docker run -it --rm -p 50005:50005 freelingserver:alpha analyze -f es.cfg --server -p 50005} \\
+L'istruzione crea un'istanza dell'immagine che è in attesa di richieste sulla porta 50005 che analizza frasi scritte in lingua spagnola.
+Per permettere di analizzare frasi in più lingue creare istanze diverse con il comando precedente (docker run) sostituendo \texttt{es.cfg} con la lingua d'interesse, ad esempio: \texttt{it.cfg}. Alcune delle lingue disponibili sono: 
+\begin{itemize}
+	\item \textbf{en.cfg}: predispone il sistema ad analizzare frasi in inglese;
+	\item \textbf{it.cfg}: predispone il sistema ad analizzare frasi in italiano;
+	\item \textbf{es.cfg}: predispone il sistema ad analizzare frasi in spagnolo;
+	\item \textbf{fr.cfg}: predispone il sistema ad analizzare frasi in francese;
+	\item \textbf{de.cfg}: predispone il sistema ad
+	analizzare frasi in tedesco.
+\end{itemize}
