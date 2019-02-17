@@ -219,22 +219,64 @@ Ad esempio: UC4.2.png $\rightarrow$ UC42.png;
 Inoltre, anche il file con estensione asta deve essere salvato nella cartella predisposta al fine di permetterne modifiche successivamente. 
 Per la realizzazione dell'Analisi dei Requisiti la cartella destinata al salvataggio dei diagrammi modificabili è: "Casi d'uso", reperibile all'interno del {branch}\ped{G} Analisi dei Requisiti. Il nome del diagramma deve essere il medesimo dell'immagine esportata.
 
+\subsubsection{Strumenti di supporto} 
+
+\paragraph{Stesura dei documenti}\mbox{}\\
+L'intera documentazione deve essere prodotta utilizzando il {linguaggio di markup}\ped{G} \LaTeX{}, scelto dal team per i seguenti motivi:
+\begin{itemize}
+\item[•] Gestisce elegantemente e con facilità gli indici, i pedici, i riferimenti ed il glossario;
+\item[•] È un linguaggio che supporta il {versionamento}\ped{G};
+\item[•] Permette la stesura del documento suddividendolo in parti che rappresentano le varie sezioni, facilitando così la stesura del documento.
+\end{itemize}
+Per installare \LaTeX{} è necessario installare il compilatore pdflatex, integrato in un software come TexLive reperibile all'indirizzo \url{https://www.tug.org/texlive/}. Quest'ultimo è {cross platform}\ped{G}, {open source}\ped{G} e gratuito. Si consiglia l'installazione del pacchetto completo per evitare di installare pacchetti successivamente.
+Per la stesura del documento è consigliato l'utilizzo di Texmaker, le principali caratteristiche sono:
+\begin{itemize}
+	\item[•] Compilatore e visualizzatore {PDF}\ped{G} per il documento prodotto;
+	\item[•] Evidenziazione della sintassi;
+	\item[•] Completamento automatico.
+\end{itemize}  
+Il software è reperibile all'indirizzo \url{http://www.xm1math.net/texmaker/}, è cross-platform ed è gratuito.
+
+\paragraph{Nome dei documenti}\mbox{}\\
+I nomi dei documenti devono:
+\begin{itemize}
+\item Iniziare con la lettera maiuscola;
+\item Se composti da più parole anche esse devono avere la lettera maiuscola.
+\item Dopo il nome testuale, segue un carattere di underscore;
+\item Infine si indica la versione come descritto in \hyperref[sec:documentversion]{§4.1.4}.
+\end{itemize}
+Esempio:
+\begin{center}
+\text{NomeDocumento\_v1.0.0}
+\end{center}
+I documenti devono essere esportati in formato PDF.
+\paragraph{Controllo ortografico}\mbox{}\\
+Al termine della stesura dei documenti, prima di alla fase di verifica del documento, un \textit{Redattore} deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice {Gulpease}\ped{G}.
 \subsubsection{Ciclo di vita dei documenti}
-Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di tasks offerto da Asana, come descritto nella sezione 5.? gestione dell'infrastruttura.
+Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di issues offerto da GitHub e come descritto in \hyperref[sec:projectboard]{§5.5.2.3}.
 \begin{enumerate}
-\item Il \textit{Responsabile di progetto} crea il task, assegna i \textit{Redattori} ed i \textit{Verificatori}, e lo mette nella colonna "To Do" ;
-\item Quando i \textit{Redattori} assegnati iniziano la stesura del documento spostano il task nella colonna "In progress";
-\item Finita l'attività di scrittura il task deve essere spostato in "Need Review"
-\item I \textit{Verificatori} assegnati controllano il documento decidendo se:
+\item Il \textit{Responsabile di progetto} crea e assegna la issue ai \textit{Redattori} del documento (To do);
+\item Quando inizia la stesura del documento (In progress):
 	\begin{enumerate}
-	 	\item Accettarlo, e muoverlo in "Done";
-	 	\item Non accettarlo e rimetterlo in "In Progress".
+		\item La issue viene spostata nella sezione “In progress”;
+		\item Viene creato un branch per lavorare sulla issue.
+	\end{enumerate}
+\item Finita l'attività di scrittura un \textit{Redattore} crea un {pull request}\ped{G} con (Needs review):
+	\begin{enumerate}
+		\item Sé stesso come assigneer;
+		\item I \textit{Verificatori} come reviewers;
+		\item I campi project e milestone appropriati.
+	\end{enumerate} 
+\item I \textit{Verificatori} controllano il documento e possono:
+	\begin{enumerate}
+	 	\item Accettarlo (Reviewer approved);
+	 	\item Non accettarlo (In progress).
 	\end{enumerate}
 \item Se non accettato, i \textit{Redattori} devono apportare le modifiche descritte dai \textit{Verificatori};
 \item Se accettato, il documento giunge al \textit{Responsabile di progetto} che può:
 \begin{enumerate}
-	\item Approvarlo, rendendo il documento formale e marcarlo come completato.
-	\item Non approvarlo, fornendo le opportune motivazioni spostandolo in "To Do";
+	\item Approvarlo, rendendo il documento formale e chiudendo la issue. (Done)
+	\item Non approvarlo, fornendo le opportune motivazioni (In progress);
 \end{enumerate}
 \item Se approvato, sarà compito dell'\textit{Amministratore di Progetto} effettuare il merge.
 \end{enumerate}
