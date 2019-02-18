@@ -11,7 +11,9 @@ Con l'obiettivo di rendere chiare le soluzioni progettuali utilizzate, è necess
 In caso vengano utilizzati dei {Design Pattern}\ped{G} sarà necessario accompagnarli con una descrizione ed un diagramma UML.
 
 \subsubsection{Progettazione}\mbox{}\\
-Dopo aver terminato la fase di Analisi si passerà a quella di Progettazione che vede come protagonisti i \textit{Progettisti}, durante la quale questi devono trovare una soluzione soddisfacente al problema, definire un'architettura logica e i vari diagrammi che la rappresentano.
+Dopo aver terminato il periodo di Analisi si passerà a quella di Progettazione che vede come protagonisti i 
+\textit{Progettisti}, durante la quale questi devono trovare una soluzione soddisfacente al problema, 
+definire un'{architettura}\ped{G} logica e i vari diagrammi che la rappresentano.
 La Progettazione permette di: 
 \begin{itemize}
 \item[•] Ottimizzare l'uso delle risorse;
@@ -20,7 +22,7 @@ La Progettazione permette di:
 \end{itemize}
 
 \paragraph{Architettura logica}\mbox{}\\
-Bisogna definire un'{architettura}\ped{G} logica del prodotto che dovrà: 
+Bisogna definire un'architettura logica del prodotto che dovrà: 
 \begin{itemize}
 \item[•] Soddisfare i requisiti definiti nel documento di \AdR;
 \item[•] Essere sicura in caso di malfunzionamenti o intrusioni;
@@ -42,13 +44,13 @@ I test implementati devono essere classificati secondo la seguente notazione:
 \end{center}
 dove:
 \begin{itemize}
-	\item[•] Tipologia test: indica il tipo di test e può assumere i seguenti valori:
+	\item[•] \textbf{Tipologia test}: indica il tipo di test e può assumere i seguenti valori:
 	\begin{list}{$\circ$}{}
 		\item U: per i test di unità;
 		\item I: per i test di integrazione;
 		\item S: per i test di sistema;
 	\end{list}
-	\item[•] Codice identificativo: indica il codice numerico univoco del test.
+	\item[•] \textbf{Codice identificativo}: indica il codice numerico univoco del test.
 \end{itemize}
 
 \paragraph{Test di unità}\mbox{}\\
@@ -61,7 +63,7 @@ Devono essere definite le classi di verifica necessarie a garantire che tutte le
 Richiede che i vari componenti del sistema vengano integrati al fine di garantire che tutte le componenti del sistema funzionino correttamente.
 
 \subsubsection{Codifica}
-In questa sezione vengono descritte le norme che i \textit{Programmatori} devono seguire con l'obiettivo di scrivere codice leggibile, affidabile e mantenibile.
+In questa sezione vengono descritte le norme che i \textit{Programmatori} devono seguire con l'obiettivo di scrivere codice leggibile, affidabile e manutenibile.
 
 \paragraph{Stile di codifica}\mbox{}\\
 Al fine di produrre codice uniforme, leggibile e manutenibile è richiesto che vengano rispettate
@@ -73,7 +75,7 @@ le seguenti convenzioni:
 \item[•] I commenti devono essere scritti in lingua inglese senza utilizzare abbreviazioni o altre ambiguità;
 \item[•] Le modifiche al codice devono sempre riflettersi sui relativi commenti;
 \item[•] Evitare commenti superflui, inappropriati o scurrili;
-\item[•] Oogni file deve presentare un’intestazione con le seguenti informazioni:
+\item[•] Ogni file deve presentare un’intestazione con le seguenti informazioni:
 \begin{list}{$\circ$}{}
 \item Percorso e nome del file;
 \item Nome e cognome dell’autore;
@@ -87,7 +89,7 @@ Il codice deve seguire le linee guida reperibili all’indirizzo:
 \end{center}
 \subsubsection{Strumenti di supporto}
 \paragraph{RQConnect}\mbox{}\\ \label{sec:Trac}
-Il tracciamento dei requisiti e dei casi d’uso avviene attraverso la piattaforma \textit{RQConnect}, installata su un server {Firebase}\ped{G} ad hoc per il gruppo \gruppo. È  un tool sviluppato da un componente del gruppo in occasione di questo progetto e liberamente disponibile su GitHub.\\ E' possibile aggiungere requisiti e casi d’uso alla piattaforma e successivamente collegarli tra di loro, la schermata principale è divisa in due colonne, in quella a sinistra c’è l’elenco dei requisiti e in quella a destra i casi d’uso, cliccando su un elemento si apre una vista dettagliata nella quale è possibile leggere i dettagli e collegare l’elemento, cliccando sul pulsante risolvi si apre una finestra dalla quale è possibile selezionare gli elementi da collegare con l’aiuto di un menu a tendina.\\Una volta completato l’inserimento ed il collegamento è possibile scaricare l’intera lista sottoforma di tabella LaTex.
+Il tracciamento dei requisiti e dei casi d’uso avviene attraverso la piattaforma \textit{RQConnect}, installata su un server {Firebase}\ped{G} ad hoc per il gruppo \gruppo. È  un tool sviluppato da un componente del gruppo in occasione di questo progetto e liberamente disponibile su GitHub.\\ E' possibile aggiungere requisiti e casi d’uso alla piattaforma e successivamente collegarli tra di loro, la schermata principale è divisa in due colonne, in quella a sinistra c’è l’elenco dei requisiti e in quella a destra i casi d’uso, cliccando su un elemento si apre una vista dettagliata nella quale è possibile leggere i dettagli e collegare l’elemento, cliccando sul pulsante risolvi si apre una finestra dalla quale è possibile selezionare gli elementi da collegare con l’aiuto di un menu a tendina.\\Una volta completato l’inserimento ed il collegamento è possibile scaricare l’intera lista sottoforma di tabella \LaTeX.
 
 \paragraph{Visual studio code}\mbox{}\\
 L'{IDE}\ped{G} scelto per lo sviluppo è {Visual studio code}\ped{G}, versione: 1.31 disponibile al seguente link:\\
@@ -96,12 +98,13 @@ L'{IDE}\ped{G} scelto per lo sviluppo è {Visual studio code}\ped{G}, versione: 
 \end{center}
 Esso è stato scelto principalmente perche gratis, include supporto per debugging e un controllo Git integrato oltre al {Syntax highlighting}\ped{G}, {IntelliSense}\ped{G}, {Snippet}\ped{G} e {code refactoring}\ped{G}.\\
 Si farà riferimento ai seguenti linguaggi, piattaforme, librerie e framework:\\
-{Python}\ped{G} 3.6.3 \\
-{JavaScript}\ped{G} 1.8.5\\
-{HTML5}\ped{G} \\
-{Node Js}\ped{G} 10.15.1\\
-{React}\ped{G} 16.8.1\\
-{Bootstrap}\ped{G} 4.3.0 \\
+\begin{itemize}
+	\item[•]{JavaScript}\ped{G} 1.8.5
+	\item[•]{HTML5}\ped{G} 
+	\item[•]{Node Js}\ped{G} 10.15.1
+	\item[•]{React}\ped{G} 16.8.1
+	\item[•]{Bootstrap}\ped{G} 4.3.0 
+\end{itemize}
 
 \paragraph{Docker}\mbox{}\\
 Lo strumento scelto per contenere la libreria di pos-tagging con il relativo server {TCP/IP}\ped{G} è Docker. Esso permette di inserire l'applicativo scritto in {C++}\ped{G} all'interno di contenitori software, fornendo un'astrazione aggiuntiva grazie alla virtualizzazione a livello di sistema operativo di Linux.
@@ -113,12 +116,15 @@ Mentre in Ubuntu Linux è consigliato seguire la seguente guida:
 \begin{flushleft}
 	\url{https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04}
 \end{flushleft}
-Il Dockerfile che contiene di la configurazione per la compilazione e l'installazione dell'applicativo. Per eseguire questo file eseguire il comando:
+Il Dockerfile contiene di la configurazione per la compilazione e l'installazione dell'applicativo. 
+Per generare l'immagine è necessario eseguire il seguente comando:
 \begin{center}
 	\texttt{\# docker build --tag=freeling:alpha .}
 \end{center}
-Il comando genererà un'immagine che sarà eseguibile con il comando: \\
-\texttt{\# docker run -it --rm -p 50005:50005 freelingserver:alpha analyze -f es.cfg --server -p 50005} \\
+Successivamente quest'ultima potrà essere eseguita con il comando:	
+\begin{center}
+	\texttt{\# docker run -it --rm -p 50005:50005 freelingserver:alpha analyze -f es.cfg --server -p 50005}
+\end{center}
 L'istruzione crea un'istanza dell'immagine che è in attesa di richieste sulla porta 50005 che analizza frasi scritte in lingua spagnola.
 Per permettere di analizzare frasi in più lingue creare istanze diverse con il comando precedente (docker run) sostituendo \texttt{es.cfg} con la lingua d'interesse, ad esempio: \texttt{it.cfg}. Alcune delle lingue disponibili sono: 
 \begin{itemize}
