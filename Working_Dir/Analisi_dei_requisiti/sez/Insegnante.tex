@@ -57,7 +57,8 @@ modificare i tag automatici ecc. Potrà poi confermare l'aggiunta dell'esercizio
 	\end{enumerate}
 	\item[•] \textbf{Estensioni}:	
 	\begin{enumerate}
-		\item UC 2.2.7.1 Interruzione inserimento esercizio.
+		\item UC 2.2.7.1 Interruzione inserimento esercizio;
+		\item UC 2.2.3.1 Libreria PoS-tagging non disponibile.
 	\end{enumerate}
 	\item[•] \textbf{Flusso degli eventi alternativo}:
 	\begin{enumerate}
@@ -72,7 +73,19 @@ modificare i tag automatici ecc. Potrà poi confermare l'aggiunta dell'esercizio
 	\item[•] \textbf{Precondizione}: l'insegnante sta inserendo un esercizio;
 	\item[•] \textbf{Postcondizione}: l'insegnante ha scelto la lingua dell'esercizio.
 \end{itemize}
-%mettere altro sub 
+
+
+
+\subsubsection{UC 2.2.3.1 Libreria PoS-tagging non disponibile}
+\begin{itemize}
+	\item[•] \textbf{Attori}: Insegnante, Allievo;
+	\item[•] \textbf{Descrizione}: L'attore rivece un messaggio di errore poichè la libreria (FreeLing) di PoS-tagging non è disponibile; 
+	\item[•] \textbf{Precondizione}: l'insegnante sta inserendo un esercizio o allievo sta svolgendo un esercizio;
+	\item[•] \textbf{Postcondizione}: l'operazione viene interrotta.
+\end{itemize}
+
+
+
 \subsubsection{UC 2.2.2 Inserimento testo esercizio}
 
 \begin{itemize}
