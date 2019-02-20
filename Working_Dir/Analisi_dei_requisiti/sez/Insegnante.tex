@@ -10,7 +10,7 @@
 \end{figure}
 
 %MODIFICATO da cambiare uml 
-\subsubsection{UC 2.1 Visualizzazione profilo personale}
+\subsubsection{UC 2.1 Visualizzazione della dashboard}
 
 %\begin{figure}[H]
 %\centering
@@ -20,7 +20,7 @@
 
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
-	\item[•] \textbf{Descrizione}: l’insegnante ha accesso al suo profilo personale dove può vedere i suoi dati ed effettuare modifiche agli esercizi;
+	\item[•] \textbf{Descrizione}: l’insegnante accede alla propria dashboard dove può vedere i suoi dati ed effettuare modifiche agli esercizi;
 
 	\item[•] \textbf{Precondizione}: l'insegnante si è autenticato;
 
@@ -48,16 +48,15 @@ modificare i tag automatici ecc. Potrà poi confermare l'aggiunta dell'esercizio
 	\begin{enumerate}
 		\item UC 2.2.1 Predisposizione lingua esercizio;
 		\item UC 2.2.2 Inserimento testo esercizio;
-		\item UC 2.2.3 Modifica tag automatici;
-
-		\item UC 2.2.5 Modifica visibilità esercizio;
-		\item UC 2.2.6 Salvataggio modifiche;
-		\item UC 2.2.7 Conferma aggiunta esercizio.
+		\item UC 2.2.3 Correzione automatica esercizio
+		\item UC 2.2.5 Modifica tag automatici;
+		\item UC 2.2.6 Modifica visibilità esercizio;
+		\item UC 2.2.7 Visualizzazione errori sintassi testo;
+		\item UC 2.2.8 Salvataggio modifiche;
+		\item UC 2.2.9 Conferma aggiunta esercizio.
 	\end{enumerate}
 	\item[•] \textbf{Estensioni}:	
 	\begin{enumerate}
-		\item UC 2.2.6.1 Visualizzazione errori sintassi testo;
-		\item UC 2.2.2.1 Correzione automatica esercizio;
 		\item UC 2.2.7.1 Interruzione inserimento esercizio.
 	\end{enumerate}
 	\item[•] \textbf{Flusso degli eventi alternativo}:
@@ -84,7 +83,7 @@ modificare i tag automatici ecc. Potrà poi confermare l'aggiunta dell'esercizio
 \end{itemize}
 
 %mettere altro sub 
-\subsubsection{UC 2.2.2.1 Correzione automatica esercizio}
+\subsubsection{UC 2.2.3 Correzione automatica esercizio}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante, libreria di PoS-tagging;
 	\item[•] \textbf{Descrizione}: l’insegnante ottiene automaticamente i tag dal testo dell’esercizio attraverso la libreria di PoS-tagging;
@@ -112,7 +111,7 @@ modificare i tag automatici ecc. Potrà poi confermare l'aggiunta dell'esercizio
 \end{itemize}
 
 %mettere altro sub 
-\subsubsection{UC 2.2.5 Modifica visibilità esercizio}
+\subsubsection{UC 2.2.6 Modifica visibilità esercizio}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: l'insegnante imposta la visibilità dell'esercizio, ovvero quali allievi possono visualizzarlo e sceglierlo;
@@ -120,7 +119,7 @@ modificare i tag automatici ecc. Potrà poi confermare l'aggiunta dell'esercizio
 	\item[•] \textbf{Postcondizione}: l'insegnante ha modificato la visibilità dell'esercizio.
 \end{itemize}
 %mettere altro sub 
-\subsubsection{UC 2.2.6 Salvataggio modifiche}
+\subsubsection{UC 2.2.8 Salvataggio modifiche}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: l'insegnante salva l'esercizio e le possibili modifiche;
@@ -128,7 +127,7 @@ modificare i tag automatici ecc. Potrà poi confermare l'aggiunta dell'esercizio
 	\item[•] \textbf{Postcondizione}: l'insegnante ha salvato l'esercizio.
 \end{itemize}
 %mettere altro sub 
-\subsubsection{UC 2.2.6.1 Visualizzazione errori sintassi testo}
+\subsubsection{UC 2.2.7 Visualizzazione errori sintassi testo}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: l'insegnante visualizza gli errori relativi alla sintassi e la forma del testo che ha inserito;
@@ -137,7 +136,7 @@ modificare i tag automatici ecc. Potrà poi confermare l'aggiunta dell'esercizio
 \end{itemize}
 %mettere altro sub 
 
-\subsubsection{UC 2.2.7 Conferma aggiunta esercizio}
+\subsubsection{UC 2.2.9 Conferma aggiunta esercizio}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: l'insegnante aggiunge un esercizio al sistema;
@@ -226,10 +225,10 @@ modificare i tag automatici ecc. Potrà poi confermare l'aggiunta dell'esercizio
 	\item[•] \textbf{Postcondizione}: l’insegnante ha modificato l'esercizio;
 	\item[•] \textbf{Flusso degli eventi}:
 		\begin{enumerate}
-			\item UC 2.2.3 Modifica tag automatici;
-			\item UC 2.2.5 Modifica visibilità esercizio;
+			\item UC 2.2.5 Modifica tag automatici;
+			\item UC 2.2.6 Modifica visibilità esercizio;
 			\item UC 2.6.1 Elimina soluzione alternativa;
-			\item UC 2.2.6 Salvataggio modifiche.
+			\item UC 2.2.8 Salvataggio modifiche.
 		\end{enumerate}
 	\item[•] \textbf{Estensioni}
 	\begin{enumerate}
