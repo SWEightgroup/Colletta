@@ -340,8 +340,8 @@ La Budget Variance è calcolata come segue:
 BV = \frac{\textit{costo effettivo} - \textit{costo preventivato}}{\textit{costo preventivato}}
 \]
 
-\paragraph{Strumenti di supporto}
-\subparagraph{Calcolo indice di Gulpease}\mbox{}\\
+\subsubsection{Strumenti di supporto}
+\paragraph{Calcolo indice di Gulpease}\mbox{}\\
 Per il calcolo dell'indice di Gulpease, il gruppo \gruppo \space si avvale dello script MAGIC (Magic Automatic Gulpease Index Calulator) sviluppato internamente.
 Il tool esegue automaticamente ogni giorno e svolge i seguenti step:
 \begin{enumerate}
@@ -419,6 +419,13 @@ la {repository}\ped{G} al fine di consentire anche a coloro che non hanno famili
 Per utilizzare il programma è necessario recarsi al sito: \url{https://desktop.github.com/} disponibile sia per {Microsoft Windows}\ped{G} e {Apple MacOS}\ped{G}. 
 Per quanto riguarda le varie {distribuzioni Linux}\ped{G} non è disponibile un client ufficiale, è disponibile però un {porting}\ped{G} 
 non ufficiale all'indirizzo: \url{https://github.com/shiftkey/desktop}
+
+\paragraph{Maven}\mbox{}\\
+Il gruppo \gruppo si avvale di Apache Maven per la gestione della configurazione del modulo client Freeling scritto in Java. Tale strumento è fondamentale per consentire la ripetibilità della build sul pc di ogni membro del gruppo. Inoltre, permette di eseguire in maniera automatica tutti i test del modulo JUnit. Maven è reperibile al seguente link
+\begin{center}
+\url{https://maven.apache.org/}
+\end{center}
+
 
 \subsection{Verifica}
 
@@ -513,6 +520,11 @@ Ad esempio, se un componente ha realizzato la sezione "A" del documento, egli ve
 
 \subsubsection{Verifica dei diagrammi}
 I diagrammi devono essere verificati manualmente dal \textit{Verificatore} che deve controllare che aderiscano correttamente allo standard 2.0 (vedi Riferimenti Normativi). In particolare deve controllare che i diagrammi di flusso siano rappresentati in maniera corretta e che i diagrammi utilizzino correttamente le inclusioni e le estensioni, come ad esempio controllando che queste ultime siano accompagnate dalla condizione.
+
+\subsubsection{Strumenti di supporto}
+\paragraph{JUnit}\mbox{}\\
+Per la parte del codice scritta in Java, i test di unità saranno eseguiti tramite la libreria JUnit. La scelta è stata dettata dalla conoscenza dello strumento da gran parte dei membri del gruppo.
+
 
 \subsection{Validazione}
 Il gruppo \gruppo \space si riserva di aggiungere questa sezione in un successivo periodo.
