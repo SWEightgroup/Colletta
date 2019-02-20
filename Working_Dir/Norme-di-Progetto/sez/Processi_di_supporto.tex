@@ -412,6 +412,26 @@ Nel caso in cui, nel tentativo di effettuare l'upload nella repository remota, s
 % \item Selezionare l'opzione "Save changes".
 % \end{enumerate}
 
+\paragraph{Branching}\mbox{}\\
+Per minimizzare e meglio gestire in conflitti, il gruppo \gruppo \space lavora sulla propria repo mediante il la tecnica del \textit{feature branch}.
+\'E inoltre imposta una procedura standard di creazione e nomenclatura dei branch:
+\begin{itemize}
+	\item \'E permesso lavorare sul branch principale solo in caso di fix veloci e autorizzati dal responsabile;
+	\item In caso siano necessarie modifiche più profonde, ad un componente o a un documento, è necessario branchare dal ramo principale. La nomenclatura deve seguire il seguente schema: "Modifico\_XXXX\_YY", dove:
+	\begin{itemize}
+		\item XXXX è una sigla da 2 a 4 caratteri che individua la macro area che è soggetta a modifiche;
+		\item YY è la prossima revisione che il gruppo dovrà sostenere.
+	\end{itemize}
+	Ad esempio, un membro modifica l'Analisi dei Requisiti, e il gruppo sta correntemente lavorando per soddisfare la Revisione di Progettazione, il nome del branch è: "Modifico\_AR\_RP";
+	\item Se fosse necessario parallelizzare la modifica di un certo componente, allora si deve branchare dal ramo creato in precedenza secondo il seguente schema: "XXXX\_ZZ", dove
+	\begin{itemize}
+		\item XXXX è la sigla del ramo da cui ho branchato;
+		\item ZZ sono le iniziali del membro che ha creato il branch.
+	\end{itemize}
+	Ad esempio, se Sebastiano Caccaro necessita di branchare da "Modifico\_AR\_RP", creerà il branch "AR\_SC".
+
+\end{itemize}
+
 \subsubsection{Strumenti di supporto}
 \paragraph{GitHub Desktop}\mbox{}\\
 Il {client}\ped{G} che viene utilizzato per il controllo di versione è GitHub Desktop, esso permette di gestire attraverso un'interfaccia grafica 
@@ -524,6 +544,15 @@ I diagrammi devono essere verificati manualmente dal \textit{Verificatore} che d
 \subsubsection{Strumenti di supporto}
 \paragraph{JUnit}\mbox{}\\
 Per la parte del codice scritta in Java, i test di unità saranno eseguiti tramite la libreria JUnit. La scelta è stata dettata dalla conoscenza dello strumento da gran parte dei membri del gruppo.
+
+\paragraph{Jest ed Enzyme}\mbox{}\\
+Jest ed Enzyme sono i framework che il gruppo \gruppo \space usa per la creazione di test sul codice React. Permettono, fra le altre cose, di creare mock e simulare input utente.\newline
+Maggiori informazioni e i link per i download sono disponibili di seguito:
+\begin{itemize}
+	\item \textbf{Jest:} \url{https://jestjs.io/}
+	\item \textbf{Enzyme:} \url{https://github.com/airbnb/enzyme}
+	\item \textbf{Guida introduttiva:} \url{https://tinyurl.com/sw8EnzymeJest}
+\end{itemize}
 
 
 \subsection{Validazione}
