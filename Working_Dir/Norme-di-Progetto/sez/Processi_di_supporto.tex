@@ -340,8 +340,8 @@ La Budget Variance è calcolata come segue:
 BV = \frac{\textit{costo effettivo} - \textit{costo preventivato}}{\textit{costo preventivato}}
 \]
 
-\paragraph{Strumenti di supporto}
-\subparagraph{Calcolo indice di Gulpease}\mbox{}\\
+\subsubsection{Strumenti di supporto}
+\paragraph{Calcolo indice di Gulpease}\mbox{}\\
 Per il calcolo dell'indice di Gulpease, il gruppo \gruppo \space si avvale dello script MAGIC (Magic Automatic Gulpease Index Calulator) sviluppato internamente.
 Il tool esegue automaticamente ogni giorno e svolge i seguenti step:
 \begin{enumerate}
@@ -366,17 +366,18 @@ Il repository dedicato ai documenti è formata dalle seguenti subdirectory:
 \item[•] \textbf{RA}: contiene tutti i documenti da consegnare per la Revisione di Accettazione.
 \end{itemize}
 
-\paragraph{Project Board}\mbox{}\\
-\label{sec:projectboard}
-Per la gestione delle {issue}\ped{G} si fa utilizzo di {project board}\ped{G} su Asana, che permettono una gestione semplice del ciclo di vita dei documenti. 
-In particolare, trascinando la {card}\ped{G} da una colonna ad un'altra si andrà ad indicare in che stato si trova quella determinata issue.
-Le colonne, indicanti lo stato in cui si trova la issue, utilizzate all'interno del ciclo di vita dei documenti sono le seguenti:
-\begin{itemize}
-\item[•] \textbf{To do}: indica che l'attività deve essere ancora svolta;
-\item[•] \textbf{In progress}: indica che l'attività è in svolgimento;
-\item[•] \textbf{Needs review}: indica che l'attività necessita di verifica;
-\item[•] \textbf{Done}: indica che l'attività è conclusa.
-\end{itemize}
+% \paragraph{Project Board}\mbox{}\\
+% \label{sec:projectboard}
+% Per la gestione delle {issue}\ped{G} si fa utilizzo di {project board}\ped{G} su Asana, che permettono una gestione semplice del ciclo di vita dei documenti. 
+% In particolare, trascinando la {card}\ped{G} da una colonna ad un'altra si andrà ad indicare in che stato si trova quella determinata issue.
+% Le colonne, indicanti lo stato in cui si trova la issue, utilizzate all'interno del ciclo di vita dei documenti sono le seguenti:
+% \begin{itemize}
+% \item[•] \textbf{To do}: indica che l'attività deve essere ancora svolta;
+% \item[•] \textbf{In progress}: indica che l'attività è in svolgimento;
+% \item[•] \textbf{Needs review}: indica che l'attività necessita di verifica;
+% \item[•] \textbf{Done}: indica che l'attività è conclusa.
+% \end{itemize}
+
 \paragraph{Messaggi di commit}\mbox{}\\
 Ogni volta che si effettuano modifiche sui file del repository locale per poi esser caricate in
 quello remoto, bisogna specificarne le motivazioni. \uppercase{è} importante che i messaggi siano esplicativi e che non creino ambiguità, pertanto si scrivano le varie modifiche facendo uso di un elenco puntato.
@@ -384,21 +385,23 @@ quello remoto, bisogna specificarne le motivazioni. \uppercase{è} importante ch
 
 \paragraph{Merge}\mbox{}\\
 Nel caso in cui, nel tentativo di effettuare l'upload nella repository remota, si verifichi un {conflitto}\ped{G} è compito del componente del gruppo informare l'\textit{Amministratore di Progetto}. Nel caso in cui non si fosse in grado di effettuare il {merge}\ped{G} sfruttando il tool automatico messo a disposizione da client di versionamento, chiedere all'\textit{Amministratore di Progetto} di risolvere manualmente la cosa il prima possibile.
-\paragraph{Gestione delle milestone}
-Per la gestione delle {milestone}\ped{G} è utilizzato il sistema di gestione offerto da Asana, che permette di associare le 
-milestone alle issue. 
-% e alle pull request.
-\paragraph{Creazione di una milestone}\mbox{}\\
-Per la creazione di una milestone all'interno del progetto \NomeProgetto \space di Asana, si deve:
-\begin{enumerate}
-\item Selezionare il progetto su cui si lavora;
-\item cliccare su "new" e selezionare task;
-\item scrivere il nome del task e assegnarlo;
-\item andare alla sezione timeline;
-\item trascinare il task da "unschedule task" e posizionarlo nel periodo desiderato;
-\item restringere o allargare il task per modificare la durata; 
-\item determinare le dipendenze trascinando la freccia all'interno di un altro task;
-\end{enumerate}
+
+% \paragraph{Gestione delle milestone}
+% Per la gestione delle {milestone}\ped{G} è utilizzato il sistema di gestione offerto da Asana, che permette di associare le 
+% milestone alle issue. 
+% % e alle pull request.
+
+% \paragraph{Creazione di una milestone}\mbox{}\\
+% Per la creazione di una milestone all'interno del progetto \NomeProgetto \space di Asana, si deve:
+% \begin{enumerate}
+% \item Selezionare il progetto su cui si lavora;
+% \item cliccare su "new" e selezionare task;
+% \item scrivere il nome del task e assegnarlo;
+% \item andare alla sezione timeline;
+% \item trascinare il task da "unschedule task" e posizionarlo nel periodo desiderato;
+% \item restringere o allargare il task per modificare la durata; 
+% \item determinare le dipendenze trascinando la freccia all'interno di un altro task;
+% \end{enumerate}
 % \paragraph{Modifica di una milestone}\mbox{}\\
 % Per modificare una milestone sempre su GitHub si deve:
 % \begin{enumerate}
@@ -409,6 +412,26 @@ Per la creazione di una milestone all'interno del progetto \NomeProgetto \space 
 % \item Selezionare l'opzione "Save changes".
 % \end{enumerate}
 
+\paragraph{Branching}\mbox{}\\
+Per minimizzare e meglio gestire in conflitti, il gruppo \gruppo \space lavora sulla propria repo mediante il la tecnica del \textit{feature branch}.
+\'E inoltre imposta una procedura standard di creazione e nomenclatura dei branch:
+\begin{itemize}
+	\item \'E permesso lavorare sul branch principale solo in caso di fix veloci e autorizzati dal responsabile;
+	\item In caso siano necessarie modifiche più profonde, ad un componente o a un documento, è necessario branchare dal ramo principale. La nomenclatura deve seguire il seguente schema: "Modifico\_XXXX\_YY", dove:
+	\begin{itemize}
+		\item XXXX è una sigla da 2 a 4 caratteri che individua la macro area che è soggetta a modifiche;
+		\item YY è la prossima revisione che il gruppo dovrà sostenere.
+	\end{itemize}
+	Ad esempio, un membro modifica l'Analisi dei Requisiti, e il gruppo sta correntemente lavorando per soddisfare la Revisione di Progettazione, il nome del branch è: "Modifico\_AR\_RP";
+	\item Se fosse necessario parallelizzare la modifica di un certo componente, allora si deve branchare dal ramo creato in precedenza secondo il seguente schema: "XXXX\_ZZ", dove
+	\begin{itemize}
+		\item XXXX è la sigla del ramo da cui ho branchato;
+		\item ZZ sono le iniziali del membro che ha creato il branch.
+	\end{itemize}
+	Ad esempio, se Sebastiano Caccaro necessita di branchare da "Modifico\_AR\_RP", creerà il branch "AR\_SC".
+
+\end{itemize}
+
 \subsubsection{Strumenti di supporto}
 \paragraph{GitHub Desktop}\mbox{}\\
 Il {client}\ped{G} che viene utilizzato per il controllo di versione è GitHub Desktop, esso permette di gestire attraverso un'interfaccia grafica 
@@ -416,6 +439,13 @@ la {repository}\ped{G} al fine di consentire anche a coloro che non hanno famili
 Per utilizzare il programma è necessario recarsi al sito: \url{https://desktop.github.com/} disponibile sia per {Microsoft Windows}\ped{G} e {Apple MacOS}\ped{G}. 
 Per quanto riguarda le varie {distribuzioni Linux}\ped{G} non è disponibile un client ufficiale, è disponibile però un {porting}\ped{G} 
 non ufficiale all'indirizzo: \url{https://github.com/shiftkey/desktop}
+
+\paragraph{Maven}\mbox{}\\
+Il gruppo \gruppo si avvale di Apache Maven per la gestione della configurazione del modulo client Freeling scritto in Java. Tale strumento è fondamentale per consentire la ripetibilità della build sul pc di ogni membro del gruppo. Inoltre, permette di eseguire in maniera automatica tutti i test del modulo JUnit. Maven è reperibile al seguente link
+\begin{center}
+\url{https://maven.apache.org/}
+\end{center}
+
 
 \subsection{Verifica}
 
@@ -510,6 +540,20 @@ Ad esempio, se un componente ha realizzato la sezione "A" del documento, egli ve
 
 \subsubsection{Verifica dei diagrammi}
 I diagrammi devono essere verificati manualmente dal \textit{Verificatore} che deve controllare che aderiscano correttamente allo standard 2.0 (vedi Riferimenti Normativi). In particolare deve controllare che i diagrammi di flusso siano rappresentati in maniera corretta e che i diagrammi utilizzino correttamente le inclusioni e le estensioni, come ad esempio controllando che queste ultime siano accompagnate dalla condizione.
+
+\subsubsection{Strumenti di supporto}
+\paragraph{JUnit}\mbox{}\\
+Per la parte del codice scritta in Java, i test di unità saranno eseguiti tramite la libreria JUnit. La scelta è stata dettata dalla conoscenza dello strumento da gran parte dei membri del gruppo.
+
+\paragraph{Jest ed Enzyme}\mbox{}\\
+Jest ed Enzyme sono i framework che il gruppo \gruppo \space usa per la creazione di test sul codice React. Permettono, fra le altre cose, di creare mock e simulare input utente.\newline
+Maggiori informazioni e i link per i download sono disponibili di seguito:
+\begin{itemize}
+	\item \textbf{Jest:} \url{https://jestjs.io/}
+	\item \textbf{Enzyme:} \url{https://github.com/airbnb/enzyme}
+	\item \textbf{Guida introduttiva:} \url{https://tinyurl.com/sw8EnzymeJest}
+\end{itemize}
+
 
 \subsection{Validazione}
 Il gruppo \gruppo \space si riserva di aggiungere questa sezione in un successivo periodo.

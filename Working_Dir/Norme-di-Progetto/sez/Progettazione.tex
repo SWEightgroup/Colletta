@@ -87,6 +87,19 @@ Il codice deve seguire le linee guida reperibili all’indirizzo:
 \begin{center}
 \url{http://google.github.io/styleguide/};
 \end{center}
+
+
+\paragraph{Linguaggi e Framework}\mbox{}\\
+Lo sviluppo del progetto didattico richiede l'uso di diversi framwork e linguaggi di programmazione, ognuno mirato ad uno scopo preciso:
+\begin{itemize}
+	\item \textbf{JavaScript:} viene adottato Javascript alla specifica ES6 per lo sviluppo di gran parte della backend e della frontend;
+	\item \textbf{React:} viene adottato il framework React 16.8 per lo sviluppo della frontend;
+	\item \textbf{Java:} viene adottato Java con le specifiche del JDK 11 per lo sviluppo del modulo client per la connessione al server Freeling;
+	\item \textbf{Spring:} viene adottato il framework Spring per facilitare lo sviluppo del modulo sopracitato, avvalendosi solo del modulo RESTful.
+\end{itemize}
+
+
+
 \subsubsection{Strumenti di supporto}
 \paragraph{RQConnect}\mbox{}\\ \label{sec:Trac}
 Il tracciamento dei requisiti e dei casi d’uso avviene attraverso la piattaforma 
@@ -145,3 +158,40 @@ Per permettere di analizzare frasi in più lingue creare istanze diverse con il 
 	\item \textbf{de.cfg}: predispone il sistema ad
 	analizzare frasi in tedesco.
 \end{itemize}
+
+\paragraph{Eclipse}\mbox{}\\
+Per la parte di sviluppo in Java, il gruppo \gruppo \ ha deciso di adottare l'IDE Eclipse per le seguenti ragioni:
+\begin{itemize}
+	\item \'E gratuito;
+	\item Gran parte dei membri del gruppo ne hanno già conoscenza;
+	\item Integrazione con Maven;
+	\item \'E multipiattaforma.
+	\item Estensibilità tramite plugin per lo sviluppo con Spring.
+\end{itemize}
+Eclipse è reperibile al seguente link:\newline
+\begin{center}
+	\url{https://www.eclipse.org/downloads/}
+\end{center}
+
+\paragraph{Node Js}\mbox{}\\
+Per lo sviluppo lato server in linguaggio Javascript ci si avvale dell'ultima versione Long Term Support (LTS) di Node Js, che, al momento della stesura di questo documento, è la 10.15.1 LTS.
+Node Js è reperibile al seguente link:\newline
+\begin{center}
+	\url{https://nodejs.org/it/}
+\end{center}
+
+\paragraph{Apache Tomcat}\mbox{}\\
+Per l'esecuzione e il deploy sul server del modulo client Freeling scritto in Java, viene usato Apache Tomcat, che permette l'esecuzione di codice Java lato server. Viene usata l'ultima versione, ovvero la 9.0.16.
+Maggiori informazioni sono reperibili al seguente link:\newline
+\begin{center}
+	\url{http://tomcat.apache.org/}
+\end{center}
+
+\paragraph{Firebase}\mbox{}\\
+Lo storage dei dati raccolti dal prodotto finale avviene sul servizio Firebase di Google. La scelta è stata obbligata, in quanto quest'ultima tecnologia è espressamente richiesta da \proponente .\newline
+Maggiori informazioni sono reperibili al seguente link:\newline
+\begin{center}
+	\url{https://firebase.google.com}
+\end{center}
+
+
