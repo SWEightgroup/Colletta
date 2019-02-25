@@ -45,7 +45,7 @@ Dove:
 R-1F001 &
  
 %Descrizione
-Un utente non autenticato può registrarsi alla piattaforma come allievo, insegnante, sviluppatore o amministratore &
+Un utente non autenticato può registrarsi alla piattaforma come allievo, insegnante, sviluppatore o amministratore. &
  
 %Importanza
 Obbligatorio &
@@ -62,7 +62,7 @@ Capitolato \\
 R-1F002 &
 
 %Descrizione
-Un utente non autenticato può effettuare il login &
+Un utente non autenticato può effettuare il login solo se si è registrato alla piattaforma. &
 
 %Importanza
 Obbligatorio &
@@ -393,7 +393,7 @@ Interno \\
 R-1F016 &
 
 %Descrizione
-Un insegnante può visualizzare la conferma dell'avvenuto inserimento di un esercizio &
+Un insegnante può modificare la visibilità di un esercizio&
 
 %Importanza
 Obbligatorio &
@@ -402,7 +402,7 @@ Obbligatorio &
 Funzionale &
 
 %Fonte
-Interno \\
+Capitolato \\
 %%##################### FINE ENTRY ###############################
 %%################## INIZIO ENTRY ################################    
 %Identificativo
@@ -903,6 +903,7 @@ Nota: requisiti di vincolo e di qualità non sono tracciati perché non corrispo
 	Capitolato & R-1F013\\
 	Capitolato & R-1F014\\
 	Capitolato & R-1F015\\
+	Capitolato & R-1F016\\
 	Capitolato & R-1F019\\
 	Capitolato & R-1F022\\
 	Capitolato & R-2F001\\
@@ -919,7 +920,6 @@ Nota: requisiti di vincolo e di qualità non sono tracciati perché non corrispo
 	Interno & R-1F010\\
 	Interno & R-3F003\\
 	Interno & R-3F004\\
-	Interno & R-1F016\\
 	Interno & R-3F005\\
 	Interno & R-3F006\\
 	Interno & R-1F017\\
@@ -947,52 +947,109 @@ Nota: requisiti di vincolo e di qualità non sono tracciati perché non corrispo
 \subsection{Tracciamento casi d'uso-requisiti} 
 
 \begin{tabularx}{\textwidth}{c|c}
-	
 	\rowcolor{greySWEight}
 	\textcolor{white}{\textbf{Caso d'uso}} &
 	\textcolor{white}{\textbf{Requisito}}\endhead
-
- 	UC 1.2 & R-1F001\\
-	UC 1.1 & R-1F002\\
-	UC 3.1 & R-1F003\\
-	UC 3.2 & R-3F001\\
-	UC 3.3 & R-1F004\\
-	UC 3.4 & R-1F005\\
-	UC 3.9 & R-1F006\\
-	UC 3.8 & R-1F007\\
-	UC 3.11 & R-1F008\\
-	UC 3.10 & R-1F009\\
-	UC 2.4 & R-1F011\\
-	UC 2.2 & R-1F012\\
-	UC 2.2.1 & R-1F013\\
-	UC 2.2.3 & R-1F014\\
-	UC 2.2.2.1 & R-1F015\\
-	UC 4.1 & R-1F019\\
-	UC 4.2.1 & R-2F001\\
-	UC 4.2.2 & R-1F025\\
-	UC 4.2.5 & R-2F004\\
-	UC 4.4.1 & R-1F024\\
-	UC 2.1 & R-3F002\\
-	UC 2.3 & R-1F010\\
-	UC 2.5 & R-3F003\\
-	UC 2.6 & R-3F004\\
-	UC 2.6.1 & R-3F005\\
-	UC 2.2.4 & R-3F006\\
-	UC 4.2.3 & R-2F003\\
-	UC 4.2.6 & R-1F023\\
-	UC 4.4.2 & R-3F007\\
-	UC 4.4.3 & R-3F008\\
-	UC 5.7 & R-2F005\\
-	UC 5.8 & R-2F006\\
-	UC 5.5 & R-2F007\\
-	UC 5.2 & R-2F008\\
-	UC 5.6 & R-2F009\\
-	UC 2.2.7 & R-1F016\\
-	UC 4.6   & R-1F022\\
-	UC 2.3.1 & R-1F017\\
-	UC 4.4   & R-1F020\\
-	UC 4.3     & R-1F021\\
+	
+	UC 1.1 &  R-1F002  \\
+	UC 1.2 &  R-1F001  \\
+	UC 2.1 &  R-3F002  \\ 
+	UC 2.2 &  R-1F012  \\ 
+	UC 2.2.1 &  R-1F013  \\ 
+	UC 2.2.3 &  R-1F015  \\ 
+	UC 2.2.5 &  R-1F014  \\ 
+	UC 2.2.4 &  R-3F006  \\ 
+	UC 2.2.6 &  R-1F016  \\ 
+	UC 2.2.9 &  R-1F016  \\ 
+	UC 2.3 &  R-1F010  \\ 
+	UC 2.3.1 &  R-1F017  \\ 
+	UC 2.4 &  R-1F011  \\ 
+	UC 2.5 &  R-3F003  \\ 
+	UC 2.6 &  R-3F004  \\ 
+	UC 2.6.1 &  R-3F005  \\ 
+	UC 3.1 &  R-1F003  \\ 
+	UC 3.2 &  R-3F001  \\ 
+	UC 3.3 &  R-1F004  \\ 
+	UC 3.4 &  R-1F005  \\ 
+	UC 3.8 &  R-1F007  \\ 
+	UC 3.9 &  R-1F006  \\ 
+	UC 3.10 &  R-1F009  \\ 
+	UC 3.10.3 &  R-1F005  \\ 
+	UC 3.11 &  R-1F008  \\ 
+	UC 3.12 &  R-1F005  \\ 
+	UC 4.1 &  R-1F019  \\ 
+	UC 4.2.1 &  R-2F001  \\ 
+	UC 4.2.2 &  R-1F025  \\ 
+	UC 4.2.3 &  R-2F003  \\ 
+	UC 4.2.5 &  R-2F004  \\ 
+	UC 4.2.6 &  R-1F023  \\ 
+	UC 4.3 &  R-1F021  \\ 
+	UC 4.4 &  R-1F020  \\ 
+	UC 4.4.1 &  R-1F024  \\ 
+	UC 4.4.2 &  R-3F007  \\ 
+	UC 4.4.3 &  R-3F008  \\ 
+	UC 4.6 &  R-1F022  \\ 
+	UC 5.2 &  R-2F008  \\ 
+	UC 5.5 &  R-2F007  \\ 
+	UC 5.6 &  R-2F009  \\ 
+	UC 5.7 &  R-2F005  \\ 
+	UC 5.8 &  R-2F006  \\ 
 	
 	\rowcolor{white}
-	\caption{Tabella tracciamento casi d'uso-requisiti} \label{tab:tabellafonterequisiti}
+	\caption{Tabella tracciamento casi d'uso-requisiti} \label{tab:tabellacasirequisiti}
+\end{tabularx}
+
+
+
+\subsection{Tracciamento requisiti-casi d'uso} 
+
+\begin{tabularx}{\textwidth}{c|c}
+	\rowcolor{greySWEight}
+	\textcolor{white}{\textbf{Requisito}} &
+	\textcolor{white}{\textbf{Caso d'uso}}\endhead
+
+R-1F001 & UC 1.2 \\
+R-1F002 & UC 1.1 \\
+R-1F003 & UC 3.1 \\
+R-3F001 & UC 3.2 \\
+R-1F004 & UC 3.3 \\
+R-1F005 & UC 3.10.3 \\
+R-1F005 & UC 3.12 \\
+R-1F006 & UC 3.9 \\
+R-1F007 & UC 3.8 \\
+R-1F008 & UC 3.11 \\
+R-1F009 & UC 3.10 \\
+R-3F002 & UC 2.1 \\
+R-1F010 & UC 2.3 \\
+R-1F011 & UC 2.4 \\
+R-3F003 & UC 2.5 \\
+R-3F004 & UC 2.6 \\
+R-3F005 & UC 2.6.1 \\
+R-1F012 & UC 2.2 \\
+R-1F013 & UC 2.2.1 \\
+R-1F014 & UC 2.2.5 \\
+R-1F015 & UC 2.2.3 \\
+R-3F006 & UC 2.2.4 \\
+R-1F016 & UC 2.2.6 \\
+R-1F017 & UC 2.3.1 \\
+R-1F019 & UC 4.1 \\
+R-2F001 & UC 4.2.1 \\
+R-1F025 & UC 4.2.2 \\
+R-2F003 & UC 4.2.3 \\
+R-2F004 & UC 4.2.5 \\
+R-1F020 & UC 4.4 \\
+R-1F021 & UC 4.3 \\
+R-1F022 & UC 4.6 \\
+R-1F023 & UC 4.2.6 \\
+R-1F024 & UC 4.4.1 \\
+R-3F007 & UC 4.4.2 \\
+R-3F008 & UC 4.4.3 \\
+R-2F005 & UC 5.7 \\
+R-2F006 & UC 5.8 \\
+R-2F007 & UC 5.5 \\
+R-2F008 & UC 5.2 \\
+R-2F009 & UC 5.6 \\
+
+	\rowcolor{white}
+\caption{Tabella tracciamento requisiti-casi d'uso} \label{tab:tabellarequisiticasi}
 \end{tabularx}
