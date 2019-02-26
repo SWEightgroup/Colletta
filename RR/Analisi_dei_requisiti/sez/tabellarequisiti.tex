@@ -1,0 +1,998 @@
+\subsection{Classificazione dei requisiti}\mbox{}\\
+I vari requisiti potranno provenire dalle seguenti fonti:
+\begin{itemize}
+	\item[•] \textbf{Capitolato}: il requisito è stato scritto esplicitamente nel documento fornito dalla proponente;
+	\item[•] \textbf{Verbali interni e studio di fattibilità}: Il requisito è emerso durante la discussione del capitolato tra gli analisti;
+	\item[•] \textbf{Casi d'uso}: il requisito è il risultato dell'analisi di uno o più casi d'uso.
+\end{itemize}
+
+I vari requisiti devono essere classificati secondo la seguente convenzione:
+\begin{center}
+	R-[Importanza][Tipo][Identificativo]
+\end{center}
+Dove:
+\begin{itemize}
+	\item[•] Importanza, indica se il requisito è:
+	\begin{itemize}
+		\item[1]: Requisito obbligatorio;
+		\item[2]: Requisito desiderabile;
+		\item[3]: Requisito opzionale.
+	\end{itemize}
+	\item[•] Tipo, indica se il requisito è:
+	\begin{itemize}
+		\item[F]: Requisito funzionale;
+		\item[Q]: Requisito di qualità;
+		\item[P]: Requisito prestazionale;
+		\item[V]: Requisito di vincolo.
+	\end{itemize}
+	\item[•] Identificativo: ovvero un codice univoco che contraddistingue il requisito.
+\end{itemize}
+
+\subsection{Requisiti funzionali} 
+\renewcommand{\arraystretch}{1.5}
+\def\tabularxcolumn#1{m{#1}}
+\begin{tabularx}{\textwidth}{cXccc}
+ 
+\rowcolor{greySWEight}
+   \textcolor{white}{\textbf{Identificativo}} &
+   \textcolor{white}{\textbf{Descrizione}}&
+   \textcolor{white}{\textbf{Importanza}}&
+   \textcolor{white}{\textbf{Tipo}}&
+   \textcolor{white}{\textbf{Fonte}}\endhead
+ 
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F001 &
+ 
+%Descrizione
+Un utente non autenticato può registrarsi alla piattaforma come allievo, insegnante, sviluppatore o amministratore &
+ 
+%Importanza
+Obbligatorio &
+ 
+%Tipo
+Funzionale &
+ 
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ################################
+
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F002 &
+
+%Descrizione
+Un utente non autenticato può effettuare il login &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ################################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F003 &
+
+%Descrizione
+Un allievo può visualizzare la propria dashboard &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ################################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-3F001 &
+
+%Descrizione
+
+Un allievo può visualizzare i propri progressi &
+
+%Importanza
+Opzionale &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ################################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F004 &
+
+%Descrizione
+
+
+Un allievo può visualizzare i propri traguardi &
+
+%Importanza
+Desiderabile &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ################################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F005 &
+
+%Descrizione
+
+
+Un allievo può visualizzare le correzioni dell’insegnante e del correttore automatico &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ################################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F006 &
+
+%Descrizione
+
+
+
+Un allievo può cercare un esercizio &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ################################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F007 &
+
+%Descrizione
+Un allievo può scegliere la lingua dell’esercizio da svolgere &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ################################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F008 &
+
+%Descrizione
+
+Un allievo può svolgere un esercizio &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F009 &
+
+%Descrizione
+
+Un allievo può inserire un esercizio, utilizzando una frase libera &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-3F002 &
+
+%Descrizione
+Un insegnante può visualizzare il proprio profilo &
+
+%Importanza
+Opzionale &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Interno \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F010 &
+
+%Descrizione
+Un insegnante può visualizzare lo storico delle frasi inserite &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Interno \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F011 &
+
+%Descrizione
+Un insegnante può visualizzare gli esercizi svolti dagli allievi &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-3F003 &
+
+%Descrizione
+Un insegnante può visualizzare i propri allievi &
+
+%Importanza
+Opzionale &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Interno \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-3F004 &
+
+%Descrizione
+Un insegnante può modificare una sua soluzione precedentemente inserita &
+
+%Importanza
+Opzionale &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Interno \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-3F005 &
+
+%Descrizione
+Un insegnante può eliminare una sua soluzione  dell’esercizio &
+
+%Importanza
+Opzionale &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Interno \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F012 &
+
+%Descrizione
+Un insegnante può inserire un nuovo esercizio &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F013 &
+
+%Descrizione
+Un insegnante può scegliere la lingua dell’esercizio da inserire &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F014 &
+
+%Descrizione
+Un insegnante può inserire una soluzione personale all’esercizio inserito &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F015 &
+
+%Descrizione
+Un insegnante può utilizzare una soluzione della libreria di PoS-tagging &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-3F006 &
+
+%Descrizione
+
+Un insegnante può inserire più soluzioni per un esercizio &
+
+%Importanza
+Opzionale &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Interno \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F016 &
+
+%Descrizione
+Un insegnante può visualizzare la conferma dell'avvenuto inserimento di un esercizio &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Interno \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F017 &
+
+%Descrizione
+Un insegnante può visualizzare la soluzione dell’esercizio di un singolo alunno &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Interno \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F019 &
+
+%Descrizione
+Uno sviluppatore può visualizzare l’elenco delle frasi &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-2F001 &
+
+%Descrizione
+Uno sviluppatore può filtrare i dati per data di inserimento &
+
+%Importanza
+Desiderabile &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F025 &
+
+%Descrizione
+Uno sviluppatore può filtrare i dati per fonte &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-2F003 &
+
+%Descrizione
+Uno sviluppatore può filtrare i dati per lingua &
+
+%Importanza
+Desiderabile &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Interno \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-2F004 &
+
+%Descrizione
+Uno sviluppatore può visualizzare i dati filtrati &
+
+%Importanza
+Desiderabile &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F020 &
+
+%Descrizione
+Uno sviluppatore può scaricare i dati filtrati &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F021 &
+
+%Descrizione
+Uno sviluppatore può visualizzare lo storico di una frase &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F022 &
+
+%Descrizione
+Uno sviluppatore può aver accesso ai modelli &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F023 &
+
+%Descrizione
+Uno sviluppatore può rimuovere un filtro di ricerca &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Interno \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-1F024 &
+
+%Descrizione
+Uno sviluppatore può scegliere i contenuti da scaricare &
+
+%Importanza
+Obbligatorio &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Capitolato \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-3F007 &
+
+%Descrizione
+Uno sviluppatore può scegliere il formato del file da scaricare &
+
+%Importanza
+Opzionale &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Interno \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-3F008 &
+
+%Descrizione
+Uno sviluppatore può scegliere il formato dell’archivio da scaricare &
+
+%Importanza
+Opzionale &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Interno \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-2F005 &
+
+%Descrizione
+Un amministratore può approvare una registrazione di uno sviluppatore &
+
+%Importanza
+Desiderabile &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Interno \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-2F006 &
+
+%Descrizione
+Un amministratore può rifiutare una registrazione di uno sviluppatore &
+
+%Importanza
+Desiderabile &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Interno \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-2F007 &
+
+%Descrizione
+Un amministratore può eliminare un utente &
+
+%Importanza
+Desiderabile &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Interno \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-2F008 &
+
+%Descrizione
+Un amministratore può visualizzare l’intera lista degli utenti &
+
+%Importanza
+Desiderabile &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Interno \\
+%%##################### FINE ENTRY ###############################
+%%################## INIZIO ENTRY ################################    
+%Identificativo
+R-2F009 &
+
+%Descrizione
+Un amministratore può visualizzare l’intera lista delle richieste in sospeso &
+
+%Importanza
+Desiderabile &
+
+%Tipo
+Funzionale &
+
+%Fonte
+Interno \\
+%%##################### FINE ENTRY ###############################
+\rowcolor{white}
+\caption{Tabella requisiti funzionali} \label{tab:tabellarequisitifunzionali}
+\end{tabularx}
+
+%%##################### FINE requisiti funzionali ############################
+
+\subsection{Requisiti di vincolo} 
+\begin{tabularx}{\textwidth}{cXccc}
+	
+	\rowcolor{greySWEight}
+	\textcolor{white}{\textbf{Identificativo}} &
+	\textcolor{white}{\textbf{Descrizione}}&
+	\textcolor{white}{\textbf{Importanza}}&
+	\textcolor{white}{\textbf{Tipo}}&
+	\textcolor{white}{\textbf{Fonte}}\endhead
+	
+	%%################## INIZIO ENTRY #############################    
+	%Identificativo
+	R-1V001 &
+	
+	%Descrizione
+	L’applicazione è web o mobile &
+	
+	%Importanza
+	Obbligatorio &
+	
+	%Tipo
+	Vincolo &
+	
+	%Fonte
+	Capitolato \\
+	%%##################### FINE ENTRY ############################
+	%%################## INIZIO ENTRY #############################    
+	%Identificativo
+	R-1V002 &
+	
+	%Descrizione
+	L’applicazione utilizza una libreria di post-tagging &
+	
+	%Importanza
+	Obbligatorio &
+	
+	%Tipo
+	Vincolo &
+	
+	%Fonte
+	Capitolato \\
+	%%##################### FINE ENTRY #############################
+	%%################## INIZIO ENTRY #############################    
+	%Identificativo
+	R-1V003 &
+	
+	%Descrizione
+	L’applicazione utilizza Firebase &
+	
+	%Importanza
+	Obbligatorio &
+	
+	%Tipo
+	Vincolo &
+	
+	%Fonte
+	Capitolato \\
+	%%##################### FINE ENTRY #############################
+	%%################## INIZIO ENTRY #############################    
+	%Identificativo
+	R-1V004 &
+	
+	%Descrizione
+	Il funzionamento del prodotto richiede una connessione a internet &
+	
+	%Importanza
+	Obbligatorio &
+	
+	%Tipo
+	Vincolo &
+	
+	%Fonte
+	Capitolato \\
+	%%##################### FINE ENTRY #############################
+	
+	\rowcolor{white}
+	\caption{Tabella requisiti di vincolo} \label{tab:tabellarequisitivincolo}
+\end{tabularx}
+
+%%##################### FINE requisiti di vincolo ############################
+
+
+\subsection{Requisiti di qualità} 
+
+
+\begin{tabularx}{\textwidth}{cXccc}
+	
+	\rowcolor{greySWEight}
+	\textcolor{white}{\textbf{Identificativo}} &
+	\textcolor{white}{\textbf{Descrizione}}&
+	\textcolor{white}{\textbf{Importanza}}&
+	\textcolor{white}{\textbf{Tipo}}&
+	\textcolor{white}{\textbf{Fonte}}\endhead
+	
+	%%################## INIZIO ENTRY #############################    
+	%Identificativo
+	R-1Q001 &
+	
+	%Descrizione
+	Sono rispettate le norme e le metriche sulla stesura dei documenti indicate nel documento \NdP &
+	
+	%Importanza
+	Obbligatorio &
+	
+	%Tipo
+	Qualità &
+	
+	%Fonte
+	Interno \\
+	%%##################### FINE ENTRY ############################
+	%%################## INIZIO ENTRY #############################    
+	%Identificativo
+	R-1Q002 &
+	
+	%Descrizione
+	Deve essere realizzato un manuale manutentore che descriva l’utilizzo del codice &
+	
+	%Importanza
+	Obbligatorio &
+	
+	%Tipo
+	Qualità &
+	
+	%Fonte
+	Interno \\
+	%%##################### FINE ENTRY ############################
+	%%################## INIZIO ENTRY #############################    
+	%Identificativo
+	R-1Q003 &
+	
+	%Descrizione
+	Il manuale manutentore deve essere disponibile in lingua italiana &
+	
+	%Importanza
+	Obbligatorio &
+	
+	%Tipo
+	Qualità &
+	
+	%Fonte
+	Interno \\
+	%%##################### FINE ENTRY ############################
+	%%################## INIZIO ENTRY #############################    
+	%Identificativo
+	R-1Q004 &
+	
+	%Descrizione
+	Deve essere fornito un manuale utente  &
+	
+	%Importanza
+	Obbligatorio &
+	
+	%Tipo
+	Qualità &
+	
+	%Fonte
+	Interno \\
+	%%##################### FINE ENTRY ############################
+	%%################## INIZIO ENTRY #############################    
+	%Identificativo
+	R-1Q005 &
+	
+	%Descrizione
+	Il manuale utente deve essere disponibile in lingua italiana   &
+	
+	%Importanza
+	Obbligatorio &
+	
+	%Tipo
+	Qualità &
+	
+	%Fonte
+	Interno \\
+	%%##################### FINE ENTRY ############################
+	
+	\rowcolor{white}
+	\caption{Tabella requisiti di qualità} \label{tab:tabellarequisitiqualità}
+\end{tabularx}
+
+%%##################### FINE requisiti di qualità ############################
+
+\section{Tracciamento dei requisiti}
+Nota: requisiti di vincolo e di qualità non sono tracciati perché non corrispondono a nessun caso d'uso.
+\subsection{Tracciamento fonti-requisiti} 
+\begin{tabularx}{\textwidth}{c|c}
+	
+	\rowcolor{greySWEight}
+	\textcolor{white}{\textbf{Fonte}} &
+	\textcolor{white}{\textbf{Requisito}}\endhead
+	
+	Capitolato & R-1F001\\
+	Capitolato & R-1F002\\
+	Capitolato & R-1F003\\
+	Capitolato & R-3F001\\
+	Capitolato & R-1F004\\
+	Capitolato & R-1F005\\
+	Capitolato & R-1F006\\
+	Capitolato & R-1F007\\
+	Capitolato & R-1F008\\
+	Capitolato & R-1F009\\
+	Capitolato & R-1F011\\
+	Capitolato & R-1F012\\
+	Capitolato & R-1F013\\
+	Capitolato & R-1F014\\
+	Capitolato & R-1F015\\
+	Capitolato & R-1F019\\
+	Capitolato & R-1F022\\
+	Capitolato & R-2F001\\
+	Capitolato & R-1F025\\
+	Capitolato & R-1F020\\
+	Capitolato & R-2F004\\
+	Capitolato & R-1F024\\
+	Capitolato & R-1F021\\
+	Capitolato & R-1V001\\
+	Capitolato & R-1V002\\
+	Capitolato & R-1V003\\
+	Capitolato & R-1V004\\
+	Interno & R-3F002\\
+	Interno & R-1F010\\
+	Interno & R-3F003\\
+	Interno & R-3F004\\
+	Interno & R-1F016\\
+	Interno & R-3F005\\
+	Interno & R-3F006\\
+	Interno & R-1F017\\
+	Interno & R-2F003\\
+	Interno & R-1F023\\
+	Interno & R-3F007\\
+	Interno & R-3F008\\
+	Interno & R-2F005\\
+	Interno & R-2F006\\
+	Interno & R-2F007\\
+	Interno & R-2F008\\
+	Interno & R-2F009\\
+	Interno & R-1Q001\\
+	Interno & R-1Q002\\
+	Interno & R-1Q003\\
+	Interno & R-1Q004\\
+	Interno & R-1Q005\\
+	 
+	
+	\rowcolor{white}
+	\caption{Tabella tracciamento fonti-requisiti} \label{tab:tabellafonterequisiti}
+\end{tabularx}
+
+
+\subsection{Tracciamento casi d'uso-requisiti} 
+
+\begin{tabularx}{\textwidth}{c|c}
+	
+	\rowcolor{greySWEight}
+	\textcolor{white}{\textbf{Caso d'uso}} &
+	\textcolor{white}{\textbf{Requisito}}\endhead
+
+ 	UC 1.2 & R-1F001\\
+	UC 1.1 & R-1F002\\
+	UC 3.1 & R-1F003\\
+	UC 3.2 & R-3F001\\
+	UC 3.3 & R-1F004\\
+	UC 3.4 & R-1F005\\
+	UC 3.9 & R-1F006\\
+	UC 3.8 & R-1F007\\
+	UC 3.11 & R-1F008\\
+	UC 3.10 & R-1F009\\
+	UC 2.4 & R-1F011\\
+	UC 2.2 & R-1F012\\
+	UC 2.2.1 & R-1F013\\
+	UC 2.2.3 & R-1F014\\
+	UC 2.2.2.1 & R-1F015\\
+	UC 4.1 & R-1F019\\
+	UC 4.2.1 & R-2F001\\
+	UC 4.2.2 & R-1F025\\
+	UC 4.2.5 & R-2F004\\
+	UC 4.4.1 & R-1F024\\
+	UC 2.1 & R-3F002\\
+	UC 2.3 & R-1F010\\
+	UC 2.5 & R-3F003\\
+	UC 2.6 & R-3F004\\
+	UC 2.6.1 & R-3F005\\
+	UC 2.2.4 & R-3F006\\
+	UC 4.2.3 & R-2F003\\
+	UC 4.2.6 & R-1F023\\
+	UC 4.4.2 & R-3F007\\
+	UC 4.4.3 & R-3F008\\
+	UC 5.7 & R-2F005\\
+	UC 5.8 & R-2F006\\
+	UC 5.5 & R-2F007\\
+	UC 5.2 & R-2F008\\
+	UC 5.6 & R-2F009\\
+	UC 2.2.7 & R-1F016\\
+	UC 4.6   & R-1F022\\
+	UC 2.3.1 & R-1F017\\
+	UC 4.4   & R-1F020\\
+	UC 4.3     & R-1F021\\
+	
+	\rowcolor{white}
+	\caption{Tabella tracciamento casi d'uso-requisiti} \label{tab:tabellafonterequisiti}
+\end{tabularx}

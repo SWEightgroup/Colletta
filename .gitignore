@@ -1,3 +1,302 @@
+*.aux
+*.glo
+*.idx
+*.log
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.toc
+
+# Created by https://www.gitignore.io/api/latex
+# Edit at https://www.gitignore.io/?templates=latex
+
+### LaTeX ###
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+## Intermediate documents:
+*.dvi
+*.xdv
+*-converted-to.*
+# these rules might exclude image files for figures etc.
+# *.ps
+# *.eps
+# *.pdf
+
+## Generated if empty string is given at "Please type another file name for output:"
+.pdf
+
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+## Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+## Build tool directories for auxiliary files
+# latexrun
+latex.out/
+
+## Auxiliary and intermediate files from other packages:
+# algorithms
+*.alg
+*.loa
+
+# achemso
+acs-*.bib
+
+# amsthm
+*.thm
+
+# beamer
+*.nav
+*.pre
+*.snm
+*.vrb
+
+# changes
+*.soc
+
+# comment
+*.cut
+
+# cprotect
+*.cpt
+
+# elsarticle (documentclass of Elsevier journals)
+*.spl
+
+# endnotes
+*.ent
+
+# fixme
+*.lox
+
+# feynmf/feynmp
+*.mf
+*.mp
+*.t[1-9]
+*.t[1-9][0-9]
+*.tfm
+
+#(r)(e)ledmac/(r)(e)ledpar
+*.end
+*.?end
+*.[1-9]
+*.[1-9][0-9]
+*.[1-9][0-9][0-9]
+*.[1-9]R
+*.[1-9][0-9]R
+*.[1-9][0-9][0-9]R
+*.eledsec[1-9]
+*.eledsec[1-9]R
+*.eledsec[1-9][0-9]
+*.eledsec[1-9][0-9]R
+*.eledsec[1-9][0-9][0-9]
+*.eledsec[1-9][0-9][0-9]R
+
+# glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+
+# gnuplottex
+*-gnuplottex-*
+
+# gregoriotex
+*.gaux
+*.gtex
+
+# htlatex
+*.4ct
+*.4tc
+*.idv
+*.lg
+*.trc
+*.xref
+
+# hyperref
+*.brf
+
+# knitr
+*-concordance.tex
+# TODO Comment the next line if you want to keep your tikz graphics files
+*.tikz
+*-tikzDictionary
+
+# listings
+*.lol
+
+# makeidx
+*.idx
+*.ilg
+*.ind
+*.ist
+
+# minitoc
+*.maf
+*.mlf
+*.mlt
+*.mtc[0-9]*
+*.slf[0-9]*
+*.slt[0-9]*
+*.stc[0-9]*
+
+# minted
+_minted*
+*.pyg
+
+# morewrites
+*.mw
+
+# nomencl
+*.nlg
+*.nlo
+*.nls
+
+# pax
+*.pax
+
+# pdfpcnotes
+*.pdfpc
+
+# sagetex
+*.sagetex.sage
+*.sagetex.py
+*.sagetex.scmd
+
+# scrwfile
+*.wrt
+
+# sympy
+*.sout
+*.sympy
+sympy-plots-for-*.tex/
+
+# pdfcomment
+*.upa
+*.upb
+
+# pythontex
+*.pytxcode
+pythontex-files-*/
+
+# tcolorbox
+*.listing
+
+# thmtools
+*.loe
+
+# TikZ & PGF
+*.dpth
+*.md5
+*.auxlock
+
+# todonotes
+*.tdo
+
+# vhistory
+*.hst
+*.ver
+
+# easy-todo
+*.lod
+
+# xcolor
+*.xcp
+
+# xmpincl
+*.xmpi
+
+# xindy
+*.xdy
+
+# xypic precompiled matrices
+*.xyc
+
+# endfloat
+*.ttt
+*.fff
+
+# Latexian
+TSWLatexianTemp*
+
+## Editors:
+# WinEdt
+*.bak
+*.sav
+
+# Texpad
+.texpadtmp
+
+# LyX
+*.lyx~
+
+# Kile
+*.backup
+
+# KBibTeX
+*~[0-9]*
+
+# auto folder when using emacs and auctex
+./auto/*
+*.el
+
+# expex forward references with \gathertags
+*-tags.tex
+
+# standalone packages
+*.sta
+
+### LaTeX Patch ###
+# glossaries
+*.glstex
+
+# End of https://www.gitignore.io/api/latex
+*.out
+*.synctex.gz
+RR - SWEight/studio_fattibilita/StudioDiFattibilità.log
+*.log
+*.synctex(busy)
+sviluppatore_2.tex
+
 
 RR - SWEight/studio_fattibilita/StudioDiFattibilità.pdf
 *.dvi
@@ -6,3 +305,47 @@ RR - SWEight/Glossario.synctex.gz
 RR - SWEight/Glossario.out
 RR - SWEight/Glossario.log
 RR - SWEight/Glossario.aux
+
+RR - SWEight/Analisi_dei_requisiti/AnalisiDeiRequisiti\.aux
+
+RR - SWEight/Analisi_dei_requisiti/AnalisiDeiRequisiti\.log
+
+RR - SWEight/Analisi_dei_requisiti/AnalisiDeiRequisiti\.out
+
+RR - SWEight/Analisi_dei_requisiti/AnalisiDeiRequisiti\.synctex\.gz
+
+RR - SWEight/Analisi_dei_requisiti/AnalisiDeiRequisiti\.toc
+
+RR - SWEight/Analisi_dei_requisiti/sez/allievi\.aux
+
+RR - SWEight/Analisi_dei_requisiti/sez/sviluppatori\.aux
+
+RR - SWEight/Analisi_dei_requisiti/sez/sviluppatori\.log
+
+RR - SWEight/Analisi_dei_requisiti/sez/sviluppatori_2\.aux
+
+RR - SWEight/Analisi_dei_requisiti/texput\.log
+
+RR - SWEight/Norme-di-Progetto/norme-di-progetto\.aux
+
+RR - SWEight/Norme-di-Progetto/norme-di-progetto\.synctex\.gz
+RR - SWEight/Analisi_dei_requisiti/AnalisiDeiRequisiti.lof
+RR - SWEight/Norme-di-Progetto/norme-di-progetto.log
+RR - SWEight/Norme-di-Progetto/norme-di-progetto.out
+RR - SWEight/Norme-di-Progetto/norme-di-progetto.synctex.gz
+RR - SWEight/Norme-di-Progetto/norme-di-progetto.toc
+RR - SWEight/Norme-di-Progetto/sez/Processi_di_supporto.log
+*.log
+*.log
+*.out
+*.gz
+*.toc
+*.log
+*.log
+RR - SWEight/Norme-di-Progetto/norme-di-progetto.log
+*.out
+*.gz
+*.log
+*.toc
+
+RR - SWEight/Analisi_dei_requisiti/AnalisiDeiRequisiti_v1\.0\.0\.pdf

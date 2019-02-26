@@ -1,0 +1,82 @@
+architettura
+attività
+Bot
+branch
+bug
+capability
+Capitolato
+card
+Casi d'uso
+client
+commit
+committente
+conflitto
+connettori
+convenzione
+cross platform
+cruscotto
+Design Pattern
+Diagramma di Gantt
+diagrammi UML
+distribuzioni Linux
+efficaci
+efficienti
+flusso
+fonte
+FreeLing
+gamification
+gerarchico
+git
+IEC
+ISO
+issue
+keyword
+learning curve
+linguaggio di markup
+manutenibilità
+maturità
+merge
+Microsoft Windows
+milestone
+ML
+modello incrementale
+modello incrementale
+modulare
+namespace
+notazione a cammello
+open source
+Parola
+PDF
+periodi di investimento
+periodo
+porting
+PoS-tagging
+project board
+proponente
+pull request
+qualità
+qualità
+repository
+requisiti
+risorse
+rss
+skillped
+Slack
+slack
+software-as-service
+sottocaso d'uso
+SPICE
+standard
+strategia
+Strategie
+telematica
+template
+termine
+tool
+troubleshooting
+UML
+validazione
+verifica
+versionamento
+versione
+walkthrough

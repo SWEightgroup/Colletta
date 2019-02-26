@@ -1,0 +1,78 @@
+Alcune metriche per il software sono più adatte per alcuni linguaggi di programmazione e meno per altri. Come indicato nel \PdP , il gruppo \gruppo \space sceglierà quali linguaggi usare nel periodo di Progettazione Architetturale; pertanto, le metriche presenti in questa sezione non sono da considerarsi complete o definitive.\newline
+Per alcune metriche, può mancare un'indicazione di valori accettabili e ottimali: ciò significa che il team si riserva di definirli in futuri incrementi.
+
+\paragraph{Numero di Metodi}\mbox{}\\[0,3cm]
+Numero medio di metodi contenuti nelle classi di un package. Un numero di metodi troppo alto può indicare la necessità di scomporre una classe. Un numero di metodi troppo basso, d'altro canto, deve far riflettere sull'effettiva utilità della classe presa in esame.\\[0,2cm]
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[3,9]$;
+	\item Range ottimale: $[3,7]$.
+\end{itemize}
+
+\paragraph{Numero di Parametri}\mbox{}\\[0,3cm]
+Numero di parametri passati a un metodo. Un eccessivo numero di parametri passati ad un metodo può indicare un'eccessiva complessità dello stesso, che va scomposto o quanto meno ripensato.\\[0,2cm]
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[0,8]$;
+	\item Range ottimale: $[0,5]$.
+\end{itemize}
+
+\paragraph{Funzioni di interfaccia per package}\mbox{}\\[0,3cm]
+Numero di funzione che un package espone. Un valore troppo elevato potrebbe indicare un errore di progettazione\\[0,2cm]
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[0,20]$;
+	\item Range ottimale: $[0,10]$.
+\end{itemize}
+
+\paragraph{Complessità Ciclomatica}\mbox{}\\[0,3cm]
+La Complessità Ciclomatica (CC) è una metrica software che misura la complessità di un programma contando il numero di cammini linearmente indipendenti attraverso il grafo di controllo di flusso. In questo grafo, i nodi corrispondono a gruppi indivisibili di istruzioni, mentre gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo gruppo: sono quindi responsabili dell'aumento della CC i punti decisionali, \emph{if} e \emph{for}.
+Tenere bassa la CC può portare a vari vantaggi:
+\begin{itemize}
+	\item Minore complessità durante lo sviluppo;
+	\item Maggior facilità nell'aumentare la code coverage in fase di test;
+	\item Maggior coesione del codice;
+\end{itemize}
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[0,17]$;
+	\item Range ottimale: $[0,10]$.
+\end{itemize}
+
+\paragraph{Campi dati per classe}\mbox{}\\[0,3cm]
+Numero di campi dati contenuti da una classe. Una classe con troppi campi dati può essere sintomo di cattiva progettazione e va ripensata.\\[0,2cm]
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[0,15]$;
+	\item Range ottimale: $[0,10]$.
+\end{itemize}
+
+\paragraph{Commenti per linee di codice}\mbox{}\\[0,3cm]
+Rapporto fra le righe di codice (righe vuote escluse) e le righe di commento. Un codice ben commentato può essere compreso più facilmente e velocemente, facilitando le operazioni di manutenzione.\\[0,2cm]
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[10\%,100\%]$;
+	\item Range ottimale: $[15\%,100\%]$.
+\end{itemize}
+
+\paragraph{Code Coverage}\mbox{}\\[0,3cm]
+Percentuale delle linee di codice coperte dai test.\\[0,2cm]
+\textbf{Parametri adottati:\newline}
+Il gruppo \gruppo \space si riserva di decidere in futuro i parametri da adottare.
+
+\paragraph{Superamento test}\mbox{}\\[0,3cm]
+Percentuale di test superati. Per avere un prodotto di qualità, è necessario che esso superi i test prestabiliti.\\[0,2cm]
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[70\%,100\%]$;
+	\item Range ottimale: $[95\%,100\%]$.
+\end{itemize}
+
+\paragraph{Requisiti obbligatori soddisfatti}\mbox{}\\[0,3cm]
+Percentuale di requisiti obbligatori stabiliti dalla proponente soddisfatti. \'E fondamentale, per la buona riuscita del progetto, soddisfare i requisiti obbligatori individuati nell'\AdR .\\[0,2cm]
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[70\%,100\%]$;
+	\item Range ottimale: $[95\%,100\%]$.
+\end{itemize}
+	
