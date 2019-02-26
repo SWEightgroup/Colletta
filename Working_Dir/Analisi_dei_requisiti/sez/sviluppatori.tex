@@ -29,7 +29,7 @@
 \item UC 4.2.1 - Inserimento filtro periodo temporale;
 \item UC 4.2.2 - Inserimento filtro {fonte}\ped{G};
 \item UC 4.2.3 - Selezione filtro lingue;
-\item UC 4.2.4 - Ricerca parole chiave.
+\item UC 4.2.4 - Ricerca frase.
 \end{enumerate}
 \item[•]\textbf{Estensioni}:
 \begin{enumerate}
@@ -119,9 +119,10 @@
 \subsubsection{UC 4.2.5 - Visualizzazione dati filtrati}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
-\item[•]\textbf{Descrizione}: selezionato uno o più filtri, i dati vengono mostrati secondo i vincoli inseriti;
-\item[•]\textbf{Precondizione}: i valori di uno o più filtri sono stati inseriti;
-\item[•]\textbf{Postcondizione}: i dati mostrati rispettano tali vincoli.
+\item[•]\textbf{Descrizione}: lo sviluppatore visualizza i dati secondo i vincoli inseriti dopo aver selezionato uno o più filtri;
+\item[•]\textbf{Precondizione}: lo sviluppatore ha inserito i valori di uno o più filtri;
+\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza i dati che rispettano tali vincoli;
+\item[•]\textbf{Flusso degli eventi}: lo sviluppatore visualizza i dati filtrati.
 \end{itemize}
 
 \subsubsection{UC 4.2.6 - Rimozione filtro}
@@ -143,14 +144,16 @@
 	\item[•]\textbf{Attori}: Sviluppatore;
 	\item[•]\textbf{Descrizione}: lo sviluppatore visualizza un messaggio di errore sul periodo selezionato;
 	\item[•]\textbf{Precondizione}: lo sviluppatore ha inserito una data non conforme all'interno del filtro relativo al periodo temporale;
-	\item[•]\textbf{Postcondizione}: il filtro è stato erroneamente inserito pertanto viene visualizzato un messaggio di errore.
+	\item[•]\textbf{Postcondizione}: il filtro è stato erroneamente inserito pertanto viene visualizzato un messaggio di errore;
+	\item[•]\textbf{Flusso degli eventi}: Lo sviluppatore inserisce una data non conforme e visualizza un errore.
 \end{itemize}
 \subsubsection{UC 4.2.4.1 - Visualizzazione messaggio errore input errato}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Sviluppatore;
 	\item[•]\textbf{Descrizione}: lo sviluppatore visualizza un messaggio di errore sulla ricerca.
 	\item[•]\textbf{Precondizione}: lo sviluppatore ha inserito una frase non conforme;
-	\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza un messaggio di errore relativo all'inserimento di un input errato, cioè non conforme a ciò che il sistema si attendeva.
+	\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza un messaggio di errore relativo all'inserimento di un input errato, cioè non conforme a ciò che il sistema si attendeva;
+	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore inserisce una frase non conforme e visualizza un errore.	
 \end{itemize}
 
   
@@ -198,7 +201,7 @@
 \item[•]\textbf{Descrizione}:  lo sviluppatore seleziona da un elenco prestabilito il formato dei file che intende scaricare;
 \item[•]\textbf{Precondizione}: lo sviluppatore non ha stabilito il formato dei file che intende scaricare;
 \item[•]\textbf{Postcondizione}: lo sviluppatore ha stabilito il formato dei file che intende scaricare;
-\item[•]\textbf{Flusso degli eventi principale}:  lo sviluppatore seleziona dall'elenco prestabilito un'opzione che determina il formato dei file che contengono i dati precedentemente scelti.
+\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona dall'elenco prestabilito un'opzione che determina il formato dei file che contengono i dati precedentemente scelti.
 \end{itemize}
 
 \subsubsection{UC 4.4.3 - Scelta formato archivio}
@@ -275,24 +278,26 @@
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: il sistema segnala un messaggio di errore relativo al valore del parametro non valido;
 \item[•]\textbf{Precondizione}: lo sviluppatore ha inserito il valore del parametro;
-\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza un messaggio di errore relativo al valore del parametro non valido.
-%\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore seleziona l'opzione relativa al salvataggio che comporta il salvataggio del modello.
+\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza un messaggio di errore relativo al valore del parametro non valido;
+\item[•]\textbf{Flusso degli eventi}: lo sviluppatore inserisce un valore di parametro non valido e visualizza un errore.
+
 \end{itemize}
 \subsubsection{UC 4.5.5 - Visualizzazione messaggio errore nome duplicato}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: lo sviluppatore visualizza un messaggio di errore relativo all'inserimento di un modello avente lo stesso nome di uno già inserito;
 \item[•]\textbf{Precondizione}: lo sviluppatore ha inserito il nome del modello;
-\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza il messaggio di errore e inserisce un nuovo nome.
-%\item[•]\textbf{Flusso degli eventi principale}:  Lo sviluppatore visualizza il messaggio di errore e può inserire una stringa che definisce il nome del modello che verrà memorizzato.
+\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza il messaggio di errore e inserisce un nuovo nome;
+\item[•]\textbf{Flusso degli eventi}: lo sviluppatore inserisce un nome già presente nel sistema e visualizza un errore.
 \end{itemize}
 
 \subsubsection{UC 4.5.6 - Interruzione inserimento modello}
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
-\item[•]\textbf{Descrizione}: lo sviluppatore interrompe l'inserimento del modello;
+\item[•]\textbf{Descrizione}: lo sviluppatore interrompe l'inserimento del modello, perdendo tutti i dati inseriti in precedenza;
 \item[•]\textbf{Precondizione}: lo sviluppatore sta inserendo il modello;
-\item[•]\textbf{Postcondizione}: nessun nuovo modello è stato inserito.
+\item[•]\textbf{Postcondizione}: nessun nuovo modello è stato inserito;
+\item[•]\textbf{Flusso degli eventi}: lo sviluppatore interrompe l'inserimento del modello.
 \end{itemize}
 
 \subsubsection{UC 4.6 - Visualizzazione elenco modelli}
@@ -301,7 +306,7 @@
 \item[•]\textbf{Descrizione}: lo sviluppatore visualizza l'elenco dei propri modelli realizzati;
 \item[•]\textbf{Precondizione}: lo sviluppatore si è autenticato nel sistema;
 \item[•]\textbf{Postcondizione}: lo sviluppatore visualizza l'elenco dei propri modelli;
-\item[•]\textbf{Flusso degli eventi}:  lo sviluppatore seleziona la voce del menù relativa ai modelli e ne visualizza l'elenco.
+\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona la voce del menù relativa ai modelli e ne visualizza l'elenco.
 \end{itemize}
 
 
@@ -309,8 +314,9 @@
 \begin{itemize}
 \item[•]\textbf{Attori}: Sviluppatore;
 \item[•]\textbf{Descrizione}: lo sviluppatore visualizza il contenuto del modello selezionato.
-\item[•]\textbf{Precondizione}: lo sviluppatore visualizza l'elenco dei modelli (UC 4.6);
-\item[•]\textbf{Postcondizione}: lo sviluppatore visiona il contenuto del modello selezionato.
+\item[•]\textbf{Precondizione}: lo sviluppatore visualizza l'elenco dei modelli;
+\item[•]\textbf{Postcondizione}: lo sviluppatore visiona il contenuto del modello selezionato;
+\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona un modello dall'elenco e ne visualizza il contenuto.
 \end{itemize}
 
 \subsubsection{UC 4.8 - Scaricamento modello}
