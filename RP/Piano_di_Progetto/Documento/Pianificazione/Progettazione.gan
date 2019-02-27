@@ -114,14 +114,15 @@
             </task>
             <task id="245" name="Verifica Incremento" color="#ff0099" meeting="false" start="2019-03-03" duration="4" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="176" name="Technology Baseline" color="#8cb6ce" meeting="false" start="2019-01-22" duration="44" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+        <task id="176" name="Technology Baseline" color="#8cb6ce" meeting="false" start="2019-01-22" duration="43" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
             <task id="178" name="Scelta tecnologie coivolte" color="#ff3333" meeting="false" start="2019-01-22" duration="10" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
                 <depend id="180" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="180" name="Progettazione dell'applicativo" color="#ff6666" meeting="false" start="2019-02-01" duration="7" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true"/>
             <task id="204" name="Realizzazione POC" color="#00cc99" meeting="false" start="2019-02-06" duration="25" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true"/>
             <task id="212" name="Testing POC" color="#00ff00" meeting="false" start="2019-02-09" duration="22" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true"/>
-            <task id="217" name="Verifica Progettazione" color="#ffff00" meeting="false" start="2019-03-03" duration="4" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true"/>
+            <task id="217" name="Verifica Progettazione" color="#ffff00" meeting="false" start="2019-03-03" duration="2" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true"/>
+            <task id="303" name="Review" color="#8cb6ce" meeting="false" start="2019-03-05" duration="1" complete="0" thirdDate="2019-01-23" thirdDate-constraint="0" expand="true"/>
         </task>
     </tasks>
     <resources>
