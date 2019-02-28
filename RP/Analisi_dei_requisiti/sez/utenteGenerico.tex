@@ -28,7 +28,7 @@
 \end{enumerate}
 \item[•]\textbf{Estensioni}:
 \begin{enumerate}
-\item UC 1.1.3 - Credenziali errate;
+\item UC 1.1.3 - visualizzazione messaggio credenziali errate;
 \end{enumerate}
 \end{itemize}
 
@@ -51,12 +51,12 @@
 \item[•]\textbf{Flusso degli eventi}: l'utente visualizza il form per l'autenticazione e inserisce la password in apposito campo.
 \end{itemize}
 
-\subsubsection{UC 1.1.3 - Credenziali errate}
+\subsubsection{UC 1.1.3 - visualizzazione messaggio credenziali errate}
 \begin{itemize}
 \item[•]\textbf{Attori}: Utente non autenticato;
 \item[•]\textbf{Descrizione}: l'utente ha avviato il login immettendo delle credenziali errati;
 \item[•]\textbf{Precondizione}: l'utente non è autenticato;
-\item[•]\textbf{Postcondizione}: l'utente riceve il messaggio d'errore per aver inserito la password sbagliata;
+\item[•]\textbf{Postcondizione}: l'utente riceve il messaggio d'errore per aver inserito username o password errati;
 \item[•]\textbf{Flusso degli eventi}: l'utente visualizza il form per l'autenticazione, inserisce nome utente e password in appositi campi, riscontrando errore sulle credenziali.
 \end{itemize}
 
@@ -78,7 +78,9 @@
 		\item UC 1.2.3 - Inserimento password;
 		\item UC 1.2.4 - Inserimento conferma password;
 		\item UC 1.2.5 - Inserimento data di nascita;
-		\item UC 1.2.6 - Selezione ruolo.
+		\item UC 1.2.6 - Selezione ruolo;
+		\item UC 1.2.7 - Inserimento nome;
+		\item UC 1.2.8 - Inserimento cognome.
 	\end{enumerate}
 	\item[•]\textbf{Estensioni}:
 	\begin{enumerate}
@@ -155,6 +157,24 @@
 	\item[•]\textbf{Precondizione}: l'utente non è registrato e il ruolo non è definito;
 	\item[•]\textbf{Postcondizione}: l'utente ha inserito il ruolo desiderato;
 	\item[•]\textbf{Flusso degli eventi}:l'utente non registrato seleziona la scelta del ruolo tra: allievo, insegnante e sviluppatore.
+\end{itemize}
+
+\subsubsection{UC 1.2.7 - Inserimento nome}
+\begin{itemize}
+\item[•]\textbf{Attori}: Utente non autenticato;
+\item[•]\textbf{Descrizione}: l'utente inserisce il suo nome durante la registrazione;
+\item[•]\textbf{Precondizione}: l'utente non è autenticato e il nome non è definito;
+\item[•]\textbf{Postcondizione}: l'utente ha inserito il suo nome;
+\item[•]\textbf{Flusso degli eventi}: l'utente visualizza il form per la registrazione e inserisce il suo nome in un apposito campo.
+\end{itemize}
+
+\subsubsection{UC 1.2.8 - Inserimento cognome}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Utente non autenticato;
+	\item[•]\textbf{Descrizione}: l'utente inserisce il suo cognome durante la registrazione;
+	\item[•]\textbf{Precondizione}: l'utente non è autenticato e il cognome non è definito;
+	\item[•]\textbf{Postcondizione}: l'utente ha inserito il suo cognome;
+	\item[•]\textbf{Flusso degli eventi}: l'utente visualizza il form per la registrazione e inserisce il suo cognome in un apposito campo.
 \end{itemize}
 
 \subsubsection{UC 1.3 - Visualizzazione messaggio errore dato presente}

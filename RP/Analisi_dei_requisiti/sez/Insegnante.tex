@@ -12,7 +12,7 @@
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: l’insegnante accede alla propria dashboard dove può vedere i suoi dati, le frasi che ha assegnato agli alunni, il numero e i nomi degli studenti che possiede. Può effettuare modifiche agli esercizi e ai suoi dati personali.
 	\item[•] \textbf{Precondizione}: l'insegnante si è autenticato;
-	\item[•] \textbf{Postcondizione}: l'insegnante visualizza il profilo personale e il numero di allievi, le frasi che ha inserito, i suoi dati e le soluzioni spedite dagli allievi.
+	\item[•] \textbf{Postcondizione}: l'insegnante visualizza nella propria dashboard il numero di allievi, le frasi che ha inserito, i suoi dati e le soluzioni spedite dagli allievi.
 	\item[•] \textbf{Flusso degli eventi}: l'insegnante si è autenticato correttamente nel sistema. 
 
 \end{itemize}
@@ -29,13 +29,13 @@
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: l'insegnante aggiunge un nuovo esercizio e può scegliere la lingua, scrivere il testo,
 modificare i tag automatici ecc. Potrà poi confermare l'aggiunta dell'esercizio;
-	\item[•] \textbf{Precondizione}: l'insegnante si è autenticato e visualizza il proprio profilo personale;
+	\item[•] \textbf{Precondizione}: l'insegnante si è autenticato e visualizza la propria dashboard;
 	\item[•] \textbf{Postcondizione}: l'insegnante ha inserito un esercizio;
 	\item[•] \textbf{Flusso degli eventi}:
 	\begin{enumerate}
 		\item UC 2.2.1 Predisposizione lingua esercizio;
 		\item UC 2.2.2 Inserimento testo esercizio;
-		\item UC 2.2.3 Correzione automatica esercizio
+		\item UC 3.10.3  Visualizzazione analisi automatica;
 		\item UC 2.2.5 Modifica tag automatici;
 		\item UC 2.2.6 Modifica visibilità esercizio;
 		\item UC 2.2.7 Visualizzazione errori sintassi testo;
@@ -58,7 +58,7 @@ modificare i tag automatici ecc. Potrà poi confermare l'aggiunta dell'esercizio
 	\item[•] \textbf{Descrizione}: l'insegnante sceglie la lingua dell’esercizio che vuole scrivere;
 	\item[•] \textbf{Precondizione}: l'insegnante sta inserendo un esercizio;
 	\item[•] \textbf{Postcondizione}: l'insegnante ha scelto la lingua dell'esercizio;
-	\item[•] \textbf{Flusso degli eventi}: l'insegnante ha iniziato la procedura di inserimento di un esercizio all'interno del suo profilo personale.
+	\item[•] \textbf{Flusso degli eventi}: l'insegnante ha iniziato la procedura di inserimento di un esercizio all'interno della propria dashboard.
 \end{itemize}
 
 \subsubsection{UC 2.2.2 Inserimento testo esercizio}
@@ -68,16 +68,6 @@ modificare i tag automatici ecc. Potrà poi confermare l'aggiunta dell'esercizio
 	\item[•] \textbf{Precondizione}: l'insegnante sta inserendo un esercizio;
 	\item[•] \textbf{Postcondizione}: l'insegnante ha inserito il testo dell'esercizio;
 	\item[•] \textbf{Flusso degli eventi}: l'insegnante ha iniziato la procedura di inserimento esercizio e ha predisposto la lingua.
-\end{itemize}
-
-
-\subsubsection{UC 2.2.3 Correzione automatica esercizio}
-\begin{itemize}
-	\item[•] \textbf{Attori}: Insegnante, libreria di PoS-tagging;
-	\item[•] \textbf{Descrizione}: l’insegnante ottiene automaticamente i tag dal testo dell’esercizio attraverso la libreria di PoS-tagging;
-	\item[•] \textbf{Precondizione}: l'insegnante ha inserito il testo dell'esercizio;
-	\item[•] \textbf{Postcondizione}: l'insegnante visualizza la soluzione dell'esercizio;
-	\item[•] \textbf{Flusso degli eventi}: l'insegnante ha iniziato la procedura di inserimento esercizio, ha predisposto la lingua e inserito il testo. 
 \end{itemize}
 
 \subsubsection{UC 2.2.4 Inserimento soluzione alternativa}
@@ -92,7 +82,7 @@ modificare i tag automatici ecc. Potrà poi confermare l'aggiunta dell'esercizio
 
 \subsubsection{UC 2.2.5 Modifica tag automatici}
 \begin{itemize}
-	\item[•] \textbf{Attori}: Insegnante, libreria di PoS-tagging;
+	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: l’insegnante modifica i tag generati automaticamente;
 	\item[•] \textbf{Precondizione}: l'insegnante visualizza la soluzione dell'esercizio;
 	\item[•] \textbf{Postcondizione}: l'insegnante ha modificato i tag generati automaticamente;
@@ -138,20 +128,20 @@ modificare i tag automatici ecc. Potrà poi confermare l'aggiunta dell'esercizio
 \subsubsection{UC 2.3 Visualizzazione storico frasi inserite}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante	   
-	\item[•] \textbf{Descrizione}: l’insegnante visualizza nel suo profilo personale lo storico delle frasi inserite; 
-	\item[•] \textbf{Precondizione}: l'insegnante sta visualizzando il proprio profilo personale;
+	\item[•] \textbf{Descrizione}: l’insegnante visualizza nella propria dashboard lo storico delle frasi inserite; 
+	\item[•] \textbf{Precondizione}: l'insegnante sta visualizzando la propria dashboard;
 	\item[•] \textbf{Postcondizione}: l’insegnante può navigare all’interno della lista di frasi che ha inserito;
-	\item[•] \textbf{Flusso degli eventi}: l'insegnante si è autenticato ed è entrato nel suo profilo.
+	\item[•] \textbf{Flusso degli eventi}: l'insegnante si è autenticato ed accede alla propria dashboard e seleziona l'opzione per visualizzare lo storico delle frasi inserite.
 \end{itemize}
 
 
-\subsubsection{UC 2.3.1 Seleziona esercizio per avere più dettagli}
+\subsubsection{UC 2.3.1 Visualizzazione dettaglio esercizio}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
-	\item[•] \textbf{Descrizione}: l’insegnante seleziona dalla lista degli esercizi assegnati un esercizio e ne visualizza i dettagli;
+	\item[•] \textbf{Descrizione}: l’insegnante seleziona dalla lista degli esercizi assegnati un esercizio e ne visualizza i dettagli: nome utente dell'allievo che ha svolto l'esercizio ;
 	\item[•] \textbf{Precondizione}: l'insegnante visualizza la lista di frasi che ha inserito;
 	\item[•] \textbf{Postcondizione}: l’insegnante visualizza i dettagli di un esercizio inserito;
-	\item[•] \textbf{Flusso degli eventi}: l'insegnante si è autenticato ed è entrato nel suo profilo nella sezione storico frasi inserite.
+	\item[•] \textbf{Flusso degli eventi}: l'insegnante si è autenticato, accede alla propria dashboard nella sezione storico frasi inserite.
 \end{itemize}
 
 
@@ -159,7 +149,7 @@ modificare i tag automatici ecc. Potrà poi confermare l'aggiunta dell'esercizio
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}:  l’insegnante visualizza l’elenco degli esercizi svolti dagli allievi;
-	\item[•] \textbf{Precondizione}: l’insegnante visualizza il suo profilo personale;
+	\item[•] \textbf{Precondizione}: l’insegnante visualizza la propria dashboard;
 	\item[•] \textbf{Postcondizione}: l’insegnante visualizza l'elenco degli esercizi svolti svolti dagli allievi;
 	\item[•] \textbf{Flusso degli eventi}: l'insegnante si è autenticato, è entrato nel suo profilo.
 \end{itemize}
@@ -167,10 +157,10 @@ modificare i tag automatici ecc. Potrà poi confermare l'aggiunta dell'esercizio
 \subsubsection{UC 2.5 Visualizzazione dei propri allievi}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
-	\item[•] \textbf{Descrizione}: l'insegnante visualizza la lista dei suoi allievi;
-	\item[•] \textbf{Precondizione}: l'insegnante visualizza il proprio profilo personale;
+	\item[•] \textbf{Descrizione}: l'insegnante visualizza la lista dei suoi allievi: nome utente, nome, cognome, data di nascita, insegnante preferito;
+	\item[•] \textbf{Precondizione}: l'insegnante visualizza la propria dashboard;
 	\item[•] \textbf{Postcondizione}: l'insegnante visualizza la lista dei propri allievi.
-	\item[•] \textbf{Flusso degli eventi}: l'insegnante si è autenticato, è entrato nel suo profilo.
+	\item[•] \textbf{Flusso degli eventi}: l'insegnante si è autenticato, è entrato nel suo profilo e visualizza i propri allievi nell'apposita sezione.
 \end{itemize}
 
 \subsubsection{UC 2.6 Modifica esercizio}
@@ -222,5 +212,14 @@ modificare i tag automatici ecc. Potrà poi confermare l'aggiunta dell'esercizio
 	\item[•] \textbf{Descrizione}: l'insegnante ha la possibilità di eliminare un esercizio da lei precedentemente inserito;
 	\item[•] \textbf{Precondizione}: l'insegnante visualizza lo storico delle frasi inserite;
 	\item[•] \textbf{Postcondizione}: l'insegnante ha eliminato l'esercizio precedentemente inserito;
-	\item[•] \textbf{Flusso degli eventi}: l'insegnante si è autenticato, si trova nel suo profilo personale e sta visualizzando gli esercizi precedentemente inseriti.
+	\item[•] \textbf{Flusso degli eventi}: l'insegnante si è autenticato, si trova nella propria dashboard e sta visualizzando gli esercizi precedentemente inseriti.
+\end{itemize}
+
+\subsubsection{UC 2.8 Modifica dati personali}
+\begin{itemize}
+	\item[•] \textbf{Attori}: Insegnante, allievo, sviluppatore, amministratore;
+	\item[•] \textbf{Descrizione}: l'attore interessato può modificare i propri dati personali ;
+	\item[•] \textbf{Precondizione}: l'attore interessato è stato autenticato dal sistema e accede alla propria dashboard;
+	\item[•] \textbf{Postcondizione}: l'attore interessato ha modificato i propri dati personali;
+	\item[•] \textbf{Flusso degli eventi}: l'attore interessato accede alla propria dashboard avvia iter di modifico dati personali, a questo punto l'attore può modificare il proprio nome, cognome, email e password.
 \end{itemize}
