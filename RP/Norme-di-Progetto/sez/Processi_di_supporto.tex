@@ -244,6 +244,16 @@ Il software è reperibile all'indirizzo \url{http://www.xm1math.net/texmaker/}, 
 \paragraph{Controllo ortografico}\mbox{}\\
 Al termine della stesura dei documenti, prima di alla fase di verifica del documento, un \textit{Redattore} deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice {Gulpease}\ped{G}.
 
+\paragraph{Calcolo indice di Gulpease}\mbox{}\\
+Per il calcolo dell'indice di Gulpease, il gruppo \gruppo \space si avvale dello script MAGIC (Magic Automatic Gulpease Index Calulator) sviluppato internamente.
+Il tool esegue automaticamente ogni giorno e svolge i seguenti step:
+\begin{enumerate}
+	\item Compilazione di tutti i documenti;
+	\item Calcolo dell'indice di Gulpease per ogni documento;
+	\item Salvataggio dei valori ottenuti in foglio di calcolo Google.
+\end{enumerate}
+I valori inseriti sono automaticamente plottati in un grafico, che permette ai verificatori di monitorare celermente il livello di leggibilità di ogni documento.
+
 \subsubsection{Ciclo di vita dei documenti}
 Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di tasks offerto da Asana, come descritto nella sezione \hyperref[sec:documentversion]{§5.2} gestione dell'infrastruttura.
 \begin{enumerate}
@@ -276,8 +286,7 @@ Ogni diagramma di caso d’uso è identificato in alto a sinistra dal suo codice
 
 \subsection{Qualità}
 \subsubsection{Scopo}
-\subsubsection{Misurazioni e metriche}
-\paragraph{Documenti}\mbox{}\\
+\paragraph{Metriche Documenti}\mbox{}\\
 Le metriche presentate in questa sezione hanno come scopo fornire dei parametri per garantire un buon livello di leggibilità dei documenti.
 
 \subparagraph{Indice Gulpease}\mbox{}\\
@@ -288,7 +297,7 @@ L'indice di Gulpease può assumere valori fra 0 e 100 e si calcola come segue:
 IG = 89 + \frac{300 \cdot \textit{(numero delle frasi)} - 10 \cdot \textit{(numero delle lettere)}}{\textit{numero delle parole}}
 \]
 
-\paragraph{Software}\mbox{}\\
+\paragraph{Metriche Software}\mbox{}\\
 \subparagraph{Numero di Metodi}\mbox{}\\
 Numero medio di metodi contenuti nelle classi di un package. Un numero di metodi troppo alto può indicare la necessità di scomporre una classe. Un numero di metodi troppo basso, d'altro canto, deve far riflettere sull'effettiva utilità della classe presa in esame.
 \subparagraph{Numero di Parametri}\mbox{}\\
@@ -340,16 +349,6 @@ La Budget Variance è calcolata come segue:
 BV = \frac{\textit{costo effettivo} - \textit{costo preventivato}}{\textit{costo preventivato}}
 \]
 
-\subsubsection{Strumenti di supporto}
-\paragraph{Calcolo indice di Gulpease}\mbox{}\\
-Per il calcolo dell'indice di Gulpease, il gruppo \gruppo \space si avvale dello script MAGIC (Magic Automatic Gulpease Index Calulator) sviluppato internamente.
-Il tool esegue automaticamente ogni giorno e svolge i seguenti step:
-\begin{enumerate}
-	\item Compilazione di tutti i documenti;
-	\item Calcolo dell'indice di Gulpease per ogni documento;
-	\item Salvataggio dei valori ottenuti in foglio di calcolo Google.
-\end{enumerate}
-I valori inseriti sono automaticamente plottati in un grafico, che permette ai verificatori di monitorare celermente il livello di leggibilità di ogni documento.
 
 \subsection{Configurazione}
 \subsubsection{Versionamento}
@@ -441,11 +440,20 @@ Per quanto riguarda le varie {distribuzioni Linux}\ped{G} non è disponibile un 
 non ufficiale all'indirizzo: \url{https://github.com/shiftkey/desktop}
 
 \paragraph{Maven}\mbox{}\\
-Il gruppo \gruppo si avvale di Apache Maven per la gestione della configurazione del modulo client Freeling scritto in Java. Tale strumento è fondamentale per consentire la ripetibilità della build sul pc di ogni membro del gruppo. Inoltre, permette di eseguire in maniera automatica tutti i test del modulo JUnit. Maven è reperibile al seguente link
+Il gruppo \gruppo  si avvale di Apache Maven per la gestione della configurazione del modulo client Freeling scritto in Java. Tale strumento è fondamentale per consentire la ripetibilità della build sul pc di ogni membro del gruppo. Inoltre, permette di eseguire in maniera automatica tutti i test del modulo JUnit. Maven è reperibile al seguente link: \href{https://maven.apache.org/}{"Apache Maven Project"}. 
+Posizionandosi nella cartella gestita da Maven e dando il seguento comando da terminale: 
 \begin{center}
-\url{https://maven.apache.org/}
+\texttt{\# mvn install}
 \end{center}
-
+si effettua la compilazione, si eseguono i test, si costruisce l’artefatto e lo si copia nel
+repository locale.
+\\
+Per effettuare solo i test basterà lanciare il comando: 
+\begin{center}
+\texttt{\# mvn test}
+\end{center} 
+Maven mette a disposizione molteplici configurazioni per i test, disponibili al seguente link: 
+\href{https://www.mkyong.com/maven/how-to-run-unit-test-with-maven/}{"How to run unit test with Maven"}.
 
 \subsection{Verifica}
 
@@ -544,6 +552,22 @@ I diagrammi devono essere verificati manualmente dal \textit{Verificatore} che d
 \subsubsection{Strumenti di supporto}
 \paragraph{JUnit}\mbox{}\\
 Per la parte del codice scritta in Java, i test di unità saranno eseguiti tramite la libreria JUnit. La scelta è stata dettata dalla conoscenza dello strumento da gran parte dei membri del gruppo.
+I test sono localizzati all'interno della cartella \textit{test}, ogni file di test ha lo stesso nome della classe che deve testare con l'aggiunta del suffisso \textit{Test} alla fine della parola.
+\\
+Ad esempio se si vuole testare il file HelloWorld.java il file di test sarà chiamato HelloWorld\textbf{Test}.java. 
+I metodi di test, all'interno del file di test, devono avere la keyword \textit{@Test} posta prima della definizione del metodo senza spazi. \\
+Codice della classe \texttt{HelloWorldTest}: 
+\begin{lstlisting}[language=Java]
+	public class HelloWorldTest{
+	
+		Helloworld object = new Helloworld();
+		
+		@Test
+		public void checkText{
+			assertEquals("helloWorld", object.printHelloWorld());
+		}
+	}
+\end{lstlisting}
 
 \paragraph{Jest ed Enzyme}\mbox{}\\
 Jest ed Enzyme sono i framework che il gruppo \gruppo \space usa per la creazione di test sul codice React. Permettono, fra le altre cose, di creare mock e simulare input utente.\newline
