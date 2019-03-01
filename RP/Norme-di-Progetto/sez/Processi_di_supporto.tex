@@ -289,25 +289,25 @@ Questa sezione descrive le classificazioni e le formule per il calcolo delle met
 
 \subsubsection{Classificazione delle metriche}
 Per garantire la qualità del lavoro gli Amministratori hanno definito delle metriche, che devono però rispettare la seguente notazione M[categoria][numero] dove:
-\begin{enumerate}
-	\item[•]{categoria}: indica la categoria della metrica, può assume i valori:
-	\begin{enumerate}
-		\item[-] D per indicare le metriche di documenti;
-		\item[-] S per indicare le metriche di software;
-		\item[-] P per indicare le metriche di processi.
-	\end{enumerate}
-	\item[•]{numero}: identifica in maniera univoca la metrica come numero intero a 3 tre cifre incrementale a partire da 1.
-\end{enumerate}
+\begin{itemize}
+	\item{categoria}: indica la categoria della metrica, può assume i valori:
+	\begin{itemize}
+		\item D per indicare le metriche di documenti;
+		\item S per indicare le metriche di software;
+		\item P per indicare le metriche di processi.
+	\end{itemize}
+	\item{numero}: identifica in maniera univoca la metrica in ogni categoria, assume un valore intero a 3 tre cifre incrementale a partire da 1.
+\end{itemize}
 Ad esempio la prima metrica sui documenti sarà classificata in questo modo:
 \begin{center}
 	MD001
 \end{center}
 
 \paragraph{Metriche Documenti}\mbox{}\\
-Le metriche presentate in questa sezione hanno come scopo fornire dei parametri per garantire un buon livello di leggibilità dei documenti.
+Le metriche presentate in questa sezione hanno come scopo fornire delle metriche per garantire un buon livello di leggibilità dei documenti.
 
 
-\subparagraph{Indice Gulpease}\mbox{}\\
+\subparagraph{MD001 - Indice Gulpease}\mbox{}\\
 L'Indice Gulpease è un indice di leggibilità di un testo tarato sulla lingua italiana. Rispetto ad altri ha il vantaggio di utilizzare la lunghezza delle parole in lettere anziché in sillabe, semplificandone il calcolo automatico.
 L'indice di Gulpease considera due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero delle lettere.
 L'indice di Gulpease può assumere valori fra 0 e 100 e si calcola come segue:
@@ -316,13 +316,14 @@ IG = 89 + \frac{300 \cdot \textit{(numero delle frasi)} - 10 \cdot \textit{(nume
 \]
 
 \paragraph{Metriche Software}\mbox{}\\
-\subparagraph{Numero di Metodi}\mbox{}\\
+Le metriche presentate in questa sezione hanno come scopo fornire delle metriche per garantire un buon livello di qualità del software.
+\subparagraph{MS001 - Numero di Metodi}\mbox{}\\
 Numero medio di metodi contenuti nelle classi di un package. Un numero di metodi troppo alto può indicare la necessità di scomporre una classe. Un numero di metodi troppo basso, d'altro canto, deve far riflettere sull'effettiva utilità della classe presa in esame.
-\subparagraph{Numero di Parametri}\mbox{}\\
+\subparagraph{MS002 - Numero di Parametri}\mbox{}\\
 Numero di parametri passati a un metodo. Un eccessivo numero di parametri passati ad un metodo può indicare un'eccessiva complessità dello stesso, che va scomposto o quanto meno ripensato.
-\subparagraph{Funzioni di interfaccia per package}\mbox{}\\
+\subparagraph{MS003 - Funzioni di interfaccia per package}\mbox{}\\
 Numero di funzioni che un package espone. Un valore troppo elevato potrebbe indicare un errore di progettazione.
-\subparagraph{Complessità Ciclomatica}\mbox{}\\
+\subparagraph{MS004 - Complessità Ciclomatica}\mbox{}\\
 La Complessità Ciclomatica (CC) è una metrica software che misura la complessità di un programma contando il numero di cammini linearmente indipendenti attraverso il grafo di controllo di flusso. In questo grafo, i nodi corrispondono a gruppi indivisibili di istruzioni, mentre gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo gruppo: sono quindi responsabili dell'aumento della CC i punti decisionali, \emph{if} e \emph{for}.
 Tenere bassa la CC può portare a vari vantaggi:
 \begin{itemize}
@@ -340,27 +341,28 @@ dove:
 	\item \emph{n} = numero di nodi del grafo;
 	\item \emph{p} = numero di componenti connesse.
 \end{itemize}
-\subparagraph{Campi dati per classe}\mbox{}\\
+\subparagraph{MS005 - Campi dati per classe}\mbox{}\\
 Numero di campi dati contenuti da una classe. Una classe con troppi campi dati può essere sintomo di cattiva progettazione e va ripensata.
-\subparagraph{Commenti per linee di codice}\mbox{}\\
+\subparagraph{MS006 - Commenti per linee di codice}\mbox{}\\
 Rapporto fra le righe di codice (righe vuote escluse) e le righe di commento. Un codice ben commentato può essere compreso più facilmente e velocemente, facilitando le operazioni di manutenzione.
-\subparagraph{Code Coverage}\mbox{}\\
+\subparagraph{MS007 - Code Coverage}\mbox{}\\
 Percentuale delle linee di codice coperte dai test.
 Il gruppo \gruppo \space si riserva di decidere in futuro i parametri da adottare.
-\subparagraph{Superamento test}\mbox{}\\
+\subparagraph{MS008 - Superamento test}\mbox{}\\
 Percentuale di test superati. Per avere un prodotto di qualità, è necessario che esso superi i test prestabiliti.
-\subparagraph{Requisiti obbligatori soddisfatti}\mbox{}\\
+\subparagraph{MS009 - Requisiti obbligatori soddisfatti}\mbox{}\\
 Percentuale di requisiti obbligatori stabiliti dalla proponente soddisfatti. \'E fondamentale, per la buona riuscita del progetto, soddisfare i requisiti obbligatori presenti nell'\AdR .
 	
-\paragraph{Metriche processi}\mbox{}
-\subparagraph{Schedule Variance}\mbox{}\\
+\paragraph{Metriche processi}\mbox{}\\
+Le metriche presentate in questa sezione hanno come scopo fornire delle metriche per garantire un buon livello di qualità sui processi.
+\subparagraph{MP001 - Schedule Variance}\mbox{}\\
 La Schedule Variance indica se una certa attività o processo è in anticipo, in pari, o in ritardo rispetto alla data di scadenza prevista.
 Se $SV < 0$ significa che l'attività o il processo è in pari o in anticipo, invece, se $SV \geq 0$ significa che l'attività è in ritardo.
 La Schedule Variance è calcolata come segue:
 \[
 SV = \textit{data conclusione effettiva} - \textit{data conclusione pianificata}
 \]
-\subparagraph{Budget Variance}\mbox{}\\
+\subparagraph{MP002 - Budget Variance}\mbox{}\\
 La Budget Variance misura, ad una determinata data, lo scostamento fra quanto speso e quanto preventivato. Se $BV \geq 0\%$ significa che il progetto sta spendendo le risorse più velocemente di quanto pianificato.
 La Budget Variance è calcolata come segue:
 \[

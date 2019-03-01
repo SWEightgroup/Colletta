@@ -195,13 +195,21 @@ Eclipse è reperibile al seguente link:\newline
 
 \paragraph{Node.js}\mbox{}\\
 Per lo sviluppo lato server in linguaggio Javascript ci si avvale dell'ultima versione Long Term Support (LTS) di Node.js, che, al momento della stesura di questo documento, è la 10.15.1 LTS.
-Node.js è reperibile al seguente link:\newline
+Node.js è reperibile al seguente link:
 \begin{center}
 	\url{https://nodejs.org/it/}
+\end{center} 
+Il file package.json contiene tutte le configurazioni e dipendenze del progetto. Per installare tutti i moduli necessari è necessario eseguire il seguente comando nella cartella contenente il file package.json:
+\begin{center}
+	\texttt{npm install}
+\end{center}
+Per eseguire il progetto è necessario usare il comando:
+\begin{center}
+	\texttt{npm start}
 \end{center}
 
 \paragraph{Apache Tomcat}\mbox{}\\
-Per l'esecuzione e il deploy sul server del modulo client Freeling scritto in Java, viene usato Apache Tomcat, che permette l'esecuzione di codice Java lato server. Viene usata l'ultima versione, ovvero la 9.0.16.
+Per l'esecuzione e il deploy sul server del modulo client Freeling scritto in Java, viene usato Apache Tomcat, che permette l'esecuzione di codice Java lato server. La configurazione di apache tomcat viene gestita dal framework Spring.
 Maggiori informazioni sono reperibili al seguente link:\newline
 \begin{center}
 	\url{http://tomcat.apache.org/}
@@ -215,6 +223,9 @@ Maggiori informazioni sono reperibili al seguente link:\newline
 \end{center}
 
 \paragraph{Checkstyle}\mbox{}\\
-La conformità dello stile di codifica Java con le linee guida stabilite è garantita dal plugin Maven Checkstyle, che fa fallire la build in caso di errori nella forma del codice scritto.
+La conformità dello stile di codifica Java con le linee guida stabilite è garantita dal plugin Maven Checkstyle, che fa fallire la build in automatico in caso di errori nella forma del codice scritto. Il controllo sullo stile può essere eseguito anche manualmente con il seguente comando:
+\begin{center}
+	\texttt{mvn verify}
+\end{center}
 
 
