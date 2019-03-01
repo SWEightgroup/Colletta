@@ -65,6 +65,15 @@ Richiede che i vari componenti del sistema vengano integrati al fine di garantir
 \subsubsection{Codifica}
 In questa sezione vengono descritte le norme che i \textit{Programmatori} devono seguire con l'obiettivo di scrivere codice leggibile, affidabile e manutenibile.
 
+\paragraph{Linguaggi e Framework}\mbox{}\\
+Lo sviluppo del progetto didattico richiede l'uso di diversi framwork e linguaggi di programmazione, ognuno mirato ad uno scopo preciso:
+\begin{itemize}
+	\item \textbf{JavaScript:} viene adottato Javascript alla specifica ES6 per lo sviluppo di gran parte della backend e della frontend;
+	\item \textbf{React:} viene adottato il framework React 16.8 per lo sviluppo della frontend;
+	\item \textbf{Java:} viene adottato Java con le specifiche del JDK 11 per lo sviluppo del modulo client per la connessione al server Freeling;
+	\item \textbf{Spring:} viene adottato il framework Spring per facilitare lo sviluppo del modulo sopracitato, avvalendosi solo del modulo RESTful.
+\end{itemize}
+
 \paragraph{Stile di codifica}\mbox{}\\
 Al fine di produrre codice uniforme, leggibile e manutenibile è richiesto che vengano rispettate
 le seguenti convenzioni:
@@ -83,21 +92,14 @@ le seguenti convenzioni:
 \item Breve descrizione del contenuto del file.
 \end{list}
 \end{itemize}
-Il codice deve seguire le linee guida reperibili all’indirizzo:
+Il codice Java deve seguire le linee guida per lo stile proposte da Google reperibili all'indirizzo:
 \begin{center}
-\url{http://google.github.io/styleguide/};
+\url{https://github.com/airbnb/javascript};
 \end{center}
-
-
-\paragraph{Linguaggi e Framework}\mbox{}\\
-Lo sviluppo del progetto didattico richiede l'uso di diversi framwork e linguaggi di programmazione, ognuno mirato ad uno scopo preciso:
-\begin{itemize}
-	\item \textbf{JavaScript:} viene adottato Javascript alla specifica ES6 per lo sviluppo di gran parte della backend e della frontend;
-	\item \textbf{React:} viene adottato il framework React 16.8 per lo sviluppo della frontend;
-	\item \textbf{Java:} viene adottato Java con le specifiche del JDK 11 per lo sviluppo del modulo client per la connessione al server Freeling;
-	\item \textbf{Spring:} viene adottato il framework Spring per facilitare lo sviluppo del modulo sopracitato, avvalendosi solo del modulo RESTful.
-\end{itemize}
-
+Il codice Javascript deve seguire le linee guida per lo stile proposte da Airbnb reperibili all'indirizzo:
+\begin{center}
+	\url{http://google.github.io/styleguide/};
+\end{center}
 
 
 \subsubsection{Strumenti di supporto}

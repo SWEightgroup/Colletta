@@ -274,8 +274,7 @@ Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio d
 \item Se approvato, sarà compito dell'\textit{Amministratore di Progetto} effettuare il merge.
 \end{enumerate}
 \begin{figure}[H]
-\centering
-\includegraphics[width=17cm,trim=2 2 2 2, clip]{img/cicloVitaDocumentoAsana.pdf}
+\centering\includegraphics[width=17cm,trim=2 2 2 2, clip]{img/cicloVitaDocumentoAsana.pdf}
 \caption{Ciclo di vita di un documento}
 \label{fig:document_lifecycle}
 \end{figure}
@@ -286,8 +285,27 @@ Ogni diagramma di caso d’uso è identificato in alto a sinistra dal suo codice
 
 \subsection{Qualità}
 \subsubsection{Scopo}
+Questa sezione descrive le classificazioni e le formule per il calcolo delle metriche necessarie per assicurare la qualità.
+
+\subsubsection{Classificazione delle metriche}
+Per garantire la qualità del lavoro gli Amministratori hanno definito delle metriche, che devono però rispettare la seguente notazione M[categoria][numero] dove:
+\begin{enumerate}
+	\item[•]{categoria}: indica la categoria della metrica, può assume i valori:
+	\begin{enumerate}
+		\item[-] D per indicare le metriche di documenti;
+		\item[-] S per indicare le metriche di software;
+		\item[-] P per indicare le metriche di processi.
+	\end{enumerate}
+	\item[•]{numero}: identifica in maniera univoca la metrica come numero intero a 3 tre cifre incrementale a partire da 1.
+\end{enumerate}
+Ad esempio la prima metrica sui documenti sarà classificata in questo modo:
+\begin{center}
+	MD001
+\end{center}
+
 \paragraph{Metriche Documenti}\mbox{}\\
 Le metriche presentate in questa sezione hanno come scopo fornire dei parametri per garantire un buon livello di leggibilità dei documenti.
+
 
 \subparagraph{Indice Gulpease}\mbox{}\\
 L'Indice Gulpease è un indice di leggibilità di un testo tarato sulla lingua italiana. Rispetto ad altri ha il vantaggio di utilizzare la lunghezza delle parole in lettere anziché in sillabe, semplificandone il calcolo automatico.
