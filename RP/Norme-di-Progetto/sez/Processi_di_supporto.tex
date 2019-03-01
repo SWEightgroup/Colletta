@@ -458,7 +458,9 @@ Per quanto riguarda le varie {distribuzioni Linux}\ped{G} non è disponibile un 
 non ufficiale all'indirizzo: \url{https://github.com/shiftkey/desktop}
 
 \paragraph{Maven}\mbox{}\\
-Il gruppo \gruppo  si avvale di Apache Maven per la gestione della configurazione del modulo client Freeling scritto in Java. Tale strumento è fondamentale per consentire la ripetibilità della build sul pc di ogni membro del gruppo. Inoltre, permette di eseguire in maniera automatica tutti i test del modulo JUnit. Maven è reperibile al seguente link: \href{https://maven.apache.org/}{"Apache Maven Project"}. 
+Il gruppo \gruppo  
+si avvale di Apache Maven per la gestione della configurazione del modulo client Freeling scritto in Java. Tale strumento è fondamentale per consentire la ripetibilità della build sul pc di ogni membro del gruppo. Inoltre, permette di eseguire in maniera automatica tutti i test del modulo JUnit. Maven è reperibile al seguente link: \href{https://maven.apache.org/}{"Apache Maven Project"}. 
+\\
 Posizionandosi nella cartella gestita da Maven e dando il seguento comando da terminale: 
 \begin{center}
 \texttt{\# mvn install}
@@ -466,11 +468,11 @@ Posizionandosi nella cartella gestita da Maven e dando il seguento comando da te
 si effettua la compilazione, si eseguono i test, si costruisce l’artefatto e lo si copia nel
 repository locale.
 \\
-Per effettuare solo i test basterà lanciare il comando: 
+Per effettuare solo i test di unità basterà lanciare il comando: 
 \begin{center}
 \texttt{\# mvn test}
 \end{center} 
-Maven mette a disposizione molteplici configurazioni per i test, disponibili al seguente link: 
+Maven mette a disposizione molteplici configurazioni per il testing, vedi: 
 \href{https://www.mkyong.com/maven/how-to-run-unit-test-with-maven/}{"How to run unit test with Maven"}.
 
 \subsection{Verifica}
@@ -570,25 +572,38 @@ I diagrammi devono essere verificati manualmente dal \textit{Verificatore} che d
 \subsubsection{Strumenti di supporto}
 \paragraph{JUnit}\mbox{}\\
 Per la parte del codice scritta in Java, i test di unità saranno eseguiti tramite la libreria JUnit. La scelta è stata dettata dalla conoscenza dello strumento da gran parte dei membri del gruppo.
-I test sono localizzati all'interno della cartella \textit{test}, ogni file di test ha lo stesso nome della classe che deve testare con l'aggiunta del suffisso \textit{Test} alla fine della parola.
-\\
-Ad esempio se si vuole testare il file HelloWorld.java il file di test sarà chiamato HelloWorld\textbf{Test}.java. 
-I metodi di test, all'interno del file di test, devono avere la keyword \textit{@Test} posta prima della definizione del metodo senza spazi. \\
-Codice della classe \texttt{HelloWorldTest}: 
+I test sono localizzati all'interno della cartella \textit{test}, ogni file di test ha lo stesso nome della classe che deve testare con l'aggiunta della keyword \textit{Test} alla fine della parola. \\
+Ad esempio se si vuole testare il file HelloWorld.java il file di test sarà chiamato HelloWorld\textbf{Test}.java. \\
+I metodi di test devono avere l'annotazione \textit{@Test} posta prima della definizione del metodo, senza spazi, che avrà segnatura \textit{public void} e ogni metodo potrà avere un solo controllo al suo interno.\\
+Il nome del metodo per il test dovrà essere significativo per la funzionalità che si sta andando a testare, vedi \href{https://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html}{"Naming standards for unit tests"}.\\
+Esempio di \texttt{HelloWorldTest}: 
 \begin{lstlisting}[language=Java]
 	public class HelloWorldTest{
 	
-		Helloworld object = new Helloworld();
+		Helloworld object = new Helloworld();	// classe da testare
 		
 		@Test
 		public void checkText{
-			assertEquals("helloWorld", object.getHelloWorld());
+			assertEquals("helloWorld", object.getHelloWorld());		
+			// assertEquals() controlla se i parametri sono uguali
 		}
 	}
 \end{lstlisting}
+La classe \textit{Assert} prevede molteplici metodi che verificano se il risultato atteso è uguale al risultato ritornato dal metodo che si sta testando, vedi \href{https://junit.org/junit4/javadoc/4.12/org/junit/Assert.html}{"Class Assert"}.
+Per maggiori informazioni riguardanti le proprietà delle annotazioni dei test vedi \href{https://junit.org/junit4/javadoc/latest/org/junit/Test.html}{"Annotation Type Test"}.
+
 
 \paragraph{Jest ed Enzyme}\mbox{}\\
-Jest ed Enzyme sono i framework che il gruppo \gruppo \space usa per la creazione di test sul codice React. Permettono, fra le altre cose, di creare mock e simulare input utente.\newline
+Il framework Jest e la libreria Enzyme saranno utilizzati dal gruppo per la creazione di test sul codice React. Permettono, fra le altre cose, di creare mock e simulare input utente. \\
+Per creare un test ci si dovrà posizionare all'interno della cartella \textit{components} e creare la cartella \textit{\_\_tests\_\_}, se non presente, per testare il file HelloWorld.jsx il file di test sarà chiamato HelloWorld.\textbf{test}.jsx .
+\begin{verbatim}
+	it('sums numbers', () => {
+	  	expect(sum(1, 2)).toEqual(3);
+  		expect(sum(2, 2)).toEqual(4);
+	});
+\end{verbatim}
+Il comando \textit{expect} verifica che i parametri siano uguali, vedi: \href{https://jestjs.io/docs/en/expect.html#content}{ API Reference: "Expect"}.
+Tramite il comando \texttt{npm test} vengono eseguiti i test sui file modificati, è possibile applicare i test ogni volta che viene apportata una modifica localmente tramite il comando \texttt{npm run test -- --watch}. 
 Maggiori informazioni e i link per i download sono disponibili di seguito:
 \begin{itemize}
 	\item \textbf{Jest:} \url{https://jestjs.io/}
