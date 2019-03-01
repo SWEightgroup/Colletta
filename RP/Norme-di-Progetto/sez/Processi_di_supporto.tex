@@ -232,7 +232,7 @@ L'intera documentazione deve essere prodotta utilizzando il {linguaggio di marku
 \item[•] È un linguaggio che supporta il {versionamento}\ped{G};
 \item[•] Permette la suddivisione del documento in parti che rappresentano le varie sezioni facilitando la stesura.
 \end{itemize}
-Per utilizzare \LaTeX{} è necessario installare il compilatore pdflatex, integrato in un software come TexLive reperibile all'indirizzo \url{https://www.tug.org/texlive/}. Quest'ultimo è {cross platform}\ped{G}, {open source}\ped{G} e gratuito. Si consiglia l'installazione del pacchetto completo per evitare di installare pacchetti successivamente.
+Per utilizzare \LaTeX{} è necessario installare il compilatore pdflatex, integrato in un software come TexLive reperibile all'indirizzo  \url{https://www.tug.org/texlive/}. Quest'ultimo è {cross platform}\ped{G}, {open source}\ped{G} e gratuito. Si consiglia l'installazione del pacchetto completo per evitare di installare pacchetti successivamente.
 Per la stesura del documento si consiglia Texmaker, il quale presenta le seguenti peculiarità:
 \begin{itemize}
 	\item[•] Compilatore e visualizzatore {PDF}\ped{G} per il documento prodotto;
@@ -577,7 +577,7 @@ Per la parte del codice scritta in Java, i test di unità saranno eseguiti trami
 I test sono localizzati all'interno della cartella \textit{test}, ogni file di test ha lo stesso nome della classe che deve testare con l'aggiunta della keyword \textit{Test} alla fine della parola. \\
 Ad esempio se si vuole testare il file HelloWorld.java il file di test sarà chiamato HelloWorld\textbf{Test}.java. \\
 I metodi di test devono avere l'annotazione \textit{@Test} posta prima della definizione del metodo, senza spazi, che avrà segnatura \textit{public void} e ogni metodo potrà avere un solo controllo al suo interno.\\
-Il nome del metodo per il test dovrà essere significativo per la funzionalità che si sta andando a testare, vedi \href{https://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html}{"Naming standards for unit tests"}.\\
+Il nome del metodo per il test dovrà essere significativo per la funzionalità che si sta andando a testare, vedi: \href{https://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html}{"Naming standards for unit tests"}.\\
 Esempio di \texttt{HelloWorldTest}: 
 \begin{lstlisting}[language=Java]
 	public class HelloWorldTest{
@@ -597,15 +597,16 @@ Per maggiori informazioni riguardanti le proprietà delle annotazioni dei test v
 
 \paragraph{Jest ed Enzyme}\mbox{}\\
 Il framework Jest e la libreria Enzyme saranno utilizzati dal gruppo per la creazione di test sul codice React. Permettono, fra le altre cose, di creare mock e simulare input utente. \\
-Per creare un test ci si dovrà posizionare all'interno della cartella \textit{components} e creare la cartella \textit{\_\_tests\_\_}, se non presente, per testare il file HelloWorld.jsx il file di test sarà chiamato HelloWorld.\textbf{test}.jsx .
+Per creare un test ci si dovrà posizionare all'interno della cartella \textit{components} e creare la cartella \textit{\_\_tests\_\_}, se non presente. \\
+Per testare, ad esempio, il file HelloWorld.jsx il file di test sarà chiamato HelloWorld.\textbf{test}.jsx}.
 \begin{verbatim}
 	it('sums numbers', () => {
 	  	expect(sum(1, 2)).toEqual(3);
   		expect(sum(2, 2)).toEqual(4);
 	});
 \end{verbatim}
-Il comando \textit{expect} verifica che i parametri siano uguali, vedi: \href{https://jestjs.io/docs/en/expect.html#content}{ API Reference: "Expect"}.
-Tramite il comando \texttt{npm test} vengono eseguiti i test sui file modificati, è possibile applicare i test ogni volta che viene apportata una modifica localmente tramite il comando \texttt{npm run test -- --watch}. 
+Il comando \texttt{expect} verifica che i parametri siano uguali, vedi: \href{https://jestjs.io/docs/en/expect.html#content}{ API Reference: "Expect"} per altri controlli disponibili.\\
+Tramite il comando \texttt{npm test} vengono eseguiti i test sui file modificati, è possibile applicare i test ogni volta che viene apportata una modifica localmente tramite il comando \texttt{npm run test -- --watch}.\\ 
 Maggiori informazioni e i link per i download sono disponibili di seguito:
 \begin{itemize}
 	\item \textbf{Jest:} \url{https://jestjs.io/}
