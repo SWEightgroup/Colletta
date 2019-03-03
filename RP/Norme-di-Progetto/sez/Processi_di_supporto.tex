@@ -465,7 +465,7 @@ si avvale di Apache Maven per la gestione della configurazione del modulo client
 \\
 Posizionandosi nella cartella gestita da Maven e dando il seguento comando da terminale: 
 \begin{center}
-\texttt{\# mvn install}
+\texttt{\# mvn clean install}
 \end{center}
 si effettua la compilazione, si eseguono i test, si costruisce l’artefatto e lo si copia nel
 repository locale.
@@ -591,13 +591,13 @@ Esempio di \texttt{HelloWorldTest}:
 		}
 	}
 \end{lstlisting}
-La classe \textit{Assert} prevede molteplici metodi che verificano se il risultato atteso è uguale al risultato ritornato dal metodo che si sta testando, vedi \href{https://junit.org/junit4/javadoc/4.12/org/junit/Assert.html}{"Class Assert"}.
+La classe \textit{Assert} prevede molteplici metodi che verificano se il risultato atteso è uguale al risultato ritornato dal metodo che si sta testando, vedi \href{https://junit.org/junit4/javadoc/4.12/org/junit/Assert.html}{"Class Assert"}.\\
 Per maggiori informazioni riguardanti le proprietà delle annotazioni dei test vedi \href{https://junit.org/junit4/javadoc/latest/org/junit/Test.html}{"Annotation Type Test"}.
 
 
 \paragraph{Jest ed Enzyme}\mbox{}\\
 Il framework Jest e la libreria Enzyme saranno utilizzati dal gruppo per la creazione di test sul codice React. Permettono, fra le altre cose, di creare mock e simulare input utente. \\
-Per creare un test ci si dovrà posizionare all'interno della cartella \textit{components} e creare la cartella \textit{\_\_tests\_\_}, se non presente. \\
+Per creare un test ci si dovrà posizionare all'interno della cartella \textit{components} e creare la cartella \textit{\_\_tests\_\_}, se non presente, e creare il file di test. \\
 Per testare, ad esempio, il file HelloWorld.jsx il file di test sarà chiamato HelloWorld.\textbf{test}.jsx}.
 \begin{verbatim}
 	it('sums numbers', () => {
