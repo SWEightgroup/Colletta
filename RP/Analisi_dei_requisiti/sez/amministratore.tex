@@ -12,13 +12,10 @@
 
 \begin{itemize}
 \item \textbf{Attore}: Amministratore; 
-\item \textbf{Descrizione}: l'amministratore accede alla propria dashboard personale e può effettuare modifiche al sistema;
+\item \textbf{Descrizione}: l'amministratore visualizza la propria dashboard;
 \item \textbf{Precondizione}: l'amministratore si è autenticato;
 \item \textbf{Postcondizione}: l'amministratore è all'interno della sua dashboard;
-\item \textbf{Flusso degli eventi}: 
-\begin{enumerate}
-	\item UC 1.1 - Autenticazione.
-\end{enumerate}
+\item \textbf{Flusso degli eventi}:l'amministratore accede alla propria dashboard personale e può effettuare modifiche al sistema;
 \end{itemize}
 
 \subsubsection{UC 5.2 - Visualizzazione utenti registrati}
@@ -26,37 +23,27 @@
 \begin{itemize}
 \item \textbf{Attore}: Amministratore;
 \item \textbf{Descrizione}: l'amministratore visualizza l'elenco degli utenti registrati nel sistema;
-\item \textbf{Precondizione}: l'amministratore si trova nella dashboard;
+\item \textbf{Precondizione}:  l'amministratore si è autenticato;
 \item \textbf{Postcondizione}: l'amministratore visualizza tutti gli utenti registrati nel sistema;
-\item \textbf{Flusso degli eventi}:
-\begin{enumerate}
-	\item UC 1.1 - Autenticazione.
-	\item UC 5.1 - Visualizzazione dashboard
-\end{enumerate}
+\item \textbf{Flusso degli eventi}:l'amministratore accede alla propria dashboard e visualizza l'elenco degli utenti registrati nel sistema.
 \end{itemize}
 
 \subsubsection{UC 5.3 - Filtraggio utenti}
 \begin{itemize}
 \item \textbf{Attore}: Amministratore;
-\item \textbf{Descrizione}: l'amministratore ha la possibilità di ricercare gli utenti a partire dal loro nome o dalla loro tipologia di utenza;
-\item \textbf{Precondizione}: l'amministratore visualizza la lista degli utenti registrati;
-\item \textbf{Postcondizione}: l'amministratore visualizza la lista degli utenti in base ai filtri applicati;
-\item \textbf{Flusso degli eventi}: 
-\begin{enumerate}
-	\item UC 1.1 - Autenticazione.
-\end{enumerate}
+\item \textbf{Attore}: Amministratore;
+\item \textbf{Descrizione}: l'amministratore può filtrare gli utenti;
+\item \textbf{Precondizione}: l'amministratore si è autenticato;
+\item \textbf{Postcondizione}: l'amministratore visualizza la lista degli utenti in base ai filtri applicati.
+\item \textbf{Flusso degli eventi}: l'amministratore dalla propria dashboard ha la possibilità di ricercare gli utenti a partire dal loro nome o dalla loro tipologia di utenza;
 \end{itemize}
-
 \subsubsection{UC 5.4 - Visualizzazione dettaglio utente}
 \begin{itemize}
 \item \textbf{Attore}: Amministratore;
 \item \textbf{Descrizione}: l'amministratore visualizza in dettaglio un utente specifico;
 \item \textbf{Precondizione}: l'amministratore visualizza la lista degli utenti;
 \item \textbf{Postcondizione}: l'amministratore visualizza le informazioni personali dell'utente;
-\item \textbf{Flusso degli eventi}:
-\begin{enumerate}
-	\item UC 1.1 - Autenticazione.
-\end{enumerate}
+\item \textbf{Flusso degli eventi}:l'amministratore visualizza in dettaglio un utente specifico;
 \end{itemize}
 
 
@@ -66,47 +53,35 @@
 \item \textbf{Descrizione}: l'amministratore elimina un'utenza dal sistema;
 \item \textbf{Precondizione}: l'amministratore visualizza l'elenco degli utenti registrati nel sistema;
 \item \textbf{Postcondizione}: l'amministratore ha eliminato l'utenza dal sistema;
-\item \textbf{Flusso degli eventi}: 
-\begin{enumerate}
-	\item UC 1.1 - Autenticazione.
-\end{enumerate}
+\item \textbf{Flusso degli eventi}:l'amministratore elimina un'utenza dal sistema;
 \end{itemize}
 
 
 \subsubsection{UC 5.6 - Visualizzazione richieste sviluppatori}
 \begin{itemize}
 \item \textbf{Attore}: Amministratore;
-\item \textbf{Descrizione}: l'amministratore visualizza tutte le richieste degli utenti che vogliono ottenere il ruolo di sviluppatore nel sistema;
+\item \textbf{Descrizione}: l'amministratore visualizza le richieste degli utenti;
 \item \textbf{Precondizione}: l'amministratore si trova nella dashboard;
 \item \textbf{Postcondizione}: l'amministratore visualizza l'elenco delle richieste in sospeso;
-\item \textbf{Flusso degli eventi}: 
-\begin{enumerate}
-	\item UC 1.1 - Autenticazione.
-\end{enumerate}
+\item \textbf{Flusso degli eventi}:  l'amministratore visualizza tutte le richieste degli utenti che vogliono ottenere il ruolo di sviluppatore nel sistema.
 \end{itemize}
 
 \subsubsection{UC 5.7 - Attivazione utenza sviluppatore}
 \begin{itemize}
 \item \textbf{Attore}: Amministratore;
-\item \textbf{Descrizione}: l'amministratore attiva un utente che ha fatto richiesta come sviluppatore;
+\item \textbf{Descrizione}: l'amministratore può attivare utenza in sospeso;
 \item \textbf{Precondizione}: l'amministratore visualizza la lista delle richieste in sospeso degli sviluppatori;
 \item \textbf{Postcondizione}: l'utenza dello sviluppatore è stata attivata e lo sviluppatore può quindi accedere al sistema;
-\item \textbf{Flusso degli eventi}: 
-\begin{enumerate}
-	\item UC 1.1 - Autenticazione.
-\end{enumerate}
+\item \textbf{Flusso degli eventi}:l'amministratore attiva un utente che ha fatto richiesta come sviluppatore;
 \end{itemize}
 
 \subsubsection{UC 5.8 - Rifiuto richiesta sviluppatore}
 \begin{itemize}
 \item \textbf{Attore}: Amministratore;
-\item \textbf{Descrizione}: l'amministratore rifiuta la richiesta avanzata da uno sviluppatore;
+\item \textbf{Descrizione}: l'amministratore può rifiutare utenza in sospeso;
 \item \textbf{Precondizione}: l'amministratore visualizza la lista delle richieste in sospeso degli sviluppatori;
 \item \textbf{Postcondizione}: l'utenza dello sviluppatore è stata rifiutata;
-\item \textbf{Flusso degli eventi}: 
-\begin{enumerate}
-	\item UC 1.1 - Autenticazione.
-\end{enumerate}
+\item \textbf{Flusso degli eventi}: l'amministratore rifiuta la richiesta avanzata da uno sviluppatore.
 \end{itemize}
 
 
