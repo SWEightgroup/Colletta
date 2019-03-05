@@ -3,7 +3,7 @@ import os
 from oauth2client.service_account import ServiceAccountCredentials
 
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-creds = ServiceAccountCredentials.from_json_keyfile_name('/home/sebas/Scrivania/Swe/Colletta/Utility/MAGIC/MAGIC-SWE-1ac7fd374262.json',scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('./MAGIC-SWE-1ac7fd374262.json',scope)
 client = gspread.authorize(creds)
 
 sheet = client.open('Gulpease Daily').sheet1
