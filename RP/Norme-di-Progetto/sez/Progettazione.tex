@@ -232,4 +232,10 @@ La conformità dello stile di codifica Java con le linee guida stabilite è gara
 	\texttt{mvn verify}
 \end{center}
 
+\paragraph{ESLint}\mbox{}\\
+Per rendere conforme lo stile di codifica per il linguaggio Javascript con la libreria ReactJs si utilizza il modulo ESLint di NodeJs con la configurazione rilasciata da Airbnb. Ad ogni compilazione del progetto il compilatore stamperà un warning per ogni non conformità riscontrata. Durante la verifica, il progetto verrà ritenuto conforme e completo solo se il compilatore non segnalerà nessun errore o warning.\\
+Per installare ESLint è necessario dare il comando: \texttt{npm install eslint --save-dev} che installerà il modulo localmente.\\
+Per settarlo invece dare il comando: \texttt{./node\_modules/.bin/eslint --init} oppure \texttt{npx eslint}.\\
+Maggiori informazioni sono presenti al seguente indirizzo: \href{https://eslint.org/}{"ESLint"}.
+
 
