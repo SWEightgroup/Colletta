@@ -114,7 +114,11 @@
 	\item[•]\textbf{Descrizione}: l'allievo rimuove un insegnante preferito;
 	\item[•]\textbf{Precondizione}: l'allievo visualizza la lista di insegnanti preferiti;
 	\item[•]\textbf{Postcondizione}: l'allievo ha rimosso un insegnante preferito dalla lista;
-	\item[•]\textbf{Flusso degli eventi}: l'allievo seleziona dalla lista visualizzata un insegnante da rimuovere dagli insegnanti preferiti e procede all'eliminazione.
+	\item[•]\textbf{Flusso degli eventi}: 
+	\begin{enumerate}
+	 \item Seleziona insegnante dalla lista;
+	 \item Elimina insegnante selezionato.
+	\end{enumerate}
 \end{itemize}
 
 \subsubsection{UC 3.8 - Selezione lingua esercizi}
@@ -223,10 +227,10 @@
 \subsubsection{UC 3.11.2 - Selezione insegnante}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Allievo;
-	\item[•]\textbf{Descrizione}: l'allievo seleziona l'insegnante da cui vuole ricevere la correzione;
+	\item[•]\textbf{Descrizione}: l'allievo seleziona l'insegnante da cui vuole ricevere la correzione, se nessun insegnante ha predisposto quella frase verrà utilizzato il sistema di correzione automatico.
 	\item[•]\textbf{Precondizione}: l'allievo ha selezionato un esercizio;
 	\item[•]\textbf{Postcondizione}: l'allievo seleziona l'insegnante dal quale vuole ricevere la correzione;
-	\item[•]\textbf{Flusso degli eventi}: durante lo svolgimento di un esercizio  l'allievo seleziona l'insegnante da cui vuole ricevere la correzione dell'esercizio, se nessun insegnante ha predisposto quella frase verrà utilizzato il sistema di correzione automatico.
+	\item[•]\textbf{Flusso degli eventi}: durante lo svolgimento di un esercizio  l'allievo seleziona l'insegnante da cui vuole ricevere la correzione dell'esercizio, 
 \end{itemize}
 
 \subsubsection{UC 3.11.3 - Classificazione parola}
@@ -268,7 +272,11 @@
 \end{itemize}
 
 \subsubsection{UC 3.13 - Modifica dati utente}
-{\huge TODO  COPIARE UML DA SVILUPPATORE}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=13cm]{img/UC313.png} 
+	\caption{Caso d'uso UC 3.13}\label{fig:312}
+\end{figure}
 \begin{itemize}
 \item[•] \textbf{Attori}: Allievo;
 \item[•] \textbf{Descrizione}: l'allievo modifica i propri dati personali, cioè tutti i dati personali inseriti in fase di registrazione;
@@ -282,7 +290,9 @@
 	\item[•] UC 3.13.3 - Modifica cognome;
 	\item[•] UC 3.13.4 - Modifica password;
 	\item[•] UC 3.13.5 - Modifica data di nascita;
-	\item[•] UC 3.13.6 - Modifica lingua interfaccia applicativo;
+	\item[•] UC 3.13.6 - Modifica lingua
+	 interfaccia applicativo;
+	\item[•] UC 3.13.7 - Conferma modifica dati.
 \end{enumerate}
 \end{itemize}
 
@@ -324,11 +334,10 @@
 	\end{enumerate}
 \end{itemize}
 \subsubsection{UC 3.13.4 - Modifica password}
-{\huge TODO MANCA UML VEDI SVILUPPATORE}
 \begin{figure}[H]
 	\centering
-	%\includegraphics[width=15cm, keepaspectratio]{img/UC4114.png} 
-	%\caption{Caso d'uso UC 4.11.4, modifica password per Sviluppatore}\label{fig:4114}
+	\includegraphics[width=15cm, keepaspectratio]{img/UC3134.png} 
+	\caption{Caso d'uso UC 3.13.4}\label{fig:3134}
 \end{figure}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Allievo;
@@ -337,8 +346,8 @@
 	\item[•]\textbf{Postcondizione}: l'allievo ha modificato la propria password personale; 
 	\item[•]\textbf{Flusso degli eventi}: 
 	\begin{enumerate}
-		\item UC 4.11.4.1 - Inserimento nuova password;
-		\item UC 4.11.4.2 - Inserimento conferma nuova password.
+		\item UC 3.13.4.1 - Inserimento nuova password;
+		\item UC 3.13.4.2 - Inserimento conferma nuova password.
 	\end{enumerate}
 \end{itemize}
 \subsubsection{UC 3.13.5 - Modifica data di nascita}
@@ -366,6 +375,14 @@
 	\end{enumerate}
 \end{itemize}
 
+\subsubsection{UC 3.13.7 - Conferma modifica dati}
+\begin{itemize}
+\item[•]\textbf{Attori}: Allievo;
+\item[•]\textbf{Descrizione}: l'allievo conferma le modifiche effettuate sui dati personali;
+\item[•]\textbf{Precondizione}: l'allievo ha iniziato la procedura di modifica dei dati;
+\item[•]\textbf{Postcondizione}: l'allievo ha confermato la modifica dei dati;
+\item[•]\textbf{Flusso degli eventi}: l'allievo conferma la modifica dei dati cliccando nell'apposita sezione.
+\end{itemize}
 
 \subsubsection{UC 3.13.4.1 - Inserimento nuova password}
 \begin{itemize}
