@@ -14,7 +14,7 @@
 \item[•]\textbf{Descrizione}: l'allievo visualizza la propria dashboard;
 \item[•]\textbf{Precondizione}: l'allievo si è autenticato;
 \item[•]\textbf{Postcondizione}: l'allievo visualizza la dashboard;
-\item[•]\textbf{Flusso degli eventi}: l'allievo visualizza la propria dashboard. La dashboard offre la possibilità di visualizzare i progressi, i traguardi, e le valutazioni ricevute. Ha inoltre la possibilità di inserire degli insegnanti preferiti.
+\item[•]\textbf{Flusso degli eventi}: l'allievo ha effettuato il login e viene reinderizzato alla propria dashboard.
 \end{itemize}
 
 \subsubsection{UC 3.2 - Visualizzazione progressi}
@@ -23,24 +23,50 @@
 \item[•]\textbf{Descrizione}: l'allievo visualizza i suoi progressi;
 \item[•]\textbf{Precondizione}: l'allievo visualizza la propria dashboard;
 \item[•]\textbf{Postcondizione}: l'allievo visualizza i propri progressi;
-\item[•]\textbf{Flusso degli eventi}: l'allievo può visualizzare i propri progressi costituiti dal numero di esercizi (corretti e sbagliati) svolti fino a quel momento;
-\item[•]\textbf{Generalizzazioni}:
+\item[•]\textbf{Flusso degli eventi}:
 \begin{itemize}
-\item UC 3.1 - Visualizzazione della dashboard.
+	\item[•] Visualizzazione numero esercizi corretti;
+	\item[•] Visualizzazione punteggio medio.
 \end{itemize}
 \end{itemize}
+
 \subsubsection{UC 3.3 - Visualizzazione traguardi}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{img/UC33.png} 
+\caption{Caso d'uso UC 3.3}
+\end{figure}
 \begin{itemize}
 \item[•]\textbf{Attori}: Allievo;
-\item[•]\textbf{Descrizione}: l'allievo visualizza i traguardi raggiunti;
+\item[•]\textbf{Descrizione}: l'allievo visualizza i traguardi da lui raggiunti;
 \item[•]\textbf{Precondizione}: l'allievo visualizza la propria dashboard;
 \item[•]\textbf{Postcondizione}: l'allievo visualizza tutti i traguardi raggiunti;
-\item[•]\textbf{Flusso degli eventi}: l'allievo può visualizzare i propri traguardi assegnati dopo ogni serie di esercizi corretti svolti.
-\item[•]\textbf{Generalizzazioni}:
+\item[•]\textbf{Flusso degli eventi}: 
+	\begin{itemize}
+		\item[•] UC 3.3.1 - Visualizzazione prossimo traguardo;
+		\item[•] UC 3.3.2 - Visualizzazione traguardo corrente.
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{UC 3.3.1 - Visualizzazione prossimo traguardo}
 \begin{itemize}
-\item UC 3.1 - Visualizzazione della dashboard.
+\item[•]\textbf{Attori}: Allievo;
+\item[•] \textbf{Descrizione}: l'allievo visualizza, nella propria dashboard, l'ammontare di punti mancante al raggiungimento del prossimo traguardo;
+\item[•] \textbf{Precondizione}: l'allievo visualizza i propri traguardi;
+\item[•] \textbf{Postcondizione}: l'allievo visualizza il punteggio mancante per raggiungere il traguardo successivo;
+\item[•] \textbf{Flusso degli eventi}: l'allievo il punteggio mancante per il prossimo traguardo.
 \end{itemize}
+
+\subsubsection{UC 3.3.2 - Visualizzazione traguardo corrente}
+\begin{itemize}
+\item[•]\textbf{Attori}: Allievo;
+\item[•] \textbf{Descrizione}: l'allievo visualizza, nella propria dashboard, il proprio traguardo personale raggiunto;
+\item[•] \textbf{Precondizione}: l'allievo visualizza i propri traguardi;
+\item[•] \textbf{Postcondizione}: l'allievo visualizza il traguardo corrente;
+\item[•] \textbf{Flusso degli eventi}: l'allievo seleziona il traguardo corrente.
 \end{itemize}
+
 
 \subsubsection{UC 3.4 - Visualizzazione valutazioni}
 \begin{itemize}
@@ -49,10 +75,19 @@
 \item[•]\textbf{Precondizione}: l'allievo visualizza la propria dashboard;
 \item[•]\textbf{Postcondizione}: l'allievo visualizza tutte le valutazioni ricevute;
 \item[•]\textbf{Flusso degli eventi}: l'allievo visualizza le valutazioni di tutti gli esercizi svolti, sia esercizi assegnati che svolti indipendentemente;
-\item[•]\textbf{Generalizzazioni}:
-\begin{itemize}
-\item UC 3.1 - Visualizzazione della dashboard.
+\item[•] \textbf{Flusso alternativo}: 
+	\begin{itemize}
+		\item UC 3.4.1 - Visualizzazione valutazione esercizio		
+	\end{itemize}
 \end{itemize}
+
+\subsubsection{UC 3.4.1 - Visualizzazione valutazione esercizio}
+\begin{itemize}
+\item[•]\textbf{Attori}: Allievo;
+\item[•]\textbf{Descrizione}: l'allievo visualizza la valutazione di un esercizio da lui precedentemente svolto;
+\item[•]\textbf{Precondizione}: l'allievo sta visualizzando le sue valutazioni;
+\item[•]\textbf{Postcondizione}: l'allievo visualizza il la valutazione dell'esercizio;
+\item[•]\textbf{Flusso degli eventi}: l'allievo seleziona un esercizio specifico.
 \end{itemize}
 
 \subsubsection{UC 3.5 - Inserimento insegnante preferito}
@@ -61,7 +96,7 @@
 \item[•]\textbf{Descrizione}: l'allievo inserisce un nuovo insegnante preferito;
 \item[•]\textbf{Precondizione}: l'allievo visualizza la propria dashboard;
 \item[•]\textbf{Postcondizione}: l'allievo ha inserito un insegnante preferito;
-\item[•]\textbf{Flusso degli eventi}: l'allievo inserisce il nome utente di un insegnante da prediligere quando riceve la correzione di un esercizio.
+\item[•]\textbf{Flusso degli eventi}: l'allievo inserisce il nominativo di un insegnante da prediligere quando riceve la correzione di un esercizio.
 \end{itemize}
 
 \subsubsection{UC 3.6 - Visualizzazione insegnanti preferiti}
@@ -71,10 +106,6 @@
 	\item[•]\textbf{Precondizione}: l'allievo visualizza la propria dashboard;
 	\item[•]\textbf{Postcondizione}: l'allievo visualizza gli insegnanti preferiti.
 	\item[•]\textbf{Flusso degli eventi}: l'allievo visualizza la lista degli insegnanti preferiti che ha precedentemente inserito;
-	\item[•]\textbf{Generalizzazioni}:
-\begin{itemize}
-\item UC 3.1 - Visualizzazione della dashboard.
-\end{itemize}
 \end{itemize}
 
 \subsubsection{UC 3.7 - Rimozione insegnante preferito}
@@ -83,19 +114,16 @@
 	\item[•]\textbf{Descrizione}: l'allievo rimuove un insegnante preferito;
 	\item[•]\textbf{Precondizione}: l'allievo visualizza la lista di insegnanti preferiti;
 	\item[•]\textbf{Postcondizione}: l'allievo ha rimosso un insegnante preferito dalla lista;
-	\item[•]\textbf{Flusso degli eventi}: l'allievo seleziona dalla lista visualizzata un insegnante da rimuovere dagli insegnanti preferiti.
+	\item[•]\textbf{Flusso degli eventi}: l'allievo seleziona dalla lista visualizzata un insegnante da rimuovere dagli insegnanti preferiti e procede all'eliminazione.
 \end{itemize}
 
 \subsubsection{UC 3.8 - Selezione lingua esercizi}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Allievo;
-	\item[•]\textbf{Descrizione}: l'allievo seleziona la lingua in cui vuole svolgere gli esercizi e visualizzare le soluzioni;
+	\item[•]\textbf{Descrizione}: l'allievo seleziona la lingua in cui vuole svolgere gli esercizi;
 	\item[•]\textbf{Precondizione}: l'allievo visualizza la propria dashboard;
 	\item[•]\textbf{Postcondizione}: l'allievo ha selezionato una lingua per gli esercizi;
-	\item[•]\textbf{Flusso degli eventi}: 
-	\begin{enumerate}
-		\item UC 1.1 - Autenticazione.
-	\end{enumerate}
+	\item[•]\textbf{Flusso degli eventi}: l'allievo seleziona da un elenco predefinito la lingua degli esercizi.
 \end{itemize}
 
 \subsubsection{UC 3.9 - Visualizzazione elenco esercizi}
@@ -104,10 +132,7 @@
 \item[•]\textbf{Descrizione}:  l'allievo visualizza un elenco di frasi consigliate dal sistema come esercizi oppure gli esercizi assegnati dall'insegnante;
 \item[•]\textbf{Precondizione}: l'allievo visualizza la propria dashboard;
 \item[•]\textbf{Postcondizione}: l'allievo visualizza un elenco di esercizi;
-\item[•]\textbf{Flusso degli eventi}:
-	\begin{enumerate}
-	\item UC 1.1 - Autenticazione.
-\end{enumerate}
+\item[•]\textbf{Flusso degli eventi}: l'allievo seleziona la sezione riguardante gli esercizi che possono essere da lui svolti.
 \end{itemize}
 
 \subsubsection{UC 3.10 - Esercitazione libera}
@@ -147,16 +172,16 @@
 	\item[•]\textbf{Descrizione}: l'allievo visualizza un messaggio di errore durante l'inserimento di una frase;
 	\item[•]\textbf{Precondizione}: l'allievo ha inserito una frase;
 	\item[•]\textbf{Postcondizione}: l'allievo ha visualizzato il messaggio di errore e può inserire una nuova frase;
-	\item[•]\textbf{Flusso degli eventi}:durante l'inserimento di una frase libera nel sistema tale frase non viene accettata, viene visualizzato un errore.
+	\item[•]\textbf{Flusso degli eventi}: durante l'inserimento di una frase libera nel sistema tale frase non viene accettata, viene visualizzato un errore.
 \end{itemize}
 
 \subsubsection{UC 3.10.3 - Visualizzazione analisi automatica}
 \begin{itemize}
-	\item[•]\textbf{Attori}: Allievo, insegnante Libreria di pos-tagging;
-	\item[•]\textbf{Descrizione}: l'attore visualizza l'analisi grammaticale della frase inserita;
-	\item[•]\textbf{Precondizione}: l'attore ha inserito una frase libera;
-	\item[•]\textbf{Postcondizione}: l'attore visualizza l'analisi grammaticale della frase inserita;
-	\item[•]\textbf{Flusso degli eventi}:l'attore corregge in maniera automatica la frase, le correzione viene mostrata all'attore. L'analisi è effettuata in modo automatico dalla liberia Freeling di pos-tagging.
+	\item[•]\textbf{Attori}: Allievo, Libreria di pos-tagging;
+	\item[•]\textbf{Descrizione}: l'allievo visualizza l'analisi grammaticale della frase inserita;
+	\item[•]\textbf{Precondizione}: l'allievo ha inserito una frase libera;
+	\item[•]\textbf{Postcondizione}: l'allievo visualizza l'analisi grammaticale della frase inserita;
+	\item[•]\textbf{Flusso degli eventi}: l'allievo ha richiesto l'analisi automatica della frase da lui inserita.
 \end{itemize}
 
 \subsubsection{UC 3.11 - Svolgimento esercizio}
@@ -173,7 +198,6 @@
 	\item[•]\textbf{Flusso degli eventi}:
 	\begin{enumerate}
 		\item Selezione esercizio;
-		\item UC 3.11.2 - Selezione insegnante;
 		\item UC 3.11.3 - Classificazione parola;
 		\item UC 3.12 - Visualizzazione soluzione.
 	\end{enumerate}
@@ -181,6 +205,10 @@
 	\begin{enumerate}
 		\item UC 3.11.1 - Interruzione svolgimento esercizio;
 	\end{enumerate}
+	\item[•] \textbf{Flusso alternativo}:
+	\begin{itemize}
+				\item UC 3.11.2 - Selezione insegnante;
+	\end{itemize}
 \end{itemize}
 
 \subsubsection{UC 3.11.1 - Interruzione svolgimento esercizio}
@@ -189,7 +217,7 @@
 	\item[•]\textbf{Descrizione}: l'allievo interrompe lo svolgimento di un esercizio;
 	\item[•]\textbf{Precondizione}: l'allievo inizia a svolgere un esercizio;
 	\item[•]\textbf{Postcondizione}: l'allievo interrompe l'esercizio, torna nella sezione di visualizzazione elenco esercizi;
-	\item[•]\textbf{Flusso degli eventi}:durante lo svolgimento di un esercizio l'allievo lo interrompe, scartando i dati inseriti fino a quel momento, e ritorna nella sezione di visualizzazione elenco esercizi;
+	\item[•]\textbf{Flusso degli eventi}: durante lo svolgimento di un esercizio l'allievo lo interrompe, scartando i dati inseriti fino a quel momento, e ritorna nella sezione di visualizzazione elenco esercizi;
 \end{itemize}
 
 \subsubsection{UC 3.11.2 - Selezione insegnante}
@@ -207,7 +235,7 @@
 	\item[•]\textbf{Descrizione}: l'allievo assegna una classe grammaticale ad una parola;
 		\item[•]\textbf{Precondizione}: l'allievo sta svolgendo un esercizio.
 	\item[•]\textbf{Postcondizione}: l'allievo seleziona la classe grammaticale di una parola.
-	\item[•]\textbf{Flusso degli eventi}:durante lo svolgimento di un esercizio  l'allievo seleziona la classe grammaticale di una parola da una lista predefinita.
+	\item[•]\textbf{Flusso degli eventi}: durante lo svolgimento di un esercizio  l'allievo seleziona i tag da una lista predefinita: nome, pronome, articolo, aggettivo, verbo, preposizione, congiunzione, avverbio e esclamazione.
 \end{itemize}
 
 
@@ -236,6 +264,157 @@
 \item[•]\textbf{Descrizione}:  l'allievo riceve una valutazione di un esercizio svolto;
 \item[•]\textbf{Precondizione}: l'allievo visualizza la soluzione dell'esercizio svolto;
 \item[•]\textbf{Postcondizione}: l'allievo visualizza una valutazione sull'esercizio svolto;
-\item[•]\textbf{Flusso degli eventi}:l'allievo riceve una valutazione in base al numero di parole classificate correttamente. Se sono presenti più soluzioni proposte dallo stesso insegnante viene presa la soluzione che porta alla valutazione più alta.
+\item[•]\textbf{Flusso degli eventi}: l'allievo ha ri
 \end{itemize}
 
+\subsubsection{UC 3.13 - Modifica dati utente}
+{\huge TODO  COPIARE UML DA SVILUPPATORE}
+\begin{itemize}
+\item[•] \textbf{Attori}: Allievo;
+\item[•] \textbf{Descrizione}: l'allievo modifica i propri dati personali, cioè tutti i dati personali inseriti in fase di registrazione;
+\item[•] \textbf{Precondizione}: l'allievo visualizza la propria dashboard;
+\item[•] \textbf{Postcondizione}: l'allievo ha modificato uno o più dati personali;
+\item[•] \textbf{Flusso degli eventi}:
+\begin{enumerate}
+	\item[•] Selezione procedura modifica dati personali;
+	\item[•] UC 3.13.1 - Modifica email;
+	\item[•] UC 3.13.2 - Modifica nome;
+	\item[•] UC 3.13.3 - Modifica cognome;
+	\item[•] UC 3.13.4 - Modifica password;
+	\item[•] UC 3.13.5 - Modifica data di nascita;
+	\item[•] UC 3.13.6 - Modifica lingua interfaccia applicativo;
+\end{enumerate}
+\end{itemize}
+
+
+\subsubsection{UC 3.13.1 - Modifica email}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Allievo;
+	\item[•]\textbf{Descrizione}: l'allievo modifica la propria email;
+	\item[•]\textbf{Precondizione}: l'allievo sta modificando i propri dati personali;
+	\item[•]\textbf{Postcondizione}: l'allievo ha modificato la propria email; 
+	\item[•]\textbf{Flusso degli eventi}: 
+	\begin{enumerate}
+		\item Selezione campo email;
+		\item Modifica la stringa che rappresenta la propria email.
+	\end{enumerate}
+\end{itemize}
+\subsubsection{UC 3.13.2 - Modifica nome}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Allievo;
+	\item[•]\textbf{Descrizione}: l'allievo modifica il proprio nome;
+	\item[•]\textbf{Precondizione}: l'allievo sta modificando i propri dati personali;
+	\item[•]\textbf{Postcondizione}: l'allievo ha modificato il proprio nome; 
+	\item[•]\textbf{Flusso degli eventi}: 
+	\begin{enumerate}
+		\item Selezione campo nome;
+		\item Modifica la stringa che rappresenta il nome.
+	\end{enumerate}
+\end{itemize}
+\subsubsection{UC 3.13.3 - Modifica cognome}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Allievo;
+	\item[•]\textbf{Descrizione}: l'allievo modifica il proprio cognome;
+	\item[•]\textbf{Precondizione}: l'allievo sta modificando i propri dati personali;
+	\item[•]\textbf{Postcondizione}: l'allievo ha modificato il proprio cognome; 
+	\item[•]\textbf{Flusso degli eventi}: 
+	\begin{enumerate}
+		\item Selezione campo cognome;
+		\item Modifica la stringa che rappresenta il cognome.
+	\end{enumerate}
+\end{itemize}
+\subsubsection{UC 3.13.4 - Modifica password}
+{\huge TODO MANCA UML VEDI SVILUPPATORE}
+\begin{figure}[H]
+	\centering
+	%\includegraphics[width=15cm, keepaspectratio]{img/UC4114.png} 
+	%\caption{Caso d'uso UC 4.11.4, modifica password per Sviluppatore}\label{fig:4114}
+\end{figure}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Allievo;
+	\item[•]\textbf{Descrizione}: l'allievo modifica la propria password;
+	\item[•]\textbf{Precondizione}: l'allievo sta modificando i la propria password personale;
+	\item[•]\textbf{Postcondizione}: l'allievo ha modificato la propria password personale; 
+	\item[•]\textbf{Flusso degli eventi}: 
+	\begin{enumerate}
+		\item UC 4.11.4.1 - Inserimento nuova password;
+		\item UC 4.11.4.2 - Inserimento conferma nuova password.
+	\end{enumerate}
+\end{itemize}
+\subsubsection{UC 3.13.5 - Modifica data di nascita}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Allievo;
+	\item[•]\textbf{Descrizione}: l'allievo modifica il proprio cognome;
+	\item[•]\textbf{Precondizione}: l'allievo sta modificando i propri dati personali;
+	\item[•]\textbf{Postcondizione}: l'allievo ha modificato il proprio cognome; 
+	\item[•]\textbf{Flusso degli eventi}: 
+	\begin{enumerate}
+		\item Selezione campo data di nascita;
+		\item Modifica la stringa che rappresenta la data di nascita, inserendo il valore corretto.
+	\end{enumerate}
+\end{itemize}
+\subsubsection{UC 3.13.6 - Modifica lingua interfaccia applicativo}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Allievo;
+	\item[•]\textbf{Descrizione}: lo sviluppatore modifica la lingua dell'applicativo;
+	\item[•]\textbf{Precondizione}: lo sviluppatore sta modificando i propri dati personali;
+	\item[•]\textbf{Postcondizione}: lo sviluppatore ha modificato la lingua dell'applicativo; 
+	\item[•]\textbf{Flusso degli eventi}: 
+	\begin{enumerate}
+		\item Selezione campo dati lingua applicativo;
+		\item Selezione da un elenco predefinito la lingua dell'applicativo desiderata.
+	\end{enumerate}
+\end{itemize}
+
+
+\subsubsection{UC 3.13.4.1 - Inserimento nuova password}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Allievo;
+	\item[•]\textbf{Descrizione}: l'allievo inserisce la nuova password;
+	\item[•]\textbf{Precondizione}: l'allievo sta modificando i propri dati personali;
+	\item[•]\textbf{Postcondizione}: l'allievo ha inserito il valore della nuova password; 
+	\item[•]\textbf{Flusso degli eventi}: 
+	\begin{enumerate}
+		\item Selezione campo dati relativo alla nuova password;
+		\item Inserimento stringa rappresentante la password.
+	\end{enumerate}
+	\item[•]\textbf{Estensioni}:
+	\begin{enumerate}
+		\item UC 3.13.4.3 - Visualizzazione messaggio formato password non valido.
+	\end{enumerate}
+\end{itemize}
+
+\subsubsection{UC 3.13.4.2 - Inserimento conferma nuova password}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Allievo;
+	\item[•]\textbf{Descrizione}: l'allievo inserisce conferma la nuova password, reinserendola nell'apposito campo;
+	\item[•]\textbf{Precondizione}: l'allievo sta modificando i propri dati personali;
+	\item[•]\textbf{Postcondizione}: l'allievo ha inserito il valore del campo conferma nuova password; 
+	\item[•]\textbf{Flusso degli eventi}: 
+	\begin{enumerate}
+		\item Selezione campo dati relativo alla conferma nuova password;
+		\item Inserimento stringa rappresentante la password.
+	\end{enumerate}
+	\item[•]\textbf{Estensioni}:
+	\begin{enumerate}
+		\item UC 3.13.4.4 - Visualizzazione messaggio password diverse.
+	\end{enumerate}
+\end{itemize}
+
+\subsubsection{UC 3.13.4.3 - Visualizzazione messaggio formato password non valido}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Allievo;
+	\item[•]\textbf{Descrizione}: l'allievo ha inserito una password con un formato non valido;
+	\item[•]\textbf{Precondizione}: l'allievo sta modificando i propri dati personali;
+	\item[•]\textbf{Postcondizione}: l'allievo visualizza un messaggio di errore relativo all'inserimento di una password che non rispetta un formato valido; 
+	\item[•]\textbf{Flusso degli eventi}: l'allievo ha inserito una password che non rispetta i criteri accettati dal sistema, pertanto riceve un messaggio che indica la presenza di un formato non adatto.
+\end{itemize}
+
+\subsubsection{UC 3.13.4.4 - Visualizzazione messaggio password diverse}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Allievo;
+	\item[•]\textbf{Descrizione}: l' allievo ha inserito un valore di conferma password che non corrisponde al valore della nuova password inserita precedentemente, pertanto visualizza un messaggio che indica che le due password non corrispondono;
+	\item[•]\textbf{Precondizione}: l'allievo ha inserito il valore del campo conferma nuova password;
+	\item[•]\textbf{Postcondizione}: l'allievo visualizza un messaggio di errore relativo all'inserimento di una password che non combacia con quella inserita nel campo nuova password; 
+	\item[•]\textbf{Flusso degli eventi}: l'allievo ha inserito una password che non combacia con quella inserita nel campo nuova password, pertanto riceve un messaggio che indica la presenza di tale difformità.
+\end{itemize}
