@@ -366,9 +366,14 @@
 \end{itemize}
 
 
-\subsubsection{UC 4.11 - Modifica dati utente} 
+\subsubsection{UC 4.11 - Modifica dati utente}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm, keepaspectratio]{img/UC411.png} 
+	\caption{Caso d'uso UC 4.11:  Modifica dati utente per Sviluppatore}\label{fig:411}
+\end{figure}
 \begin{itemize}
-	\item[•]\textbf{Attori}: Sviluppatore, Firebase;
+	\item[•]\textbf{Attori}: Sviluppatore;
 	\item[•]\textbf{Descrizione}: lo sviluppatore modifica i propri dati personali, cioè tutti i dati personali inseriti in fase di registrazione;
 	\item[•]\textbf{Precondizione}: lo sviluppatore visualizza la propria dashboard;
 	\item[•]\textbf{Postcondizione}: lo sviluppatore ha modificato uno o più dati personali; 
@@ -380,12 +385,25 @@
 		\item UC 4.11.3 - Modifica cognome;
 		\item UC 4.11.4 - Modifica password;
 		\item UC 4.11.5 - Modifica data di nascita;
-		\item UC 4.11.6 - Modifica lingua applicativo.
+		\item UC 4.11.6 - Modifica lingua interfaccia applicativo;
+		\item UC 4.11.7 - Conferma modifica dati.
+	\end{enumerate}
+\end{itemize}
+\subsubsection{UC 4.11.1 - Modifica email}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Sviluppatore;
+	\item[•]\textbf{Descrizione}: lo sviluppatore modifica la propria email;
+	\item[•]\textbf{Precondizione}: lo sviluppatore sta modificando i propri dati personali;
+	\item[•]\textbf{Postcondizione}: lo sviluppatore ha modificato la propria email; 
+	\item[•]\textbf{Flusso degli eventi}: 
+	\begin{enumerate}
+		\item Selezione campo email;
+		\item Modifica la stringa che rappresenta la propria email.
 	\end{enumerate}
 \end{itemize}
 \subsubsection{UC 4.11.2 - Modifica nome}
 \begin{itemize}
-	\item[•]\textbf{Attori}: Sviluppatore, Firebase;
+	\item[•]\textbf{Attori}: Sviluppatore;
 	\item[•]\textbf{Descrizione}: lo sviluppatore modifica il proprio nome;
 	\item[•]\textbf{Precondizione}: lo sviluppatore sta modificando i propri dati personali;
 	\item[•]\textbf{Postcondizione}: lo sviluppatore ha modificato il proprio nome; 
@@ -397,7 +415,7 @@
 \end{itemize}
 \subsubsection{UC 4.11.3 - Modifica cognome}
 \begin{itemize}
-	\item[•]\textbf{Attori}: Sviluppatore, Firebase;
+	\item[•]\textbf{Attori}: Sviluppatore;
 	\item[•]\textbf{Descrizione}: lo sviluppatore modifica il proprio cognome;
 	\item[•]\textbf{Precondizione}: lo sviluppatore sta modificando i propri dati personali;
 	\item[•]\textbf{Postcondizione}: lo sviluppatore ha modificato il proprio cognome; 
@@ -408,20 +426,96 @@
 	\end{enumerate}
 \end{itemize}
 \subsubsection{UC 4.11.4 - Modifica password}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm, keepaspectratio]{img/UC4114.png} 
+	\caption{Caso d'uso UC 4.11.4, modifica password per Sviluppatore}\label{fig:4114}
+\end{figure}
 \begin{itemize}
-	\item[•]\textbf{Attori}: Sviluppatore, Firebase;
+	\item[•]\textbf{Attori}: Sviluppatore;
 	\item[•]\textbf{Descrizione}: lo sviluppatore modifica il proprio cognome;
 	\item[•]\textbf{Precondizione}: lo sviluppatore sta modificando i propri dati personali;
 	\item[•]\textbf{Postcondizione}: lo sviluppatore ha modificato il proprio cognome; 
 	\item[•]\textbf{Flusso degli eventi}: 
 	\begin{enumerate}
-		\item UC 4.11.4.2 - Inserimento password corrente;
-		\item Modifica la stringa che rappresenta il cognome.
+		\item UC 4.11.4.1 - Inserimento nuova password;
+		\item UC 4.11.4.2 - Inserimento conferma nuova password.
 	\end{enumerate}
 \end{itemize}
 \subsubsection{UC 4.11.5 - Modifica data di nascita}
-\subsubsection{UC 4.11.5 - Modifica data di nascita}
-\subsubsection{UC 4.11.6 - Modifica lingua applicativo}
-\subsubsection{UC 4.11.4.2 - Inserimento password corrente}
-\subsubsection{UC 4.11.4.2 - Inserimento nuova password}
-\subsubsection{UC 4.11.4.3 - Inserimento conferma nuova password}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Sviluppatore;
+	\item[•]\textbf{Descrizione}: lo sviluppatore modifica il proprio cognome;
+	\item[•]\textbf{Precondizione}: lo sviluppatore sta modificando i propri dati personali;
+	\item[•]\textbf{Postcondizione}: lo sviluppatore ha modificato il proprio cognome; 
+	\item[•]\textbf{Flusso degli eventi}: 
+	\begin{enumerate}
+		\item Selezione campo data di nascita;
+		\item Modifica la stringa che rappresenta la data di nascita, inserendo il valore corretto.
+	\end{enumerate}
+\end{itemize}
+\subsubsection{UC 4.11.6 - Modifica lingua interfaccia applicativo}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Sviluppatore;
+	\item[•]\textbf{Descrizione}: lo sviluppatore modifica la lingua dell'applicativo;
+	\item[•]\textbf{Precondizione}: lo sviluppatore sta modificando i propri dati personali;
+	\item[•]\textbf{Postcondizione}: lo sviluppatore ha modificato la lingua dell'applicativo; 
+	\item[•]\textbf{Flusso degli eventi}: 
+	\begin{enumerate}
+		\item Selezione campo dati lingua applicativo;
+		\item Selezione da un elenco predefinito la lingua dell'applicativo desiderata.
+	\end{enumerate}
+\end{itemize}
+
+
+\subsubsection{UC 4.11.4.1 - Inserimento nuova password}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Sviluppatore;
+	\item[•]\textbf{Descrizione}: lo sviluppatore inserisce la nuova password;
+	\item[•]\textbf{Precondizione}: lo sviluppatore sta modificando i propri dati personali;
+	\item[•]\textbf{Postcondizione}: lo sviluppatore ha inserito il valore della nuova password; 
+	\item[•]\textbf{Flusso degli eventi}: 
+	\begin{enumerate}
+		\item Selezione campo dati relativo alla nuova password;
+		\item Inserimento stringa rappresentante la password.
+	\end{enumerate}
+	\item[•]\textbf{Estensioni}:
+	\begin{enumerate}
+		\item UC 4.11.4.3 - Visualizzazione messaggio formato password non valido.
+	\end{enumerate}
+\end{itemize}
+
+\subsubsection{UC 4.11.4.2 - Inserimento conferma nuova password}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Sviluppatore;
+	\item[•]\textbf{Descrizione}: lo sviluppatore inserisce conferma la nuova password, reinserendola nell'apposito campo;
+	\item[•]\textbf{Precondizione}: lo sviluppatore sta modificando i propri dati personali;
+	\item[•]\textbf{Postcondizione}: lo sviluppatore ha inserito il valore del campo conferma nuova password; 
+	\item[•]\textbf{Flusso degli eventi}: 
+	\begin{enumerate}
+		\item Selezione campo dati relativo alla conferma nuova password;
+		\item Inserimento stringa rappresentante la password.
+	\end{enumerate}
+	\item[•]\textbf{Estensioni}:
+	\begin{enumerate}
+		\item UC 4.11.4.4 - Visualizzazione messaggio password diverse.
+	\end{enumerate}
+\end{itemize}
+
+\subsubsection{UC 4.11.4.3 - Visualizzazione messaggio formato password non valido}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Sviluppatore;
+	\item[•]\textbf{Descrizione}: lo sviluppatore ha inserito una password con un formato non valido;
+	\item[•]\textbf{Precondizione}: lo sviluppatore sta modificando i propri dati personali;
+	\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza un messaggio di errore relativo all'inserimento di una password che non rispetta un formato valido; 
+	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore ha inserito una password che non rispetta i criteri accettati dal sistema, pertanto riceve un messaggio che indica la presenza di un formato non adatto.
+\end{itemize}
+
+\subsubsection{UC 4.11.4.4 - Visualizzazione messaggio password diverse}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Sviluppatore;
+	\item[•]\textbf{Descrizione}: lo sviluppatore ha inserito un valore di conferma password che non corrisponde al valore della nuova password inserita precedentemente, pertanto visualizza un messaggio che indica che le due password non corrispondono;
+	\item[•]\textbf{Precondizione}: lo sviluppatore ha inserito il valore del campo conferma nuova password;
+	\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza un messaggio di errore relativo all'inserimento di una password che non combacia con quella inserita nel campo nuova password; 
+	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore ha inserito una password che non combacia con quella inserita nel campo nuova password, pertanto riceve un messaggio che indica la presenza di tale difformità.
+\end{itemize}
