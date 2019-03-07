@@ -1,14 +1,10 @@
 \subsection{Insegnante}
-
 \subsubsection{Panoramica insegnante}
-\begin{comment}
 \begin{figure}[H]
 \centering
-\includegraphics[width=17cm, height=20cm]{img/} 
+\includegraphics[width=17cm, keepaspectratio]{img/PanoramicaInsegnanti.png} 
 \caption{Panoramica insegnante}
 \end{figure}
-\end{comment}
-
 
 \subsubsection{UC 2.1 - Visualizzazione della dashboard}
 \begin{itemize}
@@ -20,13 +16,11 @@
 \end{itemize}
 
 \subsubsection{UC 2.2 - Inserimento di un nuovo esercizio}
-\begin{comment}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=17cm]{img/} 
+	\includegraphics[width=17cm]{img/UC22.png} 
 	\caption{Caso d'uso UC 2.2;}
 \end{figure}
-\end{comment}
 
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
@@ -37,7 +31,7 @@
 	\begin{enumerate}
 		\item UC 2.2.1 - Selezione lingua esercizio;
 		\item UC 2.2.2 - Inserimento testo esercizio;
-		\item UC 2.2.3 - Visualizzazione analisi automatica;
+		\item UC 2.2.3 - Visualizzazione soluzione automatica;
 		\item UC 2.2.4 - Modifica tag automatico;
 		\item UC 2.2.6 - Modifica visibilità esercizio;
 		\item UC 2.2.7 - Assegna esercizio;
@@ -82,13 +76,13 @@
 	\item[•] \textbf{Flusso degli eventi}: l'insegnante durante l'inserimento del testo, commette un errore di sintassi.
 \end{itemize}
 
-\subsubsection{UC 2.2.3 - Visualizzazione analisi automatica} 
+\subsubsection{UC 2.2.3 - Visualizzazione soluzione automatica} 
 \begin{itemize}
-	\item[•] \textbf{Attori}: Insegnante;
+	\item[•] \textbf{Attori}: Insegnante, Libreria di Pos-Tagging;
 	\item[•] \textbf{Descrizione}: l'insegnante visualizza l'analisi automatica;
 	\item[•] \textbf{Precondizione}: l'insegnante sta inserendo un esercizio;
-	\item[•] \textbf{Postcondizione}: l'insegnante visualizza l'analisi automatica generata per il testo inserito;
-	\item[•] \textbf{Flusso degli eventi}: l'insegnante durante l'inserimento di un esercizio, riceve una correzione automatica e ne visualizza il contenuto.
+	\item[•] \textbf{Postcondizione}: l'insegnante visualizza l'analisi automatica generata dalla libreria di Pos-Tagging per il testo inserito;
+	\item[•] \textbf{Flusso degli eventi}: l'insegnante durante l'inserimento di un esercizio, riceve una correzione automatica.
 \end{itemize}
 
 
@@ -197,13 +191,11 @@
 
 
 \subsubsection{UC 2.6 - Modifica esercizio}
-\begin{comment}
 \begin{figure}[H]
 \centering
-\includegraphics[width=17cm]{img/} 
+\includegraphics[width=17cm]{img/Modifica_esercizio.png} 
 \caption{Caso d'uso UC 2.6}
 \end{figure}
-\end{comment}
 
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
@@ -314,6 +306,12 @@
 
 
 \subsubsection{UC 2.8 - Modifica dati utente}
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm, keepaspectratio]{img/modificadatiutenteinsegnante.png} 
+\caption{Caso d'uso UC 2.8}
+\end{figure}
+
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: l'insegnante modifica i propri dati personali, cioè tutti i dati inseriti in fase di registrazione;
@@ -373,6 +371,12 @@
 
 
 \subsubsection{UC 2.8.4 - Modifica password}
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm]{img/modificapasswordinsegnante.png} 
+\caption{Caso d'uso UC 2.8.4}
+\end{figure}
+
 \begin{itemize}
 	\item[•]\textbf{Attori}: Insegnante;
 	\item[•]\textbf{Descrizione}: l'insegnante modifica la propria password;
@@ -429,7 +433,7 @@
 	\item[•]\textbf{Flusso degli eventi}: l'insegnante ha inserito una password che non rispetta i criteri accettati dal sistema, pertanto riceve un messaggio che indica la presenza di un formato non adatto.
 \end{itemize}
 
-\subsubsection{UC 4.11.4.4 - Visualizzazione messaggio password diverse}
+\subsubsection{UC 2.8.4.4 - Visualizzazione messaggio password diverse}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Insegnante;
 	\item[•]\textbf{Descrizione}: l'insegnante ha inserito un valore di conferma password che non corrisponde al valore della nuova password inserita precedentemente, pertanto visualizza un messaggio che indica che le due password non corrispondono;
@@ -488,7 +492,7 @@
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=17cm]{img/Crea_nuova_classe.png} 
-	\caption{Caso d'uso UC 2.9.1;}
+	\caption{Caso d'uso UC 2.9.1}
 \end{figure}
 
 \begin{itemize}
@@ -510,7 +514,7 @@
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=17cm]{img/Diagramma_attivita_crea_classe.png} 
-	\caption{Diagramma attività UC 2.9.1;}
+	\caption{Diagramma attività UC 2.9.1}
 \end{figure}
 
 
@@ -542,7 +546,13 @@
 \end{itemize}
 
 
-\subsubsection{UC 2.9.2 modifica classe}
+\subsubsection{UC 2.9.2 - Modifica classe}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=17cm]{img/ModificaClasse.png} 
+	\caption{Modifica classe UC 2.9.2}
+\end{figure}
+
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: l'insegnante modifica una classe;
@@ -587,7 +597,7 @@
 \end{itemize}
 
 
-\subsubsection{UC 2.9.3 elimina classe}
+\subsubsection{UC 2.9.3 - Elimina classe}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: l'insegnante elimina una classe;
@@ -595,3 +605,13 @@
 	\item[•] \textbf{Postcondizione}: l'insegnante ha eliminato una classe;
 	\item[•] \textbf{Flusso degli eventi}:  l'insegnante naviga nella lista delle classi, sceglie una classe specifica e seleziona l'apposito campo per l'eliminazione della classe.
 \end{itemize}
+
+\subsubsection{UC 2.10 - Logout}
+\begin{itemize}
+	\item[•] \textbf{Attori}: Insegnante;
+	\item[•] \textbf{Descrizione}:  l'insegnante effettua il logout dal sistema;
+	\item[•] \textbf{Precondizione}: l'insegnante si è autenticato;
+	\item[•] \textbf{Postcondizione}: l’insegnante effettua il logout dal sistema e viene reindirizzato alla pagina di login;
+	\item[•] \textbf{Flusso degli eventi}: l’insegnante seleziona il bottone di logout e esce dalla sessione.
+\end{itemize}
+
