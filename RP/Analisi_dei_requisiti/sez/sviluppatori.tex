@@ -44,8 +44,8 @@
 	\item[•]\textbf{Estensioni}:
 	\begin{enumerate}
 		\item UC 4.3.7 - Rimozione filtro;
-		\item UC 4.3.1.1 - Visualizzazione messaggio errore data errata;
-		\item UC 4.3.4.1 - Visualizzazione messaggio errore input errato.
+		\item UC 4.3.8 - Visualizzazione messaggio errore data errata;
+		\item UC 4.3.9 - Visualizzazione messaggio errore input errato.
 	\end{enumerate}
 	\item[•]\textbf{Inclusioni}:
 	\begin{enumerate}
@@ -65,22 +65,13 @@
 	\end{enumerate}
 	\item[•]\textbf{Estensioni}: 
 	\begin{enumerate}
-		\item UC 4.3.1.1 - Visualizzazione messaggio errore data errata;
-		\item UC 4.3.7 - Rimozione filtro.
+		\item UC 4.3.7 - Rimozione filtro;
+		\item UC 4.3.8 - Visualizzazione messaggio errore data errata;
 	\end{enumerate}
 	\item[•]\textbf{Inclusioni}:
 	\begin{enumerate}
 		\item UC 4.3.6 - Visualizzazione dati filtrati.
 	\end{enumerate}
-\end{itemize}
-
-\subsubsection{UC 4.3.1.1 - Visualizzazione messaggio errore data errata}
-\begin{itemize}
-	\item[•]\textbf{Attori}: Sviluppatore;
-	\item[•]\textbf{Descrizione}: lo sviluppatore visualizza un messaggio di errore sul periodo selezionato;
-	\item[•]\textbf{Precondizione}: lo sviluppatore ha inserito una data non conforme all'interno del filtro relativo al periodo temporale;
-	\item[•]\textbf{Postcondizione}: il filtro è stato erroneamente inserito pertanto viene visualizzato un messaggio di errore;
-	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore ha inserito una data non conforme, cioè che non rispetta il formato stabilito o che indica un periodo temporale non idoneo, pertanto visualizza un messaggio di errore.
 \end{itemize}
 
 \subsubsection{UC 4.3.2 - Inserimento filtro fonte}
@@ -135,17 +126,6 @@
 	\end{enumerate}
 \end{itemize}
 
-\subsubsection{UC 4.3.4.1 - Visualizzazione messaggio errore input errato}
-\begin{itemize}
-	\item[•]\textbf{Attori}: Sviluppatore;
-	\item[•]\textbf{Descrizione}: lo sviluppatore visualizza un messaggio di errore sulla ricerca.
-	\item[•]\textbf{Precondizione}: lo sviluppatore ha inserito una frase non conforme;
-	\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza un messaggio di errore relativo 
-	all'inserimento di un input errato, cioè non conforme a ciò che il sistema si attendeva.
-	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore inserisce un input non conforme, cioè contenente caratteri non ammessi, e visualizza un messaggio di input errato.
-\end{itemize}
-
-
 \subsubsection{UC 4.3.5 - Inserimento filtro livello attendibilità}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Sviluppatore;
@@ -186,6 +166,25 @@
 	\item[•]\textbf{Precondizione}: il filtro contiene un valore ed è applicato un filtraggio ai dati rispettando le condizioni di tale filtro;
 	\item[•]\textbf{Postcondizione}: il filtro è stato rimosso pertanto i dati visualizzati non rispetteranno più tale vincolo;
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona il filtro e lo rimuove.
+\end{itemize}
+
+\subsubsection{UC 4.3.8 - Visualizzazione messaggio errore data errata}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Sviluppatore;
+	\item[•]\textbf{Descrizione}: lo sviluppatore visualizza un messaggio di errore sul periodo selezionato;
+	\item[•]\textbf{Precondizione}: lo sviluppatore ha inserito una data non conforme all'interno del filtro relativo al periodo temporale;
+	\item[•]\textbf{Postcondizione}: il filtro è stato erroneamente inserito pertanto viene visualizzato un messaggio di errore;
+	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore ha inserito una data non conforme, cioè che non rispetta il formato stabilito o che indica un periodo temporale non idoneo, pertanto visualizza un messaggio di errore.
+\end{itemize}
+
+\subsubsection{UC 4.3.9 - Visualizzazione messaggio errore input errato}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Sviluppatore;
+	\item[•]\textbf{Descrizione}: lo sviluppatore visualizza un messaggio di errore sulla ricerca.
+	\item[•]\textbf{Precondizione}: lo sviluppatore ha inserito una frase non conforme;
+	\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza un messaggio di errore relativo 
+	all'inserimento di un input errato, cioè non conforme a ciò che il sistema si attendeva.
+	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore inserisce un input non conforme, cioè contenente caratteri non ammessi, e visualizza un messaggio di input errato.
 \end{itemize}
 
 \subsubsection{UC 4.4 - Visualizzazione storico frase}
@@ -390,7 +389,7 @@
 		\item UC 4.11.4 - Modifica password;
 		\item UC 4.11.5 - Modifica data di nascita;
 		\item UC 4.11.6 - Modifica lingua interfaccia applicativo;
-		\item UC 4.11.7 - Conferma modifica dati.
+		\item Conferma modifica dati.
 	\end{enumerate}
 \end{itemize}
 \subsubsection{UC 4.11.1 - Modifica email}
@@ -524,14 +523,14 @@
 	\end{enumerate}
 \end{itemize}
 
-\subsubsection{UC 4.11.7 - Conferma modifica dati}
-\begin{itemize}
-	\item[•]\textbf{Attori}: Sviluppatore;
-	\item[•]\textbf{Descrizione}: lo sviluppatore conferma la modifica dei dati inseriti;
-	\item[•]\textbf{Precondizione}: lo sviluppatore ha modificato i propri dati;
-	\item[•]\textbf{Postcondizione}: lo sviluppatore conferma la modifica e i dati vengono registrati nel sistema; 
-	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona l'opzione di conferma di modifica dati.
-\end{itemize}
+%\subsubsection{UC 4.11.7 - Conferma modifica dati}
+%\begin{itemize}
+%	\item[•]\textbf{Attori}: Sviluppatore;
+%	\item[•]\textbf{Descrizione}: lo sviluppatore conferma la modifica dei dati inseriti;
+%	\item[•]\textbf{Precondizione}: lo sviluppatore ha modificato i propri dati;
+%	\item[•]\textbf{Postcondizione}: lo sviluppatore conferma la modifica e i dati vengono registrati nel sistema; 
+%	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona l'opzione di conferma di modifica dati.
+%\end{itemize}
 
 \subsubsection{UC 4.12 - Logout}
 \begin{itemize}
