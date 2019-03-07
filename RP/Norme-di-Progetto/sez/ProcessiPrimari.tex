@@ -3,7 +3,8 @@ In questa sezione vengono descritte le norme che il team deve rispettare al fine
 \subsubsection{Studio di fattibilità}
 In seguito alla pubblicazione dei capitolati è compito del \textit{Responsabile di Progetto} convocare l'intero team al fine di discutere degli aspetti positivi e negativi dei vari capitolati.
 
-Successivamente, gli \textit{Analisti} devono effettuare lo Studio di Fattibilità per ogni capitolato, attenendosi anche a quello emerso dalla riunione precedente; per ogni capitolato deve essere scritto un documento contenente:
+Successivamente, gli \textit{Analisti} devono effettuare lo Studio di Fattibilità per ogni capitolato, attenendosi anche a quello emerso dalla riunione precedente.\\
+Per ogni capitolato deve essere scritto un documento contenente:
 \begin{itemize}
 \item \textbf{Informazioni sul capitolato};
 \item \textbf{Descrizione}: una sintesi del prodotto da realizzare secondo le richieste del capitolato;
@@ -13,42 +14,58 @@ Successivamente, gli \textit{Analisti} devono effettuare lo Studio di Fattibilit
 \item \textbf{Valutazione finale}: descrive le motivazioni decisive che hanno portato il gruppo a scegliere o a rigettare il capitolato.
 \end{itemize}
 %I documenti devono essere scritti sfruttando il linguaggio di %markup\ped{G} \LaTeX utilizzando il modello che lo stile del %documento fonrnitoli dall'Amministratore.
-Infine, questi documenti devono essere racchiusi in un unico documento: \SdF , che verrà sottoposto a verifica dai componenti preposti a tale compito.
+Infine, questi documenti devono essere racchiusi in un unico documento: \SdF, che verrà sottoposto a verifica dai componenti preposti a tale compito.
 
 \subsubsection{Piano di progetto}
-Redigere il \PdP \space sè compito dell'\textit{Amministratore}, nel documento è delineata la pianificazione del gruppo \gruppo \space per lo sviluppo
+Redigere il \PdP \space è compito del \textit{Responsabile di Progetto}, nel documento è delineata la pianificazione del gruppo \gruppo \space per lo sviluppo
 di "Colletta: piattaforma raccolta dati di analisi di testo". \newline
 Al fine di rendere chiara ed efficace l'esposizione, il piano di progetto contiene:
 \begin{itemize}
-	\item \textbf{Analisi dei rischi:}\\
-Vengono identificati nel dettaglio i rischi che potranno presentarsi, ognuno di essi viene categorizzato per probabilità e gravità, vengono fornite delle strategie atte a prevenire l’occorrenza di un dato rischio;
-\item \textbf{Descrizione del modello di sviluppo:}\\
-Viene descritto il modello di sviluppo che è stato scelto per la pianificazione;
-\item \textbf{Pianificazione del tempo e delle risorse:}\\
-Vengono pianificate le attività da eseguire nei diversi periodi del progetto e vengono stabilite le loro scadenze;
-\item \textbf{Preventivo sul costo dell'utilizzo delle risorse:}\\
-Viene data una stima di lavoro necessaria per periodo,
+	\item \textbf{Analisi dei rischi}: vengono identificati nel dettaglio i rischi che potranno presentarsi, ognuno di essi viene categorizzato per probabilità e gravità, vengono fornite delle strategie atte a prevenire l’occorrenza di un dato rischio;
+\item \textbf{Descrizione del modello di sviluppo}: viene descritto il modello di sviluppo che è stato scelto per la pianificazione;
+
+\item \textbf{Pianificazione del tempo e delle risorse}: vengono pianificate le attività da eseguire nei diversi periodi del progetto e vengono stabilite le loro scadenze;
+
+\item \textbf{Preventivo sul costo dell'utilizzo delle risorse}: viene data una stima di lavoro necessaria per periodo,
 proponendo un preventivo per il costo totale del progetto.
+
 \end{itemize}
 
-\subsubsection{Piano di qualifica}
-Il \PdP, redatto dall'\textit{Amministratore} è un documento contenente le strategie
-da adottare per garantire la qualità del materiale prodotto, esso è così suddiviso:\\
-
+\paragraph{Classificazione dei rischi}\mbox{}\\
+La classificazione dei rischi nel \PdP \space segue la seguente convenzione:
+\begin{center}
+	[ClasseDiRischio]-[Identificativo]
+\end{center}
+Dove:
 \begin{itemize}
-	\item \textbf{Qualità di processo:}\\
-	Viene illustrato lo standard adottato al fine di valutare la maturità e capacità dei processi;
-	\item \textbf{Qualità di prodotto:}\\
-	Viene illustrato lo standard adottato al fine di valutare, monitorare e misurare la qualità del software;
-	\item \textbf{Strategia:}\\
-	Viene illustrata la strategia adottata dal gruppo;
-	\item \textbf{Metriche:}\\
-	Vengono illustrate le metriche atte a monitorare lo stato e la qualità dei processi dei documenti e del software prodotto.
+\item ClasseDiRischio indica la classe di rischio fra le seguenti alla quale il rischio appartiene:
+	\begin{itemize}
+	\item \textbf{B}: Bassa;
+	\item \textbf{M}: Media;
+	\item \textbf{A}: Alta.
+	\end{itemize}
+\item Identificativo è un codice di tre cifre numeriche che identifica univocamente un rischio all'interno della sua classe.
+\end{itemize}
+
+Ad esempio, il tredicesimo rischio di livello medio è individuato dal seguente codice:
+\begin{center}
+M-013
+\end{center}
+
+\subsubsection{Piano di qualifica}
+Il \PdQ, redatto dall'\textit{Amministratore} è un documento contenente le strategie
+da adottare per garantire la qualità del materiale prodotto, esso è così suddiviso:
+\begin{itemize}
+	\item \textbf{Qualità di processo}: viene illustrato lo standard adottato al fine di valutare la maturità e capacità dei processi;
+	\item \textbf{Qualità di prodotto}: viene illustrato lo standard adottato al fine di valutare, monitorare e misurare la qualità del software;
+	\item \textbf{Strategia}: viene illustrata la strategia adottata dal gruppo;	
+	\item \textbf{Metriche}: vengono illustrate le metriche atte a monitorare lo stato e la qualità dei processi dei documenti e del software prodotto.
+
 \end{itemize}
 
 \subsection{Sviluppo}
 \subsubsection{Analisi dei requisiti}
-Gli \textit{Analisti} devono redigere l'\AdR al fine di:
+Gli \textit{Analisti} devono redigere l'\AdR  al fine di:
 \begin{itemize}
     \item[•] Fornire ai \textit{Progettisti} riferimenti affidabili e precisi;
     \item[•] Facilitare le revisioni del codice;
@@ -73,20 +90,20 @@ R-[Importanza][Tipo][Identificativo]
 \end{center}
 Dove:
 \begin{itemize}
-\item[•] Importanza, indica se il Requisito è:
+\item[•] Importanza indica se il Requisito è:
 \begin{itemize}
 \item \textbf{1}: Requisito obbligatorio;
 \item \textbf{2}: Requisito desiderabile;
 \item \textbf{3}: Requisito opzionale;
 \end{itemize}
-\item[•] Tipo, indica se il requisito è:
+\item[•] Tipo indica se il requisito è:
 \begin{itemize}
 \item \textbf{F}: Requisito funzionale;
 \item \textbf{Q}: Requisito di qualità;
 \item \textbf{P}: Requisito prestazionale;
 \item \textbf{V}: Requisito di vincolo;
 \end{itemize}
-\item[•] Identificativo: ovvero un codice univoco che contraddistingue il requisito.
+\item[•] Identificativo è un codice univoco che contraddistingue il requisito.
 \end{itemize}
 Ogni identificativo di requisito non deve essere più modificato nel tempo per evitare incongruenze tra i documenti.
 Deve essere realizzata una tabella che classifichi tutti i requisiti, incorporando una descrizione e la provenienza del requisito, indicata con il termine fonte.

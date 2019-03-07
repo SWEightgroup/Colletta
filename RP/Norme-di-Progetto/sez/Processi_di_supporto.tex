@@ -15,7 +15,9 @@ I documenti formali che verranno presentati saranno suddivisi in due categorie:
 		\item \textbf{Piano di progetto}: documento per l’analisi e la pianificazione della gestione delle risorse di tempo e umane;
 		\item \textbf{Piano di qualifica}: documento che descrive standard e obiettivi che il gruppo deve raggiungere per garantire la qualità di processo e prodotto;
 		\item \textbf{Glossario}: documento che raccoglie i termini appartenenti ad un ambito specifico e circoscritto. Contiene la spiegazione dei termini desueti o specialistici utilizzati nei documenti;
-		\item \textbf{Analisi dei requisiti}: documento che contiene l’analisi dei casi d’uso del prodotto e i diagrammi di interazioni previste con l’utente.
+		\item \textbf{Analisi dei requisiti}: documento che contiene l’analisi dei casi d’uso del prodotto e i diagrammi di interazioni previste con l'utente;
+		\item \textbf{Manuale Utente}: documento che fornisce all'utente finale istruzioni su come usare il prodotto software;
+		\item \textbf{Manuale Sviluppatore}: documento che fornisce allo sviluppatore indicazioni utili per comprendere ed espandere il prodotto software. 
 	\end{list}
 \end{itemize}
 \subsubsection{Classificazione dei documenti} \label{documenti}
@@ -38,10 +40,10 @@ Per ogni incontro deve essere nominato un segretario che si occuperà della stes
 		\item Data;
 		\item Partecipanti del gruppo;
 		\item Ora; 
-		\item Segretario;
+		\item Segretario.
 	\end{list}
 \item \textbf{Ordine del giorno}: lista degli argomenti che saranno oggetto di discussione; 
-\item \textbf{Resoconto}: verbale effettivo degli argomenti discussi.	
+\item \textbf{Resoconto}: verbale effettivo degli argomenti discussi. Il tracciamento delle decisioni prese sarà fatto nel seguente modo: ogni decisione sarà identificata da un codice: \textit{VER-NumeroVerbale-Data.x} dove \textit{NumeroVerbale} è il numero assegnato al verbale, \textit{Data} è la data in cui è stato svolto l'incontro e \textit{x} è un numero sequenziale.
 \end{itemize}
 Una volta approvato dal \textit{Responsabile di progetto}, il verbale deve essere distribuito a tutti i componenti del gruppo. In caso di verbale esterno il verbale dovrà essere inviato anche al proponente. 
 I nomi dei file dei verbali devono rispettare il seguente formato:
@@ -54,7 +56,7 @@ dove:
 \item \textbf{T} è la tipologia del verbale che si divide in:
 \begin{list}{$\circ$}{}
 \item \textbf{I}: interni;
-\item \textbf{E}: esterni;
+\item \textbf{E}: esterni.
 \end{list}
 \item \textbf{Data}: è la data in cui è stato svolto il verbale nel formato descritto nel paragrafo \hyperref[sec:Formati]{§4.1.6.1}.
 \end{itemize}
@@ -63,13 +65,13 @@ dove:
 I nomi dei documenti devono:
 \begin{itemize}
 \item Iniziare con la lettera maiuscola;
-\item Se composti da più parole anche esse devono avere la lettera maiuscola.
+\item Se composti da più parole anche esse devono avere la lettera maiuscola;
 \item Dopo il nome testuale, segue un carattere di underscore;
 \item Infine si indica la versione come descritto in \hyperref[sec:documentversion]{§4.1.4}.
 \end{itemize}
 Esempio:
 \begin{center}
-\text{NomeDocumento\_v1.0.0}
+\texttt{NomeDocumento\_v1.0.0}
 \end{center}
 I documenti devono essere esportati in formato PDF.
 
@@ -126,7 +128,7 @@ Ogni pagina, escluso il frontespizio ed indice, devono contenere:
 	\item[•] \textbf{Intestazione}:
 	\begin{list}{$\circ$}{}
 		\item Logo del gruppo (a sinistra);
-		\item Numero del capitolo corrente seguito dal nome (a destra);
+		\item Numero del capitolo corrente seguito dal nome (a destra).
 	\end{list}
 	\item[•] \textbf{Piè di pagina}:
 	\begin{list}{$\circ$}{}
@@ -225,27 +227,48 @@ Per la realizzazione dell'Analisi dei Requisiti la cartella destinata al salvata
 
 \subsubsection{Strumenti di supporto} 
 
-\paragraph{Stesura dei documenti}\mbox{}\\
+\paragraph{\LaTeX{}}\mbox{}\\
 L'intera documentazione deve essere prodotta utilizzando il {linguaggio di markup}\ped{G} \LaTeX{}, scelto dal team per i seguenti motivi:
 \begin{itemize}
 \item[•] Gestisce elegantemente e con facilità gli indici, i pedici, i riferimenti ed il glossario;
 \item[•] È un linguaggio che supporta il {versionamento}\ped{G};
 \item[•] Permette la suddivisione del documento in parti che rappresentano le varie sezioni facilitando la stesura.
 \end{itemize}
-Per utilizzare \LaTeX{} è necessario installare il compilatore pdflatex, integrato in un software come TexLive reperibile all'indirizzo \url{https://www.tug.org/texlive/}. Quest'ultimo è {cross platform}\ped{G}, {open source}\ped{G} e gratuito. Si consiglia l'installazione del pacchetto completo per evitare di installare pacchetti successivamente.
+Per utilizzare \LaTeX{} è necessario installare il compilatore pdflatex, integrato in un software come TexLive reperibile all'indirizzo  \url{https://www.tug.org/texlive/}. Quest'ultimo è {cross platform}\ped{G}, {open source}\ped{G} e gratuito. Si consiglia l'installazione del pacchetto completo per evitare di installare pacchetti successivamente.
 Per la stesura del documento si consiglia Texmaker, il quale presenta le seguenti peculiarità:
 \begin{itemize}
 	\item[•] Compilatore e visualizzatore {PDF}\ped{G} per il documento prodotto;
-	\item[•] Evidenziazione della sintassi;
+	\item[•] Evidenziamento della sintassi;
 	\item[•] Completamento automatico.
 \end{itemize}  
 Il software è reperibile all'indirizzo \url{http://www.xm1math.net/texmaker/}, è cross-platform ed è gratuito.
 
-\paragraph{Controllo ortografico}\mbox{}\\
-Al termine della stesura dei documenti, prima di alla fase di verifica del documento, un \textit{Redattore} deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice {Gulpease}\ped{G}.
+\paragraph{GNU Aspell}\mbox{}\\
+Al termine della stesura dei documenti, prima della fase di verifica del documento, un \textit{Redattore} deve effettuare un controllo ortografico sui file tex tramite GNU Aspell, reperibile al seguente link:
+\begin{center}
+	\url{http://aspell.net/}
+\end{center}
+Il dizionario italiano per l'applicativo, insieme alle istruzioni per l'installazione, è disponibile al seguente link:
+\begin{center}
+	\url{https://ftp.gnu.org/gnu/aspell/dict/0index.html}
+\end{center}
+Il programma esegue da terminale con il seguente comando:
+\begin{center}
+	\texttt{aspell -c -t nomeFile.tex -d it}
+\end{center}
+
+\paragraph{MAGIC}\mbox{}\\
+Per il calcolo dell'indice di Gulpease, il gruppo \gruppo \space si avvale dello script MAGIC (Magic Automatic Gulpease Index Calulator) sviluppato internamente.
+Il tool esegue automaticamente ogni giorno e svolge i seguenti step:
+\begin{enumerate}
+	\item Compilazione di tutti i documenti;
+	\item Calcolo dell'indice di Gulpease per ogni documento;
+	\item Salvataggio dei valori ottenuti in foglio di calcolo Google.
+\end{enumerate}
+I valori inseriti sono automaticamente plottati in un grafico, che permette ai verificatori di monitorare celermente il livello di leggibilità di ogni documento.
 
 \subsubsection{Ciclo di vita dei documenti}
-Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di tasks offerto da Asana, come descritto nella sezione \hyperref[sec:documentversion]{§5.2} gestione dell'infrastruttura.
+Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio di task offerto da Asana, come descritto nella sezione \hyperref[sec:documentversion]{§5.2} gestione dell'infrastruttura.
 \begin{enumerate}
 \item Il \textit{Responsabile di progetto} crea il task, assegna i \textit{Redattori} ed i \textit{Verificatori}, e lo mette nella colonna "To Do" ;
 \item Quando i \textit{Redattori} assegnati iniziano la stesura del documento spostano il task nella colonna "In progress";
@@ -264,8 +287,7 @@ Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio d
 \item Se approvato, sarà compito dell'\textit{Amministratore di Progetto} effettuare il merge.
 \end{enumerate}
 \begin{figure}[H]
-\centering
-\includegraphics[width=17cm,trim=2 2 2 2, clip]{img/cicloVitaDocumentoAsana.pdf}
+\centering\includegraphics[width=17cm,trim=2 2 2 2, clip]{img/cicloVitaDocumentoAsana.pdf}
 \caption{Ciclo di vita di un documento}
 \label{fig:document_lifecycle}
 \end{figure}
@@ -276,11 +298,29 @@ Ogni diagramma di caso d’uso è identificato in alto a sinistra dal suo codice
 
 \subsection{Qualità}
 \subsubsection{Scopo}
-\subsubsection{Misurazioni e metriche}
-\paragraph{Documenti}\mbox{}\\
-Le metriche presentate in questa sezione hanno come scopo fornire dei parametri per garantire un buon livello di leggibilità dei documenti.
+Questa sezione descrive le classificazioni e le formule per il calcolo delle metriche necessarie per assicurare la qualità.
 
-\subparagraph{Indice Gulpease}\mbox{}\\
+\subsubsection{Classificazione delle metriche}
+Per garantire la qualità del lavoro gli Amministratori hanno definito delle metriche, che devono però rispettare la seguente notazione M[categoria][numero] dove:
+\begin{itemize}
+	\item{categoria}: indica la categoria della metrica, può assume i valori:
+	\begin{itemize}
+		\item D per indicare le metriche di documenti;
+		\item S per indicare le metriche di software;
+		\item P per indicare le metriche di processi.
+	\end{itemize}
+	\item{numero}: identifica in maniera univoca la metrica in ogni categoria, assume un valore intero a 3 tre cifre incrementale a partire da 1.
+\end{itemize}
+Ad esempio la prima metrica sui documenti sarà classificata in questo modo:
+\begin{center}
+	MD001
+\end{center}
+
+\paragraph{Metriche Documenti}\mbox{}\\
+Le metriche presentate in questa sezione hanno come scopo fornire delle metriche per garantire un buon livello di leggibilità dei documenti.
+
+
+\subparagraph{MD001 - Indice Gulpease}\mbox{}\\
 L'Indice Gulpease è un indice di leggibilità di un testo tarato sulla lingua italiana. Rispetto ad altri ha il vantaggio di utilizzare la lunghezza delle parole in lettere anziché in sillabe, semplificandone il calcolo automatico.
 L'indice di Gulpease considera due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero delle lettere.
 L'indice di Gulpease può assumere valori fra 0 e 100 e si calcola come segue:
@@ -288,14 +328,15 @@ L'indice di Gulpease può assumere valori fra 0 e 100 e si calcola come segue:
 IG = 89 + \frac{300 \cdot \textit{(numero delle frasi)} - 10 \cdot \textit{(numero delle lettere)}}{\textit{numero delle parole}}
 \]
 
-\paragraph{Software}\mbox{}\\
-\subparagraph{Numero di Metodi}\mbox{}\\
+\paragraph{Metriche Software}\mbox{}\\
+Le metriche presentate in questa sezione hanno come scopo fornire delle metriche per garantire un buon livello di qualità del software.
+\subparagraph{MS001 - Numero di Metodi}\mbox{}\\
 Numero medio di metodi contenuti nelle classi di un package. Un numero di metodi troppo alto può indicare la necessità di scomporre una classe. Un numero di metodi troppo basso, d'altro canto, deve far riflettere sull'effettiva utilità della classe presa in esame.
-\subparagraph{Numero di Parametri}\mbox{}\\
+\subparagraph{MS002 - Numero di Parametri}\mbox{}\\
 Numero di parametri passati a un metodo. Un eccessivo numero di parametri passati ad un metodo può indicare un'eccessiva complessità dello stesso, che va scomposto o quanto meno ripensato.
-\subparagraph{Funzioni di interfaccia per package}\mbox{}\\
+\subparagraph{MS003 - Funzioni di interfaccia per package}\mbox{}\\
 Numero di funzioni che un package espone. Un valore troppo elevato potrebbe indicare un errore di progettazione.
-\subparagraph{Complessità Ciclomatica}\mbox{}\\
+\subparagraph{MS004 - Complessità Ciclomatica}\mbox{}\\
 La Complessità Ciclomatica (CC) è una metrica software che misura la complessità di un programma contando il numero di cammini linearmente indipendenti attraverso il grafo di controllo di flusso. In questo grafo, i nodi corrispondono a gruppi indivisibili di istruzioni, mentre gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo gruppo: sono quindi responsabili dell'aumento della CC i punti decisionali, \emph{if} e \emph{for}.
 Tenere bassa la CC può portare a vari vantaggi:
 \begin{itemize}
@@ -313,43 +354,37 @@ dove:
 	\item \emph{n} = numero di nodi del grafo;
 	\item \emph{p} = numero di componenti connesse.
 \end{itemize}
-\subparagraph{Campi dati per classe}\mbox{}\\
+\subparagraph{MS005 - Campi dati per classe}\mbox{}\\
 Numero di campi dati contenuti da una classe. Una classe con troppi campi dati può essere sintomo di cattiva progettazione e va ripensata.
-\subparagraph{Commenti per linee di codice}\mbox{}\\
-Rapporto fra le righe di codice (righe vuote escluse) e le righe di commento. Un codice ben commentato può essere compreso più facilmente e velocemente, facilitando le operazioni di manutenzione.
-\subparagraph{Code Coverage}\mbox{}\\
-Percentuale delle linee di codice coperte dai test.
-Il gruppo \gruppo \space si riserva di decidere in futuro i parametri da adottare.
-\subparagraph{Superamento test}\mbox{}\\
+\subparagraph{MS006 - Commenti per linee di codice}\mbox{}\\
+Rapporto fra numero di righe di commento e numero totale di righe (vuote escluse). Un codice ben commentato può essere compreso più facilmente e velocemente, facilitando le operazioni di manutenzione.
+\subparagraph{MS007 - Code Coverage}\mbox{}\\
+Percentuale delle linee di codice coperte dai test. Avere codice coperto da test riduce la possibilità di introdurre errori nel prodotto.
+\subparagraph{MS008 - Superamento test}\mbox{}\\
 Percentuale di test superati. Per avere un prodotto di qualità, è necessario che esso superi i test prestabiliti.
-\subparagraph{Requisiti obbligatori soddisfatti}\mbox{}\\
+\subparagraph{MS009 - Requisiti obbligatori soddisfatti}\mbox{}\\
 Percentuale di requisiti obbligatori stabiliti dalla proponente soddisfatti. \'E fondamentale, per la buona riuscita del progetto, soddisfare i requisiti obbligatori presenti nell'\AdR .
-	
-\paragraph{Metriche processi}\mbox{}
-\subparagraph{Schedule Variance}\mbox{}\\
+\subparagraph{MS010 - Media di build Travis settimanali}\mbox{}\\
+Media del numero di build effettuate su Travis CI settimanalmente. Questo valore permette al gruppo di controllare l'andamento del lavoro sul prodotto.
+\subparagraph{MS011 - Percentuale build Travis superate}\mbox{}\\
+Percentuale delle build Travis superate con successo. Troppe build fallite indicano la presenza di errori che non sono stati risolti nei tempi prestabiliti.
+
+\paragraph{Metriche processi}\mbox{}\\
+Le metriche presentate in questa sezione hanno come scopo fornire delle metriche per garantire un buon livello di qualità sui processi.
+\subparagraph{MP001 - Schedule Variance}\mbox{}\\
 La Schedule Variance indica se una certa attività o processo è in anticipo, in pari, o in ritardo rispetto alla data di scadenza prevista.
 Se $SV < 0$ significa che l'attività o il processo è in pari o in anticipo, invece, se $SV \geq 0$ significa che l'attività è in ritardo.
 La Schedule Variance è calcolata come segue:
 \[
 SV = \textit{data conclusione effettiva} - \textit{data conclusione pianificata}
 \]
-\subparagraph{Budget Variance}\mbox{}\\
+\subparagraph{MP002 - Budget Variance}\mbox{}\\
 La Budget Variance misura, ad una determinata data, lo scostamento fra quanto speso e quanto preventivato. Se $BV \geq 0\%$ significa che il progetto sta spendendo le risorse più velocemente di quanto pianificato.
 La Budget Variance è calcolata come segue:
 \[
 BV = \frac{\textit{costo effettivo} - \textit{costo preventivato}}{\textit{costo preventivato}}
 \]
 
-\subsubsection{Strumenti di supporto}
-\paragraph{Calcolo indice di Gulpease}\mbox{}\\
-Per il calcolo dell'indice di Gulpease, il gruppo \gruppo \space si avvale dello script MAGIC (Magic Automatic Gulpease Index Calulator) sviluppato internamente.
-Il tool esegue automaticamente ogni giorno e svolge i seguenti step:
-\begin{enumerate}
-	\item Compilazione di tutti i documenti;
-	\item Calcolo dell'indice di Gulpease per ogni documento;
-	\item Salvataggio dei valori ottenuti in foglio di calcolo Google.
-\end{enumerate}
-I valori inseriti sono automaticamente plottati in un grafico, che permette ai verificatori di monitorare celermente il livello di leggibilità di ogni documento.
 
 \subsection{Configurazione}
 \subsubsection{Versionamento}
@@ -441,11 +476,26 @@ Per quanto riguarda le varie {distribuzioni Linux}\ped{G} non è disponibile un 
 non ufficiale all'indirizzo: \url{https://github.com/shiftkey/desktop}
 
 \paragraph{Maven}\mbox{}\\
-Il gruppo \gruppo si avvale di Apache Maven per la gestione della configurazione del modulo client Freeling scritto in Java. Tale strumento è fondamentale per consentire la ripetibilità della build sul pc di ogni membro del gruppo. Inoltre, permette di eseguire in maniera automatica tutti i test del modulo JUnit. Maven è reperibile al seguente link
+Il gruppo \gruppo  
+si avvale di Apache Maven per la gestione della configurazione del modulo client Freeling scritto in Java. Tale strumento è fondamentale per consentire la ripetibilità della build sul pc di ogni membro del gruppo. Inoltre, permette di eseguire in maniera automatica tutti i test del modulo JUnit. Maven è reperibile al seguente link: \href{https://maven.apache.org/}{"Apache Maven Project"}. 
+\\
+Posizionandosi nella cartella gestita da Maven e dando il seguente comando da terminale: 
 \begin{center}
-\url{https://maven.apache.org/}
+\texttt{\# mvn clean install}
 \end{center}
+si effettua la compilazione, si eseguono i test, si costruisce l’artefatto e lo si copia nel
+repository locale.
+\\
+Per effettuare solo i test di unità basterà lanciare il comando: 
+\begin{center}
+\texttt{\# mvn test}
+\end{center} 
+Maven mette a disposizione molteplici configurazioni per il testing, vedi: 
+\href{https://www.mkyong.com/maven/how-to-run-unit-test-with-maven/}{"How to run unit test with Maven"}.
 
+\paragraph{Travis CI}\mbox{}\\
+Il gruppo \gruppo \space si avvale si Travis CI per eseguire automaticamente build e test ogni qual volta avvenga un commit sul branch master. Ciò consente di accorgersi immediatamente di eventuali bug introdotti durante la codifica.\\
+Travis viene configurato attraverso il file \texttt{.travis.yml} posto nella root del progetto su GitHub. Per accedere alla dashboard di Travis CI, i membri del gruppo dovranno accedere a \url{https://travis-ci.org/} col proprio account.
 
 \subsection{Verifica}
 
@@ -470,10 +520,8 @@ La corretta implementazione del processo deve:
 \end{itemize}
 
 \paragraph{Analisi dinamica}\mbox{}\\
-Si applica solo alle componenti software e consiste nella verifica e validazione attraverso i test. Per garantire la correttezza è necessario che i test siano ripetibili, dato lo stesso input il test deve produrre sempre lo stesso output.  
-
-Solo i test con queste caratteristiche riescono a verificare la correttezza del prodotto.
-
+Si applica solo alle componenti software e consiste nella verifica e validazione attraverso i test. Per garantire la correttezza è necessario che i test siano ripetibili, dato lo stesso input il test deve produrre sempre lo stesso output.\\
+Solo i test con queste caratteristiche riescono a verificare la correttezza del prodotto.\\
 Per ogni test deve quindi essere definito: 
 \begin{itemize}
 \item[•] \textbf{Ambiente}: sistema hardware e software in cui viene eseguito il test; 
@@ -544,9 +592,39 @@ I diagrammi devono essere verificati manualmente dal \textit{Verificatore} che d
 \subsubsection{Strumenti di supporto}
 \paragraph{JUnit}\mbox{}\\
 Per la parte del codice scritta in Java, i test di unità saranno eseguiti tramite la libreria JUnit. La scelta è stata dettata dalla conoscenza dello strumento da gran parte dei membri del gruppo.
+I test sono localizzati all'interno della cartella \textit{test}, ogni file di test ha lo stesso nome della classe che deve testare con l'aggiunta della keyword \textit{Test} alla fine della parola. \\
+Ad esempio se si vuole testare il file HelloWorld.java il file di test sarà chiamato HelloWorld\textbf{Test}.java. \\
+I metodi di test devono avere l'annotazione \textit{@Test} posta prima della definizione del metodo, senza spazi, che avrà segnatura \textit{public void} e ogni metodo potrà avere un solo controllo al suo interno.\\
+Il nome del metodo per il test dovrà essere significativo per la funzionalità che si sta andando a testare, vedi: \href{https://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html}{"Naming standards for unit tests"}.\\
+Esempio di \texttt{HelloWorldTest}: 
+\begin{lstlisting}[language=Java]
+	public class HelloWorldTest{
+	
+		Helloworld object = new Helloworld();	// classe da testare
+		
+		@Test
+		public void checkText{
+			assertEquals("helloWorld", object.getHelloWorld());		
+			// assertEquals() controlla se i parametri sono uguali
+		}
+	}
+\end{lstlisting}
+La classe \textit{Assert} prevede molteplici metodi che verificano se il risultato atteso è uguale al risultato ritornato dal metodo che si sta testando, vedi \href{https://junit.org/junit4/javadoc/4.12/org/junit/Assert.html}{"Class Assert"}.\\
+Per maggiori informazioni riguardanti le proprietà delle annotazioni dei test vedi \href{https://junit.org/junit4/javadoc/latest/org/junit/Test.html}{"Annotation Type Test"}.
+
 
 \paragraph{Jest ed Enzyme}\mbox{}\\
-Jest ed Enzyme sono i framework che il gruppo \gruppo \space usa per la creazione di test sul codice React. Permettono, fra le altre cose, di creare mock e simulare input utente.\newline
+Il framework Jest e la libreria Enzyme saranno utilizzati dal gruppo per la creazione di test sul codice React. Permettono, fra le altre cose, di creare mock e simulare input utente. \\
+Per creare un test ci si dovrà posizionare all'interno della cartella \textit{components} e creare la cartella \textit{\_\_tests\_\_}, se non presente, e creare il file di test. \\
+Per testare, ad esempio, il file HelloWorld.jsx il file di test sarà chiamato HelloWorld.\textbf{test}.jsx}.
+\begin{verbatim}
+	it('sums numbers', () => {
+	  	expect(sum(1, 2)).toEqual(3);
+  		expect(sum(2, 2)).toEqual(4);
+	});
+\end{verbatim}
+Il comando \texttt{expect} verifica che i parametri siano uguali, vedi: \href{https://jestjs.io/docs/en/expect.html#content}{ API Reference: "Expect"} per altri controlli disponibili.\\
+Tramite il comando \texttt{npm test} vengono eseguiti i test sui file modificati, è possibile applicare i test ogni volta che viene apportata una modifica localmente tramite il comando \texttt{npm run test -- --watch}.\\ 
 Maggiori informazioni e i link per i download sono disponibili di seguito:
 \begin{itemize}
 	\item \textbf{Jest:} \url{https://jestjs.io/}

@@ -1,0 +1,75 @@
+\documentclass[a4paper, oneside, openany, dvipsnames, table]{article}
+\usepackage{../../template/SWEightStyle}
+\input{comandi.tex}
+
+\begin{document}
+\copertina{}
+
+\input{RegistroModifiche.tex}
+\newpage
+\tableofcontents
+\newpage
+\section{Informazioni Generali}
+\begin{itemize}
+\item \textbf{Motivazione:} Discussione sulle tecnologie e strumenti da utilizzare;
+\item \textbf{Luogo:} Google Hangouts;
+\item \textbf{Data:} 2019-02-12.
+\item \textbf{Partecipanti del gruppo:} \hfill
+	\begin{itemize}
+	\item Bacco Alberto;
+	\item Caccaro Sebastiano;
+	\item Ciagola Damien;
+	\item Corti Francesco;
+	\item Isachi Gheorghe;
+	\item Legrottaglie Gionata;
+	\item Magarotto Francesco;
+	\item Muraro Enrico.
+	\end{itemize} 
+\item \textbf{Ora:} 19:00 - 20:30;
+\item \textbf{Segretario:} Caccaro Sebastiano.
+\end{itemize}
+
+\section{Ordine del Giorno}
+\begin{itemize}
+	\item \textbf{Discussione tecnologie da utilizzare:} Sono state scelte le tecnologie da utilizzare per la PoC e per lo sviluppo del progetto;
+	\item \textbf{Poc:} Sono state discusse la forma e le modalità della PoC;
+	\item \textbf{Documentazione:} Sono stati discussi incrementi da apportare alla documentazione.
+\end{itemize}
+
+\section{Resoconto}
+\subsection{Discussione sulle tecnologie da utilizzare}
+Prima della riunione, ogni membro era stato chiamato a documentarsi sulle possibili tecnologie da utilizzare per la parte di realizzazione vera e propria del progetto didattico. Dopo averne discusso, la scelta è ricaduta su:
+\begin{itemize}
+	\item \textbf{Docker 18.09.1:} Per ridurre il rischio di incorrere in problematiche riguardanti la configurazione del software, quando possibile, andranno usate immagini Docker per uniformare l'ambiente di esecuzione fra i membri del gruppo;
+	\item \textbf{Python 3.6.3}: Verrà usato Java Spring REST per sviluppare le rest API per l'analisi grammaticale con FreeLing. Ci si avvarrà, inoltre, dei test di unità e della documentazione integrati nel linguaggio;
+	\item \textbf{Node Js 10.15.1}: Node Js è la piattaforma sulla quale verrà sviluppata la parte dinamica del progetto in Javascript;
+	\item \textbf{React:} il gruppo \gruppo \ userà il framework REACT per la programmazione dell'interfaccia utente. Ciò comporta l'adozione del design pattern REDUX;
+	\item \textbf{Bootstrap:} Bootstrap verrà usato per curare l'estetica del sito.
+\end{itemize}
+
+Si è inoltre discussa l'adozione, da parte di tutti i membri del gruppo, di \textit{Visual Studio Code} come ambiente di sviluppo principale, e del plugin \textit{Prettier} per far aderire lo stile del codice a quanto fissato nelle \NdP .
+
+\subsection{Proof of Concept}
+Si è discusso sugli obiettivi della PoC, e si è arrivati alle seguenti conclusioni:
+\begin{itemize}
+	\item La PoC deve essere il primo incremento per la realizzazione del progetto. Pertanto essa non può essere un pacchetto usa e getta, ma al contrario, deve essere la base per lo sviluppo nei successivi periodi;
+	\item La PoC dovrà includere l'analisi e la correzione di frasi, almeno in lingua italiana. Ciò richiede lo sviluppo delle Rest API. La raccolta dati e le divisioni per utenti possono essere trattate nei successivi periodi.
+\end{itemize}
+	
+\subsection{Documentazione}
+Sono stati discussi i prossimi incrementi da apportare alla documentazione, e si è fatto il punto sulle correzioni post RR da apportare:
+\begin{itemize}
+	\item \textbf{\PdP: }Leggera ripianificazione per dare maggior rilievo alla Proof of Concept.
+	\item \textbf{\PdQ: }Rimozione di alcune sezioni già spostate nelle \NdP. Aggiungere specifiche dei test come previsto dalle \NdP .
+\end{itemize}
+
+\subsection{Tracciamento delle decisioni}
+
+\begin{itemize}
+	\item \textbf{VER-1-2019-02-12.1}: uso di immagini Docker per uniformare ambiente di esecuzione;
+	\item \textbf{VER-1-2019-02-12.2}: Java Spring REST verrà usato per sviluppare le rest API;
+	\item \textbf{VER-1-2019-02-12.3}: utilizzo di Node.Js come piattaforma per lo sviluppo della parte dinamica con JavaScript;
+	\item \textbf{VER-1-2019-02-12.4}: adozione del Framework REACT per l'interfaccia utente con design pattern REDUX;
+	\item \textbf{VER-1-2019-02-12.5}: adozione della libreria Bootstrap per curare l'estetica del sito.
+\end{itemize}
+\end{document}

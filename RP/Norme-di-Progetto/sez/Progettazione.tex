@@ -3,16 +3,45 @@ Con l'obiettivo di rendere chiare le soluzioni progettuali utilizzate, è necess
 
 È richiesta la realizzazione di:
 \begin{itemize}
-	\item[•] \textbf{Diagrammi delle attività}: descrivono un processo o un algoritmo;
+	\item[•] \textbf{Diagrammi di attività}: descrivono un processo o un algoritmo;
 	\item[•] \textbf{Diagrammi dei package}: per raggruppare elementi e fornire un {namespace}\ped{G} per gli elementi raggruppati;
 	\item[•] \textbf{Diagrammi di sequenza}: rappresentano una sequenza di processi o funzioni;
 	\item[•] \textbf{Diagrammi di classi}: rappresentano le classi utilizzate e le loro relazioni.
 \end{itemize}
 In caso vengano utilizzati dei {Design Pattern}\ped{G} sarà necessario accompagnarli con una descrizione ed un diagramma UML.
 
-\subsubsection{Progettazione}\mbox{}\\
+\subparagraph{Diagrammi di attività}\mbox{}\\
+I diagrammi di attività sono rappresentati usando i formalismi definiti in UML 2. I principali sono riportati in seguito. Per indicare il consumo e la generazione di token, viene usata la seguente notazione: (T:token generati/token consumati).
+\begin{itemize}
+	\item \textbf{Nodo iniziale}: punto dal quale inizia l'esecuzione del processo. \'E rappresentato da un pallino nero (T:1/0);
+	\item \textbf{Activity}: azione elementare svolta dal programma. Si rappresenta con un rettangolo che ne contiene una descrizione il più sintetica possibile (T:1/1);
+	\item \textbf{Branch}: punto di decisione. Il flusso può intraprendere solo uno di n rami. Si rappresenta mediante un rombo con una freccia entrante e n uscenti. Ogni ramo è accompagnato da una \textit{guardia}, un'etichetta fra parentesi quadre che ne descrive la condizione;
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=6cm,keepaspectratio]{img/mergeBranch.png}
+		\caption{Merge e branch}
+	\end{figure}
+	\item \textbf{Merge}: punto in cui rami derivanti da un branch si uniscono. Si rappresenta come un rombo (T:1/1);
+	\item \textbf{Fork}: punto da cui partono 2 o più processi paralleli. Si rappresenta come una spessa linea orizzontale o verticale, con una freccia entrante e n uscenti (T:1/N);
+	\item \textbf{Join}: punto in sincronizzazione di processi paralleli. Si rappresenta come un Fork, ma con n frecce entranti e una uscente. Può essere accompagnato da un'espressione booleana che ne specifica il funzionamento (T:N/1);
+	\item \textbf{Pin}: passaggio di parametri fra activity. Si rappresenta tramite un quadratino dal quale escono o entrano delle frecce. \'E accompagnato dal tipo del parametro trasferito, posto a fianco;
+	\item \textbf{Subactivity}: indica che l'azione che l'activity svolge è descritta più in dettaglio in un diagramma separato. Una sotto-attività ha sempre un input e un output. Si indica con box simile a quello dell'activity che presenta un piccolo tridente in basso a sinistra (T:1/1);
+	\item \textbf{Partizioni}: forniscono una responsabilità all'esecuzione delle azioni. Si indicano tramite delle linee verticali che dividono il diagramma in più partizioni;
+	\item \textbf{Segnali}: rappresentano l'invio/ricezione di eventi a/da processi esterni. Si rappresentano attraverso un rettangolo con una concavità triangolare per la ricezione, e tramite un rettangolo con una convessità triangolare per l'invio. Entrambi contengono una breve descrizione del segnale;
+	\item \textbf{Timeout}: modellano dei timeout. Si presentano come una clessidra, possono avere frecce entranti e uscenti, e sono accompagnati dalla descrizione in linguaggio naturale dell'intervallo di tempo che deve trascorrere;
+	\item \textbf{Eventi Ripetuti}: modellano degli eventi che si ripetono nel tempo, generando un token ad ogni ripetizione. Possono avere solo frecce uscenti, e si rappresentano con una descrizione dell'intervallo della ripetizione;
+	\item \textbf{Nodi di fine flusso}: rappresenta la morte di un ramo di esecuzione. Si rappresenta tramite un cerchio con una X (T:1/0);
+	\item \textbf{Nodo finale} : rappresenta la fine dell'esecuzione di un processo. Si rappresenta tramite un cerchio pieno racchiuso in una circonferenza di raggio maggiore (T:0/1).
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=6cm,keepaspectratio]{img/nodi.png}
+		\caption{Nodi, da sinistra a destra: iniziale, finale, di di fine flusso.}
+	\end{figure}
+\end{itemize}
+
+\subsubsection{Progettazione}\mbox{}
 Dopo aver terminato il periodo di Analisi si passerà a quella di Progettazione che vede come protagonisti i 
-\textit{Progettisti}, durante la quale questi devono trovare una soluzione soddisfacente al problema, 
+\textit{Progettisti}, quest'ultimi hanno stabilito la, 
 definire un'{architettura}\ped{G} logica e i vari diagrammi che la rappresentano.
 La Progettazione permette di: 
 \begin{itemize}
@@ -65,6 +94,15 @@ Richiede che i vari componenti del sistema vengano integrati al fine di garantir
 \subsubsection{Codifica}
 In questa sezione vengono descritte le norme che i \textit{Programmatori} devono seguire con l'obiettivo di scrivere codice leggibile, affidabile e manutenibile.
 
+\paragraph{Linguaggi e Framework}\mbox{}\\
+Lo sviluppo del progetto didattico richiede l'uso di diversi framework e linguaggi di programmazione, ognuno mirato ad uno scopo preciso:
+\begin{itemize}
+	\item \textbf{JavaScript:} viene adottato Javascript alla specifica ES6 per lo sviluppo di gran parte della backend e della frontend;
+	\item \textbf{React:} viene adottato il framework React 16.8 per lo sviluppo della parte di frontend;
+	\item \textbf{Java:} viene adottato Java con le specifiche del JDK 11 per lo sviluppo del modulo client per la connessione al server Freeling;
+	\item \textbf{Spring:} viene adottato il framework Spring 2.0.5 per facilitare lo sviluppo del modulo sopracitato, avvalendosi solo del modulo RESTful.
+\end{itemize}
+
 \paragraph{Stile di codifica}\mbox{}\\
 Al fine di produrre codice uniforme, leggibile e manutenibile è richiesto che vengano rispettate
 le seguenti convenzioni:
@@ -74,7 +112,7 @@ le seguenti convenzioni:
 \item[•] Deve essere presente almeno un breve commento descrittivo per ogni classe e metodo;
 \item[•] I commenti devono essere scritti in lingua inglese senza utilizzare abbreviazioni o altre ambiguità;
 \item[•] Le modifiche al codice devono sempre riflettersi sui relativi commenti;
-\item[•] Evitare commenti superflui, inappropriati o scurrili;
+\item[•] Evitare commenti superflui o  inappropriati;
 \item[•] Ogni file deve presentare un’intestazione con le seguenti informazioni:
 \begin{list}{$\circ$}{}
 \item Percorso e nome del file;
@@ -83,21 +121,15 @@ le seguenti convenzioni:
 \item Breve descrizione del contenuto del file.
 \end{list}
 \end{itemize}
-Il codice deve seguire le linee guida reperibili all’indirizzo:
+Il codice Java deve seguire le linee guida per lo stile proposte da Google reperibili all'indirizzo:
 \begin{center}
-\url{http://google.github.io/styleguide/};
+	\url{http://google.github.io/styleguide/};
 \end{center}
-
-
-\paragraph{Linguaggi e Framework}\mbox{}\\
-Lo sviluppo del progetto didattico richiede l'uso di diversi framwork e linguaggi di programmazione, ognuno mirato ad uno scopo preciso:
-\begin{itemize}
-	\item \textbf{JavaScript:} viene adottato Javascript alla specifica ES6 per lo sviluppo di gran parte della backend e della frontend;
-	\item \textbf{React:} viene adottato il framework React 16.8 per lo sviluppo della frontend;
-	\item \textbf{Java:} viene adottato Java con le specifiche del JDK 11 per lo sviluppo del modulo client per la connessione al server Freeling;
-	\item \textbf{Spring:} viene adottato il framework Spring per facilitare lo sviluppo del modulo sopracitato, avvalendosi solo del modulo RESTful.
-\end{itemize}
-
+Il codice Javascript deve seguire le linee guida per lo stile proposte da
+{Airbnb}\ped{G} reperibili all'indirizzo:
+\begin{center}
+	\url{https://github.com/airbnb/javascript};
+\end{center}
 
 
 \subsubsection{Strumenti di supporto}
@@ -109,29 +141,29 @@ Il tracciamento dei requisiti e dei casi d’uso avviene attraverso la piattafor
  alla piattaforma e successivamente collegarli tra di loro, la schermata principale è 
  divisa in due colonne, in quella a sinistra c’è l’elenco dei requisiti e in quella a 
  destra i casi d’uso, cliccando su un elemento si apre una vista dettagliata nella quale 
- è possibile leggere i dettagli e collegare l’elemento, cliccando sul pulsante risolvi si 
+ è possibile leggere i dettagli e collegare l’elemento, cliccando sul pulsante \textit{risolvi} si 
  apre una finestra dalla quale è possibile selezionare gli elementi da collegare con l’aiuto 
  di un menu a tendina.\\Una volta completato l’inserimento ed il collegamento è possibile scaricare 
  l’intera lista in tabella \LaTeX.
 
 \paragraph{Visual studio code}\mbox{}\\
-L'{IDE}\ped{G} scelto per lo sviluppo è {Visual studio code}\ped{G}, versione: 1.31 disponibile al seguente link:\\
+L'{IDE}\ped{G} scelto per lo sviluppo è {Visual studio code}\ped{G}, versione: 1.31 disponibile al seguente link:
 \begin{center}
 	\url{https://code.visualstudio.com/Download};
 \end{center}
-Esso è stato scelto principalmente perchè gratis, include supporto per debugging e un controllo Git integrato oltre al {Syntax highlighting}\ped{G}, {IntelliSense}\ped{G}, {Snippet}\ped{G} e {code refactoring}\ped{G}.\\
+Esso è stato scelto principalmente perché gratuito, include supporto per il debugging e un controllo Git integrato oltre al {Syntax highlighting}\ped{G}, {IntelliSense}\ped{G}, {Snippet}\ped{G} e {code refactoring}\ped{G}.\\
 Si farà riferimento ai seguenti linguaggi, piattaforme, librerie e framework:
 \begin{itemize}
 	\item[•]{JavaScript}\ped{G} 1.8.5;
 	\item[•]{HTML5}\ped{G};
-	\item[•]{Node Js}\ped{G} 10.15.1;
+	\item[•]{Node.js}\ped{G} 10.15.1;
 	\item[•]{React}\ped{G} 16.8.1;
 	\item[•]{Bootstrap}\ped{G} 4.3.0.
 \end{itemize}
 
 I plugin utilizzati sono:
 \begin{itemize}
-	\item \textbf{Prettier - Code formatter:} Per la formattazione automatica del codice.
+	\item \textbf{Prettier - Code formatter}: per la formattazione automatica del codice.
 	Per settare la formattazione automatica al salvataggio del file si deve:
 	\begin{itemize}
 		\item Premere CMD + Shift + P;
@@ -139,10 +171,10 @@ I plugin utilizzati sono:
 		\item Andare in Text Editor > Formatting;
 		\item Spuntare la casella Format on save.
 	\end{itemize}
-	\item \textbf{Simple React Snippet:} Per facilitare la scrittura del codice con semplici comandi come:
+	\item \textbf{Simple React Snippet}: per facilitare la scrittura del codice con semplici comandi come:
 	\begin{itemize}
-		\item textbf{imrc:} Per l'import;
-		\item textbf{cc:} Per creare le classi;
+		\item \textbf{imrc:} Per l'import;
+		\item \textbf{cc:} Per creare le classi;
 		
 	\end{itemize}
 \end{itemize}
@@ -153,11 +185,8 @@ Per installare Docker nella versione 18.09, è necessario installare Docker Desk
 \begin{center}
 \url{https://www.docker.com/products/docker-desktop}
 \end{center}
-Mentre in Ubuntu Linux è consigliato seguire la seguente guida: 
-\begin{flushleft}
-	\url{https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04}
-\end{flushleft}
-Il Dockerfile contiene la configurazione per la compilazione e l'installazione dell'applicativo. 
+Mentre in Ubuntu Linux è consigliato seguire la seguente guida: \href{https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04}{"How To Install and Use Docker on Ubuntu 18.04"}.
+Il Dockerfile contiene la configurazione per la compilazione e l'installazione dell'applicativo.\\
 Per generare l'immagine è necessario eseguire il seguente comando:
 \begin{center}
 	\texttt{\# docker build --tag=freeling:alpha .}
@@ -167,7 +196,8 @@ Successivamente quest'ultima potrà essere eseguita con il comando:
 	\texttt{\# docker run -it --rm -p 50005:50005 freelingserver:alpha analyze -f es.cfg --server -p 50005}
 \end{center}
 L'istruzione crea un'istanza dell'immagine che è in attesa di richieste sulla porta 50005 che analizza frasi scritte in lingua spagnola.
-Per permettere di analizzare frasi in più lingue creare istanze diverse con il comando precedente (docker run) sostituendo \texttt{es.cfg} con la lingua d'interesse, ad esempio: \texttt{it.cfg}. Alcune delle lingue disponibili sono: 
+Per permettere di analizzare frasi in più lingue creare istanze diverse con il comando precedente (\texttt{docker run}) sostituendo \texttt{es.cfg} con la lingua d'interesse, ad esempio: \texttt{it.cfg}.\\
+Alcune delle lingue disponibili sono: 
 \begin{itemize}
 	\item \textbf{en.cfg}: predispone il sistema ad analizzare frasi in inglese;
 	\item \textbf{it.cfg}: predispone il sistema ad analizzare frasi in italiano;
@@ -183,7 +213,7 @@ Per la parte di sviluppo in Java, il gruppo \gruppo \ ha deciso di adottare l'ID
 	\item \'E gratuito;
 	\item Gran parte dei membri del gruppo ne hanno già conoscenza;
 	\item Integrazione con Maven;
-	\item \'E multipiattaforma.
+	\item \'E multipiattaforma;
 	\item Estensibilità tramite plugin per lo sviluppo con Spring.
 \end{itemize}
 Eclipse è reperibile al seguente link:\newline
@@ -191,15 +221,23 @@ Eclipse è reperibile al seguente link:\newline
 	\url{https://www.eclipse.org/downloads/}
 \end{center}
 
-\paragraph{Node Js}\mbox{}\\
-Per lo sviluppo lato server in linguaggio Javascript ci si avvale dell'ultima versione Long Term Support (LTS) di Node Js, che, al momento della stesura di questo documento, è la 10.15.1 LTS.
-Node Js è reperibile al seguente link:\newline
+\paragraph{Node.js}\mbox{}\\
+Per lo sviluppo lato server in linguaggio Javascript ci si avvale dell'ultima versione Long Term Support (LTS) di Node.js, che, al momento della stesura di questo documento, è la 10.15.1 LTS.
+Node.js è reperibile al seguente link:
 \begin{center}
 	\url{https://nodejs.org/it/}
+\end{center} 
+Il file package.json contiene tutte le configurazioni e dipendenze del progetto. Per installare tutti i moduli necessari è necessario eseguire il seguente comando nella cartella contenente il file package.json:
+\begin{center}
+	\texttt{npm install}
+\end{center}
+Per eseguire il progetto è necessario usare il comando:
+\begin{center}
+	\texttt{npm start}
 \end{center}
 
 \paragraph{Apache Tomcat}\mbox{}\\
-Per l'esecuzione e il deploy sul server del modulo client Freeling scritto in Java, viene usato Apache Tomcat, che permette l'esecuzione di codice Java lato server. Viene usata l'ultima versione, ovvero la 9.0.16.
+Per l'esecuzione e il deploy sul server del modulo client Freeling scritto in Java, viene usato Apache Tomcat, che permette l'esecuzione di codice Java lato server. La configurazione di Apache Tomcat viene gestita dal framework Spring.
 Maggiori informazioni sono reperibili al seguente link:\newline
 \begin{center}
 	\url{http://tomcat.apache.org/}
@@ -213,6 +251,15 @@ Maggiori informazioni sono reperibili al seguente link:\newline
 \end{center}
 
 \paragraph{Checkstyle}\mbox{}\\
-La conformità dello stile di codifica Java con le linee guida stabilite è garantita dal plugin Maven Checkstyle, che fa fallire la build in caso di errori nella forma del codice scritto.
+La conformità dello stile di codifica Java con le linee guida stabilite è garantita dal plugin Maven Checkstyle, che fa fallire la build in automatico in caso di errori nella forma del codice scritto. Il controllo sullo stile può essere eseguito anche manualmente con il seguente comando:
+\begin{center}
+	\texttt{mvn verify}
+\end{center}
+
+\paragraph{ESLint}\mbox{}\\
+Per rendere conforme lo stile di codifica per il linguaggio Javascript con la libreria ReactJs si utilizza il modulo ESLint di NodeJs con la configurazione rilasciata da Airbnb. Ad ogni compilazione del progetto il compilatore stamperà un warning per ogni non conformità riscontrata. Durante la verifica, il progetto verrà ritenuto conforme e completo solo se il compilatore non segnalerà nessun errore o warning.\\
+Per installare ESLint è necessario dare il comando: \texttt{npm install eslint --save-dev} che installerà il modulo localmente.\\
+Per settarlo invece dare il comando: \texttt{./node\_modules/.bin/eslint --init} oppure \texttt{npx eslint}.\\
+Maggiori informazioni sono presenti al seguente indirizzo: \href{https://eslint.org/}{"ESLint"}.
 
 
