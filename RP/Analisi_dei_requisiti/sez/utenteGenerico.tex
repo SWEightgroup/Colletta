@@ -201,25 +201,25 @@
 	\item[•]\textbf{Postcondizione}: l’utente ha inviato la richiesta di recupero;
 	\item[•]\textbf{Flusso degli eventi}:
 	\begin{enumerate}
-	\item UC 1.5.1 - Selezione procedura recupero credenziali;
-	\item UC 1.5.2 - Inserimento email;
-	\item UC 1.5.3 - Conferma smarrimento credenziali;
-	\item UC 1.5.4 - Inserimento nuova password;
-	\item UC 1.5.5 - Inserimento conferma password;
-	\item UC 1.5.6 - Conferma modifica password.
+	\item Selezione procedura recupero credenziali;
+	\item UC 1.5.1 - Inserimento email;
+	\item Conferma smarrimento credenziali;
+	\item UC 1.5.2 - Inserimento nuova password;
+	\item UC 1.5.3 - Inserimento conferma password;
+	\item Conferma modifica password.
 	\end{enumerate}
 \end{itemize}
 
-\subsubsection{UC 1.5.1 - Selezione procedura recupero credenziali}
-\begin{itemize}
-	\item[•]\textbf{Attori}: Utente non autenticato;
-	\item[•]\textbf{Descrizione}: l’utente seleziona il collegamento che conduce alla pagina di recupero delle credenziali;
-	\item[•]\textbf{Precondizione}: l’utente non è autenticato;
-	\item[•]\textbf{Postcondizione}: l’utente visualizza la pagina di recupero delle credenziali;
-	\item[•]\textbf{Flusso degli eventi}: l'utente non autenticato seleziona l'opzione per il recupero delle credenziali e viene automaticamente reindirizzato alla pagina di recupero. 
-\end{itemize}
+%\subsubsection{UC 1.5.1 - Selezione procedura recupero credenziali}
+%\begin{itemize}
+%	\item[•]\textbf{Attori}: Utente non autenticato;
+%	\item[•]\textbf{Descrizione}: l’utente seleziona il collegamento che conduce alla pagina di recupero delle credenziali;
+%	\item[•]\textbf{Precondizione}: l’utente non è autenticato;
+%	\item[•]\textbf{Postcondizione}: l’utente visualizza la pagina di recupero delle credenziali;
+%	\item[•]\textbf{Flusso degli eventi}: l'utente non autenticato seleziona l'opzione per il recupero delle credenziali e viene automaticamente reindirizzato alla pagina di recupero. 
+%\end{itemize}
 
-\subsubsection{UC 1.5.2 - Inserimento email}
+\subsubsection{UC 1.5.1 - Inserimento email}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Utente non autenticato;
 	\item[•]\textbf{Descrizione}: l’utente non autenticato inserisce l'email utilizzata in fase di registrazione;
@@ -228,37 +228,29 @@
 	\item[•]\textbf{Flusso degli eventi}: l'utente non autenticato inserisce una stringa che rappresenta la email utilizzata in fase di registrazione. 
 \end{itemize}
 
-\subsubsection{UC 1.5.3 - Conferma smarrimento credenziali}
-\begin{itemize}
-	\item[•]\textbf{Attori}: Utente non autenticato;
-	\item[•]\textbf{Descrizione}: l’utente non autenticato conferma lo smarrimento delle credenziali;
-	\item[•]\textbf{Precondizione}: l’utente non è autenticato;
-	\item[•]\textbf{Postcondizione}: l’utente ha confermato lo smarrimento delle credenziali. Il sistema provvede a inviare una mail con il collegamento per il recupero password;
-	\item[•]\textbf{Flusso degli eventi}: l'utente non autenticato conferma lo smarrimento delle credenziali. 
-\end{itemize}
+%\subsubsection{UC 1.5.3 - Conferma smarrimento credenziali}
+%\begin{itemize}
+%	\item[•]\textbf{Attori}: Utente non autenticato;
+%	\item[•]\textbf{Descrizione}: l’utente non autenticato conferma lo smarrimento delle credenziali;
+%	\item[•]\textbf{Precondizione}: l’utente non è autenticato;
+%	\item[•]\textbf{Postcondizione}: l’utente ha confermato lo smarrimento delle credenziali. Il sistema provvede a inviare una mail con il collegamento per il recupero password;
+%	\item[•]\textbf{Flusso degli eventi}: l'utente non autenticato conferma lo smarrimento delle credenziali. 
+%\end{itemize}
 
-\subsubsection{UC 1.5.4 - Inserimento nuova password}
+\subsubsection{UC 1.5.2 - Inserimento nuova password}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Utente non autenticato;
 	\item[•]\textbf{Descrizione}: l’utente non autenticato inserisce la nuova password;
-	\item[•]\textbf{Precondizione}: l’utente non autenticato ha confermato lo smarrimento delle credenziali e visualizza il contenuto del collegamento ricevuto tramite email;
+	\item[•]\textbf{Precondizione}: l’utente non autenticato visualizza il contenuto del collegamento ricevuto tramite email;
 	\item[•]\textbf{Postcondizione}: l'utente ha inserito la nuova password;
 	\item[•]\textbf{Flusso degli eventi}: l'utente non autenticato seleziona il campo di input relativo all'inserimento della nuova password e inserisce una stringa che rappresenta la nuova password.
 	\item[•]\textbf{Estensioni}:
 	\begin{enumerate}
-		\item UC 1.5.4.1 - Visualizzazione messaggio di errore formato password;
+		\item UC 1.5.4 - Visualizzazione messaggio di errore formato password;
 	\end{enumerate}
 \end{itemize}
-\subsubsection{UC 1.5.4.1 - Visualizzazione messaggio di errore formato password}
-\begin{itemize}
-	\item[•]\textbf{Attori}: Utente non autenticato;
-	\item[•]\textbf{Descrizione}: l’utente non autenticato visualizza un messaggio di errore in quanto la password inserita non soddisfa i requisiti richiesti;
-	\item[•]\textbf{Precondizione}: l’utente non autenticato ha inserito la nuova password;
-	\item[•]\textbf{Postcondizione}: l'utente non autenticato visualizza un messaggio di errore relativo all'inserimento di una password che non soddisfa i requisiti richiesti;
-	\item[•]\textbf{Flusso degli eventi}: l'utente non autenticato ha inserito una password con un formato non idoneo, pertanto visualizza un messaggio di errore.
-\end{itemize}
 
-\subsubsection{UC 1.5.5 - Inserimento conferma password}
+\subsubsection{UC 1.5.3 - Inserimento conferma password}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Utente non autenticato;
 	\item[•]\textbf{Descrizione}: l’utente non autenticato re-inserisce la nuova password;
@@ -267,11 +259,20 @@
 	\item[•]\textbf{Flusso degli eventi}: l'utente non autenticato seleziona il campo di input relativo all'inserimento della conferma password e re-inserisce la nuova password.
 	\item[•]\textbf{Estensioni}:
 	\begin{enumerate}
-		\item UC 1.5.5.1 - Visualizzazione messaggio di errore password diverse;
+		\item UC 1.5.5 - Visualizzazione messaggio di errore password diverse;
 	\end{enumerate}
 \end{itemize}
 
-\subsubsection{UC 1.5.5.1 - Visualizzazione messaggio di errore password diverse}
+\subsubsection{UC 1.5.4 - Visualizzazione messaggio di errore formato password}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Utente non autenticato;
+	\item[•]\textbf{Descrizione}: l’utente non autenticato visualizza un messaggio di errore in quanto la password inserita non soddisfa i requisiti richiesti;
+	\item[•]\textbf{Precondizione}: l’utente non autenticato ha inserito la nuova password;
+	\item[•]\textbf{Postcondizione}: l'utente non autenticato visualizza un messaggio di errore relativo all'inserimento di una password che non soddisfa i requisiti richiesti;
+	\item[•]\textbf{Flusso degli eventi}: l'utente non autenticato ha inserito una password con un formato non idoneo, pertanto visualizza un messaggio di errore.
+\end{itemize}
+
+\subsubsection{UC 1.5.5 - Visualizzazione messaggio di errore password diverse}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Utente non autenticato;
 	\item[•]\textbf{Descrizione}: l’utente non autenticato visualizza un messaggio di errore in quanto la conferma password inserita non ha lo stesso valore della password precedente;
@@ -280,11 +281,11 @@
 	\item[•]\textbf{Flusso degli eventi}: l'utente non autenticato ha inserito la conferma password con un valore diverso rispetto alla password precendentemente inserita, pertanto visualizza un messaggio di errore.
 \end{itemize}
 
-\subsubsection{UC 1.5.6 - Conferma modifica password}
-\begin{itemize}
-	\item[•]\textbf{Attori}: Utente non autenticato;
-	\item[•]\textbf{Descrizione}: l’utente non autenticato conferma la modifica delle password;
-	\item[•]\textbf{Precondizione}: l’utente non autenticato ha inserito la conferma della nuova password (UC 1.5.5);
-	\item[•]\textbf{Postcondizione}: l'utente viene reindirizzato alla pagina di autenticazione;
-	\item[•]\textbf{Flusso degli eventi}: l'utente non autenticato conferma la modifica della password e viene reindirizzato alla pagina di autenticazione.
-\end{itemize}
+%\subsubsection{UC 1.5.6 - Conferma modifica password}
+%\begin{itemize}
+%	\item[•]\textbf{Attori}: Utente non autenticato;
+%	\item[•]\textbf{Descrizione}: l’utente non autenticato conferma la modifica delle password;
+%	\item[•]\textbf{Precondizione}: l’utente non autenticato ha inserito la conferma della nuova password (UC 1.5.5);
+%	\item[•]\textbf{Postcondizione}: l'utente viene reindirizzato alla pagina di autenticazione;
+%	\item[•]\textbf{Flusso degli eventi}: l'utente non autenticato conferma la modifica della password e viene reindirizzato alla pagina di autenticazione.
+%\end{itemize}
