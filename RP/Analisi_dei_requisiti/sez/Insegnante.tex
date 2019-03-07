@@ -20,7 +20,6 @@
 \end{itemize}
 
 \subsubsection{UC 2.2 - Inserimento di un nuovo esercizio}
-
 \begin{comment}
 \begin{figure}[H]
 	\centering
@@ -136,7 +135,7 @@
 	\item[•] \textbf{Descrizione}: l'insegnante assegna un esercizio ad un alunno o una classe;
 	\item[•] \textbf{Precondizione}: l'insegnante sta inserendo un esercizio;;
 	\item[•] \textbf{Postcondizione}: l'insegnante ha assegnato l'esercizio ad un alunno o una classe (gruppo di alunni);
-	\item[•] \textbf{Flusso degli eventi}: l'insegnante durante l'inserimento di un esercizio decide a chi assegnarlo, se un alunno specifico o una classe di alunni.
+	\item[•] \textbf{Flusso degli eventi}: l'insegnante durante l'inserimento di un esercizio decide a chi assegnarlo, se ad un alunno specifico o una classe di alunni.
 \end{itemize}
 
 \subsubsection{UC 2.2.8 - Interruzione inserimento esercizio}
@@ -198,8 +197,6 @@
 
 
 \subsubsection{UC 2.6 - Modifica esercizio}
-
-
 \begin{comment}
 \begin{figure}[H]
 \centering
@@ -290,7 +287,7 @@
 \subsubsection{UC 2.6.6 - Annullamento modifiche}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
-	\item[•] \textbf{Descrizione}: l'insegnante annulla le modifiche inserite all'interno di un esercizio; 
+	\item[•] \textbf{Descrizione}: l'insegnante annulla le modifiche inserite; 
 	\item[•] \textbf{Precondizione}: l'insegnante sta modificando un esercizio;
 	\item[•] \textbf{Postcondizione}: l'esercizio non è modificato.
 	\item[•] \textbf{Flusso degli eventi}:l'insegnante interrompe la procedura di modifica, le modifiche non vengono apportate al sistema.
@@ -299,7 +296,7 @@
 \subsubsection{UC 2.6.7 - Salvataggio modifiche.} 
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
-	\item[•] \textbf{Descrizione}: l'insegnante salve le proprie modifiche;
+	\item[•] \textbf{Descrizione}: l'insegnante salva le proprie modifiche;
 	\item[•] \textbf{Precondizione}: l'insegnante ha modificato uno o più campi dell'esercizio;
 	\item[•] \textbf{Postcondizione}: l'insegnante ha salvato le modifiche;
 	\item[•] \textbf{Flusso degli eventi}: l'insegnante dopo aver apportato le opportune modifiche salva i cambiamenti che vengono aggiornati nel sistema.
@@ -325,7 +322,7 @@
 	\item[•] \textbf{Flusso degli eventi}:
 	\begin{enumerate}
 		\item Selezione procedura modifica dati personali;
-		\item UC 2.8.1 - Modifica email ;
+		\item UC 2.8.1 - Modifica email;
 		\item UC 2.8.2 - Modifica nome;
 		\item UC 2.8.3 - Modifica cognome;
 		\item UC 2.8.4 - Modifica password
@@ -390,22 +387,56 @@
 
 \subsubsection{UC 2.8.4.1 Inserimento nuova Password}
 \begin{itemize}
-	\item[•] \textbf{Attori}: Insegnante;
-	\item[•] \textbf{Descrizione}: l'insegnante
-	\item[•] \textbf{Precondizione}: l'insegnante
-	\item[•] \textbf{Postcondizione}: l'insegnante
-	\item[•] \textbf{Flusso degli eventi}: 
+	\item[•]\textbf{Attori}: Insegnante;
+	\item[•]\textbf{Descrizione}: l'insegnante inserisce la nuova password;
+	\item[•]\textbf{Precondizione}: l'insegnante sta modificando i propri dati personali;
+	\item[•]\textbf{Postcondizione}: l'insegnante ha inserito il valore della nuova password; 
+	\item[•]\textbf{Flusso degli eventi}: 
+	\begin{enumerate}
+		\item Selezione campo dati relativo alla nuova password;
+		\item Inserimento stringa rappresentante la password.
+	\end{enumerate}
+	\item[•]\textbf{Estensioni}:
+	\begin{enumerate}
+		\item UC 2.8.4.3 - Visualizzazione messaggio formato password non valido.
+	\end{enumerate}
 \end{itemize}
 
 \subsubsection{UC 2.8.4.2 Inserimento conferma nuova password}
 \begin{itemize}
-	\item[•] \textbf{Attori}: Insegnante;
-	\item[•] \textbf{Descrizione}: l'insegnante
-	\item[•] \textbf{Precondizione}: l'insegnante
-	\item[•] \textbf{Postcondizione}: l'insegnante
-	\item[•] \textbf{Flusso degli eventi}: 
+	\item[•]\textbf{Attori}: Insegnante;
+	\item[•]\textbf{Descrizione}: l'insegnante inserisce conferma la nuova password, reinserendola nell'apposito campo;
+	\item[•]\textbf{Precondizione}: l'insegnante sta modificando i propri dati personali;
+	\item[•]\textbf{Postcondizione}: l'insegnante ha inserito il valore del campo conferma nuova password; 
+	\item[•]\textbf{Flusso degli eventi}: 
+	\begin{enumerate}
+		\item Selezione campo dati relativo alla conferma nuova password;
+		\item Inserimento stringa rappresentante la password.
+	\end{enumerate}
+	\item[•]\textbf{Estensioni}:
+	\begin{enumerate}
+		\item UC 2.8.4.4 - Visualizzazione messaggio password diverse.
+	\end{enumerate}
 \end{itemize}
 
+
+\subsubsection{UC 2.8.4.3 - Visualizzazione messaggio formato password non valido}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Insegnante;
+	\item[•]\textbf{Descrizione}: l'insegnante ha inserito una password con un formato non valido;
+	\item[•]\textbf{Precondizione}: l'insegnante sta modificando i propri dati personali;
+	\item[•]\textbf{Postcondizione}: l'insegnante visualizza un messaggio di errore relativo all'inserimento di una password che non rispetta un formato valido; 
+	\item[•]\textbf{Flusso degli eventi}: l'insegnante ha inserito una password che non rispetta i criteri accettati dal sistema, pertanto riceve un messaggio che indica la presenza di un formato non adatto.
+\end{itemize}
+
+\subsubsection{UC 4.11.4.4 - Visualizzazione messaggio password diverse}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Insegnante;
+	\item[•]\textbf{Descrizione}: l'insegnante ha inserito un valore di conferma password che non corrisponde al valore della nuova password inserita precedentemente, pertanto visualizza un messaggio che indica che le due password non corrispondono;
+	\item[•]\textbf{Precondizione}: l'insegnante ha inserito il valore del campo conferma nuova password;
+	\item[•]\textbf{Postcondizione}: l'insegnante visualizza un messaggio di errore relativo all'inserimento di una password che non combacia con quella inserita nel campo nuova password; 
+	\item[•]\textbf{Flusso degli eventi}: l'insegnante ha inserito una password che non combacia con quella inserita nel campo nuova password, pertanto riceve un messaggio che indica la presenza di tale difformità.
+\end{itemize}
 	
 	
 \subsubsection{UC 2.8.5 - Modifica data di nascita}
@@ -436,26 +467,12 @@
 
 \subsubsection{UC 2.8.7 - Conferma modifica dati}
 \begin{itemize}
-	\item[•] \textbf{Attori}: Insegnante;
-	\item[•] \textbf{Descrizione}: l'insegnante
-	\item[•] \textbf{Precondizione}: l'insegnante
-	\item[•] \textbf{Postcondizione}: l'insegnante
-	\item[•] \textbf{Flusso degli eventi}: 
+	\item[•]\textbf{Attori}: Insegnante;
+	\item[•]\textbf{Descrizione}: l'insegnante conferma la modifica dei dati inseriti;
+	\item[•]\textbf{Precondizione}: l'insegnante ha modificato i propri dati;
+	\item[•]\textbf{Postcondizione}: l'insegnante conferma la modifica e i dati vengono registrati nel sistema; 
+	\item[•]\textbf{Flusso degli eventi}: l'insegnante seleziona l'opzione di conferma di modifica dati.
 \end{itemize}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 \subsubsection{UC 2.9 - Visualizzazione elenco classi}
@@ -481,12 +498,12 @@
 	\item[•] \textbf{Postcondizione}: l'insegnante ha creato una nuova classe di alunni;
 	\item[•] \textbf{Flusso degli eventi}:
 	\begin{enumerate}
-		\item UC 2.9.1.1 inserisci nome classe;
-		\item UC 2.9.1.2 inserisci allievo.
+		\item UC 2.9.1.1 - Inserisci nome classe;
+		\item UC 2.9.1.2 - Inserisci allievo.
 	\end{enumerate}
 	\item[•] \textbf{Flusso degli eventi alternativo}:
 	\begin{enumerate}
-		\item UC 2.9.1.3 rimuovi allievo.
+		\item UC 2.9.1.3 - Rimuovi allievo.
 	\end{enumerate}
 \end{itemize}
 
@@ -497,7 +514,7 @@
 \end{figure}
 
 
-\subsubsection{UC 2.9.1.1 inserisci nome classe}
+\subsubsection{UC 2.9.1.1 - Inserisci nome classe}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: l'insegnante inserisce un nome della classe;
@@ -506,7 +523,7 @@
 	\item[•] \textbf{Flusso degli eventi}: l'insegnante durante la creazione di una classe inserisce il nome della classe.
 \end{itemize}
 
-\subsubsection{UC 2.9.1.2 inserisci allievo}
+\subsubsection{UC 2.9.1.2 - Inserisci allievo}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: l'insegnante inserisce un allievo alla classe;
@@ -515,7 +532,7 @@
 	\item[•] \textbf{Flusso degli eventi}: l'insegnante durante la creazione di una classe inserisce un nuovo allievo al suo interno.
 \end{itemize}
 
-\subsubsection{UC 2.9.1.3 rimuovi allievo}
+\subsubsection{UC 2.9.1.3 - Rimuovi allievo}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: l'insegnante rimuove un allievo dalla classe;
@@ -528,21 +545,21 @@
 \subsubsection{UC 2.9.2 modifica classe}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
-	\item[•] \textbf{Descrizione}: l'insegnante modifica una classe ;
+	\item[•] \textbf{Descrizione}: l'insegnante modifica una classe;
 	\item[•] \textbf{Precondizione}: l'insegnante visualizza l'elenco delle classi;
 	\item[•] \textbf{Postcondizione}: l'insegnante ha modificato uno o più campi della classe ;
 	\item[•] \textbf{Flusso degli eventi}:
 	\begin{enumerate}
-		\item UC 2.9.2.1 modifica nome classe;
-		\item UC 2.9.2.2 inserisci allievo.
+		\item UC 2.9.2.1 - Modifica nome classe;
+		\item UC 2.9.2.2 - Inserisci allievo.
 	\end{enumerate}
 	\item[•] \textbf{Flusso degli eventi alternativo}:
 	\begin{enumerate}
-		\item UC 2.9.2.3 rimuovi allievo.
+		\item UC 2.9.2.3 - Rimuovi allievo.
 	\end{enumerate}
 \end{itemize}
 
-\subsubsection{UC 2.9.2.1 modifica nome classe}
+\subsubsection{UC 2.9.2.1 - Modifica nome classe}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: l'insegnante modifica il nome di una classe;
@@ -551,7 +568,7 @@
 	\item[•] \textbf{Flusso degli eventi}: l'insegnante modifica il nome di una classe precedentemente inserita.
 \end{itemize}
 
-\subsubsection{UC 2.9.2.2 inserisci allievo}
+\subsubsection{UC 2.9.2.2 - Inserisci allievo}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: l'insegnante aggiunge un allievo alla classe;
@@ -560,7 +577,7 @@
 	\item[•] \textbf{Flusso degli eventi}: durante la modifica di una classe, l'insegnante inserisce un nuovo allievo al suo interno.
 \end{itemize}
 
-\subsubsection{UC 2.9.2.3 rimuovi allievo}
+\subsubsection{UC 2.9.2.3 - Rimuovi allievo}
 \begin{itemize}
 	\item[•] \textbf{Attori}: Insegnante;
 	\item[•] \textbf{Descrizione}: l'insegnante rimuove un allievo dalla classe;
@@ -576,5 +593,5 @@
 	\item[•] \textbf{Descrizione}: l'insegnante elimina una classe;
 	\item[•] \textbf{Precondizione}: l'insegnante visualizza l'elenco delle classi;
 	\item[•] \textbf{Postcondizione}: l'insegnante ha eliminato una classe;
-	\item[•] \textbf{Flusso degli eventi}:  l'insegnante seleziona l'apposito campo per l'eliminazione della classe.
+	\item[•] \textbf{Flusso degli eventi}:  l'insegnante naviga nella lista delle classi, sceglie una classe specifica e seleziona l'apposito campo per l'eliminazione della classe.
 \end{itemize}
