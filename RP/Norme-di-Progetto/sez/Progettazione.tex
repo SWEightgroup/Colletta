@@ -39,9 +39,9 @@ I diagrammi di attività sono rappresentati usando i formalismi definiti in UML 
 	\end{figure}
 \end{itemize}
 
-\subsubsection{Progettazione}\mbox{}\\
+\subsubsection{Progettazione}\mbox{}
 Dopo aver terminato il periodo di Analisi si passerà a quella di Progettazione che vede come protagonisti i 
-\textit{Progettisti}, quest'ultimi hanno stabilito la , 
+\textit{Progettisti}, quest'ultimi hanno stabilito la, 
 definire un'{architettura}\ped{G} logica e i vari diagrammi che la rappresentano.
 La Progettazione permette di: 
 \begin{itemize}
@@ -98,7 +98,7 @@ In questa sezione vengono descritte le norme che i \textit{Programmatori} devono
 Lo sviluppo del progetto didattico richiede l'uso di diversi framework e linguaggi di programmazione, ognuno mirato ad uno scopo preciso:
 \begin{itemize}
 	\item \textbf{JavaScript:} viene adottato Javascript alla specifica ES6 per lo sviluppo di gran parte della backend e della frontend;
-	\item \textbf{React:} viene adottato il framework React 16.8 per lo sviluppo della frontend;
+	\item \textbf{React:} viene adottato il framework React 16.8 per lo sviluppo della parte di frontend;
 	\item \textbf{Java:} viene adottato Java con le specifiche del JDK 11 per lo sviluppo del modulo client per la connessione al server Freeling;
 	\item \textbf{Spring:} viene adottato il framework Spring 2.0.5 per facilitare lo sviluppo del modulo sopracitato, avvalendosi solo del modulo RESTful.
 \end{itemize}
@@ -141,7 +141,7 @@ Il tracciamento dei requisiti e dei casi d’uso avviene attraverso la piattafor
  alla piattaforma e successivamente collegarli tra di loro, la schermata principale è 
  divisa in due colonne, in quella a sinistra c’è l’elenco dei requisiti e in quella a 
  destra i casi d’uso, cliccando su un elemento si apre una vista dettagliata nella quale 
- è possibile leggere i dettagli e collegare l’elemento, cliccando sul pulsante risolvi si 
+ è possibile leggere i dettagli e collegare l’elemento, cliccando sul pulsante \textit{risolvi} si 
  apre una finestra dalla quale è possibile selezionare gli elementi da collegare con l’aiuto 
  di un menu a tendina.\\Una volta completato l’inserimento ed il collegamento è possibile scaricare 
  l’intera lista in tabella \LaTeX.
@@ -151,7 +151,7 @@ L'{IDE}\ped{G} scelto per lo sviluppo è {Visual studio code}\ped{G}, versione: 
 \begin{center}
 	\url{https://code.visualstudio.com/Download};
 \end{center}
-Esso è stato scelto principalmente perché gratis, include supporto per debugging e un controllo Git integrato oltre al {Syntax highlighting}\ped{G}, {IntelliSense}\ped{G}, {Snippet}\ped{G} e {code refactoring}\ped{G}.\\
+Esso è stato scelto principalmente perché gratuito, include supporto per il debugging e un controllo Git integrato oltre al {Syntax highlighting}\ped{G}, {IntelliSense}\ped{G}, {Snippet}\ped{G} e {code refactoring}\ped{G}.\\
 Si farà riferimento ai seguenti linguaggi, piattaforme, librerie e framework:
 \begin{itemize}
 	\item[•]{JavaScript}\ped{G} 1.8.5;
@@ -163,7 +163,7 @@ Si farà riferimento ai seguenti linguaggi, piattaforme, librerie e framework:
 
 I plugin utilizzati sono:
 \begin{itemize}
-	\item \textbf{Prettier - Code formatter:} Per la formattazione automatica del codice.
+	\item \textbf{Prettier - Code formatter}: per la formattazione automatica del codice.
 	Per settare la formattazione automatica al salvataggio del file si deve:
 	\begin{itemize}
 		\item Premere CMD + Shift + P;
@@ -171,7 +171,7 @@ I plugin utilizzati sono:
 		\item Andare in Text Editor > Formatting;
 		\item Spuntare la casella Format on save.
 	\end{itemize}
-	\item \textbf{Simple React Snippet:} Per facilitare la scrittura del codice con semplici comandi come:
+	\item \textbf{Simple React Snippet}: per facilitare la scrittura del codice con semplici comandi come:
 	\begin{itemize}
 		\item \textbf{imrc:} Per l'import;
 		\item \textbf{cc:} Per creare le classi;
@@ -186,10 +186,7 @@ Per installare Docker nella versione 18.09, è necessario installare Docker Desk
 \url{https://www.docker.com/products/docker-desktop}
 \end{center}
 Mentre in Ubuntu Linux è consigliato seguire la seguente guida: \href{https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04}{"How To Install and Use Docker on Ubuntu 18.04"}.
-\begin{flushleft}
-	\url{}
-\end{flushleft}
-Il Dockerfile contiene la configurazione per la compilazione e l'installazione dell'applicativo. 
+Il Dockerfile contiene la configurazione per la compilazione e l'installazione dell'applicativo.\\
 Per generare l'immagine è necessario eseguire il seguente comando:
 \begin{center}
 	\texttt{\# docker build --tag=freeling:alpha .}
@@ -199,7 +196,8 @@ Successivamente quest'ultima potrà essere eseguita con il comando:
 	\texttt{\# docker run -it --rm -p 50005:50005 freelingserver:alpha analyze -f es.cfg --server -p 50005}
 \end{center}
 L'istruzione crea un'istanza dell'immagine che è in attesa di richieste sulla porta 50005 che analizza frasi scritte in lingua spagnola.
-Per permettere di analizzare frasi in più lingue creare istanze diverse con il comando precedente (docker run) sostituendo \texttt{es.cfg} con la lingua d'interesse, ad esempio: \texttt{it.cfg}. Alcune delle lingue disponibili sono: 
+Per permettere di analizzare frasi in più lingue creare istanze diverse con il comando precedente (\texttt{docker run}) sostituendo \texttt{es.cfg} con la lingua d'interesse, ad esempio: \texttt{it.cfg}.\\
+Alcune delle lingue disponibili sono: 
 \begin{itemize}
 	\item \textbf{en.cfg}: predispone il sistema ad analizzare frasi in inglese;
 	\item \textbf{it.cfg}: predispone il sistema ad analizzare frasi in italiano;
@@ -215,7 +213,7 @@ Per la parte di sviluppo in Java, il gruppo \gruppo \ ha deciso di adottare l'ID
 	\item \'E gratuito;
 	\item Gran parte dei membri del gruppo ne hanno già conoscenza;
 	\item Integrazione con Maven;
-	\item \'E multipiattaforma.
+	\item \'E multipiattaforma;
 	\item Estensibilità tramite plugin per lo sviluppo con Spring.
 \end{itemize}
 Eclipse è reperibile al seguente link:\newline
