@@ -3,17 +3,43 @@ Con l'obiettivo di rendere chiare le soluzioni progettuali utilizzate, è necess
 
 È richiesta la realizzazione di:
 \begin{itemize}
-	\item[•] \textbf{Diagrammi delle attività}: descrivono un processo o un algoritmo;
+	\item[•] \textbf{Diagrammi di attività}: descrivono un processo o un algoritmo;
 	\item[•] \textbf{Diagrammi dei package}: per raggruppare elementi e fornire un {namespace}\ped{G} per gli elementi raggruppati;
 	\item[•] \textbf{Diagrammi di sequenza}: rappresentano una sequenza di processi o funzioni;
 	\item[•] \textbf{Diagrammi di classi}: rappresentano le classi utilizzate e le loro relazioni.
 \end{itemize}
 In caso vengano utilizzati dei {Design Pattern}\ped{G} sarà necessario accompagnarli con una descrizione ed un diagramma UML.
 
-
+\subparagraph{Diagrammi di attività}\mbox{}\\
+I diagrammi di attività sono rappresentati usando i formalismi definiti in UML 2. I principali sono riportati in seguito. Per indicare il consumo e la generazione di token, viene usata la seguente notazione: (T:token generati/token consumati).
+\begin{itemize}
+	\item \textbf{Nodo iniziale}: punto dal quale inizia l'esecuzione del processo. \'E rappresentato da un pallino nero (T:1/0);
+	\item \textbf{Activity}: azione elementare svolta dal programma. Si rappresenta con un rettangolo che ne contiene una descrizione il più sintetica possibile (T:1/1);
+	\item \textbf{Branch}: punto di decisione. Il flusso può intraprendere solo uno di n rami. Si rappresenta mediante un rombo con una freccia entrante e n uscenti. Ogni ramo è accompagnato da una \textit{guardia}, un'etichetta fra parentesi quadre che ne descrive la condizione;
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=6cm,keepaspectratio]{img/mergeBranch.png}
+		\caption{Merge e branch}
+	\end{figure}
+	\item \textbf{Merge}: punto in cui rami derivanti da un branch si uniscono. Si rappresenta come un rombo (T:1/1);
+	\item \textbf{Fork}: punto da cui partono 2 o più processi paralleli. Si rappresenta come una spessa linea orizzontale o verticale, con una freccia entrante e n uscenti (T:1/N);
+	\item \textbf{Join}: punto in sincronizzazione di processi paralleli. Si rappresenta come un Fork, ma con n frecce entranti e una uscente. Può essere accompagnato da un'espressione booleana che ne specifica il funzionamento (T:N/1);
+	\item \textbf{Pin}: passaggio di parametri fra activity. Si rappresenta tramite un quadratino dal quale escono o entrano delle frecce. \'E accompagnato dal tipo del parametro trasferito, posto a fianco;
+	\item \textbf{Subactivity}: indica che l'azione che l'activity svolge è descritta più in dettaglio in un diagramma separato. Una sotto-attività ha sempre un input e un output. Si indica con box simile a quello dell'activity che presenta un piccolo tridente in basso a sinistra (T:1/1);
+	\item \textbf{Partizioni}: forniscono una responsabilità all'esecuzione delle azioni. Si indicano tramite delle linee verticali che dividono il diagramma in più partizioni;
+	\item \textbf{Segnali}: rappresentano l'invio/ricezione di eventi a/da processi esterni. Si rappresentano attraverso un rettangolo con una concavità triangolare per la ricezione, e tramite un rettangolo con una convessità triangolare per l'invio. Entrambi contengono una breve descrizione del segnale;
+	\item \textbf{Timeout}: modellano dei timeout. Si presentano come una clessidra, possono avere frecce entranti e uscenti, e sono accompagnati dalla descrizione in linguaggio naturale dell'intervallo di tempo che deve trascorrere;
+	\item \textbf{Eventi Ripetuti}: modellano degli eventi che si ripetono nel tempo, generando un token ad ogni ripetizione. Possono avere solo frecce uscenti, e si rappresentano con una descrizione dell'intervallo della ripetizione;
+	\item \textbf{Nodi di fine flusso}: rappresenta la morte di un ramo di esecuzione. Si rappresenta tramite un cerchio con una X (T:1/0);
+	\item \textbf{Nodo finale} : rappresenta la fine dell'esecuzione di un processo. Si rappresenta tramite un cerchio pieno racchiuso in una circonferenza di raggio maggiore (T:0/1).
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=6cm,keepaspectratio]{img/nodi.png}
+		\caption{Nodi, da sinistra a destra: iniziale, finale, di di fine flusso.}
+	\end{figure}
+\end{itemize}
 
 \subsubsection{Progettazione}\mbox{}\\
-{\huge vedi correzioni FM	}
 Dopo aver terminato il periodo di Analisi si passerà a quella di Progettazione che vede come protagonisti i 
 \textit{Progettisti}, quest'ultimi hanno stabilito la , 
 definire un'{architettura}\ped{G} logica e i vari diagrammi che la rappresentano.

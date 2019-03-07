@@ -225,7 +225,7 @@ Per la realizzazione dell'Analisi dei Requisiti la cartella destinata al salvata
 
 \subsubsection{Strumenti di supporto} 
 
-\paragraph{Stesura dei documenti}\mbox{}\\
+\paragraph{\LaTeX{}}\mbox{}\\
 L'intera documentazione deve essere prodotta utilizzando il {linguaggio di markup}\ped{G} \LaTeX{}, scelto dal team per i seguenti motivi:
 \begin{itemize}
 \item[•] Gestisce elegantemente e con facilità gli indici, i pedici, i riferimenti ed il glossario;
@@ -241,10 +241,21 @@ Per la stesura del documento si consiglia Texmaker, il quale presenta le seguent
 \end{itemize}  
 Il software è reperibile all'indirizzo \url{http://www.xm1math.net/texmaker/}, è cross-platform ed è gratuito.
 
-\paragraph{Controllo ortografico}\mbox{}\\
-Al termine della stesura dei documenti, prima di alla fase di verifica del documento, un \textit{Redattore} deve effettuare un test sulla piattaforma alla pagina: \url{ http://www.corrige.it}, quest’ultima restituirà un’eventuale lista di errori ortografici, errori di sintassi e l’indice {Gulpease}\ped{G}.
+\paragraph{GNU Aspell}\mbox{}\\
+Al termine della stesura dei documenti, prima della fase di verifica del documento, un \textit{Redattore} deve effettuare un controllo ortografico sui file tex tramite GNU Aspell, reperibile al seguente link:
+\begin{center}
+	\url{http://aspell.net/}
+\end{center}
+Il dizionario italiano per l'applicativo, insieme alle istruzioni per l'installazione, è disponibile al seguente link:
+\begin{center}
+	\url{https://ftp.gnu.org/gnu/aspell/dict/0index.html}
+\end{center}
+Il programma esegue da terminale con il seguente comando:
+\begin{center}
+	\texttt{aspell -c -t nomeFile.tex -d it}
+\end{center}
 
-\paragraph{Calcolo indice di Gulpease}\mbox{}\\
+\paragraph{MAGIC}\mbox{}\\
 Per il calcolo dell'indice di Gulpease, il gruppo \gruppo \space si avvale dello script MAGIC (Magic Automatic Gulpease Index Calulator) sviluppato internamente.
 Il tool esegue automaticamente ogni giorno e svolge i seguenti step:
 \begin{enumerate}
@@ -344,7 +355,7 @@ dove:
 \subparagraph{MS005 - Campi dati per classe}\mbox{}\\
 Numero di campi dati contenuti da una classe. Una classe con troppi campi dati può essere sintomo di cattiva progettazione e va ripensata.
 \subparagraph{MS006 - Commenti per linee di codice}\mbox{}\\
-Rapporto fra le righe di codice (righe vuote escluse) e le righe di commento. Un codice ben commentato può essere compreso più facilmente e velocemente, facilitando le operazioni di manutenzione.
+Rapporto fra numero di righe di commento e numero totale di righe (vuote escluse). Un codice ben commentato può essere compreso più facilmente e velocemente, facilitando le operazioni di manutenzione.
 \subparagraph{MS007 - Code Coverage}\mbox{}\\
 Percentuale delle linee di codice coperte dai test.
 Il gruppo \gruppo \space si riserva di decidere in futuro i parametri da adottare.
@@ -476,6 +487,10 @@ Per effettuare solo i test di unità basterà lanciare il comando:
 \end{center} 
 Maven mette a disposizione molteplici configurazioni per il testing, vedi: 
 \href{https://www.mkyong.com/maven/how-to-run-unit-test-with-maven/}{"How to run unit test with Maven"}.
+
+\paragraph{Travis CI}\mbox{}\\
+Il gruppo \gruppo \space si avvale si Travis CI per eseguire automaticamente build e test ogni qual volta avvenga un commit sul branch master. Ciò consente di accorgersi immediatamente di eventuali bug introdotti durante la codifica.\\
+Travis viene configurato attraverso il file \texttt{.travis.yml} posto nella root del progetto su GitHub. Per accedere alla dashboard di Travis CI, i membri del gruppo dovranno accedere a \url{https://travis-ci.org/} col proprio account.
 
 \subsection{Verifica}
 

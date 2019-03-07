@@ -31,6 +31,27 @@ Viene data una stima di lavoro necessaria per periodo,
 proponendo un preventivo per il costo totale del progetto.
 \end{itemize}
 
+\paragraph{Classificazione dei rischi}\mbox{}\\
+La classificazione dei rischi nel \PdP \space segue la seguente convenzione:
+\begin{center}
+	[ClasseDiRischio]-[Identificativo]
+\end{center}
+Dove:
+\begin{itemize}
+\item ClasseDiRischio indica la classe di rischio fra le seguenti alla quale il rischio appartiene:
+	\begin{itemize}
+	\item \textbf{B}: Bassa;
+	\item \textbf{M}: Media;
+	\item \textbf{A}: Alta.
+	\end{itemize}
+\item Identificativo è un codice di tre cifre numeriche che identifica univocamente un rischio all'interno della sua classe.
+\end{itemize}
+
+Ad esempio, il tredicesimo rischio di livello medio è individuato dal seguente codice:
+\begin{center}
+M-013
+\end{center}
+
 \subsubsection{Piano di qualifica}
 Il \PdQ, redatto dall'\textit{Amministratore} è un documento contenente le strategie
 da adottare per garantire la qualità del materiale prodotto, esso è così suddiviso:\\
@@ -73,20 +94,20 @@ R-[Importanza][Tipo][Identificativo]
 \end{center}
 Dove:
 \begin{itemize}
-\item[•] Importanza, indica se il Requisito è:
+\item[•] Importanza indica se il Requisito è:
 \begin{itemize}
 \item \textbf{1}: Requisito obbligatorio;
 \item \textbf{2}: Requisito desiderabile;
 \item \textbf{3}: Requisito opzionale;
 \end{itemize}
-\item[•] Tipo, indica se il requisito è:
+\item[•] Tipo indica se il requisito è:
 \begin{itemize}
 \item \textbf{F}: Requisito funzionale;
 \item \textbf{Q}: Requisito di qualità;
 \item \textbf{P}: Requisito prestazionale;
 \item \textbf{V}: Requisito di vincolo;
 \end{itemize}
-\item[•] Identificativo: ovvero un codice univoco che contraddistingue il requisito.
+\item[•] Identificativo è un codice univoco che contraddistingue il requisito.
 \end{itemize}
 Ogni identificativo di requisito non deve essere più modificato nel tempo per evitare incongruenze tra i documenti.
 Deve essere realizzata una tabella che classifichi tutti i requisiti, incorporando una descrizione e la provenienza del requisito, indicata con il termine fonte.
