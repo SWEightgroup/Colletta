@@ -11,7 +11,7 @@
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=17cm]{img/UC11.png} 
+\includegraphics[width=17cm, keepaspectratio]{img/UC11.png} 
 \caption{Caso d'uso UC 1.1}
 \end{figure}
 
@@ -22,36 +22,46 @@
 \item[•]\textbf{Postcondizione}: l’utente viene autenticato all’interno del sistema;
 \item[•]\textbf{Flusso degli eventi}:
 \begin{enumerate}
-\item UC 1.1.1 - Inserimento nome utente;
-\item UC 1.1.2 - Inserimento password;
+\item UC 1.1.1 - Selezione lingua interfaccia applicativo;
+\item UC 1.1.2 - Inserimento nome utente;
+\item UC 1.1.3 - Inserimento password;
 
 \end{enumerate}
 \item[•]\textbf{Estensioni}:
 \begin{enumerate}
-\item UC 1.1.3 - visualizzazione messaggio credenziali errate;
+\item UC 1.1.4 - Visualizzazione messaggio credenziali errate;
 \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC 1.1.1 - Inserimento nome utente}
+\subsubsection{UC 1.1.1 - Selezione lingua interfaccia applicativo}
 \begin{itemize}
 \item[•]\textbf{Attori}: Utente non autenticato;
-\item[•]\textbf{Descrizione}: l’utente inserisce un nome utente durante l'autenticazione;
+\item[•]\textbf{Descrizione}: l’utente seleziona la lingua desiderata per l'interfaccia dell'applicativo;
+\item[•]\textbf{Precondizione}: l’utente non è autenticato e il valore della lingua dell'applicativo è basato sulla geolocalizzazione dell'utente o sull'ultima scelta effettuata;
+\item[•]\textbf{Postcondizione}: l’utente ha selezionato la lingua desiderata e il sistema mostra l'interfaccia di autenticazione nella lingua scelta;
+\item[•]\textbf{Flusso degli eventi}: l'utente visualizza il form per l'autenticazione e seleziona da un elenco predefinito la lingua da utilizzare all'interno del sistema.
+\end{itemize}
+
+\subsubsection{UC 1.1.2 - Inserimento email}
+\begin{itemize}
+\item[•]\textbf{Attori}: Utente non autenticato;
+\item[•]\textbf{Descrizione}: l’utente inserisce la propria email utilizzata in fase di registrazione;
 \item[•]\textbf{Precondizione}: l’utente non è autenticato;
-\item[•]\textbf{Postcondizione}: l’utente ha inserito il proprio nome utente;
-\item[•]\textbf{Flusso degli eventi}: l'utente visualizza il form per l'autenticazione e inserisce il nome utente in un apposito campo.
+\item[•]\textbf{Postcondizione}: l’utente ha inserito la propria email;
+\item[•]\textbf{Flusso degli eventi}: l'utente visualizza il form per l'autenticazione e inserisce l'email utilizzata in fase di registrazione in un apposito campo.
 
 \end{itemize}
 
-\subsubsection{UC 1.1.2 - Inserimento password}
+\subsubsection{UC 1.1.3 - Inserimento password}
 \begin{itemize}
 \item[•]\textbf{Attori}: Utente non autenticato;
-\item[•]\textbf{Descrizione}: l’utente inserisce una password;
+\item[•]\textbf{Descrizione}: l’utente inserisce una password inserita in fase di registrazione;
 \item[•]\textbf{Precondizione}: l'utente non è autenticato;
-\item[•]\textbf{Postcondizione}: l'utente ha inserito la propria password;
+\item[•]\textbf{Postcondizione}: l'utente ha inserito la password utilizzata in fase di registrazione;
 \item[•]\textbf{Flusso degli eventi}: l'utente visualizza il form per l'autenticazione e inserisce la password in apposito campo.
 \end{itemize}
 
-\subsubsection{UC 1.1.3 - Visualizzazione messaggio credenziali errate}
+\subsubsection{UC 1.1.4 - Visualizzazione messaggio credenziali errate}
 \begin{itemize}
 \item[•]\textbf{Attori}: Utente non autenticato;
 \item[•]\textbf{Descrizione}: l'utente ha avviato il login immettendo delle credenziali errati;
