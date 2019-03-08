@@ -1,13 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Colletta" company="SWEight" webLink="" view-date="2019-01-20" view-index="0" gantt-divider-location="427" resource-divider-location="300" version="2.8.10" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Colletta" company="SWEight" webLink="" view-date="2019-01-14" view-index="0" gantt-divider-location="427" resource-divider-location="300" version="2.8.10" locale="it">
     <description/>
     <view zooming-state="default:4" id="gantt-chart">
         <field id="tpd3" name="Nome" width="196" order="0"/>
         <field id="tpd4" name="Data d'inizio" width="114" order="1"/>
         <field id="tpd5" name="Data di fine" width="113" order="2"/>
-        <option id="taskLabelUp" value=""/>
-        <option id="color.recent">
-            <![CDATA[#3333ff #ffff00 #ff66cc #cc33ff #00ffff #ff33cc #0000ff #cccc00 #ff0099 #ffcc33]]>
-        </option>
+        <option id="color.recent"><![CDATA[#ff0000 #ff3300 #9999ff #3333ff #ffff00 #ff66cc #cc33ff #00ffff #ff33cc #0000ff]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Nome" width="210" order="0"/>
@@ -37,17 +34,22 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="45" name="Analisi dei Requisiti" color="#99ff33" meeting="false" start="2019-01-21" duration="20" complete="0" thirdDate="2018-11-27" thirdDate-constraint="0" expand="true">
-            <task id="183" name="Incremento" color="#ff9933" meeting="false" start="2019-01-21" duration="16" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true">
+        <task id="45" name="Analisi dei Requisiti" color="#99ff33" meeting="false" start="2019-01-21" duration="45" complete="0" thirdDate="2018-11-27" thirdDate-constraint="0" expand="true">
+            <task id="183" name="Correzione RR" color="#ff9933" meeting="false" start="2019-01-21" duration="16" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true">
                 <depend id="157" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="157" name="Verifica" color="#99ff33" meeting="false" start="2019-02-06" duration="4" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true"/>
+            <task id="157" name="Verifica" color="#99ff33" meeting="false" start="2019-02-06" duration="5" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true"/>
+            <task id="297" name="Incremento" color="#9999ff" meeting="false" start="2019-02-06" duration="27" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true"/>
+            <task id="306" name="Verifica" color="#99ff33" meeting="false" start="2019-02-27" duration="8" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="1" name="Piano di Qualifica" color="#ff6699" meeting="false" start="2019-01-21" duration="20" complete="0" thirdDate="2018-12-10" thirdDate-constraint="0" expand="true">
-            <task id="275" name="Incremento" color="#ff9933" meeting="false" start="2019-01-21" duration="16" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true">
+        <task id="1" name="Piano di Qualifica" color="#ff6699" meeting="false" start="2019-01-21" duration="46" complete="0" thirdDate="2018-12-10" thirdDate-constraint="0" expand="true">
+            <task id="275" name="Correzione RR" color="#ff9933" meeting="false" start="2019-01-21" duration="16" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true">
                 <depend id="278" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="278" name="Verifica" color="#99ff33" meeting="false" start="2019-02-06" duration="4" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true"/>
+            <task id="278" name="Verifica" color="#99ff33" meeting="false" start="2019-02-06" duration="5" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true"/>
+            <task id="309" name="Incremento" color="#9999ff" meeting="false" start="2019-02-06" duration="25" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true"/>
+            <task id="321" name="Esito verifica" color="#ff0000" meeting="false" start="2019-03-04" duration="3" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true"/>
+            <task id="311" name="Verifica" color="#99ff33" meeting="false" start="2019-02-27" duration="9" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="176" name="Technology Baseline" color="#8cb6ce" meeting="false" start="2019-01-22" duration="40" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
             <task id="178" name="Scelta tecnologie coivolte" color="#ff3333" meeting="false" start="2019-01-22" duration="8" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
@@ -62,15 +64,15 @@
             <task id="212" name="Testing POC" color="#00ff00" meeting="false" start="2019-02-09" duration="22" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true"/>
             <task id="217" name="Verifica PoC" color="#ffff00" meeting="false" start="2019-03-01" duration="2" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="73" name="Piano di Progetto" color="#ff9900" meeting="false" start="2019-01-21" duration="43" complete="0" thirdDate="2018-12-08" thirdDate-constraint="0" expand="true">
-            <task id="292" name="Incremento" color="#ff9933" meeting="false" start="2019-01-21" duration="16" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true">
+        <task id="73" name="Piano di Progetto" color="#ff9900" meeting="false" start="2019-01-21" duration="45" complete="0" thirdDate="2018-12-08" thirdDate-constraint="0" expand="true">
+            <task id="292" name="Correzione RR" color="#ff9933" meeting="false" start="2019-01-21" duration="16" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true">
                 <depend id="294" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="294" name="Verifica" color="#99ff33" meeting="false" start="2019-02-06" duration="4" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true"/>
-            <task id="264" name="Consuntivo" color="#00ffff" meeting="false" start="2019-02-24" duration="6" complete="0" thirdDate="2019-01-21" thirdDate-constraint="0" expand="true">
+            <task id="264" name="Consuntivo" color="#00ffff" meeting="false" start="2019-02-25" duration="7" complete="0" thirdDate="2019-01-21" thirdDate-constraint="0" expand="true">
                 <depend id="160" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="160" name="Verifica" color="#cc33ff" meeting="false" start="2019-03-02" duration="3" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true"/>
+            <task id="160" name="Verifica" color="#cc33ff" meeting="false" start="2019-03-04" duration="3" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="115" name="Glossario" color="#999999" meeting="false" start="2019-01-22" duration="45" complete="0" thirdDate="2018-12-08" thirdDate-constraint="0" expand="true">
             <task id="165" name="Incremento" color="#ff66cc" meeting="false" start="2019-01-22" duration="40" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
@@ -78,11 +80,13 @@
             </task>
             <task id="166" name="Verifica" color="#ffff00" meeting="false" start="2019-03-03" duration="5" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="0" name="Norme di Progetto" color="#8cb6ce" meeting="false" start="2019-01-21" duration="20" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
-            <task id="240" name="Incremento" color="#ffcc33" meeting="false" start="2019-01-21" duration="16" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true">
-                <depend id="245" type="2" difference="0" hardness="Strong"/>
+        <task id="0" name="Norme di Progetto" color="#8cb6ce" meeting="false" start="2019-01-21" duration="45" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+            <task id="317" name="Correzione RR" color="#ff9933" meeting="false" start="2019-01-21" duration="16" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true">
+                <depend id="319" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="245" name="Verifica Incremento" color="#ff0099" meeting="false" start="2019-02-06" duration="4" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true"/>
+            <task id="319" name="Verifica" color="#99ff33" meeting="false" start="2019-02-06" duration="4" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true"/>
+            <task id="313" name="Incremento" color="#9999ff" meeting="false" start="2019-02-06" duration="27" complete="0" thirdDate="2019-01-22" thirdDate-constraint="0" expand="true"/>
+            <task id="315" name="Verifica" color="#99ff33" meeting="false" start="2019-02-27" duration="8" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true"/>
         </task>
     </tasks>
     <resources>
