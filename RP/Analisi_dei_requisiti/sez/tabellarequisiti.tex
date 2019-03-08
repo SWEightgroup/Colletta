@@ -42,8 +42,8 @@ Dove:
 
 		R-1F001 & Un utente non autenticato può autenticarsi nel sistema & Obbligatorio & Funzionale & Capitolato \\
 		R-2F001 & Un utente può selezionare la lingua dell'interfaccia desiderata & Desiderabile & Funzionale & Capitolato \\
-		R-1F002 & Un utente non autenticato deve inserire la propria email & Obbligatorio & Funzionale & Interno \\
-		R-1F003 & Un utente non autenticato deve inserire la propria password & Obbligatorio & Funzionale & Interno \\
+		R-1F002 & Un utente non autenticato deve inserire la propria email per autenticarsi & Obbligatorio & Funzionale & Interno \\
+		R-1F003 & Un utente non autenticato deve inserire la propria password per autenticarsi & Obbligatorio & Funzionale & Interno \\
 		R-1F004 & Un utente non autenticato può registrarsi & Obbligatorio & Funzionale & Interno \\
 		R-1F005 & Un utente non autenticato deve inserire l'email per registrarsi & Obbligatorio & Funzionale & Interno \\
 		R-1F006 & Un utente non autenticato deve inserire il proprio nome per registrarsi & Obbligatorio & Funzionale & Interno \\
@@ -182,7 +182,7 @@ Dove:
 	R-1V001 &
 	
 	%Descrizione
-	L’applicazione è web &
+	L’applicazione dev'essere accedibile tramite browser web &
 	
 	%Importanza
 	Obbligatorio &
@@ -214,7 +214,7 @@ Dove:
 	R-1V003 &
 	
 	%Descrizione
-	L’applicazione utilizza Firebase &
+	L’applicazione web deve utilizzare Firebase &
 	
 	%Importanza
 	Obbligatorio &
@@ -342,6 +342,22 @@ Dove:
 	Interno \\
 	%%##################### FINE ENTRY ############################
 	
+	%%################## INIZIO ENTRY #############################    
+	%Identificativo
+	R-3Q001 &
+	
+	%Descrizione
+	L'applicazione web dev'essere accessibile secondo lo standard WCAG   &
+	
+	%Importanza
+	Opzionale &
+	
+	%Tipo
+	Qualità &
+	
+	%Fonte
+	Interno \\
+	%%##################### FINE ENTRY ############################
 	\rowcolor{white}
 	\caption{Tabella requisiti di qualità} \label{tab:tabellarequisitiqualità}
 \end{tabularx}
@@ -384,8 +400,6 @@ Nota: requisiti di vincolo e di qualità non sono tracciati perché non corrispo
 		Capitolato & R-2F004 \\
 		Interno & R-1F021 \\
 		Interno & R-1F022 \\
-		& R-1F016 \\
-		& R-3F002 \\
 		Interno & R-1F023 \\
 		Interno & R-1F024 \\
 		Interno & R-1F025 \\
