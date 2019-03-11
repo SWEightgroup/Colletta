@@ -1,0 +1,73 @@
+\subsection{Scopo del documento}
+Lo scopo del documento è circoscrivere i requisiti e i casi d’uso emersi durante lo studio del capitolato C2 e dai contatti avvenuti tramite email con MIVOQ.
+\subsection{Scopo del prodotto}
+Il prodotto da realizzare consta in un’applicazione web che fornisca uno strumento per creare e svolgere esercizi di analisi grammaticale, e al contempo né raccolga i risultati. I dati raccolti verranno impiegati dagli sviluppatori dell’azienda proponente come strumento per il miglioramento di algoritmi di {apprendimento automatico}\ped{G}. Nello specifico il prodotto verrà utilizzato da tre tipologie di utenti:
+le/gli insegnanti che si occuperanno della creazione degli esercizi,
+gli allievi che potranno svolgere gli esercizi e ottenere delle valutazioni e gli sviluppatori che filtreranno i dati secondo alcuni criteri, e infine li scaricheranno.\\Il prodotto si interfaccerà con un’applicazione di {PoS-tagging}\ped{G}, come {FreeLing}\ped{G}, a cui verrà delegata l’esecuzione dell’analisi grammaticale delle frasi.
+\subsection{Glossario}
+Al fine di rendere il documento il più comprensibile possibile e permetterne una rapida fruizione, viene allegato un glossario i cui termini sono contraddistinti dal pedice G. Tali termini includono abbreviazioni, acronimi, termini di natura tecnica, oppure sono fonte di ambiguità e pertanto necessitano di una definizione che renda il loro significato inequivocabile. 
+Ogni termine, solo alla prima occorrenza per documento, verrà contrassegnato con la dicitura sopra indicata e rimanderà alla medesima definizione nel glossario.
+\subsection{Riferimenti}
+\subsubsection{Riferimenti normativi}
+\begin{itemize}
+\item \NdPv
+\end{itemize}
+\subsubsection{Riferimenti informativi}
+\begin{itemize}
+\item Capitolato d’appalto C2: Colletta: piattaforma raccolta dati di analisi di testo. \\ Consultabile all’indirizzo:\\
+\url{https://www.math.unipd.it/~tullio/IS-1/2018/Progetto/C2.pdf}
+\item \SdF
+\item The Guide to the Software Engineering Body of Knowledge (SWEBOK Guide) v3 in particolare il capitolo 2 dedicato a all’analisi dei requisiti;
+\item Software Engineering (11th edition) Ian Sommerville Pearson Education Addison-Wesley, in particolare il capitolo 4, Requirements	engineering; 
+\item Dispense del corso di Ingegneria del Software - Diagrammi dei casi d’uso, come riferimento per la realizzazione dei modelli in UML:\\
+\url{https://www.math.unipd.it/~tullio/IS-1/2018/Dispense/E05b.pdf}
+\end{itemize}
+\newpage
+\section{Descrizione generale}
+\subsubsection{Contesto d’uso del prodotto}
+Il prodotto è inteso per i seguenti utenti: insegnanti, allievi e sviluppatori. Per gli utenti insegnanti e allievi il sistema è stato pensato per un utilizzo all’interno di un contesto scolastico, o come semplice allenamento grammaticale da parte di qualsiasi utente. Per la categoria sviluppatori, il sistema è utilizzato come strumento di raccolta dati all'interno di un contesto di ricerca.
+\subsubsection{Funzioni del prodotto}
+Lo scopo del prodotto consiste nella creazione di un'applicazione web in cui gli attori del sistema, prevalentemente insegnanti e allievi, possano predisporre, assegnare e svolgere esercizi di analisi grammaticale, e dove gli sviluppatori possano personalizzare e scaricare i dati raccolti dalle varie analisi.\\
+Al fine di agevolare il lavoro di preparazione è opportuno utilizzare un software in grado di svolgere gli esercizi in maniera automatica.
+Verranno di seguito elencate le funzioni offerte dal prodotto:
+\begin{itemize}
+\item[•]\textbf{Insegnanti}:
+L'insegnante ha interesse a preparare in modo semplice e rapido degli esercizi per i propri allievi.\\
+L'insegnante dovrà avere la possibilità di:
+\begin{itemize}
+\item Predisporre esercizi in varie lingue;
+\item Correggere i risultati prodotti dal software;
+\item Fornire più soluzioni anche per una stessa frase;
+\item Monitorare chi può accedere o meno ad una determinata frase o un determinato esercizio;
+\item Modificare o eliminare frasi precedentemente inserite.
+\end{itemize}
+
+\item[•]\textbf{Allievi}:
+L'allievo che accede al sistema dovrà poter svolgere gli esercizi predisposti dall'insegnante e ricevere una valutazione immediata dal software automatico.\\
+L'allievo dovrà aver la possibilità di:
+\begin{itemize}
+\item Scegliere tra esercizi proposti dai vari insegnanti;
+\item Effettuare esercizi partendo da un elenco di frasi proposte, oppure inserendo autonomamente una frase nel sistema;
+\item Ricercare l'esercizio, attraverso frasi suggerite o attraverso l'inserimento di una frase libera, selezionando lo specifico esercizio su cui si verrà valutati; 
+\item Visualizzare un {cruscotto}\ped{G} per tener traccia dei propri progressi nel tempo;
+\item Essere ricompensato periodicamente al raggiungimento di traguardi.
+\end{itemize}
+\item[•]\textbf{Sviluppatori}:
+Lo sviluppatore che accede al sistema dovrà essere in grado di compiere azioni di filtraggio dei dati, relativi alle correzioni grammaticali, e scaricarli in un formato consono all'utilizzo come input per algoritmi di {ML}\ped{G}. \\
+In particolare lo sviluppatore dovrà essere in grado di:
+\begin{itemize}
+\item Accedere ai dati raccolti dagli utenti;
+\item Ottenere più di una versione dell'annotazione di ogni frase;
+\item Poter conoscere anche lo storico dei dati;
+\item Accedere ai modelli realizzati a partire dai dati;
+\item Scaricare i dati collezionati;
+\item Filtrare i dati prima di scaricarli;
+\item Scaricare e salvare l'intera cronologia delle modifiche ai dati;
+\item Creare e scaricare modelli.
+\end{itemize}
+\end{itemize}
+\subsubsection{Caratteristiche degli utenti}
+Il prodotto si rivolge a studenti e insegnanti fornendo un servizio di assegnazione e correzione di esercizi relativi all'analisi grammaticale. \\ Infine, si rivolge anche a sviluppatori interessati di accedere ai dati.
+\subsubsection{Vincoli generali}
+\uppercase{è} necessario un web browser o uno dispositivo mobile, con javascript abilitato e una connessione ad internet per poter accedere, visualizzare, svolgere, inserire e scaricare gli esercizi.
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Colletta" company="SWEight" webLink="" view-date="2019-04-13" view-index="0" gantt-divider-location="357" resource-divider-location="300" version="2.8.10" locale="it">
+    <description/>
+    <view zooming-state="default:1" id="gantt-chart">
+        <field id="tpd3" name="Nome" width="187" order="0"/>
+        <field id="tpd4" name="Data d'inizio" width="81" order="1"/>
+        <field id="tpd5" name="Data di fine" width="85" order="2"/>
+        <option id="taskLabelUp" value="length"/>
+        <option id="color.recent">
+            <![CDATA[#00ccff #33cc00 #ff00cc #00ff00 #ffff00 #33ff00 #ff3399 #ccff33 #6666ff #ff6666]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nome" width="210" order="0"/>
+        <field id="1" name="Ruolo predefinito" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Validazione e Collaudo" color="#00ccff" meeting="false" start="2019-04-13" duration="26" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true"/>
+        <task id="174" name="Norme di Progetto" color="#8cb6ce" meeting="false" start="2019-04-13" duration="10" complete="0" thirdDate="2019-04-12" thirdDate-constraint="0" expand="true">
+            <task id="176" name="Incremento" color="#33cc00" meeting="false" start="2019-04-13" duration="8" complete="0" thirdDate="2019-04-12" thirdDate-constraint="0" expand="true">
+                <depend id="179" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="179" name="Verifica" color="#00ccff" meeting="false" start="2019-04-21" duration="2" complete="0" thirdDate="2019-04-24" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="182" name="Piano di Progetto" color="#8cb6ce" meeting="false" start="2019-04-13" duration="26" complete="0" thirdDate="2019-04-12" thirdDate-constraint="0" expand="true">
+            <task id="184" name="Incremento" color="#00cc00" meeting="false" start="2019-04-13" duration="8" complete="0" thirdDate="2019-04-12" thirdDate-constraint="0" expand="true">
+                <depend id="186" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="186" name="Consuntivo" color="#ff6666" meeting="false" start="2019-05-04" duration="3" complete="0" thirdDate="2019-04-12" thirdDate-constraint="0" expand="true">
+                <depend id="195" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="195" name="Verifica" color="#00ccff" meeting="false" start="2019-05-07" duration="2" complete="0" thirdDate="2019-04-12" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="199" name="Manuale Utente" color="#8cb6ce" meeting="false" start="2019-04-13" duration="14" complete="0" thirdDate="2019-04-12" thirdDate-constraint="0" expand="true">
+            <task id="201" name="Incremento" color="#33cc00" meeting="false" start="2019-04-13" duration="12" complete="0" thirdDate="2019-04-12" thirdDate-constraint="0" expand="true">
+                <depend id="202" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="202" name="Verifica" color="#00ccff" meeting="false" start="2019-04-25" duration="2" complete="0" thirdDate="2019-04-28" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="206" name="Glossario" color="#8cb6ce" meeting="false" start="2019-04-13" duration="26" complete="0" thirdDate="2019-04-13" thirdDate-constraint="0" expand="true">
+            <task id="207" name="Incremento" color="#33cc00" meeting="false" start="2019-04-13" duration="24" complete="0" thirdDate="2019-04-12" thirdDate-constraint="0" expand="true">
+                <depend id="208" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="208" name="Verifica" color="#00ccff" meeting="false" start="2019-05-07" duration="2" complete="0" thirdDate="2019-05-07" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="209" name="Piano di Qualifica" color="#8cb6ce" meeting="false" start="2019-04-13" duration="10" complete="0" thirdDate="2019-04-13" thirdDate-constraint="0" expand="true">
+            <task id="212" name="Incremento" color="#33cc00" meeting="false" start="2019-04-13" duration="8" complete="0" thirdDate="2019-04-13" thirdDate-constraint="0" expand="true">
+                <depend id="214" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="214" name="Verifica" color="#00ccff" meeting="false" start="2019-04-21" duration="2" complete="0" thirdDate="2019-04-13" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="216" name="Product Baseline" color="#8cb6ce" meeting="false" start="2019-04-13" duration="10" complete="0" thirdDate="2019-04-13" thirdDate-constraint="0" expand="true">
+            <task id="218" name="Incremento" color="#33cc00" meeting="false" start="2019-04-13" duration="8" complete="0" thirdDate="2019-04-13" thirdDate-constraint="0" expand="true">
+                <depend id="219" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="219" name="Verifica" color="#00ccff" meeting="false" start="2019-04-21" duration="2" complete="0" thirdDate="2019-04-24" thirdDate-constraint="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Caccaro Sebastiano" function="Default:1" contacts="" phone=""/>
+    </resources>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
