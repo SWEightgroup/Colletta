@@ -22,9 +22,8 @@
 \item[•]\textbf{Postcondizione}: l’utente viene autenticato all’interno del sistema;
 \item[•]\textbf{Flusso degli eventi}:
 \begin{enumerate}
-\item UC 1.1.1 - Selezione lingua interfaccia applicativo;
-\item UC 1.1.2 - Inserimento email;
-\item UC 1.1.3 - Inserimento password;
+\item UC 1.1.1 - Inserimento email;
+\item UC 1.1.2 - Inserimento password;
 
 \end{enumerate}
 \item[•]\textbf{Estensioni}:
@@ -33,16 +32,7 @@
 \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC 1.1.1 - Selezione lingua interfaccia applicativo}
-\begin{itemize}
-\item[•]\textbf{Attori}: Utente non autenticato;
-\item[•]\textbf{Descrizione}: l’utente seleziona la lingua desiderata per l'interfaccia dell'applicativo;
-\item[•]\textbf{Precondizione}: l’utente non è autenticato e il valore della lingua dell'applicativo è basato sulla geo-localizzazione dell'utente o sull'ultima scelta effettuata;
-\item[•]\textbf{Postcondizione}: l’utente ha selezionato la lingua desiderata e il sistema mostra l'interfaccia di autenticazione nella lingua scelta;
-\item[•]\textbf{Flusso degli eventi}: l'utente visualizza il form per l'autenticazione e seleziona da un elenco predefinito la lingua da utilizzare all'interno del sistema.
-\end{itemize}
-
-\subsubsection{UC 1.1.2 - Inserimento email}
+\subsubsection{UC 1.1.1 - Inserimento email}
 \begin{itemize}
 \item[•]\textbf{Attori}: Utente non autenticato;
 \item[•]\textbf{Descrizione}: l’utente inserisce la propria email utilizzata in fase di registrazione;
@@ -52,7 +42,7 @@
 
 \end{itemize}
 
-\subsubsection{UC 1.1.3 - Inserimento password}
+\subsubsection{UC 1.1.2 - Inserimento password}
 \begin{itemize}
 \item[•]\textbf{Attori}: Utente non autenticato;
 \item[•]\textbf{Descrizione}: l’utente inserisce una password inserita in fase di registrazione;
@@ -61,7 +51,7 @@
 \item[•]\textbf{Flusso degli eventi}: l'utente visualizza il form per l'autenticazione e inserisce la password in apposito campo.
 \end{itemize}
 
-\subsubsection{UC 1.1.4 - Visualizzazione messaggio credenziali errate}
+\subsubsection{UC 1.1.3 - Visualizzazione messaggio credenziali errate}
 \begin{itemize}
 \item[•]\textbf{Attori}: Utente non autenticato;
 \item[•]\textbf{Descrizione}: l'utente ha avviato il login immettendo delle credenziali errati;
@@ -298,3 +288,12 @@
 %	\item[•]\textbf{Postcondizione}: l'utente viene reindirizzato alla pagina di autenticazione;
 %	\item[•]\textbf{Flusso degli eventi}: l'utente non autenticato conferma la modifica della password e viene reindirizzato alla pagina di autenticazione.
 %\end{itemize}
+
+\subsubsection{UC 1.6 - Selezione lingua interfaccia applicativo}
+\begin{itemize}
+\item[•]\textbf{Attori}: Utente non autenticato;
+\item[•]\textbf{Descrizione}: l’utente seleziona la lingua desiderata per l'interfaccia dell'applicativo;
+\item[•]\textbf{Precondizione}: l’utente non è autenticato e il valore della lingua dell'applicativo è basato sulla geo-localizzazione dell'utente o sull'ultima scelta effettuata;
+\item[•]\textbf{Postcondizione}: l’utente ha selezionato la lingua desiderata e il sistema mostra l'interfaccia di autenticazione nella lingua scelta;
+\item[•]\textbf{Flusso degli eventi}: l'utente visualizza il form per l'autenticazione e seleziona da un elenco predefinito la lingua da utilizzare all'interno del sistema.
+\end{itemize}
