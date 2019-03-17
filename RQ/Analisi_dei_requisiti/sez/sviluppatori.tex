@@ -43,13 +43,13 @@
 	\end{enumerate}
 	\item[•]\textbf{Estensioni}:
 	\begin{enumerate}
-		\item UC 4.3.7 - Rimozione filtro;
-		\item UC 4.3.8 - Visualizzazione messaggio errore data errata;
-		\item UC 4.3.9 - Visualizzazione messaggio errore input errato.
+%		\item UC 4.3.7 - Rimozione filtro;
+		\item UC 4.3.7 - Visualizzazione messaggio errore data errata;
+		\item UC 4.3.8 - Visualizzazione messaggio errore input errato.
 	\end{enumerate}
 	\item[•]\textbf{Inclusioni}:
 	\begin{enumerate}
-		\item UC 4.3.6 - Visualizzazione dati filtrati.
+		\item UC 4.13 - Visualizzazione dati filtrati.
 	\end{enumerate}
 \end{itemize}
 \subsubsection{UC 4.3.1 - Inserimento filtro periodo temporale}
@@ -65,12 +65,12 @@
 	\end{enumerate}
 	\item[•]\textbf{Estensioni}: 
 	\begin{enumerate}
-		\item UC 4.3.7 - Rimozione filtro;
-		\item UC 4.3.8 - Visualizzazione messaggio errore data errata;
+%		\item UC 4.3.7 - Rimozione filtro;
+		\item UC 4.3.7 - Visualizzazione messaggio errore data errata;
 	\end{enumerate}
 	\item[•]\textbf{Inclusioni}:
 	\begin{enumerate}
-		\item UC 4.3.6 - Visualizzazione dati filtrati.
+		\item UC 4.13 - Visualizzazione dati filtrati.
 	\end{enumerate}
 \end{itemize}
 
@@ -81,13 +81,13 @@
 	\item[•]\textbf{Precondizione}: lo sviluppatore visualizza le proposizioni in base ai filtri stabiliti;
 	\item[•]\textbf{Postcondizione}: lo sviluppatore ha impostato i valori del filtro fonte, pertanto vuole visualizzare tutte le proposizioni inserite da una determinata fonte ed eventualmente gli altri filtri;
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona da un elenco le fonti di cui è interessato visualizzare i dati;
-	\item[•]\textbf{Estensioni}: 
-	\begin{enumerate}
-		\item UC 4.3.7 - Rimozione filtro.
-	\end{enumerate}
+%	\item[•]\textbf{Estensioni}: 
+%	\begin{enumerate}
+%		\item UC 4.3.7 - Rimozione filtro.
+%	\end{enumerate}
 	\item[•]\textbf{Inclusioni}:
 	\begin{enumerate}
-		\item UC 4.3.6 - Visualizzazione dati filtrati.
+		\item UC 4.13 - Visualizzazione dati filtrati.
 	\end{enumerate}
 \end{itemize}
 
@@ -98,13 +98,13 @@
 	\item[•]\textbf{Precondizione}: lo sviluppatore visualizza le proposizioni in base ai filtri stabiliti;
 	\item[•]\textbf{Postcondizione}: lo sviluppatore ha stabilito i valori di filtraggio relativi alle lingue, quindi visualizza tutte le frasi scritte in tale lingua e che soddisfano anche gli altri filtri applicati;
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona da un elenco le lingue di cui è interessato vedere le proposizioni memorizzate;
-	\item[•]\textbf{Estensioni}: 
-	\begin{enumerate}
-		\item UC 4.3.7 - Rimozione filtro.
-	\end{enumerate}
+%	\item[•]\textbf{Estensioni}: 
+%	\begin{enumerate}
+%		\item UC 4.3.7 - Rimozione filtro.
+%	\end{enumerate}
 	\item[•]\textbf{Inclusioni}:
 	\begin{enumerate}
-		\item UC 4.3.6 - Visualizzazione dati filtrati.
+		\item UC 4.13 - Visualizzazione dati filtrati.
 	\end{enumerate}
 \end{itemize}
 
@@ -117,12 +117,12 @@
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore inserisce una stringa rappresentate una o più parole chiave che devono essere contenute nelle stringhe che intende visualizzare;
 	\item[•]\textbf{Estensioni}: 
 	\begin{enumerate}
-		\item UC 4.3.7 - Rimozione filtro;
-		\item UC 4.3.9 - Visualizzazione messaggio di errore input errato.
+%		\item UC 4.3.7 - Rimozione filtro;
+		\item UC 4.3.8 - Visualizzazione messaggio di errore input errato.
 	\end{enumerate}
 	\item[•]\textbf{Inclusioni}:
 	\begin{enumerate}
-		\item UC 4.3.6 - Visualizzazione dati filtrati.
+		\item UC 4.13 - Visualizzazione dati filtrati.
 	\end{enumerate}
 \end{itemize}
 
@@ -133,31 +133,19 @@
 	\item[•]\textbf{Precondizione}: i valori di uno o più filtri sono stati inseriti;
 	\item[•]\textbf{Postcondizione}: lo sviluppatore ha selezionato il livello di attendibilità e visualizza solamente le frasi che hanno tale livello di attendibilità, cioè che hanno ricevuto la stessa correzione da più insegnanti, e che rispettano eventualmente gli altri filtri inseriti.
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona da un elenco predefinito il livello di attendibilità desiderato.
-\item[•]\textbf{Estensioni}: 
-	\begin{enumerate}
-		\item UC 4.3.7 - Rimozione filtro.
-	\end{enumerate}
+%\item[•]\textbf{Estensioni}: 
+%	\begin{enumerate}
+%		\item UC 4.3.7 - Rimozione filtro.
+%	\end{enumerate}
 	\item[•]\textbf{Inclusioni}:
 	\begin{enumerate}
-		\item UC 4.3.6 - Visualizzazione dati filtrati.
+		\item UC 4.13 - Visualizzazione dati filtrati.
 	\end{enumerate}
 \end{itemize}
 
-\subsubsection{UC 4.3.7 - Rimozione filtro}
-\begin{itemize}
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=14cm, keepaspectratio]{img/UC437.png} 
-		\caption{Caso d'uso UC 4.3.7 relativo alla rimozione dei filtri.}\label{fig:437}
-	\end{figure}
-	\item[•]\textbf{Attori}: Sviluppatore;
-	\item[•]\textbf{Descrizione}: lo sviluppatore cancella il valore del filtro selezionato.
-	\item[•]\textbf{Precondizione}: il filtro contiene un valore ed è applicato un filtraggio ai dati rispettando le condizioni di tale filtro;
-	\item[•]\textbf{Postcondizione}: il filtro è stato rimosso pertanto i dati visualizzati non rispetteranno più tale vincolo;
-	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona il filtro e lo rimuove.
-\end{itemize}
 
-\subsubsection{UC 4.3.8 - Visualizzazione messaggio errore data errata}
+
+\subsubsection{UC 4.3.7 - Visualizzazione messaggio errore data errata}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Sviluppatore;
 	\item[•]\textbf{Descrizione}: lo sviluppatore visualizza un messaggio di errore sul periodo selezionato;
@@ -166,7 +154,7 @@
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore ha inserito una data non conforme, cioè che non rispetta il formato stabilito o che indica un periodo temporale non idoneo, pertanto visualizza un messaggio di errore.
 \end{itemize}
 
-\subsubsection{UC 4.3.9 - Visualizzazione messaggio errore input errato}
+\subsubsection{UC 4.3.8 - Visualizzazione messaggio errore input errato}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Sviluppatore;
 	\item[•]\textbf{Descrizione}: lo sviluppatore visualizza un messaggio di errore sulla ricerca.
@@ -530,6 +518,7 @@
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona il collegamento al logout e termina la sessione.
 \end{itemize}
 
+
 \subsubsection{UC 4.13 - Visualizzazione dati filtrati}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Sviluppatore;
@@ -537,4 +526,40 @@
 	\item[•]\textbf{Precondizione}: i valori di uno o più filtri sono stati inseriti;
 	\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza solamente le preposizioni che rispettano i filtri inseriti.
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore inserisce un filtro e visualizza le preposizioni, la data d'inserimento, l'autore e le correzioni inserite che rispettano tale filtro.
+\end{itemize}
+
+\subsubsection{UC 4.14 - Rimozione filtro periodo temporale}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Sviluppatore;
+	\item[•]\textbf{Descrizione}: lo sviluppatore cancella il valore del filtro periodo temporale che indica un arco di tempo in cui le preposizioni sono state inserite.
+	\item[•]\textbf{Precondizione}: il filtro periodo temporale è impostato e lo sviluppatore visualizza solamente le preposizioni inserite in quel periodo temporale;
+	\item[•]\textbf{Postcondizione}: il filtro periodo temporale è stato rimosso e le preposizioni visualizzate non rispettano più quel filtro;
+	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona il filtro periodo temporale e lo rimuove.
+\end{itemize}
+
+\subsubsection{UC 4.15 - Rimozione filtro periodo fonte}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Sviluppatore;
+	\item[•]\textbf{Descrizione}: lo sviluppatore cancella il valore del filtro fonte, cioè le frasi provenienti da uno o più autori.
+	\item[•]\textbf{Precondizione}: il filtro fonte è impostato e lo sviluppatore visualizza solamente le preposizioni inserite da una o più fonti;
+	\item[•]\textbf{Postcondizione}: il filtro periodo fonte è stato rimosso e le preposizioni visualizzate non rispettano più quel filtro;
+	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona il filtro fonte e lo rimuove.
+\end{itemize}
+
+\subsubsection{UC 4.16 - Rimozione filtro lingue}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Sviluppatore;
+	\item[•]\textbf{Descrizione}: lo sviluppatore cancella il valore del filtro lingue che indica le preposizioni inserite in tali lingue.
+	\item[•]\textbf{Precondizione}: il filtro lingue è impostato e lo sviluppatore visualizza solamente le preposizioni inserite scritte in tali lingue;
+	\item[•]\textbf{Postcondizione}: il filtro lingue è stato rimosso e le preposizioni vengono mostrate indipendentemente dalla lingua di inserimento;
+	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona il filtro lingue e lo rimuove.
+\end{itemize}
+
+\subsubsection{UC 4.17 - Rimozione filtro attendibilità}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Sviluppatore;
+	\item[•]\textbf{Descrizione}: lo sviluppatore cancella il valore del filtro attendibilità, cioè le frasi provenienti da fonti avente una determinata attendibilità espressa in formato numerico.
+	\item[•]\textbf{Precondizione}: il filtro attendibilità è impostato e lo sviluppatore visualizza solamente le preposizioni inserite da fonti con quel determinato valore di affidabilità;
+	\item[•]\textbf{Postcondizione}: il filtro attendibilità è stato rimosso e le preposizioni visualizzate non rispettano più quel filtro;
+	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona il filtro attendibilità e rimuove il suo valore.
 \end{itemize}
