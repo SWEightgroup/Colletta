@@ -10,6 +10,31 @@ Con l'obiettivo di rendere chiare le soluzioni progettuali utilizzate, è necess
 \end{itemize}
 In caso vengano utilizzati dei {Design Pattern}\ped{G} sarà necessario accompagnarli con una descrizione ed un diagramma UML.
 
+\subsubsection{Progettazione}\mbox{}
+Dopo aver terminato il periodo di Analisi si passerà a quella di Progettazione che vede come 
+protagonisti i \textit{Progettisti}, quest'ultimi hanno stabilito l'{architettura}\ped{G} logica 
+da definire e i vari diagrammi che la rappresentano.
+La Progettazione permette di: 
+\begin{itemize}
+\item[•] Ottimizzare l'uso delle risorse;
+\item[•] Garantire la qualità del prodotto sviluppato;
+\item[•] Suddividere il problema principale in tanti sotto problemi di complessità minore.
+\end{itemize}
+
+\paragraph{Architettura logica}\mbox{}\\
+Bisogna definire un'architettura logica del prodotto che dovrà: 
+\begin{itemize}
+\item[•] Soddisfare i requisiti definiti nel documento di \AdR;
+\item[•] Essere sicura in caso di malfunzionamenti o intrusioni;
+\item[•] Essere {modulare}\ped{G} e formato da componenti riutilizzabili;
+\item[•] Essere affidabile;
+\item[•] Essere comprensibile per future manutenzioni.
+\end{itemize}
+
+\paragraph{Design Pattern}\mbox{}\\
+I \textit{Progettisti} devono utilizzare il design pattern che ritengono più adatto al contesto per rendere l'applicazione più sicura ed efficiente possibile.
+Ogni utilizzo di design pattern deve essere brevemente descritto ed accompagnato da un diagramma UML posto nella directory padre dei file sorgenti.
+
 \subparagraph{Diagrammi di attività}\mbox{}\\
 I diagrammi di attività sono rappresentati usando i formalismi definiti in UML 2. I principali sono riportati in seguito. Per indicare il consumo e la generazione di token, viene usata la seguente notazione: (T:token generati/token consumati).
 \begin{itemize}
@@ -39,30 +64,14 @@ I diagrammi di attività sono rappresentati usando i formalismi definiti in UML 
 	\end{figure}
 \end{itemize}
 
-\subsubsection{Progettazione}\mbox{}
-Dopo aver terminato il periodo di Analisi si passerà a quella di Progettazione che vede come 
-protagonisti i \textit{Progettisti}, quest'ultimi hanno stabilito l'{architettura}\ped{G} logica 
-da definire e i vari diagrammi che la rappresentano.
-La Progettazione permette di: 
-\begin{itemize}
-\item[•] Ottimizzare l'uso delle risorse;
-\item[•] Garantire la qualità del prodotto sviluppato;
-\item[•] Suddividere il problema principale in tanti sotto problemi di complessità minore.
-\end{itemize}
+\subparagraph{Diagrammi di sequenza}\mbox{}\\
 
-\paragraph{Architettura logica}\mbox{}\\
-Bisogna definire un'architettura logica del prodotto che dovrà: 
-\begin{itemize}
-\item[•] Soddisfare i requisiti definiti nel documento di \AdR;
-\item[•] Essere sicura in caso di malfunzionamenti o intrusioni;
-\item[•] Essere {modulare}\ped{G} e formato da componenti riutilizzabili;
-\item[•] Essere affidabile;
-\item[•] Essere comprensibile per future manutenzioni.
-\end{itemize}
+\subparagraph{Diagrammi dei package}\mbox{}\\
 
-\paragraph{Design Pattern}\mbox{}\\
-I \textit{Progettisti} devono utilizzare il design pattern che ritengono più adatto al contesto per rendere l'applicazione più sicura ed efficiente possibile.
-Ogni utilizzo di design pattern deve essere brevemente descritto ed accompagnato da un diagramma UML posto nella directory padre dei file sorgenti.
+\subparagraph{Diagrammi delle classi}\mbox{}\\
+
+
+
 
 \subsubsection{Qualità}
 
