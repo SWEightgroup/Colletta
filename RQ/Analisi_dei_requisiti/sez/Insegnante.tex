@@ -499,6 +499,11 @@
 	\begin{enumerate}
 		\item UC 2.9.1.3 - Rimuovi allievo.
 	\end{enumerate}
+	\item[•] \textbf{Estensioni}:	
+	\begin{enumerate}
+		\item UC 2.9.1.4 - Interruzione creazione classe;
+	\end{enumerate}
+	 
 \end{itemize}
 
 \begin{figure}[H]
@@ -534,6 +539,16 @@
 	\item[•] \textbf{Postcondizione}: l'insegnante ha rimosso l'allievo dalla classe;
 	\item[•] \textbf{Flusso degli eventi}: l'insegnante durante la creazione di una classe inserisce per errore un nuovo allievo al suo interno per poi rimuoverlo.
 \end{itemize}
+
+\subsubsection{UC 2.9.1.4 - Interruzione creazione classe}
+\begin{itemize}
+	\item[•] \textbf{Attori}: Insegnante;
+	\item[•] \textbf{Descrizione}: l'insegnante interrompe la creazione di una classe;
+	\item[•] \textbf{Precondizione}: l'insegnante sta creando una nuova classe;
+	\item[•] \textbf{Postcondizione}: la classe non è stata creata;
+	\item[•] \textbf{Flusso degli eventi}: l'insegnante durante la creazione di una classe decide di annullare (o viene annullata) tale operazione, pertanto la classe non viene aggiunta al sistema.
+\end{itemize}
+
 
 
 \subsubsection{UC 2.9.2 - Modifica classe}
