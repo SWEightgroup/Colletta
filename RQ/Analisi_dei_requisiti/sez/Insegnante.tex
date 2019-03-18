@@ -572,6 +572,10 @@
 	\begin{enumerate}
 		\item UC 2.9.2.3 - Rimuovi allievo.
 	\end{enumerate}
+	\item[•] \textbf{Estensioni}:	
+	\begin{enumerate}
+		\item UC 2.9.2.4 - Interruzione modifica classe;
+	\end{enumerate}
 \end{itemize}
 
 \subsubsection{UC 2.9.2.1 - Modifica nome classe}
@@ -599,6 +603,15 @@
 	\item[•] \textbf{Precondizione}: l'insegnante sta modificando una classe;
 	\item[•] \textbf{Postcondizione}: l'insegnante ha rimosso un nuovo allievo dalla classe;
 	\item[•] \textbf{Flusso degli eventi}: durante la modifica di una classe, l'insegnante rimuove un allievo precedentemente inserito al suo interno.
+\end{itemize}
+
+\subsubsection{UC 2.9.1.4 - Interruzione creazione classe}
+\begin{itemize}
+	\item[•] \textbf{Attori}: Insegnante;
+	\item[•] \textbf{Descrizione}: l'insegnante interrompe la modifica di una classe;
+	\item[•] \textbf{Precondizione}: l'insegnante sta modificando una classe;
+	\item[•] \textbf{Postcondizione}: la classe non è stata modificata;
+	\item[•] \textbf{Flusso degli eventi}: l'insegnante durante la modifica di una classe decide di annullare (o viene annullata) tale operazione, pertanto la classe non viene modificata nel sistema.
 \end{itemize}
 
 
