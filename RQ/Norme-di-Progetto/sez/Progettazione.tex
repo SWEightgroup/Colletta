@@ -271,4 +271,23 @@ Per installare ESLint è necessario dare il comando: \texttt{npm install eslint 
 Per settarlo invece dare il comando: \texttt{./node\_modules/.bin/eslint --init} oppure \texttt{npx eslint}.\\
 Maggiori informazioni sono presenti al seguente indirizzo: \href{https://eslint.org/}{"ESLint"}.
 
+\paragraph{Google-java-format}\mbox{}\\
+Per rendere conforme lo stile di codifica per il linguaggio Java verrà utilizzato il programma \texttt{google-java-format}, il programma formatta automaticamente il codice di un file Java secondo le direttive di \href{https://google.github.io/styleguide/javaguide.html}{Google Java Style Guide}.
+Per formattare un file bisogna recarsi nella cartella che lo contiene e  dare il comando: 
+\begin{center}
+	 \texttt{java -jar ../google.jar --replace [NomeFile].java}
+\end{center}
+va controllato che il programma \texttt{google-java-format} si trovi ad un livello di gerarchia delle cartelle "più alto" rispetto al file che si sta formattando, in caso contrario va modificato il campo \texttt{../google.jar} nel comando e bisogna indicare la posizione del file \texttt{google.jar}. \\
+Se per esempio il programma si trova nella cartella Pluto presente al livello superiore delle cartelle va dato il comando \texttt{../Pluto/google.jar} al posto di \texttt{../google.jar}.\\
+Se si vuole ad esempio formattare il file \textit{HelloWorld.java} e il programma si trova al livello di cartella superiore va dato il comando: 
+\begin{center}
+\texttt{java -jar ../google.jar --replace HelloWorld.java}
+\end{center}
+se il file è stato formattato correttamente non vengono generati errori.\\
+Maggiori informazioni sono presenti al link: \href{https://github.com/google/google-java-format}{google-java-format}.
+
+
+
+ 
+
 
