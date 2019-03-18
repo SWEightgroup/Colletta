@@ -230,6 +230,10 @@
 	\item UC 1.5.3 - Inserimento conferma password;
 	\item Conferma modifica password.
 	\end{enumerate}
+	\item[•]\textbf{Estensioni}:
+	\begin{enumerate}
+		\item UC 1.5.6 - Interruzione recupero credenziali.
+	\end{enumerate}
 \end{itemize}
 
 %\subsubsection{UC 1.5.1 - Selezione procedura recupero credenziali}
@@ -303,6 +307,15 @@
 	\item[•]\textbf{Flusso degli eventi}: l'utente non autenticato ha inserito la conferma password con un valore diverso rispetto alla password precendentemente inserita, pertanto visualizza un messaggio di errore.
 \end{itemize}
 
+\subsubsection{UC 1.5.6 - Interruzione recupero credenziali}
+\begin{itemize}
+	\item[•]\textbf{Attori}: Utente non autenticat;
+	\item[•]\textbf{Descrizione}: l'utente non autenticato interrompe il recupero delle credenziali smarrite;
+	\item[•]\textbf{Precondizione}: l'utente non autenticato sta recuperando le credenziali;
+	\item[•]\textbf{Postcondizione}: l'utente non autenticato interrompe il recupero delle credenziali e torna alla pagina di autenticazione;
+	\item[•]\textbf{Flusso degli eventi}: durante il recupero delle credenziali, l'utente generico interrompe la procedura e ritorna nella pagina di autenticazione.
+\end{itemize}
+
 %\subsubsection{UC 1.5.6 - Conferma modifica password}
 %\begin{itemize}
 %	\item[•]\textbf{Attori}: Utente non autenticato;
@@ -320,3 +333,5 @@
 \item[•]\textbf{Postcondizione}: l’utente ha selezionato la lingua desiderata e il sistema mostra l'interfaccia di autenticazione nella lingua scelta;
 \item[•]\textbf{Flusso degli eventi}: l'utente visualizza il form per l'autenticazione e seleziona da un elenco predefinito la lingua da utilizzare all'interno del sistema.
 \end{itemize}
+
+
