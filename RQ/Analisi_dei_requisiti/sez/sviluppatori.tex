@@ -8,7 +8,7 @@
 \subsubsection{UC 4.1 - Visualizzazione dashboard}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Sviluppatore;
-	\item[•]\textbf{Descrizione}: lo sviluppatore ha effettuato l'autenticazione e visualizza la propria dashboard, la quale gli permette di accedere alle seguenti operazioni: creare e eliminare i modelli, visualizzare lo storico delle frasi inserite e modificare i propri dati personali.
+	\item[•]\textbf{Descrizione}: lo sviluppatore ha effettuato l'autenticazione e visualizza la propria dashboard, la quale gli permette di accedere alle seguenti operazioni: creare e eliminare i modelli, visualizzare lo storico delle frasi inserite e modificare i propri dati personali;
 	\item[•]\textbf{Precondizione}: lo sviluppatore ha effettuato l'autenticazione;
 	\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza la propria dashboard; 
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore ha effettuato l'autenticazione e viene automaticamente reindirizzato alla pagina che contiene la dashboard.
@@ -18,7 +18,7 @@
 	\item[•]\textbf{Attori}: Sviluppatore;
 	\item[•]\textbf{Descrizione}: lo sviluppatore visualizza un elenco di frasi accompagnate 
 	dalla data di creazione e dall’autore ordinate cronologicamente;
-	\item[•]\textbf{Precondizione}:  lo sviluppatore si è autenticato nel sistema e visualizza la propria dashboard.
+	\item[•]\textbf{Precondizione}:  lo sviluppatore si è autenticato nel sistema e visualizza la propria dashboard;
 	\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza l'elenco delle preposizioni ordinate cronologicamente comprensive di analisi grammaticale, data, autore e livello di attendibilità;
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore ha selezionato la voce relativa alla pagina contenente l’elenco delle frasi e ne visualizza il contenuto. 
 \end{itemize}
@@ -66,7 +66,7 @@
 	\item[•]\textbf{Estensioni}: 
 	\begin{enumerate}
 %		\item UC 4.3.7 - Rimozione filtro;
-		\item UC 4.3.7 - Visualizzazione messaggio errore data errata;
+		\item UC 4.3.7 - Visualizzazione messaggio errore data errata.
 	\end{enumerate}
 	\item[•]\textbf{Inclusioni}:
 	\begin{enumerate}
@@ -131,8 +131,8 @@
 	\item[•]\textbf{Attori}: Sviluppatore;
 	\item[•]\textbf{Descrizione}: lo sviluppatore seleziona un valore numerico rappresentante il livello di attendibilità delle frasi che vuole visualizzare, ovvero frasi le cui correzioni sono uguali a quelle di altre insegnanti acquisiscono un livello di attendibilità maggiore rispetto ad altre;
 	\item[•]\textbf{Precondizione}: i valori di uno o più filtri sono stati inseriti;
-	\item[•]\textbf{Postcondizione}: lo sviluppatore ha selezionato il livello di attendibilità e visualizza solamente le frasi che hanno tale livello di attendibilità, cioè che hanno ricevuto la stessa correzione da più insegnanti, e che rispettano eventualmente gli altri filtri inseriti.
-	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona da un elenco predefinito il livello di attendibilità desiderato.
+	\item[•]\textbf{Postcondizione}: lo sviluppatore ha selezionato il livello di attendibilità e visualizza solamente le frasi che hanno tale livello di attendibilità, cioè che hanno ricevuto la stessa correzione da più insegnanti, e che rispettano eventualmente gli altri filtri inseriti;
+	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona da un elenco predefinito il livello di attendibilità desiderato;
 %\item[•]\textbf{Estensioni}: 
 %	\begin{enumerate}
 %		\item UC 4.3.7 - Rimozione filtro.
@@ -157,10 +157,10 @@
 \subsubsection{UC 4.3.8 - Visualizzazione messaggio errore input errato}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Sviluppatore;
-	\item[•]\textbf{Descrizione}: lo sviluppatore visualizza un messaggio di errore sulla ricerca.
+	\item[•]\textbf{Descrizione}: lo sviluppatore visualizza un messaggio di errore sulla ricerca;
 	\item[•]\textbf{Precondizione}: lo sviluppatore ha inserito una frase non conforme;
 	\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza un messaggio di errore relativo 
-	all'inserimento di un input errato, cioè non conforme a ciò che il sistema si attendeva.
+	all'inserimento di un input errato, cioè non conforme a ciò che il sistema si attendeva;
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore inserisce un input non conforme, cioè contenente caratteri non ammessi, e visualizza un messaggio di input errato.
 \end{itemize}
 
@@ -250,7 +250,7 @@
 	\item[•]\textbf{Descrizione}: lo sviluppatore sceglie i parametri della funzione per la creazione di un nuovo modello con i relativi valori associati;
 	\item[•]\textbf{Precondizione}: lo sviluppatore non ha scelto i parametri da inserire;
 	\item[•]\textbf{Postcondizione}: lo sviluppatore ha inserito i parametri per la creazione di un nuovo modello;
-	\item[•]\textbf{Flusso degli eventi}:  lo sviluppatore inserisce tutti i parametri necessari che verranno impiegati nella realizzazione del modello.
+	\item[•]\textbf{Flusso degli eventi}:  lo sviluppatore inserisce tutti i parametri necessari che verranno impiegati nella realizzazione del modello;
 	\item[•] \textbf{Estensioni}: 
 	\begin{enumerate}
 		\item UC 4.6.4 - Valore parametro non valido.
@@ -263,7 +263,7 @@
 	\item[•]\textbf{Descrizione}: lo sviluppatore inserisce il nome per il modello che intende salvare;
 	\item[•]\textbf{Precondizione}: lo sviluppatore non ha inserito il nome del modello;
 	\item[•]\textbf{Postcondizione}: lo sviluppatore ha inserito il nome del modello;
-	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore inserisce una stringa che definisce il nome del modello che verrà memorizzato.
+	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore inserisce una stringa che definisce il nome del modello che verrà memorizzato;
 	\item[•] \textbf{Estensioni}: 
 	\begin{enumerate}
 		\item UC 4.5.5 - Visualizzazione messaggio errore nome duplicato.
@@ -292,7 +292,7 @@
 	\item[•]\textbf{Attori}: Sviluppatore;
 	\item[•]\textbf{Descrizione}: lo sviluppatore visualizza un messaggio di errore relativo all'inserimento di un modello avente lo stesso nome di uno già inserito;
 	\item[•]\textbf{Precondizione}: lo sviluppatore ha inserito il nome del modello;
-	\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza il messaggio di errore e inserisce un nuovo nome.
+	\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza il messaggio di errore e inserisce un nuovo nome;
 	\item[•]\textbf{Flusso degli eventi}:  lo sviluppatore visualizza il messaggio di errore e può inserire una stringa che definisce il nome del modello che verrà memorizzato.
 \end{itemize}
 
@@ -301,7 +301,7 @@
 	\item[•]\textbf{Attori}: Sviluppatore;
 	\item[•]\textbf{Descrizione}: lo sviluppatore interrompe l'inserimento del modello;
 	\item[•]\textbf{Precondizione}: lo sviluppatore sta inserendo il modello;
-	\item[•]\textbf{Postcondizione}: nessun nuovo modello è stato inserito.
+	\item[•]\textbf{Postcondizione}: nessun nuovo modello è stato inserito;
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore interrompe l'inserimento del modello abbandonando la pagina.
 \end{itemize}
 \subsubsection{UC 4.7 - Visualizzazione elenco modelli}
@@ -317,7 +317,7 @@
 \subsubsection{UC 4.8 - Visualizzazione contenuto modello} 
 \begin{itemize}
 	\item[•]\textbf{Attori}: Sviluppatore;
-	\item[•]\textbf{Descrizione}: lo sviluppatore visualizza il contenuto del modello selezionato.
+	\item[•]\textbf{Descrizione}: lo sviluppatore visualizza il contenuto del modello selezionato;
 	\item[•]\textbf{Precondizione}: lo sviluppatore visualizza l'elenco dei modelli (UC 4.6);
 	\item[•]\textbf{Postcondizione}: lo sviluppatore visiona il contenuto del modello selezionato;
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona dall'elenco dei modelli quello d'interesse e ne visualizza il contenuto.
@@ -327,7 +327,7 @@
 \begin{itemize}
 	\item[•]\textbf{Attori}: Sviluppatore;
 	\item[•]\textbf{Descrizione}: lo sviluppatore ottiene un file contenente il modello precedentemente creato;
-	\item[•]\textbf{Precondizione}: lo sviluppatore visualizza il contenuto del modello che intende scaricare.
+	\item[•]\textbf{Precondizione}: lo sviluppatore visualizza il contenuto del modello che intende scaricare;
 	\item[•]\textbf{Postcondizione}: lo sviluppatore ottiene un file contenente il modello selezionato;
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona l'opzione di scaricamento e ottiene un file contenente il modello.
 \end{itemize}
@@ -370,7 +370,7 @@
 	\end{enumerate}
 	\item[•] \textbf{Estensioni}:	
 	\begin{enumerate}
-		\item UC 4.11.7 - Interruzione modifica dati utente;
+		\item UC 4.11.7 - Interruzione modifica dati utente.
 	\end{enumerate}
 \end{itemize}
 \subsubsection{UC 4.11.1 - Modifica email}
@@ -562,14 +562,14 @@
 	\item[•]\textbf{Attori}: Sviluppatore;
 	\item[•]\textbf{Descrizione}: selezionato uno o più filtri, i dati vengono mostrati secondo i vincoli inseriti;
 	\item[•]\textbf{Precondizione}: i valori di uno o più filtri sono stati inseriti;
-	\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza solamente le preposizioni che rispettano i filtri inseriti.
+	\item[•]\textbf{Postcondizione}: lo sviluppatore visualizza solamente le preposizioni che rispettano i filtri inseriti;
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore inserisce un filtro e visualizza le preposizioni, la data d'inserimento, l'autore e le correzioni inserite che rispettano tale filtro.
 \end{itemize}
 
 \subsubsection{UC 4.14 - Rimozione filtro periodo temporale}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Sviluppatore;
-	\item[•]\textbf{Descrizione}: lo sviluppatore cancella il valore del filtro periodo temporale che indica un arco di tempo in cui le preposizioni sono state inserite.
+	\item[•]\textbf{Descrizione}: lo sviluppatore cancella il valore del filtro periodo temporale che indica un arco di tempo in cui le preposizioni sono state inserite;
 	\item[•]\textbf{Precondizione}: il filtro periodo temporale è impostato e lo sviluppatore visualizza solamente le preposizioni inserite in quel periodo temporale;
 	\item[•]\textbf{Postcondizione}: il filtro periodo temporale è stato rimosso e le preposizioni visualizzate non rispettano più quel filtro;
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona il filtro periodo temporale e lo rimuove.
@@ -578,7 +578,7 @@
 \subsubsection{UC 4.15 - Rimozione filtro fonte}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Sviluppatore;
-	\item[•]\textbf{Descrizione}: lo sviluppatore cancella il valore del filtro fonte, cioè le frasi provenienti da uno o più autori.
+	\item[•]\textbf{Descrizione}: lo sviluppatore cancella il valore del filtro fonte, cioè le frasi provenienti da uno o più autori;
 	\item[•]\textbf{Precondizione}: il filtro fonte è impostato e lo sviluppatore visualizza solamente le preposizioni inserite da una o più fonti;
 	\item[•]\textbf{Postcondizione}: il filtro periodo fonte è stato rimosso e le preposizioni visualizzate non rispettano più quel filtro;
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona il filtro fonte e lo rimuove.
@@ -587,7 +587,7 @@
 \subsubsection{UC 4.16 - Rimozione filtro lingue}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Sviluppatore;
-	\item[•]\textbf{Descrizione}: lo sviluppatore cancella il valore del filtro lingue che indica le preposizioni inserite in tali lingue.
+	\item[•]\textbf{Descrizione}: lo sviluppatore cancella il valore del filtro lingue che indica le preposizioni inserite in tali lingue;
 	\item[•]\textbf{Precondizione}: il filtro lingue è impostato e lo sviluppatore visualizza solamente le preposizioni inserite scritte in tali lingue;
 	\item[•]\textbf{Postcondizione}: il filtro lingue è stato rimosso e le preposizioni vengono mostrate indipendentemente dalla lingua di inserimento;
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona il filtro lingue e lo rimuove.
@@ -596,7 +596,7 @@
 \subsubsection{UC 4.17 - Rimozione filtro attendibilità}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Sviluppatore;
-	\item[•]\textbf{Descrizione}: lo sviluppatore cancella il valore del filtro attendibilità, cioè le frasi provenienti da fonti avente una determinata attendibilità espressa in formato numerico.
+	\item[•]\textbf{Descrizione}: lo sviluppatore cancella il valore del filtro attendibilità, cioè le frasi provenienti da fonti avente una determinata attendibilità espressa in formato numerico;
 	\item[•]\textbf{Precondizione}: il filtro attendibilità è impostato e lo sviluppatore visualizza solamente le preposizioni inserite da fonti con quel determinato valore di affidabilità;
 	\item[•]\textbf{Postcondizione}: il filtro attendibilità è stato rimosso e le preposizioni visualizzate non rispettano più quel filtro;
 	\item[•]\textbf{Flusso degli eventi}: lo sviluppatore seleziona il filtro attendibilità e rimuove il suo valore.

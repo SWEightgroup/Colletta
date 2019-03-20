@@ -43,10 +43,10 @@
 \item[•]\textbf{Precondizione}: l'allievo visualizza la propria dashboard;
 \item[•]\textbf{Postcondizione}: l'allievo visualizza tutti i traguardi raggiunti;
 \item[•]\textbf{Flusso degli eventi}: 
-	\begin{itemize}
-		\item[•] UC 3.3.1 - Visualizzazione prossimo traguardo;
-		\item[•] UC 3.3.2 - Visualizzazione traguardo corrente.
-	\end{itemize}
+	\begin{enumerate}
+		\item UC 3.3.1 - Visualizzazione prossimo traguardo;
+		\item UC 3.3.2 - Visualizzazione traguardo corrente.
+	\end{enumerate}
 \end{itemize}
 
 \subsubsection{UC 3.3.1 - Visualizzazione prossimo traguardo}
@@ -76,9 +76,9 @@
 \item[•]\textbf{Postcondizione}: l'allievo visualizza tutte le valutazioni ricevute;
 \item[•]\textbf{Flusso degli eventi}: l'allievo visualizza le valutazioni di tutti gli esercizi svolti, sia esercizi assegnati che svolti indipendentemente;
 \item[•] \textbf{Flusso degli eventi alternativo}: 
-	\begin{itemize}
-		\item UC 3.4.1 - Visualizzazione valutazione esercizio		.
-	\end{itemize}
+	\begin{enumerate}
+		\item UC 3.4.1 - Visualizzazione valutazione esercizio.
+	\end{enumerate}
 \end{itemize}
 
 \subsubsection{UC 3.4.1 - Visualizzazione valutazione esercizio}
@@ -104,7 +104,7 @@
 	\item[•]\textbf{Attori}: Allievo;
 	\item[•]\textbf{Descrizione}: l'allievo visualizza la lista degli insegnanti preferiti;
 	\item[•]\textbf{Precondizione}: l'allievo visualizza la propria dashboard;
-	\item[•]\textbf{Postcondizione}: l'allievo visualizza gli insegnanti preferiti.
+	\item[•]\textbf{Postcondizione}: l'allievo visualizza gli insegnanti preferiti;
 	\item[•]\textbf{Flusso degli eventi}: l'allievo visualizza la lista degli insegnanti preferiti che ha precedentemente inserito.
 \end{itemize}
 
@@ -149,7 +149,7 @@
 \item[•]\textbf{Attori}: Allievo;
 \item[•]\textbf{Descrizione}: l'allievo inserisce liberamente una frase in modo da riceverne l'analisi grammaticale;
 \item[•]\textbf{Precondizione}: l'allievo visualizza la propria dashboard;
-\item[•]\textbf{Postcondizione}: l'allievo ha visualizzato l'analisi grammaticale della frase inserita.
+\item[•]\textbf{Postcondizione}: l'allievo ha visualizzato l'analisi grammaticale della frase inserita;
 \item[•]\textbf{Flusso degli eventi}:
 \begin{enumerate}
 	\item UC 3.10.1 - Inserimento frase libera;
@@ -207,12 +207,12 @@
 	\end{enumerate}
 	\item[•]\textbf{Estensioni}:
 	\begin{enumerate}
-		\item UC 3.11.1 - Interruzione svolgimento esercizio;
+		\item UC 3.11.1 - Interruzione svolgimento esercizio.
 	\end{enumerate}
 	\item[•] \textbf{Flusso alternativo}:
-	\begin{itemize}
-				\item UC 3.11.2 - Selezione insegnante.
-	\end{itemize}
+	\begin{enumerate}
+		\item UC 3.11.2 - Selezione insegnante.
+	\end{enumerate}
 \end{itemize}
 
 \subsubsection{UC 3.11.1 - Interruzione svolgimento esercizio}
@@ -237,8 +237,8 @@
 \begin{itemize}
 	\item[•]\textbf{Attori}: Allievo;
 	\item[•]\textbf{Descrizione}: l'allievo assegna una classe grammaticale ad una parola;
-		\item[•]\textbf{Precondizione}: l'allievo sta svolgendo un esercizio.
-	\item[•]\textbf{Postcondizione}: l'allievo seleziona la classe grammaticale di una parola.
+		\item[•]\textbf{Precondizione}: l'allievo sta svolgendo un esercizio;
+	\item[•]\textbf{Postcondizione}: l'allievo seleziona la classe grammaticale di una parola;
 	\item[•]\textbf{Flusso degli eventi}: durante lo svolgimento di un esercizio  l'allievo seleziona i tag da una lista predefinita: nome, pronome, articolo, aggettivo, verbo, preposizione, congiunzione, avverbio ed esclamazione.
 \end{itemize}
 
@@ -268,7 +268,7 @@
 \item[•]\textbf{Descrizione}:  l'allievo riceve una valutazione di un esercizio svolto;
 \item[•]\textbf{Precondizione}: l'allievo visualizza la soluzione dell'esercizio svolto;
 \item[•]\textbf{Postcondizione}: l'allievo visualizza una valutazione sull'esercizio svolto;
-\item[•]\textbf{Flusso degli eventi}: l'allievo ha ri
+\item[•]\textbf{Flusso degli eventi}: l'allievo riceve una valutazione in base al numero di parole classificate correttamente. Se sono presenti più soluzioni proposte dallo stesso insegnante viene presa la soluzione che porta alla valutazione più alta.
 \end{itemize}
 
 \subsubsection{UC 3.13 - Modifica dati utente}
@@ -284,18 +284,18 @@
 \item[•] \textbf{Postcondizione}: l'allievo ha modificato uno o più dati personali;
 \item[•] \textbf{Flusso degli eventi}:
 \begin{enumerate}
-	\item[•] Selezione procedura modifica dati personali;
-	\item[•] UC 3.13.1 - Modifica email;
-	\item[•] UC 3.13.2 - Modifica nome;
-	\item[•] UC 3.13.3 - Modifica cognome;
-	\item[•] UC 3.13.4 - Modifica password;
-	\item[•] UC 3.13.5 - Modifica data di nascita;
-	\item[•] UC 3.13.6 - Modifica lingua
-	 interfaccia applicativo;
+	\item Selezione procedura modifica dati personali;
+	\item UC 3.13.1 - Modifica email;
+	\item UC 3.13.2 - Modifica nome;
+	\item UC 3.13.3 - Modifica cognome;
+	\item UC 3.13.4 - Modifica password;
+	\item UC 3.13.5 - Modifica data di nascita;
+	\item UC 3.13.6 - Modifica lingua
+	 interfaccia applicativo.
 \end{enumerate}
 \item[•] \textbf{Estensioni}:	
 	\begin{enumerate}
-		\item UC 3.13.7 - Interruzione modifica dati utente;
+		\item UC 3.13.7 - Interruzione modifica dati utente.
 	\end{enumerate}
 \end{itemize}
 
@@ -369,8 +369,8 @@
 \begin{itemize}
 	\item[•]\textbf{Attori}: Allievo;
 	\item[•]\textbf{Descrizione}: l'allievo modifica la lingua dell'applicativo;
-	\item[•]\textbf{Precondizione}: lo sviluppatore sta modificando i propri dati personali;
-	\item[•]\textbf{Postcondizione}: lo sviluppatore ha modificato la lingua dell'applicativo; 
+	\item[•]\textbf{Precondizione}: l'allievo sta modificando i propri dati personali;
+	\item[•]\textbf{Postcondizione}: l'allievo ha modificato la lingua dell'applicativo; 
 	\item[•]\textbf{Flusso degli eventi}: 
 	\begin{enumerate}
 		\item Selezione campo dati lingua applicativo;
