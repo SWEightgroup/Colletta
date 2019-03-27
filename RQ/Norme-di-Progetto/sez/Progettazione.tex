@@ -10,10 +10,35 @@ Con l'obiettivo di rendere chiare le soluzioni progettuali utilizzate, è necess
 \end{itemize}
 In caso vengano utilizzati dei {Design Pattern}\ped{G} sarà necessario accompagnarli con una descrizione ed un diagramma UML.
 
+\subsubsection{Progettazione}\mbox{}
+Dopo aver terminato il periodo di Analisi si passerà a quella di Progettazione che vede come 
+protagonisti i \textit{Progettisti}, quest'ultimi hanno stabilito l'{architettura}\ped{G} logica 
+da definire e i vari diagrammi che la rappresentano.
+La Progettazione permette di: 
+\begin{itemize}
+\item[•] Ottimizzare l'uso delle risorse;
+\item[•] Garantire la qualità del prodotto sviluppato;
+\item[•] Suddividere il problema principale in tanti sotto problemi di complessità minore.
+\end{itemize}
+
+\paragraph{Architettura logica}\mbox{}\\
+Bisogna definire un'architettura logica del prodotto che dovrà: 
+\begin{itemize}
+\item[•] Soddisfare i requisiti definiti nel documento di \AdR;
+\item[•] Essere sicura in caso di malfunzionamenti o intrusioni;
+\item[•] Essere {modulare}\ped{G} e formato da componenti riutilizzabili;
+\item[•] Essere affidabile;
+\item[•] Essere comprensibile per future manutenzioni.
+\end{itemize}
+
+\paragraph{Design Pattern}\mbox{}\\
+I \textit{Progettisti} devono utilizzare il design pattern che ritengono più adatto al contesto per rendere l'applicazione più sicura ed efficiente possibile.
+Ogni utilizzo di design pattern deve essere brevemente descritto ed accompagnato da un diagramma UML posto nella directory padre dei file sorgenti.
+
 \subparagraph{Diagrammi di attività}\mbox{}\\
 I diagrammi di attività sono rappresentati usando i formalismi definiti in UML 2. I principali sono riportati in seguito. Per indicare il consumo e la generazione di token, viene usata la seguente notazione: (T:token generati/token consumati).
 \begin{itemize}
-	\item \textbf{Nodo iniziale}: punto dal quale inizia l'esecuzione del processo. \'E rappresentato da un pallino nero (T:1/0);
+	\item \textbf{Nodo iniziale}: punto dal quale inizia l'esecuzione del processo. \`E rappresentato da un pallino nero (T:1/0);
 	\item \textbf{Activity}: azione elementare svolta dal programma. Si rappresenta con un rettangolo che ne contiene una descrizione il più sintetica possibile (T:1/1);
 	\item \textbf{Branch}: punto di decisione. Il flusso può intraprendere solo uno di n rami. Si rappresenta mediante un rombo con una freccia entrante e n uscenti. Ogni ramo è accompagnato da una \textit{guardia}, un'etichetta fra parentesi quadre che ne descrive la condizione;
 	\begin{figure}[H]
@@ -39,30 +64,14 @@ I diagrammi di attività sono rappresentati usando i formalismi definiti in UML 
 	\end{figure}
 \end{itemize}
 
-\subsubsection{Progettazione}\mbox{}
-Dopo aver terminato il periodo di Analisi si passerà a quella di Progettazione che vede come 
-protagonisti i \textit{Progettisti}, quest'ultimi hanno stabilito l'{architettura}\ped{G} logica 
-da definire e i vari diagrammi che la rappresentano.
-La Progettazione permette di: 
-\begin{itemize}
-\item[•] Ottimizzare l'uso delle risorse;
-\item[•] Garantire la qualità del prodotto sviluppato;
-\item[•] Suddividere il problema principale in tanti sotto problemi di complessità minore.
-\end{itemize}
+\subparagraph{Diagrammi di sequenza}\mbox{}\\
 
-\paragraph{Architettura logica}\mbox{}\\
-Bisogna definire un'architettura logica del prodotto che dovrà: 
-\begin{itemize}
-\item[•] Soddisfare i requisiti definiti nel documento di \AdR;
-\item[•] Essere sicura in caso di malfunzionamenti o intrusioni;
-\item[•] Essere {modulare}\ped{G} e formato da componenti riutilizzabili;
-\item[•] Essere affidabile;
-\item[•] Essere comprensibile per future manutenzioni.
-\end{itemize}
+\subparagraph{Diagrammi dei package}\mbox{}\\
 
-\paragraph{Design Pattern}\mbox{}\\
-I \textit{Progettisti} devono utilizzare il design pattern che ritengono più adatto al contesto per rendere l'applicazione più sicura ed efficiente possibile.
-Ogni utilizzo di design pattern deve essere brevemente descritto ed accompagnato da un diagramma UML posto nella directory padre dei file sorgenti.
+\subparagraph{Diagrammi delle classi}\mbox{}\\
+
+
+
 
 \subsubsection{Qualità}
 
@@ -173,8 +182,8 @@ I plugin utilizzati sono:
 	\end{itemize}
 	\item \textbf{Simple React Snippet}: per facilitare la scrittura del codice con semplici comandi come:
 	\begin{itemize}
-		\item \textbf{imrc:} Per l'import;
-		\item \textbf{cc:} Per creare le classi;
+		\item \textbf{Imrc:} Per l'import;
+		\item \textbf{Cc:} Per creare le classi;
 		
 	\end{itemize}
 \end{itemize}
@@ -210,10 +219,10 @@ Alcune delle lingue disponibili sono:
 \paragraph{Eclipse}\mbox{}\\
 Per la parte di sviluppo in Java, il gruppo \gruppo \ ha deciso di adottare l'IDE Eclipse per le seguenti ragioni:
 \begin{itemize}
-	\item \'E gratuito;
+	\item \`E gratuito;
 	\item Gran parte dei membri del gruppo ne hanno già conoscenza;
 	\item Integrazione con Maven;
-	\item \'E multipiattaforma;
+	\item \`E multipiattaforma;
 	\item Estensibilità tramite plugin per lo sviluppo con Spring.
 \end{itemize}
 Eclipse è reperibile al seguente link:\newline
@@ -261,5 +270,24 @@ Per rendere conforme lo stile di codifica per il linguaggio Javascript con la li
 Per installare ESLint è necessario dare il comando: \texttt{npm install eslint --save-dev} che installerà il modulo localmente.\\
 Per settarlo invece dare il comando: \texttt{./node\_modules/.bin/eslint --init} oppure \texttt{npx eslint}.\\
 Maggiori informazioni sono presenti al seguente indirizzo: \href{https://eslint.org/}{"ESLint"}.
+
+\paragraph{Google-java-format}\mbox{}\\
+Per rendere conforme lo stile di codifica per il linguaggio Java verrà utilizzato il programma \texttt{google-java-format}, il programma formatta automaticamente il codice di un file Java secondo le direttive di \href{https://google.github.io/styleguide/javaguide.html}{Google Java Style Guide}.
+Per formattare un file bisogna recarsi nella cartella che lo contiene e  dare il comando: 
+\begin{center}
+	 \texttt{java -jar ../google.jar $--$replace [NomeFile].java}
+\end{center}
+va controllato che il programma \texttt{google-java-format} si trovi ad un livello di gerarchia delle cartelle "più alto" rispetto al file che si sta formattando, in caso contrario va modificato il campo \texttt{../google.jar} nel comando e bisogna indicare la posizione del file \texttt{google.jar}. \\
+Se per esempio il programma si trova nella cartella Pluto presente al livello superiore delle cartelle va dato il comando \texttt{../Pluto/google.jar} al posto di \texttt{../google.jar}.\\
+Se si vuole ad esempio formattare il file \textit{HelloWorld.java} e il programma si trova al livello di cartella superiore va dato il comando: 
+\begin{center}
+\texttt{java -jar ../google.jar $--$replace HelloWorld.java}
+\end{center}
+se il file è stato formattato correttamente non vengono generati errori.\\
+Maggiori informazioni sono presenti al link: \href{https://github.com/google/google-java-format}{google-java-format}.
+
+
+
+ 
 
 
