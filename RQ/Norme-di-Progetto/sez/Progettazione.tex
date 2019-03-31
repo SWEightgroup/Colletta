@@ -65,8 +65,40 @@ I diagrammi di attività sono rappresentati usando i formalismi definiti in UML 
 \end{itemize}
 
 \subparagraph{Diagrammi di sequenza}\mbox{}\\
+Ogni diagramma di sequenza avr`a un senso di lettura verticale dall’alto al basso(verso che indica lo scorrere del tempo).  Gli oggetti coinvolti verranno rappresen-tati tramite un rettangolo, al cui interno si trover`a un nome per identificarli nelformato istanza:\textbf{NomeClasse}.  Sotto ad ogni istanza si trover`a una linea della vitatratteggiata, che sar`a sormontata in alcuni tratti da una barra di attivazione cheindica i momenti in cui l’oggetto `e attivo.  Da una barra di attivazione partiran-no delle frecce, che rappresentano un messaggio/segnale, verso la linea della vitadi oggetti gi`a instanziati o, in alternativa, verso una nuova istanza di classe percrearla.  In particolare, verranno utilizzati i seguenti tipi di frecce:
+\begin{itemize}
+\item Freccia piena, per indicare un messaggio sincrono: corrisponde alla chiamata di un metodo. Sopra tale freccia si dovrà specificare il metodo invocato secondo il formato \texttt{nomeMetodo(lista parametri formali)}
+
+\item Freccia, per indicare un messaggio asincrono(chi invoca il meotodo non attendo il return); 
+
+\item Freccia tratteggiata, per indicare il ritorno di un metodo chiamato. Sopra tale freccia si dovrà indicare il tipo di ritorno secondo il formato \texttt{TipoRitorno};
+
+\item Freccia trattegiata sormontata da <<create>>, indica la creazione di un nuovo oggetto e termina sempre in un rettangolo che ne contiene il nome nel formato \texttt{istanza: NomeClasse}
+
+\item Freccia piena sormontata da <<destroy>>, indica la distruzione di un oggetto e
+termina sempre in una X, nella quale muore anche la linea della vita dell’oggetto.
+\end{itemize}
+Sarà inoltre possibile determinare sui diagrammi di sequenza dei frame di interazione
+associati ad una guardia (o condizione):
+\begin{itemize}
+\item \textbf{alt}: indica dei frammenti in alternativa fra loro, verrà eseguito quello per cui la
+guardia è verificata;
+\item \textbf{opt}: indica un frammento che viene eseguito solo se la guardia è specificata;
+\item \textbf{par}: indica frammenti eseguiti in parallelo;
+\item \textbf{loop}: indica un frammento che viene eseguito più volte, la condizione di arresto del
+ciclo è la guardia;
+\item \textbf{region}: indica un frammento critico che deve essere eseguito in mutua esclusione.
+
+
+\end{itemize}
+
+
+
+
 
 \subparagraph{Diagrammi dei package}\mbox{}\\
+Ogni package verrà rappresentato tramite un rettangolo con un’etichetta per il nome, che dovrà contenere i diagrammi delle classi appartenenti al package ed eventuali sotto-package. Le dipendenze fra i vari package dovranno
+essere segnalate con una freccia tratteggiata. Tale freccia, disegnata dal package A al package B, indica una dipendenza di A ne confronti di B. Si devono evitare dipendenze cicliche.
 
 \subparagraph{Diagrammi delle classi}\mbox{}\\
 
