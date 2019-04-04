@@ -174,23 +174,64 @@ le seguenti convenzioni:
 \item[•] I commenti devono essere scritti in lingua inglese senza utilizzare abbreviazioni o altre ambiguità;
 \item[•] Le modifiche al codice devono sempre riflettersi sui relativi commenti;
 \item[•] Evitare commenti superflui o  inappropriati;
-\item[•] Ogni file deve presentare un’intestazione con le seguenti informazioni:
-\begin{list}{$\circ$}{}
-\item Percorso e nome del file;
-\item Nome e cognome dell’autore;
-\item Data di creazione;
-\item Breve descrizione del contenuto del file.
-\end{list}
 \end{itemize}
-Il codice Java deve seguire le linee guida per lo stile proposte da Google reperibili all'indirizzo:
+
+\paragraph{Intestazione}\mbox{}\\
+Ogni file deve presentare un'intestazione con le seguenti informazioni:
+\begin{itemize}
+\item @path: Percorso e nome del file;
+\item @author: Nome e cognome dell'autore o autori separati da una virgola;
+\item @date: Data ultima modifica;
+\item @description: Breve descrizione del contenuto del file.
+\end{itemize}
+
+
+\paragraph{Java e Javascript syle}\mbox{}\\
+Lo stile dei codici Java e javascript deve seguire le linee guida reperibili agli indirizzi:\\
+
 \begin{center}
-	\url{http://google.github.io/styleguide/};
+Java Syle: \url{http://google.github.io/styleguide/};\\
+Javascript Syle: \url{https://github.com/airbnb/javascript};
 \end{center}
-Il codice Javascript deve seguire le linee guida per lo stile proposte da
-{Airbnb}\ped{G} reperibili all'indirizzo:
-\begin{center}
-	\url{https://github.com/airbnb/javascript};
-\end{center}
+Ulteriori convenzioni adottate o sostituite sono:\\
+
+\paragraph{Ricorsione}\mbox{}\\
+La ricorsione va sempre evitata se possibile. Per ogni funzione ricorsiva è necessario fornire
+una prova di terminazione nei commenti.
+
+\paragraph{variabili globali}\mbox{}\\
+L'uso di variabili globali va sempre evitato se possibile.
+
+\paragraph{Funzioni anonime}\mbox{}\\
+Per definire funzioni anonime bisogna usare la notazione a freccia, sono più concise e
+mantengono il contesto del this.
+
+\paragraph{Lunghezza massima righe}\mbox{}\\
+La lunghezza massima per ciascuna riga di codice è di 100 caratteri, si suggerisce comunque
+ove possibile di rimanere entro gli 80 caratteri per favorire la leggibilità.
+
+\paragraph{Regole di denominazione}\mbox{}\\
+\begin{itemize}
+\item Utilizzare nomi descrittivi;
+\item Utilizzare la camelCase\ped{G} per nominare oggetti, funzioni e istanze;
+\item Utilizzare la PascalCase\ped{G} solamente per le classi e i costruttori;
+\item Non utilizzare trattini bassi prefissi o postfissi.
+\end{itemize}
+
+\paragraph{Codetags}\mbox{}\\
+I codetags sono delle parole chiavi informali all'interno dei commenti per segnalare
+dei problemi, note o delle parti di codice ancora da fare. La struttura `e la seguente: \\
+<tag>: <descrizione in una singola linea>\\
+I tag che verranno utilizzati sono:\\
+\begin{itemize}
+\item TODO: qualcosa che va completato;
+\item NOTE: annotazioni particolari;
+\item FIXME: qualcosa che va risolto perch`e non funzionante;
+\item HACK: qualcosa che funziona ma andrebbe migliorato.
+\end{itemize}
+Potranno essere usati all’interno di commenti blocco o inline. Sono supportati da
+molti IDE ed editor moderni.
+
 
 
 \subsubsection{Strumenti di supporto}
