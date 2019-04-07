@@ -372,9 +372,9 @@ Se si vuole ad esempio formattare il file \textit{HelloWorld.java} e il programm
 se il file è stato formattato correttamente non vengono generati errori.\\
 Maggiori informazioni sono presenti al link: \href{https://github.com/google/google-java-format}{google-java-format}.
 
-\paragraph{MongDb}\mbox{}\\
-In seguito alla riunione effettuata il 16-03-2019 il gruppo ha deciso di utilizzare come storage di raccolta dati il servizio MongoDb di MongoDB Inc.\\
-MongoDb è un database non relazionale \texttt{NOSQL}, orientato ai documenti che si allontana dalla struttura tradizionale basata su tabelle dei database relazionali in favore di documenti in stile \texttt{JSON} con schema dinamico. 
+\paragraph{MongDB}\mbox{}\\
+In seguito alla riunione effettuata il 16-03-2019 il gruppo ha deciso di utilizzare come storage di raccolta dati il servizio MongoDB di MongoDB Inc.\\
+MongoDB è un database non relazionale \texttt{NOSQL}, orientato ai documenti che si allontana dalla struttura tradizionale basata su tabelle dei database relazionali in favore di documenti in stile \texttt{JSON} con schema dinamico. 
 Per settare il database è necessario configurare il file \texttt{application.properties} dove verrà specificato l'indirizzo ip, il nome e la password per accedere al database.\\
 Il file dovrà avere la seguente struttura: 
 \begin{lstlisting}[language=Java] 
@@ -386,11 +386,11 @@ spring.data.mongodb.password=sweightgroup2019
 spring.data.mongodb.database=colletta
 spring.data.mongodb.authentication-database=admin
 \end{lstlisting}
-Maggiori informazioni sono presenti al seguente link: \href{https://docs.mongodb.com/?_ga=2.183391522.509639120.1554133474-1194492321.1550924275}{Mongo Docs}, il quale rimanda alla documentazione ufficiale di MongoDb. 
+Maggiori informazioni sono presenti al seguente link: \href{https://docs.mongodb.com/?_ga=2.183391522.509639120.1554133474-1194492321.1550924275}{Mongo Docs}, il quale rimanda alla documentazione ufficiale di MongoDB. 
 
-\paragraph{MongDb Compass}\mbox{}\\
-Per rendere l'utilizzo e la visualizzazione dei dati presenti nel database più agevole ai membri del gruppo è stato scelto di utilizzare lo strumento \texttt{MongoDb Compass} che tramite una {GUI}\ped{G} di facile utilizzo permette di monitorare e consultare i dati inseriti dall'applicativo.\\
-MongoDb compass è open source, pertanto per scaricarlo basta recarsi al seguente link: \href{https://www.mongodb.com/products/compass}{MongoDB Compass} e procedere con l'installazione.\\
+\paragraph{MongDB Compass}\mbox{}\\
+Per rendere l'utilizzo e la visualizzazione dei dati presenti nel database più agevole ai membri del gruppo è stato scelto di utilizzare lo strumento \texttt{MongoDB Compass} che tramite una {GUI}\ped{G} di facile utilizzo permette di monitorare e consultare i dati inseriti dall'applicativo.\\
+MongoDB compass è open source, pertanto per scaricarlo basta recarsi al seguente link: \href{https://www.mongodb.com/products/compass}{MongoDB Compass} e procedere con l'installazione.\\
 Per settarlo basterà recarsi nella sezione \texttt{New  Connection} e impostare i parametri seguendo le direttive presenti nel file \texttt{application.properties} localizzato all'interno della cartella \textbf{Backend} del progetto.
 
 \label{sec:Spring}
