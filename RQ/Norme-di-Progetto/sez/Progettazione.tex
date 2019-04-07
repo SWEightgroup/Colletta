@@ -76,7 +76,7 @@ Ogni diagramma di sequenza avrà un senso di lettura verticale dall’alto al ba
 
 \item Freccia tratteggiata, per indicare il ritorno di un metodo chiamato. Sopra tale freccia si dovrà indicare il tipo di ritorno secondo il formato: \texttt{TipoRitorno};
 
-\item Freccia trattegiata sormontata da \texttt{<<create>>}, indica la creazione di un nuovo oggetto e termina sempre in un rettangolo che ne contiene il nome nel formato \texttt{istanza:NomeClasse};
+\item Freccia trattegiata sormontata da \texttt{<<create>>}, indica la creazione di un nuovo oggetto e termina sempre in un rettangolo che ne contiene il nome nel formato \texttt{istanza: NomeClasse};
 
 \item Freccia piena sormontata da \texttt{<<destroy>>}, indica la distruzione di un oggetto e
 termina sempre in una X, nella quale muore anche la linea della vita dell’oggetto.
@@ -115,7 +115,7 @@ essere segnalate con una freccia tratteggiata. Tale freccia, disegnata dal packa
 
 \subparagraph{Diagrammi delle classi}\mbox{}\\
 Tutte le classi devono seguire l'ultima specifica UML 2.X. Allo stesso modo ogni relazione o dipendenza fra classi deve essere indicata con l'opportuna notazione.
-Le classi rappresentate nei diagrammi devono avere lo stesso nome di quelle nel codice vero e proprio, così come attributi e nomi dei metodi. È possibile, a seconda del livello di dettaglio del diagramma, omettere metodi o attributi che non risultino fondamentali per la comprensione del diagramma stesso (come, ad esempio, getters e setters).
+Le classi rappresentate nei diagrammi devono avere lo stesso nome di quelle nel codice vero e proprio, così come attributi e nomi dei metodi. È possibile, a seconda del livello di dettaglio del diagramma, omettere metodi o attributi che non risultino fondamentali per la comprensione del diagramma stesso (come, ad esempio, \texttt{getters} e \texttt{setters}).
 \begin{figure}[H]
 		\centering
 		\includegraphics[width=8cm,keepaspectratio]{img/DiagrammaClassi.png}
@@ -161,8 +161,10 @@ Lo sviluppo del progetto didattico richiede l'uso di diversi framework e linguag
 	\item \textbf{JavaScript:} viene adottato Javascript alla specifica ES6 per lo sviluppo di gran parte della backend e della frontend;
 	\item \textbf{React:} viene adottato il framework React 16.8 per lo sviluppo della parte di frontend;
 	\item \textbf{Java:} viene adottato Java con le specifiche del JDK 11 per lo sviluppo del modulo client per la connessione al server Freeling;
-	\item \textbf{Spring:} viene adottato il framework Spring 2.0.5 per facilitare lo sviluppo del modulo sopracitato, avvalendosi solo del modulo RESTful.
+	\item \textbf{Spring:} viene adottato il framework Spring 2.0.5 per facilitare lo sviluppo del modulo sopracitato, avvalendosi solo del modulo RESTful. Vedi paragrafo \hyperref[sec:Spring]{§3.2.5.12}.
+	\item \textbf{Spring Data MongoDB}: viene adottato il framework Spring Data MongoDB per interrogare e aggiornare le informazioni presenti nel database, vedi paragrafo \hyperref[sec:DataMongoDB]{§3.2.5.13}.
 \end{itemize}
+
 
 \paragraph{Stile di codifica}\mbox{}\\
 Al fine di produrre codice uniforme, leggibile e manutenibile è richiesto che vengano rispettate
@@ -179,10 +181,10 @@ le seguenti convenzioni:
 \paragraph{Intestazione}\mbox{}\\
 Ogni file deve presentare un'intestazione con le seguenti informazioni:
 \begin{itemize}
-\item @path: Percorso e nome del file;
-\item @author: Nome e cognome dell'autore o autori separati da una virgola;
-\item @date: Data ultima modifica;
-\item @description: Breve descrizione del contenuto del file.
+\item @path: percorso e nome del file;
+\item @author: nome e cognome dell'autore o autori separati da una virgola;
+\item @date: data ultima modifica;
+\item @description: breve descrizione del contenuto del file.
 \end{itemize}
 
 
@@ -192,18 +194,17 @@ Lo stile dei codici Java e javascript deve seguire le linee guida reperibili agl
 Java Syle: \url{http://google.github.io/styleguide/};\\
 Javascript Syle: \url{https://github.com/airbnb/javascript};
 \end{center}
-Ulteriori convenzioni adottate o sostituite sono:\\
 
 \paragraph{Ricorsione}\mbox{}\\
 La ricorsione va sempre evitata se possibile. Per ogni funzione ricorsiva è necessario fornire
 una prova di terminazione nei commenti.
 
-\paragraph{variabili globali}\mbox{}\\
+\paragraph{Variabili globali}\mbox{}\\
 L'uso di variabili globali va sempre evitato se possibile.
 
 \paragraph{Funzioni anonime}\mbox{}\\
 Per definire funzioni anonime bisogna usare la notazione a freccia, sono più concise e
-mantengono il contesto del this.
+mantengono il contesto del {this}\ped{G}.
 
 \paragraph{Lunghezza massima righe}\mbox{}\\
 La lunghezza massima per ciascuna riga di codice è di 100 caratteri, si suggerisce comunque
@@ -344,13 +345,6 @@ Maggiori informazioni sono reperibili al seguente link:\newline
 	\url{http://tomcat.apache.org/}
 \end{center}
 
-\paragraph{Firebase}\mbox{}\\
-Lo storage dei dati raccolti dal prodotto finale avviene sul servizio Firebase di Google. La scelta è stata obbligata, in quanto quest'ultima tecnologia è espressamente richiesta da \proponente .\newline
-Maggiori informazioni sono reperibili al seguente link:\newline
-\begin{center}
-	\url{https://firebase.google.com}
-\end{center}
-
 \paragraph{Checkstyle}\mbox{}\\
 La conformità dello stile di codifica Java con le linee guida stabilite è garantita dal plugin Maven Checkstyle, che fa fallire la build in automatico in caso di errori nella forma del codice scritto. Il controllo sullo stile può essere eseguito anche manualmente con il seguente comando:
 \begin{center}
@@ -399,13 +393,16 @@ Per rendere l'utilizzo e la visualizzazione dei dati presenti nel database più 
 MongoDb compass è open source, pertanto per scaricarlo basta recarsi al seguente link: \href{https://www.mongodb.com/products/compass}{MongoDB Compass} e procedere con l'installazione.\\
 Per settarlo basterà recarsi nella sezione \texttt{New  Connection} e impostare i parametri seguendo le direttive presenti nel file \texttt{application.properties} localizzato all'interno della cartella \textbf{Backend} del progetto.
 
+\label{sec:Spring}
 \paragraph{Spring}\mbox{}\\
 Spring è un framework open source per lo sviluppo di applicazioni su piattaforma Java. A questo framework sono associati tanti altri progetti, che hanno nomi compositi come \href{https://spring.io/projects/spring-boot}{Spring Boot}, \href{https://spring.io/projects/spring-data}{Spring Data}, \href{https://spring.io/projects/spring-batch}{Spring Batch}. 
 Spring da la possibilità di creare applicazioni complesse senza la necessità di rispettare pienamente la specifica {EJB}\ped{G}, ma usando semplici oggetti Java ({POJO}\ped{G}).\\
 Il cuore di Spring è un motore di \texttt{{Inversion of Control}\ped{G}} che consente d'implementare applicazioni solide basate su componenti estremamente testabili e riutilizzabili.\\
 Maggiori informazioni sono disponibili al seguente link: \href{https://spring.io/}{Spring: the source for modern java}. 
 
+
 \paragraph{Spring Data MongoDB}\mbox{}\\
+\label{sec:DataMongoDB}
 Spring Data MongoDB è un subframework di Spring Data, lo scopo di Spring Data è quello di fornire un accesso semplice ai database, SQL e NOSQL, seguento il modello di programmazione di Spring.
 Nel nostro caso il progetto Spring Data MongoDB prevede un integrazione con il database documentale MongoDB.\\
 La chiave centrale sono i {\textbf{modelli POJO}}\ped{G} per interagire con il database, questi permettono di interrogare e scrivere in modo semplice
@@ -415,6 +412,6 @@ Una collezione all'interno del database è rappresentata, in Java, mediante una 
 	\texttt{@Document(collection = "collectionName")}
 \end{center}  
 al di sopra della definizione di essa. Sfruttando la conversione effettuata automaticamente da Spring i documenti presenti nel database possono essere modificati attraverso funzioni e metodi di Java.\\
-Più nello specifico la classe \texttt{MongoTemplate}, localizzata nel pacchetto \texttt{org.springframework.data.mongodb.core}, possiede dei metodi per interagire con il database: \texttt{create}, \texttt{update}, \texttt{delete}, \texttt{query} per MongoDb ed inoltre provvede a \texttt{mappare gli oggetti} presenti in Java in documenti di Mongo.\\
+Più nello specifico la classe \texttt{MongoTemplate}, localizzata nel pacchetto \texttt{org.springframework.data.mongodb.core}, possiede dei metodi per interagire con il database: \texttt{create}, \texttt{update}, \texttt{delete}, \texttt{query} per MongoDb ed inoltre provvede a \texttt{mappare gli oggetti} presenti in Java in documenti di Mongo.\\ 
 Gli oggetti vengono mappati da SpringData tramite l'implentazione dell'interfaccia \texttt{MongoConverter} nella
 classe \texttt{MappingMongoConverter}, questa può essere lasciata generare automaticamente o può essere ridefinita. Per maggiori dettagli si veda: \href{https://docs.spring.io/spring-data/mongodb/docs/2.1.5.RELEASE/reference/html/#mongo.custom-converters}{Overriding Default Mapping with Custom Converters}.
