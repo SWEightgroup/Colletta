@@ -22,5 +22,10 @@ L'architettura realizzata all'interno di Spring Web consta nella presenza di:
 \subsection{Data Transfer Object}
 Le classi Helper rappresentano Data Transfer Object (DTO), vengono utilizzate dalla classe \texttt{Controller.java} per fornire un oggetto per il trasferimento dati dalla frontend senza ricorrere a JSON troppo complessi.
 
-\subsubsection{Builder}
-I model sono dotati ognuno di un builder, tale classe interna non è codificata ma realizzata tramite un plugin denominato lambok.
+\subsection{Builder}
+I model sono dotati ognuno di un builder, tale classe interna non è codificata ma realizzata tramite un plugin denominato lambok. A seguire viene mostrato un esempio di un builder creato automaticamente.
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{img/builder.png}
+\caption{Esempio di builder presente nella classe UserModel}
+\end{figure}
