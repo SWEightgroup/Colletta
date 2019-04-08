@@ -1,0 +1,63 @@
+This section is intended to make the developer understand the working of the Colletta frontend, and to allow him or her to add functionalities  to the software package.
+In order fully understand the contents below, the developer must have a certain degree of familiarity with React and Redux. If that's not the case, we strongly recommend the reader to at least acquire some basic knowledge on the topics.
+
+\subsection{Directory tree}
+\begin{figure}[H]
+\centering
+\begin{forest}
+  for tree={
+    font=\ttfamily,
+    grow'=0,
+    child anchor=west,
+    parent anchor=south,
+    anchor=west,
+    calign=first,
+    inner xsep=7pt,
+    edge path={
+      \noexpand\path [draw, \forestoption{edge}]
+      (!u.south west) +(7.5pt,0) |- (.child anchor) pic {folder} \forestoption{edge label};
+    },
+    before typesetting nodes={
+      if n=1
+        {insert before={[,phantom]}}
+        {}
+    },
+    fit=band,
+    before computing xy={l=15pt},
+  }  
+[Frontend
+	[src
+		[actions
+		]
+		[assets
+		]
+		[constants
+		]
+		[helpers
+		]
+		[reducer
+		]
+		[store
+		]
+		[view
+			[containers]
+			[components]
+		]
+	]
+]
+\end{forest}
+\caption{Frontend directory tree}
+\label{fig:FrontDir}
+\end{figure}
+
+Each folder contains a specific set of files:
+\begin{itemize}
+	\item \textbf{actions:} the modules in this folder are responsible for creating and dispatching the actions to the reducers;
+	\item \textbf{assets:} static files like font and images;
+	\item \textbf{constants:} data collections and constants used in various part of the code, i.e. the label used for the translation;
+	\item \textbf{helpers:} standard js functions or classes which have some use in the code, i.e. the label translator;
+	\item \textbf{reducers:} all the reducers responsible for the creation of a new state;
+	\item \textbf{store:} a single file creating and giving access to the centralized state;
+	\item \textbf{view:} classes rendering the information in the store. They are divided in \textit{components} and \textit{containers}.
+	
+\end{itemize}
