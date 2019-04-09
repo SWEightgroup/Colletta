@@ -1,21 +1,43 @@
-\subsection{Backend}
-\subsubsection{Design pattern utilizzati}
+\subsection{Panoramica}
 \begin{figure}[H]
 \centering
-\includegraphics[width=17cm, keepaspectratio]{img/Adapter.png} 
-\caption{Object Adapter}
-\end{figure}
-
-\subsubsection{MongoDB Database}
-\begin{figure}[H]
-\centering
-\includegraphics[width=17cm, keepaspectratio]{img/mongodb.png} 
+\includegraphics[width=17cm, keepaspectratio]{img/photo_2019-04-08_19-26-02.jpg} 
 \caption{Exercise insert}
 \end{figure}
 
-\subsection{Frontend}
-\subsubsection{Design pattern utilizzati}
-\paragraph{Flux}\mbox{}\\
+\subsection{MongoDB Database}
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm, keepaspectratio]{img/mongodb.png} 
+\caption{MongoDB database}
+\end{figure}
+\newpage
+
+\subsection{Design pattern utilizzati}
+\subsubsection{Backend}
+\paragraph{Adapter}
+L'utilizzo della libreria di Freeling, per il pos-tagging, ha richiesto la creazione di un Adapter nella variante Object Adapter per poter adattare le funzionalità strettamente necessarie.
+\begin{figure}[H]
+\includegraphics[width=17cm]{img/Adapter.png} 
+\caption{Diagramma delle classi Adapter}
+\end{figure}
+La classe FreelingSocketClient viene fornita dai creatori della libreria e si occupa di realizzare la connessione con il server Freeling scritto in C++.
+\paragraph{Controller - Service - Repository - Model}
+L'architettura realizzata all'interno di Spring Web consta nella presenza di:
+\begin{itemize}
+\item \textbf{Controller}: un a cui è delegato il compito di gestire le richieste provenienti dalla parte frontend e alla cattura delle eccezioni;
+\item \textbf{Service}: realizzano la business-logic;
+\item \textbf{Repository}: realizzano il layer di persistenza gestendo la base di dati;
+\item \textbf{Model}: rappresentano oggetti  Plain Old Java Object, un'istanza di un model rappresenta un documento di una collezione.
+\end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{img/springArch.png}
+\caption{Scherma generale architettura in Spring}
+\end{figure}
+
+\subsubsection{Frontend}
+\paragraph{Redux}\mbox{}\\
 
 \begin{figure}[H]
     \centering
@@ -33,4 +55,23 @@ In Redux, tutti i dati scorrono in modo unidirezionale attraverso i seguenti com
     \item \textbf{View: }componenti grafiche, il loro contenuto dipende dallo store. Sono implementate attraverso un \textit{Observer Pattern} sullo store stesso.
     Ad ogni cambiamento di stato prodotto da un reducers vengono renderizzate le componenti collegate ad esso.
 \end{itemize} 
+
+
+\subsection{Diagrammi dei package}
+\subsubsection{Data Transfer Object}
+Le classi Helper rappresentano Data Transfer Object (DTO), vengono utilizzate dalla classe \texttt{Controller.java} per fornire un oggetto per il trasferimento dati dalla frontend senza ricorrere a JSON troppo complessi.
+
+\subsubsection{Builder}
+I model sono dotati ognuno di un builder, tale classe interna non è codificata ma realizzata tramite un plugin denominato lambok. A seguire viene mostrato un esempio di un builder creato automaticamente.
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{img/builder.png}
+\caption{Esempio di builder presente nella classe UserModel}
+\end{figure}
+
+\input{sez/Diagrammi_dei_package.tex}
+\newpage
+\subsection{Diagrammi di sequenza}
+\input{sez/Diagrammi_di_sequenza.tex}
+
 
