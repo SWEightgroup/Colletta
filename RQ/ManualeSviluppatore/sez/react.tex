@@ -197,7 +197,7 @@ If instead one wants to implement a new language, the following steps need to fo
 \begin{enumerate}
 \item Every single string in \texttt{Label.js} must be translated and inserted with the ISO 639-1 code of the language;
 \item The variable \texttt{UiLang} in \texttt{src/constants/Label.js} must be updated with the ISO 639-1 code of the language;
-\item For every language in \texttt{Label.js}, a string int the format \textttt{gen\_xx} must be added, with xx being the ISO 639-1 code of the language. The string must contain the language name. For instance, in English \texttt{gen\_it} is Italian and \texttt{gen\_en} is English.
+\item For every language in \texttt{Label.js}, a string int the format \texttt{gen\_xx} must be added, with xx being the ISO 639-1 code of the language. The string must contain the language name. For instance, in English \texttt{gen\_it} is Italian and \texttt{gen\_en} is English.
 \end{enumerate}
 The following snippet represents a slim-down example of \texttt{Label.js}:
 \begin{lstlisting}
@@ -221,6 +221,56 @@ export const _label = {
 
 
 \subsubsection{Analysis Languages}
+The process for enabling other analysis language is a little bit more tedious, as it means having to do with the Freeling tagset.
+Let's have a brief overview at what needs to be done:
+\begin{enumerate}
+\item A custom JSON tagset must be created starting from the freeling tagset;
+\item The tagset created must be modified to accommodate some conditions;
+\item The tagset must be placed in the correct folder.
+\end{enumerate}
+One can find the Freeling tagsets and their description at \url{https://talp-upc.gitbook.io/freeling-4-1-user-manual/tagsets}. Starting from the tables in the Freelig doc, the end result should look like this:
+\begin{lstlisting}
+const italian = {
+  adjective: {
+    text: { full: 'adjective', short: 'A' },
+    attributes: [
+      {
+        attrName: 'type',
+        choices: [
+          { short: 'O', full: 'Ordinal' },
+          { short: 'Q', full: 'qualificative' },
+          { short: 'P', full: 'Possesive' }
+        ],
+        condition: null
+      },
+      {
+        attrName: 'degree',
+        choices: [
+          { short: 'S', full: 'superlative' },
+          { short: '0', full: 'none' }
+        ],
+        condition: { index: 1, short: 'Q' }
+      },
+      //...........
+\end{lstlisting}
+Let's break in down:
+\begin{itemize}
+\item The outermost level contains the categories of word in the language (i.e. adjective, noun, etc...);
+\item Each category has a text value, a name, a condition, and a list of choices. Each choice represents a possible value for the attribute.
+\item Choices and text objects of attributes contain two string:
+	\begin{itemize}
+	\item \textbf{Full:} the name of the choice or category (i.e. Adjective, Ordinal).
+	\item \textbf{Short:} the letter corresponding to the choice or the category (i.e. Adjective is A, Ordinal is O.
+	\end{itemize}
+\end{itemize}
+The modifications which have been made from the standard tagset are the following:
+\begin{itemize}
+\item \textbf{Conditions}: this field is needed for avoiding showing the user choices that cannot be taken. For instance, it would make non sense to show the option to show the superlative option if the adjective selected has been marked as possessive. Thus, the condition states that the attribute at \texttt{index: 1} must have \texttt{short: Q}, so it must be qualificative. If no restriction applies, the condition field must be set to null;
+\item \textbf{None fields}: looking at the code example above, one may notice the following choice: \texttt{\{ short: '0', full: 'none' \}}. It has been added to let the user to mark an adjective as not superlative. This choice must be added whenever an attribute is not strictly mandatory.
+\end{itemize}
+Adding conditions and none fields requires a decent understanding of a language grammar, and it is a process that must be executed very carefully.\\
+Once the file is completed, it can be placed in the \texttt{src/constants} folder, named as \texttt{ger\_xx} where \texttt{xx} is the ISO 639-1 code of the language.\\
+Disclaimer: Freeling documentation is not 100\% reliable. The tagset might be incomplete or containing some errors.
 
 
 
