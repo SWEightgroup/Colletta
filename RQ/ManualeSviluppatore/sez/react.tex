@@ -173,6 +173,53 @@ export const sampleActionCreator = objectToSend => {
 
 
 \subsubsection{Interface Language}
+The multiple languages of the application are implemented via the Translator module in the \texttt{src/helpers} folder. Every single piece of text shown to the user is stored in \texttt{src/constants/Label.js} in all the languages supported by Colletta. Each language is identified by its ISO 639-1 code.\\
+Each string variable is composed as follow:
+\begin{center}
+context\_identifier
+\end{center}
+where:
+\begin{itemize}
+\item \textbf{Context} is the component or container in which the string is used. If it is used in more than one component or container, context should be \texttt{gen}. Context must start with a lowercase letter;
+\item \textbf{Identifier} should sum up the function of the string. It must start with a lowercase letter.
+\end{itemize}
+The translated string can than be displayed with the following function:
+\begin{center}
+\texttt{\_translator('string\_variable', language)}
+\end{center}
+where:
+\begin{itemize}
+\item \textbf{String\_variable} is the name of the string you want to render. It must be surrounded by single quotes;
+\item \textbf{Language} is a string containing the ISO 639-1 code of the language you want to render the string in.
+\end{itemize}
+Therefore, whenever one wants to add some new text to some component or container, he or she must add the string in all of the supported languages and render it with the translator module.\\
+If instead one wants to implement a new language, the following steps need to followed:
+\begin{enumerate}
+\item Every single string in \texttt{Label.js} must be translated and inserted with the ISO 639-1 code of the language;
+\item The variable \texttt{UiLang} in \texttt{src/constants/Label.js} must be updated with the ISO 639-1 code of the language;
+\item For every language in \texttt{Label.js}, a string int the format \textttt{gen\_xx} must be added, with xx being the ISO 639-1 code of the language. The string must contain the language name. For instance, in English \texttt{gen\_it} is Italian and \texttt{gen\_en} is English.
+\end{enumerate}
+The following snippet represents a slim-down example of \texttt{Label.js}:
+\begin{lstlisting}
+export const _label = {
+  it: {
+    account_yourData: 'I tuoi dati',
+    dashboard_hiUser: 'Ciao, ',
+    executionExercise_complete: 'Completa',
+    gen_it: 'Italiano',
+    gen_en: 'Inglese'
+  },
+  en: {
+    account_yourData: 'Your data',
+    dashboard_hiUser: 'Hello, ',
+    executionExercise_complete: 'Submit solution',
+    gen_it: 'Italian',
+    gen_en: 'English',
+  }
+};
+\end{lstlisting}
+
+
 \subsubsection{Analysis Languages}
 
 
