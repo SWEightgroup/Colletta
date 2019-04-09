@@ -58,6 +58,38 @@ Each folder contains a specific set of files:
 	\item \textbf{helpers:} standard js functions or classes which have some use in the code, i.e. the label translator;
 	\item \textbf{reducers:} all the reducers responsible for the creation of a new state;
 	\item \textbf{store:} a single file creating and giving access to the centralized state;
-	\item \textbf{view:} classes rendering the information in the store. They are divided in \textit{components} and \textit{containers}.
-	
+	\item \textbf{view:} classes rendering the information in the store. They are divided in \textit{components} and \textit{containers}.	 The key point to bare in mind when talking about components and containers is the following: containers are "smart", they observe the store and can call actions; components, on the other hand, are basically just static functions.
 \end{itemize}
+
+\subsection{Modify or add features}
+\subsubsection{Components}
+Components extend the React \texttt{component} abstract class and implement the \texttt{render()} method. They can be viewed as a pure functions of the props passed by their father component or container. They do not have access to the store. When adding or modifying a component the following rules should be followed:
+\begin{itemize}
+	\item Since the global state of the application is managed by Redux, do not use or create the local state of the component. Instead, rely solely on the props;
+	\item Helper functions may be defined in the component class, but none of them should call action creators or external resources such as API calls;
+	\item All components must be placed in the \texttt{src/component} folder;
+\end{itemize}
+When adding a new component, one can start from the following snippet:
+\begin{lstlisting}
+import React, { Component } from 'react';
+import _translator from '../../helpers/Translator';
+class SampleComponent extends Component {
+
+  render() {
+    const { prop1,prop2,prop3 } = this.props;
+    //Do stuff here
+    return (
+      <React.Fragment>
+        {/* Stuff to render */}
+      </React.Fragment>
+    );
+  }
+}
+export default SampleComponent;
+\end{lstlisting}
+\subsubsection{Containers}
+\subsubsection{Actions}
+\subsubsection{Reducers}
+
+
+
