@@ -68,6 +68,7 @@ Components extend the React \texttt{component} abstract class and implement the 
 	\item Since the global state of the application is managed by Redux, do not use or create the local state of the component. Instead, rely solely on the props;
 	\item Helper functions may be defined in the component class, but none of them should call action creators or external resources such as API calls;
 	\item All components must be placed in the \texttt{src/component} folder;
+	\item Every component which needs to render some text must have a language prop to call to the translator module;
 \end{itemize}
 When adding a new component, one can start from the following snippet:
 \begin{lstlisting}
@@ -87,9 +88,93 @@ class SampleComponent extends Component {
 }
 export default SampleComponent;
 \end{lstlisting}
+
+
 \subsubsection{Containers}
-\subsubsection{Actions}
-\subsubsection{Reducers}
+Containers extend the React \texttt{component} abstract class and implement the \texttt{render()} method. They can read the store and alters its state via actions. Containers can also have props passed to them, just like a container. When adding or modifying a component the following rules should be followed:
+\begin{itemize}
+	\item Since the global state of the application is managed by Redux, do not use or create the local state of the container. Instead, rely solely on the props and on the store;
+	\item The store and the actions should not be accessed directly for performance and readability reasons. Instead, the should be mapped to the props;
+	\item All containers must be placed in the most appropriate \texttt{src/view/containers} sub-directory. Creation of new sub-directories is allowed if necessary.
+\end{itemize}
+
+When adding a new container, one can start from the following snippet:
+\begin{lstlisting}
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import _translator from '../../../helpers/Translator';
+
+class SampleContainer extends Component {
+
+  render() {
+    const { prop1, prop2, prop3, action1Prop, action2Prop } = this.props;
+    // Do stuff
+    return (
+      // Stuff to render
+    );
+  }
+}
+const mapStateToProps = store => {
+  return {
+    prop1: store.object1,
+    prop2: store.object2,
+    prop3: store.object3
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    action1Prop: () => dispatch(action1()),
+    action2Prop: () => dispatch(action2())
+  };
+};
+//both action1 and action2 must be imported
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(SampleContainer);
+\end{lstlisting}
+
+
+\subsubsection{Rest API calls}
+When implementing a new Rest API call (RAP from now on), the developer must stick to the following guidelines:
+\begin{itemize}
+	\item RAPs must be implemented inside an action creator and should not be put inside components or containers;
+	\item RAPs must use the Axios module;
+	\item RAPs must pass an authorization token (exception made for Login and SignUp) which is kept in the store. The snippet below will show clarify how;
+	\item If a RAP does not need additional data, the data field should be replaced by \texttt{\{\}}, otherwise the response will display a 403 error.
+\end{itemize}
+When adding a new RAP, one can start from the following snippet:
+\begin{lstlisting}
+export const sampleActionCreator = objectToSend => {
+  return dispatch => {
+    axios
+      .post(
+        'http://localhost:8081/sample-call',
+        {
+          ...objectToSend
+        },
+        {
+          headers: {
+            'content-type': 'application/json',
+            Authorization: store.getState().auth.token
+          }
+        }
+      )
+      .then(response => {
+        // Maybe do something
+        dispatch({ type: 'SAMPLE-ACTION', dataToDispatch });
+      })
+      .catch(() => {/* Handle Error Here*/});
+  };
+};
+\end{lstlisting}
+
+
+\subsubsection{Interface Language}
+\subsubsection{Analysis Languages}
+
 
 
 
