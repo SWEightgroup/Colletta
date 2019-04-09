@@ -128,19 +128,40 @@ Le classi rappresentate nei diagrammi devono avere lo stesso nome di quelle nel 
 \subsubsection{Qualità}
 
 \paragraph{Classificazione dei test}\mbox{}\\
-I test implementati devono essere classificati secondo la seguente notazione:
-\begin{center}
-	T[Tipologia Test][Codice identificativo]
-\end{center}
-dove:
+
+Ogni Test è strutturato come segue:
 \begin{itemize}
-	\item[•] \textbf{Tipologia test}: indica il tipo di test e può assumere i seguenti valori:
-	\begin{list}{$\circ$}{}
-		\item U: per i test di unità;
-		\item I: per i test di integrazione;
-		\item S: per i test di sistema;
-	\end{list}
-	\item[•] \textbf{Codice identificativo}: indica il codice numerico univoco del test.
+\item Codice identificativo; 
+\item Descrizione;
+\item Stato. 
+\end{itemize}
+Per ciascun test è assegnato un codice identificativo la cui sintassi segue il seguente
+formalismo:
+\begin{center}
+\textbf{T\{tipo\}\{codiceIdentificativo\}}
+\end{center}
+Dove: 
+\begin{itemize}
+\item \textbf{lettera}: identifica uno dei seguenti tipi di test:
+	\begin{itemize}
+		\item \textbf{U}: test di unità; 
+		\item \textbf{I}: test di integrazione; 
+		\item \textbf{S}: test di sistema.
+	\end{itemize}
+\item \textbf{codiceIdentificativo}: assume i seguenti valori in base al tipo di test:
+	\begin{itemize}
+	\item \textbf{codiceNumerico}: associato ai test di unità e di integrazione, è un codice
+progressivo di tre cifre che parte da 001;
+	\item \textbf{codiceRequisito}: associato ai test di sistema. Identifica il codice univo-
+co associato ad ogni requisito descritto nel documento Analisi dei Requisiti
+v3.0.0.
+	\end{itemize}
+\end{itemize}	
+Inoltre lo Stato del test può assumere i seguenti valori:
+\begin{itemize}
+\item Non implementato;  
+\item Superato; 
+\item Non superato. 
 \end{itemize}
 
 \paragraph{Test di unità}\mbox{}\\
