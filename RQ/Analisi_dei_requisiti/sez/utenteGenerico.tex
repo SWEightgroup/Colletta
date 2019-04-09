@@ -6,6 +6,12 @@
 \caption{Panoramica utente non autenticato}\label{fig:1}
 \end{figure}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm]{img/Panoramicaconext12.png} 
+\caption{Panoramica registrazione}\label{fig:1}
+\end{figure}
+
 
 \subsubsection{UC 1.1 - Autenticazione}
 
@@ -67,6 +73,7 @@
 	\caption{Caso d'uso UC 1.2}\label{fig:12}
 \end{figure}
 \begin{itemize}
+
 	\item[•]\textbf{Attori}: Utente non autenticato;
 	\item[•]\textbf{Descrizione}: l'utente non autenticato compila il modulo di registrazione al fine di poter accedere al sistema;
 	\item[•]\textbf{Precondizione}: l'utente non è autenticato;
@@ -109,10 +116,6 @@
 \item[•]\textbf{Precondizione}: l'utente non è autenticato e il nome non è definito;
 \item[•]\textbf{Postcondizione}: l'utente ha inserito il suo nome;
 \item[•]\textbf{Flusso degli eventi}: l'utente visualizza il form per la registrazione e inserisce il suo nome in un apposito campo;
-	\item[•]\textbf{Estensioni}:
-	\begin{enumerate}
-		\item UC 1.7 - Interruzione registrazione utente.
-	\end{enumerate}
 \end{itemize}
 
 \subsubsection{UC 1.2.3 - Inserimento cognome}
@@ -122,10 +125,6 @@
 	\item[•]\textbf{Precondizione}: l'utente non è autenticato e il cognome non è definito;
 	\item[•]\textbf{Postcondizione}: l'utente ha inserito il suo cognome;
 	\item[•]\textbf{Flusso degli eventi}: l'utente visualizza il form per la registrazione e inserisce il suo cognome in un apposito campo;
-	\item[•]\textbf{Estensioni}:
-	\begin{enumerate}
-		\item UC 1.7 - Interruzione registrazione utente.
-	\end{enumerate}
 \end{itemize}
 
 \subsubsection{UC 1.2.4 - Inserimento password}
@@ -135,10 +134,6 @@
 	\item[•]\textbf{Precondizione}: l'utente non è autenticato e la password non è definita;
 	\item[•]\textbf{Postcondizione}: l'utente ha inserito una password;
 	\item[•]\textbf{Flusso degli eventi}: l'utente visualizza il form per la registrazione e inserisce la propria password in apposito campo;
-	\item[•]\textbf{Estensioni}:
-	\begin{enumerate}
-		\item UC 1.7 - Interruzione registrazione utente.
-	\end{enumerate}
 \end{itemize}
 
 \subsubsection{UC 1.2.5 - Inserimento conferma password}
@@ -161,10 +156,6 @@
 	\item[•]\textbf{Precondizione}: l'utente non è autenticato e la data di nascita non è definita;
 	\item[•]\textbf{Postcondizione}: l'utente ha inserito la sua data di nascita;
 	\item[•]\textbf{Flusso degli eventi}: l'utente visualizza il form per la registrazione e inserisce la data di nascita in un apposito campo;
-	\item[•]\textbf{Estensioni}:
-	\begin{enumerate}
-		\item UC 1.7 - Interruzione registrazione utente.
-	\end{enumerate}
 \end{itemize}
 
 \subsubsection{UC 1.2.7 - Selezione ruolo}
@@ -174,10 +165,6 @@
 	\item[•]\textbf{Precondizione}: l'utente non è registrato e il ruolo non è definito;
 	\item[•]\textbf{Postcondizione}: l'utente ha inserito il ruolo desiderato;
 	\item[•]\textbf{Flusso degli eventi}: l'utente non registrato seleziona la scelta del ruolo tra: allievo, insegnante e sviluppatore;
-	\item[•]\textbf{Estensioni}:
-	\begin{enumerate}
-		\item UC 1.7 - Interruzione registrazione utente;
-	\end{enumerate}
 	\item[•]\textbf{Generalizzazioni}: 
 	\begin{enumerate}
 		\item UC 1.2.7.1 - Selezione ruolo insegnante;
@@ -193,10 +180,6 @@
 	\item[•]\textbf{Precondizione}: l'utente non è registrato e il ruolo non è selezionato;
 	\item[•]\textbf{Postcondizione}: l'utente ha selezionato il ruolo insegnante;
 	\item[•]\textbf{Flusso degli eventi}: l'utente non registrato seleziona il ruolo insegnante da un elenco predefinito;
-	\item[•]\textbf{Estensioni}:
-	\begin{enumerate}
-		\item UC 1.7 - Interruzione registrazione utente.
-	\end{enumerate}
 \end{itemize}
 \subsubsection{UC 1.2.7.2 - Selezione ruolo allievo}
 \begin{itemize}
@@ -205,10 +188,6 @@
 	\item[•]\textbf{Precondizione}: l'utente non è registrato e il ruolo non è selezionato;
 	\item[•]\textbf{Postcondizione}: l'utente ha selezionato il ruolo allievo;
 	\item[•]\textbf{Flusso degli eventi}: l'utente non registrato seleziona il ruolo allievo da un elenco predefinito;
-	\item[•]\textbf{Estensioni}:
-	\begin{enumerate}
-		\item UC 1.7 - Interruzione registrazione utente.
-	\end{enumerate}
 \end{itemize}
 \subsubsection{UC 1.2.7.3 - Selezione ruolo sviluppatore}
 \begin{itemize}
@@ -217,10 +196,6 @@
 	\item[•]\textbf{Precondizione}: l'utente non è registrato e il ruolo non è selezionato;
 	\item[•]\textbf{Postcondizione}: l'utente ha selezionato il ruolo sviluppatore;
 	\item[•]\textbf{Flusso degli eventi}: l'utente non registrato seleziona il ruolo sviluppatore da un elenco predefinito;
-	\item[•]\textbf{Estensioni}:
-	\begin{enumerate}
-		\item UC 1.7 - Interruzione registrazione utente.
-	\end{enumerate}
 \end{itemize}
 
 
@@ -242,6 +217,14 @@
 	\item[•]\textbf{Postcondizione}: l'utente visualizza un messaggio di errore relativo all'inserimento di password e conferma password con valori diversi;
 	\item[•]\textbf{Flusso degli eventi}: l'utente inserisce conferma password con un valore differente rispetto al campo password, pertanto riceve un messaggio di errore.
 \end{itemize}
+
+\subsubsection{Panoramica recupero credenziali}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=14cm, keepaspectratio]{img/panoramicaUC15.png} 
+	\caption{panoramica recupero credenziali}
+\end{figure}
+
 
 \subsubsection{UC 1.5 - Recupero credenziali}
 \begin{figure}[H]
@@ -269,15 +252,6 @@
 	\end{enumerate}
 \end{itemize}
 
-%\subsubsection{UC 1.5.1 - Selezione procedura recupero credenziali}
-%\begin{itemize}
-%	\item[•]\textbf{Attori}: Utente non autenticato;
-%	\item[•]\textbf{Descrizione}: l’utente seleziona il collegamento che conduce alla pagina di recupero delle credenziali;
-%	\item[•]\textbf{Precondizione}: l’utente non è autenticato;
-%	\item[•]\textbf{Postcondizione}: l’utente visualizza la pagina di recupero delle credenziali;
-%	\item[•]\textbf{Flusso degli eventi}: l'utente non autenticato seleziona l'opzione per il recupero delle credenziali e viene automaticamente reindirizzato alla pagina di recupero. 
-%\end{itemize}
-
 \subsubsection{UC 1.5.1 - Inserimento email}
 \begin{itemize}
 	\item[•]\textbf{Attori}: Utente non autenticato;
@@ -287,14 +261,6 @@
 	\item[•]\textbf{Flusso degli eventi}: l'utente non autenticato inserisce una stringa che rappresenta la email utilizzata in fase di registrazione. 
 \end{itemize}
 
-%\subsubsection{UC 1.5.3 - Conferma smarrimento credenziali}
-%\begin{itemize}
-%	\item[•]\textbf{Attori}: Utente non autenticato;
-%	\item[•]\textbf{Descrizione}: l’utente non autenticato conferma lo smarrimento delle credenziali;
-%	\item[•]\textbf{Precondizione}: l’utente non è autenticato;
-%	\item[•]\textbf{Postcondizione}: l’utente ha confermato lo smarrimento delle credenziali. Il sistema provvede a inviare una mail con il collegamento per il recupero password;
-%	\item[•]\textbf{Flusso degli eventi}: l'utente non autenticato conferma lo smarrimento delle credenziali. 
-%\end{itemize}
 
 \subsubsection{UC 1.5.2 - Inserimento nuova password}
 \begin{itemize}
@@ -348,15 +314,6 @@
 	\item[•]\textbf{Postcondizione}: l'utente non autenticato interrompe il recupero delle credenziali e torna alla pagina di autenticazione;
 	\item[•]\textbf{Flusso degli eventi}: durante il recupero delle credenziali, l'utente generico interrompe la procedura e ritorna nella pagina di autenticazione.
 \end{itemize}
-
-%\subsubsection{UC 1.5.6 - Conferma modifica password}
-%\begin{itemize}
-%	\item[•]\textbf{Attori}: Utente non autenticato;
-%	\item[•]\textbf{Descrizione}: l’utente non autenticato conferma la modifica delle password;
-%	\item[•]\textbf{Precondizione}: l’utente non autenticato ha inserito la conferma della nuova password (UC 1.5.5);
-%	\item[•]\textbf{Postcondizione}: l'utente viene reindirizzato alla pagina di autenticazione;
-%	\item[•]\textbf{Flusso degli eventi}: l'utente non autenticato conferma la modifica della password e viene reindirizzato alla pagina di autenticazione.
-%\end{itemize}
 
 \subsubsection{UC 1.6 - Selezione lingua interfaccia applicativo}
 \begin{itemize}
