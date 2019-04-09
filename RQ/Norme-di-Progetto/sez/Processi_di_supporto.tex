@@ -12,10 +12,10 @@ I documenti formali che verranno presentati saranno suddivisi in due categorie:
     \end{list} 
 \item[•] \textbf{Esterni}:
 	\begin{list}{$\circ$}{}
-		\item \textbf{Piano di progetto}: documento per l’analisi e la pianificazione della gestione delle risorse di tempo e umane;
+		\item \textbf{Piano di progetto}: documento per l'analisi e la pianificazione della gestione delle risorse di tempo e umane;
 		\item \textbf{Piano di qualifica}: documento che descrive standard e obiettivi che il gruppo deve raggiungere per garantire la qualità di processo e prodotto;
 		\item \textbf{Glossario}: documento che raccoglie i termini appartenenti ad un ambito specifico e circoscritto. Contiene la spiegazione dei termini desueti o specialistici utilizzati nei documenti;
-		\item \textbf{Analisi dei requisiti}: documento che contiene l’analisi dei casi d’uso del prodotto e i diagrammi di interazioni previste con l'utente;
+		\item \textbf{Analisi dei requisiti}: documento che contiene l'analisi dei casi d’uso del prodotto e i diagrammi di interazioni previste con l'utente;
 		\item \textbf{Manuale Utente}: documento che fornisce all'utente finale istruzioni su come usare il prodotto software;
 		\item \textbf{Manuale Sviluppatore}: documento che fornisce allo sviluppatore indicazioni utili per comprendere ed espandere il prodotto software. 
 	\end{list}
@@ -309,7 +309,11 @@ Ogni diagramma di caso d’uso è identificato in alto a sinistra dal suo codice
 Questa sezione descrive le classificazioni e le formule per il calcolo delle metriche necessarie per assicurare la qualità.
 
 \subsubsection{Classificazione delle metriche}
-Per garantire la qualità del lavoro gli Amministratori hanno definito delle metriche, che devono però rispettare la seguente notazione M[categoria][numero] dove:
+Per garantire la qualità del lavoro gli Amministratori hanno definito delle metriche, che devono però rispettare la seguente notazione 
+\begin{center}
+	\textbf{M[categoria][numero]}
+\end{center}
+dove:
 \begin{itemize}
 	\item{Categoria}: indica la categoria della metrica, può assume i valori:
 	\begin{itemize}
@@ -376,6 +380,13 @@ Percentuale di requisiti obbligatori stabiliti dalla proponente soddisfatti. \`E
 Media del numero di build effettuate su Travis CI settimanalmente. Questo valore permette al gruppo di controllare l'andamento del lavoro sul prodotto.
 \subparagraph{MS011 - Percentuale build Travis superate}\mbox{}\\
 Percentuale delle build Travis superate con successo. Troppe build fallite indicano la presenza di errori che non sono stati risolti nei tempi prestabiliti.
+\subparagraph{MS012 - Accoppiamento tra classi}\mbox{}\\
+Calcola il numero di classi con cui ogni classe è accoppiata.
+Una classe si dice accoppiata con un'altra se è presente una
+dipendenza tra le due, indipendentemente dal verso della
+dipendenza. Un valore elevato di questa metrica non è desiderabile poiché evidenzia una bassa modularità del codice.
+
+
 
 \paragraph{Metriche processi}\mbox{}\\
 Le metriche presentate in questa sezione hanno come scopo fornire delle metriche per garantire un buon livello di qualità sui processi.
@@ -540,6 +551,41 @@ Per ogni test deve quindi essere definito:
 \end{itemize}
 
 \subsubsection{Test}
+Ogni Test è strutturato come segue:
+\begin{itemize}
+\item Codice identificativo; 
+\item Descrizione;
+\item Stato. 
+\end{itemize}
+Per ciascun test è assegnato un codice identificativo la cui sintassi segue il seguente
+formalismo:
+\begin{center}
+\textbf{T\{tipo\}\{codiceIdentificativo\}}
+\end{center}
+Dove: 
+\begin{itemize}
+\item \textbf{lettera}: identifica uno dei seguenti tipi di test:
+	\begin{itemize}
+		\item \textbf{U}: test di unità; 
+		\item \textbf{I}: test di integrazione; 
+		\item \textbf{S}: test di sistema.
+	\end{itemize}
+\item \textbf{codiceIdentificativo}: assume i seguenti valori in base al tipo di test:
+	\begin{itemize}
+	\item \textbf{codiceNumerico}: associato ai test di unità e di integrazione, è un codice
+progressivo di tre cifre che parte da 001;
+	\item \textbf{codiceRequisito}: associato ai test di sistema. Identifica il codice univo-
+co associato ad ogni requisito descritto nel documento Analisi dei Requisiti
+v3.0.0.
+	\end{itemize}
+\end{itemize}	
+Inoltre lo Stato del test può assumere i seguenti valori:
+\begin{itemize}
+\item Non implementato;  
+\item Superato; 
+\item Non superato. 
+\end{itemize}
+
 
 \paragraph{Test di unità}\mbox{}\\
 Il test di unità verifica che ogni singola unità funzioni correttamente, le unità sono specificate nella progettazione di dettaglio.  
