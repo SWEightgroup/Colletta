@@ -1,5 +1,5 @@
-This section is intended to make the developer understand the working of the \texttt{Colletta} backend, and to allow him or her to add functionalities  to the software package.
-In order fully understand the contents below, the developer must have a certain degree of familiarity with \textbf{Java}, the framework \textbf{Spring Boot}, \textbf{MongoDB} and \textbf{Maven}. If that's not the case, we strongly recommend the reader to at least acquire some basic knowledge on the topics.
+This section is intended to make the developer understand the working of the Colletta backend, and to allow him or her to add functionalities  to the software package.
+In order to fully understand the contents below, the developer must have a certain degree of familiarity with Java, the framework Spring Boot with his subframework Spring Data MongoDB, MongoDB and Maven. If that's not the case, we strongly recommend the reader to at least acquire some basic knowledge on the topics.
 
 \subsection{Directory tree}
 
@@ -47,21 +47,21 @@ In order fully understand the contents below, the developer must have a certain 
 			]
 			[resources]
 		]	
-%		[test
-%			[it
-%				[colletta
-%					[repository
-%						[config]
-%						[exercise]
-%						[phrase]
-%						[user]
-%					]
-%					[service
-%						[user]
-%					]
-%				]
-%			]
-%		]				
+		[test
+			[it
+				[colletta
+					[repository
+						[config]
+						[exercise]
+						[phrase]
+						[user]
+					]
+					[service
+						[user]
+					]
+				]
+			]
+		]				
 	]
 ]
 \end{forest}
@@ -69,8 +69,16 @@ In order fully understand the contents below, the developer must have a certain 
 \label{fig:FrontDir}
 \end{figure}
 
-
 Each folder contains a specific set of files:
 \begin{itemize}
-\item 
+\item  \textbf{controller:} classes that handle HTTP Request, marked with @RestController Spring annotation;
+\item  \textbf{error:} ;
+\item  \textbf{exceptions:} ;
+\item  \textbf{library:} classes that connect the application to the PoS-tagging library;
+\item  \textbf{model:} has the folder \textit{helper} who contains the transfer object (DTO), the other Model files are standard POJO objects that represent the Json object store inside the database;
+\item  \textbf{repository:};
+\item  \textbf{security:} ;
+\item  \textbf{service:};
+\item  \textbf{test:}  the tests that the application must pass to enter in a safe running state;
+
 \end{itemize}
