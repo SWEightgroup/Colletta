@@ -1,9 +1,9 @@
-\section{Dashboard}
+\section{Istruzione per l'utilizzo}
   L' header della dashboard è uguale come struttura per ogni tipo di utenza. Su di esso troviamo un link che porta alla modifica dei dati personali, chiamato \texttt{profilo} e un link \texttt{Esci}, che, se cliccato, effettua il logout dal sistema.
 
 
 
-\subsection{Struttura}
+\subsection{Interfaccia}
     \begin{figure}[H]
         \centering
         \includegraphics[width=17cm]{sez/img/istruzioni/dashboardMod.png} 
@@ -18,7 +18,7 @@
     \end{itemize}
 
 
-\subsection{Autenticazione}
+\subsection{Utente non autenticato}
     \subsubsection{Registrazione}
     	\begin{figure}[H]
         	\centering
@@ -34,17 +34,17 @@
         	\caption{Dati per effettuare l'accesso}\label{fig:1}
     	\end{figure}
  	  Dopo aver effettuato la registrazione si accede cliccando su \textit{Accedi} nella barra del menu. Si accede inserendo email e password.
-    
-    \subsubsection{Logout}
-    Per effettuare il {logout}\ped{G} si deve cliccare su la voce \textit{Esci} dalla barra del menu. Esso permette all'utente  di finire la propria sessione.
 
 
 % UTENTE AUTENTICATO
-\subsection{Utente autenticato}
+\subsection{Utente autenticato generico}
 
-    \subsubsection{Studente}
+    \subsubsection{Logout}
+    Per effettuare il {logout}\ped{G} si deve cliccare su la voce \textit{Esci} dalla barra del menu. Esso permette all'utente  di finire la propria sessione.
+
+    \subsection{Studente}
       Lo studente è l'utente che può svolgere esercizi, con correzioni automatiche oppure con correzioni degli insegnanti.
-        \paragraph{Sidebar} \mbox{}\\ \\
+        \subsubsection{Sidebar} \mbox{}\\ \\
           Sidebar dello studente presenta le seguenti voci:
             \begin{itemize}
                 \item Pannello utente;
@@ -59,7 +59,7 @@
             
             
             
-        \paragraph{Pannello utente}\mbox{}\\ \\
+        \subsubsection{Pannello utente}\mbox{}\\ \\
           SCREEN NON DISPONIBILI
           Il pannello utente è un riassunto di tutti i progressi e le attività svolte dallo studente.
           Contenuto presente all'interno della pagina:
@@ -76,7 +76,7 @@
         
                
 	\newpage
-        \paragraph{Esercitazione libera}\mbox{}\\ \\        
+        \subsubsection{Esercitazione libera}\mbox{}\\ \\        
         	\begin{figure}[H]
                 \centering
                 \includegraphics[width=17cm]{sez/img/studente/esercitazioneLiberaEsegui.PNG} 
@@ -98,7 +98,7 @@
         
         
         
-  		\paragraph{Compiti per casa}\mbox{}\\ \\
+  		\subsubsection{Compiti per casa}\mbox{}\\ \\
  
         	\begin{figure}[H]
             	\centering
@@ -118,7 +118,7 @@
         
         
         
-        \paragraph{Esercizi svolti}\mbox{}\\ \\
+        \subsubsection{Esercizi svolti}\mbox{}\\ \\
         	\begin{figure}[H]
             	\centering
             	\includegraphics[width=17cm]{sez/img/studente/esercizisvolti.PNG} 
@@ -129,7 +129,7 @@
         
         
         
-        \paragraph{I tuoi voti}\mbox{}\\ \\
+        \subsubsection{I tuoi voti}\mbox{}\\ \\
           SCREEN NON DISPONIBILI
           In questa sezione è possibile visualizzare i voti....
         
@@ -138,9 +138,9 @@
         
         
 \newpage
-    \subsubsection{Insegnante}
+    \subsection{Insegnante}
       L'insegnante è l'utente che può inserire esercizi e assegnarli.
-        \paragraph{Sidebar}\mbox{}\\ \\
+        \subsubsection{Sidebar}\mbox{}\\ \\
           Sidebar dell'insegnante presenta le seguenti voci:
         	\begin{itemize}
             	\item Pannello utente;
@@ -151,7 +151,7 @@
         
         
         
-        \paragraph{Pannello utente}\mbox{}\\ \\
+        \subsubsection{Pannello utente}\mbox{}\\ \\
           Il pannello utente è un riassunto di tutti i progressi e le attività.
          \\Contenuto presente all'interno della pagina:
         	\begin{itemize}
@@ -164,7 +164,7 @@
         
         
         
-        \paragraph{Inserisci esercizio}\mbox{}\\ \\
+        \subsubsection{Inserisci esercizio}\mbox{}\\ \\
           Questa sezione da la possibilità all'insegnante di inserire un esercizio.
         	\begin{figure}[H]
             \centering
@@ -176,7 +176,7 @@
         
         
         
-        \paragraph{Esercizi inseriti}\mbox{}\\ \\
+        \subsubsection{Esercizi inseriti}\mbox{}\\ \\
         SCREEN NON DISPONIBILI
         
           Questa sezione permette di visualizzare tutti gli esercizi inseriti.
@@ -184,7 +184,7 @@
         
         
         
-        \paragraph{Esercizi allievi}\mbox{}\\ \\
+        \subsubsection{Esercizi allievi}\mbox{}\\ \\
         SCREEN NON DISPONIBILI
         
           In questa sezione verranno visualizzati gli esercizi svolti dagli studenti che posso essere corretti e può dare un voto.
@@ -193,9 +193,9 @@
         
         
 	\newpage
-    \subsubsection{Sviluppatore}
+    \subsection{Sviluppatore}
     
-    	\paragraph{Sidebar}\mbox{} \\ \\
+    	\subsubsection{Sidebar}\mbox{} \\ \\
     	  Sidebar dello sviluppatore presenta le seguenti voci:
     		\begin{itemize}
     		\item Pannello utente;
@@ -205,7 +205,7 @@
     
     
     
-    	\paragraph{Pannello utente}\mbox{}\\ \\
+    	\subsubsection{Pannello utente}\mbox{}\\ \\
     	  Contenuto presente all'interno della pagina:
         	\begin{itemize} 
         	\item Esercizi disponibili per il download;
@@ -216,7 +216,7 @@
 
 
 
-    	\paragraph{Pannello sviluppatore}\mbox{}\\ \\
+    	\subsubsection{Pannello sviluppatore}\mbox{}\\ \\
     		\begin{figure}[H]
 			\centering
 			\includegraphics[width=17cm]{sez/img/sviluppatore/datipronti.PNG}
@@ -228,8 +228,8 @@
 
 
 	\newpage
-	\subsubsection{Amministratore}
-		\paragraph{Sidebar}\mbox{}\\ \\
+	\subsection{Amministratore}
+		\subsubsection{Sidebar}\mbox{}\\ \\
 		  Breve guida per l'amministratore che amministra gli utenti all'interno della piattaforma. Sidebar dell'amministratore presenta le seguenti voci:
 			\begin{itemize}
 			\item Pannello utente;
@@ -239,7 +239,7 @@
 
 
 
-		\paragraph{Pannello utente}\mbox{}\\
+		\subsubsection{Pannello utente}\mbox{}\\
 		  Accesso rapido a:
 			\begin{itemize}
 			\item statistiche;
@@ -252,7 +252,7 @@
 
 
 
-		\paragraph{Sviluppatori}\mbox{}\\ \\
+		\subsubsection{Sviluppatori}\mbox{}\\ \\
 			\begin{figure}[H]
 			\centering
 			\includegraphics[width=17cm]{sez/img/amministratore/conf_ric_svil.PNG}
@@ -261,7 +261,7 @@
 		  Le richieste da parte degli sviluppatori per accedere ai dati.
 
 
-		\paragraph{Utenti}\mbox{}\\ \\
+		\subsubsection{Utenti}\mbox{}\\ \\
 			\begin{figure}[H]
 			\centering
 			\includegraphics[width=17cm]{sez/img/amministratore/gestisciutenti.PNG}
