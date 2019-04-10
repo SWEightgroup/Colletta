@@ -1,0 +1,96 @@
+% METTI SOLO TABELLE E GRAFICI, SU RETROSPETTIVA FAI UNA TABELLA RIASSUNTIVA E COMMENTA I PROBLEMI
+\paragraph{MS001 - Numero di metodi}\mbox{}\\[0,3cm]
+\paragraph{MS002 - Numero di parametri}\mbox{}\\[0,3cm]
+\paragraph{MS003 - Funzioni di interfaccia per package}\mbox{}\\[0,3cm]
+\paragraph{MS004 - Complessità ciclomatica}\mbox{}\\[0,3cm]
+\paragraph{MS005 - Campi dati per classe}\mbox{}\\[0,3cm]
+\paragraph{MS006 - Commenti per linee di codice}\mbox{}\\[0,3cm]
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{ccccccc}
+            \rowcolor{greySWEight}
+            \textcolor{white}{\textbf{Codice}} &
+            \textcolor{white}{\textbf{File analizzati}}&
+            \textcolor{white}{\textbf{Totale righe}}&
+            \textcolor{white}{\textbf{Totale righe commento}}&
+            \textcolor{white}{\textbf{Percentuale}}&
+            \textcolor{white}{\textbf{Riscontro}}\\
+            \textbf{MS006} & 92 & 7524 & 945 & 12.56\% & \textcolor{YellowOrange}{Accettabile}\\
+        \end{tabular}
+        \caption{Totale commenti per linee di codice}
+    \end{table}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.3\linewidth]{sez/App_Esito/Qualifica/graph/commenti.pdf}
+        \caption{Percentuale commenti periodo di codifica}
+    \end{figure}
+
+\paragraph{MS007 - Code coverage}\mbox{}\\[0,3cm]
+\paragraph{MS008 - Superamento test}\mbox{}\\[0,3cm]
+\paragraph{MS009 - Soddisfacimento requisiti obbligatori}\mbox{}\\[0,3cm]
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{cccc}
+        \rowcolor{greySWEight}
+        \textcolor{white}{\textbf{Codice}} &
+        \textcolor{white}{\textbf{Requisiti obbligatori soddisfatti}} &
+        \textcolor{white}{\textbf{Riscontro}}\\
+        \textbf{MS009}& 77.40\% & \textcolor{RubineRed}{non superato} \\
+
+        \end{tabular}
+        \caption{Requisit obbligatori soddisfatti nel periodo di pianificazione e codifica}
+    \end{table}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\linewidth]{sez/App_Esito/Qualifica/graph/RequisitiObbligatori.pdf}
+        \caption{Soddisfacimento requisiti obbligatori}
+    \end{figure}
+
+\paragraph{MS010 - Media di build Travis settimanali}\mbox{}\\[0,3cm]
+    Estrapolando i dati dagli insights del sito di Travis è stata riscontrata una media di build settimanali di 70.75.
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{cccc}
+        \rowcolor{greySWEight}
+        \textcolor{white}{\textbf{Codice}} &
+        \textcolor{white}{\textbf{Media}} &
+        \textcolor{white}{\textbf{Riscontro}}\\
+        \textbf{MS010}& 70.75 & \textcolor{ForestGreen}{Ottimale} \\
+    
+        \end{tabular}
+        \caption{Media build settimanali nel periodo di pianificazione e codifica}
+    \end{table}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\linewidth]{sez/App_Esito/Qualifica/graph/buildTravisSettimanale.pdf}
+        \caption{Build di Travis settimanali, dal 2019-03-11 al 2019-04-07}
+    \end{figure}
+
+    \paragraph{MS011 - Percentuale build Travis superate }\mbox{}\\[0,3cm]
+    Il valore minimo accettabile prefissato per le build superate era del 75\%, il valore riscontrato
+    è 71.40\%, questo potrebbe implicare la presenza di errori. Dato che le percentuali delle
+    build superate delle ultime due settimane corrisponde al 85.15\%, il valore finale
+    trovato non rispetta i valori prestabiliti a causa della poca esperienza di codifica di inizio periodo.
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{cccc}
+        \rowcolor{greySWEight}
+        \textcolor{white}{\textbf{Codice}} &
+        \textcolor{white}{\textbf{Percentuale build superate}} &
+        \textcolor{white}{\textbf{Riscontro}}\\
+        \textbf{MS011}& 71.40 & \textcolor{RubineRed}{non superato} \\
+    
+        \end{tabular}
+        \caption{Build Travis superate nel periodo di pianificazione e codifica}
+    \end{table}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\linewidth]{sez/App_Esito/Qualifica/graph/buildTravisGiornaliera.pdf}
+        \caption{Build di Travis giornaliere, dal 2019-03-11 al 2019-04-07}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\linewidth]{sez/App_Esito/Qualifica/graph/buildTravisSuperate.pdf}
+        \caption{Build di Travis superate}
+    \end{figure}
