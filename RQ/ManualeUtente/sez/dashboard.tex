@@ -1,60 +1,51 @@
 \section{Dashboard}
-L' header del Dashboard è uguale come struttura per ogni tipologia d'utente dove troviamo un pulsante di modifica dei dati 
-personali chiamato profilo e il logout (esci).
+  L' header del Dashboard è uguale come struttura per ogni tipologia d'utente dove troviamo un pulsante di modifica dei dati personali chiamato profilo e il logout (Esci).
 
 
 
 \subsection{Struttura}
-    Questa sezione serve per definire i termini con cui chiamare gli elementi che compongono la pagina dell'applicazione.
-    Componenti principali:
-    \begin{itemize}
-        \item Barra del menu;
-        \item {Sidebar}\ped{G};
-        \item Contenuto della pagina;
-        % \item Footer.
-    \end{itemize}
-
     \begin{figure}[H]
         \centering
         \includegraphics[width=17cm]{sez/img/istruzioni/dashboardMod.png} 
         \caption{Svolgimento esercizio}\label{fig:1}
     \end{figure}
-\newpage
+  Questa sezione serve per definire i termini con cui chiamare gli elementi che compongono la pagina dell'applicazione.
+    Componenti principali:
+    \begin{itemize}
+        \item Barra del menu;
+        \item {Sidebar}\ped{G};
+        \item Contenuto della pagina.
+    \end{itemize}
+
 
 \subsection{Autenticazione}
     \subsubsection{Registrazione}
-    Se non si è ancora registrati è possibile farlo cliccando sul button \textit{registrati} presente nella barra del menu.
-    Una volta compilato il form sarà possibile accedere alla piattaforma come utente autenticato.
-    Se si sceglie come ruolo \textit{sviluppatore} sarà necessario attendere una conferma da parte dell'amministratore prima di poter 
-    accedere.
-    I dati sono tutti obbligatori e la form visualizzata sarà la seguente.
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=1\linewidth]{sez/img/autenticazione/formRegistrazione.png} 
-        \caption{Form per la registrazione}\label{fig:1}
-    \end{figure}
+    	\begin{figure}[H]
+        	\centering
+        	\includegraphics[width=1\linewidth]{sez/img/autenticazione/formRegistrazione.png} 
+        	\caption{Form per la registrazione}\label{fig:1}
+    	\end{figure}
+	  Se non si è ancora registrati è possibile farlo cliccando sul button \textit{Registrati} presente nella barra del menu. Una volta compilato il form sarà possibile accedere alla piattaforma come utente autenticato. Se si sceglie come ruolo \textit{sviluppatore} sarà necessario attendere una conferma da parte dell'amministratore prima di poter accedere. I dati sono tutti obbligatori e la form visualizzata sarà la seguente.
 
     \subsubsection{Login}
-    Dopo aver effettuato la registrazione si accede cliccando su \textit{accedi} nella barra del menu.
-    Si accede inserendo email e password.
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=1\linewidth]{sez/img/autenticazione/formAccedi.png} 
-        \caption{Dati per effettuare l'accesso}\label{fig:1}
-    \end{figure}
-
+    	\begin{figure}[H]
+        	\centering
+        	\includegraphics[width=1\linewidth]{sez/img/autenticazione/formAccedi.png} 
+        	\caption{Dati per effettuare l'accesso}\label{fig:1}
+    	\end{figure}
+ 	  Dopo aver effettuato la registrazione si accede cliccando su \textit{Accedi} nella barra del menu. Si accede inserendo email e password.
+    
     \subsubsection{Logout}
     Per effettuare il {logout}\ped{G} si deve cliccare su la voce \textit{Esci} dalla barra del menu. Esso permette all'utente  di finire la propria sessione.
-    \newpage
+
 
 % UTENTE AUTENTICATO
 \subsection{Utente autenticato}
 
     \subsubsection{Studente}
-    Lo studente è l'utente che può svolgere esercizi, con correzioni
-    automatiche oppure con correzioni degli insegnanti.
+      Lo studente è l'utente che può svolgere esercizi, con correzioni automatiche oppure con correzioni degli insegnanti.
         \paragraph{Sidebar} \mbox{}\\ \\
-            La sidebar dello studente presenta le seguenti voci:
+          Sidebar dello studente presenta le seguenti voci:
             \begin{itemize}
                 \item Pannello utente;
                 \item Esercitazione libera;
@@ -62,140 +53,218 @@ personali chiamato profilo e il logout (esci).
                 \item Esercizi svolti;
                 \item I tuoi voti.
             \end{itemize}
-            % \begin{figure}[H]
-            %     \centering
-            %     \includegraphics{sez/img/studente/sidebarStudente.png} 
-            %     \caption{sidebar dello stidente}\label{fig:1}
-            % \end{figure}
+            
+            
+            
+            
+            
+            
         \paragraph{Pannello utente}\mbox{}\\ \\
-        SCREEN NON DISPONIBILI
-        \\Il pannello utente è un riassunto di tutti i progressi e le attività svolte dallo studente.
-        Contenuto presente all'interno della pagina:
-        \begin{itemize}
-        \item Progressi;
-        \item Traguardi;
-        \item Traguardo corrente;
-        \item Prossimo traguardo;
-        \item Valutazioni;
-        \item Esercizi recenti;
-        \item Insegnanti preferiti.
-        \end{itemize}
-        \paragraph{Esercitazione libera}\mbox{}\\ \\
-        In questa sezione si svolge l'esercizio inserendo nel form la frase che 
-        si preferisce. Se la frase non è stata inserita da nessun insegnante la 
-        correzione sarà generata automaticamente.
-       \\ Svolgimento:
-        \begin{enumerate}
+          SCREEN NON DISPONIBILI
+          Il pannello utente è un riassunto di tutti i progressi e le attività svolte dallo studente.
+          Contenuto presente all'interno della pagina:
+        	\begin{itemize}
+        		\item Progressi;
+        		\item Traguardi;
+        		\item Traguardo corrente;
+        		\item Prossimo traguardo;
+        		\item Valutazioni;
+        		\item Esercizi recenti;
+        		\item Insegnanti preferiti.
+        	\end{itemize}
         
-            \item Scrivi la frase che vuoi analizzare dentro al form;
-            \item Clicca su \textit{svolgi esercizio};
-            \item Svolgi l'esercizio e clicca \textit{completa}.
-        \end{enumerate}
-        \begin{figure}[H]
+        
+               
+	\newpage
+        \paragraph{Esercitazione libera}\mbox{}\\ \\        
+        	\begin{figure}[H]
                 \centering
                 \includegraphics[width=17cm]{sez/img/studente/EsercitazioneLiberaEsegui.png} 
                 \caption{sidebar dello stidente}\label{fig:1}
-        \end{figure}
-        \newpage
-        \paragraph{Compiti per casa}\mbox{}\\ \\
-        SCREEN NON DISPONIBILI
-        In questa sezine è possibile visualizzare gli esercizi che sono
-        stati assegnati dall'insegnante.
-        \paragraph{Esercizi svolti}\mbox{}\\ \\
-        SCREEN NON DISPONIBILI
-        In questa sezione è possiblie visualizzare gli esercizi che sono
-        già stati svolti.
-        \paragraph{I tuoi voti}\mbox{}\\ \\
-        SCREEN NON DISPONIBILI
-        In questa sezione è possibile visualizzare i voti....
+        	\end{figure}
+          In questa sezione si svolge l'esercizio inserendo nel form la frase che 
+        si preferisce. Se la frase non è stata inserita da nessun insegnante la 
+        correzione sarà generata automaticamente.
+        \\ Svolgimento:
+        	\begin{enumerate}        
+            	\item Scrivi la frase che vuoi analizzare dentro al form;
+            	\item Clicca su \textit{svolgi esercizio};
+            	\item Svolgi l'esercizio e clicca \textit{completa}.
+        	\end{enumerate}
+           In questa sezione è possibile visualizzare gli esercizi che sono stati assegnati dall'insegnante dove può scegliere che esercizio svolgere.
+  
+        
+        
+        
+        
+        
+  		\paragraph{Compiti per casa}\mbox{}\\ \\
+ 
+        	\begin{figure}[H]
+            	\centering
+            	\includegraphics[width=17cm]{sez/img/studente/compitopercasa.png} 
+            	\caption{Studente: Scelta esercizio da risolvere}\label{fig:1}
+        	\end{figure}
 
+		  Lo studente sceglie l'esercizio da svolgere tra quelli che sono stati assegnati cliccando su \textit{Svolgi l'esercizio}.   
+       
+        	\begin{figure}[H]
+            	\centering
+            	\includegraphics[width=17cm]{sez/img/studente/svolgimentoesercizio.png} 
+            	\caption{Studente: Svolgimento esercizio}\label{fig:1}
+        	\end{figure}   
+           Scelto l'esercizio va svolto dove lo studente ha la  possibilità di tornare indietro di un passo, se ha assegnato alla parola un tag sbagliato o di cancellate completamente tutti i tag e ricominciare da capo parola per parola. Infine cliccando \textit{Completa} invia la sua soluzione che verrà controllata e valutata dall'insegnante.
+        
+        
+        
+        
+        \paragraph{Esercizi svolti}\mbox{}\\ \\
+        	\begin{figure}[H]
+            	\centering
+            	\includegraphics[width=17cm]{sez/img/studente/esercizisvolti.png} 
+            	\caption{Studente: Storico esercizi svolti}\label{fig:1}
+        	\end{figure}
+          In questa sezione è possibile visualizzare  lo storico degli esercizi che sono stati svolti.
+        
+        
+        
+        
+        \paragraph{I tuoi voti}\mbox{}\\ \\
+          SCREEN NON DISPONIBILI
+          In questa sezione è possibile visualizzare i voti....
+        
+        
+        
+        
+        
+\newpage
     \subsubsection{Insegnante}
-    L'insegnante è l'utente che può inserire esercizi e assegnarli.
+      L'insegnante è l'utente che può inserire esercizi e assegnarli.
         \paragraph{Sidebar}\mbox{}\\ \\
-        La sidebar dell'insegnante presenta le seguenti voci:
-        \begin{itemize}
-            \item Pannello utente;
-            \item Inserisci esercizio;
-            \item Esercizi inseriti;
-            \item Esercizi allievi.
-        \end{itemize}
+          Sidebar dell'insegnante presenta le seguenti voci:
+        	\begin{itemize}
+            	\item Pannello utente;
+            	\item Inserisci esercizio;
+            	\item Esercizi inseriti;
+            	\item Esercizi allievi.
+        	\end{itemize}
+        
+        
+        
         \paragraph{Pannello utente}\mbox{}\\ \\
-        SCREEN NON DISPONIBILI
-        \\Il pannello utente è un riassunto di tutti i progressi e le attività.
-        \\Contenuto presente all'interno della pagina:
-        \begin{itemize}
-        \item Storico esercizi inseriti; 
-        \item Esercizi recenti svolti dagli studenti;
-        \item Elenco propri studenti;
-        \item Elenco classi studenti.
-        \end{itemize}
+          Il pannello utente è un riassunto di tutti i progressi e le attività.
+         \\Contenuto presente all'interno della pagina:
+        	\begin{itemize}
+        	\item Storico esercizi inseriti; 
+        	\item Esercizi recenti svolti dagli studenti;
+        	\item Elenco propri studenti;
+        	\item Elenco classi studenti.
+        	\end{itemize}
+        
+        
+        
+        
         \paragraph{Inserisci esercizio}\mbox{}\\ \\
-        Questa sezione da la possibilità all'insegnante di inserire un esercizio.
-        \begin{figure}[H]
+          Questa sezione da la possibilità all'insegnante di inserire un esercizio.
+        	\begin{figure}[H]
             \centering
-            \includegraphics[width=17cm]{sez/img/insegnante/inserisciEsercizio.png} 
+        	\includegraphics[width=17cm]{sez/img/insegnante/inserisciEsercizio.png} 
             \caption{Insegnante: Inserisci esercizio}\label{fig:1}
-        \end{figure}
-        Dopo aver inserito la frase e aver cliccato svolgi esercizio verrà visualizzata
-        la correzione automatica. Se ritenuta errata c' è la possibilità di modificare la 
-        soluzione cliccando su \textit{modifica}.
+        	\end{figure}
+        
+          Dopo aver inserito la frase verrà visualizzata la correzione automatica. Se ritenuta errata c'è la possibilità di modificare la soluzione cliccando su \textit{Modifica}. Durante lo svolgimento del esercizio l'insegnante ha la possibilità di tornare indietro di un passo, se ha assegnato alla parola un tag sbagliato o di cancellate completamente tutti i tag e ricominciare da capo parola per parola. Finita la correzione l'insegnate ha la possibilità di assegnare l'esercizio a uno studente e cliccando \textit{Completa} verrà aggiunto nel database.
+        
+        
+        
         \paragraph{Esercizi inseriti}\mbox{}\\ \\
         SCREEN NON DISPONIBILI
-        Questa sezione permette di visualizzare tutti gli esercizi inseriti
+        
+          Questa sezione permette di visualizzare tutti gli esercizi inseriti.
+        
+        
+        
+        
         \paragraph{Esercizi allievi}\mbox{}\\ \\
         SCREEN NON DISPONIBILI
-
+        
+          In questa sezione verranno visualizzati gli esercizi svolti dagli studenti che posso essere corretti e può dare un voto.
+        
+        
+        
+        
+	\newpage
     \subsubsection{Sviluppatore}
     
-    \paragraph{Sidebar}\mbox{} \\
-    \\Sidebar dello studente presenta le seguenti voci:
-    \begin{itemize}
-    \item Pannello utente;
-    \item Pannello sviluppatore.
-    \end{itemize}
-    \paragraph{Pannello utente}\mbox{}\\ \\
-    Contenuto presente all'interno della pagina:
-        \begin{itemize} 
-        \item Esercizi disponibili per il download;
-        \item Modelli disponibili per il download;
-        \item Filtri per raffinare il contenuto per il download;
-        \end{itemize}
-        \newpage
-    \paragraph{Pannello sviluppatore}\mbox{}\\ \\
-    Possibilità per fare il download dei dati attualmente disponibili.
-    \begin{figure}[H]
-	\centering
-	\includegraphics[width=17cm]{sez/img/sviluppatore/datipronti.png}
-	\caption{Sviluppatore: Dati pronti per il download}\label{fig:1}
-\end{figure}
+    	\paragraph{Sidebar}\mbox{} \\ \\
+    	  Sidebar dello sviluppatore presenta le seguenti voci:
+    		\begin{itemize}
+    		\item Pannello utente;
+    		\item Pannello sviluppatore.
+    		\end{itemize}
     
-\subsubsection{Amministratore}
-\paragraph{Sidebar}\mbox{}\\ \\
-	 Breve guida per l'amministratore che amministra gli utenti all'interno della piattaforma.
-	 \begin{itemize}
-	\item Pannello utente;
-	\item Sviluppatori;
-	\item Utenti.
-\end{itemize}
-	 \paragraph{Pannello utente}\mbox{}\\
-Accesso rapido a:
-\begin{itemize}
-	\item statistiche;
-	\item cose per amministratori;
-	\item strumenti;
-	\item bla bla.
-\end{itemize}  MANCA SCREEN.
-\paragraph{Sviluppatori}\mbox{}\\ \\
-Le richieste da parte degli sviluppatori per accedere ai dati.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=17cm]{sez/img/amministratore/conf_ric_svil.png}
-	\caption{Amministratore: Conferma richieste}\label{fig:1}
-\end{figure}
-\paragraph{Utenti}\mbox{}\\ \\
-La lista degli utenti presenti e la loro gestione.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=17cm]{sez/img/amministratore/gestisciutenti.png}
-	\caption{Amministratore: Gestione utenti}\label{fig:1}
-\end{figure}
+    
+    
+    
+    	\paragraph{Pannello utente}\mbox{}\\ \\
+    	  Contenuto presente all'interno della pagina:
+        	\begin{itemize} 
+        	\item Esercizi disponibili per il download;
+        	\item Modelli disponibili per il download;
+        	\item Filtri per raffinare il contenuto per il download;
+        	\end{itemize}
+
+
+
+
+    	\paragraph{Pannello sviluppatore}\mbox{}\\ \\
+    		\begin{figure}[H]
+			\centering
+			\includegraphics[width=17cm]{sez/img/sviluppatore/datipronti.png}
+			\caption{Sviluppatore: Dati pronti per il download}\label{fig:1}
+			\end{figure}
+		  Possibilità per fare il download dei dati attualmente disponibili.
+
+
+
+
+	\newpage
+	\subsubsection{Amministratore}
+		\paragraph{Sidebar}\mbox{}\\ \\
+		  Breve guida per l'amministratore che amministra gli utenti all'interno della piattaforma. Sidebar dell'amministratore presenta le seguenti voci:
+			\begin{itemize}
+			\item Pannello utente;
+			\item Sviluppatori;
+			\item Utenti.
+			\end{itemize}
+
+
+
+		\paragraph{Pannello utente}\mbox{}\\
+		  Accesso rapido a:
+			\begin{itemize}
+			\item statistiche;
+			\item cose per amministratori;
+			\item strumenti;
+			\item bla bla.
+			\end{itemize}
+			  MANCA SCREEN.
+
+
+
+
+		\paragraph{Sviluppatori}\mbox{}\\ \\
+			\begin{figure}[H]
+			\centering
+			\includegraphics[width=17cm]{sez/img/amministratore/conf_ric_svil.png}
+			\caption{Amministratore: Conferma richieste}\label{fig:1}
+			\end{figure}
+		  Le richieste da parte degli sviluppatori per accedere ai dati.
+
+
+		\paragraph{Utenti}\mbox{}\\ \\
+			\begin{figure}[H]
+			\centering
+			\includegraphics[width=17cm]{sez/img/amministratore/gestisciutenti.png}
+			\caption{Amministratore: Gestione utenti}\label{fig:1}
+			\end{figure}
+		  La lista degli utenti presenti e la loro gestione.
