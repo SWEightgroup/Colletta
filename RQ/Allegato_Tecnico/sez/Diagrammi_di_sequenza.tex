@@ -13,12 +13,39 @@ Il diagramma di sequenza rappresenta l'azione di inserimento di un esercizio nel
 \caption{Student's exercise mark}
 \end{figure}
 
+\paragraph{Descrizione diagramma attività figura 12}
+\begin{enumerate}
+\item Lo studente si è autenticato;
+\item Lo studente è nella sezione "esercizi"; 
+\item Lo studente è nella sezione "esercizi per casa";
+\item Lo studente visualizza la lista di esercizi per casa; 
+\item Lo studente scrive la soluzione di un esercizio;
+\item Lo studente manda la sua soluzione di un esercizio; 
+\item Lo studente riceve la valutazione della sua soluzione precedentemente inviata; 
+\item Lo studente visualizza la valutazione.
+\end{enumerate}
+
+
 \subsubsection{Abilitazione di uno sviluppatore}
 \begin{figure}[H]
 \centering
 \includegraphics[width=17cm, keepaspectratio]{img/Accept-or-decline-developer.png} 
 \caption{Accept or decline developer}
 \end{figure}
+
+\paragraph{Descrizione diagramma attività figura 13}
+\begin{enumerate}
+\item L'amministratore si è autenticato;
+\item L'amministratore riceve la lista degli sviluppatori non ancora approvati; 
+\item L'amministratore decide se approvare o declinare la richiesta di uno sviluppatore; 
+\item Node decisione:
+\begin{enumerate}
+	\item L'amministratore approva la richiesta di uno sviluppatore, lo sviluppatore viene quindi abilitato;
+	\item L'amministratore declina la richiesta di uno sviluppatore, lo sviluppatore viene cancellato dal sistema. 
+\end{enumerate}
+\end{enumerate}
+
+
 
 \subsubsection{Login}
 Il diagramma di sequenza riportato qui di seguito raffigura il processo di login, durante il quale l'utente che vuole accedere può essere autenticato dal sistema.
