@@ -74,12 +74,14 @@
     trovato non rispetta i valori prestabiliti a causa della poca esperienza di codifica di inizio periodo.
     \begin{table}[H]
         \centering
-        \begin{tabular}{cccc}
+        \begin{tabular}{c c c c c}
         \rowcolor{greySWEight}
         \textcolor{white}{\textbf{Codice}} &
-        \textcolor{white}{\textbf{Percentuale build superate}} &
+        \textcolor{white}{\textbf{Range accettabile}} &
+        \textcolor{white}{\textbf{Range ottimale}} &
+        \textcolor{white}{\textbf{build superate}} &
         \textcolor{white}{\textbf{Riscontro}}\\
-        \textbf{MS011}& 71.40 & \textcolor{RubineRed}{non superato} \\
+        \textbf{MS011} & $[75\%,100\%]$ & $[85\%,100\%]$ & 71.40\% & \textcolor{RubineRed}{non superato} \\
     
         \end{tabular}
         \caption{Build Travis superate nel periodo di pianificazione e codifica}
