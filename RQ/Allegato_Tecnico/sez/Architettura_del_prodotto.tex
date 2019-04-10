@@ -15,17 +15,19 @@
 
 \subsection{Design pattern utilizzati}
 \subsubsection{Backend}
-\paragraph{Adapter}
+\paragraph{Adapter}\mbox{}\\
+
 L'utilizzo della libreria di Freeling, per il pos-tagging, ha richiesto la creazione di un Adapter nella variante Object Adapter per poter adattare le funzionalità strettamente necessarie.
 \begin{figure}[H]
 \includegraphics[width=17cm]{img/Adapter.png} 
 \caption{Diagramma delle classi Adapter}
 \end{figure}
 La classe FreelingSocketClient viene fornita dai creatori della libreria e si occupa di realizzare la connessione con il server Freeling scritto in C++.
-\paragraph{Controller - Service - Repository - Model}
+\paragraph{Controller - Service - Repository - Model}\mbox{}\\
+
 L'architettura realizzata all'interno di Spring Web consta nella presenza di:
 \begin{itemize}
-\item \textbf{Controller}: un a cui è delegato il compito di gestire le richieste provenienti dalla parte frontend e alla cattura delle eccezioni;
+\item \textbf{Controller}: a cui viene delegato il compito di gestire le richieste provenienti dalla parte frontend e la cattura delle eccezioni;
 \item \textbf{Service}: realizzano la business-logic;
 \item \textbf{Repository}: realizzano il layer di persistenza gestendo la base di dati;
 \item \textbf{Model}: rappresentano oggetti  Plain Old Java Object, un'istanza di un model rappresenta un documento di una collezione.
