@@ -6,8 +6,9 @@
 \item [•]\textbf{Disk's space}: at least 1GB;
 \item [•]\textbf{Operating system}: Windows 7 or superior, 32-bit or 64-bit versions;
 \item [•]\textbf{Java}: Java SE Development Kit 8;
-\item [•]\textbf{Node.Js}: Node.js 10.15.1;
-
+\item [•]\textbf{Node.js}: Node.js 10.15.1;
+\item [•]\textbf{Maven}: Maven 3.6.0;
+\item [•]\textbf{Browser}: Any browser which support Javascript, HTML5 and CSS3.
 
 \end{itemize}
 
@@ -16,9 +17,10 @@
 \item [•]\textbf{CPU}: Intel X86 family;
 \item [•]\textbf{RAM}: at least 2GB of RAM;
 \item [•]\textbf{Disk's space}: at least 1GB;
-\item [•]\textbf{Java}: Openjdk 8;
-\item [•]\textbf{Node.Js}: Node.js 10.15.1;
-
+\item [•]\textbf{Java}: OpenJDK 8 / Oracle JDK 8;
+\item [•]\textbf{Node.js}: Node.js 10.15.1;
+\item [•]\textbf{Maven}: Maven 3.6.0;
+\item [•]\textbf{Browser}: Any browser which support Javascript, HTML5 and CSS3.
 \end{itemize}
 
 \subsubsection{MacOS}
@@ -27,14 +29,35 @@
 \item [•]\textbf{RAM}: at least 2GB of RAM;
 \item [•]\textbf{Disk’s space}: at least 1GB;
 \item [•]\textbf{Operating system}: OS X 10.10 Yosemite.
-\item [•]\textbf{Java}: Openjdk 8;
-\item [•]\textbf{Node.Js}: Node.js 10.15.1;
-
-
+\item [•]\textbf{Java}: OpenJDK 8 / Oracle JDK 8;
+\item [•]\textbf{Node.js}: Node.js 10.15.1;
+\item [•]\textbf{Maven}: Maven 3.6.0;
+\item [•]\textbf{Browser}: Any browser which support Javascript, HTML5 and CSS3.
 \end{itemize}
 
 \subsection{Configuration}
-%TODO
-
+The webserver Tomcat is integrated in the \texttt{pom.xml} so you don't need any particular configuration if you are using MacOs or any Linux distro.
+In Windows you need the set the environment variables check on the setting and add to the "PATH" list the absolute path to the JDK and the Maven bins folders.
+Usually in Windows, Node.js automatically adds its path to the environment variable.
 \subsection{Execution}
-%TODO
+To run the backend part, open a terminal or cmd (not PowerShell) in the \texttt{Backend} folder, be sure the \texttt{pom.xml} is present in the folder, than run the command: 
+\begin{center}
+\texttt{mvn clean install}
+\end{center} 
+The command automatically performs the following actions:
+\begin{enumerate}
+\item Compile the code;
+\item Execute test (unit test and static test);
+\item Create the executable jar file in the \texttt{target} folder.
+\end{enumerate}
+Once you have completed the build, run the command from the terminal:\\
+\begin{center}
+\texttt{java -jar target/colletta-*.jar}
+\end{center}
+Now Spring Boot is running, to run the frontend just open a terminal window in the "Frontend" folder and run the command: 
+\begin{center}
+\texttt{npm start}
+\end{center}
+This will automatically open a new browser window with the application frontend.
+
+\textit{We are planning to introduce Webpack dependency to integrate the frontend and backend build life-cycle inside Maven.}
