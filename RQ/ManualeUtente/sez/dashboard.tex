@@ -15,7 +15,7 @@
         \item {Sidebar}\ped{G};
         \item Contenuto della pagina.
     \end{itemize}
- A seconda del tipo di utente (Studente, Insegnante, Sviluppatore, Amministratore) e della pagina selezionata, verranno visualizzati a schermo contenuti diversi. Ogni utente ha comunque a disposizione lo stesso header e un link al suo pannello utente.
+ A seconda del tipo di utente (Allievo, Insegnante, Sviluppatore, Amministratore) e della pagina selezionata, verranno visualizzati a schermo contenuti diversi. Ogni utente ha comunque a disposizione lo stesso header e un link al suo pannello utente.
 
 
 \subsection{Utente non autenticato}
@@ -42,12 +42,12 @@
     \subsubsection{Logout}
     Per effettuare il {logout}\ped{G} si deve cliccare sulla voce \textit{Esci} dalla barra del menu. Facendo ciò, l'utente termina la propria sessione.
     \subsubsection{Modifica dati}
-    Cliccando su \textit{profilo} l'utente ha la possibilità visualizzare e modificare i propri dati tramite un form simile a quello di registrazione. L'utente non può modificare il proprio ruolo dopo l'iscrizione.
+    Cliccando su \textit{profilo} l'utente ha la possibilità visualizzare e modificare i propri dati tramite un form simile a quello di registrazione. L'utente non può modificare il proprio ruolo e la propria Email dopo l'iscrizione.
 
-    \subsection{Studente}
-      Lo studente si iscrive nel portale Colletta per svolgere esercizi di analisi grammaticale. Può svolgere esercizi assegnati da un'insegnante o svolgere esercizi liberi tramite il sistema di correzione automatica del sistema. Lo studente ha poi la possibilità di confrontare la sua soluzione con quella presentata dal sistema.
+    \subsection{Allievo}
+      L'allievo si iscrive nel portale Colletta per svolgere esercizi di analisi grammaticale. Può svolgere esercizi assegnati da un'insegnante o svolgere esercizi liberi tramite il sistema di correzione automatica del sistema. L'allievo ha poi la possibilità di confrontare la sua soluzione con quella presentata dal sistema.
         \subsubsection{Sidebar}
-          La sidebar dello studente presenta le seguenti voci:
+          La sidebar dell'allievo presenta le seguenti voci:
             \begin{itemize}
                 \item Pannello utente;
                 \item Esercitazione libera;
@@ -61,7 +61,7 @@
             
             
         \subsubsection{Pannello utente}
-          Il pannello utente è un riassunto di tutti i progressi e le attività svolte dallo studente. Al momento il pannello utente mostra un messaggio di benvenuto allo studente, che è libero di selezionare una delle voci di menu ed esercitarsi.
+          Il pannello utente è un riassunto di tutti i progressi e le attività svolte dall'allievo. Al momento il pannello utente mostra un messaggio di benvenuto, che è libero di selezionare una delle voci di menu ed esercitarsi.
 %        	\begin{itemize}
 %        		\item Progressi;
 %        		\item Traguardi;
@@ -81,7 +81,7 @@
                 \includegraphics[width=17cm]{sez/img/studente/esercitazioneLiberaEsegui.PNG} 
                 \caption{Svolgimento esercizio libero}\label{fig:1}
         	\end{figure}
-          In questa pagina è possibile svolgere un esercizio inserendo nella casella di testi una frase da analizzare.
+          In questa pagina è possibile svolgere un esercizio inserendo nella casella di testo una frase da analizzare.
           Se la frase non è stata inserita da nessun insegnante la 
         correzione sarà generata automaticamente.
         \\ Svolgimento:
@@ -91,26 +91,26 @@
             	\item Svolgere l'esercizio e cliccare \textit{Completa}.
         	\end{enumerate}
         	\label{sec:esLib}
-        	Lo svolgimento dell'esercizio è guidato da dei bottoni che aiutano lo studente a eseguire un'analisi precisa. Ogni parola presenta dei bottoni sottostanti che rappresentano le scelte disponibili: cliccandoci sopra, il testo del bottone verrà aggiunto alla soluzione, e verrà mostrato un nuovo set di bottoni con ulteriori opzioni per l'analisi. In caso non comparissero più pulsanti, significa che l'analisi per quella parola è terminata. In ogni momento, lo studente può decidere di resettare la soluzione per una determinata parola (icona cestino), o annullare l'ultima scelta (freccia indietro).
+        	Lo svolgimento dell'esercizio è guidato da dei bottoni che aiutano l'allievo a eseguire un'analisi precisa. Ogni parola presenta dei bottoni sottostanti che rappresentano le scelte disponibili: cliccandoci sopra, il testo del bottone verrà aggiunto alla soluzione, e verrà mostrato un nuovo set di bottoni con ulteriori opzioni per l'analisi. In caso non comparissero più pulsanti, significa che l'analisi per quella parola è terminata. In ogni momento, l'allievo può decidere di resettare la soluzione per una determinata parola (icona cestino), o annullare l'ultima scelta (freccia indietro).
 
       
         \newpage
   		\subsubsection{Compiti per casa}
- 		  In questa sezione è possibile visualizzare gli esercizi che sono stati assegnati dal suo insegnante. Lo studente può scegliere uno qualsiasi fra gli esercizi elencati, dei quali può visualizzare la frase da analizzare e la data di aggiunta.
+ 		  In questa sezione l'allievo ha la possibilità di visualizzare gli esercizi a lui assegnati, scegliendo di svolgere uno qualsiasi fra gli esercizi elencati.
         	\begin{figure}[H]
             	\centering
             	\includegraphics[width=17cm]{sez/img/studente/compitopercasa.PNG} 
             	\caption{Scelta esercizio da risolvere}\label{fig:1}
         	\end{figure}
 
-		  Lo studente sceglie l'esercizio da svolgere tra quelli che sono stati assegnati cliccando su \textit{Svolgi l'esercizio}.   
+		  L'allievo sceglie l'esercizio da svolgere tra quelli che sono stati assegnati cliccando su \textit{Svolgi l'esercizio}.   
        
         	\begin{figure}[H]
             	\centering
             	\includegraphics[width=17cm]{sez/img/studente/svolgimentoesercizio.PNG} 
             	\caption{Svolgimento esercizio}\label{fig:1}
         	\end{figure}      
-	Lo studente quindi esegue l'analisi della frase allo stesso modo descritto in \S\ref{sec:esLib}. La soluzione visualizzata alla fine sarà in questo caso quella dell'insegnante che ha assegnato l'esercizio.
+	L'allievo quindi esegue l'analisi della frase allo stesso modo descritto in \S\ref{sec:esLib}. La soluzione visualizzata alla fine sarà in questo caso quella dell'insegnante che ha assegnato l'esercizio.
         
         
         
@@ -124,7 +124,7 @@
         
 \newpage
     \subsection{Insegnante}
-      L'insegnante è l'utente che può inserire esercizi e assegnarli. L'insegnate si iscrive al portale per permetter ai propri studenti di eseguire esercizi di analisi grammaticale selezionati.
+      L'insegnante è l'utente che può inserire esercizi e assegnarli. L'insegnate si iscrive al portale per permettere ai propri allievi di eseguire esercizi di analisi grammaticale personalizzati.
         \subsubsection{Sidebar}
           La sidebar dell'insegnante presenta le seguenti voci:
         	\begin{itemize}
@@ -137,27 +137,18 @@
         
         
         \subsubsection{Pannello utente}
-          Il pannello utente mostra un messaggio di benvenuto all'insegnante, che poi è libero di spostarsi sulla sidebar e assegnare esercizi ai propri studenti.
-%         \\Contenuto presente all'interno della pagina:
-%        	\begin{itemize}
-%        		\item Storico esercizi inseriti; 
-%        		\item Esercizi recenti svolti dagli studenti;
-%        		\item Elenco propri studenti;
-%        		\item Elenco classi studenti.
-%        	\end{itemize}
-        
-        
+          Il pannello utente mostra un messaggio di benvenuto all'insegnante, che poi è libero di spostarsi sulla sidebar e assegnare esercizi ai propri allievi.
         
         
         \subsubsection{Inserisci esercizio}
-          Questa sezione da la possibilità all'insegnante di inserire un esercizio, per poi assegnarlo a determinati studenti.
+          Questa sezione da la possibilità all'insegnante di inserire un esercizio, per poi assegnarlo a determinati allievi.
         	\begin{figure}[H]
             	\centering
         		\includegraphics[width=17cm]{sez/img/insegnante/inserisciEsercizio.PNG} 
             	\caption{Inserimento e assegnazione esercizio}\label{fig:1}
         	\end{figure}
         
-          Dopo aver inserito la frase, verrà visualizzata la correzione automatica. Se ritenuta errata c'è la possibilità di modificare la soluzione cliccando su \textit{Modifica}. Durante lo svolgimento dell'esercizio l'insegnante ha la possibilità di tornare indietro di un passo, o di resettare completamente la soluzione per ogni parola. Questo processo è analogo a quello presentato in \S\ref{sec:esLib}. Finita la correzione, l'insegnate ha la possibilità di assegnare l'esercizio a uno studente e cliccando \textit{Completa} esso verrà aggiunto nel database.
+          Dopo aver inserito la frase, verrà visualizzata la correzione automatica. Se ritenuta errata c'è la possibilità di modificare la soluzione cliccando su \textit{Modifica}. Durante lo svolgimento dell'esercizio l'insegnante ha la possibilità di tornare indietro di un passo, o di resettare completamente la soluzione per ogni parola. Questo processo è analogo a quello presentato in \S\ref{sec:esLib}. Finita la correzione, l'insegnate ha la possibilità di assegnare l'esercizio a un allievo e cliccando \textit{Completa} esso verrà aggiunto nel database.
         
         
         
@@ -236,4 +227,4 @@
 				\includegraphics[width=17cm]{sez/img/amministratore/gestisciutenti.PNG}
 				\caption{Gestione utenti}\label{fig:1}
 			\end{figure}
-		  In questa pagina l'amministratore può visualizzare gli utenti iscritti ed eventualmente eliminarli dal sito. Per ogni utente sono presenti Nome, email e ruolo (Insegnate, Sviluppatore o Studente). Gli amministratori non figurano in questo elenco. L'amministratore, cliccando su \textit{Elimina}, può cancellare un utente dal sistema. Premendo su \textit{Aggiorna}, l'amministratore aggiorna la lista di utenti.
+		  In questa pagina l'amministratore può visualizzare gli utenti iscritti ed eventualmente eliminarli dal sito. Per ogni utente sono presenti Nome, email e ruolo (Insegnate, Sviluppatore o Allievi). Gli amministratori non figurano in questo elenco. L'amministratore, cliccando su \textit{Elimina}, può cancellare un utente dal sistema. Premendo su \textit{Aggiorna}, l'amministratore aggiorna la lista di utenti.
