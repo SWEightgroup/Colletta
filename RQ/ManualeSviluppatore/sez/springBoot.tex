@@ -86,14 +86,17 @@ Each folder contains a specific set of files:
 \subsubsection{Data and logic separation}
 \begin{figure}[H]
 \centering 
-\includegraphics[scale=0.6]{uml/backendArchitecture.png} 
+\includegraphics[scale=0.3]{uml/backendArchitecture.png} 
 \caption{Data and logic separation}
 \end{figure}
 
-The design pattern used for the backend part is \href{https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html}{Spring MVC}.
+The design pattern used for the backend is: \textbf{Spring MVC}.
+Respectively with the Controller, Service and Repository classes.
+\\ 
+To get more information about the architecture chosen for the backend, follow the link below: \href{https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html}{Spring Web MVC}.
 
-
-
-
-
-
+\subsubsection{Security}
+The system was designed to secure client server communication so that only a user registered in the system can make calls which are then resolved by interacting with the database. 
+In authentication, when the user successfully logs in using their credentials, a JSON Web Token will be returned, instead if the user has registered the token will be generated. Whenever the user wants to access a protected route or resource he/her must necessarily send his token that identifies him/her as a user correctly registered in the system. If this is not done the system will decline the request. 
+The security system has been implemented so that the only requests that are authorized without token recognition are the login (\textit{/login}) and the registration (\textit{/sign-up}).\\
+The system uses \textit{JWT tokens} for token authentication, more information is available at the link: \href{https://jwt.io/introduction/}{Introduction to JSON Web Tokens}. 
