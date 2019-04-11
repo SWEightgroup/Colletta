@@ -12,10 +12,10 @@ I documenti formali che verranno presentati saranno suddivisi in due categorie:
     \end{list} 
 \item[•] \textbf{Esterni}:
 	\begin{list}{$\circ$}{}
-		\item \textbf{Piano di progetto}: documento per l’analisi e la pianificazione della gestione delle risorse di tempo e umane;
+		\item \textbf{Piano di progetto}: documento per l'analisi e la pianificazione della gestione delle risorse di tempo e umane;
 		\item \textbf{Piano di qualifica}: documento che descrive standard e obiettivi che il gruppo deve raggiungere per garantire la qualità di processo e prodotto;
 		\item \textbf{Glossario}: documento che raccoglie i termini appartenenti ad un ambito specifico e circoscritto. Contiene la spiegazione dei termini desueti o specialistici utilizzati nei documenti;
-		\item \textbf{Analisi dei requisiti}: documento che contiene l’analisi dei casi d’uso del prodotto e i diagrammi di interazioni previste con l'utente;
+		\item \textbf{Analisi dei requisiti}: documento che contiene l'analisi dei casi d’uso del prodotto e i diagrammi di interazioni previste con l'utente;
 		\item \textbf{Manuale Utente}: documento che fornisce all'utente finale istruzioni su come usare il prodotto software;
 		\item \textbf{Manuale Sviluppatore}: documento che fornisce allo sviluppatore indicazioni utili per comprendere ed espandere il prodotto software. 
 	\end{list}
@@ -76,8 +76,7 @@ Esempio:
 I documenti devono essere esportati in formato PDF.
 
 \subsubsection{Template}
-Per semplificare e standardizzare la stesura dei documenti previsti è stato creato un template \LaTeX{} contenente tutte le impostazioni per la struttura grafica e lo stile di formattazione. Ogni membro del team deve obbligatoriamente utilizzare questo {template}\ped{G}.
-Quest'ultimo è disponibile all'interno dell'omonima cartella ed è denominato "SWEightStyle.sty", e dev'essere importato all'interno del documento \LaTeX{} tramite la direttiva di inclusione di un pacchetto.
+Per semplificare e standardizzare la stesura dei documenti previsti è stato creato un template \LaTeX{} contenente tutte le impostazioni per la struttura grafica e lo stile di formattazione. Ogni membro del team deve obbligatoriamente utilizzare questo {template}\ped{G}. Quest'ultimo è disponibile all'interno dell'omonima cartella ed è denominato "SWEightStyle.sty", e dev'essere importato all'interno del documento \LaTeX{} tramite la direttiva di inclusione di un pacchetto.
 \subsubsection{Versioni}
 \label{sec:documentversion}
 Per ogni documento deve essere specificata obbligatoriamente la versione nella seguente forma: 
@@ -281,7 +280,7 @@ Per gestire il ciclo di vita dei documenti, deve essere utilizzato il servizio d
 \begin{enumerate}
 \item Il \textit{Responsabile di progetto} crea il task, assegna i \textit{Redattori} ed i \textit{Verificatori}, e lo mette nella colonna "To Do" ;
 \item Quando i \textit{Redattori} assegnati iniziano la stesura del documento spostano il task nella colonna "In progress";
-\item Finita l'attività di scrittura il task deve essere spostato in "Need Review"
+\item Finita l'attività di scrittura il task deve essere spostato in "Need Review";
 \item I \textit{Verificatori} assegnati controllano il documento decidendo se:
 	\begin{enumerate}
 	 	\item Accettarlo, e muoverlo in "Done";
@@ -310,7 +309,11 @@ Ogni diagramma di caso d’uso è identificato in alto a sinistra dal suo codice
 Questa sezione descrive le classificazioni e le formule per il calcolo delle metriche necessarie per assicurare la qualità.
 
 \subsubsection{Classificazione delle metriche}
-Per garantire la qualità del lavoro gli Amministratori hanno definito delle metriche, che devono però rispettare la seguente notazione M[categoria][numero] dove:
+Per garantire la qualità del lavoro gli Amministratori hanno definito delle metriche, che devono però rispettare la seguente notazione 
+\begin{center}
+	\textbf{M[categoria][numero]}
+\end{center}
+dove:
 \begin{itemize}
 	\item{Categoria}: indica la categoria della metrica, può assume i valori:
 	\begin{itemize}
@@ -377,6 +380,13 @@ Percentuale di requisiti obbligatori stabiliti dalla proponente soddisfatti. \`E
 Media del numero di build effettuate su Travis CI settimanalmente. Questo valore permette al gruppo di controllare l'andamento del lavoro sul prodotto.
 \subparagraph{MS011 - Percentuale build Travis superate}\mbox{}\\
 Percentuale delle build Travis superate con successo. Troppe build fallite indicano la presenza di errori che non sono stati risolti nei tempi prestabiliti.
+\subparagraph{MS012 - Accoppiamento tra classi}\mbox{}\\
+Calcola il numero di classi con cui ogni classe è accoppiata.
+Una classe si dice accoppiata con un'altra se è presente una
+dipendenza tra le due, indipendentemente dal verso della
+dipendenza. Un valore elevato di questa metrica non è desiderabile poiché evidenzia una bassa modularità del codice.
+
+
 
 \paragraph{Metriche processi}\mbox{}\\
 Le metriche presentate in questa sezione hanno come scopo fornire delle metriche per garantire un buon livello di qualità sui processi.
@@ -572,7 +582,6 @@ Per ogni test deve quindi essere definito:
 \end{itemize}
 
 \subsubsection{Test}
-
 \paragraph{Test di unità}\mbox{}\\
 Il test di unità verifica che ogni singola unità funzioni correttamente, le unità sono specificate nella progettazione di dettaglio.  
 
@@ -581,7 +590,7 @@ In particolare, si verifica che i requisiti per quella determinata unità siano 
 \item[•] \textbf{Test strutturale (white-box)}: verifica la logica interna del codice dell’unità cercando la massima copertura. Ogni singola prova deve attivare un singolo cammino di esecuzione all’interno dell’unità. L’insieme di dati di ingresso che ottiene quell’effetto costituisce un caso di prova;
 \item[•] \textbf{Test funzionale (black-box)}: fa riferimento alla specifica dell'unità utilizzando dati di ingresso capaci di provocare l'esito atteso. Ciascun insieme di dati di ingresso che produca un dato comportamento funzionale costituisce un singolo caso di prova.
 \end{itemize}
-
+La forma più semplice, adottata all'interno del progetto, di questo tipo di test prevede la combinazione di due unità già sottoposte a test in un unico componente e il test dell’interfaccia presente tra le due.
 \paragraph{Test di Integrazione}\mbox{}\\
 Si applica alle componenti specificate nella progettazione architetturale e rappresenta l’estensione logica del test di unità. Consiste nella combinazione di due unità già sottoposte a test in un solo componente e nel test dell’interfaccia presente tra le due. Il test di integrazione consente di individuare i problemi che si verificano quando due unità si combinano. Per effettuare tali test si farà uso di classi appositamente create per simulare e verificare l’interazione.
 Strategie di integrazione:
@@ -652,7 +661,7 @@ Esempio di \texttt{HelloWorldTest}:
 \end{lstlisting}
 La classe \textit{Assert} prevede molteplici metodi che verificano se il risultato atteso è uguale al risultato ritornato dal metodo che si sta testando, vedi \href{https://junit.org/junit4/javadoc/4.12/org/junit/Assert.html}{"Class Assert"}.\\
 Per maggiori informazioni riguardanti le proprietà delle annotazioni dei test vedi \href{https://junit.org/junit4/javadoc/latest/org/junit/Test.html}{"Annotation Type Test"}.
-
+In Eclipse IDE la creazione di un test d'unità può essere eseguita semplicemente evidenziando il metodo e premendo \texttt{Ctrl + Alt + Shift + U}, dopo aver installato il plugin "FAST CODE" citato in §3.2.6.4.3.
 
 \paragraph{Jest ed Enzyme}\mbox{}\\
 Il framework Jest e la libreria Enzyme saranno utilizzati dal gruppo per la creazione di test sul codice React. Permettono, fra le altre cose, di creare mock e simulare input utente. \\
@@ -668,9 +677,9 @@ Il comando \texttt{expect} verifica che i parametri siano uguali, vedi: \href{ht
 Tramite il comando \texttt{npm test} vengono eseguiti i test sui file modificati, è possibile applicare i test ogni volta che viene apportata una modifica localmente tramite il comando \texttt{npm run test -- --watch}.\\ 
 Maggiori informazioni e i link per i download sono disponibili di seguito:
 \begin{itemize}
-	\item \textbf{Jest:} \url{https://jestjs.io/}
-	\item \textbf{Enzyme:} \url{https://github.com/airbnb/enzyme}
-	\item \textbf{Guida introduttiva:} \url{https://tinyurl.com/sw8EnzymeJest}
+	\item \textbf{Jest:} \url{https://jestjs.io/};
+	\item \textbf{Enzyme:} \url{https://github.com/airbnb/enzyme};
+	\item \textbf{Guida introduttiva:} \url{https://tinyurl.com/sw8EnzymeJest}.
 \end{itemize}
 
 

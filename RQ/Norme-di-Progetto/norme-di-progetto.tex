@@ -4,6 +4,9 @@
 \usepackage{tabularx}
 \newcommand{\mc}{\multicolumn} % handy shortcut macro
 \newcolumntype{Z}{>{\centering\arraybackslash}X}
+\usepackage{cleveref}
+\usepackage{framed}
+\usepackage{listings}
 \input{comandi}
 \usepackage{xcolor}
 \usepackage{hyperref}
@@ -37,4 +40,17 @@
 
 
 \input{sez/ListadiControllo.tex}
+
+\appendix
+\addcontentsline{toc}{part}{Appendici}
+
+\newpage
+\newpage
+\section{Qualità}
+	\subsection{SPICE}
+		\label{app:SPICE}
+		\input{sez/App_Qualita/SPICE.tex}
+	\subsection{ISO/IEC 9126}
+		\label{app:ISO/IEC 9126}
+		\input{sez/App_Qualita/9126.tex}
 \end{document}
