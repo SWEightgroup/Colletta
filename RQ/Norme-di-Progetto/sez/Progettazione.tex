@@ -197,6 +197,7 @@ le seguenti convenzioni:
 \item[•] I commenti devono essere scritti in lingua inglese senza utilizzare abbreviazioni o altre ambiguità;
 \item[•] Le modifiche al codice devono sempre riflettersi sui relativi commenti;
 \item[•] Evitare commenti superflui o  inappropriati;
+\item[•] Codifica dei file UTF-8.
 \end{itemize}
 
 \paragraph{Intestazione}\mbox{}\\
@@ -208,14 +209,31 @@ Ogni file deve presentare un'intestazione con le seguenti informazioni:
 \item @description: breve descrizione del contenuto del file.
 \end{itemize}
 
-
 \paragraph{Java e Javascript style}\mbox{}\\
 Lo stile dei codici Java e javascript deve seguire le linee guida reperibili agli indirizzi:\\
 \begin{center}
-Java Style: \url{https://google.github.io/styleguide/javaguide.html};\\
-Javascript Style: \url{https://github.com/airbnb/javascript};
+Java style: \url{https://google.github.io/styleguide/javaguide.html}
 \end{center}
 
+\begin{center}
+JavaScript style: \url{https://github.com/airbnb/javascript};
+\end{center}
+
+Per quanto riguarda lo stylecode in Java, disponibile al link sopra, sono di particolare rilevanza §4 e §5, ovvero:
+\begin{itemize}
+\item \href{https://google.github.io/styleguide/javaguide.html#s4.1.3-braces-empty-blocks}{Empty blocks: may be concise}
+\item \href{https://google.github.io/styleguide/javaguide.html#s4.5.1-line-wrapping-where-to-break}{Where to break}
+\item \href{https://google.github.io/styleguide/javaguide.html#s4.8.2-variable-declarations}{Variable declarations}
+\item \href{https://google.github.io/styleguide/javaguide.html#s4.8.5-annotations}{Annotations}
+\item \href{https://google.github.io/styleguide/javaguide.html#s4.8.6-comments}{Comments}
+\end{itemize}
+Per quanto riguarda il paragrafo §5 è necessaria la lettura completa.
+Al fine di garantire l'adozione del stylecode di Google è possibile impostare IntelliJ IDEA e/o Eclipse IDE con lo style appropriato.
+Lo style in formato {XML}\ped{G} per gli IDE è disponibile al seguente link:
+\begin{center}
+\href{https://github.com/google/styleguide}{Styleguide by Google}
+\end{center}
+Per vedere come importare gli stili di codifica fare riferimento a §3.2.6.4 e §3.2.6.5.
 \paragraph{Ricorsione}\mbox{}\\
 La ricorsione va sempre evitata se possibile. Per ogni funzione ricorsiva è necessario fornire
 una prova di terminazione nei commenti.
@@ -275,8 +293,8 @@ I punti forti di questo modello sono:\\
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=8cm,keepaspectratio]{img/Feature.png}
-\caption{Diagramma di sequenza feature branch}
+\includegraphics[width=14cm,keepaspectratio]{img/Feature.png}
+\caption{Diagramma di sequenza feature branch, con il termine componente si fa riferimento a due elementi del gruppo}
 \end{figure}
 
 
@@ -356,19 +374,31 @@ Alcune delle lingue disponibili sono:
 \end{itemize}
 
 \paragraph{Eclipse}\mbox{}\\
-Per la parte di sviluppo in Java, il gruppo \gruppo \ ha deciso di adottare l'IDE Eclipse per le seguenti ragioni:
+Per la parte di sviluppo in Java, il gruppo \gruppo propone l'IDE Eclipse per le seguenti ragioni:
 \begin{itemize}
 	\item \`E gratuito;
 	\item Gran parte dei membri del gruppo ne hanno già conoscenza;
 	\item Integrazione con Maven;
-	\item \`E multipiattaforma;
+	\item \`E multi-piattaforma;
 	\item Estensibilità tramite plugin per lo sviluppo con Spring.
 \end{itemize}
 Eclipse è reperibile al seguente link:\newline
 \begin{center}
 	\url{https://www.eclipse.org/downloads/}
 \end{center}
-
+\subparagraph{Integrazione con Spring} \mbox{}\\
+All'interno del marketplace di Eclipse è possibile installare il plugin per integrare il framework Spring, denominato Spring IDE.
+Segue la guida utilizzata per la configurazione dell'ambiente di sviluppo: \\
+\begin{center}
+\url{https://www.eclipse.org/community/eclipse_newsletter/2018/february/springboot.php}
+\end{center}
+\subparagraph{Configurazione dello stylecode}\mbox{}\\
+Per l'utilizzo del stylecode di Google seguire le i seguenti passi:
+\begin{enumerate}
+\item Scaricare il file xml dello stylecode per Eclipse\\
+	\url{http://code.google.com/p/google-styleguide/};
+\item Selezionare in Eclipse \texttt{Window/Preferences} $\rightarrow$ \texttt{Java/Code Style/Formatter} $\rightarrow$ \texttt{Import} e selezionare il file xml precedentemente scaricato.
+\end{enumerate}
 \paragraph{Node.js}\mbox{}\\
 Per lo sviluppo lato server in linguaggio Javascript ci si avvale dell'ultima versione Long Term Support (LTS) di Node.js, che, al momento della stesura di questo documento, è la 10.15.1 LTS.
 Node.js è reperibile al seguente link:
@@ -403,7 +433,7 @@ Per installare ESLint è necessario dare il comando: \texttt{npm install eslint 
 Per settarlo invece dare il comando: \texttt{./node\_modules/.bin/eslint --init} oppure \texttt{npx eslint}.\\
 Maggiori informazioni sono presenti al seguente indirizzo: \href{https://eslint.org/}{"ESLint"}.
 
-\paragraph{Google-java-format}\mbox{}\\
+\paragraph{Google Java Format}\mbox{}\\
 Per rendere conforme lo stile di codifica per il linguaggio Java verrà utilizzato il programma \texttt{google-java-format}, il programma formatta automaticamente il codice di un file Java secondo le direttive di \href{https://google.github.io/styleguide/javaguide.html}{Google Java Style Guide}.
 Per formattare un file bisogna recarsi nella cartella che lo contiene e  dare il comando: 
 \begin{center}
@@ -418,7 +448,7 @@ Se si vuole ad esempio formattare il file \textit{HelloWorld.java} e il programm
 se il file è stato formattato correttamente non vengono generati errori.\\
 Maggiori informazioni sono presenti al link: \href{https://github.com/google/google-java-format}{google-java-format}.
 
-\paragraph{MongDB}\mbox{}\\
+\paragraph{MongoDB}\mbox{}\\
 In seguito ad una riunione, \texttt{Verbale-5-E-2019-03-25}, il gruppo ha deciso, contattando precedentemente la proponente, di utilizzare come storage di raccolta dati il servizio MongoDB di MongoDB Inc.\\
 MongoDB è un database non relazionale \texttt{NOSQL}, orientato ai documenti che si allontana dalla struttura tradizionale basata su tabelle dei database relazionali in favore di documenti in stile \texttt{JSON} con schema dinamico. 
 Per settare il database è necessario configurare il file \texttt{application.properties} dove verrà specificato l'indirizzo ip, il nome e la password per accedere al database.\\
@@ -428,11 +458,13 @@ server.port=8081
 spring.data.mongodb.host=34.238.118.172
 spring.data.mongodb.port=27017
 spring.data.mongodb.username=sweightgroup
-spring.data.mongodb.password=sweightgroup2019
+spring.data.mongodb.password=##################
 spring.data.mongodb.database=colletta
 spring.data.mongodb.authentication-database=admin
 \end{lstlisting}
 Maggiori informazioni sono presenti al seguente link: \href{https://docs.mongodb.com/?_ga=2.183391522.509639120.1554133474-1194492321.1550924275}{Mongo Docs}, il quale rimanda alla documentazione ufficiale di MongoDB. 
+
+La configurazione del database compete all'\adm{} che fornirà la password per connettersi ai membri.
 
 \paragraph{MongoDB Compass}\mbox{}\\
 Per rendere l'utilizzo e la visualizzazione dei dati presenti nel database più agevole ai membri del gruppo è stato scelto di utilizzare lo strumento \texttt{MongoDB Compass} che tramite una {GUI}\ped{G} di facile utilizzo permette di monitorare e consultare i dati inseriti dall'applicativo.\\
