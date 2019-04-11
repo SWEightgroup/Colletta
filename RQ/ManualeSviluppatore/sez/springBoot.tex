@@ -83,7 +83,7 @@ Each folder contains a specific set of files:
 \item \textbf{resources:} contains the configuration file for connection to the database.
 \end{itemize}
 
-\subsubsection{Data and logic separation}
+\subsection{Data and logic separation}
 \begin{figure}[H]
 \centering 
 \includegraphics[scale=0.3]{uml/backendArchitecture.png} 
@@ -95,8 +95,22 @@ Respectively with the Controller, Service and Repository classes.
 \\ 
 To get more information about the architecture chosen for the backend, follow the link below: \href{https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html}{Spring Web MVC}.
 
-\subsubsection{Security}
+
+\subsection{Security}
 The system was designed to secure client server communication so that only a user registered in the system can make calls which are then resolved by interacting with the database. 
 In authentication, when the user successfully logs in using their credentials, a JSON Web Token will be returned, instead if the user has registered the token will be generated. Whenever the user wants to access a protected route or resource he/her must necessarily send his token that identifies him/her as a user correctly registered in the system. If this is not done the system will decline the request. 
 The security system has been implemented so that the only requests that are authorized without token recognition are the login (\textit{/login}) and the registration (\textit{/sign-up}).\\
-The system uses \textit{JWT tokens} for token authentication, more information is available at the link: \href{https://jwt.io/introduction/}{Introduction to JSON Web Tokens}. 
+The system uses \textit{JWT tokens} for token authentication, more information is available at the link: \href{https://jwt.io/introduction/}{Introduction to JSON Web Tokens}.
+
+\subsection{Modify or add features}
+\subsubsection{Controller}
+Controller has the words \textit{@RestController}, a convenience annotation that is itself annotated with \textit{@Controller} and \textit{@ResponseBody}, above the class definition and contains the methods that map the calls, being handled by the \texttt{DispatcherServlet}.\\
+When adding a controller the following rules should be followed:
+\begin{itemize}
+\item New controller must have the word \textit{@RestController} above its definition;
+\item Each mapping must be unique in your context. If not, Spring throws a RuntimeException during context initialization. You cannot even use parameters to differentiate your endpoints.
+\end{itemize}
+
+\subsubsection{Service}
+\subsubsection{Repository}
+\subsubsection{Model}
