@@ -1,63 +1,75 @@
 Per assicurarsi che i requisiti individuati nell'\AdR \ vengano soddisfatti, è necessario implementare dei test che ne verifichino l'effettiva implementazione.
 
+\subsubsection{Test di sistema previsti}
+
 \begin{tabularx}{\textwidth}{cXc}
 	
 	\rowcolor{greySWEight}
 	
-		\rowcolor{greySWEight}
-		\textcolor{white}{\textbf{Codice}} & 
-		\textcolor{white}{\textbf{Descrizione}} &
-		\textcolor{white}{\textbf{Stato}} \\
-		
-		TU001 & Verifica che il flag di attivazione utente sia messo a true correttamente & Superato \\
-		TU002 & Verifica che il metodo ritorni tutti gli utenti presenti nel sistema & Superato \\
-		TU003 & Verifica che il metodo ritorni tutte le frasi in cui uno specifico utente ha inserito almeno una soluzione & Superato \\
-		TU004 & Verifica che il metodo ritorni tutte le soluzioni inserite da uno specifico utente & Superato \\
-		TU005 & Verifica che l'affidabilità di una soluzione venga incrementata correttamente & Superato \\
-		TU006 & Verifica che il metodo ritorni una specifica soluzione dato il suo ID & Non Implementato \\
-		TU007 & Verifica che il nome dell'autore dell'esercizio venga modificato correttamente & Superato \\
-		TU008 & Verifica che un utente venga inserito correttamente nel sistema & Superato \\
-		TU009 & Verifica che il metodo ritorni l'utente corretto dato il suo ID & Superato \\
-		TU010 & Verifica che il metodo ritorni l'utente corretto dato il suo ID oppure un'eccezione se non è presente nel sistema & Superato \\
-		TU011 & Verifica che un utente venga attivato correttamente & Superato \\
-		TU012 & Verifica che un utente venga cancellato correttamente & Superato \\
-		TU013 & Verifica che il metodo ritorni l'utente corretto data l'email di iscrizione & Superato \\
-		TU014 & Verifica che il metodo aggiorni correttamente i dati di uno specifico utente & Superato \\
-		TU015 & Verifica che il metodo assegni correttamente un esercizio a uno o più utenti & Superato \\
-		TU016 & Verifica che il metodo ritorni tutti gli esercizi assegnati ad un utente & Superato \\
-		TU017 & Verifica che il metodo ritorni tutti gli allievi presenti nel sistema & Superato \\
-		TU018 & Verifica che il metodo ritorni tutti gli utenti presenti nel sistema & Superato \\
-		TU019 & Verifica che il metodo rimuova un esercizio dalla lista di esercizi assegnati ad utente & Superato \\
-		TU020 & Verifica che il metodo ritorni tutti gli esercizi svolti da un utente & Superato \\
-		TU021 & Verifica che un esercizio venga aggiunto alla lista di esercizi svolti da un utente & Superato \\
-		TU022 & Verifica che il metodo ritorni tutti gli sviluppatori non ancora attivati & Superato \\
-		TU023 & Verifica che il metodo ritorni la soluzione automatica generata da FreeLing & Non Implementato \\
-		TU024 & Verifica che la frase venga inserita correttamente nel sistema & Superato \\
-		TU025 & Verifica che il metodo ritorni la frase corretta dato il suo ID & Superato \\
-		TU026 & Verifica che l'affidabilità di una soluzione venga incrementata correttamente & Superato \\
-		TU027 & Verifica che il metodo ritorni una specifica soluzione dato il suo ID & Superato \\
-		TU028 & Verifica che il nome dell'autore dell'esercizio venga modificato correttamente & Superato \\
-		TU029 & Verifica che l'esercizio venga inserito correttamente nel sistema & Superato \\
-		TU030 & Verifica che la soluzione di un esercizio proposta da un allievo venga valutata e inserita correttamente & Superato \\
-		TU031 & Verifica che la soluzione inserita da un allievo venga valutata correttamente & Superato \\
-		TU032 & Verifica che un esercizio venga cancellato correttamente & Superato \\
-		TU033 & Verifica che il metodo ritorni tutti gli esercizi richiesti data una lista di ID & Superato \\
-		TU034 & Verifica che uno specifico utente venga cancellato correttamente & Superato \\
-		TU035 & Verifica che il metodo ritorni tutti gli sviluppatori non ancora attivati & Superato \\
-		TU036 & Verifica che il metodo ritorni tutti gli utenti presenti nel sistema & Superato \\
-		TU037 & Verifica che il metodo effettui il login nel sistema correttamente & Non Implementato \\
-		TU038 & Verifica che il metodo ritorni l'utente corretto dato il suo ID & Superato \\
-		TU039 & Verifica che il metodo modifichi correttamente il nome dell'autore di un esercizio & Superato \\
-		TU040 & Verifica che un utente venga attivato correttamente & Superato \\
-		TU041 & Verifica che un esercizio venga inserito correttamente & Non Implementato \\
-		TU042 & Verifica che un esercizio venga svolto e valutato correttamente & Non Implementato \\
-		TU043 & Verifica che il metodo ritorni la soluzione automatica generata da FreeLing & Superato \\
-		TU044 & Verifica che il metodo ritorni gli esercizi assegnati a un utente & Superato \\
-		TU045 & Verifica che il metodo ritorni gli esercizi svolti da un utente & Superato \\
-		TU046 & Verifica che il metodo ritorni la lista di tutti gli allievi presenti nel sistema & Superato \\
-		
+	\rowcolor{greySWEight}
+	\textcolor{white}{\textbf{Codice}} & 
+	\textcolor{white}{\textbf{Descrizione}} &
+	\textcolor{white}{\textbf{Stato}} \\
+	
+	\textbf{TS001} & Verifica che un utente non autenticato possa autenticarsi nel sistema & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TS002} & Verifica che un utente non autenticato possa registrarsi & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TS003} & Verifica che un insegnante possa inserire un nuovo esericizio di analisi grammaticale & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TS004} & Verifica che un insegnante possa usufruire del servizio di
+	correzione automatica da parte della libreria di Pos-Tagging & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TS005} & Un allievo può visualizzare i propri progressi & Non Implementato \\
+	\textbf{TS006} & Un allievo può visualizzare i propri traguardi & Non Implementato \\
+	\textbf{TS007} & Verifica che un allievo possa visualizzare le sue valutazioni & Non Implementato \\
+	\textbf{TS008} & Verifica che un allievo possa inserire un insegnante come preferito & Non Implementato \\
+	\textbf{TS009} & Verifica che un allievo possa inserire una frase libera da svolgere autonomamente per poi ricevere
+	una valutazione automatica & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TS010} & Verifica che un allievo possa visualizzare l’elenco degli
+	esercizi assegnati dall’insegnante & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TS011} & Verifica che un allievo possa svolgere un esercizio di analisi grammaticale & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TS012} & Verifica che uno sviluppatore possa visualizzare l’elenco delle frasi registrate & Non Implementato \\
+	\textbf{TS013} & Verifica che uno sviluppatore possa scaricare i dati & Non Implementato \\
+	\textbf{TS014} & Verifica che un amministratore possa eliminare un'utenza dal sistema & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TS015} & Verifica che un amministratore possa visualizzare le richieste di attivazione degli sviluppatori & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TS016} & Verifica che un amministratore possa rifiutare un'utenza di tipo sviluppatore & \textcolor{ForestGreen}{Superato} \\
+	
+	\rowcolor{white}
+	\caption{Test di sistema}
+	\label{tab:tabellatestsistema}
+\end{tabularx}
 
-\rowcolor{white}
-\caption{Tabella requisiti di qualità}
-\label{tab:tabellarequisitiqualità}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{sez/test/img/statoTestSistema.pdf}
+	\caption{Riepilogo stato test di sistema}
+\end{figure}
+
+\subsubsection{Tracciamento Test di sistema - Requisiti}
+
+\begin{tabularx}{\textwidth}{cX}
+	
+	\rowcolor{greySWEight}
+	
+	\rowcolor{greySWEight}
+	\textcolor{white}{\textbf{Test}} & 
+	\textcolor{white}{\textbf{Requisiti}} \\
+	
+	TS001 & R-1F001 \\
+	TS002 & R-1F004 \\
+	TS003 & R-1F013 \\
+	TS004 & R-1F015 \\
+	TS005 & R-1F030 \\
+	TS006 & R-1F031 \\
+	TS007 & R-1F032 \\
+	TS008 & R-1F034 \\
+	TS009 & R-1F038 \\
+	TS010 & R-1F036 \\
+	TS011 & R-1F040 \\
+	TS012 & R-1F053 \\
+	TS013 & R-1F054 \\
+	TS014 & R-1F064 \\
+	TS015 & R-1F065 \\
+	TS016 & R-1F067 \\
+	
+	\rowcolor{white}
+	\caption{Tracciamento test di sistema - requisiti}
+	\label{tab:tracciamentotestsistema}
 \end{tabularx}

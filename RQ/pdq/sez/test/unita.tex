@@ -1,3 +1,133 @@
 I test di unità servono ad assicurare il funzionamento delle più piccole unità software, ovvero i singoli metodi, indipendentemente dal sistema in cui sono presenti.
-\newline
-Tali test verranno inseriti in questa sezione una volta individuati.
+
+\subsubsection{Test di unità previsti}
+
+\begin{tabularx}{\textwidth}{cXc}
+	
+	\rowcolor{greySWEight}
+	
+	\rowcolor{greySWEight}
+	\textcolor{white}{\textbf{Codice}} & 
+	\textcolor{white}{\textbf{Descrizione}} &
+	\textcolor{white}{\textbf{Stato}} \\
+	
+	\textbf{TU001} & Verifica che il flag di attivazione utente sia messo a true correttamente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU002} & Verifica che il metodo ritorni tutti gli utenti presenti nel sistema & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU003} & Verifica che il metodo ritorni tutte le frasi in cui uno specifico utente ha inserito almeno una soluzione & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU004} & Verifica che il metodo ritorni tutte le soluzioni inserite da uno specifico utente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU005} & Verifica che l'affidabilità di una soluzione venga incrementata correttamente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU006} & Verifica che il metodo ritorni una specifica soluzione dato il suo ID & Non Implementato \\
+	\textbf{TU007} & Verifica che il nome dell'autore dell'esercizio venga modificato correttamente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU008} & Verifica che un utente venga inserito correttamente nel sistema & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU009} & Verifica che il metodo ritorni l'utente corretto dato il suo ID & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU010} & Verifica che il metodo ritorni l'utente corretto dato il suo ID oppure un'eccezione se non è presente nel sistema & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU011} & Verifica che un utente venga attivato correttamente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU012} & Verifica che un utente venga cancellato correttamente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU013} & Verifica che il metodo ritorni l'utente corretto data l'email di iscrizione & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU014} & Verifica che il metodo aggiorni correttamente i dati di uno specifico utente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU015} & Verifica che il metodo assegni correttamente un esercizio a uno o più utenti & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU016} & Verifica che il metodo ritorni tutti gli esercizi assegnati ad un utente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU017} & Verifica che il metodo ritorni tutti gli allievi presenti nel sistema & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU018} & Verifica che il metodo ritorni tutti gli utenti presenti nel sistema & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU019} & Verifica che il metodo rimuova un esercizio dalla lista di esercizi assegnati ad utente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU020} & Verifica che il metodo ritorni tutti gli esercizi svolti da un utente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU021} & Verifica che un esercizio venga aggiunto alla lista di esercizi svolti da un utente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU022} & Verifica che il metodo ritorni tutti gli sviluppatori non ancora attivati & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU023} & Verifica che il metodo ritorni la soluzione automatica generata da FreeLing & Non Implementato \\
+	\textbf{TU024} & Verifica che la frase venga inserita correttamente nel sistema & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU025} & Verifica che il metodo ritorni la frase corretta dato il suo ID & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU026} & Verifica che l'affidabilità di una soluzione venga incrementata correttamente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU027} & Verifica che il metodo ritorni una specifica soluzione dato il suo ID & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU028} & Verifica che il nome dell'autore dell'esercizio venga modificato correttamente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU029} & Verifica che l'esercizio venga inserito correttamente nel sistema & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU030} & Verifica che la soluzione di un esercizio proposta da un allievo venga valutata e inserita correttamente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU031} & Verifica che la soluzione inserita da un allievo venga valutata correttamente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU032} & Verifica che un esercizio venga cancellato correttamente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU033} & Verifica che il metodo ritorni tutti gli esercizi richiesti data una lista di ID & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU034} & Verifica che uno specifico utente venga cancellato correttamente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU035} & Verifica che il metodo ritorni tutti gli sviluppatori non ancora attivati & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU036} & Verifica che il metodo ritorni tutti gli utenti presenti nel sistema & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU037} & Verifica che il metodo effettui il login nel sistema correttamente & Non Implementato \\
+	\textbf{TU038} & Verifica che il metodo ritorni l'utente corretto dato il suo ID & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU039} & Verifica che il metodo modifichi correttamente il nome dell'autore di un esercizio & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU040} & Verifica che un utente venga attivato correttamente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU041} & Verifica che un esercizio venga inserito correttamente & Non Implementato \\
+	\textbf{TU042} & Verifica che un esercizio venga svolto e valutato correttamente & Non Implementato \\
+	\textbf{TU043} & Verifica che il metodo ritorni la soluzione automatica generata da FreeLing & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU044} & Verifica che il metodo ritorni gli esercizi assegnati a un utente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU045} & Verifica che il metodo ritorni gli esercizi svolti da un utente & \textcolor{ForestGreen}{Superato} \\
+	\textbf{TU046} & Verifica che il metodo ritorni la lista di tutti gli allievi presenti nel sistema & \textcolor{ForestGreen}{Superato} \\
+	
+	
+	\rowcolor{white}
+	\caption{Test di unità}
+	\label{tab:tabellatestunità}
+\end{tabularx}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{sez/test/img/statoTestUnita.pdf}
+	\caption{Riepilogo stato test di unità}
+\end{figure}
+
+\subsubsection{Tracciamento Test di unità - Metodi}
+
+\begin{tabularx}{\textwidth}{cX}
+	
+	\rowcolor{greySWEight}
+	
+	\rowcolor{greySWEight}
+	\textcolor{white}{\textbf{Test}} & 
+	\textcolor{white}{\textbf{Metodi}} \\
+	
+	TU001 & colletta::repository::user::UsersRepositoryImpl::updateActivateFlagOnly() \\
+	TU002 & colletta::repository::user::UsersRepositoryImpl::getAllUsers() \\
+	TU003 & colletta::repository::phrase::PhraseRepositoryImpl::findAllByAuthor() \\
+	TU004 & colletta::repository::phrase::PhraseRepositoryImpl::findAllSolutionsByAuthor() \\
+	TU005 & colletta::repository::phrase::PhraseRepositoryImpl::increaseReliability() \\
+	TU006 & colletta::repository::phrase::PhraseRepositoryImpl::getSolution() \\
+	TU007 & colletta::repository::exercise::ExerciseRepositoryImpl::modifyAuthorName() \\
+	TU008 & colletta::service::user::UserService::addUser() \\
+	TU009 & colletta::service::user::UserService::findById() \\
+	TU010 & colletta::service::user::UserService::getUserInfo() \\
+	TU011 & colletta::service::user::UserService::activateUser() \\
+	TU012 & colletta::service::user::UserService::deleteUser() \\
+	TU013 & colletta::service::user::UserService::findByEmail() \\
+	TU014 & colletta::service::user::UserService::updateUser() \\
+	TU015 & colletta::service::user::UserService::addExerciseItem() \\
+	TU016 & colletta::service::user::UserService::findAllExerciseToDo() \\
+	TU017 & colletta::service::user::UserService::getAllStudents() \\
+	TU018 & colletta::service::user::UserService::getAllUsers() \\
+	TU019 & colletta::service::user::UserService::removeAssignedExercise() \\
+	TU020 & colletta::service::user::UserService::getAllExerciseDone() \\
+	TU021 & colletta::service::user::UserService::addCompletedExercise() \\
+	TU022 & colletta::service::user::UserService::getAllDevelopersToEnable() \\
+	TU023 & colletta::service::SolutionService::getAutomaticCorrection() \\
+	TU024 & colletta::service::PhraseService::insertPhrase() \\
+	TU025 & colletta::service::PhraseService::getPhraseById() \\
+	TU026 & colletta::service::PhraseService::increaseReliability() \\
+	TU027 & colletta::service::PhraseService::getSolutionInPhrase() \\
+	TU028 & colletta::service::ExerciseService::modifyExerciseAuthorName() \\
+	TU029 & colletta::service::ExerciseService::insertExercise() \\
+	TU030 & colletta::service::ExerciseService::doExercise() \\
+	TU031 & colletta::service::ExerciseService::correct() \\
+	TU032 & colletta::service::ExerciseService::deleteExercise() \\
+	TU033 & colletta::service::ExerciseService::getAllByIds() \\
+	TU034 & colletta::controller::Controller::deleteUser() \\
+	TU035 & colletta::controller::Controller::getAllDevelopersToEnable() \\
+	TU036 & colletta::controller::Controller::getAllUser() \\
+	TU037 & colletta::controller::Controller::signUp() \\
+	TU038 & colletta::controller::Controller::getUserInfo() \\
+	TU039 & colletta::controller::Controller::modifyExerciseAuthorName() \\
+	TU040 & colletta::controller::Controller::activateUser() \\
+	TU041 & colletta::controller::Controller::insertExercise() \\
+	TU042 & colletta::controller::Controller::doExercise() \\
+	TU043 & colletta::controller::Controller::getAutomaticCorrection() \\
+	TU044 & colletta::controller::Controller::getUserExercise() \\
+	TU045 & colletta::controller::Controller::getExerciseDone() \\
+	TU046 & colletta::controller::Controller::getStudentsList() \\
+	
+	\rowcolor{white}
+	\caption{Tracciamento test di unità - metodi}
+	\label{tab:tracciamentotestunità}
+\end{tabularx}
