@@ -559,7 +559,7 @@ In particolare, si verifica che i requisiti per quella determinata unità siano 
 \item[•] \textbf{Test strutturale (white-box)}: verifica la logica interna del codice dell’unità cercando la massima copertura. Ogni singola prova deve attivare un singolo cammino di esecuzione all’interno dell’unità. L’insieme di dati di ingresso che ottiene quell’effetto costituisce un caso di prova;
 \item[•] \textbf{Test funzionale (black-box)}: fa riferimento alla specifica dell'unità utilizzando dati di ingresso capaci di provocare l'esito atteso. Ciascun insieme di dati di ingresso che produca un dato comportamento funzionale costituisce un singolo caso di prova.
 \end{itemize}
-
+La forma più semplice, adottata all'interno del progetto, di questo tipo di test prevede la combinazione di due unità già sottoposte a test in un unico componente e il test dell’interfaccia presente tra le due.
 \paragraph{Test di Integrazione}\mbox{}\\
 Si applica alle componenti specificate nella progettazione architetturale e rappresenta l’estensione logica del test di unità. Consiste nella combinazione di due unità già sottoposte a test in un solo componente e nel test dell’interfaccia presente tra le due. Il test di integrazione consente di individuare i problemi che si verificano quando due unità si combinano. Per effettuare tali test si farà uso di classi appositamente create per simulare e verificare l’interazione.
 Strategie di integrazione:
@@ -630,7 +630,7 @@ Esempio di \texttt{HelloWorldTest}:
 \end{lstlisting}
 La classe \textit{Assert} prevede molteplici metodi che verificano se il risultato atteso è uguale al risultato ritornato dal metodo che si sta testando, vedi \href{https://junit.org/junit4/javadoc/4.12/org/junit/Assert.html}{"Class Assert"}.\\
 Per maggiori informazioni riguardanti le proprietà delle annotazioni dei test vedi \href{https://junit.org/junit4/javadoc/latest/org/junit/Test.html}{"Annotation Type Test"}.
-
+In Eclipse IDE la creazione di un test d'unità può essere eseguita semplicemente evidenziando il metodo e premendo \texttt{Ctrl + Alt + Shift + U}, dopo aver installato il plugin "FAST CODE" citato in §3.2.6.4.3.
 
 \paragraph{Jest ed Enzyme}\mbox{}\\
 Il framework Jest e la libreria Enzyme saranno utilizzati dal gruppo per la creazione di test sul codice React. Permettono, fra le altre cose, di creare mock e simulare input utente. \\
