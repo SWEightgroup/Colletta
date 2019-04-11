@@ -37,7 +37,7 @@
 			\def\arraystretch{1.3}
 			\centering
 			\begin{tabular}{r|L{5cm}}
-				\multicolumn{2}{c}{\textbf{Informazioni sul documento} } \\ \hline
+				\multicolumn{2}{c}{\textbf{Information about the document} } \\ \hline
 				\textbf{Version} &  \Versionedoc\\
 				\textbf{Approver} & \Approvatore{} \\
 				\textbf{Writers} & \Redattori{} \\
@@ -167,57 +167,49 @@
 \usepackage{scrextend} 
 \addtokomafont{labelinglabel} 
 {\sffamily}
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+\lstdefinelanguage{Java}{
+basicstyle=\ttfamily,
+keywordstyle=\color{pblue}\bfseries,
+stringstyle=\color{pgreen},
+commentstyle=\color{pred},
+morecomment=[s][\color{pblue}]{/**}{*/},
+numbers=left,
+numberstyle=\tiny\color{black},
+stepnumber=1,
+numbersep=10pt,
+tabsize=4,
+showspaces=false,
+showstringspaces=false}
 
-
-%impostazioni per il codice che deve finire dentro a
-%\begin{lstlisting}
-
-\definecolor{listinggray}{gray}{0.9}
-\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
-\lstset{
-backgroundcolor=\color{lbcolor},
-    tabsize=4,    
-%   rulecolor=,
-    language=[GNU]C++,
-    basicstyle=\scriptsize,
-    upquote=true,
-    aboveskip={1.5\baselineskip},
-    columns=fixed,
-    showstringspaces=false,
-    extendedchars=true,
-    inputencoding=utf8,
-    breaklines=true,
-    prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
-    frame=single,
-    numbers=left,
-    showtabs=false,
-    showspaces=false,
-    showstringspaces=false,
-    identifierstyle=\ttfamily,
-    keywordstyle=\color[rgb]{0,0,1},
-    commentstyle=\color[rgb]{0.026,0.112,0.095},
-    stringstyle=\color[rgb]{0.627,0.126,0.941},
-    numberstyle=\color[rgb]{0.205, 0.142, 0.73},
-%        \lstdefinestyle{C++}{language=C++,style=numbers}’.
-}
-\lstset{
-  backgroundcolor=\color{lbcolor},
-  tabsize=4,
-  language=C++,
-  captionpos=b,
-  tabsize=3,
-  frame=lines,
+\lstdefinelanguage{JavaScript}{
+  keywordstyle=\color{pblue}\bfseries,
+  commentstyle=\color{pred},
+  morekeywords=[1]{break, continue, delete, else, for, function, if, in,
+    new, return, this, typeof, var, void, while, with, import, class, export, const, default},
+  % Literals, primitive types, and reference types.
+  morekeywords=[2]{false, null, true, boolean, number, undefined,
+    Array, Boolean, Date, Math, Number, String, Object},
+  % Built-ins.
+  morekeywords=[3]{eval, parseInt, parseFloat, escape, unescape},
+  sensitive,
+  morecomment=[s]{/*}{*/},
+  morecomment=[l]//,
+  stringstyle=\color{pgreen},
+  stepnumber=1,
   numbers=left,
-  numberstyle=\tiny,
-  numbersep=5pt,
-  breaklines=true,
+  numberstyle=\tiny\color{black},
+  stepnumber=1,
+  morecomment=[s]{/**}{*/}, % JavaDoc style comments
+  morestring=[b]',
+  showspaces=false,
   showstringspaces=false,
-  basicstyle=\footnotesize,
-  identifierstyle=\color{magenta},
-  keywordstyle=\color[rgb]{0,0,1},
-  commentstyle=\color{orange},
-  stringstyle=\color{red}
-}
+  morestring=[b]"
+}[keywords, comments, strings]
+
 %Variabili per ruoli
 \newcommand{\adm}{\emph{Administrator}}
 \newcommand{\adms}{\emph{Administrators}}

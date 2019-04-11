@@ -77,7 +77,7 @@ Components extend the React \texttt{component} abstract class and implement the 
 	\item Every component which needs to render some text must have a language prop to call to the translator module;
 \end{itemize}
 When adding a new component, one can start from the following snippet:
-\begin{lstlisting}
+\begin{lstlisting}[language=JavaScript, frame=single]
 import React, { Component } from 'react';
 import _translator from '../../helpers/Translator';
 class SampleComponent extends Component {
@@ -105,7 +105,7 @@ Containers extend the React \texttt{component} abstract class and implement the 
 \end{itemize}
 
 When adding a new container, one can start from the following snippet:
-\begin{lstlisting}
+\begin{lstlisting}[language=JavaScript, frame=single]
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import _translator from '../../../helpers/Translator';
@@ -152,7 +152,7 @@ When implementing a new Rest API call (RAP from now on), the developer must stic
 	\item If a RAP does not need additional data, the data field should be replaced by \texttt{\{\}}, otherwise the response will display a 403 error.
 \end{itemize}
 When adding a new RAP, one can start from the following snippet:
-\begin{lstlisting}
+\begin{lstlisting}[language=JavaScript, frame=single]
 export const sampleActionCreator = objectToSend => {
   return dispatch => {
     axios
@@ -206,7 +206,7 @@ If instead one wants to implement a new language, the following steps need to fo
 \item For every language in \texttt{Label.js}, a string int the format \texttt{gen\_xx} must be added, with xx being the ISO 639-1 code of the language. The string must contain the language name. For instance, in English \texttt{gen\_it} is Italian and \texttt{gen\_en} is English.
 \end{enumerate}
 The following snippet represents a slim-down example of \texttt{Label.js}:
-\begin{lstlisting}
+\begin{lstlisting}[language=JavaScript, frame=single]
 export const _label = {
   it: {
     account_yourData: 'I tuoi dati',
@@ -235,7 +235,7 @@ Let's have a brief overview at what needs to be done:
 \item The tagset must be placed in the correct folder.
 \end{enumerate}
 One can find the Freeling tagsets and their description at: \href{https://talp-upc.gitbook.io/freeling-4-1-user-manual/tagsets}{freeling-4-1-user-manual}. Starting from the tables in the Freelig doc, the end result should look like this:
-\begin{lstlisting}
+\begin{lstlisting}[language=JavaScript, frame=single]
 const italian = {
   adjective: {
     text: { full: 'adjective', short: 'A' },
