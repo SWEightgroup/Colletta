@@ -97,8 +97,9 @@ To get more information about the architecture chosen for the backend, follow th
 
 
 \subsection{Security}
-The system was designed to secure client server communication so that only a user registered in the system can make calls which are then resolved by interacting with the database. 
-In authentication, when the user successfully logs in using their credentials, a JSON Web Token will be returned, instead if the user has registered the token will be generated. Whenever the user wants to access a protected route or resource he/she must necessarily send his token that identifies she/he as a user correctly registered in the system. If this is not done the system will decline the request. 
+The system was designed to secure client server communication so that only a user registered in the system can make calls which are then resolved by interacting with the database.\\
+In authentication, when the user successfully logs in using their credentials, a JSON Web Token will be returned, instead if the user has registered the token will be generated.\\
+Whenever the user wants to access a protected route or resource he/she must necessarily send his token that identifies he/she as a user correctly registered in the system. If this is not done the system will decline the request.\\
 The security system has been implemented so that the only requests that are authorized without token recognition are the login (\textit{/login}) and the registration (\textit{/sign-up}).\\
 The system uses \textit{JWT tokens} for token authentication, more information is available at the link: \href{https://jwt.io/introduction/}{Introduction to JSON Web Tokens}.
 
@@ -113,10 +114,10 @@ When adding a controller the following rules should be followed:
 \item The name of the controller should be significant;
 \item The controller \textbf{only} needs to handle \textbf{HTTP Requests}, any kind of input control must be performed in the service that will then be called;
 \item The services should be instantiated with the \textit{@Autowired} keyword, see \href{https://www.baeldung.com/spring-autowire}{Guide to Spring @Autowired} for more info, over all the methods.
-\item Each method must contain the signature: @RequestMapping (value = "/", method = Request. (HttpRequest))
+\item Each method must contain the signature: @RequestMapping (value = "/", method = Request.RequestType)
 \end{enumerate}
 When adding a new component, one can start from the following snippet:
-\begin{lstlisting}[language = Java]
+\begin{lstlisting}[language=Java]
 @RestController
 public class UserController{
 
@@ -127,12 +128,8 @@ public class UserController{
 	public ResponseEntity<Object> doExercise(){
 		//call a generic service
 	}
-	
 }
 \end{lstlisting}
-
-
-
 \subsubsection{Service}
 \subsubsection{Repository}
 \subsubsection{Model}
