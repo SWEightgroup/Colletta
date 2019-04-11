@@ -71,16 +71,16 @@ In order to fully understand the contents below, the developer must have a certa
 
 Each folder contains a specific set of files:
 \begin{itemize}
-\item  \textbf{controller:} classes that handle HTTP Request, marked with \textit{@RestController} Spring annotation;
-\item  \textbf{error:} custom class for error handling;
+\item  \textbf{controller}: classes that handle HTTP Request, marked with \textit{@RestController} Spring annotation;
+\item  \textbf{error}: custom class for error handling;
 \item  \textbf{exceptions:} custom class for exception handling;
-\item  \textbf{library:} classes that connect the application to the PoS-tagging library;
-\item  \textbf{model:} has the folder \textit{helper} which contains the transfer object (DTO), the other Model files are standard POJO objects that represent JSON objects store inside the database;
-\item  \textbf{repository:} classes that encapsulates the set of objects persisted in a data store, in our case MongoDB, and the operations performed over them, providing a more object-oriented view of the persistence layer;
-\item  \textbf{security:} classes that manages the security of the application through encryption and token management;
-\item  \textbf{service:} classes that make up the logical business part of the application;
-\item  \textbf{test:}  the tests that the application must pass to enter in a safe running state;
-\item \textbf{resources:} contains the configuration file for connection to the database.
+\item  \textbf{library}: classes that connect the application to the PoS-tagging library;
+\item  \textbf{model}: has the folder \textit{helper} which contains the transfer object (DTO), the other Model files are standard POJO objects that represent JSON objects store inside the database;
+\item  \textbf{repository}: classes that encapsulates the set of objects persisted in a data store, in our case MongoDB, and the operations performed over them, providing a more object-oriented view of the persistence layer;
+\item  \textbf{security}: classes that manages the security of the application through encryption and token management;
+\item  \textbf{service}: classes that make up the logical business part of the application;
+\item  \textbf{test}: the tests that the application must pass to enter in a safe running state;
+\item \textbf{resources}: contains the configuration file for connection to the database.
 \end{itemize}
 
 \subsection{Data and logic separation}
@@ -112,7 +112,7 @@ When adding a controller the following rules should be followed:
 \item New controller must have the word \textit{@RestController} above its definition;
 \item Each mapping must be unique in the application. If not, Spring throws a \texttt{RuntimeException} during application initialization. You cannot even use parameters to differentiate your endpoints;
 \item The name of the controller should be significant;
-\item The controller \textbf{only} needs to handle \textbf{HTTP Requests}, any kind of input control must be performed in the service that will then be called;
+\item The controller \textbf{only} needs to \textbf{handle HTTP Requests}, any kind of input control must be performed in the service that will then be called;
 \item The services should be instantiated with the \textit{@Autowired} keyword, see \href{https://www.baeldung.com/spring-autowire}{Guide to Spring @Autowired} for more info, over all the methods.
 \item Each method must contain the signature: @RequestMapping (value = "/", method = Request.RequestType)
 \end{enumerate}
@@ -126,10 +126,12 @@ public class UserController{
 	
 	@RequestMapping(value = "/exercises/student/do", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Object> doExercise(){
-		//call a generic service
+			//call a generic service
 	}
 }
 \end{lstlisting}
 \subsubsection{Service}
+Service has the words @Service to indicate that it’s holding the business logic. 
+
 \subsubsection{Repository}
 \subsubsection{Model}
