@@ -135,3 +135,19 @@ Service has the words @Service to indicate that it’s holding the business logi
 
 \subsubsection{Repository}
 \subsubsection{Model}
+Model has the words \textit{@Document}: Applied at the class level to indicate that this class is mapped in the database, it's can specify the name of the collection where the database will be stored in this way:\\ \textit{@Document(collection = "mycollection")}\\
+\textit{@Id}: Applied at the fields of the class, to mark the field used for identity.
+
+\begin{lstlisting}[language=Java]
+
+@Document(collection = "phrases")
+public class PhraseModel {
+  @Id private String id;
+
+  @Indexed(unique = true)
+  private String phraseText;
+
+  @Builder.Default private ArrayList<SolutionModel> solutions = new ArrayList<>();
+  private String language;
+  private Long datePhrase;
+ \end{lstlisting}
