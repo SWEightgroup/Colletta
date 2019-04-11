@@ -230,11 +230,11 @@ export const _label = {
 The process for enabling other analysis language is a little bit more tedious, as it means having to do with the Freeling tagset.
 Let's have a brief overview at what needs to be done:
 \begin{enumerate}
-\item A custom JSON tagset must be created starting from the freeling tagset;
+\item A custom {JSON}\textsubscript{G} tagset must be created starting from the freeling tagset;
 \item The tagset created must be modified to accommodate some conditions;
 \item The tagset must be placed in the correct folder.
 \end{enumerate}
-One can find the Freeling tagsets and their description at: \href{https://talp-upc.gitbook.io/freeling-4-1-user-manual/tagsets}{freeling-4-1-user-manual}. Starting from the tables in the Freeling doc, the end result should look like this:
+One can find the {Freeling}\textsubscript{G} tagsets and their description at: \href{https://talp-upc.gitbook.io/freeling-4-1-user-manual/tagsets}{freeling-4-1-user-manual}. Starting from the tables in the Freeling doc, the end result should look like this:
 \begin{lstlisting}[language=JavaScript, frame=single]
 const italian = {
   adjective: {
@@ -265,8 +265,8 @@ Let's break in down:
 \item Each category has a text value, a name, a condition, and a list of choices. Each choice represents a possible value for the attribute.
 \item Choices and text objects of attributes contain two string:
 	\begin{itemize}
-	\item \textbf{Full:} the name of the choice or category (i.e. Adjective, Ordinal).
-	\item \textbf{Short:} the letter corresponding to the choice or the category (i.e. Adjective is A, Ordinal is O.
+	\item \textbf{Full}: the name of the choice or category (i.e. Adjective, Ordinal).
+	\item \textbf{Short}: the letter corresponding to the choice or the category (i.e. Adjective is A, Ordinal is O.
 	\end{itemize}
 \end{itemize}
 The modifications which have been made from the standard tagset are the following:
