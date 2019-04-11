@@ -14,7 +14,7 @@
     \end{table}
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.3\linewidth]{sez/App_Esito/Qualifica/graph/numeroMetodiCruscotto.pdf}
+        \includegraphics[width=0.4\linewidth]{sez/App_Esito/Qualifica/graph/numeroMetodiCruscotto.pdf}
         \caption{Media metodi per classe}
     \end{figure}
 
@@ -24,10 +24,11 @@
         \begin{tabular}{ccccccc}
             \rowcolor{greySWEight}
             \textcolor{white}{\textbf{Codice}} &
-            \textcolor{white}{\textbf{File analizzati}}&
-            \textcolor{white}{\textbf{Media metodi per classe}}&
+            \textcolor{white}{\textbf{File analizzati}} &
+            \textcolor{white}{\textbf{Metodi con 5-8 parametri}}&
+            \textcolor{white}{\textbf{Metodi con 8 o piu parametri}}&
             \textcolor{white}{\textbf{Riscontro}}\\
-            \textbf{MS001} & 44 & 2.47 & \textcolor{ForestGreen}{Ottimale}\\
+            \textbf{MS001} & 44 & 1 & 0 & \textcolor{YellowOrange}{Accettabile}\\
         \end{tabular}
         \caption{Media metodi per classe}
     \end{table}
@@ -42,6 +43,24 @@
         \caption{Percentuale range dei parametri delle}
     \end{figure}
 \paragraph{MS003 - Funzioni di interfaccia per package}\mbox{}\\[0,3cm]
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{ccccccc}
+            \rowcolor{greySWEight}
+            \textcolor{white}{\textbf{MS003}} &
+            \textcolor{white}{\textbf{File analizzati}} &
+            \textcolor{white}{\textbf{Valore}}&
+            \textcolor{white}{\textbf{Riscontro}}\\
+            \textbf{MS001} & 44 & 1.23 & \textcolor{ForestGreen}{Ottimale}\\
+        \end{tabular}
+        \caption{Media metodi per classe}
+    \end{table}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.4\linewidth]{sez/App_Esito/Qualifica/graph/interfacciaPerP.pdf}
+        \caption{Interfacce}
+    \end{figure}
+
 \paragraph{MS004 - Complessità ciclomatica}\mbox{}\\[0,3cm]
     \begin{table}[H]
         \centering
@@ -106,7 +125,38 @@
     \end{figure}
 
 \paragraph{MS007 - Code coverage}\mbox{}\\[0,3cm]
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{ccccccc}
+            \rowcolor{greySWEight}
+            \textcolor{white}{\textbf{Codice}} &
+            \textcolor{white}{\textbf{Valore}}&
+            \textcolor{white}{\textbf{Riscontro}}\\
+            \textbf{MS007} & 85.18\% & \textcolor{YellowOrange}{Accettabile}\\
+        \end{tabular}
+        \caption{Code coverage}
+    \end{table}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\linewidth]{sez/App_Esito/Qualifica/graph/storicoCodeCoverage.pdf}
+        \caption{Storico Code Coverage periodo di codifica}
+    \end{figure}
+
 \paragraph{MS008 - Superamento test}\mbox{}\\[0,3cm]
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{cccc}
+        \rowcolor{greySWEight}
+        \textcolor{white}{\textbf{MS008}} &
+        \textcolor{white}{\textbf{Nome}} &
+        \textcolor{white}{\textbf{Valore}} &
+        \textcolor{white}{\textbf{Riscontro}}\\
+        \textbf{MS009}& Test superati & 100\% & \textcolor{ForestGreen}{Ottimale} \\
+
+        \end{tabular}
+        \caption{Percentuale di test superati nel periodo di codifica}
+    \end{table}
+
 \paragraph{MS009 - Soddisfacimento requisiti obbligatori}\mbox{}\\[0,3cm]
     \begin{table}[H]
         \centering
@@ -118,7 +168,7 @@
         \textbf{MS009}& 77.40\% & \textcolor{RubineRed}{non superato} \\
 
         \end{tabular}
-        \caption{Requisit obbligatori soddisfatti nel periodo di pianificazione e codifica}
+        \caption{Requisit obbligatori soddisfatti nel periodo di codifica}
     \end{table}
     \begin{figure}[H]
         \centering
