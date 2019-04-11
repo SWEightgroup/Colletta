@@ -71,9 +71,10 @@ In order to fully understand the contents below, the developer must have a certa
 
 Each folder contains a specific set of files:
 \begin{itemize}
-\item  \textbf{controller:} classes that handle HTTP Request, marked with \textit{@RestController} Spring annotation;
-\item  \textbf{error:} custom class for error handling;
+\item  \textbf{controller}: classes that handle HTTP Request, marked with \textit{@RestController} Spring annotation;
+\item  \textbf{error}: custom class for error handling;
 \item  \textbf{exceptions:} custom class for exception handling;
+<<<<<<< HEAD
 \item  \textbf{library:} classes that connect the application to the {PoS-tagging}\textsubscript{G} library;
 \item  \textbf{model:} has the folder \textit{helper} which contains the data transfer object (DTO) called helpers, the other model java files are standard {POJO}\textsubscript{G} objects that represent JSON objects store inside the database;
 \item  \textbf{repository:} classes that encapsulates the set of objects persisted in a data store, in our case MongoDB, and the operations performed over them, providing a more object-oriented view of the persistence layer;
@@ -81,6 +82,15 @@ Each folder contains a specific set of files:
 \item  \textbf{service:} classes that make up the logical business part of the application;
 \item  \textbf{test:}  the tests that the application must pass to enter in a safe running state;
 \item \textbf{resources:} contains the configuration file for connection to the database.
+=======
+\item  \textbf{library}: classes that connect the application to the PoS-tagging library;
+\item  \textbf{model}: has the folder \textit{helper} which contains the transfer object (DTO), the other Model files are standard POJO objects that represent JSON objects store inside the database;
+\item  \textbf{repository}: classes that encapsulates the set of objects persisted in a data store, in our case MongoDB, and the operations performed over them, providing a more object-oriented view of the persistence layer;
+\item  \textbf{security}: classes that manages the security of the application through encryption and token management;
+\item  \textbf{service}: classes that make up the logical business part of the application;
+\item  \textbf{test}: the tests that the application must pass to enter in a safe running state;
+\item \textbf{resources}: contains the configuration file for connection to the database.
+>>>>>>> ManualeSviluppatore_RQ
 \end{itemize}
 
 \subsection{Data and logic separation}
@@ -97,8 +107,14 @@ To get more information about the architecture chosen for the backend, follow th
 
 
 \subsection{Security}
+<<<<<<< HEAD
 The system was designed to secure client server communication so that only a user registered in the system can make calls which are then resolved by interacting with the database. 
 In authentication, when the user successfully logs in using their credentials, a JSON Web Token will be returned, instead if the user has registered the token will be generated. Whenever the user wants to access a protected route or resource he/her must necessarily send his token that identifies him/her as a user correctly registered in the system. If this is not done the system will decline the request. 
+=======
+The system was designed to secure client server communication so that only a user registered in the system can make calls which are then resolved by interacting with the database.\\
+In authentication, when the user successfully logs in using their credentials, a JSON Web Token will be returned, instead if the user has registered the token will be generated.\\
+Whenever the user wants to access a protected route or resource he/she must necessarily send his token that identifies he/she as a user correctly registered in the system. If this is not done the system will decline the request.\\
+>>>>>>> ManualeSviluppatore_RQ
 The security system has been implemented so that the only requests that are authorized without token recognition are the login (\textit{/login}) and the registration (\textit{/sign-up}).\\
 The system uses \textit{JWT tokens} for token authentication, more information is available at the link: \href{https://jwt.io/introduction/}{Introduction to JSON Web Tokens}.
 
@@ -108,10 +124,35 @@ Controller has the words \textit{@RestController}, a convenience annotation that
 When adding a controller the following rules should be followed:
 \begin{itemize}
 \item New controller must have the word \textit{@RestController} above its definition;
+<<<<<<< HEAD
 \item Each mapping must be unique in your context. If not, Spring throws a RuntimeException during context initialization. You cannot even use parameters to differentiate your endpoints.
 \end{itemize}
 
+=======
+\item Each mapping must be unique in the application. If not, Spring throws a \texttt{RuntimeException} during application initialization. You cannot even use parameters to differentiate your endpoints;
+\item The name of the controller should be significant;
+\item The controller \textbf{only} needs to \textbf{handle HTTP Requests}, any kind of input control must be performed in the service that will then be called;
+\item The services should be instantiated with the \textit{@Autowired} keyword, see \href{https://www.baeldung.com/spring-autowire}{Guide to Spring @Autowired} for more info, over all the methods.
+\item Each method must contain the signature: @RequestMapping (value = "/", method = Request.RequestType)
+\end{enumerate}
+When adding a new component, one can start from the following snippet:
+\begin{lstlisting}[language=Java]
+@RestController
+public class UserController{
+
+	@Autowired
+	UserService service; 
+	
+	@RequestMapping(value = "/exercises/student/do", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Object> doExercise(){
+			//call a generic service
+	}
+}
+\end{lstlisting}
+>>>>>>> ManualeSviluppatore_RQ
 \subsubsection{Service}
+Service has the words @Service to indicate that it’s holding the business logic. 
+
 \subsubsection{Repository}
 The repository classes scope is to menage the persistence layer. Those classes are marked with \texttt{@Repository} and they implement the interface \texttt{MongoRepository}. Implementing the MongoRepository interface allows you to calls CRUD query interface. 
 If you want to write custom query, you have to create an interface and put the method sign inside, than you have to create a concrete class which has the "Impl" suffix to its name. The repository class should extend the MongoRepository and the custom query interface, if present. 
