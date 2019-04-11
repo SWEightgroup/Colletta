@@ -71,13 +71,13 @@ In order to fully understand the contents below, the developer must have a certa
 
 Each folder contains a specific set of files:
 \begin{itemize}
-\item  \textbf{controller:} classes that handle HTTP Request, marked with @RestController Spring annotation;
-\item  \textbf{error:} ;
-\item  \textbf{exceptions:} ;
+\item  \textbf{controller:} classes that handle HTTP Request, marked with \textit{@RestController} Spring annotation;
+\item  \textbf{error:} custom class for error handling;
+\item  \textbf{exceptions:} custom class for exception handling;
 \item  \textbf{library:} classes that connect the application to the PoS-tagging library;
-\item  \textbf{model:} has the folder \textit{helper} which contains the transfer object (DTO), the other Model files are standard POJO objects that represent the JSON object store inside the database;
-\item  \textbf{repository:};
-\item  \textbf{security:} ;
+\item  \textbf{model:} has the folder \textit{helper} which contains the transfer object (DTO), the other Model files are standard POJO objects that represent JSON objects store inside the database;
+\item  \textbf{repository:} classes that encapsulates the set of objects persisted in a data store, in our case MongoDB, and the operations performed over them, providing a more object-oriented view of the persistence layer;
+\item  \textbf{security:} class that manages the security of the application through encryption and token management;
 \item  \textbf{service:};
 \item  \textbf{test:}  the tests that the application must pass to enter in a safe running state;
 
