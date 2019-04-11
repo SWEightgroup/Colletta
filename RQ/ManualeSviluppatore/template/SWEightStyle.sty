@@ -171,19 +171,31 @@
 \definecolor{pgreen}{rgb}{0,0.5,0}
 \definecolor{pred}{rgb}{0.9,0,0}
 \definecolor{pgrey}{rgb}{0.46,0.45,0.48}
-\lstdefinelanguage{Java}{
-basicstyle=\ttfamily,
-keywordstyle=\color{pblue}\bfseries,
-stringstyle=\color{pgreen},
-commentstyle=\color{pred},
-morecomment=[s][\color{pblue}]{/**}{*/},
-numbers=left,
-numberstyle=\tiny\color{black},
-stepnumber=1,
-numbersep=10pt,
-tabsize=4,
-showspaces=false,
-showstringspaces=false}
+
+\definecolor{eclipseBlue}{RGB}{42,0.0,255}
+\definecolor{eclipseGreen}{RGB}{63,127,95}
+\definecolor{eclipsePurple}{RGB}{127,0,85}
+ 
+% Set Language
+\lstset{
+  language={Java},
+  basicstyle=\small\ttfamily, % Global Code Style
+  captionpos=b, % Position of the Caption (t for top, b for bottom)
+  extendedchars=true, % Allows 256 instead of 128 ASCII characters
+  tabsize=2, % number of spaces indented when discovering a tab 
+  columns=fixed, % make all characters equal width
+  keepspaces=true, % does not ignore spaces to fit width, convert tabs to spaces
+  showstringspaces=false, % lets spaces in strings appear as real spaces
+  breaklines=true, % wrap lines if they don't fit
+  frame=trbl, % draw a frame at the top, right, left and bottom of the listing
+  frameround=tttt, % make the frame round at all four corners
+  framesep=4pt, % quarter circle size of the round corners
+  numbers=left, % show line numbers at the left
+  numberstyle=\tiny\ttfamily, % style of the line numbers
+  commentstyle=\color{eclipseGreen}, % style of comments
+  keywordstyle=\color{eclipsePurple}, % style of keywords
+  stringstyle=\color{eclipseBlue}, % style of strings
+}
 
 \lstdefinelanguage{JavaScript}{
   keywordstyle=\color{pblue}\bfseries,
