@@ -1,4 +1,4 @@
-This section is intended to make the developer understand the working of the Colletta frontend, and to allow him or her to add functionalities  to the software package.
+This section is intended to make the developer understand the inner workings of the Colletta frontend, and to allow him or her to add functionalities to the software package.
 In order fully understand the contents below, the developer must have a certain degree of familiarity with React and Redux. If that's not the case, we strongly recommend the reader to at least acquire some basic knowledge on the topics.
 \subsection{Frontend UML}
 To help a better comprehension of the front-end architecture we created the following figure:
@@ -60,11 +60,11 @@ Each folder contains a specific set of files:
 \begin{itemize}
 	\item \textbf{actions:} the modules in this folder are responsible for creating and dispatching the actions to the reducers;
 	\item \textbf{assets:} static files like font and images;
-	\item \textbf{constants:} data collections and constants used in various part of the code, i.e. the label used for the translation;
+	\item \textbf{constants:} data collections and constants used in various parts of the code, i.e. the label used for the translation;
 	\item \textbf{helpers:} standard js functions or classes which have some use in the code, i.e. the label translator;
 	\item \textbf{reducers:} all the reducers responsible for the creation of a new state;
 	\item \textbf{store:} a single file creating and giving access to the centralized state;
-	\item \textbf{view:} classes rendering the information in the store. They are divided in \textit{components} and \textit{containers}.	 The key point to bare in mind when talking about components and containers is the following: containers are "smart", they observe the store and can call actions; components, on the other hand, are basically just static functions.
+	\item \textbf{view:} classes rendering the information in the store. They are divided in \textit{components} and \textit{containers}.	 The key point to bear in mind when talking about components and containers is the following: containers are "smart", they observe the store and can call actions; components, on the other hand, are basically just static functions.
 \end{itemize}
 
 \subsection{Modify or add features}
@@ -97,10 +97,10 @@ export default SampleComponent;
 
 
 \subsubsection{Containers}
-Containers extend the React \texttt{component} abstract class and implement the \texttt{render()} method. They can read the store and alters its state via actions. Containers can also have props passed to them, just like a container. When adding or modifying a component the following rules should be followed:
+Containers extend the React \texttt{component} abstract class and implement the \texttt{render()} method. They can read the store and alter its state via actions. Containers can also have props passed to them, just like a container. When adding or modifying a component the following rules should be followed:
 \begin{itemize}
 	\item Since the global state of the application is managed by Redux, do not use or create the local state of the container. Instead, rely solely on the props and on the store;
-	\item The store and the actions should not be accessed directly for performance and readability reasons. Instead, the should be mapped to the props;
+	\item The store and the actions should not be accessed directly for performance and readability reasons. Instead, they should be mapped to the props;
 	\item All containers must be placed in the most appropriate \texttt{src/view/containers} sub-directory. Creation of new sub-directories is allowed if necessary.
 \end{itemize}
 
@@ -199,11 +199,11 @@ where:
 \item \textbf{Language} is a string containing the ISO 639-1 code of the language you want to render the string in.
 \end{itemize}
 Therefore, whenever one wants to add some new text to some component or container, he or she must add the string in all of the supported languages and render it with the translator module.\\
-If instead one wants to implement a new language, the following steps need to followed:
+If instead one wants to implement a new language, the following steps need to be followed:
 \begin{enumerate}
 \item Every single string in \texttt{Label.js} must be translated and inserted with the ISO 639-1 code of the language;
 \item The variable \texttt{UiLang} in \texttt{src/constants/Label.js} must be updated with the ISO 639-1 code of the language;
-\item For every language in \texttt{Label.js}, a string int the format \texttt{gen\_xx} must be added, with xx being the ISO 639-1 code of the language. The string must contain the language name. For instance, in English \texttt{gen\_it} is Italian and \texttt{gen\_en} is English.
+\item For every language in \texttt{Label.js}, a string in the format \texttt{gen\_xx} must be added, with xx being the ISO 639-1 code of the language. The string must contain the language name. For instance, in English \texttt{gen\_it} is Italian and \texttt{gen\_en} is English.
 \end{enumerate}
 The following snippet represents a slim-down example of \texttt{Label.js}:
 \begin{lstlisting}[language=JavaScript, frame=single]
@@ -227,7 +227,7 @@ export const _label = {
 
 
 \subsubsection{Analysis Languages}
-The process for enabling other analysis language is a little bit more tedious, as it means having to do with the Freeling tagset.
+The process for enabling other analysis languages is a little bit more tedious, as it means having to work with the Freeling tagset.
 Let's have a brief overview at what needs to be done:
 \begin{enumerate}
 \item A custom {JSON}\textsubscript{G} tagset must be created starting from the freeling tagset;
@@ -271,12 +271,12 @@ Let's break in down:
 \end{itemize}
 The modifications which have been made from the standard tagset are the following:
 \begin{itemize}
-\item \textbf{Conditions}: this field is needed for avoiding showing the user choices that cannot be taken. For instance, it would make non sense to show the option to show the superlative option if the adjective selected has been marked as possessive. Thus, the condition states that the attribute at \texttt{index: 1} must have \texttt{short: Q}, so it must be qualificative. If no restriction applies, the condition field must be set to null;
+\item \textbf{Conditions}: this field is needed to avoid showing the user choices that cannot be taken. For instance, it would make no sense to show the option to select the superlative option if the adjective selected has been marked as possessive. Thus, the condition states that the attribute at \texttt{index: 1} must have \texttt{short: Q}, so it must be qualificative. If no restriction applies, the condition field must be set to null;
 \item \textbf{None fields}: looking at the code example above, one may notice the following choice: \texttt{\{ short: '0', full: 'none' \}}. It has been added to let the user to mark an adjective as not superlative. This choice must be added whenever an attribute is not strictly mandatory.
 \end{itemize}
-Adding conditions and none fields requires a decent understanding of a language grammar, and it is a process that must be executed very carefully.\\
+Adding conditions and none fields requires a decent understanding of the grammar of a language, and it is a process that must be executed very carefully.\\
 Once the file is completed, it can be placed in the \texttt{src/constants} folder, named as \texttt{ger\_xx} where \texttt{xx} is the ISO 639-1 code of the language.\\
-Disclaimer: Freeling documentation is not 100\% reliable. The tagset might be incomplete or containing some errors.
+Disclaimer: Freeling documentation is not always reliable. The tagset might be incomplete or contain some errors.
 
 
 
