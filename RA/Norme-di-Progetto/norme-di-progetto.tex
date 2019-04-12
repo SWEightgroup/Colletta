@@ -1,0 +1,57 @@
+%generare il pdf con il comando: pdflatex main.tex
+\documentclass[a4paper, oneside, openany, dvipsnames, table]{article}
+\usepackage{../template/SWEightStyle}
+\usepackage{tabularx}
+\newcommand{\mc}{\multicolumn} % handy shortcut macro
+\newcolumntype{Z}{>{\centering\arraybackslash}X}
+\usepackage{cleveref}
+\usepackage{framed}
+\usepackage{listings}
+\input{comandi}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+
+
+
+\begin{document}
+\copertina{}
+\newpage
+\input{sez/RegistroModifiche.tex}
+\newpage
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
+	\input{sez/introduzione.tex}
+\section{Processi primari}
+	\input{sez/ProcessiPrimari.tex}
+	\input{sez/Progettazione.tex}
+ 
+\newpage
+\section{Processi di supporto}
+\input{sez/Processi_di_supporto.tex}
+
+\newpage
+\section{Processi organizzativi}
+\input{sez/ProcessiOrganizzativi.tex}
+
+
+\appendix
+\addcontentsline{toc}{part}{Appendici}
+\input{sez/ListadiControllo.tex}
+\newpage
+\section{Ciclo di Deming}
+\input{sez/demingCycle.tex}
+
+\newpage
+\section{Qualità}
+	\subsection{SPICE}
+		\label{app:SPICE}
+		\input{sez/App_Qualita/SPICE.tex}
+	\subsection{ISO/IEC 9126}
+		\label{app:ISO/IEC 9126}
+		\input{sez/App_Qualita/9126.tex}
+\end{document}

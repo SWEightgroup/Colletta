@@ -1,0 +1,89 @@
+Alcune metriche per il software sono più adatte per alcuni linguaggi di programmazione e meno per altri. Come indicato nel \PdP , il gruppo \gruppo \space sceglierà quali linguaggi usare nel periodo di Progettazione Architetturale; pertanto, le metriche presenti in questa sezione non sono da considerarsi complete o definitive.\newline
+Per alcune metriche, può mancare un'indicazione di valori accettabili e ottimali: ciò significa che il team si riserva di definirli in futuri incrementi.
+
+\subsubsection{MS001 - Numero di Metodi}\mbox{}
+Numero medio di metodi contenuti nelle classi di un package. \\[0,2cm]
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $ ]7,9]$;
+	\item Range ottimale: $[0,7]$.
+\end{itemize}
+
+\subsubsection{MS002 - Numero di Parametri}\mbox{}
+Numero di parametri passati a un metodo. \\[0,2cm]
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $ ]5,8]$;
+	\item Range ottimale: $[0,5]$.
+\end{itemize}
+
+\subsubsection{MS003 - Funzioni di interfaccia per package}\mbox{}
+Numero di funzione che un package espone. \\[0,2cm]
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $ ]10,20]$;
+	\item Range ottimale: $[0,10]$.
+\end{itemize}
+
+\subsubsection{MS004 - Complessità Ciclomatica}\mbox{}
+Numero di cammini linearmente indipendenti attraverso il grafo di controllo di flusso. \\[0,2cm]
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $ ]10,17]$;
+	\item Range ottimale: $[0,10]$.
+\end{itemize}
+
+\subsubsection{MS005 - Campi dati per classe}\mbox{}
+Numero di campi dati contenuti da una classe. \\[0,2cm]
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $ ]10,15]$;
+	\item Range ottimale: $[0,10]$.
+\end{itemize}
+
+\subsubsection{MS006 - Commenti per linee di codice}\mbox{}
+percentuale di righe di commento sul totale delle righe (righe vuote escluse) \\[0,2cm]
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[10\%,15\%]$;
+	\item Range ottimale: $[15\%,100\%]$.
+\end{itemize}
+
+\subsubsection{MS007 - Code Coverage}\mbox{}
+Percentuale delle linee di codice coperte dai test.\\[0,2cm]
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[80\%,90\%[$;
+	\item Range ottimale: $[90\%,100\%]$.
+\end{itemize}
+\subsubsection{MS008 - Superamento test}\mbox{}
+Percentuale di test superati. \\[0,2cm]
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[100\%,100\%]$;
+	\item Range ottimale: $[100\%,100\%]$.
+\end{itemize}
+
+\subsubsection{MS009 - Requisiti obbligatori soddisfatti}\mbox{}
+Percentuale di requisiti obbligatori stabiliti dalla proponente soddisfatti.\\[0,2cm]
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[100\%,100\%]$;
+	\item Range ottimale: $[100\%,100\%]$.
+\end{itemize}
+	
+\subsubsection{MS010 - Media di build Travis settimanali}\mbox{}
+Media delle build effettuate su Travis CI settimanalmente.\\[0,2cm]
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[15,25[$;
+	\item Range ottimale: $[25,\infty)$.
+\end{itemize}
+
+\subsubsection{MS011 - Percentuale build Travis superate}\mbox{}
+Percentuale delle build Travis superate con successo.\\[0,2cm]
+\textbf{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[75\%,85\%[$;
+	\item Range ottimale: $[85\%,100\%]$.
+\end{itemize}

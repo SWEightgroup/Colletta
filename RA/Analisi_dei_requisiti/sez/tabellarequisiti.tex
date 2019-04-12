@@ -1,0 +1,724 @@
+\subsection{Classificazione dei requisiti}\mbox{}\\
+I vari requisiti potranno provenire dalle seguenti fonti:
+\begin{itemize}
+	\item[•] \textbf{Capitolato}: il requisito è stato scritto esplicitamente nel documento fornito dalla proponente;
+	\item[•] \textbf{Verbali interni e studio di fattibilità}: il requisito è emerso durante la discussione del capitolato tra gli analisti;
+	\item[•] \textbf{Casi d'uso}: il requisito è il risultato dell'analisi di uno o più casi d'uso.
+\end{itemize}
+
+I vari requisiti devono essere classificati secondo la seguente convenzione:
+\begin{center}
+	R-[Importanza][Tipo][Identificativo]
+\end{center}
+Dove:
+\begin{itemize}
+	\item[•] Importanza, indica se il requisito è:
+	\begin{itemize}
+		\item[1]: Requisito obbligatorio;
+		\item[2]: Requisito desiderabile;
+		\item[3]: Requisito opzionale.
+	\end{itemize}
+	\item[•] Tipo, indica se il requisito è:
+	\begin{itemize}
+		\item[F]: Requisito funzionale;
+		\item[Q]: Requisito di qualità;
+		\item[P]: Requisito prestazionale;
+		\item[V]: Requisito di vincolo.
+	\end{itemize}
+	\item[•] Identificativo: ovvero un codice univoco che contraddistingue il requisito.
+\end{itemize}
+
+\subsection{Requisiti funzionali} 
+\renewcommand{\arraystretch}{1.5}
+\def\tabularxcolumn#1{m{#1}}
+\begin{tabularx}{\textwidth}{cXccc}
+ 
+\rowcolor{greySWEight}
+   \textcolor{white}{\textbf{Identificativo}} &
+   \textcolor{white}{\textbf{Descrizione}}&
+   \textcolor{white}{\textbf{Importanza}}&
+   \textcolor{white}{\textbf{Tipo}}&
+   \textcolor{white}{\textbf{Fonte}}\endhead
+			R-1F001 & Un utente non autenticato può autenticarsi nel sistema & Obbligatorio & Funzionale & Capitolato \\
+			R-2F001 & Un utente può selezionare la lingua dell'interfaccia desiderata & Desiderabile & Funzionale & Capitolato \\
+			R-1F002 & Un utente non autenticato deve inserire la propria email & Obbligatorio & Funzionale & Interno \\
+			R-1F003 & Un utente non autenticato deve inserire la propria password & Obbligatorio & Funzionale & Interno \\
+			R-1F004 & Un utente non autenticato può registrarsi & Obbligatorio & Funzionale & Interno \\
+			R-1F005 & Un utente non autenticato deve inserire l'email per registrarsi & Obbligatorio & Funzionale & Interno \\
+			R-1F006 & Un utente non autenticato deve inserire il proprio nome per registrarsi & Obbligatorio & Funzionale & Interno \\
+			R-1F007 & Un utente non autenticato deve inserire il proprio cognome per registrarsi & Obbligatorio & Funzionale & Interno \\
+			R-1F008 & Un utente non autenticato deve inserire la password per registrarsi & Obbligatorio & Funzionale & Interno \\
+			R-1F009 & Un utente non autenticato deve re-inserire la password per registrarsi & Obbligatorio & Funzionale & Interno \\
+			R-2F002 & Un utente può inserire la propria data di nascita & Desiderabile & Funzionale & Interno \\
+			R-1F010 & Un utente non autenticato deve selezionare il ruolo desiderato in fase di registrazione & Obbligatorio & Funzionale & Interno \\
+			R-1F011 & Un utente non autenticato può recuperare le proprie credenziali & Obbligatorio & Funzionale & Interno \\
+			R-1F012 & Un insegnante può visualizzare la propria dashboard & Obbligatorio & Funzionale & Capitolato \\
+			R-1F013 & Un insegnante può inserire un nuovo esericizio di analisi grammaticale & Obbligatorio & Funzionale & Capitolato \\
+			R-3F001 & Un insegnante può selezionare la lingua dell'esercizio & Opzionale & Funzionale & Capitolato \\
+			R-1F014 & Un insegnate deve inserire il testo dell'esercizio & Obbligatorio & Funzionale & Interno \\
+			R-1F015 & Un insegnante può usufruire del servizio di correzione automatica da parte della libreria di Pos-Tagging & Obbligatorio & Funzionale & Capitolato \\
+			R-1F016 & Un insegnante può modificare il tag automatico di una parola & Obbligatorio & Funzionale & Interno \\
+			R-2F003 & Un insegnante può inserire un tag per la soluzione alternativa & Desiderabile & Funzionale & Capitolato \\
+			R-3F002 & Un insegnante può assegnare uno o più esercizi & Opzionale & Funzionale & Capitolato \\
+			R-1F017 & Un insegnante può assegnare uno o più esercizi a determinate classi e/o alunni & Obbligatorio & Funzionale & Capitolato \\
+			R-1F018 & Un insegnante può visualizzare lo storico degli esercizi inseriti & Obbligatorio & Funzionale & Capitolato \\
+			R-1F019 & Un insegnante può visualizzare il dettaglio di un esercizio & Obbligatorio & Funzionale & Interno \\
+			R-3F003 & Un insegnante può visualizzare gli esercizi inseriti dai suoi allievi & Opzionale & Funzionale & Interno \\
+			R-2F004 & Un insegnante può visualizzare la lista dei propri allievi & Desiderabile & Funzionale & Capitolato \\
+			R-3F004 & Un insegnante può modificare un esercizio inserito in precedenza & Opzionale & Funzionale & Interno \\
+			R-3F005 & Un insegnante può modificare il testo un esercizio inserito in precedenza & Opzionale & Funzionale & Interno \\
+			R-1F016 & & & & \\
+			R-3F002 & & & & \\
+			R-2F005 & Un insegnante può riassegnare il suo esercizio ad una classe o un insieme di allievi & Desiderabile & Funzionale & Interno \\
+			R-3F006 & Un insegnante può eliminare un tag alternativo & Opzionale & Funzionale & Interno \\
+			R-3F007 & Un insegnante deve salvare le modifiche effettuate & Opzionale & Funzionale & Interno \\
+			R-1F020 & Un insegnante può eliminare un esercizio precedentemente inserito & Obbligatorio & Funzionale & Interno \\
+			R-1F021 & Un insegnante può modificare il propri dati personali & Obbligatorio & Funzionale & Interno \\
+			R-1F022 & Un insegnante può modificare la propria email & Obbligatorio & Funzionale & Interno \\
+			R-1F023 & Un insegnante può modificare il proprio nome & Obbligatorio & Funzionale & Interno \\
+			R-1F024 & Un insegnante può modificare il proprio cognome & Obbligatorio & Funzionale & Interno \\
+			R-1F025 & Un insegnante può modificare la propria password & Obbligatorio & Funzionale & Interno \\
+			R-1F026 & Un insegnante può modificare la data di nascita & Obbligatorio & Funzionale & Interno \\
+			R-1F027 & Un insegnante può modificare la lingua dell'applicativo & Obbligatorio & Funzionale & Capitolato \\
+			R-3F008 & Un insegnante puà visualizzare l'elenco delle classi & Opzionale & Funzionale & Interno \\
+			R-3F009 & Un insegnante può creare una nuova classe & Opzionale & Funzionale & Interno \\
+			R-3F010 & Un insegnante può inserire il nome della classe & Opzionale & Funzionale & Interno \\
+			R-3F011 & Un insegnante può inserire un allievo in una classe & Opzionale & Funzionale & Interno \\
+			R-3F012 & Un insegnante può rimuovere un allievo dalla classe & Opzionale & Funzionale & Interno \\
+			R-3F013 & Un insegnante può modificare una classe & Opzionale & Funzionale & Interno \\
+			R-3F014 & Un insegnante può modificare il nome di una classe & Opzionale & Funzionale & Interno \\
+			R-3F015 & Un insegnante può aggiungere un allievo a una classe & Opzionale & Funzionale & Interno \\
+			R-3F016 & Un insegnante può rimuovere un allievo dalla classe & Opzionale & Funzionale & Interno \\
+			R-3F017 & Un insegnante può eliminare una classe di studenti & Opzionale & Funzionale & Interno \\
+			R-1F028 & Un insegnante può effettuare il logout dalla piattaforma & Obbligatorio & Funzionale & Interno \\
+			R-1F029 & Un allievo può visualizzare la propria dashboard & Obbligatorio & Funzionale & Interno \\
+			R-1F030 & Un allievo può visualizzare i propri progressi & Obbligatorio & Funzionale & Capitolato \\
+			R-1F031 & Un allievo può visualizzare i propri traguardi & Obbligatorio & Funzionale & Capitolato \\
+			R-2F006 & Un allievo può visualizzare il suo prossimo traguardo & Desiderabile & Funzionale & Interno \\
+			R-2F007 & Un allievo può visualizzare il suo traguardo corrente & Desiderabile & Funzionale & Interno \\
+			R-1F032 & Un allievo può visualizzare le sue valutazioni & Obbligatorio & Funzionale & Capitolato \\
+			R-1F033 & Un allievo può visualizzare la valutazione di un suo esercizio & Obbligatorio & Funzionale & Capitolato \\
+			R-1F034 & Un allievo può inserire un insegnante come preferito & Obbligatorio & Funzionale & Capitolato \\
+			R-2F008 & Un allievo può visualizzare la lista di insegnanti preferiti & Desiderabile & Funzionale & Interno \\
+			R-2F009 & Un allievo può rimuovere un insegnante dalla lista degli insegnanti preferiti & Desiderabile & Funzionale & Interno \\
+			R-1F035 & Un allievo può selezionare la lingua con cui svolgere gli esercizi & Obbligatorio & Funzionale & Capitolato \\
+			R-1F036 & Un allievo può visualizzare l' elenco degli esercizi assegnati dall’insegnante & Obbligatorio & Funzionale & Interno \\
+			R-1F037 & Un allievo può esercitarsi inserendo esercizi di grammatica da analizzare & Obbligatorio & Funzionale & Capitolato \\
+			R-1F038 & Un allievo può inserire una frase libera da svolgere autonomamente per poi ricevere unavalutazione automatica & Obbligatorio & Funzionale & Capitolato \\
+			R-1F039 & Un allievo può visualizzare l'analisi automatica fornita dalla libreria di Pos-Tagging & Obbligatorio & Funzionale & Capitolato \\
+			R-1F040 & Un allievo può svolgere l'esercizio di analisi grammaticale & Obbligatorio & Funzionale & Capitolato \\
+			R-3F018 & Un allievo può selezionare l'insegnante da cui ricevere la correzione dell'esercizio & Opzionale & Funzionale & Capitolato \\
+			R-1F041 & Un allievo può classificare una parola inserendo gli appositi tag & Obbligatorio & Funzionale & Capitolato \\
+			R-1F042 & Un allievo può visualizzare la soluzione dell'esercizio inserito & Obbligatorio & Funzionale & Capitolato \\
+			R-1F043 & Un allievo riceve una valutazione dell'esercizio se questo è stato inserito dall'insegnate & Obbligatorio & Funzionale & Capitolato \\
+			R-1F044 & Un allievo può modificare i propri dati utente & Obbligatorio & Funzionale & Interno \\
+			R-1F045 & Un allievo può modificare la propria email & Obbligatorio & Funzionale & Interno \\
+			R-1F046 & Un allievo può modificare il suo nome & Obbligatorio & Funzionale & Interno \\
+			R-1F047 & Un allievo può modificare il suo cognome & Obbligatorio & Funzionale & Interno \\
+			R-1F048 & Un allievo può modificare la sua password & Obbligatorio & Funzionale & Interno \\
+			R-1F049 & Un allievo può modificare la sua data di nascita & Obbligatorio & Funzionale & Interno \\
+			R-1F050 & Un allievo può modificare la lingua interfaccia applicativo & Obbligatorio & Funzionale & Interno \\
+			R-1F051 & Un allievo può effetturare il logout & Obbligatorio & Funzionale & Interno \\
+			R-1F052 & Uno sviluppatore può visualizzare la dashboard & Obbligatorio & Funzionale & Capitolato \\
+			R-1F053 & Uno sviluppatore può visualizzare l'elenco delle frasi registrate & Obbligatorio & Funzionale & Capitolato \\
+			R-2F010 & Uno sviluppatore può filtrare i dati & Desiderabile & Funzionale & Capitolato \\
+			R-2F011 & Uno sviluppatore può filtrare i dati secondo un periodo temporale & Desiderabile & Funzionale & Interno \\
+			R-2F012 & Uno sviluppatore può filtrare la provenienza dei dati & Desiderabile & Funzionale & Interno \\
+			R-2F013 & Uno sviluppatore può filtrare i dati per lingua & Desiderabile & Funzionale & Interno \\
+			R-2F014 & Uno sviluppatore può ricercare una frase nel sistema & Desiderabile & Funzionale & Interno \\
+			R-2F015 & Uno sviluppatore può inserire un filtro attendibilità dei dati che andrà a scaricare & Desiderabile & Funzionale & Proponente \\
+			R-2F016 & Uno sviluppatore può visualizzare i dati filtrati & Desiderabile & Funzionale & Interno \\
+			R-2F017 & Uno sviluppatore può rimuovere il filtro periodo temporale & Desiderabile & Funzionale & Interno \\
+			R-2F018 & Uno sviluppatore può rimuovere il filtro fonte & Desiderabile & Funzionale & Interno \\
+			R-2F019 & Uno sviluppatore può rimuovere il filtro lingue & Desiderabile & Funzionale & Interno \\
+			R-2F020 & Uno sviluppatore può rimuovere il filtro attendibilità & Desiderabile & Funzionale & Interno \\
+			R-2F021 & Uno sviluppatore può visualizzare lo storico di un esercizio/frase & Desiderabile & Funzionale & Interno \\
+			R-1F054 & Uno sviluppatore può scaricare i dati & Obbligatorio & Funzionale & Interno \\
+			R-2F022 & Uno sviluppatore può scegliere che dati scaricare & Desiderabile & Funzionale & Interno \\
+			R-2F023 & Uno sviluppatore può scegliere il formato dei file da scaricare & Desiderabile & Funzionale & Interno \\
+			R-2F024 & Uno sviluppatore può scegliere il formato archivio & Desiderabile & Funzionale & Interno \\
+			R-3F019 & Uno sviluppatore può creare un modello & Opzionale & Funzionale & Capitolato \\
+			R-3F020 & Uno sviluppatore può scegliere i parametri per la creazione del modello & Opzionale & Funzionale & Interno \\
+			R-3F021 & Uno sviluppatore può inserire il nome di un modello che sta creando & Opzionale & Funzionale & Interno \\
+			R-3F022 & Uno sviluppatore può salvare i modelli da esso creati & Opzionale & Funzionale & Capitolato \\
+			R-3F023 & Uno sviluppatore può visualizzare l'elenco dei modelli da esso creati & Opzionale & Funzionale & Interno \\
+			R-3F024 & Uno sviluppatore può visualizzare il contenuto di un modello & Opzionale & Funzionale & Interno \\
+			R-3F025 & Uno sviluppatore può scaricare un modello & Opzionale & Funzionale & Capitolato \\
+			R-3F026 & Uno sviluppatore può eliminare un modello & Opzionale & Funzionale & Interno \\
+			R-1F055 & Uno sviluppatore può modificare i propri dati utente & Obbligatorio & Funzionale & Interno \\
+			R-1F056 & Uno sviluppatore può modificare la sua email personale & Obbligatorio & Funzionale & Interno \\
+			R-1F057 & Uno sviluppatore può modificare il suo nome utente & Obbligatorio & Funzionale & Interno \\
+			R-1F058 & Uno sviluppatore può modificare il suo cognome utente & Obbligatorio & Funzionale & Interno \\
+			R-1F059 & Uno sviluppatore può modificare la sua password & Obbligatorio & Funzionale & Interno \\
+			R-1F060 & Uno sviluppatore può modificare la sua data di nascita & Obbligatorio & Funzionale & Interno \\
+			R-1F061 & Uno sviluppatore può modificare la lingua interfaccia applicativo & Obbligatorio & Funzionale & Capitolato \\
+			R-1F062 & Uno amministratore può visualizzare la propria dashboard & Obbligatorio & Funzionale & Interno \\
+			R-1F063 & Uno amministratore può filtrare gli utenti nel sistema & Obbligatorio & Funzionale & Interno \\
+			R-2F025 & Uno amministratore può visualizzare i dettagli degli utenti & Desiderabile & Funzionale & Interno \\
+			R-1F064 & Uno amministratore può eliminare un utenza dal sistema & Obbligatorio & Funzionale & Interno \\
+			R-1F065 & Uno amministratore può visualizzare le richieste degli sviluppatori & Obbligatorio & Funzionale & Interno \\
+			R-1F066 & Uno amministratore può attivare un utenza un utenza di tipo sviluppatore & Obbligatorio & Funzionale & Interno \\
+			R-1F067 & Uno amministratore può rifiutare un utenza di tipo sviluppatore & Obbligatorio & Funzionale & Interno \\
+			R-1F068 & Un amministratore può modificare i propri dati utente & Obbligatorio & Funzionale & Interno \\
+			R-1F069 & Un amministratore può modificare la sua email personale & Obbligatorio & Funzionale & Interno \\
+			R-1F070 & Un amministratore può modificare il suo nome utente & Obbligatorio & Funzionale & Interno \\
+			R-1F071 & Un amministratore può modificare il suo cognome utente & Obbligatorio & Funzionale & Interno \\
+			R-1F072 & Un amministratore può modificare la sua password & Obbligatorio & Funzionale & Interno \\
+			R-1F073 & Un amministratore può modificare la sua data di nascita & Obbligatorio & Funzionale & Interno \\
+			R-1F074 & Un amministratore può modificare la lingua interfaccia applicativo & Obbligatorio & Funzionale & Capitolato \\
+			R-1F075 & Un amministratore può effettuare il logout dalla piattaforma & Obbligatorio & Funzionale & Interno \\
+
+\rowcolor{white}
+\caption{Tabella requisiti funzionali} \label{tab:tabellarequisitifunzionali}
+\end{tabularx}
+\subsection{Requisiti di vincolo} 
+\begin{tabularx}{\textwidth}{cXccc}
+	
+	\rowcolor{greySWEight}
+	\textcolor{white}{\textbf{Identificativo}} &
+	\textcolor{white}{\textbf{Descrizione}}&
+	\textcolor{white}{\textbf{Importanza}}&
+	\textcolor{white}{\textbf{Tipo}}&
+	\textcolor{white}{\textbf{Fonte}}
+	\endhead
+		R-1V001 & L’applicazione è web & Obbligatorio & Vincolo & Capitolato \\
+		R-1V002 & L’applicazione utilizza la libreria FreeLing di PoS-tagging & Obbligatorio & Vincolo & Capitolato \\
+		R-1V003 & Il funzionamento del prodotto richiede una
+		connessione a internet & Obbligatorio & Vincolo & Capitolato \\	
+	\rowcolor{white}
+	\caption{Tabella requisiti di vincolo} \label{tab:tabellarequisitivincolo}
+\end{tabularx}
+
+%%##################### FINE requisiti di vincolo ############################
+
+\newpage
+\subsection{Requisiti di qualità} 
+
+\begin{tabularx}{\textwidth}{cXccc}
+	
+	\rowcolor{greySWEight}
+	\textcolor{white}{\textbf{Identificativo}} &
+	\textcolor{white}{\textbf{Descrizione}}&
+	\textcolor{white}{\textbf{Importanza}}&
+	\textcolor{white}{\textbf{Tipo}}&
+	\textcolor{white}{\textbf{Fonte}}\endhead
+	
+	%%################## INIZIO ENTRY #############################    
+	%Identificativo
+	R-1Q001 &
+	
+	%Descrizione
+	Sono rispettate le norme e le metriche sulla stesura dei documenti indicate nel documento \NdP &
+	
+	%Importanza
+	Obbligatorio &
+	
+	%Tipo
+	Qualità &
+	
+	%Fonte
+	Interno \\
+	%%##################### FINE ENTRY ############################
+	%%################## INIZIO ENTRY #############################    
+	%Identificativo
+	R-1Q002 &
+	
+	%Descrizione
+	Deve essere realizzato un manuale manutentore che descriva l'utilizzo del codice &
+	
+	%Importanza
+	Obbligatorio &
+	
+	%Tipo
+	Qualità &
+	
+	%Fonte
+	Interno \\
+	%%##################### FINE ENTRY ############################
+	%%################## INIZIO ENTRY #############################    
+	%Identificativo
+	R-1Q003 &
+	
+	%Descrizione
+	Il manuale manutentore deve essere disponibile in lingua inglese &
+	
+	%Importanza
+	Obbligatorio &
+	
+	%Tipo
+	Qualità &
+	
+	%Fonte
+	Interno \\
+	%%##################### FINE ENTRY ############################
+	%%################## INIZIO ENTRY #############################    
+	%Identificativo
+	R-1Q004 &
+	
+	%Descrizione
+	Deve essere fornito un manuale utente  &
+	
+	%Importanza
+	Obbligatorio &
+	
+	%Tipo
+	Qualità &
+	
+	%Fonte
+	Interno \\
+	%%##################### FINE ENTRY ############################
+	%%################## INIZIO ENTRY #############################    
+	%Identificativo
+	R-1Q005 &
+	
+	%Descrizione
+	Il manuale utente deve essere disponibile in lingua italiana   &
+	
+	%Importanza
+	Obbligatorio &
+	
+	%Tipo
+	Qualità &
+	
+	%Fonte
+	Interno \\
+	%%##################### FINE ENTRY ############################
+		
+	%%################## INIZIO ENTRY #############################    
+	%Identificativo
+	R-3Q001 &
+	
+	%Descrizione
+	L'applicazione web dev'essere accessibile secondo lo standard WCAG   &
+	
+	%Importanza
+	Opzionale &
+	
+	%Tipo
+	Qualità &
+	
+	%Fonte
+	Interno \\
+	%%##################### FINE ENTRY ############################
+	\rowcolor{white}
+	 \caption{Tabella requisiti di qualità} \label{tab:tabellarequisitiqualità}
+\end{tabularx}
+
+%%##################### FINE requisiti di qualità ############################
+
+\section{Tracciamento dei requisiti}
+Nota: requisiti di vincolo e di qualità non sono tracciati perché non corrispondono a nessun caso d'uso.
+\subsection{Tracciamento fonti-requisiti} 
+\begin{tabularx}{\textwidth}{c|c}
+	
+	\rowcolor{greySWEight}
+	\textcolor{white}{\textbf{Fonte}} &
+	\textcolor{white}{\textbf{Requisito}}\endhead
+		Capitolato & R-1F001 \\
+		Capitolato & R-2F001 \\
+		Interno & R-1F002 \\
+		Interno & R-1F003 \\
+		Interno & R-1F004 \\
+		Interno & R-1F005 \\
+		Interno & R-1F006 \\
+		Interno & R-1F007 \\
+		Interno & R-1F008 \\
+		Interno & R-1F009 \\
+		Interno & R-2F002 \\
+		Interno & R-1F010 \\
+		Interno & R-1F011 \\
+		Capitolato & R-1F012 \\
+		Capitolato & R-1F013 \\
+		Capitolato & R-3F001 \\
+		Interno & R-1F014 \\
+		Capitolato & R-1F015 \\
+		Interno & R-1F016 \\
+		Capitolato & R-2F003 \\
+		Capitolato & R-3F002 \\
+		Capitolato & R-1F017 \\
+		Capitolato & R-1F018 \\
+		Interno & R-1F019 \\
+		Interno & R-3F003 \\
+		Capitolato & R-2F004 \\
+		Interno & R-3F004 \\
+		Interno & R-3F005 \\
+		Interno & R-2F005 \\
+		Interno & R-3F006 \\
+		Interno & R-3F007 \\
+		Interno & R-1F020 \\
+		Interno & R-1F021 \\
+		Interno & R-1F022 \\
+		Interno & R-1F023 \\
+		Interno & R-1F024 \\
+		Interno & R-1F025 \\
+		Interno & R-1F026 \\
+		Capitolato & R-1F027 \\
+		Interno & R-3F008 \\
+		Interno & R-3F009 \\
+		Interno & R-3F010 \\
+		Interno & R-3F011 \\
+		Interno & R-3F012 \\
+		Interno & R-3F013 \\
+		Interno & R-3F014 \\
+		Interno & R-3F015 \\
+		Interno & R-3F016 \\
+		Interno & R-3F017 \\
+		Interno & R-1F028 \\
+		Interno & R-1F029 \\
+		Capitolato & R-1F030 \\
+		Capitolato & R-1F031 \\
+		Interno & R-2F006 \\
+		Interno & R-2F007 \\
+		Capitolato & R-1F032 \\
+		Capitolato & R-1F033 \\
+		Capitolato & R-1F034 \\
+		Interno & R-2F008 \\
+		Interno & R-2F009 \\
+		Capitolato & R-1F035 \\
+		Interno & R-1F036 \\
+		Capitolato & R-1F037 \\
+		Capitolato & R-1F038 \\
+		Capitolato & R-1F039 \\
+		Capitolato & R-1F040 \\
+		Capitolato & R-3F018 \\
+		Capitolato & R-1F041 \\
+		Capitolato & R-1F042 \\
+		Capitolato & R-1F043 \\
+		Interno & R-1F044 \\
+		Interno & R-1F045 \\
+		Interno & R-1F046 \\
+		Interno & R-1F047 \\
+		Interno & R-1F048 \\
+		Interno & R-1F049 \\
+		Interno & R-1F050 \\
+		Interno & R-1F051 \\
+		Capitolato & R-1F052 \\
+		Capitolato & R-1F053 \\
+		Capitolato & R-2F010 \\
+		Interno & R-2F011 \\
+		Interno & R-2F012 \\
+		Interno & R-2F013 \\
+		Interno & R-2F014 \\
+		Proponente & R-2F015 \\
+		Interno & R-2F016 \\
+		Interno & R-2F017 \\
+		Interno & R-2F018 \\
+		Interno & R-2F019 \\
+		Interno & R-2F020 \\
+		Interno & R-2F021 \\
+		Interno & R-1F054 \\
+		Interno & R-2F022 \\
+		Interno & R-2F023 \\
+		Interno & R-2F024 \\
+		Capitolato & R-3F019 \\
+		Interno & R-3F020 \\
+		Interno & R-3F021 \\
+		Capitolato & R-3F022 \\
+		Interno & R-3F023 \\
+		Interno & R-3F024 \\
+		Capitolato & R-3F025 \\
+		Interno & R-3F026 \\
+		Interno & R-1F055 \\
+		Interno & R-1F056 \\
+		Interno & R-1F057 \\
+		Interno & R-1F058 \\
+		Interno & R-1F059 \\
+		Interno & R-1F060 \\
+		Capitolato & R-1F061 \\
+		Interno & R-1F062 \\
+		Interno & R-1F063 \\
+		Interno & R-2F025 \\
+		Interno & R-1F064 \\
+		Interno & R-1F065 \\
+		Interno & R-1F066 \\
+		Interno & R-1F067 \\
+		Interno & R-1F068 \\
+		Interno & R-1F069 \\
+		Interno & R-1F070 \\
+		Interno & R-1F071 \\
+		Interno & R-1F072 \\
+		Interno & R-1F073 \\
+		Capitolato & R-1F074 \\
+		Interno & R-1F075 \\
+	\rowcolor{white}
+	\caption{Tabella tracciamento fonti-requisiti} \label{tab:tabellafonterequisiti}
+\end{tabularx}
+
+
+\subsection{Tracciamento casi d'uso-requisiti} 
+
+\begin{tabularx}{\textwidth}{c|c}
+	\rowcolor{greySWEight}
+	\textcolor{white}{\textbf{Caso d'uso}} &
+	\textcolor{white}{\textbf{Requisito}}\endhead
+		UC 1.1 & R-1F001 \\
+		UC 1.2 & R-2F001 \\
+		UC 1.3 & R-1F002 \\
+		UC 1.4 & R-1F003 \\
+		UC 1.5 & R-1F004 \\
+		UC 1.6 & R-1F005 \\
+		UC 1.7 & R-1F006 \\
+		UC 1.8 & R-1F007 \\
+		UC 1.9 & R-1F008 \\
+		UC 1.10 & R-1F009 \\
+		UC 1.11 & R-2F002 \\
+		UC 1.12 & R-1F010 \\
+		UC 1.5 & R-1F011 \\
+		UC 2.1 & R-1F012 \\
+		UC 2.2 & R-1F013 \\
+		UC 2.2.1 & R-3F001 \\
+		UC 2.2.2 & R-1F014 \\
+		UC 2.2.3 & R-1F015 \\
+		UC 2.2.4 & R-1F016 \\
+		UC 2.2.5 & R-2F003 \\
+		UC 2.2.6 & R-3F002 \\
+		UC 2.2.7 & R-1F017 \\
+		UC 2.3 & R-1F018 \\
+		UC 2.3.1 & R-1F019 \\
+		UC 2.4 & R-3F003 \\
+		UC 2.5 & R-2F004 \\
+		UC 2.6 & R-3F004 \\
+		UC 2.6.1 & R-3F005 \\
+		UC 2.6.2 & R-1F016 \\
+		UC 2.6.3 & R-3F002 \\
+		UC 2.6.4 & R-2F005 \\
+		UC 2.6.5 & R-3F006 \\
+		UC 2.6.7 & R-3F007 \\
+		UC 2.7 & R-1F020 \\
+		UC 2.8 & R-1F021 \\
+		UC 2.8.1 & R-1F022 \\
+		UC 2.8.2 & R-1F023 \\
+		UC 2.8.3 & R-1F024 \\
+		UC 2.8.4 & R-1F025 \\
+		UC 2.8.5 & R-1F026 \\
+		UC 2.8.6 & R-1F027 \\
+		UC 2.9 & R-3F008 \\
+		UC 2.9.1 & R-3F009 \\
+		UC 2.9.1.1 & R-3F010 \\
+		UC 2.9.1.2 & R-3F011 \\
+		UC 2.9.1.3 & R-3F012 \\
+		UC 2.9.2 & R-3F013 \\
+		UC 2.9.2.1 & R-3F014 \\
+		UC 2.9.2.2 & R-3F015 \\
+		UC 2.9.2.3 & R-3F016 \\
+		UC 2.9.3 & R-3F017 \\
+		UC 2.10 & R-1F028 \\
+		UC 3.1 & R-1F029 \\
+		UC 3.2 & R-1F030 \\
+		UC 3.3 & R-1F031 \\
+		UC 3.3.1 & R-2F006 \\
+		UC 3.3.2 & R-2F007 \\
+		UC 3.4 & R-1F032 \\
+		UC 3.4.1 & R-1F033 \\
+		UC 3.5 & R-1F034 \\
+		UC 3.6 & R-2F008 \\
+		UC 3.7 & R-2F009 \\
+		UC 3.8 & R-1F035 \\
+		UC 3.9 & R-1F036 \\
+		UC 3.10 & R-1F037 \\
+		UC 3.10.1 & R-1F038 \\
+		UC 3.10.3 & R-1F039 \\
+		UC 3.11 & R-1F040 \\
+		UC 3.11.2 & R-3F018 \\
+		UC 3.11.3 & R-1F041 \\
+		UC 3.12 & R-1F042 \\
+		UC 3.12.1 & R-1F043 \\
+		UC 3.13 & R-1F044 \\
+		UC 3.13.1 & R-1F045 \\
+		UC 3.13.2 & R-1F046 \\
+		UC 3.13.3 & R-1F047 \\
+		UC 3.13.4 & R-1F048 \\
+		UC 3.13.5 & R-1F049 \\
+		UC 3.13.6 & R-1F050 \\
+		UC 3.14 & R-1F051 \\
+		UC 4.1 & R-1F052 \\
+		UC 4.2 & R-1F053 \\
+		UC 4.3 & R-2F010 \\
+		UC 4.3.1 & R-2F011 \\
+		UC 4.3.2 & R-2F012 \\
+		UC 4.3.3 & R-2F013 \\
+		UC 4.3.4 & R-2F014 \\
+		UC 4.3.5 & R-2F015 \\
+		UC 4.13 & R-2F016 \\
+		UC 4.14 & R-2F017 \\
+		UC 4.15 & R-2F018 \\
+		UC 4.16 & R-2F019 \\
+		UC 4.17 & R-2F020 \\
+		UC 4.4 & R-2F021 \\
+		UC 4.5 & R-1F054 \\
+		UC 4.5.1 & R-2F022 \\
+		UC 4.5.2 & R-2F023 \\
+		UC 4.5.3 & R-2F024 \\
+		UC 4.6 & R-3F019 \\
+		UC 4.6.1 & R-3F020 \\
+		UC 4.6.2 & R-3F021 \\
+		UC 4.6.3 & R-3F022 \\
+		UC 4.7 & R-3F023 \\
+		UC 4.8 & R-3F024 \\
+		UC 4.9 & R-3F025 \\
+		UC 4.10 & R-3F026 \\
+		UC 4.11 & R-1F055 \\
+		UC 4.11.1 & R-1F056 \\
+		UC 4.11.2 & R-1F057 \\
+		UC 4.11.3 & R-1F058 \\
+		UC 4.11.4 & R-1F059 \\
+		UC 4.11.5 & R-1F060 \\
+		UC 4.11.6 & R-1F061 \\
+		UC 5.1 & R-1F062 \\
+		UC 5.3 & R-1F063 \\
+		UC 5.4 & R-2F025 \\
+		UC 5.5 & R-1F064 \\
+		UC 5.6 & R-1F065 \\
+		UC 5.7 & R-1F066 \\
+		UC 5.8 & R-1F067 \\
+		UC 5.9 & R-1F068 \\
+		UC 5.9.1 & R-1F069 \\
+		UC 5.9.2 & R-1F070 \\
+		UC 5.9.3 & R-1F071 \\
+		UC 5.9.4 & R-1F072 \\
+		UC 5.9.5 & R-1F073 \\
+		UC 5.9.6 & R-1F074 \\
+		UC 5.10 & R-1F075 \\
+	\rowcolor{white}
+	\caption{Tabella tracciamento casi d'uso-requisiti} \label{tab:tabellacasirequisiti}
+\end{tabularx}
+
+
+
+\subsection{Tracciamento requisiti-casi d'uso} 
+
+\begin{tabularx}{\textwidth}{c|c}
+	\rowcolor{greySWEight}
+	\textcolor{white}{\textbf{Requisito}} &
+	\textcolor{white}{\textbf{Caso d'uso}}\endhead
+		R-1F001 & UC 1.1 \\
+		R-2F001 & UC 1.2 \\
+		R-1F002 & UC 1.3 \\
+		R-1F003 & UC 1.4 \\
+		R-1F004 & UC 1.5 \\
+		R-1F005 & UC 1.6 \\
+		R-1F006 & UC 1.7 \\
+		R-1F007 & UC 1.8 \\
+		R-1F008 & UC 1.9 \\
+		R-1F009 & UC 1.10 \\
+		R-2F002 & UC 1.11 \\
+		R-1F010 & UC 1.12 \\
+		R-1F011 & UC 1.5 \\
+		R-1F012 & UC 2.1 \\
+		R-1F013 & UC 2.2 \\
+		R-3F001 & UC 2.2.1 \\
+		R-1F014 & UC 2.2.2 \\
+		R-1F015 & UC 2.2.3 \\
+		R-1F016 & UC 2.2.4 \\
+		R-2F003 & UC 2.2.5 \\
+		R-3F002 & UC 2.2.6 \\
+		R-1F017 & UC 2.2.7 \\
+		R-1F018 & UC 2.3 \\
+		R-1F019 & UC 2.3.1 \\
+		R-3F003 & UC 2.4 \\
+		R-2F004 & UC 2.5 \\
+		R-3F004 & UC 2.6 \\
+		R-3F005 & UC 2.6.1 \\
+		R-1F016 & UC 2.6.2 \\
+		R-3F002 & UC 2.6.3 \\
+		R-2F005 & UC 2.6.4 \\
+		R-3F006 & UC 2.6.5 \\
+		R-3F007 & UC 2.6.7 \\
+		R-1F020 & UC 2.7 \\
+		R-1F021 & UC 2.8 \\
+		R-1F022 & UC 2.8.1 \\
+		R-1F023 & UC 2.8.2 \\
+		R-1F024 & UC 2.8.3 \\
+		R-1F025 & UC 2.8.4 \\
+		R-1F026 & UC 2.8.5 \\
+		R-1F027 & UC 2.8.6 \\
+		R-3F008 & UC 2.9 \\
+		R-3F009 & UC 2.9.1 \\
+		R-3F010 & UC 2.9.1.1 \\
+		R-3F011 & UC 2.9.1.2 \\
+		R-3F012 & UC 2.9.1.3 \\
+		R-3F013 & UC 2.9.2 \\
+		R-3F014 & UC 2.9.2.1 \\
+		R-3F015 & UC 2.9.2.2 \\
+		R-3F016 & UC 2.9.2.3 \\
+		R-3F017 & UC 2.9.3 \\
+		R-1F028 & UC 2.10 \\
+		R-1F029 & UC 3.1 \\
+		R-1F030 & UC 3.2 \\
+		R-1F031 & UC 3.3 \\
+		R-2F006 & UC 3.3.1 \\
+		R-2F007 & UC 3.3.2 \\
+		R-1F032 & UC 3.4 \\
+		R-1F033 & UC 3.4.1 \\
+		R-1F034 & UC 3.5 \\
+		R-2F008 & UC 3.6 \\
+		R-2F009 & UC 3.7 \\
+		R-1F035 & UC 3.8 \\
+		R-1F036 & UC 3.9 \\
+		R-1F037 & UC 3.10 \\
+		R-1F038 & UC 3.10.1 \\
+		R-1F039 & UC 3.10.3 \\
+		R-1F040 & UC 3.11 \\
+		R-3F018 & UC 3.11.2 \\
+		R-1F041 & UC 3.11.3 \\
+		R-1F042 & UC 3.12 \\
+		R-1F043 & UC 3.12.1 \\
+		R-1F044 & UC 3.13 \\
+		R-1F045 & UC 3.13.1 \\
+		R-1F046 & UC 3.13.2 \\
+		R-1F047 & UC 3.13.3 \\
+		R-1F048 & UC 3.13.4 \\
+		R-1F049 & UC 3.13.5 \\
+		R-1F050 & UC 3.13.6 \\
+		R-1F051 & UC 3.14 \\
+		R-1F052 & UC 4.1 \\
+		R-1F053 & UC 4.2 \\
+		R-2F010 & UC 4.3 \\
+		R-2F011 & UC 4.3.1 \\
+		R-2F012 & UC 4.3.2 \\
+		R-2F013 & UC 4.3.3 \\
+		R-2F014 & UC 4.3.4 \\
+		R-2F015 & UC 4.3.5 \\
+		R-2F016 & UC 4.13 \\
+		R-2F017 & UC 4.14 \\
+		R-2F018 & UC 4.15 \\
+		R-2F019 & UC 4.16 \\
+		R-2F020 & UC 4.17 \\
+		R-2F021 & UC 4.4 \\
+		R-1F054 & UC 4.5 \\
+		R-2F022 & UC 4.5.1 \\
+		R-2F023 & UC 4.5.2 \\
+		R-2F024 & UC 4.5.3 \\
+		R-3F019 & UC 4.6 \\
+		R-3F020 & UC 4.6.1 \\
+		R-3F021 & UC 4.6.2 \\
+		R-3F022 & UC 4.6.3 \\
+		R-3F023 & UC 4.7 \\
+		R-3F024 & UC 4.8 \\
+		R-3F025 & UC 4.9 \\
+		R-3F026 & UC 4.10 \\
+		R-1F055 & UC 4.11 \\
+		R-1F056 & UC 4.11.1 \\
+		R-1F057 & UC 4.11.2 \\
+		R-1F058 & UC 4.11.3 \\
+		R-1F059 & UC 4.11.4 \\
+		R-1F060 & UC 4.11.5 \\
+		R-1F061 & UC 4.11.6 \\
+		R-1F062 & UC 5.1 \\
+		R-1F063 & UC 5.3 \\
+		R-2F025 & UC 5.4 \\
+		R-1F064 & UC 5.5 \\
+		R-1F065 & UC 5.6 \\
+		R-1F066 & UC 5.7 \\
+		R-1F067 & UC 5.8 \\
+		R-1F068 & UC 5.9 \\
+		R-1F069 & UC 5.9.1 \\
+		R-1F070 & UC 5.9.2 \\
+		R-1F071 & UC 5.9.3 \\
+		R-1F072 & UC 5.9.4 \\
+		R-1F073 & UC 5.9.5 \\
+		R-1F074 & UC 5.9.6 \\
+		R-1F075 & UC 5.10 \\
+	\rowcolor{white}
+\caption{Tabella tracciamento requisiti-casi d'uso} \label{tab:tabellarequisiticasi}
+\end{tabularx}
