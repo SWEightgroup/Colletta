@@ -60,7 +60,7 @@
     \begin{figure}[H]
         \centering
         \includegraphics[width=50mm]{sez/App_Esito/Qualifica/graph/interfacciaPerP.pdf}
-        \caption{Interfacce}
+        \caption{Interfacce per package nel periodo di Codifica}
     \end{figure}
 
 \paragraph{MS004 - Complessità ciclomatica}\mbox{}\\[0,3cm]
@@ -79,7 +79,7 @@
     \begin{figure}[H]
         \centering
         \includegraphics[width=50mm]{sez/App_Esito/Qualifica/graph/complCCruscotto.pdf}
-        \caption{Complessità ciclomatica periodo di codifica}
+        \caption{Complessità ciclomatica nel periodo di codifica}
     \end{figure}
 
 \paragraph{MS005 - Campi dati per classe}\mbox{}\\[0,3cm]
@@ -89,8 +89,10 @@
             \rowcolor{greySWEight}
             \textcolor{white}{\textbf{Codice}} &
             \textcolor{white}{\textbf{File analizzati}}&
+            \textcolor{white}{\textbf{[10,15] campi dati}}&
+            \textcolor{white}{\textbf{15 o più campi dati}}&
             \textcolor{white}{\textbf{Riscontro}}\\
-            \textbf{MS005} & 44 & \textcolor{YellowOrange}{Accettabile}\\
+            \textbf{MS005} & 44 & 1 & 0 & \textcolor{YellowOrange}{Accettabile}\\
         \end{tabular}
         \caption{Campi dati per classe nel periodo di Codifica}
     \end{table}
@@ -123,6 +125,11 @@
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.3\linewidth]{sez/App_Esito/Qualifica/graph/commenti.pdf}
+        \caption{Commenti per linee di codice periodo di codifica}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\linewidth]{sez/App_Esito/Qualifica/graph/commentiTorta.pdf}
         \caption{Percentuale commenti per linee di codice periodo di codifica}
     \end{figure}
 
@@ -156,7 +163,7 @@
         \textbf{MS008}& Test superati & 100\% & \textcolor{ForestGreen}{Ottimale} \\
 
         \end{tabular}
-        \caption{Percentuale di test superati nel periodo di codifica}
+        \caption{Percentuale di test superati alla fine periodo di codifica}
     \end{table}
 
 \paragraph{MS009 - Soddisfacimento requisiti obbligatori}\mbox{}\\[0,3cm]
@@ -170,7 +177,7 @@
         \textbf{MS009}& 77.40\% & \textcolor{BrickRed}{Non accettabile} \\
 
         \end{tabular}
-        \caption{Requisit obbligatori soddisfatti nel periodo di codifica}
+        \caption{Requisit obbligatori soddisfatti nel periodo di Codifica}
     \end{table}
     \begin{figure}[H]
         \centering
@@ -195,12 +202,16 @@
     \end{table}
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.7\linewidth]{sez/App_Esito/Qualifica/graph/buildTravisSettimanale.pdf}
+        \includegraphics[width=0.3\linewidth]{sez/App_Esito/Qualifica/graph/buildTravisSettimanaleCruscotto.pdf}
         \caption{Build di Travis settimanali, dal 2019-03-11 al 2019-04-07}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\linewidth]{sez/App_Esito/Qualifica/graph/buildTravisSettimanale.pdf}
+        \caption{Build di Travis settimanali Istogramma, dal 2019-03-11 al 2019-04-07}
     \end{figure}
 
     \paragraph{MS011 - Percentuale build Travis superate }\mbox{}\\[0,3cm]
-    
     \begin{table}[H]
         \centering
         \begin{tabular}{c c c c c}
