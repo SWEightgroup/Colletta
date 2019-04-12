@@ -1,5 +1,5 @@
-This section is intended to make the developer understand the inner workings of the Colletta backend, and to allow him or her to add functionalities  to the software package.
-In order to fully understand the contents below, the developer must have a certain degree of familiarity with Java, the framework Spring Boot with his subframework Spring Data MongoDB, MongoDB and Maven. If that's not the case, we strongly recommend the reader to at least acquire some basic knowledge on the topics.
+This section is intended to make the developer understand the inner workings of the Colletta backend, and to allow him or her to add more functionality to the software package.
+In order to fully understand the contents below, the developer must have a certain degree of familiarity with Java, the framework Spring Boot with his sub-framework Spring Data MongoDB, MongoDB and Maven. If that's not the case, we strongly recommend the reader to at least acquire some basic knowledge on the topics.
 
 \subsection{Directory tree}
 
@@ -153,6 +153,8 @@ public class UserService{
 \subsubsection{Repository}
 The repository classes manage the persistence layer. These classes are marked with \texttt{@Repository} annotation and they implement the interface \texttt{MongoRepository}. Implementing the MongoRepository interface allows you to call the CRUD query interface. 
 If you want to write custom queries, you have to create an interface and put the method's signature inside, then you have to create a concrete class which has the "Impl" suffix to its name. The repository class should extend the MongoRepository and the custom query interface, if present. 
+
+
 \subsubsection{Model}
 The Model classes are marked with the \textit{@Document} annotation to indicate that these classes are mapped in the database. The annotation can specify the name of the collection of the database in which the model will be stored in this way:\\ \textit{@Document(collection = "mycollection")}\\
 A field annotated with \textit{@Id} will be mapped to the '\_id' field in the database.\\

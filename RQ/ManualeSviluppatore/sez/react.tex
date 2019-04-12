@@ -1,4 +1,4 @@
-This section is intended to make the developer understand the inner workings of the Colletta frontend, and to allow him or her to add functionalities to the software package.
+This section is intended to make the developer understand the inner workings of the Colletta frontend, and to allow him or her to add more functionality to the software package.
 In order fully understand the contents below, the developer must have a certain degree of familiarity with React and Redux. If that's not the case, we strongly recommend the reader to at least acquire some basic knowledge on the topics.
 \subsection{Frontend UML}
 To help a better comprehension of the front-end architecture we created the following figure:
@@ -148,7 +148,7 @@ When implementing a new Rest API call (RAP from now on), the developer must stic
 \begin{itemize}
 	\item RAPs must be implemented inside an action creator and should not be put inside components or containers;
 	\item RAPs must use the Axios module;
-	\item RAPs must pass an authorization token (exception made for Login and SignUp) which is kept in the store. The snippet below will show clarify how;
+	\item RAPs must pass an authorization token (exception made for Log-in and Sign-up) which is kept in the store. The snippet below will show clarify how;
 	\item If a RAP does not need additional data, the data field should be replaced by \texttt{\{\}}, otherwise the response will display a 403 error.
 \end{itemize}
 When adding a new RAP, one can start from the following snippet:
@@ -230,7 +230,7 @@ export const _label = {
 The process for enabling other analysis languages is a little bit more tedious, as it means having to work with the Freeling tagset.
 Let's have a brief overview at what needs to be done:
 \begin{enumerate}
-\item A custom {JSON}\textsubscript{G} tagset must be created starting from the freeling tagset;
+\item A custom {JSON}\textsubscript{G} tagset must be created starting from the Freeling tagset;
 \item The tagset created must be modified to accommodate some conditions;
 \item The tagset must be placed in the correct folder.
 \end{enumerate}
@@ -244,8 +244,8 @@ const italian = {
         attrName: 'type',
         choices: [
           { short: 'O', full: 'Ordinal' },
-          { short: 'Q', full: 'qualificative' },
-          { short: 'P', full: 'Possesive' }
+          { short: 'Q', full: 'Qualifying ' },
+          { short: 'P', full: 'Possessive' }
         ],
         condition: null
       },
@@ -271,7 +271,7 @@ Let's break in down:
 \end{itemize}
 The modifications which have been made from the standard tagset are the following:
 \begin{itemize}
-\item \textbf{Conditions}: this field is needed to avoid showing the user choices that cannot be taken. For instance, it would make no sense to show the option to select the superlative option if the adjective selected has been marked as possessive. Thus, the condition states that the attribute at \texttt{index: 1} must have \texttt{short: Q}, so it must be qualificative. If no restriction applies, the condition field must be set to null;
+\item \textbf{Conditions}: this field is needed to avoid showing the user choices that cannot be taken. For instance, it would make no sense to show the option to select the superlative option if the adjective selected has been marked as possessive. Thus, the condition states that the attribute at \texttt{index: 1} must have \texttt{short: Q}, so it must be qualifying. If no restriction applies, the condition field must be set to null;
 \item \textbf{None fields}: looking at the code example above, one may notice the following choice: \texttt{\{ short: '0', full: 'none' \}}. It has been added to let the user to mark an adjective as not superlative. This choice must be added whenever an attribute is not strictly mandatory.
 \end{itemize}
 Adding conditions and none fields requires a decent understanding of the grammar of a language, and it is a process that must be executed very carefully.\\
