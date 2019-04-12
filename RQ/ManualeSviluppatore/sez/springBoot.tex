@@ -1,0 +1,179 @@
+This section is intended to make the developer understand the inner workings of the Colletta backend, and to allow him or her to add more functionality to the software package.
+In order to fully understand the contents below, the developer must have a certain degree of familiarity with Java, the framework Spring Boot with his sub-framework Spring Data MongoDB, MongoDB and Maven. If that's not the case, we strongly recommend the reader to at least acquire some basic knowledge on the topics.
+
+\subsection{Directory tree}
+
+\begin{figure}[H]
+\centering
+\begin{forest}
+  for tree={
+    font=\ttfamily,
+    grow'=0,
+    child anchor=west,
+    parent anchor=south,
+    anchor=west,
+    calign=first,
+    inner xsep=7pt,
+    edge path={
+      \noexpand\path [draw, \forestoption{edge}]
+      (!u.south west) +(7.5pt,0) |- (.child anchor) pic {folder} \forestoption{edge label};
+    },
+    before typesetting nodes={
+      if n=1
+        {insert before={[,phantom]}}
+        {}
+    },
+    fit=band,
+    before computing xy={l=15pt},
+  }  
+[Backend
+	[src
+		[main 
+			[java
+				[it
+					[colletta
+						[controller]
+						[error]
+						[exceptions]
+						[library]
+						[model
+							[helper]
+						]
+						[repository]
+						[security]
+						[service]						
+					]
+				]
+			]
+			[resources]
+		]	
+		[test
+			%[it
+			%	[colletta
+			%		[repository
+			%			[config]
+			%			[exercise]
+			%			[phrase]
+			%			[user]
+			%		]
+			%		[service
+			%			[user]
+			%		]
+			%	]
+			%]
+		]				
+	]
+]
+\end{forest}
+\caption{Backend directory tree}
+\label{fig:FrontDir}
+\end{figure}
+
+Each folder contains a specific set of files:
+\begin{itemize}
+\item  \textbf{controller}: classes that handle HTTP Request, marked with \textit{@RestController} Spring annotation;
+\item  \textbf{error}: custom classes for error handling;
+\item  \textbf{exceptions:} custom classes for exception handling;
+\item  \textbf{library}: classes that connect the application to the PoS-tagging library;
+\item  \textbf{model}: has the folder \textit{helper} which contains the transfer object (DTO), the other Model files are standard POJO objects that represent JSON objects store inside the database;
+\item  \textbf{repository}: classes that encapsulate the set of objects persisted in a data store, in our case MongoDB, and the operations performed over them, providing a more object-oriented view of the persistence layer;
+\item  \textbf{security}: classes that manage the security of the application through encryption and token management;
+\item  \textbf{service}: classes that make up the logical business part of the application;
+\item  \textbf{test}: the tests that the application must pass to enter in a safe running state;
+\item \textbf{resources}: contains the configuration file for the connection to the database.
+\end{itemize}
+
+\subsection{Data and logic separation}
+\begin{figure}[H]
+\centering 
+\includegraphics[scale=0.3]{uml/backendArchitecture.png} 
+\caption{Data and logic separation}
+\end{figure}
+
+The design pattern used for the backend is: \textbf{Spring MVC}.
+Respectively with the Controller, Service and Repository classes.
+\\ 
+More information about the architecture chosen for the backend is available at the link: \href{https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html}{Spring Web MVC}.
+
+
+\subsection{Security}
+The system was designed to secure client server communications so that only a user registered in the system can make calls which are then resolved by interacting with the database.\\
+In authentication, when the user successfully logs in using their credentials, a JSON Web Token will be returned. Instead when a user registers for the first time the token will be generated.\\
+Whenever the user wants to access a protected route or resource he/she must necessarily send his/her token that identifies he/she has correctly signed-in. If this is not done the system will decline the request.\\
+The security system has been implemented so that the only requests that are authorized without token recognition are the login (\textit{/login}) and the registration (\textit{/sign-up}).\\
+The system uses \textit{JWT tokens} for token authentication, more information is available at the link: \href{https://jwt.io/introduction/}{Introduction to JSON Web Tokens}.
+
+\subsection{Modify or add features}
+\subsubsection{Controller}
+The controller has the annotation \textit{@RestController} above the class definition and contains the methods that map the HTTP calls sent from the frontend, being handled by the \texttt{DispatcherServlet}. \textit{@RestController} is a convenience annotation which contains within it \textit{@Controller} and \textit{@ResponseBody}.\\
+This configuration returns to the frontend a JSON file, if this does not want to be done the @RestController word must be replaced by \textit{@Controller}.\\
+When adding a controller the following rules should be followed:
+\begin{enumerate}
+\item The new controller must have the annotation \textit{@RestController} above its definition;
+\item Each mapping must be unique in the application. If not, Spring throws a \texttt{RuntimeException} during application initialization. You cannot use parameters to differentiate your endpoints;
+\item The name of the controller should be significant;
+\item The controller must \textbf{only} \textbf{handle HTTP Requests}, any kind of input control must be performed in the service that will then be called;
+\item The services should be instantiated with the \textit{@Autowired} keyword, see \href{https://www.baeldung.com/spring-autowire}{Guide to Spring @Autowired} for more information over all the methods.
+\item Each method must contain the signature: @RequestMapping (value = "/", method = Request.RequestType)
+\end{enumerate}
+When adding a new \textit{Controller}, one can start from the following example:
+\begin{lstlisting}[language=Java]
+@RestController
+public class UserController{
+
+	@Autowired
+	UserService service; 
+	
+	@RequestMapping(value = "/exercises/student/do", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Object> doExercise(){
+			//call a generic service
+	}
+}
+\end{lstlisting}
+\subsubsection{Service}
+Service has the annotation \textit{@Service} to indicate that the class holds the business logic.\\
+The service takes care of \textbf{checking} and \textbf{validating} the \textbf{inputs} sent by the frontend, if incorrect data is sent the service takes care of generating an exception that will be managed by the \textit{Controller} class.\\
+When adding a service the following rules should be followed: 
+\begin{enumerate}
+\item A service can only call its repository;
+\item All database read and write operations must be performed from the repository
+\end{enumerate}
+When adding a new \textit{Service}, one can start from the following example:
+\begin{lstlisting}[language=Java]
+@Service
+public class UserService{
+
+	@Autowired
+	UserRepository userRepository; 
+	
+	public List<String> findAllExerciseToDo(String userId){} 
+}
+\end{lstlisting}
+
+\subsubsection{Repository}
+The repository classes manage the persistence layer. These classes are marked with \texttt{@Repository} annotation and they implement the interface \texttt{MongoRepository}. Implementing the MongoRepository interface allows you to call the CRUD query interface. 
+If you want to write custom queries, you have to create an interface and put the method's signature inside, then you have to create a concrete class which has the "Impl" suffix to its name. The repository class should extend the MongoRepository and the custom query interface, if present. 
+
+
+\subsubsection{Model}
+The Model classes are marked with the \textit{@Document} annotation to indicate that these classes are mapped in the database. The annotation can specify the name of the collection of the database in which the model will be stored in this way:\\ \textit{@Document(collection = "mycollection")}\\
+A field annotated with \textit{@Id} will be mapped to the '\_id' field in the database.\\
+When adding a Model the following rules should be followed: 
+\begin{enumerate}
+\item The model's name must be significant.
+\end{enumerate}
+
+When adding a new \textit{Model}, one can start from the following example:
+\begin{lstlisting}[language=Java]
+
+@Document(collection = "phrases")
+public class PhraseModel {
+  @Id private String id;
+
+  @Indexed(unique = true)
+  private String phraseText;
+
+  @Builder.Default private ArrayList<SolutionModel> solutions = new ArrayList<>();
+  private String language;
+  private Long datePhrase;
+ \end{lstlisting}

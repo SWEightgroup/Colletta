@@ -1,15 +1,28 @@
 %generare il pdf con il comando: pdflatex main.tex
 \documentclass[a4paper, oneside, openany, dvipsnames, table]{article}
-\usepackage{../template/SWEightStyle}
+\usepackage{./template/SWEightStyle}
 \usepackage{tabularx}
 \newcommand{\mc}{\multicolumn} % handy shortcut macro
 \newcolumntype{Z}{>{\centering\arraybackslash}X}
 \input{comandi}
 \usepackage{xcolor}
 \usepackage{hyperref}
+\usepackage{listings}
+\usepackage{forest}
+\usepackage{textcomp}
 
+\definecolor{folderbg}{RGB}{124,166,198}
+\definecolor{folderborder}{RGB}{110,144,169}
 
-
+\def\Size{4pt}
+\tikzset{
+  folder/.pic={
+    \filldraw[draw=folderborder,top color=folderbg!50,bottom color=folderbg]
+      (-1.05*\Size,0.2\Size+5pt) rectangle ++(.75*\Size,-0.2\Size-5pt);  
+    \filldraw[draw=folderborder,top color=folderbg!50,bottom color=folderbg]
+      (-1.15*\Size,-\Size) rectangle (1.15*\Size,\Size);
+  }
+}
 
 \begin{document}
 \copertina{}
@@ -20,5 +33,43 @@
 \newpage
 \listoffigures
 \newpage
-\listoftables
+
+\newpage
+\newpage
+\section{Introduction}
+\input{sez/introduzione.tex}	
+
+\newpage
+\section{Development Requirements}
+\input{sez/requirements.tex}
+
+\newpage
+\section{Workspace Configuration}
+\input{sez/configurazioneAmbiente.tex}
+
+
+\section{General structure}
+\input{sez/generalStructure.tex}
+
+\newpage
+\section{Frontend} %Non sono parole staccate, o scrivete Frontend o Front-End ma non mi pare il caso
+\input{sez/react.tex}
+
+%%sia front end che backend devono avere una descrzione dell'archietettura, e poi descrivere come 
+%%estendere il tutto. Vedi marvin (con correzioni)
+
+\newpage
+\section{Backend}
+%Non sono parole staccate, o scrivete Backend o Back-End ma non mi pare il caso
+\input{sez/springBoot.tex}
+
+\newpage
+
+\appendix
+\addcontentsline{toc}{part}{Appendices}
+
+\newpage
+\section{Glossary}
+\input{sez/glossario.tex}
+
 \end{document}
