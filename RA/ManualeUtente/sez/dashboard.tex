@@ -192,7 +192,7 @@
 
 	\newpage
 	\subsection{Amministratore}
-	L'amministratore ha la possibilità di gestire tutti gli utenti che non siano amministratori; inoltre può approvare o declinare le richieste di iscrizione degli sviluppatori.
+	L'amministratore ha la possibilità di gestire tutti gli utenti che non siano amministratori, inoltre può approvare o declinare le richieste di iscrizione degli sviluppatori.
 		\subsubsection{Sidebar}
 		  Voci nella sidebar:
 			\begin{itemize}
@@ -204,7 +204,14 @@
 
 
 		\subsubsection{Pannello utente}
-		 Il pannello dà il benvenuto allo sviluppatore, che è libero di procedere alla gestione degli utenti.
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=17cm]{sez/img/amministratore/panelloadmin.PNG}
+				\caption{Panoramica dei dati}\label{fig:1}
+			\end{figure}
+		
+		 Il pannello dà il benvenuto all' amministratore, che è libero di procedere alla gestione degli utenti.
+		 L'amministratore ha a disposizione un breve riassunto della situazione che ha de gestire, il panello si presenta diviso in 4 macrosezioni dove può più facilmente capire cosa deve fare, per esempio la sezione \textit{In Attesa} dice che ci sono richieste da parte degli sviluppatori.
 
 
 
@@ -215,7 +222,7 @@
 				\includegraphics[width=17cm]{sez/img/amministratore/conf_ric_svil.PNG}
 				\caption{Richieste di iscrizione degli sviluppatori}\label{fig:1}
 			\end{figure}
-		  In questa pagina l'amministratore può approvare o rifiutare le richieste di iscrizione degli sviluppatori. Viene presentata una lista contente gli sviluppatori che hanno richiesto di iscriversi al sistema. Ogni sviluppatore ha un nome e una mail. L'amministratore, premendo su \textit{Accetta}, consente allo sviluppatore di fare il login; se invece preme su \textit{Rifiuta}, l'amministratore cancella lo sviluppatore dal sistema. Premendo su \textit{Aggiorna}, l'amministratore aggiorna la lista di sviluppatori.
+		  In questa pagina l'amministratore può approvare o rifiutare le richieste di iscrizione degli sviluppatori. Viene presentata una lista contente gli sviluppatori che hanno richiesto di iscriversi al sistema. Ogni sviluppatore ha un nome e una mail. L'amministratore, premendo su \textit{Accetta}, consente allo sviluppatore di fare il login, se invece preme su \textit{Rifiuta}, l'amministratore cancella lo sviluppatore dal sistema. Premendo su \textit{Aggiorna}, l'amministratore aggiorna la lista di sviluppatori.
 
 
 		\subsubsection{Utenti}
@@ -224,4 +231,4 @@
 				\includegraphics[width=17cm]{sez/img/amministratore/gestisciutenti.PNG}
 				\caption{Gestione utenti}\label{fig:1}
 			\end{figure}
-		  In questa pagina l'amministratore può visualizzare gli utenti iscritti ed eventualmente eliminarli dal sito. Per ogni utente sono presenti nome, email e ruolo (Insegnante, Sviluppatore o Allievi). Gli amministratori non figurano in questo elenco. L'amministratore, cliccando su \textit{Elimina}, può cancellare un utente dal sistema. Premendo su \textit{Aggiorna}, l'amministratore aggiorna la lista di utenti.
+		  In questa pagina l'amministratore può visualizzare gli utenti iscritti ed eventualmente eliminarli dal sito. Per ogni utente sono presenti nome, email e ruolo (Insegnante, Sviluppatore o Allievi). Gli amministratori non figurano in questo elenco. L'amministratore, cliccando su \textit{Elimina}, compare un alert dove li si chiede se è sicuro di voler eliminare l'utente selezionato, avendo la possibilità di ripensare prima di effettuare un'azione irreversibile, se invece è sicuro dell'azione, elimina l'utente dal sistema. Premendo su \textit{Aggiorna}, l'amministratore aggiorna la lista di utenti.
