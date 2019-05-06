@@ -42,23 +42,31 @@
     \subsubsection{Logout}
     Per effettuare il {logout}\ped{G} si deve cliccare sulla voce \textit{Esci} dalla barra del menu. Facendo ciò, l'utente termina la propria sessione.
     \subsubsection{Modifica dati}
-    Cliccando su \textit{profilo} l'utente ha la possibilità visualizzare e modificare i propri dati tramite un form simile a quello di registrazione. L'utente non può modificare il proprio ruolo e la propria Email dopo l'iscrizione.
+    Cliccando su \textit{Profilo} l'utente ha la possibilità di visualizzare e modificare i propri dati tramite un form simile a quello di registrazione. L'utente non può modificare il proprio ruolo e la propria e-mail dopo l'iscrizione.
 
     \subsection{Allievo}
-      L'allievo si iscrive nel portale Colletta per svolgere esercizi di analisi grammaticale. Può svolgere esercizi assegnati da un'insegnante o svolgere esercizi liberi tramite il sistema di correzione automatica del sistema. L'allievo ha poi la possibilità di confrontare la sua soluzione con quella presentata dal sistema.
+      L'allievo si iscrive nel portale Colletta per svolgere esercizi di analisi grammaticale. Può svolgere esercizi assegnati da un'insegnante o svolgere esercizi liberi tramite il sistema di correzione automatica del sistema. L'allievo ha poi la possibilità di confrontare la sua soluzione con quella presentata dal sistema ricevendo anche un voto.
         \subsubsection{Sidebar}
           La sidebar dell'allievo presenta le seguenti voci:
             \begin{itemize}
                 \item Pannello utente;
                 \item Esercitazione libera;
                 \item Compiti per casa;
-                \item Esercizi svolti.
+                \item Esercizi svolti;
+                \item Esercizi pubblici;
+                \item Insegnanti preferiti.
             \end{itemize}
             
 
             
         \subsubsection{Pannello utente}
-          Il pannello utente è un riassunto di tutti i progressi e le attività svolte dall'allievo. Al momento il pannello utente mostra un messaggio di benvenuto, l'allievo è quindi libero di selezionare una delle voci di menu ed esercitarsi.
+			\begin{figure}[H]
+        		\centering
+        		\includegraphics[width=1\linewidth]{sez/img/studente/panelloUtente.PNG} 
+        		\caption{Panello utente: Allievo}\label{fig:1}
+    		\end{figure}        
+        
+          Il pannello utente è un riassunto di tutti i progressi e le attività svolte dall'allievo. Il pannello utente mostra un messaggio di benvenuto, e delle informazioni utili come se li sono state assegnanti esercizi da fare, i suoi progressi, quanti esercizi ha svolto e quanti le ha resi pubblici. % l'allievo è quindi libero di selezionare una delle voci di menu ed esercitarsi.
 %        	\begin{itemize}
 %        		\item Progressi;
 %        		\item Traguardi;
@@ -78,7 +86,7 @@
                 \includegraphics[width=17cm]{sez/img/studente/esercitazioneLiberaEsegui.PNG} 
                 \caption{Svolgimento esercizio libero}\label{fig:1}
         	\end{figure}
-          In questa pagina è possibile svolgere un esercizio inserendo nella casella di testo una frase da analizzare.
+          In questa pagina è possibile svolgere un esercizio inserendo nella casella di testo una frase da analizzare. Prima di inserire la frase abbiamo la possibilità di selezionare la lingua per analizzare la frase nella lingua desiderata, attualmente possiamo scegliere tra \textit{italiano}  e \textit{inglese}.
           Se la frase non è stata inserita da nessun insegnante la correzione sarà generata automaticamente.\\
         \\ Svolgimento:
         	\begin{enumerate}        
@@ -99,8 +107,11 @@
             	\caption{Scelta esercizio da risolvere}\label{fig:1}
         	\end{figure}
 
-		  L'allievo sceglie l'esercizio da svolgere tra quelli che sono stati assegnati cliccando su \textit{Svolgi l'esercizio}.   
-       
+		  L'allievo sceglie l'esercizio da svolgere tra quelli che sono stati assegnati cliccando su \textit{Svolgi l'esercizio}.  
+		  
+		  
+		   
+       \subsubsection{Svolgimento esercizio scelto}
         	\begin{figure}[H]
             	\centering
             	\includegraphics[width=17cm]{sez/img/studente/svolgimentoesercizio.PNG} 
@@ -117,6 +128,27 @@
             	\caption{Storico esercizi svolti}\label{fig:1}
         	\end{figure}
           In questa pagina è possibile visualizzare lo storico degli esercizi che sono stati svolti. Per ogni esercizio svolto sono visualizzabili la data di aggiunta, la frase analizzata e il nome dell'insegnante che ha assegnato l'esercizio.
+          
+          
+           \subsubsection{Esercizi pubblici}
+        	\begin{figure}[H]
+            	\centering
+            	\includegraphics[width=17cm]{sez/img/studente/esercizipubblici.PNG} 
+            	\caption{Elenco esercizi pubblici}\label{fig:1}
+        	\end{figure}
+        	In questa pagina è possibile visualizzare tutti gli esercizi pubblicati sia da insegnanti che altri allievi, abbiamo la possibilità  di selezionare tra tutti gli esercizi o solo quelli pubblicati dai nostri insegnanti preferiti e ovviamente possiamo svolgerli come un normale esercizio. 
+        
+        
+        
+\subsubsection{Insegnanti preferiti}
+        	\begin{figure}[H]
+            	\centering
+            	\includegraphics[width=17cm]{sez/img/studente/insegnantepreferito.png} 
+            	\caption{Elenco insegnanti preferiti}\label{fig:1}
+        	\end{figure}        
+        In questa pagina troviamo l'elenco di tutti gli insegnanti presenti nella lista di sinistra clicccando sul pulsante \textit{"+"} possiamo aggiungerli tra i nostri insegnanti preferiti, se invece si vuole rimuovere un insegnante dalla lista basta cliccare sul pulsante \textit{"-"} che compare se il cursore viene avvicinato all'insegnante  che si vuole rimuovere.
+        
+        
         
 \newpage
     \subsection{Insegnante}
@@ -127,12 +159,17 @@
             	\item Pannello utente;
             	\item Inserisci esercizio;
             	\item Esercizi inseriti;
-            	\item Esercizi allievi.
+            	\item Gestione classi.
         	\end{itemize}
         
         
         
         \subsubsection{Pannello utente}
+        \begin{figure}[H]
+        		\centering
+        		\includegraphics[width=1\linewidth]{sez/img/insegnante/panelloUtente.PNG} 
+        		\caption{Panello utente: Allievo}\label{fig:1}
+    		\end{figure}
           Il pannello utente mostra un messaggio di benvenuto all'insegnante, che poi è libero di spostarsi sulla sidebar e assegnare esercizi ai propri allievi.
         
         
@@ -144,7 +181,7 @@
             	\caption{Inserimento e assegnazione esercizio}\label{fig:1}
         	\end{figure}
         
-          Dopo aver inserito la frase, verrà visualizzata la correzione automatica. Se ritenuta errata c'è la possibilità di modificare la soluzione cliccando su \textit{Modifica}. Durante lo svolgimento dell'esercizio l'insegnante ha la possibilità di tornare indietro di un passo, o di resettare completamente la soluzione per ogni parola. Questo processo è analogo a quello presentato in \S\ref{sec:esLib}. Finita la correzione, l'insegnate ha la possibilità di assegnare l'esercizio a un allievo e cliccando \textit{Completa} esso verrà aggiunto nel database.
+          Dopo aver inserito la frase, verrà visualizzata la correzione automatica. Se ritenuta errata c'è la possibilità di modificare la soluzione cliccando su \textit{Modifica}. Durante lo svolgimento dell'esercizio l'insegnante ha la possibilità di tornare indietro di un passo, o di resettare completamente la soluzione per ogni parola. Questo processo è analogo a quello presentato in \S\ref{sec:esLib}. Finita la correzione, l'insegnate ha la possibilità di assegnare l'esercizio ad uno o più allievi o ad una o più classi, e può decidere se renderlo pubblico o meno l'esercizio. Cliccando \textit{Completa} esso verrà aggiunto nel database.
         
         
         
