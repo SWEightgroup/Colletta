@@ -1,11 +1,26 @@
 This section is intended to make the developer understand the inner workings of the Colletta frontend, and to allow him or her to add more functionality to the software package.
 In order fully understand the contents below, the developer must have a certain degree of familiarity with React and Redux. If that's not the case, we strongly recommend the reader to at least acquire some basic knowledge on the topics.
-\subsection{Frontend UML}
-To help a better comprehension of the front-end architecture we created the following figure:
+\subsection{Architecture}
+\label{sec:FrontArchi}
+In \autoref{fig:UMLFront}, one can have a glimpse into the general architecture of the Frontend of the software package.
+Although it may seem quite complex at first, the architecture is actually just a more expanded version of the basic Redux patter in \autoref{fig:Redux}:
+\begin{itemize}
+	\item Reducers, Actions and Views are grouped by logical function to increase code readability and reduce pairing;
+	\item Helpers and Constants are declared to deal with minor logic which cannot be dealt with in the Backend.
+\end{itemize}
+
+\begin{figure}
+\centering 
+\includegraphics[width=12cm]{uml/Flux.pdf} 
+\caption{Basic Redux architecture}
+\label{fig:Redux}
+\end{figure}
+
 \begin{figure}
 \centering 
 \includegraphics[width=15cm, height=18cm]{uml/reactredux.pdf} 
 \caption{React and Redux architecture}
+\label{fig:UMLFront}
 \end{figure}
 \subsection{Directory tree}
 \begin{figure}[H]
