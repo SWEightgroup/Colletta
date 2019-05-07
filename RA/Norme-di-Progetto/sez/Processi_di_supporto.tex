@@ -522,6 +522,27 @@ nomenclatura dei branch:
 
 \end{itemize}
 
+\paragraph{Feature branch}
+Per l'attività di codifica si utilizza il modello feature branch, ovvero ogni funzionalità viene creata e testata in un branch a parte prima di essere mergiata, ovvero integrata, all'interno dell'applicativo.
+I punti forti di questo modello sono:\\
+\begin{itemize}
+\item Usare un branch per feature/caratteristica;
+\item L'incapsulamento consente di lavorare senza disturbare la base di codice principale;
+\item Consente una collaborazione più semplice;
+\item Unisce e mappa i conflitti concettuali: più facile da tracciare.
+\end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm,keepaspectratio]{img/pan-featurebranch.png}
+\caption{Panoramica feature branch}
+Immagine tratta da www.revelry.co
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=17cm,keepaspectratio]{img/Feature.pdf}
+\caption{Diagramma di sequenza feature branch, con il termine componente si fa riferimento a due elementi del gruppo}
+\end{figure}
+
 \subsubsection{Strumenti di supporto}
 \paragraph{GitHub Desktop}\mbox{}\\
 Il {client}\ped{G} che viene utilizzato per il controllo di versione è GitHub Desktop, esso permette di gestire attraverso un'interfaccia grafica 

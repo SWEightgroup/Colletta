@@ -173,6 +173,9 @@ Devono essere definite le classi di verifica necessarie a garantire che tutte le
 \paragraph{Test di sistema}\mbox{}\\
 Richiede che i vari componenti del sistema vengano integrati al fine di garantire che tutte le componenti del sistema funzionino correttamente.
 
+\subsubsection{Installazione}
+descrizione della nostra installazione del SW.
+
 \subsubsection{Codifica}
 In questa sezione vengono descritte le norme che i \textit{Programmatori} devono seguire con l'obiettivo di scrivere codice leggibile, affidabile e manutenibile.
 
@@ -354,23 +357,23 @@ class extends React.Component {
 \end{itemize}
 
 
-\subsubsection{Regole comuni}
-\paragraph{Ricorsione}\mbox{}\\
+\paragraph{Regole comuni}
+\subparagraph{Ricorsione}\mbox{}\\
 La ricorsione va sempre evitata se possibile. Per ogni funzione ricorsiva è necessario fornire
 una prova di terminazione nei commenti.
 
-\paragraph{Variabili globali}\mbox{}\\
+\subparagraph{Variabili globali}\mbox{}\\
 L'uso di variabili globali va sempre evitato se possibile.
 
-\paragraph{Funzioni anonime}\mbox{}\\
+\subparagraph{Funzioni anonime}\mbox{}\\
 Per definire funzioni anonime bisogna usare la notazione a freccia, sono più concise e
 mantengono il contesto del {this}\ped{G}.
 
-\paragraph{Lunghezza massima righe}\mbox{}\\
+\subparagraph{Lunghezza massima righe}\mbox{}\\
 La lunghezza massima per ciascuna riga di codice è di 100 caratteri, si suggerisce comunque
 ove possibile di rimanere entro gli 80 caratteri per favorire la leggibilità.
 
-\paragraph{Regole di denominazione}\mbox{}\\
+\subparagraph{Regole di denominazione}\mbox{}\\
 \begin{itemize}
 \item Utilizzare nomi descrittivi;
 \item Utilizzare la camelCase\ped{G} per nominare oggetti, funzioni e istanze;
@@ -378,7 +381,7 @@ ove possibile di rimanere entro gli 80 caratteri per favorire la leggibilità.
 \item Non utilizzare trattini bassi prefissi o postfissi.
 \end{itemize}
 
-\paragraph{Codetags}\mbox{}\\
+\subparagraph{Codetags}\mbox{}\\
 I codetags sono delle parole chiavi informali all'interno dei commenti per segnalare
 dei problemi, note o delle parti di codice ancora da fare. La struttura `e la seguente: \\
 <tag>: <descrizione in una singola linea>\\
@@ -392,26 +395,6 @@ I tag che verranno utilizzati sono:
 Potranno essere usati all’interno di commenti blocco o inline. Sono supportati da
 molti IDE ed editor moderni.
 
-\subsubsection{Feature branch}
-Per l'attività di codifica si utilizza il modello feature branch, ovvero ogni funzionalità viene creata e testata in un branch a parte prima di essere mergiata, ovvero integrata, all'interno dell'applicativo.
-I punti forti di questo modello sono:\\
-\begin{itemize}
-\item Usare un branch per feature/caratteristica;
-\item L'incapsulamento consente di lavorare senza disturbare la base di codice principale;
-\item Consente una collaborazione più semplice;
-\item Unisce e mappa i conflitti concettuali: più facile da tracciare.
-\end{itemize}
-\begin{figure}[H]
-\centering
-\includegraphics[width=14cm,keepaspectratio]{img/pan-featurebranch.png}
-\caption{Panoramica feature branch}
-Immagine tratta da www.revelry.co
-\end{figure}
-\begin{figure}[H]
-\centering
-\includegraphics[width=17cm,keepaspectratio]{img/Feature.pdf}
-\caption{Diagramma di sequenza feature branch, con il termine componente si fa riferimento a due elementi del gruppo}
-\end{figure}
 \subsubsection{Strumenti di supporto}
 \paragraph{RQConnect}\mbox{}\\ \label{sec:Trac}
 Il tracciamento dei requisiti e dei casi d’uso avviene attraverso la piattaforma 
