@@ -95,13 +95,42 @@ Respectively with the Controller, Service and Repository classes.
 \\ 
 More information about the architecture chosen for the backend is available at the link: \href{https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html}{Spring Web MVC}.
 
-
+\subsubsection{Architecure}
+\begin{huge}
+TODO
+\end{huge}
 \subsection{Security}
 The system was designed to secure client server communications so that only a user registered in the system can make calls which are then resolved by interacting with the database.\\
-In authentication, when the user successfully logs in using their credentials, a JSON Web Token will be returned. Instead when a user registers for the first time the token will be generated.\\
+In authentication, when the user successfully logs in using their credentials, a JSON Web Token will be returned.\\
+When a user logs in to the system for the first time the token will be generated.\\
 Whenever the user wants to access a protected route or resource he/she must necessarily send his/her token that identifies he/she has correctly signed-in. If this is not done the system will decline the request.\\
-The security system has been implemented so that the only requests that are authorized without token recognition are the login (\textit{/login}) and the registration (\textit{/sign-up}).\\
+The security system has been implemented so that the only requests that are authorized without token recognition are the login (\textit{/login}), the registration (\textit{/sign-up}) and the activation (\textit{/sign-up/activate}).\\
 The system uses \textit{JWT tokens} for token authentication, more information is available at the link: \href{https://jwt.io/introduction/}{Introduction to JSON Web Tokens}.
+
+\subsection{TTL}
+When a user registers in the system, a confirmation e-mail is sent to the e-mail address with which he registered. If the user confirms his registration via the link in the email then he can access the system correctly through the login page.\\
+There is a TTL system, \textbf{Time To Leave}, which saves the registration request for twenty-four hours, at most, in the system and then eliminates it.\\
+The user then has twenty-four hours to confirm his registration in the system.\\
+The system is implemented through the \textit{@Indexed} operator present in Spring Data which through the keyword \texttt{expireAfterSeconds} specifies the lifetime of the document inserted in the database, in our case it has the value of 86400 which corresponds to twenty-four hours.\\
+Collection example, \textit{SignUpRequestModel}, which implements the TTL: 
+\begin{lstlisting}[language=Java]
+@Document(collection = "signuprequests")
+public class SignupRequestModel {
+  @Id
+  private String id;
+  private String token;
+  @Indexed(name = "Time To Live", expireAfterSeconds = 86400)
+  private Date requestDate;
+  private UserModel userToConfirm;
+}
+\end{lstlisting}
+
+\subsubsection{Analysis Languages}
+\begin{huge}
+TODO(s)
+\end{huge}
+\subsubsection{Algorithms}
+\subsubsection{Testing}
 
 \subsection{Modify or add features}
 \subsubsection{Controller}
@@ -177,3 +206,4 @@ public class PhraseModel {
   private String language;
   private Long datePhrase;
  \end{lstlisting}
+ 
