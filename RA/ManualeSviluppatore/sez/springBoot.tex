@@ -83,6 +83,17 @@ Each folder contains a specific set of files:
 \item \textbf{resources}: contains the configuration file for the connection to the database.
 \end{itemize}
 
+
+\subsubsection{Architecure}
+\label{sec:BackArchi}
+The backend architecture can be viewed in the following figure:
+\begin{figure}[H]
+\centering 
+\includegraphics[scale=0.42]{uml/SpringBackend.png} 
+\caption{Spring backend architecture}
+\label{fig:BackendArchitecture}
+\end{figure}
+
 \subsection{Data and logic separation}
 \begin{figure}[H]
 \centering 
@@ -95,16 +106,12 @@ Respectively with the Controller, Service and Repository classes.
 \\ 
 More information about the architecture chosen for the backend is available at the link: \href{https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html}{Spring Web MVC}.
 
-\subsubsection{Architecure}
-\begin{huge}
-TODO
-\end{huge}
 \subsection{Security}
 The system was designed to secure client server communications so that only a user registered in the system can make calls which are then resolved by interacting with the database.\\
 In authentication, when the user successfully logs in using their credentials, a JSON Web Token will be returned.\\
 When a user logs in to the system for the first time the token will be generated.\\
 Whenever the user wants to access a protected route or resource he/she must necessarily send his/her token that identifies he/she has correctly signed-in. If this is not done the system will decline the request.\\
-The security system has been implemented so that the only requests that are authorized without token recognition are the login (\textit{/login}), the registration (\textit{/sign-up}) and the activation (\textit{/sign-up/activate}).\\
+The security system has been implemented so that the only requests that are authorized without token recognition are the login (\textit{/login}), the registration (\textit{/sign-up}) and the activation (\textit{/sign-up/activate}), which is the account activation procedure through e-mail.\\
 The system uses \textit{JWT tokens} for token authentication, more information is available at the link: \href{https://jwt.io/introduction/}{Introduction to JSON Web Tokens}.
 
 \subsection{TTL}
@@ -126,9 +133,10 @@ public class SignupRequestModel {
 \end{lstlisting}
 
 \subsubsection{Analysis Languages}
-\begin{huge}
-TODO(s)
-\end{huge}
+To obtain a grammatical analysis of a sentence following a user request, it was decided to use the PoS-Tagging FreeLing library.\\
+To make the analysis as less dependent as possible, therefore more extensible, from the interface proposed by FreeLing the structural \textbf{Adapter} design pattern was used, more information is given at the following link: \href{https://www.martinfowler.com/bliki/RequiredInterface.html}{"Using an Adapter"}.\\
+A \textit{FreelingAdapterInterface} interface has been created which through the \textit{getCorrection()} and \textit{closeConnection()} methods allows you to receive the correction and close the connection from Freeling. 
+
 \subsubsection{Algorithms}
 \subsubsection{Testing}
 
