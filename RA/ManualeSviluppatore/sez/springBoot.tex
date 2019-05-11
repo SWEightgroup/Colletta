@@ -126,7 +126,7 @@ public class SignupRequestModel {
   @Id
   private String id;
   private String token;
-  @Indexed(name = "Time To Live", expireAfterSeconds = 86400)
+  @Indexed(name = "Confirm registration", expireAfterSeconds = 86400)
   private Date requestDate;
   private UserModel userToConfirm;
 }
@@ -138,6 +138,9 @@ To make the analysis as less dependent as possible, therefore more extensible, f
 A \textit{FreelingAdapterInterface} interface has been created which through the \textit{getCorrection()} and \textit{closeConnection()} methods allows you to receive the correction and close the connection from Freeling. 
 
 \subsubsection{Algorithms}
+To make the use of the algorithms extendable, it was decided to use the \textbf{Strategy} design pattern.\\
+Two interfaces were used: \texttt{CorrectionStrategy} and \texttt{NextObjectiveStrategy}. These are implemented in the subclasses that perform the calculation algorithms.\\
+More info regarding the use of the pattern can be found at the following link:
 \subsubsection{Testing}
 
 \subsection{Modify or add features}
@@ -189,9 +192,8 @@ public class UserService{
 
 \subsubsection{Repository}
 The repository classes manage the persistence layer. These classes are marked with \texttt{@Repository} annotation and they implement the interface \texttt{MongoRepository}. Implementing the MongoRepository interface allows you to call the CRUD query interface. 
-If you want to write custom queries, you have to create an interface and put the method's signature inside, then you have to create a concrete class which has the "Impl" suffix to its name. The repository class should extend the MongoRepository and the custom query interface, if present. 
-
-
+If you want to write custom queries, you have to create an interface and put the method's signature inside, then you have to create a concrete class which has the "Impl" suffix to its name. The repository class should extend the MongoRepository and the custom query interface, if present.\\
+More information regarding the use of the Repository can be found at the following link: \href{https://docs.spring.io/spring-data/mongodb/docs/2.1.5.RELEASE/reference/html/#repositories}{"Spring Data Repositories"}.
 \subsubsection{Model}
 The Model classes are marked with the \textit{@Document} annotation to indicate that these classes are mapped in the database. The annotation can specify the name of the collection of the database in which the model will be stored in this way:\\ \textit{@Document(collection = "mycollection")}\\
 A field annotated with \textit{@Id} will be mapped to the '\_id' field in the database.\\
