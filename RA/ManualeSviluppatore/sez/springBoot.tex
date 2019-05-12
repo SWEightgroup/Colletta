@@ -95,6 +95,7 @@ The backend architecture can be viewed in the following figure:
 \end{figure}
 
 \subsection{Design pattern}
+\label{sec:BackendDesignPattern}
 This section introduces the design pattern that were used during the software design and development phases. 
 \subsubsection{Data and logic separation}
 \begin{figure}[H]
@@ -128,6 +129,7 @@ The security system has been implemented so that the only requests that are auth
 The system uses \textbf{JWT tokens} for token authentication, more information is available at the link: \href{https://jwt.io/introduction/}{Introduction to JSON Web Tokens}.
 
 \subsection{TTL}
+\label{sec:TTL}
 When a user registers in the system, a confirmation e-mail is sent to the e-mail address with which he registered. If the user confirms his registration via the link in the email then he can access the system correctly through the login page.\\
 There is a TTL system, \textbf{Time To Leave}, which saves the registration request for twenty-four hours, at most, in the system and then eliminates it.\\
 The user then has twenty-four hours to confirm his registration in the system.\\
@@ -148,10 +150,13 @@ The TTL system has also been implemented for changing the user password, the max
 
 
 
-\subsection{Testing}
-\begin{huge}
-\textbf{TODO}
-\end{huge}
+\subsection{Testing}	
+To start the test it is necessary to give the \texttt{mvn test} command 	inside the \textit{Backend} folder, this previous Maven installation startthe tests, static and unit, and shows a report of the tests that are performed.\\
+The \textbf{Mockito} framework was used which allows the testing of Java unit together with \textbf{JUnit4} which is a framework for writing test in Java.\\
+Mockito allows \href{https://en.wikipedia.org/wiki/Mock_object}{mocking} and \href{https://en.wikipedia.org/wiki/Method_stub}{stubbing} of objects in a simple way. Through the keyword \textit{@Mock} above the name of the object, in fact, a mocking object is created, this object can be injected when a class is created using the keyword \textit{@InjectMocks} above the object definition.\\
+The Mockito runner test was used, it is set by the keyword \textit{@RunWith (MockitoJUnitRunner.class)} placed above the test class declaration.
+The Mockito runner takes care of creating and injecting the mocking objects and finally of testing them.\\
+For more information regarding the use of Mockito see the official documentation at the following link \href{https://site.mockito.org/}{"Mockito, why drink it?"}.
 
 \subsection{Modify or add features}
 \subsubsection{Controller}
@@ -163,8 +168,8 @@ When adding a controller the following rules should be followed:
 \item Each mapping must be unique in the application. If not, Spring throws a \texttt{RuntimeException} during application initialization. You cannot use parameters to differentiate your endpoints;
 \item The name of the controller should be significant;
 \item The controller must \textbf{only} \textbf{handle HTTP Requests}, any kind of input control must be performed in the service that will then be called;
-\item The services should be instantiated with the \textit{@Autowired} keyword, see \href{https://www.baeldung.com/spring-autowire}{Guide to Spring @Autowired} for more information over all the methods.
-\item Each method must contain the signature: @RequestMapping (value = "/", method = Request.RequestType)
+\item The services should be instantiated with the \textit{@Autowired} keyword, see \href{https://www.baeldung.com/spring-autowire}{Guide to Spring @Autowired} for more information over all the methods;
+\item Each method must contain the signature: @RequestMapping (value = "/", method = Request.RequestType).
 \end{enumerate}
 When adding a new \textit{Controller}, one can start from the following example:
 \begin{lstlisting}[language=Java]
