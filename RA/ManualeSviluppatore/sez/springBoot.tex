@@ -89,12 +89,14 @@ Each folder contains a specific set of files:
 The backend architecture can be viewed in the following figure:
 \begin{figure}[H]
 \centering 
-\includegraphics[scale=0.42]{uml/SpringBackend.png} 
+\includegraphics[scale=1.80]{uml/SpringBackend.jpg} 
 \caption{Spring backend architecture}
 \label{fig:BackendArchitecture}
 \end{figure}
 
-\subsection{Data and logic separation}
+\subsection{Design pattern}
+This section introduces the design pattern that were used during the software design and development phases. 
+\subsubsection{Data and logic separation}
 \begin{figure}[H]
 \centering 
 \includegraphics[scale=0.3]{uml/backendArchitecture.png} 
@@ -106,13 +108,24 @@ Respectively with the Controller, Service and Repository classes.
 \\ 
 More information about the architecture chosen for the backend is available at the link: \href{https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html}{Spring Web MVC}.
 
+\subsubsection{Grammatical analysis}
+To obtain a grammatical analysis of a sentence following a user request, it was decided to use the PoS-Tagging FreeLing library.\\
+To make the analysis as less dependent as possible, therefore more extensible, from the interface proposed by FreeLing the structural \textbf{Adapter} design pattern was used, more information is given at the following link: \href{https://www.martinfowler.com/bliki/RequiredInterface.html}{"Using an Adapter"}.\\
+A \textit{FreelingAdapterInterface} interface has been created which through the \textit{getCorrection()} and \textit{closeConnection()} methods allows you to receive the correction and close the connection from Freeling. 
+
+\subsubsection{Algorithms}
+To make the use of the algorithms extendable, it was decided to use the \textbf{Strategy} design pattern.\\
+Two interfaces were used: \texttt{CorrectionStrategy} and \texttt{NextObjectiveStrategy}. These are implemented in the subclasses that perform the calculation algorithms.\\
+More info regarding the use of the pattern can be found at the following link: \href{https://en.wikipedia.org/wiki/Strategy_pattern}{"Strategy pattern"}.
+
+
 \subsection{Security}
 The system was designed to secure client server communications so that only a user registered in the system can make calls which are then resolved by interacting with the database.\\
 In authentication, when the user successfully logs in using their credentials, a JSON Web Token will be returned.\\
 When a user logs in to the system for the first time the token will be generated.\\
 Whenever the user wants to access a protected route or resource he/she must necessarily send his/her token that identifies he/she has correctly signed-in. If this is not done the system will decline the request.\\
 The security system has been implemented so that the only requests that are authorized without token recognition are the login (\textit{/login}), the registration (\textit{/sign-up}) and the activation (\textit{/sign-up/activate}), which is the account activation procedure through e-mail.\\
-The system uses \textit{JWT tokens} for token authentication, more information is available at the link: \href{https://jwt.io/introduction/}{Introduction to JSON Web Tokens}.
+The system uses \textbf{JWT tokens} for token authentication, more information is available at the link: \href{https://jwt.io/introduction/}{Introduction to JSON Web Tokens}.
 
 \subsection{TTL}
 When a user registers in the system, a confirmation e-mail is sent to the e-mail address with which he registered. If the user confirms his registration via the link in the email then he can access the system correctly through the login page.\\
@@ -131,17 +144,14 @@ public class SignupRequestModel {
   private UserModel userToConfirm;
 }
 \end{lstlisting}
+The TTL system has also been implemented for changing the user password, the maximum time to confirm the change by the user is one day.
 
-\subsubsection{Analysis Languages}
-To obtain a grammatical analysis of a sentence following a user request, it was decided to use the PoS-Tagging FreeLing library.\\
-To make the analysis as less dependent as possible, therefore more extensible, from the interface proposed by FreeLing the structural \textbf{Adapter} design pattern was used, more information is given at the following link: \href{https://www.martinfowler.com/bliki/RequiredInterface.html}{"Using an Adapter"}.\\
-A \textit{FreelingAdapterInterface} interface has been created which through the \textit{getCorrection()} and \textit{closeConnection()} methods allows you to receive the correction and close the connection from Freeling. 
 
-\subsubsection{Algorithms}
-To make the use of the algorithms extendable, it was decided to use the \textbf{Strategy} design pattern.\\
-Two interfaces were used: \texttt{CorrectionStrategy} and \texttt{NextObjectiveStrategy}. These are implemented in the subclasses that perform the calculation algorithms.\\
-More info regarding the use of the pattern can be found at the following link:
-\subsubsection{Testing}
+
+\subsection{Testing}
+\begin{huge}
+\textbf{TODO}
+\end{huge}
 
 \subsection{Modify or add features}
 \subsubsection{Controller}
@@ -166,7 +176,7 @@ public class UserController{
 	
 	@RequestMapping(value = "/exercises/student/do", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Object> doExercise(){
-			//call a generic service
+			//call a UserService generic service
 	}
 }
 \end{lstlisting}
@@ -192,7 +202,7 @@ public class UserService{
 
 \subsubsection{Repository}
 The repository classes manage the persistence layer. These classes are marked with \texttt{@Repository} annotation and they implement the interface \texttt{MongoRepository}. Implementing the MongoRepository interface allows you to call the CRUD query interface. 
-If you want to write custom queries, you have to create an interface and put the method's signature inside, then you have to create a concrete class which has the "Impl" suffix to its name. The repository class should extend the MongoRepository and the custom query interface, if present.\\
+If you want to write custom queries, you have to create an interface and put the method's signature inside, then you have to create a concrete class which has the "Impl" suffix to its name. The repository class should extend the MongoRepository interface, \href{https://docs.spring.io/spring-data/data-mongodb/docs/current/api/org/springframework/data/mongodb/repository/MongoRepository.html}{"Interface MongoRepository"}, and the custom query interface, if present.\\
 More information regarding the use of the Repository can be found at the following link: \href{https://docs.spring.io/spring-data/mongodb/docs/2.1.5.RELEASE/reference/html/#repositories}{"Spring Data Repositories"}.
 \subsubsection{Model}
 The Model classes are marked with the \textit{@Document} annotation to indicate that these classes are mapped in the database. The annotation can specify the name of the collection of the database in which the model will be stored in this way:\\ \textit{@Document(collection = "mycollection")}\\
