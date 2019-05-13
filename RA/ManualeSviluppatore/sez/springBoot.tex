@@ -96,7 +96,7 @@ The backend architecture can be viewed in the following figure:
 
 \subsection{Design pattern}
 \label{sec:BackendDesignPattern}
-This section introduces the design pattern that were used during the software design and development phases. 
+This section introduces the design pattern that were used during the software design and development phase. 
 \subsubsection{Data and logic separation}
 \begin{figure}[H]
 \centering 
@@ -151,9 +151,9 @@ The TTL system has also been implemented for changing the user password, the max
 
 
 \subsection{Testing}	
-To start the test it is necessary to give the \texttt{mvn test} command 	inside the \textit{Backend} folder, this previous Maven installation startthe tests, static and unit, and shows a report of the tests that are performed.\\
+To start the test it is necessary to give the \texttt{mvn test} command 	inside the \textit{Backend} folder, this previous Maven installation start the tests, static and unit, and shows a report of the tests that are performed.\\
 The \textbf{Mockito} framework was used which allows the testing of Java unit together with \textbf{JUnit4} which is a framework for writing test in Java.\\
-Mockito allows \href{https://en.wikipedia.org/wiki/Mock_object}{mocking} and \href{https://en.wikipedia.org/wiki/Method_stub}{stubbing} of objects in a simple way. Through the keyword \textit{@Mock} above the name of the object, in fact, a mocking object is created, this object can be injected when a class is created using the keyword \textit{@InjectMocks} above the object definition.\\
+Mockito allows \href{https://en.wikipedia.org/wiki/Mock_object}{mocking} and \href{https://en.wikipedia.org/wiki/Method_stub}{stubbing} of objects  in a simple way. Through the keyword \textit{@Mock} above the name of the object, in fact, a mocking object is created, this object can be injected when a class is created using the keyword \textit{@InjectMocks} above the object definition.\\
 The Mockito runner test was used, it is set by the keyword \textit{@RunWith (MockitoJUnitRunner.class)} placed above the test class declaration.
 The Mockito runner takes care of creating and injecting the mocking objects and finally of testing them.\\
 For more information regarding the use of Mockito see the official documentation at the following link \href{https://site.mockito.org/}{"Mockito, why drink it?"}.
@@ -161,7 +161,7 @@ For more information regarding the use of Mockito see the official documentation
 \subsection{Modify or add features}
 \subsubsection{Controller}
 The controller has the annotation \textit{@RestController} above the class definition and contains the methods that map the HTTP calls sent from the frontend, being handled by the \texttt{DispatcherServlet}. \textit{@RestController} is a convenience annotation which contains within it \textit{@Controller} and \textit{@ResponseBody}.\\
-This configuration returns to the frontend a JSON file, if this does not want to be done the @RestController word must be replaced by \textit{@Controller}.\\
+This configuration returns to the frontend a JSON file, if this does not want to be done the \textit{@RestController} word must be replaced by \textit{@Controller}.\\
 When adding a controller the following rules should be followed:
 \begin{enumerate}
 \item The new controller must have the annotation \textit{@RestController} above its definition;
