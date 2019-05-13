@@ -1,0 +1,121 @@
+\section{Qualità di prodotto}
+Per garantire la qualità dei prodotti, viene adottato lo standard 
+ISO/IEC 9126 (vedi \NdP \space §4.2). Quest'ultimo permette di monitorare 
+la qualità del software, fornendo delle metriche per misurarla.\newline
+Sono fissati i seguenti obiettivi:
+\begin{itemize}
+	\item La \textbf{documentazione} deve essere:
+		\begin{itemize}
+			\item Facilmente leggibile;
+			\item Scritta in modo corretto, secondo le regole della lingua italiana.
+		\end{itemize}
+	\item Il \textbf{software} deve:
+		\begin{itemize}
+			\item Soddisfare i requisiti stabiliti nell'\AdR ;
+			\item Garantire semplicità di utilizzo;			
+			\item Garantire semplicità di manutenzione;
+			\item Garantire affidabilità.
+		\end{itemize}
+		
+\end{itemize}
+\subsection{Qualità dei documenti}
+
+
+\subsubsection{MD001 - Indice Gulpease}\mbox{}
+L'Indice Gulpease è un indice di leggibilità di un testo tarato sulla lingua italiana. 
+\paragraph{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[40 , 100]$
+	\item Range ottimale: $[55 , 100]$
+\end{itemize}
+
+\subsection{Qualità software}
+Alcune metriche per il software sono più adatte per alcuni linguaggi di programmazione e meno per altri. Come indicato nel \PdP , il gruppo \gruppo \space sceglierà quali linguaggi usare nel periodo di Progettazione Architetturale; pertanto, le metriche presenti in questa sezione non sono da considerarsi complete o definitive.\newline
+Per alcune metriche, può mancare un'indicazione di valori accettabili e ottimali: ciò significa che il team si riserva di definirli in futuri incrementi.
+
+\subsubsection{MS001 - Numero di Metodi}\mbox{}
+Numero medio di metodi contenuti nelle classi di un package. 
+\paragraph{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $ ]7,9]$;
+	\item Range ottimale: $[0,7]$.
+\end{itemize}
+
+\subsubsection{MS002 - Numero di Parametri}\mbox{}
+Numero di parametri passati a un metodo. 
+\paragraph{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $ ]5,8]$;
+	\item Range ottimale: $[0,5]$.
+\end{itemize}
+
+\subsubsection{MS003 - Funzioni di interfaccia per package}\mbox{}
+Numero di funzione che un package espone. 
+\paragraph{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $ ]10,20]$;
+	\item Range ottimale: $[0,10]$.
+\end{itemize}
+
+\subsubsection{MS004 - Complessità Ciclomatica}\mbox{}
+Numero di cammini linearmente indipendenti attraverso il grafo di controllo di flusso. 
+\paragraph{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $ ]10,17]$;
+	\item Range ottimale: $[0,10]$.
+\end{itemize}
+
+\subsubsection{MS005 - Campi dati per classe}\mbox{}
+Numero di campi dati contenuti da una classe. 
+\paragraph{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $ ]10,15]$;
+	\item Range ottimale: $[0,10]$.
+\end{itemize}
+
+\subsubsection{MS006 - Commenti per linee di codice}\mbox{}
+percentuale di righe di commento sul totale delle righe (righe vuote escluse)
+\paragraph{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[10\%,15\%]$;
+	\item Range ottimale: $[15\%,100\%]$.
+\end{itemize}
+
+\subsubsection{MS007 - Code Coverage}\mbox{}
+Percentuale delle linee di codice coperte dai test.
+\paragraph{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[80\%,90\%[$;
+	\item Range ottimale: $[90\%,100\%]$.
+\end{itemize}
+\subsubsection{MS008 - Superamento test}\mbox{}
+Percentuale di test superati. 
+\paragraph{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[100\%,100\%]$;
+	\item Range ottimale: $[100\%,100\%]$.
+\end{itemize}
+
+\subsubsection{MS009 - Requisiti obbligatori soddisfatti}\mbox{}
+Percentuale di requisiti obbligatori stabiliti dalla proponente soddisfatti.
+\paragraph{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[100\%,100\%]$;
+	\item Range ottimale: $[100\%,100\%]$.
+\end{itemize}
+	
+\subsubsection{MS010 - Media di build Travis settimanali}\mbox{}
+Media delle build effettuate su Travis CI settimanalmente.
+\paragraph{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[15,25[$;
+	\item Range ottimale: $[25,\infty)$.
+\end{itemize}
+
+\subsubsection{MS011 - Percentuale build Travis superate}\mbox{}
+Percentuale delle build Travis superate con successo.
+\paragraph{Parametri adottati:}
+\begin{itemize}
+	\item Range accettabile: $[75\%,85\%[$;
+	\item Range ottimale: $[85\%,100\%]$.
+\end{itemize}
