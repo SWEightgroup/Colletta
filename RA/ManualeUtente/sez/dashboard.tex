@@ -34,8 +34,24 @@
     	\end{figure}
  	  Dopo aver effettuato la registrazione si accede cliccando su \textit{Accedi} nella barra del menu. E' necessario inserire email e password e successivamente cliccare sul pulsante \textit{Accedi} del form.
 
-
-
+    \subsubsection{Password dimenticata}
+    	\begin{figure}[H]
+        	\centering
+        	\includegraphics[width=1\linewidth]{sez/img/autenticazione/passwordDimenticata.png} 
+        	\caption{Form per il recupero della password}\label{fig:1}
+    	\end{figure}
+	L'unico modo per cambiare la password di un utente iscritto alla piattaforma è  tramite il form di recupero password. Cliccando sul ling \textit{Password dimenticata?} presente all'interno del form di login, compare un form con una casella di testo per l'inserimento della mail utilizzata durante la registrazione. 
+	
+	Cliccando il pulsante \textit{Richiedi una nuova password}, se esiste effettivamente un account collegato a 	quella mail, viene inviata una mail contenente un link per l'inserimento della nuova password; cliccandolo verrà aperta una pagina della piattaforma \textit{Colletta} con un form contenente due caselle di testo per l'inserimento della nuova password. U
+	
+	na volta inserita la nuova password è sufficiente cliccare il pulsante \textit{Cambia password}. Un messaggio di conferma indica che l'operazione è andata a buon fine.
+\begin{figure}[H]
+        	\centering
+        	\includegraphics[width=1\linewidth]{sez/img/autenticazione/password.png} 
+        	\caption{Form per l'inserimento della nuova password}\label{fig:1}
+    	\end{figure}	
+	
+	
 % UTENTE AUTENTICATO
 \subsection{Utente autenticato generico}
 
@@ -182,8 +198,13 @@
         	\end{figure}
         
          
-          Dopo aver inserito la frase, verrà visualizzata la correzione automatica. Se è ritenuto necessario è possibile modificare la soluzione cliccando sul pulsante \textit{Modifica}; se cliccato, viene eliminata la soluzione proposta dal sistema per quella parola e chiesto di inserire una nuova soluzione. Durante l'inserimento manuale della soluzione l'insegnante ha la possibilità di tornare indietro di un passo o di resettare completamente la soluzione appena inserita. Questo processo è analogo a quello presentato in \S\ref{sec:esLib}. 
-          Se è necessario, è possibile inserire una soluzione alternativa; cliccando sul pulsante \textit{Aggiungi soluzione alternativa} si apre un box identico a quello della soluzione principale; la modalità dell'inserimento della soluzione infatti è la stessa della soluzione principale.  \linebreak \linebreak Finita la correzione, l'insegnate può assegnare l'esercizio a un allievo selezionandolo dalla lista a sinistra sotto le soluzioni inserite oppure può assegnarlo direttamente ad una classe di studenti precedentemente creata selezionandola dall'elenco a destra sotto le soluzioni. \linebreak \linebreak
+          Dopo aver inserito la frase, verrà visualizzata la correzione automatica. Se è ritenuto necessario è possibile modificare la soluzione cliccando sul pulsante \textit{Modifica}; se cliccato, viene eliminata la soluzione proposta dal sistema per quella parola e chiesto di inserire una nuova soluzione. 
+          
+          Durante l'inserimento manuale della soluzione l'insegnante ha la possibilità di tornare indietro di un passo o di resettare completamente la soluzione appena inserita. Questo processo è analogo a quello presentato in \S\ref{sec:esLib}. 
+          Se è necessario, è possibile inserire una soluzione alternativa; cliccando sul pulsante \textit{Aggiungi soluzione alternativa} si apre un box identico a quello della soluzione principale; la modalità dell'inserimento della soluzione infatti è la stessa della soluzione principale. 
+          
+           Finita la correzione, l'insegnate può assegnare l'esercizio a un allievo selezionandolo dalla lista a sinistra sotto le soluzioni inserite oppure può assegnarlo direttamente ad una classe di studenti precedentemente creata selezionandola dall'elenco a destra sotto le soluzioni. 
+          
           Prima di completare l'inserimento dell'esercizio, si può scegliere se aggiungere l'esercizio nella lista degli esercizi pubblici, disponibili agli alunni a cui non è stato assegnato e se dare la possibilità agli sviluppatori che utilizzano i dati raccolti dalla piattaforma di scaricare anche quest'ultimo. 
           
             Cliccando sul pulsante \textit{Completa} l'esercizio viene aggiunto al sistema.
@@ -194,7 +215,9 @@
         		\includegraphics[width=17cm]{sez/img/insegnante/eserinseriti.PNG} 
             	\caption{Elenco esercizi svolti}\label{fig:1}
         	\end{figure}  
-        	In questa pagina è presente l'elenco di tutti gli esercizi inseriti dal insegnante. Cliccando su un esercizio è possibile visualizzare i suoi dettagli.               
+        	In questa pagina è presente l'elenco di tutti gli esercizi inseriti dal insegnante. Gli esercizi sono impaginati a gruppi di quattro.
+        	
+        	 Cliccando su un esercizio è possibile visualizzare i suoi dettagli.               
 \newpage
 \paragraph{Detagli esercizio}\mbox{}\\   
 
@@ -203,7 +226,8 @@
         		\includegraphics[width=17cm]{sez/img/insegnante/detagliesercizio.PNG} 
             	\caption{Tutti i dettagli di un esercizio}\label{fig:1}
         	\end{figure}     	
-        	In questa pagina è presente il testo dell'esercizio, eventuali soluzioni, la lista degli alunni che hanno completato l'esercizio e la lista degli alunno che lo devono ancora svolgere.
+        	In questa pagina è presente il testo dell'esercizio, eventuali soluzioni, la lista degli alunni che hanno completato l'esercizio e la lista degli alunni che lo devono ancora svolgere.
+        	
         	
         	Cliccando sul pulsante \textit{Elimina} è possibile eliminare completamente l'esercizio dal sistema, rimuovendolo automaticamente anche dalla lista dei \textit{Compiti per casa} dei vari allievi.
         	
@@ -216,7 +240,7 @@
             	\caption{Gestione delle classi}\label{fig:1}
         	\end{figure}          	
         	   
-        In questa pagina abbiamo la possibilità di creare classi di allievi e gestirle  in maniera comoda. 
+        In questa pagina abbiamo la possibilità di creare, eliminare e modificare classi di allievi. 
 
 \paragraph{Creazione nuova classe}\mbox{}\\         
 
@@ -226,7 +250,9 @@
             	\caption{Creazione nuova classe}\label{fig:1}
         	\end{figure}            	
 
-Cliccando sul pulsante  \textit{Nuova} ci compare una finestra sulla pagina, dove creiamo la nostra nuova classe di alluni inserendo il nome della classe e aggiungendo gli allievi che faranno parte della seguente classe, gli allievi devono essere già registrati nel sistema per poterli visualizzare. Alla fine cliccando \textit{Salva} la classe viene salvata e aggiunta al elenco delle classi.
+Cliccando sul pulsante  \textit{Nuova} compare una finestra sulla pagina. All'interno della casella di testo va inserito il nome che si vuole attribuire alla nuova classe; per aggiungere gli allievi è sufficiente selezionarli dalla lista sottostante. Gli allievi selezionati compaiono anche nella lista alla destra per rendere più chiaro il risultato finale ottenuto. 
+
+Cliccando sul pulsante \textit{Salva} la classe viene salvata nel sistema. D'ora in avanti è possibile utilizzarla durante l'inserimento di nuovi esercizi.
  
  \paragraph{Gestione classe}\mbox{}\\
  
@@ -236,8 +262,15 @@ Cliccando sul pulsante  \textit{Nuova} ci compare una finestra sulla pagina, dov
             	\caption{Detagli di una classe}\label{fig:1}
         	\end{figure}
         	
-        	
- L'elenco delle classi è cliccabile cliccando su una classe abbiamo la possibilità di vedere chi fa parte dalle classe scelta. Cliccando sul pulsante \textit{Elimina} possiamo cancellare la classe e i suoi allievi, essi non vengono cancellati del tutto solo dalla classe in cui erano aggiunti.         
+ Cliccando su una singola classe si espande un pannello contenente la lista degli allievi precedentemente aggiunti.
+Una volta aperto il pannello è possibile eliminare o modificare una classe.
+Cliccando il pulsante \textit{Elimina} compare un box che richiede la conferma per effettuare l'operazione, cliccando \textit{SI} la classe viene eliminata, cliccando \textit{NO} l'operazione viene annullata.
+ \begin{figure}[H]
+            	\centering
+        		\includegraphics[width=17cm]{sez/img/insegnante/confermaElimina.png} 
+            	\caption{Conferma eliminazione}\label{fig:1}
+        	\end{figure}
+     
        
        \newpage
          \paragraph{Modifica classe}\mbox{}\\	      
@@ -249,12 +282,13 @@ Cliccando sul pulsante  \textit{Nuova} ci compare una finestra sulla pagina, dov
         	\end{figure}
         	
         	
-Cliccando su \textit{Modifica} compare la finestra che ci permette di riasegnare gli allievi all'interno della classe o modificare il proprio nome i dati vengono salvati soltanto cliccando su \textit{Salva}.
+Cliccando su \textit{Modifica} compare la finestra che ci permette di aggiungere nuovi allievi, rimuoverli o eventualmente modificare il nome. Per salvare le modifiche è sufficiente cliccare sul pulsante \textit{Salva}.
         
 	\newpage
     \subsection{Sviluppatore}
-    Lo sviluppatore si iscrive al sito perché interessato a scaricare i dati prodotti dagli utenti durante l'esecuzione di esercizi di analisi grammaticale.
-    	 \\La sidebar dello sviluppatore contiene il pannello utente che li permette di fare tutto il necessario per scaricare i dati dalla piattaforma.
+    Lo sviluppatore compre un ruolo fondamentale all'interno della piattaforma. Egli è colui che utilizzerà i dati inseriti da \textit{Allievi} e \textit{Insegnanti}, con l'obiettivo di utilizzarli come input per i sistemi di autoapprendimento.
+    Lo sviluppatore può iscriversi alla piattaforma utilizzando lo stesso sistema utilizzato dagli altri tipi di utenti a differenza dell'attivazione dell'account. E' necessario l'attivazione manuale da parte di un amministratore della piattaforma per poter accedere la prima volta. 
+        	 \\Il pannello utente è l'unica pagina presente all'interno dell'area riservata di uno \textit{Sviluppatore}.
    
     	\subsubsection{Pannello utente}
     				\begin{figure}[H]
@@ -262,8 +296,10 @@ Cliccando su \textit{Modifica} compare la finestra che ci permette di riasegnare
 				\includegraphics[width=17cm]{sez/img/sviluppatore/panelloutente.PNG}
 				\caption{Pannello utente: Sviluppatore}\label{fig:1}
 			\end{figure}
+			 All'interno del pannello è presente un pulsante per scaricare tutti i dati presenti all'interno del sistema; eventualmente è possibile inserire dei filtri per avere dei dati che si avvicinano maggiormente alla proprie esigenze.
     	  Il pannello utente mostra un messaggio di benvenuto allo sviluppatore, che è libero di procedere allo scaricamento dei dati prodotti dagli utenti.
-    	   \\Cliccando sul bottone di \textit{Scarica}, lo sviluppatore può scaricare i dati prodotti dagli utenti, cliccando su \textit{Aggiungi filtro} ha la possibilità di filtrare questi dati in base alla loro data di creazione o alla loro affidabilità. 
+    	 Cliccando il flag \textit{Aggiungi filtro} compare un form contenente due caselle di testo per inserire un range di date in cui è stato inserito un esercizio e sotto di esso una barra di valori tra \textit{0 - 100} indicare l'affidabilità minima richiesta per una soluzione.
+    	 Cliccando il pulsante \textit{Scarica} un file di formato JSON viene salvato all'interno della propria cartella predefinita dei download.
 
 	\newpage
 	\subsection{Amministratore}
@@ -283,12 +319,8 @@ Cliccando su \textit{Modifica} compare la finestra che ci permette di riasegnare
 				\includegraphics[width=17cm]{sez/img/amministratore/panelloadmin.PNG}
 				\caption{Pannello utente: Amministratore}\label{fig:1}
 			\end{figure}
-		
-		 Il pannello dà il benvenuto all' amministratore, che è libero di procedere alla gestione degli utenti.
-		 L'amministratore ha a disposizione un breve riassunto della situazione che ha de gestire, il panello si presenta diviso in 4 macrosezioni dove può più facilmente capire cosa deve fare, per esempio la sezione \textit{In Attesa} dice che ci sono richieste da parte degli sviluppatori.
-
-
-
+		Il pannello utente contiene un breve riepilogo della situazione attuale all'interno della piattaforma.
+		Sono presenti quattro box che indicano rispettivamente: il numero di \textit{Allievi} iscritti, il numero di \textit{Insegnanti} iscritti, il numero di \textit{Sviluppatori} iscritti ed approvati e il numero di \textit{Sviluppatori} iscritti ma ancora in attesa di approvazione.
 
 		\subsubsection{Sviluppatori}
 			\begin{figure}[H]
@@ -296,7 +328,7 @@ Cliccando su \textit{Modifica} compare la finestra che ci permette di riasegnare
 				\includegraphics[width=17cm]{sez/img/amministratore/conf_ric_svil.PNG}
 				\caption{Richieste di iscrizione degli sviluppatori}\label{fig:1}
 			\end{figure}
-		  In questa pagina l'amministratore può approvare o rifiutare le richieste di iscrizione degli sviluppatori. Viene presentata una lista contente gli sviluppatori che hanno richiesto di iscriversi al sistema. Ogni sviluppatore ha un nome e una mail. L'amministratore, premendo su \textit{Accetta}, consente allo sviluppatore di fare il login, se invece preme su \textit{Rifiuta}, l'amministratore cancella lo sviluppatore dal sistema. Premendo su \textit{Aggiorna}, l'amministratore aggiorna la lista di sviluppatori.
+		  In questa pagina l'amministratore può approvare o rifiutare le richieste di iscrizione degli sviluppatori. Viene presentata una lista contente gli sviluppatori che hanno richiesto di iscriversi al sistema. Ogni sviluppatore ha un nome e una mail. L'amministratore, premendo su \textit{Accetta}, consente allo sviluppatore di effettuare il login, premendo su \textit{Rifiuta} invece, rifiuta e cancella lo sviluppatore dal sistema. Premendo sul pulsante \textit{Aggiorna} viene ricaricata la lista degli \textit{Sviluppatori}.
 
 
 		\subsubsection{Utenti}
@@ -305,4 +337,6 @@ Cliccando su \textit{Modifica} compare la finestra che ci permette di riasegnare
 				\includegraphics[width=17cm]{sez/img/amministratore/gestisciutenti.PNG}
 				\caption{Gestione utenti}\label{fig:1}
 			\end{figure}
-		  In questa pagina l'amministratore può visualizzare gli utenti iscritti ed eventualmente eliminarli dal sito. Per ogni utente sono presenti nome, email e ruolo (Insegnante, Sviluppatore o Allievi). Gli amministratori non figurano in questo elenco. L'amministratore, cliccando su \textit{Elimina}, compare un alert dove li si chiede se è sicuro di voler eliminare l'utente selezionato, avendo la possibilità di ripensare prima di effettuare un'azione irreversibile, se invece è sicuro dell'azione, elimina l'utente dal sistema. Premendo su \textit{Aggiorna}, l'amministratore aggiorna la lista di utenti.
+		  In questa pagina l'amministratore può visualizzare gli utenti iscritti ed eventualmente eliminarli dal sistema. Per ogni utente sono presenti nome, email e ruolo (Insegnante, Sviluppatore o Allievi). Gli amministratori non figurano in questo elenco. 
+		  
+		  Cliccando su \textit{Elimina}, compare un alert per la conferma dell'eliminazione, cliccando su \textit{Si} l'utente viene eliminato, cliccando \textit{No} l'operazione viene annullata. Premendo su \textit{Aggiorna} la lista degli utenti viene aggiornata.
