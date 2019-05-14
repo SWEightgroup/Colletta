@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Colletta" company="SWEight" webLink="" view-date="2019-04-13" view-index="0" gantt-divider-location="357" resource-divider-location="300" version="2.8.10" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Colletta" company="SWEight" webLink="" view-date="2019-04-13" view-index="0" gantt-divider-location="357" resource-divider-location="300" version="2.8.10" locale="en_US">
     <description/>
     <view zooming-state="default:1" id="gantt-chart">
-        <field id="tpd3" name="Nome" width="195" order="0"/>
-        <field id="tpd4" name="Data d'inizio" width="73" order="1"/>
-        <field id="tpd5" name="Data di fine" width="85" order="2"/>
-        <option id="color.recent"><![CDATA[#ff3333 #ff6666 #ffcc00 #ff9900 #00ccff #cc0099 #00cc00 #ff3300 #ff0000 #cc0066]]></option>
+        <field id="tpd3" name="Name" width="195" order="0"/>
+        <field id="tpd4" name="Begin date" width="73" order="1"/>
+        <field id="tpd5" name="End date" width="85" order="2"/>
+        <option id="color.recent"><![CDATA[#00ccff #00cc00 #ff3333 #ff6666 #ffcc00 #ff9900 #cc0099 #ff3300 #ff0000 #cc0066]]></option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nome" width="210" order="0"/>
-        <field id="1" name="Ruolo predefinito" width="86" order="1"/>
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -77,7 +77,12 @@
             </task>
             <task id="219" name="Verifica" color="#00ccff" meeting="false" start="2019-04-21" duration="2" complete="0" thirdDate="2019-04-24" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="221" name="Codifica" color="#cc0066" meeting="false" start="2019-04-13" duration="24" complete="0" thirdDate="2019-04-13" thirdDate-constraint="0" expand="true"/>
+        <task id="221" name="Codifica" color="#cc0066" meeting="false" start="2019-04-13" duration="20" complete="0" thirdDate="2019-04-13" thirdDate-constraint="0" expand="true">
+            <task id="264" name="Incremento" color="#33cc00" meeting="false" start="2019-04-13" duration="16" complete="0" thirdDate="2019-04-13" thirdDate-constraint="0" expand="true">
+                <depend id="256" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="256" name="Verifica" color="#00ccff" meeting="false" start="2019-04-29" duration="4" complete="0" thirdDate="2019-04-21" thirdDate-constraint="0" expand="true"/>
+        </task>
         <task id="241" name="Validazione" color="#ff6666" meeting="false" start="2019-04-13" duration="21" complete="0" thirdDate="2019-04-13" thirdDate-constraint="0" expand="true"/>
         <task id="243" name="Collaudo" color="#ff3333" meeting="false" start="2019-04-13" duration="26" complete="0" thirdDate="2019-04-13" thirdDate-constraint="0" expand="true"/>
         <task id="228" name="Manuale Sviluppatore" color="#8cb6ce" meeting="false" start="2019-04-13" duration="18" complete="0" thirdDate="2019-04-13" thirdDate-constraint="0" expand="true">
