@@ -25,14 +25,14 @@
         	\includegraphics[width=1\linewidth]{sez/img/autenticazione/formRegistrazione.PNG} 
         	\caption{Form per la registrazione}\label{fig:registrazione}
     	\end{figure}
-Se non si è ancora registrati è possibile farlo cliccando sul bottone \textit{Registrati} presente nella barra del menu. Una volta compilato il form viene inviata una mail per l'attivazione dell'account. E' necessario cliccare sul link appena ricevuto, successivamente verrà aperta una pagina con un messaggio di conferma. A questo punto se il ruolo scelto è \textit{Insegnante} o \textit{Allievo} è possibile accedere alla piattaforma; se \textit{Sviluppatore}, per poter accedere alla piattaforma è necessario attendere l'attivazione manuale da parte di un \textit{Amministratore} del sistema. I dati sono tutti obbligatori e il form visualizzato è quello in \autoref{fig:registrazione}.
+	   Se non si è ancora registrati è possibile farlo cliccando sul bottone \textit{Registrati} presente nella barra del menu. Una volta compilato il form viene inviata una mail per l'attivazione dell'account. E' necessario cliccare sul link appena ricevuto, successivamente verrà aperta una pagina con un messaggio di conferma. A questo punto se il ruolo scelto è \textit{Insegnante} o \textit{Allievo} è possibile accedere alla piattaforma; se \textit{Sviluppatore} è necessario attendere anche l'attivazione manuale da parte di un  \textit{Amministratore} della piattaforma. I dati sono tutti obbligatori e il form visualizzato è quello in \autoref{fig:registrazione}.
     \subsubsection{Login}
     	\begin{figure}[H]
         	\centering
         	\includegraphics[width=1\linewidth]{sez/img/autenticazione/formAccedi.PNG} 
         	\caption{Form per effettuare il login}\label{fig:1}
     	\end{figure}
-Una volta effettuata la registrazione, per poter accedere alla piattaforma è necessario recarsi sull'apposita pagina collegata dal link in altro a destra \textit{Accedi}, inserire l'email, la propria password e successivamente cliccare sul pulsante \textit{Accedi} del form.
+ 	  Dopo aver effettuato la registrazione si accede cliccando su \textit{Accedi} nella barra del menu. E' necessario inserire email e password e successivamente cliccare sul pulsante \textit{Accedi} del form.
 
     \subsubsection{Password dimenticata}
     	\begin{figure}[H]
@@ -42,7 +42,9 @@ Una volta effettuata la registrazione, per poter accedere alla piattaforma è ne
     	\end{figure}
 	L'unico modo per cambiare la password di un utente iscritto alla piattaforma è  tramite il form di recupero password. Cliccando sul ling \textit{Password dimenticata?} presente all'interno del form di login, compare un form con una casella di testo per l'inserimento della mail utilizzata durante la registrazione. 
 	
-	Cliccando il pulsante \textit{Richiedi una nuova password}, se esiste effettivamente un account collegato a 	quella mail, viene inviata una mail contenente un link per l'inserimento della nuova password; cliccandolo verrà aperta una pagina della piattaforma \textit{Colletta} con un form contenente due caselle di testo per l'inserimento della nuova password.\\ Una volta inserita la nuova password è sufficiente cliccare il pulsante \textit{Cambia password}. Un messaggio di conferma indica che l'operazione è andata a buon fine.
+	Cliccando il pulsante \textit{Richiedi una nuova password}, se esiste effettivamente un account collegato a 	quella mail, viene inviata una mail contenente un link per l'inserimento della nuova password; cliccandolo verrà aperta una pagina della piattaforma \textit{Colletta} con un form contenente due caselle di testo per l'inserimento della nuova password. U
+	
+	na volta inserita la nuova password è sufficiente cliccare il pulsante \textit{Cambia password}. Un messaggio di conferma indica che l'operazione è andata a buon fine.
 \begin{figure}[H]
         	\centering
         	\includegraphics[width=1\linewidth]{sez/img/autenticazione/password.png} 
@@ -56,13 +58,17 @@ Una volta effettuata la registrazione, per poter accedere alla piattaforma è ne
     \subsubsection{Logout}
     Per effettuare il {logout}\ped{G} si deve cliccare sulla voce \textit{Esci} dalla barra del menu. Facendo ciò, l'utente termina la propria sessione.
     \subsubsection{Modifica dati}
-    Cliccando su \textit{profilo} l'utente ha la possibilità visualizzare e modificare i propri dati tramite un form simile a quello di registrazione. L'utente non può modificare il proprio ruolo e la propria Email dopo l'iscrizione.
+    	\begin{figure}[H]
+        	\centering
+        	\includegraphics[width=1\linewidth]{sez/img/autenticazione/modati.PNG} 
+        	\caption{Modifica dei dai personali}\label{fig:1}
+    	\end{figure}
+    Dopo aver effettuato la registrazione si accede cliccando su \textit{Accedi} nella barra del menu. E' necessario inserire email e password e successivamente cliccare sul pulsante \textit{Accedi} del form. La modifica dei dati è disponibile a ogni tipologia di utente.
 
 \newpage
     \subsection{Allievo}
-      L'allievo si iscrive nel portale Colletta per svolgere esercizi di analisi grammaticale. Può svolgere esercizi assegnati da un'insegnante o svolgere esercizi liberi tramite il sistema di correzione automatica del sistema. L'allievo ha poi la possibilità di confrontare la sua soluzione con quella presentata dal sistema.
-        \subsubsection{Sidebar}
-          La sidebar dell'allievo presenta le seguenti voci:
+      L'allievo si iscrive nel portale \textbf{Colletta} per svolgere esercizi di analisi grammaticale. Può svolgere esercizi assegnati da un'insegnante o svolgere esercizi liberi tramite il sistema di correzione automatica del sistema. Esso ha la possibilità di confrontare la sua soluzione con quella presentata dal sistema ricevendo anche un voto.
+      \\La sidebar dell'allievo presenta le seguenti voci:
             \begin{itemize}
                 \item Pannello utente;
                 \item Esercitazione libera;
@@ -75,21 +81,15 @@ Una volta effettuata la registrazione, per poter accedere alla piattaforma è ne
 
             
         \subsubsection{Pannello utente}
-          Il pannello utente è un riassunto di tutti i progressi e le attività svolte dall'allievo. Al momento il pannello utente mostra un messaggio di benvenuto, l'allievo è quindi libero di selezionare una delle voci di menu ed esercitarsi.
-%        	\begin{itemize}
-%        		\item Progressi;
-%        		\item Traguardi;
-%        		\item Traguardo corrente;
-%        		\item Prossimo traguardo;
-%        		\item Valutazioni;
-%        		\item Esercizi recenti;
-%        		\item Insegnanti preferiti.
-%        	\end{itemize}
+			\begin{figure}[H]
+        		\centering
+        		\includegraphics[width=1\linewidth]{sez/img/studente/panelloUtente.PNG} 
+        		\caption{Panello utente: Allievo}\label{fig:1}
+    		\end{figure}        
         
-        
-               
-	\newpage
-        \subsubsection{Esercitazione libera}      
+          Il pannello utente è un riassunto di tutti i progressi e le attività svolte dall'allievo. Il pannello utente mostra un messaggio di benvenuto,il numero di esercizi assegnanti, i suoi progressi, quanti esercizi ha svolto e quanti esercizi pubblici sono disponibili. 
+          
+		 \subsubsection{Esercitazione libera}      
         	\begin{figure}[H]
                 \centering
                 \includegraphics[width=17cm]{sez/img/studente/esercitazioneLiberaEsegui.PNG} 
@@ -103,7 +103,7 @@ Una volta effettuata la registrazione, per poter accedere alla piattaforma è ne
             	\item Svolgere l'esercizio e cliccare \textit{Completa}.
         	\end{enumerate}
         	\label{sec:esLib}
-Lo svolgimento dell'esercizio è guidato; ogni pulsante rappresenta una scelta possibile, il primo pulsante selezionato corrisponde alla categorica alla quale appartiene la parola, le scelte successive raffinano l'analisi. Ad ogni click di un pulsante vengono generati dei pulsanti strettamente collegati a quello precedente. In caso non comparissero più pulsanti, significa che l'analisi per quella parola è terminata. In ogni momento l'allievo può decidere di resettare la soluzione per una determinata parola (icona cestino), o annullare l'ultima scelta (freccia indietro).        \linebreak	
+        	Lo svolgimento dell'esercizio è guidato;ogni pulsante rappresenta una scelta possibile, il primo pulsante selezionato corrisponde alla categorica alla quale appartiene la parola, le scelte successive raffinano l'analisi. Ad ogni click di un pulsante vengono generati dei pulsanti strettamente collegati a quello precedente. In caso non comparissero più pulsanti, significa che l'analisi per quella parola è terminata. In ogni momento l'allievo può decidere di resettare la soluzione per una determinata parola (icona cestino), o annullare l'ultima scelta (freccia indietro).        \linebreak	
         A sinistra del pulsante completa è presente un flag che indica se la frase appena inserita può essere messa a disposizione degli sviluppatori che utilizzano i dati della piattaforma; non selezionandolo si acconsente la condivisione di questo dato.
         	
 
@@ -116,24 +116,44 @@ Lo svolgimento dell'esercizio è guidato; ogni pulsante rappresenta una scelta p
             	\caption{Scelta esercizio da svolgere}\label{fig:1}
         	\end{figure}
 
-		  L'allievo sceglie l'esercizio da svolgere tra quelli che sono stati assegnati cliccando su \textit{Svolgi l'esercizio}.   
+		  E' possibile scegliere l'esercizio da svolgere cliccando sul pulsante \textit{Svolgi l'esercizio}. 
+		  
+		  
+		    \paragraph{Svolgimento esercizio scelto}\mbox{}\\
+		    Una volta selezionato l'esercizio di apre una pagina per lo svolgimento, contenente un set di scelte per ogni parola appartenente alla frase dell'esercizio.     
        
         	\begin{figure}[H]
             	\centering
             	\includegraphics[width=17cm]{sez/img/studente/svolgimentoesercizio.PNG} 
             	\caption{Svolgimento esercizio}\label{fig:1}
         	\end{figure}      
-	L'allievo esegue quindi l'analisi della frase allo stesso modo descritto in \S\ref{sec:esLib}. La soluzione visualizzata alla fine sarà in questo caso quella dell'insegnante che ha assegnato l'esercizio.
+	L'allievo esegue quindi l'analisi della frase allo stesso modo descritto in \S\ref{sec:esLib}. La soluzione visualizzata alla fine sarà in questo caso quella dell'insegnante che ha assegnato l'esercizio. 
+	
+	Le scelte uguali a quelle della soluzione dell'insegnante vengono evidenziate in verde mentre quelle diverse in rosso. In alto a destra viene mostrato il voto in decimi calcolato automaticamente paragonando la soluzione con quella dell'insegnante.
+	
+	\begin{figure}[H]
+            	\centering
+            	\includegraphics[width=17cm]{sez/img/studente/risultatoEsercizio.png} 
+            	\caption{Risultato esercizio svolto}\label{fig:1}
+        	\end{figure}     
         
         
         \subsubsection{Esercizi svolti}
-                 In questa pagina è possibile visualizzare lo storico degli esercizi che sono stati svolti. Per ogni esercizio svolto sono visualizzabili la data di aggiunta, la frase analizzata e il nome dell'insegnante che ha assegnato l'esercizio.
         	\begin{figure}[H]
             	\centering
             	\includegraphics[width=17cm]{sez/img/studente/esercizisvolti.PNG} 
             	\caption{Storico esercizi svolti}\label{fig:1}
         	\end{figure}
           In questa pagina è possibile visualizzare lo storico degli esercizi che sono stati svolti. Per ogni esercizio svolto sono visualizzabili la data di aggiunta, la frase analizzata e il nome dell'insegnante che ha assegnato l'esercizio.
+          
+          
+           \subsubsection{Esercizi pubblici}
+        	\begin{figure}[H]
+            	\centering
+            	\includegraphics[width=17cm]{sez/img/studente/esercizipubblici.PNG} 
+            	\caption{Elenco esercizi pubblici}\label{fig:1}
+        	\end{figure}
+        	In questa pagina è possibile visualizzare tutti gli esercizi resi pubblici dagli insegnanti. Si ha abbiamo la possibilità  di scegliere tra gli esercizi inseriti da un qualsiasi insegnante oppure solo tra quelli aggiunti tra gli insegnanti preferiti. Possiamo quindi svolgerli come un normale esercizio. 
         
         
         
@@ -143,7 +163,7 @@ Lo svolgimento dell'esercizio è guidato; ogni pulsante rappresenta una scelta p
             	\includegraphics[width=17cm]{sez/img/studente/insegnantepreferito.png} 
             	\caption{Elenco insegnanti preferiti}\label{fig:1}
         	\end{figure}        
-        In questa pagina troviamo l'elenco di tutti gli insegnanti presenti, nella lista di sinistra clicccando sul pulsante \textit{"+"} possiamo aggiungerli tra gli insegnanti preferiti, se invece si vuole rimuovere un insegnante dalla lista è sufficiente cliccare sul pulsante \textit{"-"} che compare se il cursore viene avvicinato al nome dell'insegnante che si vuole rimuovere.
+        In questa pagina troviamo l'elenco di tutti gli insegnanti presenti nella lista di sinistra clicccando sul pulsante \textit{"+"} possiamo aggiungerli tra gli insegnanti preferiti, se invece si vuole rimuovere un insegnante dalla lista è sufficiente cliccare sul pulsante \textit{"-"} che compare se il cursore viene avvicinato al nome dell'insegnante che si vuole rimuovere.
         
         
         
@@ -161,18 +181,99 @@ Lo svolgimento dell'esercizio è guidato; ogni pulsante rappresenta una scelta p
         
         
         \subsubsection{Pannello utente}
-          Il pannello utente mostra un messaggio di benvenuto all'insegnante, che poi è libero di spostarsi sulla sidebar e assegnare esercizi ai propri allievi.
+        \begin{figure}[H]
+        		\centering
+        		\includegraphics[width=1\linewidth]{sez/img/insegnante/panelloUtente.PNG} 
+        		\caption{Panello utente: Insegnante}\label{fig:1}
+    		\end{figure}
+          Il pannello utente mostra un messaggio di benvenuto all'insegnante, un riepilogo con il numero di esercizi inseriti, le classi create e gli studenti presenti nel sistema.
         
-        
+        \newpage
         \subsubsection{Inserisci esercizio}
-          Questa sezione da la possibilità all'insegnante di inserire un esercizio nel sistema.
+          La funzione principale dell'insegnante è quello di inserire esercizi all'interno del sistema ed assegnarli agli alunni.
         	\begin{figure}[H]
             	\centering
         		\includegraphics[width=17cm]{sez/img/insegnante/inserisciEsercizio.PNG} 
             	\caption{Inserimento e assegnazione esercizio}\label{fig:1}
         	\end{figure}
         
-Dopo aver inserito la frase, verrà visualizzata la correzione automatica. Se ritenuta errata c'è la possibilità di modificare la soluzione cliccando su \textit{Modifica}. Durante lo svolgimento dell'esercizio l'insegnante ha la possibilità di tornare indietro di un passo, o di resettare completamente la soluzione per ogni parola. Questo processo è analogo a quello presentato in \S\ref{sec:esLib}. Finita la correzione, l'insegnate ha la possibilità di assegnare l'esercizio ad un singolo allievo, più allievi o una intera classe di allievi, e cliccando \textit{Completa} esso verrà aggiunto nel database.
+         
+          Dopo aver inserito la frase, verrà visualizzata la correzione automatica. Se è ritenuto necessario è possibile modificare la soluzione cliccando sul pulsante \textit{Modifica}; se cliccato, viene eliminata la soluzione proposta dal sistema per quella parola e chiesto di inserire una nuova soluzione. 
+          
+          Durante l'inserimento manuale della soluzione l'insegnante ha la possibilità di tornare indietro di un passo o di resettare completamente la soluzione appena inserita. Questo processo è analogo a quello presentato in \S\ref{sec:esLib}. 
+          Se è necessario, è possibile inserire una soluzione alternativa; cliccando sul pulsante \textit{Aggiungi soluzione alternativa} si apre un box identico a quello della soluzione principale; la modalità dell'inserimento della soluzione infatti è la stessa della soluzione principale. 
+          
+           Finita la correzione, l'insegnate può assegnare l'esercizio a un allievo selezionandolo dalla lista a sinistra sotto le soluzioni inserite oppure può assegnarlo direttamente ad una classe di studenti precedentemente creata selezionandola dall'elenco a destra sotto le soluzioni. 
+          
+          Prima di completare l'inserimento dell'esercizio, si può scegliere se aggiungere l'esercizio nella lista degli esercizi pubblici, disponibili agli alunni a cui non è stato assegnato e se dare la possibilità agli sviluppatori che utilizzano i dati raccolti dalla piattaforma di scaricare anche quest'ultimo. 
+          
+            Cliccando sul pulsante \textit{Completa} l'esercizio viene aggiunto al sistema.
+          
+\subsubsection{Esercizi inseriti}
+\begin{figure}[H]
+            	\centering
+        		\includegraphics[width=17cm]{sez/img/insegnante/eserinseriti.PNG} 
+            	\caption{Elenco esercizi svolti}\label{fig:1}
+        	\end{figure}  
+        	In questa pagina è presente l'elenco di tutti gli esercizi inseriti dal insegnante. Gli esercizi sono impaginati a gruppi di quattro.
+        	
+        	 Cliccando su un esercizio è possibile visualizzare i suoi dettagli.               
+\newpage
+\paragraph{Detagli esercizio}\mbox{}\\   
+
+\begin{figure}[H]
+            	\centering
+        		\includegraphics[width=17cm]{sez/img/insegnante/detagliesercizio.PNG} 
+            	\caption{Tutti i dettagli di un esercizio}\label{fig:1}
+        	\end{figure}     	
+        	In questa pagina è presente il testo dell'esercizio, eventuali soluzioni, la lista degli alunni che hanno completato l'esercizio e la lista degli alunni che lo devono ancora svolgere.
+        	
+        	
+        	Cliccando sul pulsante \textit{Elimina} è possibile eliminare completamente l'esercizio dal sistema, rimuovendolo automaticamente anche dalla lista dei \textit{Compiti per casa} dei vari allievi.
+        	
+\newpage
+        \subsubsection{Gestione classi}   
+       
+        \begin{figure}[H]
+            	\centering
+        		\includegraphics[width=17cm]{sez/img/insegnante/elencoclassi.PNG} 
+            	\caption{Gestione delle classi}\label{fig:1}
+        	\end{figure}          	
+        	   
+        In questa pagina abbiamo la possibilità di creare, eliminare e modificare classi di allievi. 
+
+\paragraph{Creazione nuova classe}\mbox{}\\         
+
+\begin{figure}[H]
+            	\centering
+        		\includegraphics[width=17cm]{sez/img/insegnante/creanuovaclasse.PNG} 
+            	\caption{Creazione nuova classe}\label{fig:1}
+        	\end{figure}            	
+
+Cliccando sul pulsante  \textit{Nuova} compare una finestra sulla pagina. All'interno della casella di testo va inserito il nome che si vuole attribuire alla nuova classe; per aggiungere gli allievi è sufficiente selezionarli dalla lista sottostante. Gli allievi selezionati compaiono anche nella lista alla destra per rendere più chiaro il risultato finale ottenuto. 
+
+Cliccando sul pulsante \textit{Salva} la classe viene salvata nel sistema. D'ora in avanti è possibile utilizzarla durante l'inserimento di nuovi esercizi.
+ 
+ \paragraph{Gestione classe}\mbox{}\\
+ 
+ \begin{figure}[H]
+            	\centering
+        		\includegraphics[width=17cm]{sez/img/insegnante/gestioneclasse.PNG} 
+            	\caption{Detagli di una classe}\label{fig:1}
+        	\end{figure}
+        	
+ Cliccando su una singola classe si espande un pannello contenente la lista degli allievi precedentemente aggiunti.
+Una volta aperto il pannello è possibile eliminare o modificare una classe.
+Cliccando il pulsante \textit{Elimina} compare un box che richiede la conferma per effettuare l'operazione, cliccando \textit{SI} la classe viene eliminata, cliccando \textit{NO} l'operazione viene annullata.
+ \begin{figure}[H]
+            	\centering
+        		\includegraphics[width=17cm]{sez/img/insegnante/confermaElimina.png} 
+            	\caption{Conferma eliminazione}\label{fig:1}
+        	\end{figure}
+     
+       
+       \newpage
+         \paragraph{Modifica classe}\mbox{}\\	      
         
          \begin{figure}[H]
             	\centering
@@ -198,7 +299,7 @@ Cliccando su \textit{Modifica} compare la finestra che ci permette di aggiungere
 			 All'interno del pannello è presente un pulsante per scaricare tutti i dati presenti all'interno del sistema; eventualmente è possibile inserire dei filtri per avere dei dati che si avvicinano maggiormente alla proprie esigenze.
     	  Il pannello utente mostra un messaggio di benvenuto allo sviluppatore, che è libero di procedere allo scaricamento dei dati prodotti dagli utenti.
     	 Cliccando il flag \textit{Aggiungi filtro} compare un form contenente due caselle di testo per inserire un range di date in cui è stato inserito un esercizio e sotto di esso una barra di valori tra \textit{0 - 100} indicare l'affidabilità minima richiesta per una soluzione.
-    	 Cliccando il pulsante \textit{Scarica} un file di formato {JSON}\ped{G} viene salvato all'interno della propria cartella predefinita dei download.
+    	 Cliccando il pulsante \textit{Scarica} un file di formato JSON viene salvato all'interno della propria cartella predefinita dei download.
 
 	\newpage
 	\subsection{Amministratore}
