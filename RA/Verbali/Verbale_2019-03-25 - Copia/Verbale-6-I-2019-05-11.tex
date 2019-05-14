@@ -1,0 +1,40 @@
+\documentclass[a4paper, oneside, openany, dvipsnames, table]{article}
+\usepackage{../../template/SWEightStyle}
+\input{comandi.tex}
+
+\begin{document}
+\copertina{}
+
+\input{RegistroModifiche.tex}
+\newpage
+\tableofcontents
+\newpage
+\section{Informazioni Generali}
+\begin{itemize}
+\item \textbf{Motivazione:} verificare che lo strumento proposto per la consegna del prodotto sia funzionante e facile da utilizzare;
+\item \textbf{Luogo:} Google Hangouts;
+\item \textbf{Data:} 2019-05-11;
+\item \textbf{Partecipanti del gruppo:} \hfill
+	\begin{itemize}
+		\item Damien Ciagola;
+		\item Francesco Corti;
+		\item Francesco Magarotto;
+		\item Enrico Muraro;
+		\item Alberto Bacco.
+		\item Sebastiano Caccaro;
+		\item Gionanta Legrottaglie.
+	\end{itemize} 
+\item \textbf{Ora:} 19:00;
+\item \textbf{Segretario:} Gionanta Legrottaglie.
+\end{itemize}
+
+\section{Ordine del Giorno}
+\begin{itemize}
+	\item \textbf{Disposizioni per la consegna}: verifica collettiva del metodo di consegna e controllo del funzionamento del sistema sfruttando Docker Compose.
+\end{itemize}
+
+\subsection{Resoconto}
+\begin{itemize}
+	\item \textbf{Docker Compose - VER-6-2019-05-11.1}: per la consegna del progetto si fa uso di Docker Compose in modo da non creare problematiche relative alla compilazione della libreria di pos-tagging scritta in C++. Anche la base di dati, gestita da MongoDB, farà uso dell'immagine docker ufficiale disponibile su {Docker Hub}\ped{G}.	
+\end{itemize}
+\end{document}
