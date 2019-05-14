@@ -8,7 +8,7 @@
 \item [•]\textbf{Java}: Java SE Development Kit 8;
 \item [•]\textbf{Node.js}: Node.js 10.15.1;
 \item [•]\textbf{Maven}: Maven 3.6.0;
-\item [•]\textbf{Docker}: Docker at least 18.09.6;  
+\item [•]\textbf{Docker}: Docker at least 18.09.6, more info at §\ref{sec:DockerCompose};  
 \item [•]\textbf{Browser}: Any browser which supports Javascript, HTML5 and CSS3.
 
 \end{itemize}
@@ -22,7 +22,7 @@
 \item [•]\textbf{Node.js}: Node.js 10.15.1;
 \item [•]\textbf{Maven}: Maven 3.6.0;
 \item [•]\textbf{Maven}: Maven 3.6.0;
-\item [•]\textbf{Docker}: Docker at least 18.09.6; 
+\item [•]\textbf{Docker}: Docker at least 18.09.6, more info at §\ref{sec:DockerCompose};   
 \item [•]\textbf{Browser}: Any browser which supports Javascript, HTML5 and CSS3.
 \end{itemize}
 
@@ -36,7 +36,7 @@
 \item [•]\textbf{Node.js}: Node.js 10.15.1;
 \item [•]\textbf{Maven}: Maven 3.6.0;
 \item [•]\textbf{Maven}: Maven 3.6.0;
-\item [•]\textbf{Docker}: Docker at least 18.09.6;  
+\item [•]\textbf{Docker}: Docker at least 18.09.6, more info at §\ref{sec:DockerCompose};  
 \item [•]\textbf{Browser}: Any browser which supports Javascript, HTML5 and CSS3.
 \end{itemize}
 
@@ -73,7 +73,15 @@ Now Spring Boot is running, to run the frontend just open a terminal window in t
 At the end a new browser window will be opened and the frontend will be loaded.
 
 \subsection{Docker Compose}
-Make sure you have already installed both \href{https://docs.docker.com/install/}{Docker Engine} and \href{https://docs.docker.com/compose/install/}{Docker Compose}.
-A \texttt{docker-compose.yml} file has been created for the application distribution in multiple platforms and operating systems, which allows using the command: \texttt{docker-compose up} to simultaneously execute all the Docker images present to make the application work properly locally and not. to make them stop just run \texttt{docker-compose down} from the terminal.\\
+\label{sec:DockerCompose}
+Make sure you have already installed both \href{https://docs.docker.com/install/}{Docker Engine} and \href{https://docs.docker.com/compose/install/}{Docker Compose}.\\
+A \texttt{docker-compose.yml} file has been created for the application distribution in multiple platforms and operating systems, which allows using the command:
+\begin{center}
+\texttt{docker-compose up}
+\end{center}
+to simultaneously execute all the Docker images present to make the application work properly locally and not. To make the containers stop just run 
+\begin{center}
+\texttt{docker-compose down} 
+\end{center} from the command line.\\
 For more information about Docker Compose consult the official documentation at the following link: \href{https://docs.docker.com/compose/}{"Docker Compose"}. 
 

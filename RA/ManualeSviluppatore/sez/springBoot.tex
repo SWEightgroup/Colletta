@@ -1,4 +1,4 @@
-This section is intended to make the developer understand the inner workings of the Colletta backend, and to allow him or her to add more functionality to the software package.
+This section is intended to make the developer understand the inner workings of the \textit{Colletta} backend, and to allow him or her to add more functionality to the software package.
 In order to fully understand the contents below, the developer must have a certain degree of familiarity with Java, the framework Spring Boot with his sub-framework Spring Data MongoDB, MongoDB and Maven. If that's not the case, we strongly recommend the reader to at least acquire some basic knowledge on the topics.
 
 \subsection{Directory tree}
@@ -74,7 +74,7 @@ Each folder contains a specific set of files:
 \item  \textbf{controller}: classes that handle HTTP Request, marked with \textit{@RestController} Spring annotation;
 \item  \textbf{error}: custom classes for error handling;
 \item  \textbf{exceptions:} custom classes for exception handling;
-\item  \textbf{library}: classes that connect the application to the PoS-tagging library;
+\item  \textbf{library}: classes that connect the application to the PoS-tagging\ped{G} library;
 \item  \textbf{model}: has the folder \textit{helper} which contains the transfer object (DTO), the other Model files are standard POJO objects that represent JSON objects store inside the database;
 \item  \textbf{repository}: classes that encapsulate the set of objects persisted in a data store, in our case MongoDB, and the operations performed over them, providing a more object-oriented view of the persistence layer;
 \item  \textbf{security}: classes that manage the security of the application through encryption and token management;
@@ -126,14 +126,14 @@ In authentication, when the user successfully logs in using their credentials, a
 When a user logs in to the system for the first time the token will be generated.\\
 Whenever the user wants to access a protected route or resource he/she must necessarily send his/her token that identifies he/she has correctly signed-in. If this is not done the system will decline the request.\\
 The security system has been implemented so that the only requests that are authorized without token recognition are the login (\textit{/login}), the registration (\textit{/sign-up}) and the activation (\textit{/sign-up/activate}), which is the account activation procedure through e-mail.\\
-The system uses \textbf{JWT tokens} for token authentication, more information is available at the link: \href{https://jwt.io/introduction/}{Introduction to JSON Web Tokens}.
+The system uses \textbf{JWT tokens} for token authentication, more information is available at the link: \href{https://jwt.io/introduction/}{JSON Web Tokens}.
 
 \subsection{TTL}
 \label{sec:TTL}
 When a user registers in the system, a confirmation e-mail is sent to the e-mail address with which he registered. If the user confirms his registration via the link in the email then he can access the system correctly through the login page.\\
 There is a TTL system, \textbf{Time To Leave}, which saves the registration request for twenty-four hours, at most, in the system and then eliminates it.\\
 The user then has twenty-four hours to confirm his registration in the system.\\
-The system is implemented through the \textit{@Indexed} operator present in Spring Data which through the keyword \texttt{expireAfterSeconds} specifies the lifetime of the document inserted in the database, in our case it has the value of 86400 which corresponds to twenty-four hours.\\
+The system is implemented through the \textit{@Indexed} operator present in Spring Data MongoDB which through the keyword \texttt{expireAfterSeconds} specifies the lifetime of the document inserted in the database, in our case it has the value of 86400 which corresponds to twenty-four hours.\\
 Collection example, \textit{SignUpRequestModel}, which implements the TTL: 
 \begin{lstlisting}[language=Java]
 @Document(collection = "signuprequests")
@@ -146,7 +146,7 @@ public class SignupRequestModel {
   private UserModel userToConfirm;
 }
 \end{lstlisting}
-The TTL system has also been implemented for changing the user password, the maximum time to confirm the change by the user is one day.
+The TTL system has also been implemented for changing the user password, the maximum time to confirm the change by the user is twenty-four hours.
 
 
 
