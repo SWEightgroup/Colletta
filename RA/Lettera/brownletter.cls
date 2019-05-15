@@ -119,7 +119,7 @@
 }
 
 \newcommand{\firma}{
-  \includegraphics[width=6cm]{Ciagola.png}
+  \includegraphics[width=6cm]{Muraro.png}
 }
 
 % we push closing to the right
