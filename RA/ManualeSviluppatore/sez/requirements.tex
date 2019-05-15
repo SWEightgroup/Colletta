@@ -41,11 +41,16 @@
 \end{itemize}
 
 \subsection{Configuration}
+Clone, through the command: \texttt{git clone <repoLink>}, or download the repository at the following link: \url{https://github.com/SWEightgroup/Development.git}.
+\subsubsection{Service configuration}
+To configure the services: MongoDB for data storage and FreeLing for grammar analysis follow the procedure described in the \textit{README} file.\\
+To execute the application \textbf{locally} without having to contact remote services, MongoDB and FreeLing, you need to run the \textit{docker-compose.yml} file and wait until the services are loaded, to make it follow carefully the procedure described in §\ref{sec:DockerCompose}.
+\subsubsection{Tomcat Webserver}
 The webserver Tomcat is integrated in the \texttt{pom.xml} so you don't need any particular configuration if you are using MacOs or any Linux distribution.
 In Windows you need the set the environment variables check on the setting and add to the "PATH" list the absolute path to the JDK and the Maven bins folders.
 Usually in Windows, Node.js automatically adds its path to the environment variable.
+	
 \subsection{Execution}
-Clone, through the command: \texttt{git clone <repoLink>}, or download the repository at the following link: \url{https://github.com/SWEightgroup/Development.git}.\\
 To run the backend, open a terminal or cmd (not PowerShell) in the \texttt{Backend} folder, be sure the \texttt{pom.xml} is present in the folder, then run the command: 
 \begin{center}
 \texttt{mvn clean install}
@@ -74,12 +79,19 @@ At the end a new browser window will be opened and the frontend will be loaded.
 
 \subsection{Docker Compose}
 \label{sec:DockerCompose}
-Make sure you have already installed both \href{https://docs.docker.com/install/}{Docker Engine} and \href{https://docs.docker.com/compose/install/}{Docker Compose}.\\
+To install \textit{Docker Compose}, depending on the operating system, follow the procedure described in the official \textit{Docker} documentation at the following link: \href{https://docs.docker.com/compose/install/}{"Install Docker Compose"}.\\
 A \texttt{docker-compose.yml} file has been created for the application distribution in multiple platforms and operating systems, which allows using the command:
 \begin{center}
 \texttt{docker-compose up}
 \end{center}
-to simultaneously execute all the Docker images present to make the application work properly locally and not. To make the containers stop just run 
+to simultaneously execute the \textit{Docker} images present to make the application work properly.\\
+The command install the following images:
+\begin{itemize}
+\item \textbf{FreeLing}: PoS-tagging library, present in the account maga97;
+\item \textbf{MongoDB}: document database, \href{https://docs.docker.com/docker-hub/official_images/}{official image} on \textit{Docker Hub}.
+\end{itemize}
+by connecting to the \textit{\href{https://hub.docker.com/}{Docker Hub}} service.\\
+To make the containers stop just run:
 \begin{center}
 \texttt{docker-compose down} 
 \end{center} from the command line.\\
