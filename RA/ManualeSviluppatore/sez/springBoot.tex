@@ -93,6 +93,12 @@ The backend architecture can be viewed in the following figure:
 \caption{Spring backend architecture}
 \label{fig:BackendArchitecture}
 \end{figure}
+The figure describes how the backend architecture process an HTTP request through: 
+\begin{itemize}
+\item \textbf{Controller}: presentation layer, for more information see §\ref{sec:Controller}.
+\item \textbf{Service}: service layer, for more information see §\ref{sec:Service}. 
+\item \textbf{Repository}: persistence layer, for more information see §\ref{sec:Repository}. 
+\end{itemize}
 
 \subsection{Design pattern}
 \label{sec:BackendDesignPattern}
@@ -108,7 +114,6 @@ The design pattern used for the backend is: \textbf{Spring MVC}.
 Respectively with the Controller, Service and Repository classes.
 \\ 
 More information about the architecture chosen for the backend is available at the link: \href{https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html}{Spring Web MVC}.
-
 \subsubsection{Grammatical analysis}
 To obtain a grammatical analysis of a sentence following a user request, it was decided to use the PoS-Tagging FreeLing library.\\
 To make the analysis as less dependent as possible, therefore more extensible, from the interface proposed by FreeLing the structural \textbf{Adapter} design pattern was used, more information is given at the following link: \href{https://www.martinfowler.com/bliki/RequiredInterface.html}{"Using an Adapter"}.\\
@@ -160,6 +165,7 @@ For more information regarding the use of Mockito see the official documentation
 
 \subsection{Modify or add features}
 \subsubsection{Controller}
+\label{sec:Controller}
 The controller has the annotation \textit{@RestController} above the class definition and contains the methods that map the HTTP calls sent from the frontend, being handled by the \texttt{DispatcherServlet}. \textit{@RestController} is a convenience annotation which contains within it \textit{@Controller} and \textit{@ResponseBody}.\\
 This configuration returns to the frontend a JSON file, if this does not want to be done the \textit{@RestController} word must be replaced by \textit{@Controller}.\\
 When adding a controller the following rules should be followed:
@@ -186,6 +192,7 @@ public class UserController{
 }
 \end{lstlisting}
 \subsubsection{Service}
+\label{sec:Service}
 Service has the annotation \textit{@Service} to indicate that the class holds the business logic.\\
 The service takes care of \textbf{checking} and \textbf{validating} the \textbf{inputs} sent by the frontend, if incorrect data is sent the service takes care of generating an exception that will be managed by the \textit{Controller} class.\\
 When adding a service the following rules should be followed: 
@@ -206,6 +213,7 @@ public class UserService{
 \end{lstlisting}
 
 \subsubsection{Repository}
+\label{sec:Repository}
 The repository classes manage the persistence layer. These classes are marked with \texttt{@Repository} annotation and they implement the interface \texttt{MongoRepository}. Implementing the MongoRepository interface allows you to call the CRUD query interface. 
 If you want to write custom queries, you have to create an interface and put the method's signature inside, then you have to create a concrete class which has the "Impl" suffix to its name. The repository class should extend the MongoRepository interface, \href{https://docs.spring.io/spring-data/data-mongodb/docs/current/api/org/springframework/data/mongodb/repository/MongoRepository.html}{"Interface MongoRepository"}, and the custom query interface, if present.\\
 More information regarding the use of the Repository can be found at the following link: \href{https://docs.spring.io/spring-data/mongodb/docs/2.1.5.RELEASE/reference/html/#repositories}{"Spring Data Repositories"}.
